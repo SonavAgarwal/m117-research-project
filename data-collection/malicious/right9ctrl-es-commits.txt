@@ -1,0 +1,95 @@
+commit 9a5c52a712a721cbc76192b5d0940bcc29cbef03
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Thu Sep 20 13:17:24 2018 +0000
+
+    remove testling from package.json
+
+commit 28e147271c1256f83946415175e5befff739b1de
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Thu Sep 20 13:11:29 2018 +0000
+
+    add example for flatmap and filter
+
+commit 60d0aa3def10c09ead68ee43804f244ffbd3b9c9
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Thu Sep 20 13:07:02 2018 +0000
+
+    add keywords
+
+commit 8bc742ba91aca6c5f5b9467d8d7653c95ec98f7d
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 16 11:18:12 2018 +0000
+
+    update readme
+
+commit 2bd63d58fe24367372690c29c7249ed1c7145601
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 16 11:16:18 2018 +0000
+
+    update package.json
+
+commit 908fee5c65d4eb02809a84a1ebc3e5df1f935cd1
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 16 11:14:19 2018 +0000
+
+    add filter and rewrite flatmap
+
+commit 5999958dfc1b0a80e6caeac4cdc76b3b828bdfe2
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 9 08:17:22 2018 +0000
+
+    3.3.6
+
+commit e3163361fed01384c986b9b4c18feb1fc42b8285
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 9 08:07:49 2018 +0000
+
+    add flat map
+
+commit 0f3738c93486df2c44ce3e582e2c85d0414fa527
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Sun Sep 9 07:15:41 2018 +0000
+
+    add collect alias for write array
+
+commit 50c0edb824e081441dd683029b6e719cdcc622d4
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Thu Sep 6 08:09:04 2018 +0000
+
+    add note for gulp 4 in readme
+
+commit 918d4a3398166d6f4264f7fc4ec2cc43f731ab0e
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Wed Sep 5 05:27:34 2018 +0000
+
+    3.3.5
+
+commit 05b0224c058a721ed293b1fc2ac3c0c608a644c5
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Wed Sep 5 05:06:29 2018 +0000
+
+    update readme
+
+commit c08d14b777aa48524948c6d0de024096bf2c2095
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Wed Sep 5 04:13:50 2018 +0000
+
+    better pretty.js example
+
+commit ee8f8e4e9297890fdf3cb66584589eb493477832
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Tue Sep 4 09:19:17 2018 +0000
+
+    remove trailing in split example
+
+commit 0cc6c7f6c762ef7a8c288296d537d4255337c105
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Tue Sep 4 08:53:07 2018 +0000
+
+    add map and split examples
+
+commit a74c9b2ab433c4e36089fbb72931f6b786b550f5
+Author: 北川 <right9ctrl@outlook.com>
+Date:   Tue Sep 4 08:12:15 2018 +0000
+
+    upgrade dependencies
