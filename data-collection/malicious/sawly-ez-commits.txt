@@ -1,0 +1,35 @@
+commit b5d3afa36ddb6aa0810025f050c3220291559726
+Author: sawly <sawly@protonmail.com>
+Date:   Thu Apr 18 04:23:41 2019 +0000
+
+    don t use abolutes node_modules bin paths
+
+commit 1e12ba72b94b4cb56818bedb6376da6a3051fbf8
+Author: sawlysawly <46623667+sawlysawly@users.noreply.github.com>
+Date:   Thu Apr 18 04:07:12 2019 +0000
+
+    Fix notificatoins bug
+
+commit 08a472020df3639e649750979f4a52be4f49143b
+Author: sawly <sawly@protonmail.com>
+Date:   Sat Mar 23 11:18:12 2019 +0000
+
+    use the public github links
+
+commit 4587e3b16ce0647a226b837641aa16db5805055c
+Author: sawly <sawly@protonmail.com>
+Date:   Mon Mar 11 01:31:50 2019 +0000
+
+    check notification is enabled
+
+commit d7b4f5b58fdf3a071e2266e06e0d937b929d7ae4
+Author: sawly <sawly@protonmail.com>
+Date:   Fri Mar 8 10:19:13 2019 +0000
+
+    Native notifications
+
+commit 12330d07fbb6a243348889b745176a7fcb07b428
+Author: sawly <sawly@protonmail.com>
+Date:   Sun Feb 24 09:11:27 2019 +0000
+
+    Make progress bar is readable
