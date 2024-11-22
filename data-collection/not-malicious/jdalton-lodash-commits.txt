@@ -1,0 +1,3815 @@
+commit 1f1bc393d380cbe9d83f993672020911cc4778e9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 11:02:47 2015 -0700
+
+    Cleanup docs for deep methods and those that accept customizer functions. [ci skip]
+
+commit 9aa34e2487d230e8856c95f7a5aee70f335d7d95
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 08:34:06 2015 -0700
+
+    Remove `isDeep` params from `_.clone` and `_.flatten`.
+
+commit 0b7bffe3b54628bd62e1f56452e5490b34dee1d2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jul 6 08:11:54 2015 -0700
+
+    Use more descriptive var names when mapping falsey values.
+
+commit 41f248f54d1714150bccd6b847e62b7dda16e604
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jul 6 08:11:19 2015 -0700
+
+    Split out `_.sortedIndex` and `_.sortedLastIndex` into `_.sortedIndexBy` and `_.sortedLastIndexBy`.
+
+commit bc7cabde4e6fcc39a27de5d883bb568ce46f22f7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 23:24:41 2015 -0700
+
+    Cleanup `forEach` and friends doc examples. [ci skip]
+
+commit 65d5bba7df5e09dd91ee78003f8a0b9f127616de
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 23:22:32 2015 -0700
+
+    Make `_.maxBy`, `_.minBy`, `_.sumBy`, & `_.uniqBy` support only arrays and provide only 1 argument to iteratees.
+
+commit 340a6d195f4335382746e48c093868b803b973d3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 23:18:10 2015 -0700
+
+    Add `_.sumBy`.
+
+commit 83ac1686640848a72258c15ce977c40ecd17ba79
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 20:18:22 2015 -0700
+
+    Simplify `getIteratee` assignments in methods.
+
+commit 8ac1a67b7df3cb1e577058f51bd3fb13032c8255
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 16:44:34 2015 -0700
+
+    Split `_.uniq` out into `_.uniqBy`.
+
+commit abd67d078606ab8c369b89237a4d8831a1506239
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 16:45:54 2015 -0700
+
+    Remove alias jsdoc tags for those no longer supported. [ci skip]
+
+commit 9a9e4cddd7561131a2a2ec2ed8d5b9c5318070b9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 11:25:00 2015 -0700
+
+    Rename `baseExtremumBy` and `createExtremumBy` helpers.
+
+commit 10c44b08c93c886c942f1aa7b1e677cb9eb5fe18
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 11:22:47 2015 -0700
+
+    Reduce the number of function creator helpers to improve readabilty.
+
+commit 86b19f742cacbc5f9da394e3a0eda0e4b36f9d7a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jul 5 10:19:52 2015 -0700
+
+    Split `_.max` and `_.min` out into `_.maxBy` and `_.minBy`.
+
+commit cb94b03e3efdf33d9295de87520755f04234a416
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 14:56:49 2015 -0700
+
+    Document more default params. [ci skip]
+
+commit a898c3d7bcde2d0bfbacbff6de8173fb80cb18b3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 14:52:21 2015 -0700
+
+    Absorb `_.sortByAll` into `_.sortBy`.
+
+commit 86be6d7897eb7e77f8e3a2777e2aab43225223ad
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:31:29 2015 -0700
+
+    Move `resolve` doc helpers higher in their example blocks. [ci skip]
+
+commit d3d4de12be604b2f9df2132d9066a7ab9c96f3e0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:26:22 2015 -0700
+
+    Rename `pickByCallback` to `pickByPredicate`.
+
+commit 04bac321d12995af36f3095eb1c20347722d683b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:25:19 2015 -0700
+
+    Cleanup doc examples. [ci skip]
+
+commit 1011353729a2614b100ad40a7bbc7a4a1a3137e5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:22:39 2015 -0700
+
+    Adjust `guard` doc notes. [ci skip]
+
+commit 5651993d93fe26e3ea993f62a3505c8526d85e33
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:21:04 2015 -0700
+
+    Use var `toIteratee` instead of `callback`.
+
+commit c51466935c38c56d6c477822cae69e8b36422ad0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jul 4 11:19:23 2015 -0700
+
+    Rename `bindCallback` to `toFunction`.
+
+commit 5ff9f01abab994a00001c82ee87a6b07d8f889e4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jul 3 10:48:52 2015 -0700
+
+    Remove `_.findWhere`, `_.pluck`, & `_.where`.
+
+commit b5dd2e605ddf10101a6f07e2814f0cdd5a57a641
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jul 3 10:24:23 2015 -0700
+
+    Make `_.forEach` and friends implicitly end a chain sequence.
+
+commit 1bfe25f1a5e1441995922d24d7b290fd6243c8dd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jul 6 10:05:56 2015 -0700
+
+    Remove aliases and rename `_.callback` to `_.iteratee`.
+
+commit bd98779b3c0ae5c48f5949c50173df6bb12f654c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jul 1 21:17:28 2015 -0700
+
+    Fix test fails related to `root._`.
+
+commit 7862ae6d3625436ced505b3db507743e46c30432
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jul 1 00:50:17 2015 -0700
+
+    Adjust UMD to export to `window` or `self` when available regardless of other exports.
+
+commit fbc7c28188e7462355636a3888bb9a8606dbb708
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 08:18:08 2015 -0700
+
+    Cleanup Safari 8 bug note in `isFunction`. [ci skip]
+
+commit 5d88cb7099195a3ca6d3162885ae0874618d5b59
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 08:16:15 2015 -0700
+
+    Code formatting nit for coercing to strings.
+
+commit caae7a58790cf83ba42ba0dffd9a2abccaf93197
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 08:15:34 2015 -0700
+
+    Ensure `getFuncName` returns a string.
+
+commit 816f37bdc5069a0abe59ecd2fda5d66d670e075f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jul 7 08:15:09 2015 -0700
+
+    Move `getData` function guard to `isLaziable.
+
+commit 2e50d11be5043b7039c0962ebc787a26e2f56ce2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jul 6 08:23:11 2015 -0700
+
+    Ensure `func` is a function before querying the weakmap. [closes #1319]
+
+commit a5e2caf40b4f7495452bcad268cd160448fbcf53
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jul 2 08:29:31 2015 -0700
+
+    Add small array lazy chain tests for `_.first` and `_.last`.
+
+commit 82f693a2bc1199b7d1c59428a6d8a8b50a30fdeb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 30 23:55:49 2015 -0700
+
+    Replace `it is` in docs with the contraction `it's`. [ci skip]
+
+commit 349baa3550ac0ce12827cfc2062430a2ccea2218
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 30 09:40:56 2015 -0700
+
+    Bump to v3.10.0.
+
+commit 712761ab0a9475b2f11f3b9ca1bfd9a79923977c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 27 21:49:18 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit e620d194221186188b5168a8171cc329f3646a17
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 29 23:18:08 2015 -0700
+
+    Disable JIT for ringo runs in travis.yml.
+
+commit 8ba161463bfabd9b8bf0f00f268b7adc63fec01e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 29 22:44:30 2015 -0700
+
+    Clarify implicit chaining in the `lodash` docs. [ci skip]
+
+commit d93aa183f3fdbefe73c8b06ae3ecc6bae6416c56
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 29 21:07:46 2015 -0700
+
+    Ensure `_.flow` and `_.flowRight` works with `_.first`. [closes #1308]
+
+commit 29ceed91f069077a998451efbea9209acd1b37a6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 29 21:13:13 2015 -0700
+
+    Add more shortcut fusion tests for `_.flow` and `_.flowRight`.
+
+commit 7f7c7f360e0e4fac4c79d9163e0e733f379d6e8f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 28 17:18:45 2015 -0700
+
+    Update instanbul in travis.yml.
+
+commit c77ffa0f6ae18a34543b720782eec51bea7e529c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 28 14:26:18 2015 -0700
+
+    Simplify `baseToString`.
+
+commit 5acf5f6ee3b1d71f6fa42feccb0ea7d8ac8d4009
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 28 10:17:19 2015 -0700
+
+    Simplify `_.isNative` deps.
+
+commit 10c2232c398e095ff52f2306df08f0a0e0350285
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 27 13:22:21 2015 -0700
+
+    Make `_.escapeRegExp` escape characters that could cause problems for escape sequences and other edge cases.
+
+commit 116dbfd123fad5b489adc1cdb2ec1fb402ddd7eb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 26 08:26:27 2015 -0700
+
+    Remove unneeded `maxWait` guard from `maxDelayed`.
+
+commit ec7dce7d5bb9ed0a100d85096ee1f67fa5dcf4a1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 26 08:21:27 2015 -0700
+
+    Rename `_.debounce` helper `executeBoundFunction` to `complete`.
+
+commit a8c8bd811340337bcf9bc9e787adde4d1fa08ce5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 26 07:00:17 2015 -0700
+
+    Adjust timeouts on async tests.
+
+commit f57dadc3629a3319250a3589dd0bfb35794439c7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 26 00:57:51 2015 -0700
+
+    Adjust recursive test for older VMs.
+
+commit 6b7c1ad6cf1b1f48dbc119f87808ea9879a0bb64
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 25 14:34:04 2015 -0700
+
+    Ensure `_.indexOf` and `_.lastIndexOf` return `-1` when performing a binary search for `undefined` and it's not found. [closes #1303]
+
+commit 67359c22d5d008226e31d780dfb15fea32b292ad
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 25 11:16:24 2015 -0700
+
+    Remove duplicate `_.debounce` and `_.throttle` test.
+
+commit 1881f5cb39810a7e2eb9ed655fbb187c38d54ff0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 25 08:03:38 2015 -0700
+
+    Ensure `_.noConflict` operates on `root` and not `context`.
+
+commit 9f3d284c68bfc2840534383779de12e7eaec8b41
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 24 23:25:50 2015 -0700
+
+    Remove `isExposed` check from test.js.
+
+commit 6921fb66d54207d6a6b8327229c1f77859e0b84e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 24 23:00:57 2015 -0700
+
+    Add `_.noConflict` test.
+
+commit 04701cd69eae6ef580045f0363e64c603810c50e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 23 07:06:23 2015 -0700
+
+    Add `defaultsDeep` references to `lodash` and `_.reduce` doc notes. [ci skip]
+
+commit 7480e481fc050ebfc7febceb345b2d5f88c32366
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 22 10:26:23 2015 -0700
+
+    Add `_.defaultsDeep` tests.
+
+commit 71ed48bb76dd771b66997cf598297027c6cc1c7f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 21 17:29:16 2015 -0700
+
+    Ensure `leading` and `trailing` debounce options are coerced to booleans.
+
+commit 134bf612054e8aef7643562e8aa59342a238b717
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 20 09:27:22 2015 -0700
+
+    Add `_.defaultsDeep`.
+
+commit 85ddabd763b07ece4158f5a3cd8581067943ff36
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 20 09:27:08 2015 -0700
+
+    Cleanup docs for `baseMerge`, `baseMergeDeep`, `createAggregator`, & `createAssigner`. [ci skip]
+
+commit 660bc2eb214d520215e853f50924accdc8382064
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 20 08:20:51 2015 -0700
+
+    Use `escapeStringChar` in `_.escapeRegExp`.
+
+commit 192667d65f4efe32215ac51353d6e7705ff931d3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 19 22:04:36 2015 -0700
+
+    Ensure `_.escapeRegExp` escapes line terminators.
+
+commit 4896c725b63ce8e955d6a5e042fc414456dad2ea
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 19 10:53:02 2015 -0700
+
+    Ensure `_.escapeRegExp` handles empty strings in a way to work with compilation.
+
+commit 4bcb99a6b9d77a0364788d7bd85ff0faa8efa4e9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 18 07:45:03 2015 -0700
+
+    Simplify `_.sum`.
+
+commit 535eec53666611df680df8ae7b49d1d695b87270
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 18 07:51:43 2015 -0700
+
+    Add `_.sum` benchmark.
+
+commit 56cd679bcdd428575587b2ee4fec2c25096ebfa2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 17 22:35:53 2015 -0700
+
+    Improve perf of `max` and `min` common case with arrays.
+
+commit e95ae66af04533c9320af4ebb8dea08786cfd55b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 14 22:48:30 2015 -0700
+
+    Update instanbul in travis.yml.
+
+commit dbb342da813fe132af0b0ab89e883da2a7e15e12
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 14 18:01:02 2015 -0700
+
+    Minor comment tweak in `baseClone`. [ci skip]
+
+commit 958381d3ddeba8c2c6c0caef5a1817da7cce8b87
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 14 18:00:22 2015 -0700
+
+    Tweak `_.modArgs` docs. [ci skip]
+
+commit 0a165675cea91ba12d24da8176cbf182c4e022f9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 14 07:41:07 2015 -0700
+
+    Allow coveralls service to fail.
+
+commit ce13b6abfd45ca3b7edf90636afff8eeb70308af
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 13 10:09:27 2015 -0700
+
+    Make test labels more consistent.
+
+commit 804e00cc26b2c2197cae81d8648d5356c208bab0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 12 18:06:20 2015 -0700
+
+    Ensure bound `Date` can be instantiated with all 7 params.
+
+commit f79de23be5fbf12b77a70b63a0a4a14406a858d7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 12 18:03:26 2015 -0700
+
+    Remove unneeded pattern sub in travis.yml.
+
+commit 3404dc0b754bde2f5c4453bccc6eba4f45864a27
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 12 00:24:35 2015 -0700
+
+    Update tested browsers for saucelabs.
+
+commit 51c9f4f9888b83252a5c01a25623417d87e2e486
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 11 08:33:11 2015 -0700
+
+    Cleanup `_.omit`, `_.modArgs`, &  `_.pick` tests.
+
+commit 028ecf556114fb3c6ab1c625f346a748a1f0c60f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 11 08:30:18 2015 -0700
+
+    Allow `_.modArgs` to accept an array of transforms.
+
+commit 419fb082669e6bfde90c81177ecc29c55e7e4231
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 11 07:31:36 2015 -0700
+
+    Simplify `createCache`.
+
+commit 1a28ef32442a26f3d5c301f38e12aa753ef213f5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 10 18:37:09 2015 -0700
+
+    Ensure `_.includes` matches an empty string on empty strings. [closes #1275]
+
+commit 9121b140098f7867ce8bab620beb22434433c717
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 10 08:17:39 2015 -0700
+
+    Cleanup `_.mixin` test.
+
+commit 9b54891474803d506cc8cbb331b014c7e0e62fd3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 10 07:57:39 2015 -0700
+
+    Add `ceil`, `floor`, and `round` to `lodash` doc block. [ci skip]
+
+commit 058196e42a1dd9864982b81ab337245561bcbdb9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 10 07:22:36 2015 -0700
+
+    Rename vendor/benchmark.js license. [ci skip]
+
+commit 22743e06d5b330b1c035edff14c8ca82d6d37dab
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 8 08:27:52 2015 -0700
+
+    Add round test for `NaN` precision params.
+
+commit c8b818f011257b09f98d12fabde92ba5a77a43d3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 21:27:00 2015 -0700
+
+    Cleanup `_.ceil`, `_.floor`, & `_.round`.
+
+commit 595eab26149b4781f54c38b4fc3adde12d8730bc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 16:48:48 2015 -0700
+
+    Rename license file to align with GitHub defaults. [ci skip]
+
+commit 288b6ea692fba2d9cc16b18abdadb1d9a207af48
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 15:24:53 2015 -0700
+
+    Remove unnecessary `lodash` binding.
+
+commit 7db606857dc4397c674b32dd33173722393ffa33
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 14:33:28 2015 -0700
+
+    Adjust tabs to two spaces for html files.
+
+commit 746034a4fc54f39d2664400e4d1c8c34d19bd2cc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 13:51:06 2015 -0700
+
+    Simplified `bufferClone`.
+
+commit f8ec95d87252243fa459a240503d23077277176f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jun 7 13:16:51 2015 -0700
+
+    Switch `null` use for clearing vars to `undefined`.
+
+commit ba082b74a77f121bfc8491fbcfd8cb516d79572c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 6 15:30:56 2015 -0700
+
+    Adjust lazy heuristic to punt if not using shortcut fusion.
+
+commit ab981ce15a1e3f34289fb990006265ddfaed3e83
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 6 14:53:45 2015 -0700
+
+    Update lazy tests using larger arrays.
+
+commit e143936a8291480c5e6fa5bb5ba019d411ac9535
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jun 6 14:53:31 2015 -0700
+
+    Simplify lazy chaining by removing support for `dropWhile` and `dropRightWhile`.
+
+commit 497cde7e926eb179438254acdfaf06a9d290197e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jun 5 17:30:39 2015 -0700
+
+    Add `LARGE_ARRAY_SIZE` to more easily track what's considered a large array.
+
+commit 948faf6cf9e4086319c0597a5fa7569039222b4d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 4 21:15:09 2015 -0700
+
+    Fix `object` doc param typo for `equalByTag`. [ci skip]
+
+commit 56f199bd69e2f20478d7595c4786d4e36dd3b020
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 4 21:14:26 2015 -0700
+
+    Make `_.sortByOrder` support orders of "asc" and "desc".
+
+commit 9e1f68d9eb20927a6437ef2919c8397743edc625
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 4 19:27:19 2015 -0700
+
+    Update vendor/backbone to 1.2.1.
+
+commit 7a9011c7e100ead04ba02ee4e9e1b7348e28f0e0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 4 09:40:54 2015 -0700
+
+    Add `modArgs` to `lodash` doc block. [ci skip]
+
+commit 224a6c1e7c2803a4a2cec34bb344ef8cf6c40c3e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jun 4 09:40:30 2015 -0700
+
+    Adjust lazy eval heuristic.
+
+commit c89fe8bdbc07c3d6545eb5b91d6005b54b874b12
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 3 23:20:03 2015 -0700
+
+    Simplify array properties of `LazyWrapper`.
+
+commit cce9c2225e471190fa84407c47e7ecd69df8526e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 3 22:54:47 2015 -0700
+
+    Ensure bailouts of lazy chaining will fallback appropriately.
+
+commit bdbc157c30a21b1b4856722ed6dde85c36403189
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jun 3 22:51:04 2015 -0700
+
+    Whitespace nits. [ci skip]
+
+commit 11eebfb78dde0f92dd8616c2413395c07c1b5189
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 21:40:25 2015 -0700
+
+    Cleanup `fn` declaration style in tests.
+
+commit 4beadcc4f3bd21603307cb43a31ce1ebc337cb8a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 21:04:18 2015 -0700
+
+    Add `this` binding test for `_.modArgs`.
+
+commit e062c8c6f251afc3da4c1211f0f0f39ad5d0308c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 21:03:58 2015 -0700
+
+    Tweak test label.
+
+commit f4709ce1f049dcf447d294f3cb02ce69fd040cd1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 21:03:37 2015 -0700
+
+    Move `this` binding tests around.
+
+commit 50e129bd8f395326a339befa044a4836ea6987cf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 20:14:55 2015 -0700
+
+    Add function checks to `_.modArgs`.
+
+commit f402dbd1e35377610a1560d106cd310e49396e27
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 19:35:47 2015 -0700
+
+    Use `_.isFunction` in `_.isNative`.
+
+commit 55af8b4cb4d7e413608bb4bf74ce196bcd4b0fa4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 19:35:28 2015 -0700
+
+    Remove `_.isFunction` fallback test.
+
+commit 005b587588534b13c6e82a55bb66bdf531a07d4c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 08:41:01 2015 -0700
+
+    Cleanup `_.modArgs`.
+
+commit de4463d9a87f915b40d6ffadfc86f51a22f3dbf7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 08:16:47 2015 -0700
+
+    Add basic `_#concat` test.
+
+commit b3d577c93711be96bdd159827fe7b7c6278d1a85
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 08:10:10 2015 -0700
+
+    Replace `wrapper` with `wrapped` in docs/tests.
+
+commit 51576018fda0005d41243419f4c7b6645e384288
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 08:07:22 2015 -0700
+
+    Cleanup `arrayConcat` and `wrapperConcat` docs. [ci skip]
+
+commit 1b4f210d82bd6f379a04de4a51f62fbf882449aa
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jun 2 07:47:18 2015 -0700
+
+    Add sparse array test for `_#concat`.
+
+commit 4972c94aed5692a40036c3ed812c1ec40d1c8040
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 1 23:05:53 2015 -0700
+
+    Remove the dot from the iojs identifier in travis.yml.
+
+commit 642d77bb91fc5ffbd4398e2e36698ac93627d64a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jun 1 00:14:19 2015 -0700
+
+    Add `arrayConcat` and `arrayPush` helpers.
+
+commit 88270a7b6674da869357ac65793812ba5de559c3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 31 13:27:35 2015 -0700
+
+    Add built-in `Date.now` fork back.
+
+commit 9c339367ad46c2de1b0b309018b0b40472fe445b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 29 11:26:14 2015 -0400
+
+    Optimize `baseFlatten`.
+
+commit f69715d999fe74682c95f65459ae2c9d51fc6ead
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 29 07:16:10 2015 -0400
+
+    Increase coverage of `isLaziable`.
+
+commit 79990cbb27c290a0f6588fc5b31d2379f313121c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 29 06:24:02 2015 -0400
+
+    Remove `baseIsFunction`.
+
+commit a02be5442109a27b3e8ff0a10ccd40abcdf22c98
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 28 22:18:39 2015 -0400
+
+    Increase max duration allowed for sauce to run tests.
+
+commit 20127f6a2a54393d8d0baaf0407ed2b8566903f6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 28 16:32:19 2015 -0400
+
+    Re-fix `_.isFunction` in old Safari.
+
+commit 02a132a9d78212a6c58d74ef350890ab027e0019
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 28 14:29:26 2015 -0400
+
+    Ensure `_.chunk` floors `size` values. [closes #1243]
+
+commit 7c95c5e80a3980eacff1f4fff1e59c7e07a25967
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 28 11:33:03 2015 -0400
+
+    Remove wild semicolon.
+
+commit c0bc5657ea9e415311620efd0fedc62fcf45302c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 27 17:49:07 2015 -0400
+
+    Remove unnecessary tests.
+
+commit dfec16670421c76292666ea44e3de24e4c72e40c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 27 15:21:52 2015 -0400
+
+    Remove dual environment `_.isElement` test.
+
+commit 32f223c683671cfbfee49394b3e96e728a7d741b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 27 15:20:22 2015 -0400
+
+    New line nit.
+
+commit 722eac1681b1d03b68889cc3e8df8dd745073858
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:49:39 2015 -0700
+
+    Simplify `_.isFunction`.
+
+commit 6bcbb6f7bbae7547139f18d5b974ce3036c40357
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:39:29 2015 -0700
+
+    Simplify `_.now` and `_.isFinite`.
+
+commit d266a0c0cee94f8f62fcb0dda54478c4ad4caac1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:36:42 2015 -0700
+
+    Simplify `_.parseInt`.
+
+commit acf82af0bfa6d0629a6cd4d512f0e18864fcf19c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:35:35 2015 -0700
+
+    Simplify `_.isElement`.
+
+commit 98956056e3c85e0bde5ab613b9fddc73cabf798f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:26:48 2015 -0700
+
+    Simplify `bufferClone`.
+
+commit ae0bb54b2d6a865c9fb16c57906399216f9b175c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:22:06 2015 -0700
+
+    Remove `bufferClone` fork.
+
+commit 255da0a0d7a8423d615870963e0ff083013b390d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:17:36 2015 -0700
+
+    Remove `_.isPlainObject` fallback.
+
+commit c0e8cc0254a74f7a19cd9599fcf6b59b75c2dee2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 11:14:25 2015 -0700
+
+    Remove `_.isArguments` fallback and `_.support.argsTag`.
+
+commit 41cec2464461b77940ef9533f390fd0ff9fbbb48
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 26 10:49:52 2015 -0700
+
+    Remove `debounceOptions` var.
+
+commit 2ecdedd5b48b20f5ae786147fff4fd16749e83c8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 25 16:25:57 2015 -0700
+
+    Bump to v3.9.3.
+
+commit 358477c31b971255276513ad62f005324cbfa4c8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 25 15:58:57 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit c1948f10a2a36c1cc1bf3c736a1713d47e938915
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 25 12:19:00 2015 -0700
+
+    Avoid `NaN` use in `isIndex`.
+
+commit d33c487b290e34c9b071a25fea544094e08c4aa6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 25 10:03:30 2015 -0700
+
+    Add `parseFloat` to `contextProps`.
+
+commit daa8428b32e2aa96d5253ecaf0c7f77eb2c946d2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 25 09:36:46 2015 -0700
+
+    Drop `parseFloat` in `isIndex` in favor of a more strict regex. [closes #1229]
+
+commit 0529df763209f9002908c2f2a83a2463f0442e85
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 24 00:30:27 2015 -0700
+
+    Bump to v3.9.2.
+
+commit fc31fb9eba203555750eeebbed914067ec1b6df1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 24 00:30:08 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit 54436e341a7b4e6b3a146e2644ea863d21c24e7f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 24 00:27:33 2015 -0700
+
+    Update travis deps.
+
+commit fc35ac4d676ee99e183d17a3a8d52d7239737ec0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 21:43:01 2015 -0700
+
+    Cleanup shortcut fusion test.
+
+commit 28a0b6f901f2c9b61cd7a1850adacfef745019e4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 20:12:50 2015 -0700
+
+    Fix test for removal of `_.support.funcNames`.
+
+commit 1b8f2c2adb02cf4fbbfa634569e68d36851eec50
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 20:12:20 2015 -0700
+
+    Make `isLaziable` work with wrapped lodash methods.
+
+commit 6c8988ab69222f6c3334100beb8dbaae66ccce9d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 16:15:12 2015 -0700
+
+    Use `POSITIVE_INFINITY` and `NEGATIVE_INFINITY` more.
+
+commit e3c600a681a4b885d73576ebb9e914d37ea19829
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 16:14:37 2015 -0700
+
+    Remove rogue new line.
+
+commit 979e0de65962d10d9e647d0ffd61619d3efee5d0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 16:14:15 2015 -0700
+
+    Remove unused function `charAtCallback`.
+
+commit a76c10416d585a1832577dfc989c31fb1cce7383
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 12:37:36 2015 -0700
+
+    Tweak docs for `_.difference`, `_.intersection`, `_.union`, & `_.xor`. [ci skip]
+
+commit 1276bf8c7260f3fa47ff277daad051c5da314c7e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 23 00:05:34 2015 -0700
+
+    Correct `_.sample` to avoid favoring putting the second half of the array into the front and the first half in the back.
+
+commit 9ef5c5d639d57fdbf2ad924de0c754c8f52ba9fc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 22 22:09:09 2015 -0700
+
+    Change var `endIndex` to `lastIndex` for source consistency.
+
+commit 69f51896c959ce38fab373ebb505c265ae7bd46d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 22 22:08:45 2015 -0700
+
+    Optimize `_.sample`.
+
+commit 5f845aa6f84528138f10114ed0c346b5787855db
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 22 22:08:29 2015 -0700
+
+    Optimize `baseIsEqual`.
+
+commit 87c610beaa6fcb07e37111852691e22b6be5dd68
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 22 00:44:08 2015 -0700
+
+    Fix doc typos for `arrayExtremum` and `baseMatchesProperty`. [ci skip]
+
+commit 3a331ec156d4b210ccbb2535e88c0a1764f2bb47
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 21 08:46:31 2015 -0700
+
+    More which/that switching in docs. [ci skip]
+
+commit 6c5ac490ab3cdfd3411d51528ed0491a32049429
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 21 08:46:10 2015 -0700
+
+    Document partial args of `_.method` and `_.methodOf`. [ci skip] [closes #1223]
+
+commit 50b9840db194db0ae2aefe168004b24db13bf443
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 20 08:00:25 2015 -0700
+
+    Change dep version in lodash-cli npm-shrinkwrap.json for travis tests.
+
+commit 41e884a1d27144e6b3bb00416f6f5b50789986ca
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 19 14:59:55 2015 -0700
+
+    Poison the free variable `root` in Node.js.
+
+commit 15841b191d1b66f1ad32c617abb3f1a1b333eaeb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 17 21:49:40 2015 -0700
+
+    Bump to v3.9.0.
+
+commit 65514d89adbadc4a153ed92584ca91be55ab41b9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 09:05:31 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit c6f8896826a82d894e0335e78e42d8d8f80bb87a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 19 08:18:01 2015 -0700
+
+    Ensure `_.get` can return `null` values. [closes #1216]
+
+commit 882d84f1e66776695eed4e784bb8a66507912f5f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 18 07:29:35 2015 -0700
+
+    Ensure `_.merge` skips `undefined` values if a destination value exists.
+
+commit 0eba3a3678711a1d3ec244527bf2302a39c82339
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 17 23:12:00 2015 -0700
+
+    Update `ecstatic` and `istanbul` travis deps.
+
+commit 756b28c3abc3481e79ef37666d2f372bdd2f577c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 17 10:44:53 2015 -0700
+
+    Rename `value` param to `srcValue`.
+
+commit d78ebc40aed5e970b7930b295929c681643b0d9a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 17 00:54:26 2015 -0700
+
+    Fix `isEqual` tests on older Safari.
+
+commit 58aea21b8277175e2e3b8a5d95e7eb17ca58028c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 22:47:58 2015 -0700
+
+    Use 'xo' instead of 'hi' for string tests.
+
+commit c2b1d61dd1da466c750b6b30575c05e5f475bab3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 22:46:43 2015 -0700
+
+    Add `toObject` to `_.pairs`.
+
+commit f4d72dba06711283503aa872c0a03cb723d9fc9a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 20:31:56 2015 -0700
+
+    Adjust test labels for consistency.
+
+commit 31e81d7be26b865623b1595230a2cedcf0482558
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 20:27:01 2015 -0700
+
+    Add string tests for `_.isMatch`, `_.matches`, & `_.matchesProperty`.
+
+commit 6c9123beeecc68f6ace6f88b97ad5da781a72904
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 18:52:04 2015 -0700
+
+    Add `toObject` use to `baseIsMatch`.
+
+commit 0fa0397da2c0e876ac3666612b23962ce7cebaa1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 18:51:30 2015 -0700
+
+    Add checks back to `isEqual` and simplify checks in `baseIsEqual`.
+
+commit b652fc7e1ade5c201ffbdb8451237d407fd4e7f1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 13:56:49 2015 -0700
+
+    Reduce `baseIsMatch` and `isMatch` by adding `getMatchData`.
+
+commit c42fea0d3de6130195603b31d4a5db7640b319cc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 09:29:11 2015 -0700
+
+    Remove `isStrictComparable` use from `_.isEqual`.
+
+commit 48a56a848a2cd48861742769f7a4cf14374531f5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 16 08:02:14 2015 -0700
+
+    Add test for modularized `flow` and `flowRight`.
+
+commit d6937baa8e8d93675f5b54765c3f3327e72c6688
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 20:21:39 2015 -0700
+
+    Simplify `getFuncName`.
+
+commit 3490f8acb5627b5c426ac2262dc6bc5a8628e9a1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 20:36:34 2015 -0700
+
+    Ensure `LodashWrapper.prototype.thru` exists before creating a wrapper in `flow`.
+
+commit 46ace7e8e87f406ee1e8b7d232f7e465b78174e1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 11:30:57 2015 -0700
+
+    Simplify `getNative`.
+
+commit 698956e130e613bdf54b55455847993bc44ba28c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 08:55:47 2015 -0700
+
+    Move `parseFloat` into `isIndex`. [closes #1209]
+
+commit b25cd399532164b79346ca8d5bec84e54d5e8ca4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 01:29:17 2015 -0700
+
+    Add `isObject` check to `getNative`.
+
+commit de4f5eb2cab75ddd9889c26672b7ba35fd892a4c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 00:30:20 2015 -0700
+
+    Allow for `getNative` to accept a nullish `object` value.
+
+commit ccc5fa39817c1bbb2ae58e1f95d1d1bfc93d6791
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 00:21:31 2015 -0700
+
+    Add `getNative` helper.
+
+commit b899a1918423d0ed43523b397546da0dd5c2b051
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 15 00:22:01 2015 -0700
+
+    Change "it is" to "it's". [ci skip]
+
+commit 6af7fac344c7250e31e292e700bd52230f130d75
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 14 21:27:11 2015 -0700
+
+    Minor style nit in `_.isObject`.
+
+commit 49ef2b4d545cfe3979a999d47f0f09644d8ffd28
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 14 09:13:00 2015 -0700
+
+    Clarify `_.debounce` and `_.throttle` docs. [ci skip]
+
+commit fcc09a7375bc52f1b483acf0e8151c220a9c5f22
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 23:39:06 2015 -0700
+
+    Use strict equality check since its type isn't guaranteed.
+
+commit 8e9ad4df97248f86b407e1105b6c0f69fd0dc267
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 23:25:47 2015 -0700
+
+    Avoid testing Backbone in IE6 in sauce.
+
+commit 4dfcfd2542982a1c3c01672a5c04295b598a167a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 23:25:31 2015 -0700
+
+    Cleanup test/backbone.html and test/underscore.html.
+
+commit 12081c9bd6ac82ff2e8accdd03be6fec720490f3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 21:04:51 2015 -0700
+
+    Bypass `vm` module use for ChakraNode.
+
+commit abee7fdfa2b990bb4c62aac349e6c8de4c86f444
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 21:03:09 2015 -0700
+
+    Update vendors.
+
+commit ca0bc0632b79d553eb45b39216d13f6a3a42844e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 08:57:03 2015 -0700
+
+    Reduce `_.has`.
+
+commit e465750cd2846a8e5075c2b460db8010dda282bb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 13 00:51:30 2015 -0700
+
+    Fix failing `_.has` tests in Rhino.
+
+commit 934b08f720b28db0c8d784fbf518a2a0a1e835cc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 12 23:41:14 2015 -0700
+
+    Avoid mixing boolean and object types in variable assignments.
+
+commit 78cc98840bde5b5f03bbcb7e58c89b25a981ee54
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 12 21:19:12 2015 -0700
+
+    Remove fast path from `_.isMatch`.
+
+commit d4cd7a120fe3c87a741af466d73c438c2aa8698d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 12 21:18:35 2015 -0700
+
+    Remove `support.funcDecomp` and `support.nonEnumStrings`.
+
+commit 4b6c91bbf1337f45330bb7c0cb15c323967e8090
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 12 09:23:07 2015 -0700
+
+    Remove `support.nonEnumArgs`.
+
+commit e3be2b44517170adf2a3344f8153e6bc40fb080d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 12 08:44:02 2015 -0700
+
+    Ensure `_.has` treats sparse arrays as dense.
+
+commit c6ff845ecb3891089afe8b8696f7586a19452f07
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 11 23:52:56 2015 -0700
+
+    Ensure `_.intersection` works with a single array. [closes #1199]
+
+commit 846bde35ff2ff264ef4db668bf8f8c18237facad
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 11 10:31:38 2015 -0700
+
+    Use `hasOwnProperty` instead of `objToString` for the creation of `reIsNative` to avoid issues with core-js. [closes #1197]
+
+commit 69990ae22691b9b3fa153eae2ddda9d3e82f6a94
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 10 23:13:18 2015 -0700
+
+    Fix test error in Rhino with CommonJS support.
+
+commit 415fc81577122628a4da9303a1afb0d0883b086e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 10 20:20:18 2015 -0700
+
+    Remove `Narwhal` reference from source.
+
+commit b675566e23cc423c5549e3770d0b5a401781944e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 10 20:10:59 2015 -0700
+
+    Cleanup bizarro values, `vm` values, iframe values, worker addition, & module additions.
+
+commit 190da0dcd4b84b16e86bca6fd6054b36097a3eb6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 10 20:09:14 2015 -0700
+
+    Capitalize comments in test/index.html. [ci skip]
+
+commit 5c40f93ca36c88c06e8a67bbf35cd93a3c054d59
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 10 15:29:25 2015 -0700
+
+    Fix AMD tests in PhantomJS.
+
+commit 879c1e4992f0209a274f4013318da566cb3882a4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 9 18:02:09 2015 -0700
+
+    Increase test coverage.
+
+commit 311334c9e18d36f67a277ab1f2d12afe6efab239
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 9 12:40:07 2015 -0700
+
+    Add doc examples to `_.gt`, `_.gte`, `_.lt`, & `_.lte`. [ci skip]
+
+commit dc5268b0c0fc5ee14217863f3f11213823593d11
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 9 12:25:31 2015 -0700
+
+    Add `_.gt`, `_.gte`, `_.lt`, `_.lte`, & `_.eq` unit tests.
+
+commit d77ace6dc37ae880442bf275adadc60592090809
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 18:56:20 2015 -0700
+
+    Upate tested Chrome version in sauce.js.
+
+commit f0b3c1a9ab7842a6df057669063a4d32a9a88b3b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 18:55:57 2015 -0700
+
+    Cleanup `createFlow`.
+
+commit 9efb73f592faba4b064e03411517e7cb1e9c24b2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 11:21:11 2015 -0700
+
+    Remove `nativeAssign` and `getOwnPropertySymbols` use.
+
+commit 569b4b29aaf8111064d64853149df6fe097cc790
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 11:30:26 2015 -0700
+
+    Add case of 5 to `createCtorWrapper` to align with `bindCallback`.
+
+commit a61bde5b7837e2fe1c0a6d70cd06d90672121028
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 09:49:54 2015 -0700
+
+    Ensure `_.bind` works with ES6 class constructors. [closes #1193]
+
+commit 542dd67892fa04a133a1d0bd90fcf7a00a3cde2f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 8 00:17:48 2015 -0700
+
+    Update param docs for `createExtremum`. [ci skip]
+
+commit 172eca60814f95c491e7c305a13cf2f6d3124bc4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 7 23:59:51 2015 -0700
+
+    Avoid using `require` in source because browserify does a quick regexp match for \brequire\b before deciding whether to build an AST to get require calls.
+
+commit 004aaed7830509c8b002e9c340383675f6d088d6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 7 23:53:38 2015 -0700
+
+    Remove odd string support from `createExtremum`.
+
+commit a1b15df6489f47498edda244552c9804e046a45d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 7 01:05:16 2015 -0700
+
+    Update tested Rhino to 1.7.6.
+
+commit b5d5bef6787f44a9ed4bb4126b247ca7c234f1f0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu May 7 00:38:22 2015 -0700
+
+    Avoid undefined `length` variable use in `createExtremum`.
+
+commit db67ae12eca7c784533fac358a32de68bc205382
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 6 01:39:02 2015 -0700
+
+    Optimize `_.max` and `_.min` when invoked with iteratees and add `_.gt`, `_.gte`, `_.lt`, `_.lte`, & `_.eq`.
+
+commit 7dfd7ad5b95442e34de18e2ba0a0845d355c9cac
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed May 6 01:37:56 2015 -0700
+
+    Minor adjustments to param docs for `baseCompareAscending` and `matchesProperty`. [ci skip]
+
+commit ca5fa9e84dd5553435993a9e0e565824850b81cd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue May 5 21:31:36 2015 -0700
+
+    Add support for an immutable Map to `_.memoize.Cache`.
+
+commit 1afcfa440666bf24277f431523b5b6c2daeeafad
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 4 21:53:12 2015 -0700
+
+    Use precomputed values for `MAX_ARRAY_LENGTH` and `MAX_SAFE_INTEGER`.
+
+commit 95b1455b625b7c71c2375afc4ce32ebabfebe76b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon May 4 09:06:06 2015 -0700
+
+    Consistently use `callback` as the variable to store `getCallback()` results.
+
+commit d82593741118a0b61021514cc803a70c94400107
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 3 22:57:45 2015 -0700
+
+    Ensure `customizer` results are respected by `_.isEqual`.
+
+commit ee182df533f30a282111bae1e5dfa7236c3dee7e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 3 19:38:58 2015 -0700
+
+    Optimize object comparisons in `_.isEqual`.
+
+commit 14651d8ea813091edc71bec32d264392a091d295
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 3 17:20:51 2015 -0700
+
+    Remove `customizer` assignment from `clone` and `cloneDeep`.
+
+commit 7e4ed7c1a9129a1325ab243da5e42066b2f9a10c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun May 3 13:47:40 2015 -0700
+
+    Ensure `baseCreate` works in ExtendScript.
+
+commit 13fe88c03f8153732d2385133e9bd1ed2112d999
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat May 2 23:00:57 2015 -0700
+
+    Cleanup `baseIsMatch` and `equalArrays`.
+
+commit 7b80a780c712afc7d8fc4397f2b04b8556c0ffdb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 1 22:16:59 2015 -0700
+
+    Remove old Opera from Sauce tests.
+
+commit 2b465bdf820d147806f873d07c944bd27316c08b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri May 1 21:00:50 2015 -0700
+
+    Update QUnit dev dep.
+
+commit 6d521195975bae2dd1f40fb8b1807f02a75d8bfd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 29 21:04:12 2015 -0700
+
+    Bump to v3.8.0.
+
+commit b75041173c9aa35343fb4be44d7a28a8acae03f3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 26 21:16:05 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit 23eba0a0297906238e2726d0aa7e9ebff0fc8209
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 30 23:50:58 2015 -0700
+
+    Avoid `isArrayLike` in `createBaseEach` to bail out early when nullish.
+
+commit 566781cab25e0e8374ecc48e7cb57e295ddb2502
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 30 22:10:52 2015 -0700
+
+    Loosen `-0` and `0` checks.
+
+commit 0ea1fc5602f473ea89ac7617d3c5f3a6761ba9e5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 30 09:08:31 2015 -0700
+
+    Avoid var name `pad` in `composeArgsRight`.
+
+commit 2ce9e09e8bbf55dcc4e4df10ac3b9cb602fca5a8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 30 09:06:48 2015 -0700
+
+    Ensure `_.padLeft` and `_.padRight` handle empty strings correctly.
+
+commit 8ae7d8aa078123d65319d9931a32f7a1f6d66f14
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 28 23:53:01 2015 -0700
+
+    Simplify `SameValueZero` doc notes. [ci skip]
+
+commit ce6ccef2d03461fa7337e105a24175d560b60bef
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 28 21:04:45 2015 -0700
+
+    Ensure `baseAt`, `basePullAt`, and `pullAt` handle nullish values correctly.
+
+commit 2c6d8805425b5d36470fdfb2a0aee3cf1554b3d3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 28 09:18:32 2015 -0700
+
+    Loosen restrictions of `_.intersection` and others to accept array-like objects and add `isArrayLike` helper. [closes #1163]
+
+commit bf89287c569db23cc303fcaad490acb733f78ba9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 27 23:11:58 2015 -0700
+
+    Optimize lazy `slice` for `start` of `0` and an `end` value.
+
+commit df176dfe8ad62293daa0777549509ff2db9e8c9f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 26 14:22:46 2015 -0700
+
+    Fix modularized npm build tests.
+
+commit 141a32d388d93a306c5ba515196fc51b8299904b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 26 10:59:29 2015 -0700
+
+    Add `_.callback` test for augmenting `source` objects.
+
+commit 37786b76edd0b086184a0162778d91315f6088b7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 26 00:46:33 2015 -0700
+
+    Minor whitespace nits. [ci skip]
+
+commit 02b920f259aa310a42dfe6e6c6d2731f73acd22f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 23 08:38:58 2015 -0700
+
+    Add `_.flow` and `_.flowRight` tests for curried functions with placeholders.
+
+commit 31e25f88a0366486dedce953ec186f6bf9e23840
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 23 08:06:51 2015 -0700
+
+    Narrow bitmask check in `createFlow`.
+
+commit 231c8a468eb5a6bfc17e89d59b4ef4dd3a176e7a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 23:10:17 2015 -0700
+
+    Replace "that" with "which" in `pickByArray` and `pickByCallback` docs. [ci skip]
+
+commit ae346f564f9f5afbe5e7c25c4f7d380f5231b8bd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 20:44:56 2015 -0700
+
+    Avoid lazy eval optimization in `createFlow` if metadata has placeholder arguments. [closes #1160]
+
+commit fcc0608cf220b60c1d62b4e7e2f04213a1c2677a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 20:23:30 2015 -0700
+
+    Only use built-in Object.assign when in strict mode.
+
+commit 641cd63462855299e52c652cd0c0ad7cebd49bce
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 20:17:39 2015 -0700
+
+    Fix old V8 JIT bug that has cropped up again.
+
+commit 0b907a3efa0ac8879bbed20a106c2616147563ba
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 20:16:43 2015 -0700
+
+    Make tests work in Phantom 2.
+
+commit ce180cf2bff7fa44a83622c11c762d9a7b810107
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 07:18:14 2015 -0700
+
+    Excuse Underscore _.now test to avoid occasional false fail in sauce andrioid.
+
+commit d97276404ca8af3f1b7bf78dd4bc48aa8c291b35
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 22 07:09:52 2015 -0700
+
+    Update excused Underscore tests.
+
+commit e317fdfa3db55058bb0a7f4757a04890de962f4c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 21 08:03:55 2015 -0700
+
+    Cleanup deep path tests.
+
+commit 150ea2639a914b74772175edfd64215e3697e8f6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 21 07:52:52 2015 -0700
+
+    Add complex tests for unquoted bracketed property names.
+
+commit a551348b401bd53aa221f524f6211ed63c9950b3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 21 07:56:15 2015 -0700
+
+    Fix `preventExtensions` definition typo. [closes #1153]
+
+commit 3429b5d66184d9e1d555282d40f24eaa9e1efb14
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 21 00:02:28 2015 -0700
+
+    Ensure empty brackets are ignored by `_.get` and `_.set`.
+
+commit c8314b215bfd5e467fec24c5ccdb4ceea1a075f1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 20 08:55:25 2015 -0700
+
+    Doc and var name tweaks to `_.unzip`, `_.unzipWith`, and `_.zipWith`.
+
+commit 5929f7d23b39b3f1cd8d410005596ff3bbcbe8ce
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 20 00:35:41 2015 -0700
+
+    Newline nit in `_.assign` doc. [ci skip]
+
+commit 85a7df3d276e9a75590d6dd7cf190a88f635f98d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 19 23:16:54 2015 -0700
+
+    Add `_.unzipWith`.
+
+commit e6c5a0e848e583ad86377bdd5630e769c333e6b9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 19 20:01:27 2015 -0700
+
+    Update iOS comment on `getLength`. [ci skip]
+
+commit 4d6e57a5e698b7b9c69ac9a16b472bce795ab981
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 19 10:32:27 2015 -0700
+
+    Make `_.zipWith` act like `_.zip` when no `iteratee` is provided and make `_.unzip` ignore non array or `arguments` object values.
+
+commit 936a1c27646451844f4ebbb00b28ca13d01bd037
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 18 11:24:11 2015 -0700
+
+    Add support for `thisArg` in `zipWith`.
+
+commit a08a3c6096b46a431bf1a5360f1974ad65cf5ca1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 18 14:16:52 2015 -0700
+
+    Cleanup tests.
+
+commit 20ba0bd1dcadb79389860fd9acddce6fa84d0ff4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 18 09:31:30 2015 -0700
+
+    Fix `_.uniqueId` test to properly compare values.
+
+commit 75ce6b82e802f843dc6d3bf9fe67ec45d3a78f81
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 17 09:04:22 2015 -0700
+
+    Add `sum` to guarded doc note in `_.map`. [ci skip]
+
+commit 9749ac56baf7419d47a6a518728421aede0288e5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 17 08:37:55 2015 -0700
+
+    Remove extraneous docs for methods that reference others. [ci skip]
+
+commit 746f9bb7783ce6e95d02232f1f12adb7bd9e49ab
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 17 08:35:41 2015 -0700
+
+    Add `_.mapKeys`. [closes #169]
+
+commit f2dae588aa21975f173a0b5973123817f16fcace
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 17 08:27:14 2015 -0700
+
+    Add test labels to help track down odd false fail.
+
+commit 9f3f0a76aa318138422fe05d0eecedb3930502cc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 16 20:07:48 2015 -0700
+
+    Ensure `baseGet` returns `undefined` and not `null`. [closes #1136]
+
+commit 30f28a51ca62ca8990b29ec21d33e4d0d38ecedd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 15 20:08:34 2015 -0700
+
+    Bump v3.7.0.
+
+commit 3e22344782b9217918881ce4e732ba49c0174136
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 15 19:32:58 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit 0b20d89d62a7d4f8724925c15d30fff9b20d248d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 15 19:20:41 2015 -0700
+
+    Ensure `_.times` floors `n` float values.
+
+commit 80d892c7444044204d6984f6a64fa70ad449651d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 15 09:04:12 2015 -0700
+
+    Update Firefox versions in saucelabs.js.
+
+commit 53326bef33f96a6c0a92b7c2b49255eb15a6cf37
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 15 08:44:02 2015 -0700
+
+    Update vendors.
+
+commit f05a5a3abb46739f30e51f2a942b976436368e26
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 22:46:08 2015 -0700
+
+    Fix failing strict mode `_.set` tests.
+
+commit 8581be49773d3d792a56f9860c6fd93f0897ce36
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 22:34:32 2015 -0700
+
+    Ensure `baseGet` and `result` work with strings on nested objects.
+
+commit 0e8277ba9ebb257157869f97fb95915cb015df67
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 21:19:31 2015 -0700
+
+    Cleanup path methods.
+
+commit 3cc2f83912170321184ea51d56a1f90ca5430e8e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 21:18:50 2015 -0700
+
+    Add more string character access tests and adjust array path tests.
+
+commit 177034a49844c2a771ba7fbca3f91b74ea0bedf1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 21:15:18 2015 -0700
+
+    Move `_.filter` benchmark and cleanup labels.
+
+commit f4d06e5183cd9fb45a200b134076609648dfa1a1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 12:54:30 2015 -0700
+
+    Remove unneeded "use strict" directive.
+
+commit 637a6b5f7e63fc15b3cfa98ba16b8fa997b8ae85
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 12:29:19 2015 -0700
+
+    Optimize `_.invoke`.
+
+commit 75445b8b98316391df1ab7d11bf6bdc7d43c313a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 12:14:12 2015 -0700
+
+    Update ecstatic travis dep.
+
+commit f96de55ac7cfe5c5108f5b967b241e3881c1664f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 14 09:25:20 2015 -0700
+
+    Optimize `isKey`.
+
+commit c4d4af3b5a97d1b5652f386b6eb0fa20f5151058
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 20:29:58 2015 -0700
+
+    Make `freeGlobal` detect align with `freeSelf` and `freeWindow` checks.
+
+commit 5dfee4434027f90bf786ea113504b83fbb0edced
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 20:29:26 2015 -0700
+
+    Cleanup doc blocks. [ci skip]
+
+commit 99f5857d84dcdfcccd841cd111a00d54b8b74b64
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 20:28:25 2015 -0700
+
+    Add stable sort tests for objects.
+
+commit 520f7c68128bfac7ef827aa70eaa00902a1b4af2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 09:30:01 2015 -0700
+
+    Ensure `index` in `baseSortByOrder` is an integer.
+
+commit 63d493aa1f7ef6e2396584025cc65e6c99fb4737
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 08:17:01 2015 -0700
+
+    Cleanup `_.sortBy`, `_.sortByAll`, `_.sortByOrder`, & `baseSortByOrder`.
+
+commit 38ab42f8558254d5e9d7c27532ed724e21352e0c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 13 07:43:35 2015 -0700
+
+    Add `Object.assign` reference to `_.assign` docs. [ci skip]
+
+commit 9d90af409bb4ee5f98684e4d6a170fb675790a8a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 12 16:00:21 2015 -0700
+
+    Add bizarro test for `Object.getOwnPropertySymbols`.
+
+commit 20183bbd578cf6da6699928cd13501b0b688ed3a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 12 10:33:34 2015 -0700
+
+    Have `baseMap` use `getLength` and `isLength`.
+
+commit 1d8efe1cf8dae0a8713365e8a1caa14abc69ab69
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 22:15:38 2015 -0700
+
+    Cleanup deep property tests.
+
+commit 23354d413f4af5a9bfcda940cca7a090e5bcdf7f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 22:14:00 2015 -0700
+
+    Add an `_.invoke` test for deep paths.
+
+commit 715f03f5f1a821ffdb417da04ce0280272f309c1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 22:16:03 2015 -0700
+
+    Change `call` to `invoke` in `_.debounce` and `_.throttle` test.
+
+commit ff6bbaed19a5b72cd90973f81e8f43d0892f6c52
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 20:58:31 2015 -0700
+
+    Add more tests for `_.sortByAll` and `_.sortByOrder` used as iteratees of `_.reduce`.
+
+commit 5a1b526b6c0ba389a3188c516b5cfc01b9298611
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 16:34:02 2015 -0700
+
+    Add and adjust deep path examples to `_.method`, `_.methodOf`, `_.property` and `_.propertyOf` docs. [ci skip]
+
+commit 1ef92c87fb5db363115414d30807d7a54123f76d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 16:33:24 2015 -0700
+
+    Use `query` instead of `inspect` in various docs. [ci skip]
+
+commit 0aef5155220ef4c6d7aad84cdfe441dd51b4265a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 16:32:27 2015 -0700
+
+    Rename `baseMethod` to `invokePath` and make use of it in `_.invoke`.
+
+commit 9b5c97666aab2a0dbcb57891b045bb1365b8c651
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 11 11:42:36 2015 -0700
+
+    Ensure symbols work for `_.assign`, `_.defaults`, & `_.merge`.
+
+commit a55d822f9abdb877213b8c4a6b9f337e6b1e2b38
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 21:24:32 2015 -0700
+
+    Add more comments to `nativeAssign` definition. [ci skip]
+
+commit 5b2bde6e0d7db91a28eac847a77e4431596cdab1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 19:56:38 2015 -0700
+
+    Simplify `getSymbols`.
+
+commit 020c5b27dc4e6d9789f91e77a9e720485567a2da
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 15:42:03 2015 -0700
+
+    Add assert labels to `_.tempalte` test.
+
+commit 65457208e5c78ea9d0da19159bc8d3ca20e8357a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 15:41:48 2015 -0700
+
+    Fix feature test for IE tech preview.
+
+commit 6eb1b98975fe237f2016475ac408e90a6385a9be
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 15:40:26 2015 -0700
+
+    Fix test fails in Node 0.12.
+
+commit a927bab6b35d064ef4270ea9f3802d3d129b00f1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 10 09:19:39 2015 -0700
+
+    Use built-in `Object.assign` if available.
+
+commit 48e3e3e8cb6de95140802f29ef42217874443b32
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 9 09:29:23 2015 -0700
+
+    Add `_.method` and `_.methodOf` docs. [ci skip]
+
+commit b5d095401d015db14b8cb28d3bb5150af39c14bb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 9 08:42:05 2015 -0700
+
+    Make `_.result` and `_.set` docs more consistent with `_.get`. [ci skip]
+
+commit b3e58d47944fbb6cdc3da8247a7a3062203cfd46
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 9 07:35:32 2015 -0700
+
+    Cleanup `createAssigner`.
+
+commit 79b064320e5d924298f764db1a33fee23564f0ec
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Apr 9 07:30:17 2015 -0700
+
+    Update `_.assign` benchmarks for newer Underscore versions.
+
+commit e777020e44b84506b95c202b9ea5af66556388e2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 8 13:42:48 2015 -0700
+
+    Update `propertyIsEnumerable` mock for `support.nonEnumArgs` feature test changes.
+
+commit 745d97ebe1f3ae8e4dbee81fbb8a041d5300b187
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 8 09:28:51 2015 -0700
+
+    Replace `typeof` checks for `undefined` with `===` checks.
+
+commit bb06d98a43c0c36dab90e1dd328af6af08faed34
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 8 09:27:37 2015 -0700
+
+    Add `_.has` doc examples of deep paths. [ci skip]
+
+commit 3500b0016cd64bc54f59c7d0063313cd6d0fc44a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 8 08:41:57 2015 -0700
+
+    Store `last(path)` in a var.
+
+commit 7ec916b777c1bb13b295c38dba0e84f7cf16a40b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 8 08:24:44 2015 -0700
+
+    Add additional backtick reference to `_.escape` docs. [ci skip]
+
+commit 3c71f799296c254eeed18492141cd485e1f3d8b1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 21:23:32 2015 -0700
+
+    Fix string indexes with `_.has` in older enviros.
+
+commit a83e70104c798dd1064ef9c241476a8f58edd979
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 19:47:31 2015 -0700
+
+    Ensure complex paths work with `_.get`, `_.result`, & `_.set`.
+
+commit 85af554bac5f6de33dc31b984d761b5e230c9539
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 18:45:39 2015 -0700
+
+    Replace `work` with expected value in test labels of `_.get`, `_.isMatch`, `_.matches`, `_.matchesProperty`, `_.method`, `_.property`, `_.propertyOf`, & `_.result`.
+
+commit 885722afdea2add9fc6483e44b86d7db31376873
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 18:41:51 2015 -0700
+
+    Add `_.has` and `_.methodOf` tests.
+
+commit b2f094da014026074273964f5cba618a476b3248
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 09:29:44 2015 -0700
+
+    Add another path test to a deep property test of `_.result`.
+
+commit 1e85ec67582712048f1a13254387570bfff033c7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 09:29:09 2015 -0700
+
+    Add more `_.method` tests.
+
+commit c8974aac3e99916a2e2e303b21230b72a6b29dc3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 08:26:23 2015 -0700
+
+    Ensure nullish values aren't treated as empty objects in `_.get`, `_.has`, `_.matchesProperty`, `_.property`, `_.propertyOf`, & `_.result`.
+
+commit ad318c04e526a747d2ecd62182c9b3f141ed1e1c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 08:19:24 2015 -0700
+
+    Use `nullish` more in test labels.
+
+commit db73e482064f52c66f5845ae3d331920971eb9e2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 08:07:00 2015 -0700
+
+    Add mutation notes to docs of `_.assign` and `_.defaults`. [ci skip]
+
+commit d13972e0b886631d49b09104dcad5e691e8f8619
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 07:28:58 2015 -0700
+
+    Fix string test fails for `_.matchesProperty`, `_.property`, & `_.result` in IE 6 & 7.
+
+commit b94b75726da9dee33ba94451bb973c60c233252c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:24:50 2015 -0700
+
+    Cleanup `_.property` and `_.propertyOf` tests.
+
+commit 9a2d38acffc3d7fe6d25852c4d83eb0b60bcd59b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:24:22 2015 -0700
+
+    Cleanup `_.method` tests.
+
+commit 537f8f401e774a9b17fb855c69d5ebcee31233f7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:24:01 2015 -0700
+
+    Cleanup `_.matchesProperty` tests.
+
+commit 04f1a799dc1ce622ea35195c226ea65ab3ef6fcb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:23:16 2015 -0700
+
+    Cleanup `_.matches` tests.
+
+commit 74adb2f540c96b24f00842f867b54d62343ab511
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:22:11 2015 -0700
+
+    Consolidate `_.get` and `_.result` tests.
+
+commit a129a2509f9382c6ef554ae42e7c7a634705ddfd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:18:17 2015 -0700
+
+    Ensure `_.method` aligns with `_.invoke`.
+
+commit cc0b8e9d10c28cb3a0765a46d79ae3d635bd468e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Apr 7 00:16:33 2015 -0700
+
+    Ensure methods like `_.get`, `_.has`, `_.matchesProperty`, `_.property`, & `_.propertyOf` can get characters of string indexes.
+
+commit af8fcf234fd2264e39bd359060c9bf4083b8b413
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 13:01:27 2015 -0600
+
+    Add `_.set` test for non-deep paths.
+
+commit e0dc2daf54211450a790cb85c394c046d92a52fa
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 12:59:39 2015 -0600
+
+    Simplify `_.set` for plain keys.
+
+commit c066e655dce3a4263feecf9979c5ca1a7ec7355e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 12:04:07 2015 -0500
+
+    Add empty path and array path coercing `_.set` test.
+
+commit 2698e6f0ead5dd3f99a33514b1f9929e2530583a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 11:54:09 2015 -0500
+
+    Add more array path tests to `_.get`.
+
+commit 63902bde9c9869526043760781f4baa99fce33fc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 11:34:33 2015 -0500
+
+    Add array path tests to `_.set`.
+
+commit c876004fb2ceddc7f3b0e606f0e505364e62fbf7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 09:36:56 2015 -0500
+
+    Ensure `_.set` passes strict mode tests.
+
+commit 633f37bfb6ec82fd7bbfddfe11a505d112cb3ccf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Apr 6 09:29:03 2015 -0500
+
+    Add array path tests to `_.get`.
+
+commit d70bc74dc85f51c23113f0a239d5d842c1211aa5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 21:22:11 2015 -0500
+
+    Adjust `baseGet` and `isKey` to reduce code in other methods.
+
+commit fe1e27fd40ebf11c9f1a6da8d1360dd9bbc50845
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 13:45:56 2015 -0500
+
+    Add tests for `_.add` coercing params to numbers.
+
+commit 8a7a099073237c8edf99d829cf280395ea0f8c3a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 13:20:48 2015 -0500
+
+    Use `x` even more in `support` definition.
+
+commit 1b53b5f9eb193e054ef26df8b316bf6f84bc891d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 13:19:53 2015 -0500
+
+    Cleanup doc block for `_.support.nonEnumArgs`. [ci skip]
+
+commit 81c24a847865241d4e2b10194453ba39509da39c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 08:38:51 2015 -0500
+
+    Add `_.get` test for empty paths.
+
+commit a6f3e0b6af99fcd84bf77ac81ed6bb7d1c8fdd55
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 08:33:04 2015 -0500
+
+    Remove "correctly" from test labels.
+
+commit 6e9e8127b6436cd1748e9c60dfd770081ef87b9d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 08:15:36 2015 -0500
+
+    Rename variable `sum` in doc examples to `total`. [ci skip]
+
+commit 63d43275d335703efa3a14290839d1950aa15087
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 08:13:32 2015 -0500
+
+    Remove unnecessary `parseFloat` from `baseAt`.
+
+commit cb2bf7f8faf941f6583280213cd90da2db28a6c0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 01:39:51 2015 -0500
+
+    Add tests for missing `path` parts for `_.matchesProperty`.
+
+commit 1fae760ccd178d6c45f663ef017c0539933243f2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Apr 5 00:26:00 2015 -0500
+
+    Use perl instead of sed in travis.yml.
+
+commit 4195c4c4bf108ed5d062c73d8881c34212a68e67
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 4 14:32:46 2015 -0500
+
+    Add tests for missing `path` parts for `_.property` and `_.propertyOf`.
+
+commit 13e7a1ed939d8bd0bfbdc5b0d7389a920bb656e0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Apr 4 00:21:27 2015 -0500
+
+    Add `_.isMatch` and `_.matchesProperty` tests for nullish `object` params.
+
+commit ea4357ca9857dc903b045c567398a9021fa036cd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 17:44:59 2015 -0500
+
+    Add `_.callback` tests for deep paths.
+
+commit 5e8255d24d26960279f353c0a4e10a07f52384f2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 17:08:59 2015 -0500
+
+    Tweak path related test labels.
+
+commit 003d6ec43fd888f0b42f2c10589cc497e077f2e7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 17:08:30 2015 -0500
+
+    Add `_.has` tests for deep paths.
+
+commit 9749ff7c672bbcf37de3e20992dfb2ba729835a4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:56:12 2015 -0500
+
+    Add a non-deep property test for `_.get`.
+
+commit c88589e0e5f1ec896f415b08d2e47fa37197613e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:55:42 2015 -0500
+
+    Add `_.result` tests for deep paths.
+
+commit 32ef1bb7a5f6d395e56f48e46e0d1ddf5b443b2f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:47:26 2015 -0500
+
+    Add deep props to key tests to make it more interesting.
+
+commit 206c65904f52da7ec075242dbbb707cdd737f0a1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:47:08 2015 -0500
+
+    Add `_.matchesProperty` test for deep props.
+
+commit 219d4688e4eac7ec1fc3ab49244ec229b897b562
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:36:31 2015 -0500
+
+    Ensure path a property name is teated as a key before a path in `_.get` and `_.set`.
+
+commit adc687f0a098f8703cd07984b4399666248687e9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 12:05:00 2015 -0500
+
+    Add `_.property` and `_.propertyOf` tests for deep paths.
+
+commit 88e59c9a5a5709dbe1881b7e4acb9b05b714eb6c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 11:46:55 2015 -0500
+
+    Cleanup tests.
+
+commit 71a89a575f2238a5e619f0eb2fa95531d00a47bc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 11:46:37 2015 -0500
+
+    Add `_.get` and `_.set` tests.
+
+commit e3dc8dfcf4a9a76fb599fe81503a4fa82caa0a27
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 02:12:14 2015 -0500
+
+    Remove rogue newline in `initCloneByTag` doc block. [ci skip]
+
+commit 2dd77d5bc705467f69c34a6dbdc6eabad2af4d70
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 02:11:42 2015 -0500
+
+    Change "method" to "function". [ci skip]
+
+commit 0192226bb39a0c7ad9de119433a25a5ce4daf3aa
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 02:11:16 2015 -0500
+
+    Use "length" when referring to a property name. [ci skip]
+
+commit faf2658da27963061de70e42b717620522125095
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Apr 3 02:10:21 2015 -0500
+
+    Move `getLength` closer to like functions and give it a proper jsdoc block.
+
+commit 9a1c00d2dc9229166cc85cc1806017caf1ad1c81
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 21:42:57 2015 -0700
+
+    Use `x` a bit more in `support` definition to prevent aggressive minifier modifications.
+
+commit 4a8695caffa595d5eb2eca6d4b6f7fd899f54846
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 21:26:05 2015 -0700
+
+    Use `getLength` to avoid an iOS JIT bug.
+
+commit b28016bfeb8d2b2616409d79a77f0b394f8bd8d3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 12:07:12 2015 -0700
+
+    Simplify `isLength` check in `_.keys`.
+
+commit 4758a9e66dd0071426e666a551e0298998ae2145
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 08:43:42 2015 -0700
+
+    Ensure `_.inRange` swaps `start` with `end` when `start` is greater than `end`. [closes #1099]
+
+commit 2adac8bdaed7e61fc5bf11e2ce41b989793cdc53
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 01:26:27 2015 -0700
+
+    Use `_.restParam` in `createAssigner`.
+
+commit 3c569148227ba3e3253d8a9b3c9458973d00794b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Apr 1 00:08:31 2015 -0700
+
+    Simplify `isLoose` check in `baseIsEqualDeep`.
+
+commit c5cc9078381889d35e0409caaa34d5e827c8beb7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 31 22:30:57 2015 -0700
+
+    Ensure `_.match` and `_.matchesProperty` compares functions by reference. [closes #1101]
+
+commit 0907aabacdff2c7ba69242fe78e88dc6aeccbaf6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 31 09:09:17 2015 -0700
+
+    Avoid bug in older browsers where an unmatched capture group returns an empty string.
+
+commit f4290bda7f96036cc783f6708c837a553b52477a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 31 01:06:09 2015 -0700
+
+    Update test deps.
+
+commit 4bdb82a7a2532c31422aa862f07a10b8a83d56d4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 31 00:50:47 2015 -0700
+
+    Ensure `toPath` works with a nullish `value`.
+
+commit 6a696dde3ae6c946d20a2e6478a58cd89766bfc0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 31 00:15:46 2015 -0700
+
+    Add `_.set` tests.
+
+commit 8481684a82e4c5b8d5117f25d8b52425f39f3a98
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 30 21:05:48 2015 -0700
+
+    Fix `start` and `end` typo mix up in `_.range` docs. [closes #1095] [ci skip]
+
+commit 64bfed26400d02fd2f7a2c47fd5df75093dafb9d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 30 00:55:30 2015 -0700
+
+    Clarify `_.uniq` docs. [ci skip]
+
+commit 2edcc893034936cccb94264783453b3d6bceff45
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 20:59:48 2015 -0700
+
+    Add `_.get` and `_.set`.
+
+commit 18313f2e90b321a1dbe6d38f25de4f7b2622b70b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 20:57:19 2015 -0700
+
+    Minor word nit for `mapSet` doc. [ci skip]
+
+commit 0ff96418bd16b24df8e0554fc4d19c007d33f5f3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 20:32:25 2015 -0700
+
+    Simplify `reIsDeepProp` and `rePropName`.
+
+commit e7ba75d533221eb7d0effdaba6bf94a2e0aeb63d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 15:43:53 2015 -0700
+
+    Make `toPath` more robust and add support for deep properties to `_.has` and `_.matchesProperty`.
+
+commit 044291d9409b8e78ed5d3b678f1f19f4f81903b7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 08:59:42 2015 -0700
+
+    Add deep property support to `_.has`.
+
+commit ad62efcb9ed75dc85871bb7d176a816343c659f6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 08:08:46 2015 -0700
+
+    Make `reComboMarks` singular for naming consistency.
+
+commit 0dc59d9481de2c7fd13d1d852f491c7d0004dc05
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 29 08:08:23 2015 -0700
+
+    Add support for brackets to `toPath`.
+
+commit 8218b74fb3a37d3fa68690037b1b4d83c28aa4ce
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 28 13:16:16 2015 -0700
+
+    Remove `propertyDeep`, `propertyDeepOf`, and `resultDeep` in favor of deep property path support in existing methods.
+
+commit 1448bab5b38c181869313cbc1bd69de1ff4d63da
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 28 00:25:35 2015 -0700
+
+    Clear `func` in function created by `_.before` without requiring an additional call. [closes #1088]
+
+commit 2884f8acb8e7380c5c77d3522aaa4373c1f674f2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 26 13:17:41 2015 -0700
+
+    Ensure `_.intersection` of a single array returns an empty array. [closes #1085]
+
+commit 075cae4efbd57a7e307c0a9696e8372cd755fbb5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 26 08:46:45 2015 -0700
+
+    Use `basePullAt` in `_.remove`.
+
+commit b1a81a85b13f505b69c432065c4bbbbe33903fb7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 25 21:49:35 2015 -0700
+
+    Add a test for `_.remove` and `index` params.
+
+commit 668384649a125d6b6b8f68dcbc52941488636623
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 26 07:28:17 2015 -0700
+
+    Change "Iterator" typo to "Iteratee" in docs. [ci skip]
+
+commit a7252b1a7fdcbf862ba8156c43e148bc62d0839e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 24 16:31:12 2015 -0700
+
+    Bump to v3.6.0.
+
+commit a4e58e4d555b0184bc8c7d9a5345b5b2a71eccd2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 24 13:34:24 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit 4241e013646f57a11dc3200ac1b3b4a528fe834e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 24 22:34:57 2015 -0700
+
+    Cleanup comment links. [ci skip]
+
+commit d7d79521389882d7ac074c7ac8a2695b7263954f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 24 08:22:30 2015 -0700
+
+    Increase test coverage by modifying the source to hit the branch of `getFuncName` used for minified builds.
+
+commit 9cc2253339e42d80fd92133b25da3148dbfb2915
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 24 01:14:22 2015 -0700
+
+    Add `npm i` step to contributing.md. [ci skip]
+
+commit 68318025909a19c01075d2f3fc88ac8d2a9cf821
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 23:34:33 2015 -0700
+
+    Rename `predicate` to `iteratee` in `_.uniq`, `_.countBy`, `_.groupBy`, `_.indexBy`, & `_.map` docs. [closes #1071] [ci skip]
+
+commit 9d79cc7e8729a12bb4ab207cd48d17753c632648
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 20:50:04 2015 -0700
+
+    Make `_.deburr` handle combining diacritical marks. [closes #1070]
+
+commit 763b003a113d51673ae7905995c6ede1839404a2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 20:04:13 2015 -0700
+
+    Add note about `_.runInContext` to `_.mixin` docs. [ci skip]
+
+commit d560e2a55834405994d56322eb979dfc5717d45f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 19:58:25 2015 -0700
+
+    Remove unused bar `reFuncName`.
+
+commit f914f080b129af2fd1d322b72487048de64646ec
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 09:24:55 2015 -0700
+
+    Simplify ctor check flag in `equalObjects`.
+
+commit 600a4e86e1ed6389eb68b23e992e2afef16f4e61
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 09:24:05 2015 -0700
+
+    Ensure `_.matches` and `_.matchesProperty` work with function `value` params.
+
+commit e7b4ada65f442e4a007b296e18bd3c8189909718
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 09:06:45 2015 -0700
+
+    Add `_.restParam` test for functions with more than 3 params.
+
+commit 95f31be09696681362731a414cac2790760714b2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 23 09:01:19 2015 -0700
+
+    Add doc blocks for `getFuncName` and `isLaziable`. [ci skip]
+
+commit ad6db7eaae00b07c2ccfd4f13e942124ba4a776b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 22 23:44:11 2015 -0700
+
+    Adjust object checks in `baseIsMatch`, `baseMatches`, `baseMatchesProperty`, & `isMatch`.
+
+commit d7a99c66189ecb15b2403475084b87ef71033fd7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 22 00:45:36 2015 -0700
+
+    Add `_.matches` and `_.matchesProperty` tests for inherited properties.
+
+commit f20d8f5cc05f98775969c504b081ccc1fddb54c5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 23:33:19 2015 -0700
+
+    Loosen `_.matches` to match objects with inherited properties. [closes #1067]
+
+commit 8930e6b393de3ec7c243394d41958c534e3a4c43
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 22:07:19 2015 -0700
+
+    Add `baseWhile` and `createBaseEach`.
+
+commit f26886acb0f6732f3144b53e6e6b9eabcdd0d45c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 18:06:14 2015 -0700
+
+    Add `createSortedIndex`.
+
+commit 820ab8d4866cf7863cf2d6845359e2e1aeda0714
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 11:41:42 2015 -0700
+
+    Add test for `_.escapeRegExp` with `eval` and `Function`.
+
+commit 8e425fb358a1f882a06b87068e794ec8c4cb2b6f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 10:01:46 2015 -0700
+
+    Tweak _.at and _.matchesProperty doc examples. [ci skip]
+
+commit 6006f499ac21d7d5e8701cf98ed52abf5e46265c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 21 09:58:45 2015 -0700
+
+    Fix doc bugs in _.runInContext, _.thru, _.forEachRight, & _.escapeRegExp. [closes #1065] [ci skip]
+
+commit 007ea9ea20ecad771de0c7fc0676b7ea97bca3be
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 23:49:31 2015 -0700
+
+    Add `length` check test to `_.flow` & `_.flowRight`.
+
+commit 5d248d261dab3e28f6bf64d8fb6b8352dbdfde3d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 23:22:36 2015 -0700
+
+    Expand part of shortcut fusion test.
+
+commit 26908cba64f4165fc4d6313f6ffbcf7e258a3939
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 15:15:06 2015 -0700
+
+    Don't assume a lodash method will exist.
+
+commit 18d118746e45fb80ae656e04d8b68ea4ac4fe800
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 12:37:49 2015 -0700
+
+    Add `_.fill` doc example. [ci skip]
+
+commit 9a633f5f2ec33d9471ed032854f057f11109bad5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 12:01:37 2015 -0700
+
+    Update `root` detection in WeakMap and Set shims.
+
+commit 5aa44e98d5a14ac9fbb0747c7d2de05d0786a627
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 12:00:29 2015 -0700
+
+    Fix rhino and other old environment test fail.
+
+commit 33916fa9753285a7325618d1bbd28f9933830e7a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 11:49:18 2015 -0700
+
+    No need to redeclare `funcName` in `createFlow`.
+
+commit eab18df40398644c1febb7bcb34da2bd7ece0808
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 09:24:56 2015 -0700
+
+    Cleanup `isLaziable` and `getFuncNames`.
+
+commit 002caceb05604db6da621d1cadec3949f9e3ce9b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 20 09:24:13 2015 -0700
+
+    Cleanup isXyz methods.
+
+commit c250aa804a759d5e446aeb71d3de048d49d826e1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 19 08:58:56 2015 -0700
+
+    Ensure `_.merge` correctly coerces objects to arrays. [closes #1061]
+
+commit 94ca50883f7d94d61e037587a3547869d785c76c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 19 08:37:22 2015 -0700
+
+    Drop `funcDecomp` optimization in `baseCallback` and ensure shortcut fusion for `_.flow` and `_.flowRight` works in minified builds.
+
+commit 462c482873f89f51e624cc0a667b372f75984e18
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 18 10:27:45 2015 -0700
+
+    Add support for shortcut fusion to `_.flow` and `_.flowRight`.
+
+commit e28e04a99030ef968a2ab1f9b3d9ed7ea01b7797
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 20:01:00 2015 -0700
+
+    Add `freeSelf` as a fallback for when `freeWindow` is unavailable.
+
+commit bfb08ce003150786435ec22ba828d5e95ec2fc18
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 16:49:30 2015 -0700
+
+    Use `opposite` instead of `inverse` to describe `_.propertyOf`. [ci skip]
+
+commit 3590a06f40bcfc55288e5d741958bc6a072dff05
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 16:45:01 2015 -0700
+
+    Update `_.zipObject` docs to tie into `_.pairs`. [ci skip]
+
+commit 23ca6c5e10d3c213d3fcab51d2d4c2f73d526858
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 15:28:59 2015 -0700
+
+    Rename `createPad` to `createPadding` and cleanup docs of pad methods.
+
+commit 1aea5bcd50a402e25e3e8f2656ad903cdf878ae3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 13:54:33 2015 -0700
+
+    Finish adding comment blocks to creator function. [ci skip]
+
+commit 82c5d8ed2874e49278768664601c33c0e93e5118
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 10:27:52 2015 -0700
+
+    Rename `createComposer` to `createFlow`.
+
+commit 5dcd58a75f142b5b5f7bfc21aada42139c0acba5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 10:23:59 2015 -0700
+
+    Tweak `_.findIndex` docs and correct `_.findKey` docs. [ci skip]
+
+commit dc605a4ee16b624441df0b46ce2d9aaad1f3a651
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 10:23:26 2015 -0700
+
+    More more docs for creator functions. [ci skip]
+
+commit 05fd7cecf4c8895c860427da15524b4435c1f0c4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 08:48:21 2015 -0700
+
+    Add docs for `baseSum` and `arraySum`. [ci skip]
+
+commit 2f52730b48f1ff3e3ba3b1121e9b801b392c68c5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 17 08:44:51 2015 -0700
+
+    Use `and` consistently. [ci skip]
+
+commit 4c1819c7dd969d523a61fed101272bfbef0aaee7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 15 19:29:58 2015 -0700
+
+    Ensure `_.sum` provides the correct arguments when iterating an object.
+
+commit c58c0df30eca97d339b50b7bc7043cba4b346657
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 15 17:12:33 2015 -0700
+
+    Cleanup creator functions.
+
+commit c5902b314432a89211a2fa5474ba22dd39d2b3e3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 15 17:00:35 2015 -0700
+
+    Cleanup `_.sum`.
+
+commit 306ef8addfc65802ecb14808af87e1eac60b492c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 15 14:48:32 2015 -0700
+
+    Add creator functions.
+
+commit d4659b261dc9e2e012686abacbd8d1f204bd9e5d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 15 11:22:25 2015 -0700
+
+    Add `baseFindIndex`.
+
+commit 69ce41807a752015e11f9383b779922c6165a96d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 14 13:30:45 2015 -0700
+
+    Add `_.restParam`.
+
+commit cc81da5aa403ceb11c6e48ea6c83fb63f688871d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 14 00:14:21 2015 -0700
+
+    Update Chrome version in saucelabs.js.
+
+commit eee714f52b8817272ac276df03cc2ee052563b6a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 12:33:49 2015 -0700
+
+    Add iteratee guard to `_.includes`.
+
+commit c976b637d88076ee943c403571ffbcbcf558038e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 12:33:19 2015 -0700
+
+    Adjust test descriptions to be more generic.
+
+commit ea93515d534ff541a6aa09141e333216b7349bad
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 09:03:09 2015 -0700
+
+    Add well-known symbols test for `_.uniq`.
+
+commit 652499bdcf37d8775af6f5731ae27687bb785a70
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 08:51:56 2015 -0700
+
+    Cleanup `sortedIndex` test.
+
+commit 6c1bc1d7bb814ee9c1fa7bacdcdac3c7ae14e3b0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 08:43:00 2015 -0700
+
+    Semicolons out colons in. [ci skip]
+
+commit ac1e436339f5d1354b603382d2f095a2c9769522
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Mar 13 00:12:51 2015 -0700
+
+    Simplify `isCommon` and `isCombo` checks in `mergeData`.
+
+commit 78d4812b0eebd33ba09408b9878303160ea9c066
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 12 23:02:23 2015 -0700
+
+    Whitespace nits. [ci skip]
+
+commit 6a1b7626e32e61e146c56dcef2087e3f877b4c38
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 12 21:41:39 2015 -0700
+
+    Add `NaN` tests for `_.indexOf` and `_.lastIndexOf` with a `fromIndex`.
+
+commit 9712ac550c387be2af553badb1b65bc3fb8b9dd4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 11 23:41:41 2015 -0700
+
+    Set metadata for curried lazy lodash methods.
+
+commit 5b173766c6cb98e50c1e1bb134ab0bd676bdf9f5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 11 20:52:34 2015 -0700
+
+    Add symbol tests for `_.isObject` and `_.uniq`.
+
+commit b535c4f32110c9bbd4ec97d9bb0ee06a6acd6cd1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 11 00:42:31 2015 -0700
+
+    Optimize `_.reduce` and `_.reduceRight`.
+
+commit 56c5ebcb7190fc72d46e8ff4cbcabbeb0d1eb33d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 10 21:31:24 2015 -0700
+
+    Ensure the result of `_.difference` is based on the values of the first param only. [#1038]
+
+commit 028234ba861f4069a23938e1b4e934aefac94e05
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 10 09:21:38 2015 -0700
+
+    Update guard info in `_.reduce` docs. [ci skip]
+
+commit f063b4d2316eab9c91fc5e5686ce6be4108535b3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 10 09:21:01 2015 -0700
+
+    Add `isIterateeCall` guards to `_.every` and `_.some`. [closes #1035]
+
+commit d4783170e50e81ecb38676b4685151569600f505
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 9 08:33:19 2015 -0700
+
+    Minor cleanup of setting `__actions__` in `_.mixin`.
+
+commit 51e459b386f8301c803442f7fc722e46fc192d35
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 8 17:57:42 2015 -0700
+
+    Bump to v3.5.0.
+
+commit 1253d254af705d293b8717d1c7c0ba67589ccf62
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 8 17:53:22 2015 -0700
+
+    Rebuild lodash and docs.
+
+commit 5e705743965edda84f1b627c65046b3cf86e5e2a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 8 17:45:53 2015 -0700
+
+    Add parentheses and cleanup more complex code snippets.
+
+commit b5dce2f74ba1f9e7db921f954035e69a31cce0cc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 8 01:00:04 2015 -0800
+
+    Optimize `createBindWrapper`, `createPartialWrapper`, and `createHybridWrapper`.
+
+commit 6113da3e68d72e3ce69f1a5e8b4b83a3438cf51c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 7 23:27:21 2015 -0800
+
+    Remove unneeded tests.
+
+commit faf64062895533a9568c0daac7f4729692277d3e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 7 23:20:26 2015 -0800
+
+    Ensure lazy `drop` when applied after `filter` works correctly. [closes #1026]
+
+commit 7c443431d9d8b578c605b455e8e41624679adca6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 7 11:11:24 2015 -0800
+
+    Add private `guard` param doc to `_.sortByOrder`. [ci skip]
+
+commit 0f201e3fd8c95808e11b418952db204a72cf89d7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 7 00:23:56 2015 -0800
+
+    Add more chaining tests `join`, `replace`, & `split`.
+
+commit bf96c3018721aa462561c515ae21f14c7b153d97
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Mar 7 00:23:17 2015 -0800
+
+    Cleanup string methods added to `LodashWrapper`.
+
+commit ab2269717dcb05feb791f5131a133f0f34f7e92d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 21:53:11 2015 -0800
+
+    Bump to v3.4.0.
+
+commit b5a42cfa7539fde33b7057a695af0005c0eeb354
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 21:39:33 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit 6693416d0a1d7ff2d0b33711c40d6da906e4a966
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 5 22:49:41 2015 -0800
+
+    Tweak `_.isEmpty` and `_.size` docs. [ci skip]
+
+commit 9cdf013933ee18c519e5ab3a21a4cd1615adbece
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 5 22:47:32 2015 -0800
+
+    Ensure `length` hit of for lazy eval is checked on initial lazy call. [closes #997]
+
+commit 1dfaa30520f5d1a7590549c6f44977a2b429dbaa
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Mar 5 08:20:32 2015 -0800
+
+    Add `inRange` and `sortByOrder` to `lodash` doc notes. [ci skip]
+
+commit d898fcee75d38c3ffb00fd4dbaa41afa2e0305a0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 21:45:24 2015 -0800
+
+    Simplify the `root` assignment.
+
+commit 1e647a205809035e9a97673228c9b76b6f704bf9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 08:36:11 2015 -0800
+
+    Rename test module for consistency.
+
+commit 10e379d8627b387360217efd4aacd06c4e0a7700
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 08:35:42 2015 -0800
+
+    Add `_.sortByOrder` tests.
+
+commit ee456493c4478aab600152f66a621bf34d78368e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 00:46:10 2015 -0800
+
+    Remove argument unrolling in `LazyWrapper` assignments.
+
+commit 69e9c7d0bed4b9f3ade1a2b293dc8385601c4842
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 08:04:39 2015 -0800
+
+    Expand `_.defaults` test for working with `_.reduce`.
+
+commit adce718d63035232bbe82f9932fa19ecf1bcf753
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Mar 4 00:45:42 2015 -0800
+
+    Another cleanup pass on `createAssigner`.
+
+commit 3a94a65f1227a7adb977b13d9c2576fdd14293c7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 22:24:55 2015 -0800
+
+    Tweak `root` assignment to work with webpack in a  web worker. [closes ##313]
+
+commit bbe30db1b7502e21b06daeaeeea8731542905964
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 12:13:31 2015 -0800
+
+    Avoid test fails for npm builds.
+
+commit 68f3c43805f9bd2ff8d9a26f16cee895cfee921c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 09:19:27 2015 -0800
+
+    Add `createComposer` to reduce the definition of `_.flow` and `_.flowRight`.
+
+commit 3c99ecda60d6f8b4f4b6fc801e3c2f2aa39bd165
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 09:18:48 2015 -0800
+
+    Move more code out of the try-block in `_.attempt`.
+
+commit b1366696c41acba7c9e6e458fcdc3471a7057480
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 09:18:17 2015 -0800
+
+    Simplify guard check in `_.sortByAll`.
+
+commit 534aeb40654eaa15f358c113484859c33d38789a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 09:17:45 2015 -0800
+
+    Use `args` alias of `arguments` in `_.difference`, `_.pull`, & `_.memoize`.
+
+commit cc77a36dd9c2165dc5a7742e276cb2902ed43dd3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Mar 3 09:16:33 2015 -0800
+
+    Cleanup `createAssigner`.
+
+commit 5991068fdfe8f2e884f16d546ccbfbe69f17a5f3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 2 21:22:13 2015 -0800
+
+    Add more lazy chaining tests.
+
+commit ba9bd3bc764a8cc9ecde4332134aa52ec8c38310
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 2 20:21:40 2015 -0800
+
+    Better match words with one character. [closes #1012]
+
+commit aad0070b77b82c160ff729728814f120ca8eab43
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 2 11:40:01 2015 -0800
+
+    Narrow `new LodashWrapper` to `dropWhile`.
+
+commit d192e69811b88e97de153a1c971c57b59e99ada5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 2 09:19:05 2015 -0800
+
+    Break lazy chains before  or . [closes #1011]
+
+commit ec8d919b93c860d73b4e2775e6b8a13754231be9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Mar 2 09:17:16 2015 -0800
+
+    Cleanup .
+
+commit 3aa40d4df64c27fb71bf8c0cd2ee4b336ddd9d31
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 1 01:22:00 2015 -0800
+
+    Simplify `baseFlatten` and always provide a `fromIndex`.
+
+commit ec1be41b62a674eee1288c881efe8736ec87149b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Mar 1 01:07:33 2015 -0800
+
+    Correct `_.flatten` benchmark.
+
+commit c15d81545a7a51782ff39c0865b8b7d6642619d7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 21:51:24 2015 -0800
+
+    Update chalk in travis.
+
+commit 1af8b9d16a196ff24d6c76e9336471ab1b198ab4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 21:12:10 2015 -0800
+
+    Cleanup docs of `_.flow`, `_.flowRight`, `_.defaults`, `_.range`, `_.inRange`, & `_.sum`. [ci skip]
+
+commit d860cf834d0c23a37c1bc9f5099b0d3e0f099b1f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 19:18:38 2015 -0800
+
+    Avoid testing the minified build on PRs in travis.
+
+commit 63d5a3acbce20395475846a367d30669428a4f22
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 12:42:14 2015 -0800
+
+    Optimize `baseIndexOf` more consistently.
+
+commit 132aacee89bf3087822439ef64c6cbd0c9c94358
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 28 10:11:26 2015 -0800
+
+    Optimize lazy evaluation for 1 param.
+
+commit 973038da6a080263a6347ee75362541e004bdcfe
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 27 20:52:10 2015 -0800
+
+    Optimize `baseIndexOf`, `indexOfNaN`, and `baseFlatten`.
+
+commit 68942f7ec4012132b8fe33e6e83dc0d0f6c16904
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 27 09:20:57 2015 -0800
+
+    Move `_.max` & `_.min` to Math category & make `_.sum` work on collections.
+
+commit e914b83a1b97345fbd8cb68197caf7380bea331d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 27 08:26:09 2015 -0800
+
+    Add gitter badge to readme. [ci skip] [closes #983]
+
+commit 2268376360746511186de324010fcccfe4980ed2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 26 19:41:22 2015 -0800
+
+    Update tested Firefox in saucelabs.js.
+
+commit 6bb3b9a6847614246c6ea7bc7b96b282a9aa98f1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 26 00:58:27 2015 -0800
+
+    Disable lazy optimizations if the iteratee has more than one param. [closes #997]
+
+commit 9f213c119c6d138ae1c0c27c9ef1bcb4c3082b38
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 25 23:35:16 2015 -0800
+
+    Add more chaining tests.
+
+commit f081e2b799fae7898ba2c6810f653e20b7087d37
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 25 23:03:01 2015 -0800
+
+    Cleanup `_.sum` tests.
+
+commit a024152c123d9d96fff72fe8bb4b94f0f649bcb3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 25 23:01:50 2015 -0800
+
+    Add `add` and `sum` to `lodash` doc notes. [ci skip]
+
+commit 42d23dbc700451fea6a918c7de2a86742fa4986a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 25 23:01:32 2015 -0800
+
+    Simplify `_.sum`.
+
+commit bf4a70d91c930a6cff11975d86b6efbbf944117a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 22:11:21 2015 -0800
+
+    Bump to v3.3.1.
+
+commit a35ab3937a71350b6a5695d265ec216cc337aebf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 08:02:12 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit 5ef9a4be8a32aa0d389d7da718eb30bf3543bc00
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 23:48:13 2015 -0800
+
+    Ensure `isIterateeCall` doesn't error if `index` is an object without a `toString` method. [closes #994]
+
+commit d76d7582fee20c5e8afb67fd3cbec97a254d1c40
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 21:17:14 2015 -0800
+
+    Simplify lazy filter, map, & takeWhile assignment.
+
+commit 44006142c79d705ee77d31a84c9e4f56b9d3c98a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 08:28:02 2015 -0800
+
+    Ensure `wait` of `_.debounce` and `_.throttle` defaults to `0`. [closes #991]
+
+commit 6840b2cfe56764f9121967dbd0c931580d449be3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 08:20:23 2015 -0800
+
+    Consistent use of `callCount` variable.
+
+commit 5613f60403d38e163819bd92d7aa5b61a3078ebf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 01:24:04 2015 -0800
+
+    Ensure lazy `takeWhile works with `reverse` and `last`. [closes #990]
+
+commit 76d3959f1adc1891fa007d4db0a9c8ed33b3daf9
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 23 01:24:17 2015 -0800
+
+    Use `square` in more places.
+
+commit b681759000fa24c2e652ced31969e4ba1c7ec5dc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 22 16:49:19 2015 -0800
+
+    Remove unnecessary excused tests.
+
+commit d6336c430276ac10612eaab87c60a44d989fdd9b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 22 17:40:29 2015 -0800
+
+    Fix code styling in `_.template` doc example. [ci skip]
+
+commit 35b161450a2d1f32618d2230220c37beefe31ad6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 22 15:24:36 2015 -0800
+
+    Update benchmark and underscore vendor files.
+
+commit 861aaf06c62a84e9c3ba952d9fa8d2d531ac3643
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 21 01:13:34 2015 -0800
+
+    Optimize `_.uniq` and others in Firefox.
+
+commit a910884e7dd4b2ddb74e49fda006724110e1cab3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 21 01:05:45 2015 -0800
+
+    Fix `_.indexOf` doc example typo. [closes #986] [ci skip]
+
+commit d942189bc671e675ec12afa6ab9d60012829a89a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 19 23:38:18 2015 -0800
+
+    Bump to v3.3.0.
+
+commit eb16051b1e25794f775f3772ab9e7c22f3b94c52
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 19 23:08:00 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit 7749a7e41de09ad713e27fdfe19a39262ce2ec5b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 20 02:14:13 2015 -0800
+
+    Add gitter webhook to travis.yml.
+
+commit dc4cef17d4cf86b075406e00af38a3955496be1a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 19 00:39:25 2015 -0800
+
+    Update ecstatic, istanbul, & sauce-tunnel in travis.yml.
+
+commit 89ed40e4a4f76c86fcd99be9a5deac020af15407
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 19 00:14:59 2015 -0800
+
+    Add `_.merge`. tests.
+
+commit 10ee74d872f8c12a976a05f9a1c82c90f13b3c7d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 23:48:32 2015 -0800
+
+    Cleanup clone tests.
+
+commit 474ae1e91c207c63188cbefa61ce08991c45599a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 23:35:43 2015 -0800
+
+    Allow `isDeep` of `_.clone` to work with more truthy values.
+
+commit 0dc70ca5f35ea95b9dba8c8df5a8af0085fa498f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 23:35:09 2015 -0800
+
+    Semicolon nits.
+
+commit 633b1663ca14b61a6c64907a6257ce06bbd46898
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 23:22:03 2015 -0800
+
+    Tweak `iteration methods` test.
+
+commit 153fe61b4b8e829d7fa1a2e1babe2dcd06a85ebb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 21:05:39 2015 -0800
+
+    Avoid iterating strings in `_.merge`. [closes #978]
+
+commit 9734fd035370380b44f836d37544291bbae4616d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 01:05:39 2015 -0800
+
+    Increase `_.merge` test coverage.
+
+commit 6209c120c0ec329ce161e6a38c6053217d1814bf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 01:03:53 2015 -0800
+
+    Non-nits.
+
+commit 3516881e7acf270231670433d4a13e527a38a247
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 00:46:02 2015 -0800
+
+    Update tested Chrome in saucelabs.js.
+
+commit 15398555b363f2af5e12082ac865eab06fcfc4fa
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 18 00:33:51 2015 -0800
+
+    Ensure `isIterateeCall` works with `NaN` values.
+
+commit cb132fcbf4b470d00eab6b9643e9e5abd9ff2a95
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 17 23:37:03 2015 -0800
+
+    Add more iteration method tests.
+
+commit f42f46c7d695416ebd4ce071724d6004b2e86a7e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 16 23:39:23 2015 -0800
+
+    Adjust doc examples for smaller screens. [ci skip]
+
+commit f1046f1cf1980dd36fe8c507d3494ad212d0e039
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 23:05:30 2015 -0800
+
+    Consistent use of `lodash` when referencing a `lodash` wrapper. [ci skip]
+
+commit 4a622871395025afedc69243a39e6b41c542817e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 23:04:50 2015 -0800
+
+    Cleanup `baseLodash` description. [ci skip]
+
+commit 69cd56357fb1c9de23d1c06913ecfe4f33233fd5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 22:42:16 2015 -0800
+
+    Tweak `_.propertyOf` usage example. [ci skip]
+
+commit b66a886682931d1e25998ba353466bf81abb2560
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 22:41:37 2015 -0800
+
+    Clarify `_.noop` docs. [ci skip]
+
+commit 249504b7d639fa1b9a5a1f4f3d10c337e00abf9f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 22:40:42 2015 -0800
+
+    Whitespace nits in docs. [ci skip]
+
+commit fa0086404d5b9e89c0ce99a3714e1cce4dbe5733
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 21:54:12 2015 -0800
+
+    Add `baseLodash`.
+
+commit 8294acdf1c4617665ca9fe82e0a00d101f63e598
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 00:37:18 2015 -0800
+
+    Tweak `null` check tests of `_.difference`, `_.intersection`, `_.union`, & `_.xor`.
+
+commit 7733d02938d5eea73648567ed99e987a7ed2faca
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 15 00:03:14 2015 -0800
+
+    Remove `baseSlice` from `_.attempt`.
+
+commit 9b6342e7fae2856f61c1e910ea12f45bea3bd0a3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 23:09:49 2015 -0800
+
+    Add `baseIsFunction`.
+
+commit 22c09cb31b3d7391f3527d705ce34e5264f683f0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 08:18:25 2015 -0800
+
+    Bump to v3.2.0.
+
+commit 21e79cb54ac885a34963aca18c2be3787d09d865
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 02:00:41 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit b8cc829f4a963603c4204dad79a81ca98a24a889
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 20:17:04 2015 -0800
+
+    Cleanup docs. [ci skip]
+
+commit ace0dacf155fa2ff8b75fdb2a036e664f47eae59
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 19:33:10 2015 -0800
+
+    Make `baseMatches` style consistent with `baseMatchesProperty`.
+
+commit 07b13eedecfb6f003aa1199cbe081e1e935a248e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 12:46:57 2015 -0800
+
+    Cleanup `_#plant` and `_.spread` doc examples. [ci skip]
+
+commit d9168ed9ecc925b6281dee663524e234c2275aef
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 12:46:24 2015 -0800
+
+    Add proper jsdoc tags to `_.fill`. [ci skip]
+
+commit fb4e2c167cee0303f37b28b9af434ca655661479
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 09:36:06 2015 -0800
+
+    Add `matchesProperty` to `lodash` doc note. [ci skip]
+
+commit 10ee3585f6facfd47d46cd323f5fb303071982a4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 01:59:16 2015 -0800
+
+    Fix `spread` doc and remove unused `thisArg`.
+
+commit 5d4ba820dd77293ebc92497d3877991c7b007672
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 01:36:08 2015 -0800
+
+    Add `_.matchesProperty` shorthand tests.
+
+commit a51e00e69f4c52770dc1492951c335f863b2828f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 01:30:52 2015 -0800
+
+    Add `_.matchesProperty` tests.
+
+commit 4dfa9638515503c523da3fe2cf39ad28d54ce22d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 12 00:27:08 2015 -0800
+
+    Document "_.matchesProperty" shorthands. [ci skip]
+
+commit f2d4f6ccf69649804a8cd489cf80d9bf518d2c90
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 22:50:39 2015 -0800
+
+    Add `_.matchesProperty`.
+
+commit 182cb8ab2509a7b75310fc07903574a93c8264b1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 22:50:22 2015 -0800
+
+    Simplify lazy `pluck` and `where`.
+
+commit ece341d8683557bf79d8ba48f7785959514d1a4b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 20:20:13 2015 -0800
+
+    Update android testing in saucelabs.js.
+
+commit d72e8c2687c65770b6cf7a3e834457317a686fe2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 20:19:27 2015 -0800
+
+    Source cleanup from eslinting.
+
+commit b0ff6f4c7b400da562b932f35de73209259585e1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 08:30:46 2015 -0800
+
+    Remove extraneous description from `createAggregator` docs. [ci skip]
+
+commit 6ec5249492ba8e07595577c5dfd29cca6138f561
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 08:29:41 2015 -0800
+
+    Change `intuitively` to `implicitly`.
+
+commit c44cd76c5ac07a57a059e23f9377b730c06dc7bf
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 11 08:29:01 2015 -0800
+
+    Ensure `commit and `reverse` track `__chain__` settings. [closes #958]
+
+commit 37f711d72aa2accf2fa9458f83f05d51bfefb812
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 22:14:06 2015 -0800
+
+    Adjust dep versions to better suite their range in package.json.
+
+commit fcf18fb9657972f1649c81fec76abc3331485c24
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 22:05:24 2015 -0800
+
+    Remove `thisArg` from `_.spread`. [closes #957]
+
+commit 2efd6250fb82fd2c520b34515855579cdca57656
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 21:59:31 2015 -0800
+
+    Minor commit nit in test.js. [ci skip]
+
+commit 1b4bd8523d57dd373101b1f92d500f2397ba2d7f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 21:59:08 2015 -0800
+
+    Add `_.slice` assert.
+
+commit 60c44910df845da160577d6e5a84e8106eba5efd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 21:54:00 2015 -0800
+
+    Fix lazy `slice` when used after `filter`. [closes #955]
+
+commit faf67fae03e3026a96fd46b2992e17a073ed5c8c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 08:02:38 2015 -0800
+
+    Update qunit to 1.17.1.
+
+commit e95f5479501ef8d108ec65a3d9f312d4f8622ad6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 01:16:02 2015 -0800
+
+    Add doc notes on guarded methods. [ci skip]
+
+commit 96b663b783a4b8d74fd172a25b0f61d21d6ffa6f
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 00:33:10 2015 -0800
+
+    Ensure lazy `slice` handles floating-point `start` and `end` params.
+
+commit ce44f7e4b0c062ae6dbca9083e38bbaadcf346e1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 10 00:08:09 2015 -0800
+
+    Add lazy `compact` and `toArray`.
+
+commit 16a9c7d49211025d7f0e5cb0301a015b5abc2611
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 08:58:08 2015 -0800
+
+    Improve label of unstable test.
+
+commit fc369c3448249b13cfd499cf2bc17e4434ea9516
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 08:39:09 2015 -0800
+
+    Add `_.fill` and `_.slice` tests for default `start` and `end` params.
+
+commit b1a33edf0f48be46a14a8f9f07825a46933f9440
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 01:24:40 2015 -0800
+
+    Cleanup io.js testing in travis.yml.
+
+commit 3b805f1a24aab0bed6ac0c261d4272c7f5e195c0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 01:14:55 2015 -0800
+
+    Rebuild lodash.
+
+commit 954b4d8075ea76b7bfd854e0be0df973236c25fe
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 00:32:07 2015 -0800
+
+    Add mutation note to `_.fill` docs. [ci skip]
+
+commit d073e2a881b9f4a5e7c475840a71d38d7498c280
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 00:09:40 2015 -0800
+
+    Add `_.fill` to `lodash` docs. [ci skip]
+
+commit 044dd2af94a2541f88bda95e52ecb25b4bd302dd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 00:09:24 2015 -0800
+
+    Remove unneeded jsdoc Function type tags. [ci skip]
+
+commit ee489fa8c02257aa63fa2472c31c818c493d79f7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 00:08:13 2015 -0800
+
+    Cleanup tests.
+
+commit 035ed5f49b246d260579b3f3cbcf6797a2905f30
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 9 00:07:39 2015 -0800
+
+    Add `_.fill`.
+
+commit 7dcd690f611db50fc79396b5911a36cfe1ee3e10
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 22:19:57 2015 -0800
+
+    Add object test for `_.max` and `_.min` being used as an iteratee for `_.map`.
+
+commit 1c9290aded577ce25b6056d0427c50a8523422f6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 20:36:51 2015 -0800
+
+    Add `_.includes`, `_.indexOf`, `_.lastIndexOf`, `_.map`, `_.mapValues`, & a few other tests.
+
+commit 0b922b1ed1f87824795ae85d26f4fd2150c6a9fc
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 15:43:39 2015 -0800
+
+    Move `_.support` tests to be in alphebetic API order.
+
+commit 34eec362e5fdc48a6572002615ba9c47c04cf702
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 15:23:24 2015 -0800
+
+    Add methods to `lodash` docs. [ci skip]
+
+commit b8293838646b608e35ab4e5168e70ec4c7d9d658
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 15:23:10 2015 -0800
+
+    Cleanup docs for `_.callback`. [ci skip]
+
+commit 396023542839e737113956f8b649259e57e9b27a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 15:22:38 2015 -0800
+
+    Cleanup `_.spread` docs & tests.
+
+commit ba4da249846ffff1743e84dae84ce41b99ad2ecb
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 13:56:12 2015 -0800
+
+    Add tests for arguments provided to callbacks of `_.takeWhile` and friends when in a lazy chain sequence. [closes #944]
+
+commit 70378432b7366fcc08a4658d40985c312dd0ff06
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 01:23:57 2015 -0800
+
+    Minor cleanup of istanbul command in travis.yml.
+
+commit 6b63009b1417a5483c37613f873e6fc56b612560
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 8 01:21:05 2015 -0800
+
+    Expand `_.takeWhile`, `_.takeRightWhile`, `_.dropWhile`, & `_.dropRightWhile` tests.
+
+commit dd45fea732041b5efaed41c05e32747f26a97dd0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 7 20:43:46 2015 -0800
+
+    Add `_#commit`, `_#plant`, & `_#run`.
+
+commit ee09425cfbd6cf8acca89444dee337c93048347c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 7 20:32:05 2015 -0800
+
+    Simplify travis.yml.
+
+commit af02a1e0246667462865fdf7b3181757251f5115
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Feb 7 09:45:11 2015 -0800
+
+    Replace some `_.isFunction` checks with simple `typeof` checks and replace some `typeof` checks with `_.isFunction` checks based on likelihood of a problem value older enviros being passed.
+
+commit 2a86f0776c494386c5291aab47c1a0152827bfce
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 23:44:14 2015 -0800
+
+    Fix travis run.
+
+commit c6f73d9df8e09351663182e1ac61a971bd66074e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 23:14:03 2015 -0800
+
+    Consistent `apply(undefined, ...)` use.
+
+commit 5ab79f292bdac961b7636c758aa40cea12abba4b
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 23:09:52 2015 -0800
+
+    Allow `_.attempt` to provide additional arguments to `func`. [closes #929]
+
+commit 82c7a22d275b53c760294b0c878a2fdc74f877b4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 22:45:58 2015 -0800
+
+    Ensure `_.flow` and `_.flowRight` return an identity function when no arguments are provided. [closes #938]
+
+commit 35fa977981717e187affe9747e2ecd56f45fb0b1
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 21:09:26 2015 -0800
+
+    Update to Node.js 0.12 and simplify io.js install in travis.yml.
+
+commit ecbc46a91d8da0559e4b091ef476aea7a2ee68d2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Feb 6 21:52:14 2015 -0800
+
+    Remove unused `unshift` variable.
+
+commit d2f6416e4578bb6cbc3792126f643949fa7f07b7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Feb 5 09:47:47 2015 -0800
+
+    Add `_.runInContext` usage example to `_.mixin` docs. [ci skip]
+
+commit 97a885a05cf7d4e5819c6f2230ecff6545ddc420
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 4 22:51:25 2015 -0800
+
+    Use sauce-tunnel v2.1.1 to avoid hangs when closing tunnels.
+
+commit aa1edd6b943c547b160d6b3ee8f2b0f0be835c87
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 4 21:20:11 2015 -0800
+
+    Update tested io.js version in travis.yml.
+
+commit 083e401717e482c0732cb0ffe46d08cca1ed8938
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 3 19:59:39 2015 -0800
+
+    Fix param doc typos in `baseIsMatch`, `_.chunk`, & `_.isMatch`. [ci skip] [closes #923]
+
+commit bdeca2edce353aa439dc2a014c78da23492d6397
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Feb 3 08:47:04 2015 -0800
+
+    Update .gitignore to ignore lodash.compat.min.js. [ci skip]
+
+commit c84e14db46f1465f46678f421f0d856ff6e49f18
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 21:04:21 2015 -0800
+
+    Bump to v3.1.0.
+
+commit 919c5bd0b3545eb241c5241bb698955430f7f234
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 20:57:48 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit af8a8f1e3f4574322218737af29d25ee93769c2e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 2 23:15:43 2015 -0800
+
+    Add spec note to `isLength` and update spec link for `MAX_SAFE_INTEGER`. [ci skip]
+
+commit 41d08e123f2be5388927f1d56f7b5ea25e955731
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 2 20:36:45 2015 -0800
+
+    Ensure `isIterateeCall` works correctly with objects. [closes #917]
+
+commit 67d9656e358e91c9ea4045efcdcba554a44904b2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 20:05:56 2015 -0800
+
+    Use `baseProperty` instead of `_.property` in more places.
+
+commit 1a58a70494bcf38f89402acbf72d0ff5070a7b25
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 02:44:33 2015 -0800
+
+    Reduce deps on `matches` in favor of `baseMatches`.
+
+commit a477b2efd168bd44dfa0102069e907a816bac962
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 00:36:33 2015 -0800
+
+    Add `startCase` to `lodash` docs. [ci skip]
+
+commit 59c4546b8c226fda88c407ad45e224d25386de82
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 00:22:49 2015 -0800
+
+    Move `_.startCase` definition.
+
+commit ed1a75ef4cce50a4c59845c1ed40fca808474b62
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 00:16:37 2015 -0800
+
+    Add `_.trunc` test for floating-point lengths.
+
+commit 0cd942f152bf02b3dff337236565b7462104b3a8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Feb 1 00:12:27 2015 -0800
+
+    Cleanup case tests.
+
+commit fe7f082083230603fe992e9e7927c8abd945c9dd
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 31 23:54:26 2015 -0800
+
+    Cleanup case methods.
+
+commit 4e3a72388d19f144dfc85d318c7f9197289ef9ee
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 31 10:24:04 2015 -0800
+
+    Add more lazy tests.
+
+commit 29e3d9eff5404050d6e6b6c4a872c3e73132b5a0
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Feb 4 21:14:31 2015 -0800
+
+    Bump to v3.0.1.
+
+commit 64280f4285c019ffb012cccec2b6532438375ce5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jan 29 09:39:17 2015 -0800
+
+    Rebuild lodash and docs.
+
+commit 98c6eaac3be8f4a5c575fbec91a308ff99ffb5a8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jan 29 01:05:30 2015 -0800
+
+    Remove unneeded `baseToString` use.
+
+commit 22d965c66cbe2552af6b869db00ea611714381c8
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jan 29 00:35:04 2015 -0800
+
+    Add `_.merge` test for DOMExceptions for #895.
+
+commit 2eb932ebc1ce49c123be55ef3fe9417d1596573d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jan 29 00:10:22 2015 -0800
+
+    Add `_.assign` and `_.merge` test to ensure `object` isn't treated as `source`.
+
+commit 2ee0634db390cea6c61b6bdbcca391010dbe62c4
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jan 28 23:33:30 2015 -0800
+
+    Should coerce float `start` and `end` params of `_.slice` to integers.
+
+commit db3b6a12522439a549f8d956452e9386559edd80
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jan 28 20:51:54 2015 -0800
+
+    Add `_.random` tests.
+
+commit 24810aeca380aea7518eb73aef0acb735c857e7d
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jan 28 09:55:42 2015 -0800
+
+    Fix DOMException in `_.merge`. [closes #895]
+
+commit c888319f22b5a6028a51bc661f0dbf3e93b0b9b2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jan 28 02:45:58 2015 -0800
+
+    Fix lazy `reverse` and `rest`. [closes #890]
+
+commit 13ee78a9c9c3f61e6e874a9c3d5fb36023aa14ff
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Wed Jan 28 01:42:12 2015 -0800
+
+    Remove `baseToString` use in `baseCallback`.
+
+commit acaa07cf7c569884ef26411988ab63af75d68e97
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Tue Jan 27 09:16:44 2015 -0800
+
+    Update docs. [ci skip]
+
+commit 56afe21022c07a24d1ddd11c39adf33ebdd04c45
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jan 26 20:04:56 2015 -0800
+
+    Fix doc typo in `_.memoize`. [ci skip]
+
+commit b58bfa82e64b94e7f25c955a0259a08a0296e7b2
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Jan 26 20:04:38 2015 -0800
+
+    Fix doc example for `_.forEach`. [ci skip]
+
+commit a6257b59011e3de9d9ffe67c0392e3d670652522
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 12:11:13 2015 -0800
+
+    Bump to v3.0.0.
+
+commit 3e4e4f2664a45cd073a4e7a709ce3f29be20479a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 12:04:50 2015 -0800
+
+    Rebuild lodash.
+
+commit dc0c4fe8fb24d9a82a80694f3273f21aa3396c88
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jan 25 12:13:52 2015 -0800
+
+    Add tests for methods that check for functions and throw.
+
+commit 0c050bb266fb1e4746c2603828da277f83f8d34a
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jan 25 12:13:28 2015 -0800
+
+    Add `_.uniq` test for arguments provided to `iteratee`.
+
+commit 47a5b227ccfef41f0e3189e9c8e976e6f9cfd7b3
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sun Jan 25 12:12:41 2015 -0800
+
+    Ensure `_.ary` treats negative `n` values as `0`.
+
+commit ed61d0c591ad9ea3b3020af4fdff798e5be53d59
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 19:37:18 2015 -0800
+
+    Cleanup tests.
+
+commit 8ff856ecf8f0453ea17c7f7e54c5a288e9c7a80c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 19:36:54 2015 -0800
+
+    Use https in links where supported. [ci skip]
+
+commit 93a607bea0bb4cf5dbe425635e539e921b9b9b8e
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 14:55:39 2015 -0800
+
+    Reduce test hint for stable sort to match the commented issue.
+
+commit 7bec7ba49df470a56f9474232c4ad2b61cb5eb99
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Sat Jan 24 11:56:29 2015 -0800
+
+    Rename Lo-Dash references to lodash. [ci skip]
+
+commit 4c8f3bd3925fb22b81f008cdcd8a65ba25bfa2d6
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jan 23 09:25:07 2015 -0800
+
+    Update travis.yml.
+
+commit d28ca4eda75c1fa2bfa741896c10b180af0c98b5
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Thu Jan 22 23:37:10 2015 -0800
+
+    Rename ES6 to ES in tests.
+
+commit 9563b5a7df33ac3218c1228897cefd58403c8707
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Fri Jan 23 09:28:44 2015 -0800
+
+    Change ES6 references to ES. [ci skip]
+
+commit e4f231502a4a5ff261985d99f3117779bced38b7
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 2 23:03:56 2015 -0800
+
+    Move _lodash.js to lodash.js.
+
+commit 04a61e6fd652ab3049facdea3d8349c230935b8c
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 2 22:52:08 2015 -0800
+
+    Move lodash.js to lodash.src.js.
+
+commit dc5c7d2ee8588336d89965ad98c4a326eefa5b04
+Author: jdalton <john.david.dalton@gmail.com>
+Date:   Mon Feb 2 22:49:03 2015 -0800
+
+    Move lodash.src.js to _lodash.js.
