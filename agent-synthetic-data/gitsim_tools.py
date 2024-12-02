@@ -6,41 +6,36 @@ import datetime
 
 # Comment Class
 
-
 class Comment(BaseModel):
-    username: str = Field(description="The user who made the comment")
-    content: str = Field(description="The text of the comment")
+    username: str = Field(..., description="The user who made the comment")
+    content: str = Field(..., description="The text of the comment")
 
-    def __init__(self, username: str, content: str):
-        self.username = username  # The user who made the comment
-        self.content = content    # The text of the comment
+    class Config:
+        orm_mode = True
+        extra = 'ignore'
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Comment(by: {self.username}, content: '{self.content[:30]}...')"
 
-    def get_details(self):
+    def get_details(self) -> dict:
         return {
             "username": self.username,
             "content": self.content
         }
 
-
 # Commit Class
 class Commit(BaseModel):
-    commit_id: str = Field(description="The unique ID of the commit")
-    username: str = Field(description="The user who made the commit")
-    message: str = Field(description="The commit message")
-    timestamp: str = Field(description="The timestamp of the commit")
+    commit_id: str = Field(default_factory=lambda: generate_new_id("commit"), description="The unique ID of the commit")
+    username: str = Field(..., description="The user who made the commit")
+    message: str = Field(..., description="The commit message")
+    timestamp: str = Field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"), description="The timestamp of the commit")
+    code: Optional[str] = None
 
-    def __init__(self, username: str, message: str, timestamp: Optional[str] = None):
-        self.commit_id = generate_new_id("commit")  # Generate unique commit ID
-        self.username = username  # The user who made the commit
-        self.message = message    # The commit message
-        self.timestamp = timestamp or datetime.now().strftime(
-            "%Y-%m-%d %H:%M:%S")  # Default to current timestamp
-        self.code = None          # Code (if relevant) can be added later
+    class Config:
+        orm_mode = True
+        extra = 'ignore'
 
-    def get_details(self):
+    def get_details(self) -> dict:
         return {
             "commit_id": self.commit_id,
             "username": self.username,
@@ -50,28 +45,27 @@ class Commit(BaseModel):
 
 # PR Class
 
-
 class PR(BaseModel):
-    pr_id: str = Field(description="The unique ID of the pull request")
-    title: str = Field(description="The title of the pull request")
-    description: str = Field(description="The description of the pull request")
-    commits: list = Field(description="List of commits in the PR")
-    comments: list = Field(description="List of comments on the PR")
+    pr_id: str = Field(default_factory=lambda: generate_new_id("pr"), description="The unique ID of the pull request")
+    title: str = Field(..., description="The title of the pull request")
+    description: str = Field(..., description="The description of the pull request")
+    commits: List[Commit] = Field(default_factory=list, description="List of commits in the PR")
+    comments: List[Comment] = Field(default_factory=list, description="List of comments on the PR")
 
-    def __init__(self, title: str, description: str):
-        self.pr_id = generate_new_id("pr")  # Unique PR ID
-        self.title = title  # Title of the PR
-        self.description = description  # Description of the PR
-        self.commits = []  # List of Commit objects
-        self.comments = []  # List of Comment objects
+    class Config:
+        orm_mode = True
+        extra = 'ignore'
 
-    def add_commit(self, commit: Commit):
-        self.commits.append(commit)  # Attach a commit to this PR
+    def add_commit(self, commit: Commit) -> None:
+        """Attach a commit to this PR"""
+        self.commits.append(commit)
 
-    def add_comment(self, comment: Comment):
-        self.comments.append(comment)  # Add a comment to the PR
+    def add_comment(self, comment: Comment) -> None:
+        """Add a comment to the PR"""
+        self.comments.append(comment)
 
-    def get_details(self):
+    def get_details(self) -> dict:
+        """Get detailed information about the PR"""
         return {
             "pr_id": self.pr_id,
             "title": self.title,
@@ -80,33 +74,59 @@ class PR(BaseModel):
             "comments": [comment.get_details() for comment in self.comments],
         }
 
+# Issue Class
 
 class Issue(BaseModel):
-    issue_id: str = Field(description="The unique ID of the issue")
-    title: str = Field(description="The title of the issue")
-    description: str = Field(description="The description of the issue")
-    status: str = Field(description="The status of the issue")
-    comments: list = Field(description="List of comments on the issue")
+    issue_id: str = Field(default_factory=lambda: generate_new_id("issue"), description="Unique identifier for the issue")
+    title: str = Field(..., description="Title of the issue")
+    description: Optional[str] = Field(default="", description="Detailed description of the issue")
+    status: str = Field(default="open", description="Current status of the issue")
+    comments: List[Comment] = Field(default_factory=list, description="Comments on the issue")
+    created_at: str = Field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    updated_at: Optional[str] = Field(default=None)
 
-    def __init__(self, title: str, description: str = ""):
-        self.issue_id = generate_new_id("issue")  # Generate unique issue ID
-        self.title = title
-        self.description = description
-        self.status = "open"  # Default status is 'open'
-        self.comments = []  # List to hold comments on the issue
+    class Config:
+        orm_mode = True
+        extra = 'ignore'
 
-    def add_comment(self, comment: Comment):
+    def add_comment(self, comment: Comment) -> None:
+        """
+        Add a comment to the issue and update the timestamp.
+        
+        Args:
+            comment (Comment): The comment to be added
+        """
         self.comments.append(comment)
+        self.updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    def close(self):
+    def close(self) -> None:
+        """
+        Close the issue by setting its status to 'closed'.
+        """
         self.status = "closed"
+        self.updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-    def get_details(self):
+    # def reopen(self) -> None:
+    #     """
+    #     Reopen a closed issue by setting its status back to 'open'.
+    #     """
+    #     self.status = "open"
+    #     self.updated_at = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    def get_details(self) -> dict:
+        """
+        Get a dictionary representation of the issue details.
+        
+        Returns:
+            dict: A dictionary containing the issue's details
+        """
         return {
             "issue_id": self.issue_id,
             "title": self.title,
             "description": self.description,
             "status": self.status,
+            "created_at": self.created_at,
+            "updated_at": self.updated_at,
             "comments": [comment.get_details() for comment in self.comments],
         }
 
