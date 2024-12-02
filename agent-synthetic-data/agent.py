@@ -10,29 +10,7 @@ dotenv.load_dotenv()
 
 # Create the agent
 memory = MemorySaver()
-model = ChatOpenAI(model="gpt-4")
+# 3.5 turbo
+model = ChatOpenAI(model="gpt-3.5-turbo")
 tools = all_tools
 agent_executor = create_react_agent(model, tools, checkpointer=memory)
-
-
-# def create_datagen_agent():
-#     memory = MemorySaver()
-#     model = ChatOpenAI(model="gpt-4")
-#     tools = all_tools
-#     agent_executor = create_react_agent(model, tools, checkpointer=memory)
-#     return agent_executor
-
-# # Use the agent
-# config = {"configurable": {"thread_id": "abc123"}}
-# for chunk in agent_executor.stream(
-#     {"messages": [HumanMessage(content="hi im bob! and i live in sf")]}, config
-# ):
-#     print(chunk)
-#     print("----")
-
-# for chunk in agent_executor.stream(
-#     {"messages": [HumanMessage(
-#         content="whats the weather where I live?")]}, config
-# ):
-#     print(chunk)
-#     print("----")
