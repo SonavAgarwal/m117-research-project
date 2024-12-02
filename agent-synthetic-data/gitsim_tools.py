@@ -3,8 +3,10 @@ from langchain_core.tools import tool
 from langchain.pydantic_v1 import BaseModel, Field
 from typing import Optional
 import datetime
+from typing import List
 
 # Comment Class
+
 
 class Comment(BaseModel):
     username: str = Field(..., description="The user who made the comment")
@@ -24,11 +26,15 @@ class Comment(BaseModel):
         }
 
 # Commit Class
+
+
 class Commit(BaseModel):
-    commit_id: str = Field(default_factory=lambda: generate_new_id("commit"), description="The unique ID of the commit")
+    commit_id: str = Field(default_factory=lambda: generate_new_id(
+        "commit"), description="The unique ID of the commit")
     username: str = Field(..., description="The user who made the commit")
     message: str = Field(..., description="The commit message")
-    timestamp: str = Field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"), description="The timestamp of the commit")
+    timestamp: str = Field(default_factory=lambda: datetime.now().strftime(
+        "%Y-%m-%d %H:%M:%S"), description="The timestamp of the commit")
     code: Optional[str] = None
 
     class Config:
@@ -45,12 +51,17 @@ class Commit(BaseModel):
 
 # PR Class
 
+
 class PR(BaseModel):
-    pr_id: str = Field(default_factory=lambda: generate_new_id("pr"), description="The unique ID of the pull request")
+    pr_id: str = Field(default_factory=lambda: generate_new_id(
+        "pr"), description="The unique ID of the pull request")
     title: str = Field(..., description="The title of the pull request")
-    description: str = Field(..., description="The description of the pull request")
-    commits: List[Commit] = Field(default_factory=list, description="List of commits in the PR")
-    comments: List[Comment] = Field(default_factory=list, description="List of comments on the PR")
+    description: str = Field(...,
+                             description="The description of the pull request")
+    commits: List[Commit] = Field(
+        default_factory=list, description="List of commits in the PR")
+    comments: List[Comment] = Field(
+        default_factory=list, description="List of comments on the PR")
 
     class Config:
         orm_mode = True
@@ -76,13 +87,19 @@ class PR(BaseModel):
 
 # Issue Class
 
+
 class Issue(BaseModel):
-    issue_id: str = Field(default_factory=lambda: generate_new_id("issue"), description="Unique identifier for the issue")
+    issue_id: str = Field(default_factory=lambda: generate_new_id(
+        "issue"), description="Unique identifier for the issue")
     title: str = Field(..., description="Title of the issue")
-    description: Optional[str] = Field(default="", description="Detailed description of the issue")
-    status: str = Field(default="open", description="Current status of the issue")
-    comments: List[Comment] = Field(default_factory=list, description="Comments on the issue")
-    created_at: str = Field(default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    description: Optional[str] = Field(
+        default="", description="Detailed description of the issue")
+    status: str = Field(
+        default="open", description="Current status of the issue")
+    comments: List[Comment] = Field(
+        default_factory=list, description="Comments on the issue")
+    created_at: str = Field(
+        default_factory=lambda: datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
     updated_at: Optional[str] = Field(default=None)
 
     class Config:
@@ -92,7 +109,7 @@ class Issue(BaseModel):
     def add_comment(self, comment: Comment) -> None:
         """
         Add a comment to the issue and update the timestamp.
-        
+
         Args:
             comment (Comment): The comment to be added
         """
@@ -116,7 +133,7 @@ class Issue(BaseModel):
     def get_details(self) -> dict:
         """
         Get a dictionary representation of the issue details.
-        
+
         Returns:
             dict: A dictionary containing the issue's details
         """
@@ -186,8 +203,16 @@ def open_issue(title: str, description: str = "") -> str:
     """
     Opens a new issue in the repository with the given title and description.
     """
+
+    # open state.json
+    # parse state.json
+
     new_issue = Issue(title, description)
     issues[new_issue.issue_id] = new_issue
+
+    # write state.json
+    # close state.json 
+
     return f"Issue #{new_issue.issue_id} created successfully."
 
 # comment_issue
