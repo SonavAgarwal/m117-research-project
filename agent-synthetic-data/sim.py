@@ -1,9 +1,13 @@
 from datetime import datetime, timedelta
-from agent import create_datagen_agent
+from agent import agent_executor
 from langchain.prompts import PromptTemplate
+from langchain_core.messages import SystemMessage
+from gitsim_tools import sim_state_str, print_sim_state
 
-good_maintainer = create_datagen_agent()
-bad_maintainer = create_datagen_agent()
+gm_username = "nullPointer98"
+bm_username = "lambdaLover24"
+good_maintainer_config = {"configurable": {"thread_id": gm_username}}
+bad_maintainer_config = {"configurable": {"thread_id": bm_username}}
 
 good_prompt = PromptTemplate(
     input_variables=["username"],
@@ -29,27 +33,69 @@ bad_prompt_daily = PromptTemplate(
     template="""
 It is {time}. Please take a moment to take any actions you want.
 """)
+# print(good_prompt.format(username=gm_username))
+gm_msg = SystemMessage(content=good_prompt.format(username=gm_username))
+bm_msg = SystemMessage(content=bad_prompt.format(username=bm_username))
 
-good_maintainer_response = good_maintainer(good_prompt)
-bad_maintainer_response = bad_maintainer(bad_prompt)
+good_maintainer_response = ""
+for chunk in agent_executor.stream({
+        "messages": [gm_msg]}, good_maintainer_config):
+    # good_maintainer_response += chunk
+    print(chunk)
+
+bad_maintainer_response = ""
+for chunk in agent_executor.stream({
+        "messages": [bm_msg]}, bad_maintainer_config):
+    # bad_maintainer_response += chunk
+    print(chunk)
+
+
+# print(good_maintainer_response)
+# print(bad_maintainer_response)
+
+# create state_log.txt
+with open("state_log.txt", "w") as f:
+    f.write(f"{sim_state_str()}\n\n")
 
 # wait for user to press enter before continuing the loop
-
 current_date = datetime.now()
+
 
 while True:
     input("Press Enter to continue...")
 
+    print("\n\nCurrent simulation state:")
+    print_sim_state()
+    print("\n\n")
+
+    # save to state_log.txt
+    with open("state_log.txt", "a") as f:
+        f.write(f"\n\n{sim_state_str()}\n\n")
+
     # format as time on date
     current_date_str = current_date.strftime("%H:%M on %m/%d/%Y")
 
-    good_maintainer_response = good_maintainer(
-        good_prompt_daily, {"time": current_date_str})
-    bad_maintainer_response = bad_maintainer(
-        bad_prompt_daily, {"time": current_date_str})
+    good_maintainer_config["configurable"]["time"] = current_date_str
+    bad_maintainer_config["configurable"]["time"] = current_date_str
+    gm_msg = SystemMessage(
+        content=good_prompt_daily.format(time=current_date_str))
+    bm_msg = SystemMessage(
+        content=bad_prompt_daily.format(time=current_date_str))
 
-    print(good_maintainer_response)
-    print(bad_maintainer_response)
+    good_maintainer_response = ""
+    for chunk in agent_executor.stream({
+            "messages": [gm_msg]}, good_maintainer_config):
+        # good_maintainer_response += chunk
+        print(chunk)
+
+    bad_maintainer_response = ""
+    for chunk in agent_executor.stream({
+            "messages": [bm_msg]}, bad_maintainer_config):
+        # bad_maintainer_response += chunk
+        print(chunk)
+
+    # print(good_maintainer_response)
+    # print(bad_maintainer_response)
 
     # increment the date by one hour
     current_date += timedelta(hours=1)

@@ -119,6 +119,36 @@ commits = []
 # List of maintainers (users who can close issues, PRs, and make commits)
 maintainers = []
 
+
+def print_sim_state():
+    print("Issues:")
+    for issue in issues.values():
+        print(issue)
+    print("Pull Requests:")
+    for pr in pull_requests.values():
+        print(pr)
+    print("Commits:")
+    for commit in commits:
+        print(commit)
+    print("Maintainers:")
+    print(maintainers)
+
+
+def sim_state_str():
+    state_str = "Issues:\n"
+    for issue in issues.values():
+        state_str += str(issue) + "\n"
+    state_str += "Pull Requests:\n"
+    for pr in pull_requests.values():
+        state_str += str(pr) + "\n"
+    state_str += "Commits:\n"
+    for commit in commits:
+        state_str += str(commit) + "\n"
+    state_str += "Maintainers:\n"
+    state_str += str(maintainers) + "\n"
+    return state_str
+
+
 ####################
 # issue tools
 
