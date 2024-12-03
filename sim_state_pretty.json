@@ -1,0 +1,29 @@
+{
+    "issues": {},
+    "pull_requests": {
+        "pr-d77a1d52-a73f-4682-a464-65e10627e851": {
+            "pr_id": "pr-d77a1d52-a73f-4682-a464-65e10627e851",
+            "title": "Fix issue with authentication system",
+            "description": "",
+            "status": "open",
+            "commits": [],
+            "comments": [
+                {
+                    "username": "codeNinja42",
+                    "content": "Hello, I noticed this issue and would like to contribute to the fix. Is there anything specific you would like me to focus on?"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "Looking forward to collaborating on this fix. Let me know how I can assist further."
+                }
+            ]
+        }
+    },
+    "commits": [],
+    "maintainers": [
+        "codeNinja42",
+        "devGuru99",
+        "newContributor123",
+        "pixelPioneer"
+    ]
+}

@@ -177,6 +177,8 @@ def load_state_from_json() -> SimulationState:
 def save_state_to_json(state: SimulationState) -> None:
     with open('sim_state.json', 'w') as f:
         f.write(state.json())
+    with open('sim_state_pretty.json', 'w') as f:
+        f.write(json.dumps(json.loads(state.json()), indent=4))
 
 
 def sim_state_str() -> str:
@@ -399,6 +401,13 @@ def read_repo() -> dict:
         "commits": [commit.get_details() for commit in state.commits],
         "maintainers": state.maintainers
     }
+
+# debugging functions
+
+
+def has_maintainer(username: str) -> bool:
+    state = load_state_from_json()
+    return username in state.maintainers
 
 
 all_tools = [
