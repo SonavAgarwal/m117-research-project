@@ -1,0 +1,104 @@
+{
+    "pull_requests": {
+        "pr-1b6c1e26-5807-4319-a7fa-7345f68e45dd": {
+            "pr_id": "pr-1b6c1e26-5807-4319-a7fa-7345f68e45dd",
+            "title": "Enhance Conversion Functions",
+            "description": "I have added a few enhancements and additional conversion functions that could be useful for the project. Please review!",
+            "opened_by": "devGuru99",
+            "status": "open",
+            "commits": [
+                {
+                    "commit_id": "commit-1c64d342-7e96-4899-9bfe-e3d4cf1da068",
+                    "username": "devGuru99",
+                    "message": "Added new conversion functions",
+                    "timestamp": "2024-12-02 22:04:22",
+                    "code": "def centimeters_to_inches(cm: float) -> float:\n    \"\"\"Convert centimeters to inches.\"\"\"\n    return cm / 2.54\n\ndef celsius_to_fahrenheit(celsius: float) -> float:\n    \"\"\"Convert Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9.0 / 5.0) + 32\n",
+                    "file_name": "new_conversions.py"
+                },
+                {
+                    "commit_id": "commit-fe515ecc-69be-4541-b553-ff98ab1c912c",
+                    "username": "devGuru99",
+                    "message": "Added missing file new_conversions.py",
+                    "timestamp": "2024-12-02 22:05:46",
+                    "code": "def centimeters_to_inches(cm: float) -> float:\n    \"\"\"Convert centimeters to inches.\"\"\"\n    return cm / 2.54\n\ndef celsius_to_fahrenheit(celsius: float) -> float:\n    \"\"\"Convert Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9.0 / 5.0) + 32\n",
+                    "file_name": "new_conversions.py"
+                },
+                {
+                    "commit_id": "commit-f1206026-8bcb-4bfb-aa6e-cf492a838847",
+                    "username": "devGuru99",
+                    "message": "Ensure new_conversions.py is correctly included",
+                    "timestamp": "2024-12-02 22:06:21",
+                    "code": "def centimeters_to_inches(cm: float) -> float:\n    \"\"\"Convert centimeters to inches.\"\"\"\n    return cm / 2.54\n\ndef celsius_to_fahrenheit(celsius: float) -> float:\n    \"\"\"Convert Celsius to Fahrenheit.\"\"\"\n    return (celsius * 9.0 / 5.0) + 32\n",
+                    "file_name": "new_conversions.py"
+                }
+            ],
+            "comments": [
+                {
+                    "username": "devGuru99",
+                    "content": "Hi there! I noticed that the conversion functions could use some additional options. I\u2019ve added some utility functions to make it easier to convert values in different formats. Looking forward to your feedback!",
+                    "timestamp": "2024-12-02 22:04:19"
+                },
+                {
+                    "username": "devGuru99",
+                    "content": "I've added a couple of additional conversion functions: `centimeters_to_inches` and `celsius_to_fahrenheit`. I believe these will enhance the utility of the module. Please let me know what you think!",
+                    "timestamp": "2024-12-02 22:04:24"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "I noticed that there's a reference to a file 'new_conversions.py' in your pull request, but it seems to be missing. Could you please check and make sure the file is included in your commit? Thank you!",
+                    "timestamp": "2024-12-02 22:04:31"
+                },
+                {
+                    "username": "devGuru99",
+                    "content": "Just to clarify, are there any specific guidelines you'd like me to follow for contributions? I want to ensure that my future contributions align with the project's goals.",
+                    "timestamp": "2024-12-02 22:05:28"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "Thanks for your interest in contributing! We appreciate that you want to align with our project\u2019s goals. Please follow our contribution guidelines, which include writing clear commit messages, ensuring code quality, and adding appropriate tests for any new features. If you have any specific questions, feel free to ask!",
+                    "timestamp": "2024-12-02 22:05:32"
+                },
+                {
+                    "username": "devGuru99",
+                    "content": "Thank you for the feedback, codeNinja42! I've added the missing `new_conversions.py` file as requested. Please let me know if there\u2019s anything else I can do to improve this PR.",
+                    "timestamp": "2024-12-02 22:05:48"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "I've noticed that you've mentioned adding the file `new_conversions.py`, but I still can't seem to find it in the repository. Could you please double-check your latest commit to ensure that the file is properly included? Thank you!",
+                    "timestamp": "2024-12-02 22:05:57"
+                },
+                {
+                    "username": "devGuru99",
+                    "content": "It seems there might be an issue with the file not being properly included in the commit. I will double-check the commit and ensure the `new_conversions.py` file is added correctly. Thank you for your patience!",
+                    "timestamp": "2024-12-02 22:06:17"
+                },
+                {
+                    "username": "devGuru99",
+                    "content": "I have re-committed the `new_conversions.py` file to ensure it is properly included. Please check again, and let me know if everything looks good now!",
+                    "timestamp": "2024-12-02 22:06:23"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "I've checked again, but it appears that the file `new_conversions.py` still isn't showing up in the repository. Please verify that the file is correctly added in your latest commit. Thank you!",
+                    "timestamp": "2024-12-02 22:06:30"
+                },
+                {
+                    "username": "codeNinja42",
+                    "content": "I still cannot find the `new_conversions.py` file in your commits. It might be worth checking if the file is added to your local repository and then pushing it again. Please let me know once you have done that!",
+                    "timestamp": "2024-12-02 22:06:58"
+                }
+            ],
+            "timestamp": "2024-12-02 22:04:17"
+        }
+    },
+    "maintainers": [
+        "codeNinja42"
+    ],
+    "files": {
+        "inches_to_centimeters.py": "def inches_to_centimeters(inches: float) -> float:\n    \"\"\"Convert inches to centimeters.\"\"\"\n    return inches * 2.54\n",
+        "fahrenheit_to_celsius.py": "def fahrenheit_to_celsius(fahrenheit: float) -> float:\n    \"\"\"Convert Fahrenheit to Celsius.\"\"\"\n    return (fahrenheit - 32) * 5.0 / 9.0\n",
+        "rgb_to_hex.py": "def rgb_to_hex(r: int, g: int, b: int) -> str:\n    \"\"\"Convert RGB values to a HEX color code.\"\"\"\n    if not (0 <= r <= 255 and 0 <= g <= 255 and 0 <= b <= 255):\n        raise ValueError(\"RGB values must be in the range 0-255.\")\n    return f\"#{r:02x}{g:02x}{b:02x}\"\n",
+        "is_palindrome.py": "def is_palindrome(s: str) -> bool:\n    \"\"\"Check if a given string is a palindrome.\"\"\"\n    s = ''.join(filter(str.isalnum, s)).lower(\n    )  # Remove non-alphanumeric characters and lowercase\n    return s == s[::-1]\n"
+    }
+}

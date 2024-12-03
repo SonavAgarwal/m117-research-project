@@ -59,7 +59,8 @@ class Commit(BaseModel):
             "username": self.username,
             "message": self.message,
             "timestamp": self.timestamp,
-            "file_name": self.file_name
+            "file_name": self.file_name,
+            "code": self.code
         }
 
 
@@ -174,6 +175,7 @@ def print_sim_state() -> None:
 def open_pr(title: str, description: str, username: str) -> str:
     """
     Open a new pull request. This is also the system for opening issues.
+    You should add a commit to the PR after opening it.
     """
     state = load_state_from_json()
     new_pr = PR(title=title, description=description, opened_by=username)
@@ -239,7 +241,7 @@ def approve_pr(pr_id: str, username: str) -> str:
     # Apply commits
     for commit in pr.commits:
         state.files[commit.file_name] = commit.code
-    pr.status = "approved"
+    pr.status = "approved and merged"
     state.pull_requests[pr_id] = pr
     save_state_to_json(state)
     return f"PR #{pr_id} approved and commits applied."
@@ -337,6 +339,7 @@ def read_repo() -> dict:
     Read the repository information (e.g., all PRs, files, maintainers).
     """
     state = load_state_from_json()
+    # print("reading repo:", state.files)
     return {
         "pull_requests": [pr.get_details() for pr in state.pull_requests.values()],
         "files": state.files,
