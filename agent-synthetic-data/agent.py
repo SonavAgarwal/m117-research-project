@@ -10,7 +10,6 @@ dotenv.load_dotenv()
 
 # Create the agent
 memory = MemorySaver()
-# 3.5 turbo
-model = ChatOpenAI(model="gpt-3.5-turbo")
+model = ChatOpenAI(model="gpt-4o-mini")
 tools = all_tools
 agent_executor = create_react_agent(model, tools, checkpointer=memory)

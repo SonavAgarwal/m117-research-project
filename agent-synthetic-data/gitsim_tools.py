@@ -62,6 +62,7 @@ class Commit(BaseModel):
             "file_name": self.file_name
         }
 
+
 # PR Class
 
 
@@ -114,6 +115,17 @@ class SimulationState(BaseModel):
     maintainers: List[str] = Field(default_factory=list)
     files: Dict[str, str] = Field(default_factory=dict)  # filename: code
 
+    # constructor, go through /fake_library and add all files to the state
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        try:
+            for root, dirs, files in os.walk("fake_library"):
+                for file in files:
+                    with open(os.path.join(root, file), 'r') as f:
+                        self.files[file] = f.read()
+        except FileNotFoundError:
+            pass
+
     class Config:
         orm_mode = True
         arbitrary_types_allowed = True
@@ -123,7 +135,7 @@ class SimulationState(BaseModel):
 
 def load_state_from_json() -> SimulationState:
     try:
-        with open('sim_state.json', 'r') as f:
+        with open('logs/sim_state.json', 'r') as f:
             json_data = f.read()
         state = SimulationState.parse_raw(json_data)
     except FileNotFoundError:
@@ -132,9 +144,14 @@ def load_state_from_json() -> SimulationState:
 
 
 def save_state_to_json(state: SimulationState) -> None:
-    with open('sim_state.json', 'w') as f:
+    # create logs directory if it doesn't exist
+    try:
+        os.makedirs("logs")
+    except FileExistsError:
+        pass
+    with open('logs/sim_state.json', 'w') as f:
         f.write(state.json())
-    with open('sim_state_pretty.json', 'w') as f:
+    with open('logs/sim_state_pretty.json', 'w') as f:
         f.write(json.dumps(json.loads(state.json()), indent=4))
 
 
