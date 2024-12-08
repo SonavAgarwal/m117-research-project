@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4b49489c12e6862e9a320ebcb53872e809ed20ec",
+  "tree": "c0e73d122ec6691384ef8f0b16debb3a1c60fdb3",
+  "parents": [
+    "c2f0c73bfcf36219f446e3eef9effe49a3a415a5"
+  ],
+  "author": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Wed Feb 01 15:27:41 2017 -0800"
+  },
+  "committer": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Thu Feb 02 11:40:56 2017 -0800"
+  },
+  "message": "CameraBase: Don\u0027t return an sp\u003c\u003e by reference\n\nIf the server dies, the binder death callback clears out\nthe global camera service sp\u003c\u003e, and any current references to it\nwill become quite unhappy.\n\nTest: Camera CTS passes\nBug: 31992879\nChange-Id: I2966bed35d0319e3f26e3d4b1b8dc08006a22348\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "55376b04f4083ee474d75611552d0450295a7ecf",
+      "old_mode": 33188,
+      "old_path": "camera/CameraBase.cpp",
+      "new_id": "5fb25933189b4f04e633105428da9cce5e4d5099",
+      "new_mode": 33188,
+      "new_path": "camera/CameraBase.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1b93157d11b57ca04b59118d405fe85f6d186890",
+      "old_mode": 33188,
+      "old_path": "include/camera/CameraBase.h",
+      "new_id": "4c849de90a629eec43defd16bc9957d96c4f25e6",
+      "new_mode": 33188,
+      "new_path": "include/camera/CameraBase.h"
+    }
+  ]
+}

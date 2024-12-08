@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a30d7d90c4f718e46fb41a99b3d52800e1011b73",
+  "tree": "e7c19d6c88e4054ff8f68ca5c94b8cbef0948061",
+  "parents": [
+    "5243afa8fa719e3cc6d1af4333986b2d7ee5e737"
+  ],
+  "author": {
+    "name": "Pablo Ceballos",
+    "email": "pceballos@google.com",
+    "time": "Tue Mar 15 18:10:49 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:47:54 2016 -0700"
+  },
+  "message": "BQ: fix some uninitialized variables\n\nBug 27555981\nBug 27556038\n\nChange-Id: I436b6fec589677d7e36c0e980f6e59808415dc0e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c4660bad8925e8df2415b0e6e3149d9ca5b73d30",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferConsumer.cpp",
+      "new_id": "7ae82e056138901bdfd30b82282f6222b6b222fa",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferConsumer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1099c84f8551f6053d9e51eb37069d83c4bbfaf7",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferProducer.cpp",
+      "new_id": "c3c62358fa2298c8af14b81c8b7fd8e77b6a73df",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferProducer.cpp"
+    }
+  ]
+}

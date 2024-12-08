@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8ea80f29ea5fdf383ee3ae59ce35e55421a339f8",
+  "tree": "4429dedea0c3e78570da6c646ed5b55e55e1771c",
+  "parents": [
+    "ff20cd797822dba8569ee518c44e6864d6b4ebfa"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Mon Apr 03 12:39:04 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:07 2017 -0700"
+  },
+  "message": "DO NOT MERGE: Disallow namespace nodes in XPointer ranges\n\nNamespace nodes must be copied to avoid use-after-free errors.\nBut they don\u0027t necessarily have a physical representation in a\ndocument, so simply disallow them in XPointer ranges.\n\nFound with afl-fuzz.\n\nFixes CVE-2016-4658.\n\nBug: 36554207\nChange-Id: Ie570c4a53ae8ca82ed4ca19701ab7d8ba9b0468f\n(cherry picked from commit cde4b40a9c17aec816c6b2577250fff9354a6f3c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "676c5105837a2c9c9593d3ec903a3d5547e9070e",
+      "old_mode": 33188,
+      "old_path": "xpointer.c",
+      "new_id": "e86b445cb7b07cc06c209fe7f58985773bfc1779",
+      "new_mode": 33188,
+      "new_path": "xpointer.c"
+    }
+  ]
+}

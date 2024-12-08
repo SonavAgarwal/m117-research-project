@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1dcac12a9eff457a96ac1492634b82b0e45c4ab9",
+  "tree": "6094926d7892619471cfb3f4ca84f694a2f65a04",
+  "parents": [
+    "63c67f0304d973f8f26e77b866eda2b1d34340d3"
+  ],
+  "author": {
+    "name": "Nate Myren",
+    "email": "ntmyren@google.com",
+    "time": "Thu Apr 29 11:10:12 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:00:40 2021 +0000"
+  },
+  "message": "Ensure storage permission revoke happens for all users\n\nWhen revoking storage permissions due to storage escalation, ensure the\nrevoke happens for all users\n\nFixes: 186034260\nBug: 171430330\nTest: atest --user-type secondary_user StorageEscalationTest\nMerged-In: Ieb8bb9cde1576e9eee131338d393b8a3528341ec\nChange-Id: Ieb8bb9cde1576e9eee131338d393b8a3528341ec\n(cherry picked from commit 8a1085bdcbdabbd4b5f2fd549afa4e3612b83a0d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b500e1631fb523a71b117207522cca2357d1a08c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+      "new_id": "8d2363b6e831cc9ed38343707bfbd61bdae8127a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+    }
+  ]
+}

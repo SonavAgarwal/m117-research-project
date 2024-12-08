@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "552a3b5df2a6876d10da20f72e4cc0d44ac2c790",
+  "tree": "664bf15f5f1bd2d2ef41c24c8a01039a61089b94",
+  "parents": [
+    "f490fc335772a9b14e78997486f4a572b0594c04"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Tue Jun 27 13:58:07 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:13:35 2017 +0000"
+  },
+  "message": "stagefright: avoid buffer overflow in base64 decoder\n\nBug: 62673128\nChange-Id: Id5f04b772aaca3184879bd5bca453ad9e82c7f94\n(cherry picked from commit 5e96386ab7a5391185f6b3ed9ea06f3e23ed253b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7da7db9411f5368762bfe49f25c7f48bc2eb560d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/foundation/base64.cpp",
+      "new_id": "cc89064067c88df8c55f96d1c10dcec7e3ffd8c4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/foundation/base64.cpp"
+    }
+  ]
+}

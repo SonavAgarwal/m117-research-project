@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "e70e8ac93807c51240b2cd9afed35bf454ea00b3",
+  "tree": "9650a69ca75be7d5ae4d82222f665b2d7d769333",
+  "parents": [
+    "4c330c6ae53df48f6486b6f047021b204fc66594"
+  ],
+  "author": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Fri Sep 11 17:46:23 2015 -0700"
+  },
+  "committer": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Tue Sep 15 20:16:58 2015 +0000"
+  },
+  "message": "DO NOT MERGE Send next alarm\u0027s show intent via PendingIntent\n\nBug: 23909438\nChange-Id: I0bb277c8385b7936fbda03cd76f02248c4fc55de\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f5e5517b731c4f8b7147ac0880ec9b777f130ff2",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/BaseStatusBar.java",
+      "new_id": "813b2c9be88011ea54a65b957c4133a134584fd8",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/BaseStatusBar.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "23810f9cffa2f58dc91159a499cf610407be9da5",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/ActivityStarter.java",
+      "new_id": "62bf84d4a10cd4f1cb18c44aa58945f5e0167cdb",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/ActivityStarter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "2dc08d48efbc176e5d1eae9ccfd97b3d2a158b88",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java",
+      "new_id": "c1356e1dae140e1f81deaa8037ae21d57e49c255",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/QSTileHost.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b0f3ea1ec48d5875d2299f6ff131fb143395f58d",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarHeaderView.java",
+      "new_id": "3d24d5d2c1c34b3dedca69c87ba35632b379b2ce",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/StatusBarHeaderView.java"
+    }
+  ]
+}

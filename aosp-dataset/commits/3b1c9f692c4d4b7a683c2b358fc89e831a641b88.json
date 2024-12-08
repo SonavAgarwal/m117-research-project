@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3b1c9f692c4d4b7a683c2b358fc89e831a641b88",
+  "tree": "b6b03b0235cd20b88c44409e7883f09c99d593ab",
+  "parents": [
+    "bd04b47d38a89f1dada1c6da2ef4a3d235c166b8"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Sep 13 11:43:17 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:00 2016 -0700"
+  },
+  "message": "Fix free-after-use for MediaHTTP\n\nfix free-after-use when we reconnect to an HTTP media source.\n\nChange-Id: I96da5a79f5382409a545f8b4e22a24523f287464\nTests: compilation and eyeballs\nBug: 31373622\n(cherry picked from commit dd81e1592ffa77812998b05761eb840b70fed121)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "76ec625472f1e4237274a2e7ed9333928946f26c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/http/MediaHTTP.cpp",
+      "new_id": "5b18814901c6fba1d261530958f126e00f999d9f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/http/MediaHTTP.cpp"
+    }
+  ]
+}

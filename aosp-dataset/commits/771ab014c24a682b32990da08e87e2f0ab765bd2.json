@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "771ab014c24a682b32990da08e87e2f0ab765bd2",
+  "tree": "af1ab7732a7249ee9a785059de77f35bdb6dbf07",
+  "parents": [
+    "ecf5fd58a8f50362ce9e8d4245a33d56f29f142b"
+  ],
+  "author": {
+    "name": "Connor O\u0027Brien",
+    "email": "connoro@google.com",
+    "time": "Fri Aug 12 11:52:46 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:41:03 2016 -0700"
+  },
+  "message": "Fix vold vulnerability in FrameworkListener\n\nModify FrameworkListener to ignore commands that exceed the maximum\nbuffer length and send an error message.\n\nBug: 29831647\nChange-Id: I9e57d1648d55af2ca0191bb47868e375ecc26950\nSigned-off-by: Connor O\u0027Brien \u003cconnoro@google.com\u003e\n(cherry picked from commit baa126dc158a40bc83c17c6d428c760e5b93fb1a)\n(cherry picked from commit 470484d2a25ad432190a01d1c763b4b36db33c7e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "18049cd412d47db8c992d371e8cabfed915ef783",
+      "old_mode": 33188,
+      "old_path": "include/sysutils/FrameworkListener.h",
+      "new_id": "2137069fbe393604b6ae3c66212f0c3d4ac7d728",
+      "new_mode": 33188,
+      "new_path": "include/sysutils/FrameworkListener.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e7b3dd69ad433cc96c13661059b6c459da930c5d",
+      "old_mode": 33188,
+      "old_path": "libsysutils/src/FrameworkListener.cpp",
+      "new_id": "579ead99198fcf9db895dd686724fafd06d2d7a1",
+      "new_mode": 33188,
+      "new_path": "libsysutils/src/FrameworkListener.cpp"
+    }
+  ]
+}

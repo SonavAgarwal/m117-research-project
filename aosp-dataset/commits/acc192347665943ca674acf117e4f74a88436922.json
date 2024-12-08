@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "acc192347665943ca674acf117e4f74a88436922",
+  "tree": "1d540d39c7e3b9b4b123ba3f1df652f59e3129c6",
+  "parents": [
+    "460dcb750d6d4658dd730a1ae2e1e18015913ff5"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Oct 24 11:38:31 2016 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Oct 25 12:57:59 2016 -0700"
+  },
+  "message": "FLACExtractor: copy protect mWriteBuffer\n\nBug: 30895578\nChange-Id: I4cba36bbe3502678210e5925181683df9726b431\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1af7dc1faa261ae9beb9b7b642a5c182f5c8e833",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/FLACExtractor.cpp",
+      "new_id": "1b88e5d25d699b60905a30a8ef83f6ad42f330f3",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/FLACExtractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "59773dc2f213c3e645c7e04881afa0a8e6ffccca",
+  "tree": "3a4ac8aa148d9c2ec481df6eb78036e7e6de203d",
+  "parents": [
+    "a930fdd38c6a8eb9584fed9322359d40387fbcdd"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Thu Apr 06 17:40:51 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:54:02 2017 +0000"
+  },
+  "message": "Make a11y node info parceling more robust\n\nFix a bug where a malformed Parceled representation\nof an AccessibilityNodeInfo could be used to mess with\nBundles as they get reparceled.\n\nBug: 36491278\nTest: Verified that POC no longer works, a11y cts still passes.\nChange-Id: I10f24747e3ab87d77cd1deba56db4526e3aa5441\n(cherry picked from commit 687bb44b437f7bb24dd3dddf072c2f646308e2ca)\n(cherry picked from commit 487d8697333b1e7784394b9cd96cb590b047c513)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c1076e7b1cec802bb3f63cb00a5e9c0c04eb9b31",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/accessibility/AccessibilityNodeInfo.java",
+      "new_id": "8463a1aa571fcc43fcba9dc7227c42fac0249ce5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/accessibility/AccessibilityNodeInfo.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "edf7055461e2d7fa18de5196dca80896a56e3540",
+  "tree": "bfe95df5b5be0aa416d2d5bf96d085a944337b62",
+  "parents": [
+    "feca781b5ad72ed1fe5688acc9eebee55e4601b1"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Thu May 28 09:27:08 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:44 2015 -0700"
+  },
+  "message": "OpenSSLX509Certificate: mark mContext as transient\n\nSince mContext should not participate in the serialization process,\nhide it with the transient qualifier. This will prevent the field from\ninitialization during the unserialization of this class. Then of course\nthe instance will be in a valid state.\n\n(cherry picked from commit 8d57b9dbbd883422a0ff02083bfcf637b097e504)\n\nBug: 21437603\nChange-Id: Ie9453c16d11820a91caff92c3f7b326d12f8a8f4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e3d8b01bf7695b27be33a00b895d3082fc729264",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/OpenSSLX509Certificate.java",
+      "new_id": "1939de1b5045a3a14a4a3f855a7ce27f87d1443e",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/OpenSSLX509Certificate.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "626b76c4fa47eb68ab8c67876a1de51fd63712eb",
+      "new_mode": 33188,
+      "new_path": "src/test/java/org/conscrypt/OpenSSLX509CertificateTest.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ea3870ac8a3607ff57f4cfe2bc97fec128379c30",
+      "new_mode": 33188,
+      "new_path": "src/test/java/org/conscrypt/ZpenSSLX509Certificate.java"
+    }
+  ]
+}

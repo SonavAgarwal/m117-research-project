@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "514139f4b40cbb035bb92f3e24d5a389d75db9e6",
+  "tree": "9ea3d10342f83d43e2213ff157cd5ff4293ff082",
+  "parents": [
+    "37c88107679d36c419572732b4af6e18bb2f7dce"
+  ],
+  "author": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Thu May 12 15:30:16 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:41 2016 -0700"
+  },
+  "message": "DO NOT MERGE btif: check overflow on create_pbuf size\n\nBug: 27930580\nChange-Id: Ieb1f23f9a8a937b21f7c5eca92da3b0b821400e6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "633975d5dfdaef3faaa679685b85ae0ca2299c96",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hh.c",
+      "new_id": "8b977ae34cb25422e15dde8465de3df568dfe1e3",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hh.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a6274f03b4dfe1c3a22af51e3a17ea56a314e747",
+  "tree": "2781a8be091cf2a9227b1c613690fa004a56c63a",
+  "parents": [
+    "e9e44f797742f52996ebf307740dad58c28fd9b5"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Tue Aug 23 11:09:52 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:49 2016 -0700"
+  },
+  "message": "Fix potential overflow in Visualizer effect\n\nBug: 30229821\nChange-Id: Ia07041a5a149d7d3e120aa6ea0345fb86da37c9b\n(cherry picked from commit b61dd321d08b21a5629044eca7f96e2ecd348e5f)\n(cherry picked from commit 7bbd5008747431d42e2f8cfbc0ddcb8465cdb4a5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cfd99f50aa823e91244d45a28087e26160b46fce",
+      "old_mode": 33188,
+      "old_path": "audio_effects/include/audio_effects/effect_visualizer.h",
+      "new_id": "fe46d7fcc53081bf501d927a55ec95c3812f9afe",
+      "new_mode": 33188,
+      "new_path": "audio_effects/include/audio_effects/effect_visualizer.h"
+    }
+  ]
+}

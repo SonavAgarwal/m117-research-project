@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "86a561f79f97baa38e240f6296fe1192fa4a5c9c",
+  "tree": "8b7f907f1d4556f9a75c1e612dc7b7335f37bb61",
+  "parents": [
+    "409ae3271a77ab26a4f3038c8bb117870f84e36e"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Tue May 08 06:40:24 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:41:11 2018 +0000"
+  },
+  "message": "Make bound check proper in bbf_Scanner_addOutPos\n\nBug: 78290481\nChange-Id: Ifab456f40b5e8f14f2728ad67d1b3e2eeae0b947\n(cherry picked from commit fb710d3c6af6fd139e30d39eb852ba6bcfcec911)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "327e7142650a6a0ef4343d36603557e380cf0b7b",
+      "old_mode": 33188,
+      "old_path": "Embedded/common/src/b_BitFeatureEm/Scanner.c",
+      "new_id": "1a0ae2ae96255ac557f1bb5d8f4a99a3969d97b7",
+      "new_mode": 33188,
+      "new_path": "Embedded/common/src/b_BitFeatureEm/Scanner.c"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "304ef91624e12661e7e35c2c0c235da84a73e9c0",
+  "tree": "b6df14b335a7b79cd39927e8d98787f485e91c30",
+  "parents": [
+    "a5d9298a07d768552077cdbc5c1141e0e656485b"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Jul 29 16:15:55 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:40:28 2015 -0700"
+  },
+  "message": "Guard against codecinfo overflow\n\nBug: 21296336\nChange-Id: I78be5141b3108142f12d7cb94839fa50f776d84a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "74234a681ec572606ad65f4e30d49789fde52fa4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MetaData.cpp",
+      "new_id": "7d867b7a319a56f10604a7d4036693e8b22dbcad",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MetaData.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4f0862c7fc15d33422fbd13aa111fc30520ca930",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/matroska/MatroskaExtractor.cpp",
+      "new_id": "9da835dd5e2d4b2e40b682a11da25f7e8418df05",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/matroska/MatroskaExtractor.cpp"
+    }
+  ]
+}

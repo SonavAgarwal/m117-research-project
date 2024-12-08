@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "18c26a364fe8979b5dbbd93a439c49b2db5d104c",
+  "tree": "1424871fa03e9ab89a50376c2399bebe725c3028",
+  "parents": [
+    "7cb2759e23ee511ba234b705c3672073d1ae983e"
+  ],
+  "author": {
+    "name": "Hui Yu",
+    "email": "huiyu@google.com",
+    "time": "Thu Dec 27 15:40:29 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:55:44 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Apply security patch to sqlite 3.22.\n\nThis patch fixes Magellan SQLite Security Vulnerability as in\nb/121156452\n\nDownload from https://www.sqlite.org/src/info/c255889bd95bd543\nGet the Tarball or ZIP Archive, unzip it on linux machine then run:\nmkdir bld; cd bld; ../configure; make sqlite3.c\n\nCopy sqlite3.c, sqlite3.h, sqlite3ext.h, shell.c from bld directory\nto dist/orig.\n\ndist contains a copy of dist/orig, but with the Android.patch\nfile applied.\n\nBug: 121156452\n\nTest: select sqlite_version() - returns 3.22.0\nTest: atest cts/SQLiteDatabaseTest all passed.\nTest: atest cts/SQLSecurityTest\nChange-Id: Iea1cefe2577ac52da84b24b6d51e1769042e449a\nMerged-In: Iad8c3d1d74d8591a75a4c033c8bf9d3956d2fe4f\n(cherry picked from commit 7fbf27c91af1621264154cc09f0fdafb3ba69ed3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a1c16972a3ffd615412f4358aef59e62b4d31df",
+      "old_mode": 33188,
+      "old_path": "README.version",
+      "new_id": "a14d84184a36323628ce42fd3e77830c4903af1f",
+      "new_mode": 33188,
+      "new_path": "README.version"
+    },
+    {
+      "type": "modify",
+      "old_id": "5ff70a75b0d2202cf1f961f449da36b5409d0b18",
+      "old_mode": 33188,
+      "old_path": "dist/Android.patch",
+      "new_id": "c5f7e1da23da46b01bf40f6b058a7280865eae9c",
+      "new_mode": 33188,
+      "new_path": "dist/Android.patch"
+    },
+    {
+      "type": "modify",
+      "old_id": "73c69efbd50fe2a5e14e605e916ceddaa5a61395",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.c",
+      "new_id": "8e495f19d611080a362cb46eabe02729c3d6d180",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8138b709ae3428180f6b1ed57ffe92d0f3f8853",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.h",
+      "new_id": "57669e1fe0184a64afc3bc9a3e9f7c57f8e6113a",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a12fd3e34b2a09e2dae0b4af554a2825107943b5",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.c",
+      "new_id": "3322b52571c2421588046f4ccebf341338dff184",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8138b709ae3428180f6b1ed57ffe92d0f3f8853",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.h",
+      "new_id": "57669e1fe0184a64afc3bc9a3e9f7c57f8e6113a",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68a974de72b5091ce608815a349daaeb05cdeab5",
+  "tree": "01cef7964900d8c8a54cfeb467c184c77360ade9",
+  "parents": [
+    "ff755ca73c98a1f2706fe86996e4bf6215054834"
+  ],
+  "author": {
+    "name": "Erik Kline",
+    "email": "ek@google.com",
+    "time": "Tue Aug 15 16:19:33 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:12:44 2017 +0000"
+  },
+  "message": "Add extra (size_t) cast to avoid compiler warning.\n\nBug: 64575136\nTest: builds\nChange-Id: Ia33235230b73cb1a828a65dc3a8d1d396fc37d26\n(cherry picked from commit 3b126928a1931ed627d736a8023aed2618b57171)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "265e4dfc8b5f5094e4de1c0f7ae817738c955ca4",
+      "old_mode": 33261,
+      "old_path": "src/rfc1035.c",
+      "new_id": "e440e8a8c0fdd278427c9dfaf0df1fbf8c7f79c5",
+      "new_mode": 33261,
+      "new_path": "src/rfc1035.c"
+    }
+  ]
+}

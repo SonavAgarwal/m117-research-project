@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4baf84f285bfbdebb89b2fef8a955720f00c677",
+  "tree": "11c144f73d691d2d04a1819e9be7d6b377290cd6",
+  "parents": [
+    "de2cd886042f484dc8694e614c3ac16298f93514"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Thu Nov 03 15:54:57 2016 -0700"
+  },
+  "committer": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Fri Nov 04 22:20:49 2016 -0700"
+  },
+  "message": "[BACKPORT] res_create_query: avoid single-byte buffer overwrite\n\n... when the name ends with an escaped dot.\n\nCVE-2016-5180\nhttps://c-ares.haxx.se/adv_20160929.html\n\nBug: b/32205736\nTest: Compile test app from aospg/300423\n\nChange-Id: Ice232d136a81aaa9b29f58b2aea59e8c6467af28\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e33f13ff223216f263dd8e84434e629862d685bc",
+      "old_mode": 33188,
+      "old_path": "ares_mkquery.c",
+      "new_id": "aa41e6b43a05df1ced4b870c92e75ae0a3baac29",
+      "new_mode": 33188,
+      "new_path": "ares_mkquery.c"
+    }
+  ]
+}

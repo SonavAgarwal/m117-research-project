@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b7d4d588e8fcbe254f7a3d9a247af4b91ccc7285",
+  "tree": "32c8955732efa2b8dcb202e576964dada93c3a89",
+  "parents": [
+    "22e104be79d70cadc831f01e9ab32c468256da92"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Tue Jan 23 18:03:49 2018 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:10:30 2018 +0000"
+  },
+  "message": "Fix output buffer size check\n\nBug: 72165027\nTest: ran poc before/after\n\nFor output buffer size check, the parameter wd is set to larger\nof disp_wd and disp_strd.\n\nChange-Id: I1fc745753762b8a8e943165d0bf6525c500fb020\n(cherry picked from commit ce8a8db32e9b2054c5dc119fbbec542bf8e848b6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5e27885d5b8c3095eb8e04229f34e060ab6af99e",
+      "old_mode": 33261,
+      "old_path": "decoder/ihevcd_utils.c",
+      "new_id": "fef3f74a595b80bba58fb6cb55e7aead8027a619",
+      "new_mode": 33261,
+      "new_path": "decoder/ihevcd_utils.c"
+    }
+  ]
+}

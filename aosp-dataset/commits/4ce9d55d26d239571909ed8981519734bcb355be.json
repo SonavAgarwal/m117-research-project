@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4ce9d55d26d239571909ed8981519734bcb355be",
+  "tree": "353242306f1107e980e9cd56016a94d4af080908",
+  "parents": [
+    "dae89562f1e4c0d0f8cc7c4e2d352716f8e7a1a7"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jul 09 15:46:28 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 14 23:25:08 2019 +0000"
+  },
+  "message": "Prevent length underflow in NfcTag.cpp\n\nBug: 124940143\nTest: Read Type4B Tag\nExempt-From-Owner-Approval: Old Owners are all transferred to another BU\nChange-Id: Ibdab756410bf55d701875279df3e289dbc9369d6\n(cherry picked from commit c7b41a96744e1ac30920991ef1b427acbcde44db)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d8a42c11d08bcf2c6ac285c0753b92abc5d3eb2f",
+      "old_mode": 33188,
+      "old_path": "nci/jni/NfcTag.cpp",
+      "new_id": "7194d8c05397fa52b04675ad03df6ae63e1a41ea",
+      "new_mode": 33188,
+      "new_path": "nci/jni/NfcTag.cpp"
+    }
+  ]
+}

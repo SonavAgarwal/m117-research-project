@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "be5e3a612d05283166bbd6eb763ffb148b5acf68",
+  "tree": "6a55c2a7d984f1196b5a7efd203115626bb76f24",
+  "parents": [
+    "e91e15eb5b2c5f8b4ef61b7e363493b8b3e27cad"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Wed Oct 02 15:04:38 2019 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:35:30 2019 +0000"
+  },
+  "message": "Fix read out of bounds in BtifAvEvent::DeepCopy\n\nBug: 140768453\nChange-Id: Ia05e12382ef78a3e07228d09bcf9347f9976bffd\n(cherry picked from commit 8ac773aa5b2ace322a52e27a2231ac63688219de)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7833dc7a048a80c1c7c8bd2c98c58c6e72b7f063",
+      "old_mode": 33188,
+      "old_path": "bta/av/bta_av_aact.cc",
+      "new_id": "b022b43af903349fab29fb35f426058035af9b2b",
+      "new_mode": 33188,
+      "new_path": "bta/av/bta_av_aact.cc"
+    }
+  ]
+}

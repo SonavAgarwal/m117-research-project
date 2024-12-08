@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1b9cbed05b4fd376677d67b6442aa30256834ed4",
+  "tree": "014b598bf70d7302655354e705b254cdd3af4793",
+  "parents": [
+    "9ca83ea75d0ad69d7ea57bcddd4af1e422f0b978"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Fri Jan 12 10:08:32 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:10:22 2018 +0000"
+  },
+  "message": "MPEG-4 AAC Decoder: check against invalid height info\n\nIn CProgramConfig_ReadHeightExt prevent stack overflow\n from invalid FrontElementHeightInfo array value.\n\nBug: 70637599\nTest: see bug\nChange-Id: I145414d81d7a7be711672c12f44b537c12eea308\n(cherry picked from commit 772c7f5542e64f4a380e13e6263ab668694c7c4d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "96a1b353ff4fe968907af04e31018e6a4301ac3e",
+      "old_mode": 33188,
+      "old_path": "libMpegTPDec/src/tpdec_asc.cpp",
+      "new_id": "e80d0e5a1d2c3728302d1712b2050e34095b917f",
+      "new_mode": 33188,
+      "new_path": "libMpegTPDec/src/tpdec_asc.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9878bb99b77c3681f0fda116e2964bac26f349c3",
+  "tree": "86fb999f3a021c5fa264b23f419fd2cb3d176943",
+  "parents": [
+    "613f63b938145bb86cd64fe0752eaf5e99b5f628"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Mon Apr 18 15:16:31 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu May 12 13:54:11 2016 -0700"
+  },
+  "message": "Kill the real/isolated uid group, not the ApplicationInfo uid\n\nThis is a direct reimplementation in L of fixes applied to N in\nthese two commits:\n\n8dc8d37c1d7d694016f1ec2b3cea5fb723567be8\ne8741d23d2dd05c4cb3fed5ee6a4040ee96a60e3\n\nBug 19285814\n\nChange-Id: I59bcc8f1d41c426e9da635bea9ad1d7c6756d5aa\n\nResolve merge conflict when cp\u0027ing ag/941553 to mnc-mr1-release branch\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b4d274691a19427d6b5ea55e90879cd041158987",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "33d0a9f295ea7958a1231ab075f4384d0f81a69d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "697b4e2b5c7bb2a2bbd3f7b76199457846206698",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ProcessRecord.java",
+      "new_id": "3e9d0b8effd4005cdb993d35f1d5ae6f8e563117",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ProcessRecord.java"
+    }
+  ]
+}

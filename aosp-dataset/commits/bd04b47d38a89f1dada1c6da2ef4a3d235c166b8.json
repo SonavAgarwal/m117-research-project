@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bd04b47d38a89f1dada1c6da2ef4a3d235c166b8",
+  "tree": "9ffbe879cfed0f904df5a2044b172622ec1bd08b",
+  "parents": [
+    "3a03fa24d21f97e84e796ac5ef14b3f434c0e8f1"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Wed Sep 07 16:58:39 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:00 2016 -0700"
+  },
+  "message": "Radio: get service by value.\n\nGet strong pointer to service interface by value and not reference to\nprevent race conditions where the service pointer can be cleared\nby another thread while in use.\n\nBug: 30907212\nChange-Id: Iae838b3b672562c1d0cd63968399a6bfdda7f5ab\n(cherry picked from commit 28a0e9ec74e5192aacffb279c80619ef284062b0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "302bf1633038a4683429fe5dddf29b5aa180bcb8",
+      "old_mode": 33188,
+      "old_path": "include/radio/Radio.h",
+      "new_id": "a4dfdd1813d86523a8af7fc557d4b702b09f693a",
+      "new_mode": 33188,
+      "new_path": "include/radio/Radio.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e3554c2400b4cf71b75340f3a8f3a359708a5e69",
+      "old_mode": 33188,
+      "old_path": "radio/Radio.cpp",
+      "new_id": "3c04fb0ab2e2c5185a8c038d1070fa376684f702",
+      "new_mode": 33188,
+      "new_path": "radio/Radio.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9a00f562a612d56e7b2b989d168647db900ba6cf",
+  "tree": "2ba2c8edcd99a094c7dbd0223ea732ea1b840d52",
+  "parents": [
+    "43a184ad481e2346f03f1398af74c04a3bb46e4d"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Jan 05 13:48:55 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon Feb 13 19:14:59 2017 +0000"
+  },
+  "message": "Decoder: Return correct error code for slice header errors\n\nReturn ERROR_INV_SLICE_HDR_T instead of ERROR_INV_SPS_PPS_T for slice\nheader errors.\n\nBug: 34097915\nChange-Id: I45d14a71f2322ff349058baaf65fb0f3c1140fba\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a33a03f481222d28019df1510ecf328c8c5eae2a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "11807b00bba3ecc7a85d40aae7181e50c61fec99",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "880f3a809e3233ba737d44a0e1939ec15f7efd1d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "a69cdc838823d69a187fb229af7f3426e66eec7d",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

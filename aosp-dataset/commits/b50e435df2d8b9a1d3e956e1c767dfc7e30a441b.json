@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b50e435df2d8b9a1d3e956e1c767dfc7e30a441b",
+  "tree": "5bb9b854c1e940fca9263fd065610402009e5228",
+  "parents": [
+    "4171b6ee932828ad2c8258f4a0a84a2d1c05c896"
+  ],
+  "author": {
+    "name": "Takashi Iwai",
+    "email": "tiwai@suse.de",
+    "time": "Tue Apr 16 17:06:33 2019 +0200"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Sat Apr 27 09:36:36 2019 +0200"
+  },
+  "message": "ALSA: core: Fix card races between register and disconnect\n\ncommit 2a3f7221acddfe1caa9ff09b3a8158c39b2fdeac upstream.\n\nThere is a small race window in the card disconnection code that\nallows the registration of another card with the very same card id.\nThis leads to a warning in procfs creation as caught by syzkaller.\n\nThe problem is that we delete snd_cards and snd_cards_lock entries at\nthe very beginning of the disconnection procedure.  This makes the\nslot available to be assigned for another card object while the\ndisconnection procedure is being processed.  Then it becomes possible\nto issue a procfs registration with the existing file name although we\ncheck the conflict beforehand.\n\nThe fix is simply to move the snd_cards and snd_cards_lock clearances\nat the end of the disconnection procedure.  The references to these\nentries are merely either from the global proc files like\n/proc/asound/cards or from the card registration / disconnection, so\nit should be fine to shift at the very end.\n\nReported-by: syzbot+48df349490c36f9f54ab@syzkaller.appspotmail.com\nCc: \u003cstable@vger.kernel.org\u003e\nSigned-off-by: Takashi Iwai \u003ctiwai@suse.de\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4849c611c0fe3a94d98aa3eef778f3da5538575f",
+      "old_mode": 33188,
+      "old_path": "sound/core/init.c",
+      "new_id": "16b7cc7aa66b57825db74c37bb7ff9dbb30bd5aa",
+      "new_mode": 33188,
+      "new_path": "sound/core/init.c"
+    }
+  ]
+}

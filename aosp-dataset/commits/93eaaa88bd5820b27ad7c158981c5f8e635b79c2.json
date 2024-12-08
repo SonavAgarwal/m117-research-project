@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "93eaaa88bd5820b27ad7c158981c5f8e635b79c2",
+  "tree": "8f60f334797f9086aec50b63f0dfe37fe8a2cfec",
+  "parents": [
+    "919b9d37f19f682daa57c9fc2a91265b4b6b23af"
+  ],
+  "author": {
+    "name": "xshu",
+    "email": "xshu@google.com",
+    "time": "Tue Dec 22 19:12:32 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:54:08 2021 +0000"
+  },
+  "message": "Fix UAF problem in wificond\n\nThis is a security upstream patch.\n\nBug: 175124730\nTest: Verified the crash in rvc-qpr-dev using poc.cpp and test\ninstructions provided in the bug and verified the fix works.\n\nChange-Id: Iabccac7f9fbed9d856bee41c5443e3b8479c3e62\nMerged-In: Iabccac7f9fbed9d856bee41c5443e3b8479c3e62\n(cherry picked from commit fae786e5bbc4adfbe5239b3bb3df0cd6122283a6)\n(cherry picked from commit 67d87a0e7e2213959f505e6a355c50079b062037)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e5e41aaadba3567eeddfc620aaa07c6ceb8c40b0",
+      "old_mode": 33188,
+      "old_path": "main.cpp",
+      "new_id": "0c17edfbb9b9568bdeedaf64c5647dbf32dbff15",
+      "new_mode": 33188,
+      "new_path": "main.cpp"
+    }
+  ]
+}

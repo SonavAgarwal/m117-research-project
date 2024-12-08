@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "927b3b120839954a575b4e8c498b1b4d4d375afa",
+  "tree": "8023aefd1eb30618560a98966adf46173f79d6b8",
+  "parents": [
+    "09c9a55bb6ce62194c93068c761c72e582ca3d03"
+  ],
+  "author": {
+    "name": "Vishnu Nair",
+    "email": "vishnun@google.com",
+    "time": "Mon Jun 22 11:52:39 2020 -0700"
+  },
+  "committer": {
+    "name": "Vishnu Nair",
+    "email": "vishnun@google.com",
+    "time": "Tue Jun 23 18:32:02 2020 +0000"
+  },
+  "message": "Call Layer::getLayerDebugInfo from the main thread\n\nFixes an issue where drawing state could be accessed from a binder\nthread. The function also mixed current state with drawing state\nincorrectly. The function now only retrieves drawing state.\n\nBug: 150226608\nTest: Steps in bug doesn\u0027t repro\nTest: atest sffakehwc_test\nMerged-In: I04daedcb9a890083cc710bab30b295e14b9872ae\nChange-Id: I04daedcb9a890083cc710bab30b295e14b9872ae\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cec86e2a04546f95b0f12effe39f286ffd822522",
+      "old_mode": 33188,
+      "old_path": "libs/gui/ISurfaceComposer.cpp",
+      "new_id": "fdf56e6e016ba29db74499d09b654323c1231d92",
+      "new_mode": 33188,
+      "new_path": "libs/gui/ISurfaceComposer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0db21a56e3858bae66137a25ed84ee700779ed66",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/ISurfaceComposer.h",
+      "new_id": "9d1f3b0055853c75ce3f1c42a9524d9eabdac8a0",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/ISurfaceComposer.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "04686e5ad2b3c723283ac145980ec429f2ac8349",
+      "old_mode": 33188,
+      "old_path": "libs/gui/tests/Surface_test.cpp",
+      "new_id": "2b4c9019be6cde50153e8749699d2d00c52b40cc",
+      "new_mode": 33188,
+      "new_path": "libs/gui/tests/Surface_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a062aa1fadd936698f9ee0928c94c1e8f69986a0",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Layer.cpp",
+      "new_id": "8fd1ce1b60b77c123cd38444266a0c5ad57e0c3b",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Layer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2c7f8c4c1dac7d2ff89b435e6082e604a3516cad",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "efccaaa8df0e983ac1352ed31c937261efa6fc60",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f8c205466cb86dc8e1242900b959e0a19665237",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.h",
+      "new_id": "d14e13d8b8f79ecdb0b9dc34ca994fff45372bd2",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.h"
+    }
+  ]
+}

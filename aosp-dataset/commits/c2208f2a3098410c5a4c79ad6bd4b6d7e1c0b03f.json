@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c2208f2a3098410c5a4c79ad6bd4b6d7e1c0b03f",
+  "tree": "b86c196d8eb8a673c876ce9173fbf150cc503753",
+  "parents": [
+    "f19e863cce96cc1e5f4ad7ce512810d5a2843ea6"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Fri Jun 29 16:35:24 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:14 2018 +0000"
+  },
+  "message": "Add sampling rate sanity check\n\nBug: 112661641\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\nChange-Id: I8e416fb1501dabda20babd4a28a99ab06950b221\n(cherry picked from commit ba003785774efe355bcac950158fc78a0cff0c2b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b0f1c6a8adccd998270eec816ed87afc3190bc0e",
+      "old_mode": 33188,
+      "old_path": "libMpegTPDec/src/tpdec_asc.cpp",
+      "new_id": "8d411e8e6b4045393c669e70945133bf0bfecd34",
+      "new_mode": 33188,
+      "new_path": "libMpegTPDec/src/tpdec_asc.cpp"
+    }
+  ]
+}

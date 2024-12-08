@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d3860e51b83296ae1d2921d8109210283573862a",
+  "tree": "20d8b7bf6173e6b46a481ee1d9c3eb614b4cf013",
+  "parents": [
+    "46bd7c682db5bbc048b177c52448a7999e5740ce"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Thu Apr 19 16:23:21 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:39:07 2018 +0000"
+  },
+  "message": "Fix security vulnerability in CryptoHal\n\nCryptoHal was not checking that the memory heap set by setHeap\nwas the same one that was actually used for the decrypt call, allowing\nthe caller to spoof the decrypt call into accessing arbitrary memory.\n\nbug:76221123\ntest: mediadrmserverpoc included in the bug \u0026 GTS media tests\nChange-Id: I35214a1a6d0a4b864123e147d1a1adc2377bfbc5\nMerged-in: I4ae6d1080be406bf53e3617c59c75206cc5066c6\n(cherry picked from commit 9a9c3ab4d76f03f3abb3756bca9cdfe55c74326a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1fdc6e1954521e792658d59b43113fe2bc2216d2",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/CryptoHal.cpp",
+      "new_id": "5dd25639cad89021da77eb7b0a34b05d12807424",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/CryptoHal.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a5d8b43aecfe77af14a6ee6a67891ab15950f93d",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/include/media/CryptoHal.h",
+      "new_id": "80e181e57b4465aadaac641f4fd03cfbc7c32d41",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/include/media/CryptoHal.h"
+    }
+  ]
+}

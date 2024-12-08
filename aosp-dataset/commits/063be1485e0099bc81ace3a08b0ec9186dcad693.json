@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "063be1485e0099bc81ace3a08b0ec9186dcad693",
+  "tree": "8e925445e84720214de3cf43ced220e7bd304a1a",
+  "parents": [
+    "fdb1b40e7bb147c07bda988c9501ad223795d12d"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Fri Aug 26 10:12:29 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Tue Sep 27 15:55:56 2016 -0700"
+  },
+  "message": "DO NOT MERGE | libvpx: Cherry-pick 0f42d1f from upstream\n\nDescription from upstream:\nvp8: fix decoder crash with invalid leading keyframes\n\ndecoding the same invalid keyframe twice would result in a crash as the\nsecond time through the decoder would be assumed to have been\ninitialized as there was no resolution change. in this case the\nresolution was itself invalid (0x6), but vp8_peek_si() was only failing\nin the case of 0x0.\ninvalid-vp80-00-comprehensive-018.ivf.2kf_0x6.ivf tests this case by\nduplicating the first keyframe and additionally adds a valid one to\nensure decoding can resume without error.\n\nBug: 30593765\nChange-Id: I0de85f5a5eb5c0a5605230faf20c042b69aea507\n(cherry picked from commit fc0466b695dce03e10390101844caa374848d903)\n(cherry picked from commit 1114575245cb9d2f108749f916c76549524f5136)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "72e4770c008d986b5d148ef828ce49fd2918a119",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp8/vp8_dx_iface.c",
+      "new_id": "847cafb40e0c44c817ef3c1570be1c2499d6d726",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp8/vp8_dx_iface.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4bd54c477c89d11cfe2d84ff20098aed01cf5de9",
+  "tree": "432ff014ddcb662b2f3bb7e459837e916864006d",
+  "parents": [
+    "27953f11fba5f2ac4cec5c66de49676caa1ade8c"
+  ],
+  "author": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Wed Jun 17 17:29:40 2020 -0700"
+  },
+  "committer": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Thu Jun 18 18:38:24 2020 -0700"
+  },
+  "message": "CONFIGURED_NETWORKS_CHANGED_ACTION: update docs since we stop sending WifiConfiguration\n\nWifiConfiguration contains sensitive location\ninformation, so this extra is no longer included\nin the CONFIGURED_NETWORKS_CHANGED_ACTION\nbroadcast. Update docs to reflect this change.\n\nBug: 158874479\nTest: compiles\nChange-Id: I72ba9f75a89519ef136cc2766a8551b606b218c7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5f46cb3fa642ccefb6bfff4b1ba6592d53ccec61",
+      "old_mode": 33188,
+      "old_path": "wifi/java/android/net/wifi/WifiManager.java",
+      "new_id": "c1e9ba0fe6400fef87186844ae69a75b8d80fd51",
+      "new_mode": 33188,
+      "new_path": "wifi/java/android/net/wifi/WifiManager.java"
+    }
+  ]
+}

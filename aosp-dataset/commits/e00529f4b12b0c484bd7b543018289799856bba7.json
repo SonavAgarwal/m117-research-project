@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e00529f4b12b0c484bd7b543018289799856bba7",
+  "tree": "77f200dc7666f96427f4bb74cd0c92c3a4b2b5a8",
+  "parents": [
+    "a80475564fdced61fa9853468e441a352b11ae08"
+  ],
+  "author": {
+    "name": "Bernie Innocenti",
+    "email": "codewiz@google.com",
+    "time": "Thu Jul 19 18:06:52 2018 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:43 2019 +0000"
+  },
+  "message": "Fix use-after-free in NetworkController::removeInterfaceAddress()\n\nTest: system/netd/tests/runtests.sh\nBug: 119496789\nChange-Id: I0ebb9ac758b55f10536fef75f0eb7b69e2feccbc\n(cherry picked from commit dd5a4f0ef32dbb30575a68b6869a68fc30c57dc4)\n(cherry picked from commit ad883b9b99bb472c25bbd83c98724fbc4969744e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5bbfe3f243fc38372aa9ddcb2c267b8f8da646ff",
+      "old_mode": 33188,
+      "old_path": "server/NetworkController.cpp",
+      "new_id": "a26005611b076c45402b8b87144f225bbe1a1759",
+      "new_mode": 33188,
+      "new_path": "server/NetworkController.cpp"
+    }
+  ]
+}

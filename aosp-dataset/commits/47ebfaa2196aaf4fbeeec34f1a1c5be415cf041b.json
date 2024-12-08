@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47ebfaa2196aaf4fbeeec34f1a1c5be415cf041b",
+  "tree": "1e2e73452d582d0338068579e9e953e89fcc004f",
+  "parents": [
+    "b796cd32a45bcc0763c50cc1a0cc8236153dcea3"
+  ],
+  "author": {
+    "name": "Shuzhen Wang",
+    "email": "shuzhenwang@google.com",
+    "time": "Fri Dec 08 12:16:49 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:11:27 2018 +0000"
+  },
+  "message": "OutputConfiguration: Fix missing mIsShared in parcel read\n\nTest: Camera CTS\nBug: 69683251\nMerged-In: I7ea4aa8ed4baa5a5e7d25a0073361d827ba86c13\nChange-Id: I7ea4aa8ed4baa5a5e7d25a0073361d827ba86c13\n(cherry picked from commit 4304a02ac990c1af5fb8f479bdd2b04c8af4fddb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2b317d679d1ce4fa01418f81ea55f7ed97e002cc",
+      "old_mode": 33188,
+      "old_path": "core/java/android/hardware/camera2/params/OutputConfiguration.java",
+      "new_id": "05c4dc37889051c78750ea91e547df683b71ae33",
+      "new_mode": 33188,
+      "new_path": "core/java/android/hardware/camera2/params/OutputConfiguration.java"
+    }
+  ]
+}

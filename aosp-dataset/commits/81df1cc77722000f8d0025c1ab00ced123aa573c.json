@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "81df1cc77722000f8d0025c1ab00ced123aa573c",
+  "tree": "341f27dd2886b5039bf38d1d7e2164d8e0bfdd41",
+  "parents": [
+    "669ecc2f5e80ff924fa20ce7445354a7c5bcfd98"
+  ],
+  "author": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Tue Feb 16 15:01:43 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:11 2016 -0800"
+  },
+  "message": "Don\u0027t create tombstone directory.\n\nPartial backport of cf79748.\n\nBug: http://b/26403620\nChange-Id: Ib877ab6cfab6aef079830c5a50ba81141ead35ee\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c1b80fdc03c83c556003a8c5f1c1996fd0c524b",
+      "old_mode": 33188,
+      "old_path": "debuggerd/tombstone.cpp",
+      "new_id": "46f453b189b19f1e98b5e71d78c3faee43adc4d9",
+      "new_mode": 33188,
+      "new_path": "debuggerd/tombstone.cpp"
+    }
+  ]
+}

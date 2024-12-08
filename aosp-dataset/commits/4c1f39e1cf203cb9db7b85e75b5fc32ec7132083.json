@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4c1f39e1cf203cb9db7b85e75b5fc32ec7132083",
+  "tree": "46de192a2e729bd3ac41a4f54a7bf1af9d037d77",
+  "parents": [
+    "1c40f9218d815e4e67482fb8913fce6850e4fb1c"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Thu Nov 17 15:50:36 2016 -0800"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Mon Dec 19 21:47:46 2016 +0000"
+  },
+  "message": "Remove MANAGE_DOCUMENTS permission as it isn\u0027t needed\n\nFix Merge Conflict in nyc-mr1-security-a-release\nBug: 32612586\nChange-Id: Iebe7dc9b198ce99d5921f5a349ba9d5d4424d156\n(cherry picked from commit 22d032fc493070d3c4b2efffa6aa592e20cf8578)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c71e21f6a8a9ea96e53671e26b6bbe4a3968df6",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "50cfada431fb9d6d57d6e813ee7c8a82f00a8cec",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

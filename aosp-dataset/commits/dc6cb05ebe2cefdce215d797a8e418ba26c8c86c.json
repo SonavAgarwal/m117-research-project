@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dc6cb05ebe2cefdce215d797a8e418ba26c8c86c",
+  "tree": "4130d02a506d295f9887876312c09d9ee296f105",
+  "parents": [
+    "adb416ac460cb28ca03e7898bdd154b1d0f8c16b"
+  ],
+  "author": {
+    "name": "Jon Spivack",
+    "email": "spivack@google.com",
+    "time": "Tue Oct 27 19:29:14 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:43 2020 +0000"
+  },
+  "message": "libbinder: Add ClientCounterCallbackImpl to LazyServiceRegistrar\n\nThis extra layer of indirection below ClientCounterCallback fixes a shared pointer ownership issue between LazyServiceRegistrar and ServiceManager. It also allows for implementation changes (like this one) without changing headers and breaking VNDK.\n\nBug: 170212632\nTest: Manual (Went through reproduction steps in bug on cf_x86_phone-userdebug)\nTest: atest aidl_lazy_test\nChange-Id: I4164a6d44e567c752726953e85aee0e91c6b525e\nMerged-In: I4164a6d44e567c752726953e85aee0e91c6b525e\n(cherry picked from commit 7c227cc333b85938a1ad0f860655bb83567ca755)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6f49aa1607221bf6a90ea6801cf1495dc3c0fa98",
+      "old_mode": 33188,
+      "old_path": "libs/binder/LazyServiceRegistrar.cpp",
+      "new_id": "f2c5139b5605ec95ba4f45852bf1c015096a3df4",
+      "new_mode": 33188,
+      "new_path": "libs/binder/LazyServiceRegistrar.cpp"
+    }
+  ]
+}

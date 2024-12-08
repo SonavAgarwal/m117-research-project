@@ -1,0 +1,111 @@
+)]}'
+{
+  "commit": "1f76f20b2f14b2f08934380c65bf1495e29b969f",
+  "tree": "62b9b392be1683c7e2711bac826ea60995845272",
+  "parents": [
+    "f29ab2dbaaf2635f403be82238b18ad3ff673514"
+  ],
+  "author": {
+    "name": "Mikhail Naganov",
+    "email": "mnaganov@google.com",
+    "time": "Tue Mar 05 16:55:28 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:54:57 2019 +0000"
+  },
+  "message": "DO NOT MERGE: audiopolicy: Remove raw pointer references to AudioMix\n\nAudioInputDescriptor, AudioOutputDescriptor, and AudioSession used\nto reference AudioMix instances using a raw pointer. This isn\u0027t\nsafe as AudioMix was owned by AudioPolicyMix, which is not\nreferenced by descriptors.\n\nChange AudioMix* pointers in Audio{Input|Output}Descriptor and\nAudioSession to wp\u003cAudioPolicyMix\u003e which reflects their\nrelationship correctly.\n\nTo ensure that code does not operate on AudioMix instances\nindependently from AudioPolicyMix, and to avoid introducing\na lot of getter / setter methods into AudioPolicyMix, make\nthe latter to inherit AudioMix. This makes sense because\nAudioPolicyMix is essentially a ref-counted version of AudioMix.\n\nBug: 124899895\nTest: build and sanity check on marlin,\n      build marlin with USE_CONFIGURABLE_AUDIO_POLICY :\u003d 1\nMerged-In: Ic508caedefe721ed7e7ba6ee3e9175ba9e8dc23a\nChange-Id: Ic508caedefe721ed7e7ba6ee3e9175ba9e8dc23a\n(cherry picked from commit a306e2a3577d4155345a24e5214f77870f63359b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b25d6d424c52f34120c01a719d457385837729fa",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/include/AudioInputDescriptor.h",
+      "new_id": "df1cf26b7c2985d778e25370b432b28a8b15c6af",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/include/AudioInputDescriptor.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5e5d38b0690bfd4f2139526c2a621d2962fef05f",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/include/AudioOutputDescriptor.h",
+      "new_id": "247f20f5f918cfdd09ca3cdc8ef5cffba473e5d5",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/include/AudioOutputDescriptor.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8fc6fe95f28d729e7ec88f370a430f213f5520db",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/include/AudioPolicyMix.h",
+      "new_id": "33455793b8ea57dfd11dd43fc61a07002be7b470",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/include/AudioPolicyMix.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "dd5247d9d2229a5e974b7a0344f45150f53d35ec",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/include/AudioSession.h",
+      "new_id": "f7d8bf3e46fe00518b7191082aa50a72d7a3960a",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/include/AudioSession.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "92332fb112ae4ac58f054543c59be4dba006912d",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/AudioInputDescriptor.cpp",
+      "new_id": "27bc4c63aa336b0bf5c8514c6c53803e6c1c1046",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/AudioInputDescriptor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "294a2a695e53aa6504c0d7fbfb60849fb9205942",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/AudioOutputDescriptor.cpp",
+      "new_id": "d15ba4bafb5df9c2d795a4e6590c38a5938168c2",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/AudioOutputDescriptor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "08930f1cdf21108941a45918b579d56cf3a61c33",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp",
+      "new_id": "327dc4d328ef21532676148a9a62d36031606533",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/AudioPolicyMix.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7cda46b8abb51e4cec61bd69e2e939650e8f2680",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/AudioSession.cpp",
+      "new_id": "694c3f2fdd1c6296cbc7fff6a2ce13178b6da29d",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/AudioSession.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d618b0f6c3c4f97f57f93fb3a73699e0238eccb",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/managerdefault/AudioPolicyManager.cpp",
+      "new_id": "2736fd422ada4e14443025a56ba57f37004feb03",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/managerdefault/AudioPolicyManager.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "48e0472b2bd9c225c4e8449d455857cad679f9be",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/managerdefault/AudioPolicyManager.h",
+      "new_id": "45dca2ef52d4388890314dfa935234e4d81f54d1",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/managerdefault/AudioPolicyManager.h"
+    }
+  ]
+}

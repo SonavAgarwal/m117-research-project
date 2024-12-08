@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9b534de2aca5d790c2a1c4d76b545f16137d95dd",
+  "tree": "0741541fab6339c004230280e2d64b07458d7242",
+  "parents": [
+    "3ddadd2c27e6a22e2d2b205e9ff73d13e0c35cc5"
+  ],
+  "author": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Wed Mar 09 15:31:48 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:48:09 2016 -0700"
+  },
+  "message": "DO NOT MERGE Check size of pin before replying\n\nIf a malicious client set a pin that was too long it would overflow\nthe pin code memory.\n\nBug: 27411268\nChange-Id: I9197ac6fdaa92a4799dacb6364e04671a39450cc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "425af2296c282992ff55d360ec5fbe0353658d66",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.c",
+      "new_id": "c7a5ffe479d898f53063a3798f852c9b32ca77d7",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.c"
+    }
+  ]
+}

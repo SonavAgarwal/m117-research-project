@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "aad7fdc4f82ad56e332d3c23c5d07719e069b099",
+  "tree": "d197dd365e82f73d46b3479f9cc7f834d866a0cb",
+  "parents": [
+    "71f7f38f61cd8c97504c98cdb54d1407985450e0"
+  ],
+  "author": {
+    "name": "Hongwei Wang",
+    "email": "hwwang@google.com",
+    "time": "Tue Mar 02 09:21:22 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:05 2021 +0000"
+  },
+  "message": "Restrict the overridden min size for PiP\n\nPer go/cdd-proposal-pip-size, the absolute minimum size when overridden\nshould be 48dp.\n\nBug: 174302616\nTest: atest PinnedStackTests#testEnterPipWithTinyMinimalSize\nMerged-In: I2f0dfd9a79049aaf696fde8703994deaecce63f5\nChange-Id: I2f0dfd9a79049aaf696fde8703994deaecce63f5\n(cherry picked from commit 2a18b15dfbb8c494ab58679c4aceb83da9683441)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ebaf85c64a1421e7cb902dff2e52ef8bd71e284a",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values/dimens.xml",
+      "new_id": "d165930d3c94245f3aa321586fccb384c5787bc1",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values/dimens.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "06f357e79a6215fb88ac9fc12d61fe4939620873",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values/symbols.xml",
+      "new_id": "ee4c6941d6c5467be7d0eaef524f3d7c871102ea",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values/symbols.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "54df53dbe6d7a240b829da7bea709addd0cef537",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/pip/PipTaskOrganizer.java",
+      "new_id": "29d77a72c73a11c6167223ea63372b566276220f",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/pip/PipTaskOrganizer.java"
+    }
+  ]
+}

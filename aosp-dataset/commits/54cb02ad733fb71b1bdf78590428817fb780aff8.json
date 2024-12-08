@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "54cb02ad733fb71b1bdf78590428817fb780aff8",
+  "tree": "e3f22acf46e924f17d0728d816ef4674977c73fd",
+  "parents": [
+    "03a53d1c7765eeb3af0bc34c3dff02ada1953fbf"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Apr 26 08:44:09 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:22 2016 -0700"
+  },
+  "message": "Correctly handle dup() failure in Parcel::readNativeHandle\n\nbail out if dup() fails, instead of creating an invalid native_handle_t\n\nBug: 28395952\n\nChange-Id: Ia1a6198c0f45165b9c6a55a803e5f64d8afa0572\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "22d7ef36c3d175adf1f8e6ef91a2410c38ea51de",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "4a660d1fbe03562078096b611558778e50109f1f",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

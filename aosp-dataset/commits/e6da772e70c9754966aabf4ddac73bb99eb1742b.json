@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e6da772e70c9754966aabf4ddac73bb99eb1742b",
+  "tree": "e5c19c26fc748743c3956d06a2c0492610f9c3c4",
+  "parents": [
+    "334959c9b0415648a48de8cd4514f10aaa60ebe4"
+  ],
+  "author": {
+    "name": "Jorim Jaggi",
+    "email": "jjaggi@google.com",
+    "time": "Tue Nov 29 13:12:48 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:47 2016 -0800"
+  },
+  "message": "Fix security vulnerability\n\nChange-Id: I19028233d2ce79ef08947f00d2ecba20312579cc\nFixes: 32769670\n(cherry picked from commit 28d83109cba8e1949032c78465649ba21db2d22e)\n(cherry picked from commit 890381c983b6eca60a435ebf5a4bdbd7a32660f0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3873dfbe25480d9d4ef38cdf16fba235aef762ea",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/gdx2d/jpgd.cpp",
+      "new_id": "4c84a332101eaee6d857d8c093ac7fd236098a1d",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/gdx2d/jpgd.cpp"
+    }
+  ]
+}

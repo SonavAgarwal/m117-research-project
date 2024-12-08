@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "e5bfb560a63daedbe1adf8bf41a20b572654f999",
+  "tree": "34ec1941cd2905e682ef9e74d3f8a336f35a59cf",
+  "parents": [
+    "14937e01950dc4bce459c18fca9ef13dd3db5f8f"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Tue Jan 05 22:21:23 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:22:54 2021 +0000"
+  },
+  "message": "Fix double free of play policy in a race condition.\n\nThe mPlayPolicy can be freed twice if there is a race condition.\nmPlayPolicy should be protected with a mutex lock.\n\nSafetyNet logging is not added to avoid log spamming. The\nmutex lock is called whenever a license request is made.\nThat can happen quite often.\n\nBug: 176168330\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases -t android.security.sts.Poc21_01#testPocBug_176168330\n\nTest: run sts test on master build\n  run sts test from http://go/ag/13308312\n\nChange-Id: Ibc338e0a98293807dbf12500f7e82e62b6c4a04a\n(cherry picked from commit 537144f77baad847d2c30be6436f94c917019e68)\n(cherry picked from commit 4b86f1dbae158737cd05aa4d5b5634985534cfc3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1b8b8c1e6560f6f1f2c9e5f9f950746bfcd15080",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp",
+      "new_id": "6ac3510c7ce2fa0bd45179d2141fef5a5b70d03c",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4fa42e50afa0ad4fcd99a1d206d42304f1015a13",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/default/include/DrmPlugin.h",
+      "new_id": "aa9b59ddbb58a97285b36be05f76fc46cfabdb1e",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/default/include/DrmPlugin.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f87f83025c0994b893d5da131aee56df0b5cf77b",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp",
+      "new_id": "a77759eaef291975048e6dca0c702512378681ea",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "3de758945b147f5394bbb53fa39bc0e25c206386",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/include/DrmPlugin.h",
+      "new_id": "076beb8a0d5a3cfe8c488180201e4d5d3350234e",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/include/DrmPlugin.h"
+    }
+  ]
+}

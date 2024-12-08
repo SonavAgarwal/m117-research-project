@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "61d0f84881cfc1bbac513ccd156c56603a48cc90",
+  "tree": "bd28b56bf1a52fbd2eee0b2f828a97a50b3d7d6c",
+  "parents": [
+    "58f5cfa56d5282e69a7580dc4bb97603c409f003"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri Dec 04 21:13:03 2020 +0000"
+  },
+  "committer": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon Dec 07 18:05:49 2020 +0000"
+  },
+  "message": "libbinder: readString*Inplace SafetyNet (II)\n\nSafetyNet logs (this time for failure case, instead of success case).\n\nBug: 172655291\nTest: adb logcat -b events | grep snet # exactly one occurance w/ repro\n(c/p\u0027d from 34af0637666f43ae62040ad1bad76468423feba2)\nMerged-In: I75ace071693c0a4579ed9477f7b9212a6e27c36d\nChange-Id: I75ace071693c0a4579ed9477f7b9212a6e27c36d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1f7d27e0e95241ea1617a640759be555c8ff9135",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "b7ad660317e84912a8c6257437a158778ca4e1af",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

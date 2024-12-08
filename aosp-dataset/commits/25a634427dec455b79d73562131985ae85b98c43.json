@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "25a634427dec455b79d73562131985ae85b98c43",
+  "tree": "7eb4fe76d2239352ae39bf4ce75d7dc4f5e0d4bc",
+  "parents": [
+    "f394f12167fddbc755855d06b615509517c99f14"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Sep 01 20:07:56 2015 +0000"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Wed Sep 02 17:52:12 2015 +0000"
+  },
+  "message": "Make IEffect command more robust (second try)\n\nBug: 23540907\nChange-Id: If30cfa535ad51521053706fc40fc98d893db5bc7\n(cherry picked from commit 10e6660cc5da65b027c90489ba7ac55d1504e012)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "86c706a6384cc4bf4e7f707e51c1fa5d494b0683",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IEffect.cpp",
+      "new_id": "1e54ca89f3b631fba5d34244464f1058dd2f1fa0",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IEffect.cpp"
+    }
+  ]
+}

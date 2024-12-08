@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bcfc7124f6ef9f1ec128fb2e90de774a5b33d199",
+  "tree": "fa4a53b778bdb66f762554e897184bf311e98d2c",
+  "parents": [
+    "a1424724a00d62ac5efa0e27953eed66850d662f"
+  ],
+  "author": {
+    "name": "Naveen Kumar Ponnusamy",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Mon Mar 06 16:31:51 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:32 2017 -0700"
+  },
+  "message": "Return error from cabac init if offset is greater than range\n\nWhen the offset was greater than range, the bitstream was read\nmore than the valid range in leaf-level cabac parsing modules.\nError check was added to cabac init to fix this issue. Additionally\nend of slice and slice error were signalled to suppress further\nparsing of current slice.\n\nBug: 34897036\nChange-Id: I1263f1d1219684ffa6e952c76e5a08e9a933c9d2\n(cherry picked from commit 3b175da88a1807d19cdd248b74bce60e57f05c6a)\n(cherry picked from commit b92314c860d01d754ef579eafe55d7377962b3ba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3a03aa86b1ebcd98102a426db05481988a0ef575",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_cabac.c",
+      "new_id": "7e24f02c96f341b6f1f401aead540463b4ca7e99",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_cabac.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "96af4e10e072056c37d3759ec672a4f724b41d82",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice.c",
+      "new_id": "2d5a2e77d7297dbab82de89bbc773bcbac95050d",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice.c"
+    }
+  ]
+}

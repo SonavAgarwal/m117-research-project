@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a7ff2e955d2509ed28deeef984347e093794f92b",
+  "tree": "62eea976a10ac64036bda26ba8257b5afaa7785e",
+  "parents": [
+    "665ac7bc29396fd5af2ecfdfda2b9de7a507daa0"
+  ],
+  "author": {
+    "name": "Russell Brenner",
+    "email": "russellbrenner@google.com",
+    "time": "Thu Nov 05 16:03:20 2015 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Mon Nov 30 18:04:47 2015 -0800"
+  },
+  "message": "[DO NOT MERGE] Preserve FRP lock if wiped during SUW\n\nGuard against FRP attacks by keeping the persistent data block\nintact, if a factory reset has been issued during SUW.\n\nBug: 25290269\nChange-Id: Id26b4c10235ad126632b71875592a4fa70a39b24\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3521aa3140b01df282cd269d01a97c6f3dac9bbd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/MasterClearConfirm.java",
+      "new_id": "71837c6c8c4becd6ff9e3e3d7af421126823eb38",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/MasterClearConfirm.java"
+    }
+  ]
+}

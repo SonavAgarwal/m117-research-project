@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aa78b96e842fc1fb70a18acff22be35c7a715b23",
+  "tree": "7e372e8cfce293ae48884e77ba23746ecacfd545",
+  "parents": [
+    "ec9ab83ac437d31f484a86643e2cc66db8efae4c"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Dec 26 11:02:13 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Call ih264d_deblock_display only for valid process calls\n\nih264d_deblock_display() should be called only if current\ndecoder call has got a picture buffer during start of pic\n\nBug: 33751193\nChange-Id: I3bf2fdbb910bf7240484dae48b85d72833830d56\n(cherry picked from commit 318368435f38629288dc500081a018dc698ca1f1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "09c0d5ed196ac518eed03832a66b0e966f443d4b",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "4a81465b0f437c148374ffc0393809642095ed9b",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

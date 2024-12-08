@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "006e0613016c1a0e0627f992f5a93a7b7198edba",
+  "tree": "aa2329c916434a0c350870c938952c1d61554d27",
+  "parents": [
+    "e0ea7fecd63002ac2d3df18490fd1c16578d1935"
+  ],
+  "author": {
+    "name": "Hugo Benichi",
+    "email": "hugobenichi@google.com",
+    "time": "Wed Oct 05 21:07:19 2016 +0900"
+  },
+  "committer": {
+    "name": "Hugo Benichi",
+    "email": "hugobenichi@google.com",
+    "time": "Thu Oct 06 21:22:29 2016 +0900"
+  },
+  "message": "Reject DHCP packets with no magic cookie\n\nThis patch adds an explicit check in the DHCP packet parser for\nrejecting packets without a magic cookie, instead of relying on the\ntop-level try-catch-all in the parser.\n\nThis allows to add to DHCP error metrics this specific error.\n\nIt also allows to add two poor man\u0027s fuzzing tests that tries to find\nadditional gaps in the DHCP packet parser by\n - trying to parse all subslices of a valid offer packet.\n - trying to parse random byte arrays.\n\nTest: covered by previously introduced malformed DHCP packet unit tests\n      + additional fuzzing tests.\nBug: 31850211\nChange-Id: If53c9ba9df78d7604ec018c9d67c237ae59c4833\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1972b9ea8a77921b1413a8d45344e4ce1ec280c0",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/metrics/DhcpErrorEvent.java",
+      "new_id": "c3abcf7610b4e420bb458d41aae7972c0c898624",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/metrics/DhcpErrorEvent.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc7cf2e204f0be0dbe4a09d86860a515ae223fd8",
+      "old_mode": 33188,
+      "old_path": "services/net/java/android/net/dhcp/DhcpPacket.java",
+      "new_id": "ef4bc024c1533fcb0328d85b15bb94d8163a76aa",
+      "new_mode": 33188,
+      "new_path": "services/net/java/android/net/dhcp/DhcpPacket.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b4e9db77f99f9edf2112d2c6cdd325238b706d8f",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/android/net/dhcp/DhcpPacketTest.java",
+      "new_id": "bc8baa12a45b47426801b53c187fca1e7d65288b",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/android/net/dhcp/DhcpPacketTest.java"
+    }
+  ]
+}

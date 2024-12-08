@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "26a348a610ec277384c98f42acd841ae647d2131",
+  "tree": "8baa3b1d20f65fc3474b051a7d62e22254885fdb",
+  "parents": [
+    "aa09a02148ace704aa405e006660c15bdb6f63b0"
+  ],
+  "author": {
+    "name": "weichinweng",
+    "email": "weichinweng@google.com",
+    "time": "Tue Jul 28 16:56:33 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:55 2020 +0000"
+  },
+  "message": "Fix possible OOB when receive gatt read type response data\n\nBug: 158833854\nBug: 158778659\nTest: manual\nTag: #security\n\nChange-Id: I1bd8713eecebc2bc3d919402b035987e06a2d4d3\n(cherry picked from commit 0eb7a763dff47d349b5cfc5821116ece5a46ffa3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6bc01e15a211ab9d06aec6bc6f2a3379de9e064d",
+      "old_mode": 33188,
+      "old_path": "stack/gatt/gatt_cl.cc",
+      "new_id": "842cb6c3e7a303a4824f365ec128016c51b73401",
+      "new_mode": 33188,
+      "new_path": "stack/gatt/gatt_cl.cc"
+    }
+  ]
+}

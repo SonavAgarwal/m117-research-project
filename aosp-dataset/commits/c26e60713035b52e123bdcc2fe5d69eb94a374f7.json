@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c26e60713035b52e123bdcc2fe5d69eb94a374f7",
+  "tree": "72e2eca0d5299d9bab83a8ba8b6bc67f2ded2742",
+  "parents": [
+    "2529aecc2e670f358f00ec35f67ce0d1dccda279"
+  ],
+  "author": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Wed Feb 21 14:09:30 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:57:37 2018 +0000"
+  },
+  "message": "Fix SSLEngine bug with multiple heap buffer inputs.\n\nWhen the SSLEngine overload that accepts an array of ByteBuffers is\ncalled with heap buffers for both the source and destination, those\nheap buffers are converted to direct buffers for passing to JNI by way\nof copying them to a single temporary direct buffer.  A bug in the\nreading of the encrypted data out of BoringSSL resulted in the data\nbeing placed at the wrong offset of the temporary buffer, meaning that\nthe output data was prefixed in the worst case by the plaintext.\n\nBug: 73251618\nTest: cts -m CtsLibcoreTestCases -t libcore.javax.net.ssl\nChange-Id: I9b1a167f9a5ccd36d6da5cd1a14a80fb3cc73a1f\n(cherry picked from commit 4a85e8dc865973bb4d0f960b63f67a75f3f8229f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e1a929dae9353118f97b0a676e273804b8ed323",
+      "old_mode": 33188,
+      "old_path": "common/src/main/java/org/conscrypt/ConscryptEngine.java",
+      "new_id": "f725e3634e70eab60e4bd803dc7015287214b515",
+      "new_mode": 33188,
+      "new_path": "common/src/main/java/org/conscrypt/ConscryptEngine.java"
+    }
+  ]
+}

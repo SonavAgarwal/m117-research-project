@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2791f0b33b610247ef87278862e66c6045f89693",
+  "tree": "1e5184c6c177225ac2f45089ec05f5d2b12ec8aa",
+  "parents": [
+    "c84ce2000f443ef6c7a6df6ad0b1c76abae7790b"
+  ],
+  "author": {
+    "name": "Sam Lee",
+    "email": "samsmlee@google.com",
+    "time": "Wed Mar 23 16:42:43 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:48:04 2016 -0700"
+  },
+  "message": "Don\u0027t allow cachedFile Attachments if the content Uri is pointing to EmailProvider.\n\nThis is to backport a security fix reported by b/27308057 and b/27335139.\nAlso, add Analytics for these errors.\n\nBug: b/27335139\nChange-Id: Iaacb34e4983cdf9a85487222ae930cb64d80a193\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4f59e2c65fe7e75c04c5c8b08675866aab1b24fe",
+      "old_mode": 33188,
+      "old_path": "src/com/android/email/activity/ComposeActivityEmail.java",
+      "new_id": "cdfea0b4c8a99b0e50b126f610d335bc78d1f823",
+      "new_mode": 33188,
+      "new_path": "src/com/android/email/activity/ComposeActivityEmail.java"
+    }
+  ]
+}

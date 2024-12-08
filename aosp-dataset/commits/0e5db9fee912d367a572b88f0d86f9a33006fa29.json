@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0e5db9fee912d367a572b88f0d86f9a33006fa29",
+  "tree": "1eb0ae9907cf12e3d5a60c85d1f4596f4b79b8d6",
+  "parents": [
+    "ce97e7d55e1f69683b5bc8f19cc8da8c85bc2cd4"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Wed Aug 15 14:33:56 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Oct 20 00:17:00 2018 +0000"
+  },
+  "message": "Unify audio element loop abort criterion in ER syntax\n\nBug: 112891548\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\nChange-Id: Iea56cf804cfb9d396810124c718fc91bdff68392\n(cherry picked from commit f2bc07da2ed70eb069f3faab1179c4c89792bf3d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fab30de4328099a000d800f9c7d691167967be6a",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdecoder.cpp",
+      "new_id": "24907ee5b83ea57f092daa76adf649bbc831b7de",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdecoder.cpp"
+    }
+  ]
+}

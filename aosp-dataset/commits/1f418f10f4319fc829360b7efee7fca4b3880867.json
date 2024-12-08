@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1f418f10f4319fc829360b7efee7fca4b3880867",
+  "tree": "c19e93b0ee855813dafa6df427d617836691cf81",
+  "parents": [
+    "c7c9271740c29c02e7926265ed53a44b8113dbfb"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri May 12 15:35:30 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:04:59 2017 +0000"
+  },
+  "message": "Limit ogg packet size\n\nA malformed ogg file might lace together a very large packet, which\ncould lead to out of memory conditions. Limit the packet size to\navoid this.\n\nBug: 36592202\nChange-Id: I8650b3ec54a0de9ec302a7cbac296bb85efcfb3d\n(cherry picked from commit bf928560aca13c5a615cb3ffc3b6aad16cdf3824)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "37e8e9c82c79195f505d1214a771960ef282f070",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OggExtractor.cpp",
+      "new_id": "ebbe5102ed2e97a727beed3a02173cc53635f8bb",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OggExtractor.cpp"
+    }
+  ]
+}

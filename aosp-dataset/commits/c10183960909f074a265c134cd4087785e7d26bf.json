@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c10183960909f074a265c134cd4087785e7d26bf",
+  "tree": "7d1335dcbc91f9d55a4689e32aed38903c37ceaf",
+  "parents": [
+    "b6ec3bbba36a3816a936f1e31984529b875b3618"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Jun 02 13:07:19 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:12:22 2017 +0000"
+  },
+  "message": "better manage buffer for libstagefright_soft_mpeg4enc\n\nExisting code allocated buffer, adjusted pointer to use it, and would\nadjust the pointer back when it came time to free the space. The problem\nwas that the adjustment was based on user-supplied values and if the\nuser changed those values between alloc and free (which was possible),\nthe code ended up free()ing the wrong address.\n\nWe fix this by keeping an extra pointer -- the unmodified allocation --\nwhich we use for the subsequent free() calls. This makes the free()\nindependent of any changes to values that the user provides.\n\nBug: 36075363\nTest: ran poc against patched nyc-mr2-dev tree\nChange-Id: I7013ff5883a945c4647517b2980c76a6558f23d2\n(cherry picked from commit 90d2dd403bc8faa421cfc6b26930e5aa69879943)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c2b7c8d87150118c38e91ef26d12259752a53871",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4enc_api.cpp",
+      "new_id": "7ab8f451e7434574255efca7ebd4d246710c1de4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4enc_api.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "3bc94212bc4081c5a75f4d11fdc303836fd2f595",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4lib_int.h",
+      "new_id": "b05099cce6bc27d08357f97ecd8f67b77611de32",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4lib_int.h"
+    }
+  ]
+}

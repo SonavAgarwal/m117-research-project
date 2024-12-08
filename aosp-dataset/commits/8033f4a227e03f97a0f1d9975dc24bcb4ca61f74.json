@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8033f4a227e03f97a0f1d9975dc24bcb4ca61f74",
+  "tree": "5ec18d834c634eccb9c0ca76564e9be2368a6126",
+  "parents": [
+    "8d3bfcbbd96603ad74df5ee003bbf100d74a1096"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri Jun 01 15:09:21 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:41:49 2018 +0000"
+  },
+  "message": "M3UParser: make url on demand\n\nBug: 77823362\nTest: adb shell am start -a android.intent.action.VIEW -d http://10.42.0.1:8080\nChange-Id: Ieaf8a13985277eee5b085ed243205a597627cf5e\n(cherry picked from commit 26e236bd426770869644a9962778dedea7bf59be)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9bdf8956b6d3d80462557b62bec583bfd22cfc7e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/httplive/M3UParser.cpp",
+      "new_id": "52791b92a051b383bbc3ff478abff76b0d020d81",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/httplive/M3UParser.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fa648ed7d3f8e111882b2370d18dc30c27d7c428",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/httplive/M3UParser.h",
+      "new_id": "c85335abc26478ace772239126deb4b66e2a8440",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/httplive/M3UParser.h"
+    }
+  ]
+}

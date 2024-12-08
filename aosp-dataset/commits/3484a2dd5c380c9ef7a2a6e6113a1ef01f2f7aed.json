@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3484a2dd5c380c9ef7a2a6e6113a1ef01f2f7aed",
+  "tree": "11d339992e802992b073c6eb0ff48a7dddb25d16",
+  "parents": [
+    "21b9dc78d6d441f51cc1635563d68cb15afd9e2b"
+  ],
+  "author": {
+    "name": "Alexey Kuzmin",
+    "email": "alexeykuzmin@google.com",
+    "time": "Tue Jan 07 11:59:18 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:07:20 2020 +0000"
+  },
+  "message": "Fix serialization issue of ExternalVibration\n\nRemove excessive serialization of Audio Attributes\nBug: 140417434\nTest: atest ExternalVibrationTest#testSerialization\n\nChange-Id: Ib7ceaed875889126a53f874eec64fab4817e48d1\n(cherry picked from commit b1a33a8b4fd4b1603c0465a904be29f0c4a07e64)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "37ca868598f56119c82b85c1c787c94108d373a2",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/ExternalVibration.java",
+      "new_id": "041d21fabd6fa9e31f853783fe1ef49c8c5cb169",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/ExternalVibration.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3b872d5a7ff17faaf26edb97a2c7d7f9f5ee981e",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/os/ExternalVibrationTest.java"
+    }
+  ]
+}

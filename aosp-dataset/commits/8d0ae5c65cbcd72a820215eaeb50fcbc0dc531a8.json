@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8d0ae5c65cbcd72a820215eaeb50fcbc0dc531a8",
+  "tree": "5ef23a1294d54482211fa9e528b764374a79cef7",
+  "parents": [
+    "13758c1cf243851b2821c3a9596c84a9d967c9ec"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Tue Dec 10 17:34:18 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:41 2020 +0000"
+  },
+  "message": "DO NOT MERGE Ensure package names read from config are system packages.\n\nFixes: 145981139\nTest: manually tested ensureSystemPackageName() returns null for non-system app\nChange-Id: I1d23910cbd282f6702785c9dfb059d7be6b0e895\n(cherry picked from commit 6a56247200e1a8afc4dacc2497ec384efa200b92)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9afaae11b39ae6b7a695f502507a4bc3ec64b2e8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "80706c1862e58d835170f0de951d5c386a5d06fc",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

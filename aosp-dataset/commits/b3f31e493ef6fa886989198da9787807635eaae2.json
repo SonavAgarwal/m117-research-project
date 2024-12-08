@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b3f31e493ef6fa886989198da9787807635eaae2",
+  "tree": "41970a88217cd1d7ed762a1fe3fc8edc86aae637",
+  "parents": [
+    "52ca619511acbd542d843df1f92f858ce13048a5"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Mon Sep 18 16:58:35 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:27:23 2017 +0000"
+  },
+  "message": "Consume bytes for sps with unsupported resolution\n\nBug: 65718319\nTest: ran POC before/after\n\nFor an sps with unsupported resolution, consume the bytes.\nOtherwise application will feed the same sps again\nand again.\n\nChange-Id: I02295e813f37a963d7f6216bb8a7e86648485681\n(cherry picked from commit b1d2f31cfa81304460f577667a5332b53ec15404)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab71bee7714faf6c66f22e03190e665f66530d25",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_decode.c",
+      "new_id": "05d66a2a92cc50786b113c7f6821557221cfdae0",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_decode.c"
+    }
+  ]
+}

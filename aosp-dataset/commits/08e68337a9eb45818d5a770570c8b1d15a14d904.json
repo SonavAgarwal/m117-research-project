@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "08e68337a9eb45818d5a770570c8b1d15a14d904",
+  "tree": "b59c3204aa502cce323e062c3f8cb54c81f3e041",
+  "parents": [
+    "a50e70468c0a8d207e416e273d05a08635bdd45f"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Jan 10 09:51:28 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:08:09 2018 +0000"
+  },
+  "message": "PAN: Fix Use-after-free in bta_pan_data_buf_ind_cback\n\nPatch from b/67078939\n\nTest: build\nBug: 67110692\nChange-Id: I63b857d031c55d3a0754e4101e330843eb422b2a\n(cherry picked from commit 2a18e724b2bf101ea38a5b089de56842107c8369)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0cbb9f79a9b7778a1070e78dedc7a1a031cbdb07",
+      "old_mode": 33188,
+      "old_path": "bta/pan/bta_pan_act.cc",
+      "new_id": "41e0bf6b43da90429a04dbaa53357f7e0e88f6f6",
+      "new_mode": 33188,
+      "new_path": "bta/pan/bta_pan_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "475cc285b09789ae01a2b8daaaaca65132d85065",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "cf7a911950270ba4e35201a9bbe293bd21282845",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    }
+  ]
+}

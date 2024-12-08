@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7262280ba88c04ab9b46bc703319b2d93b201b21",
+  "tree": "73065782487dfa04665ed7a971380d216a0d5274",
+  "parents": [
+    "f6b0c9c69c80374f534f11ada8a0bcfb4e86c755"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Mon May 06 20:45:04 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:56:59 2019 +0000"
+  },
+  "message": "Zero-initialize HIDL structs before passing\n\nTest: make cts -j123 \u0026\u0026 cts-tradefed run cts-dev -m \\\nCtsMediaTestCases --compatibility:module-arg \\\nCtsMediaTestCases:include-annotation:\\\nandroid.platform.test.annotations.RequiresDevice\n\nBug: 131267328\nBug: 131356202\nChange-Id: Ie91b7946f8f4406fd06e9cb4ad883b3a2704f366\nMerged-In: I2f696aa85143f74f753fbb0320dce5aee88846c4\n(cherry picked from commit cad25f332373d834f80872239b5b06ab38274ee2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ddf20f94264c0ce6bf0abfad91b0c2e6c559142",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/bqhelper/include/media/stagefright/bqhelper/WGraphicBufferProducer.h",
+      "new_id": "c14a1c2597798aea7082a1683488bd21608174e6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/bqhelper/include/media/stagefright/bqhelper/WGraphicBufferProducer.h"
+    }
+  ]
+}

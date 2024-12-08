@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e770e378dc8e2320679272234285456ca2244a62",
+  "tree": "eba582dc8d09a29d1ad5b7163b243a6eeff26f2d",
+  "parents": [
+    "34893ec78fce2961bccaee6f81448c2fcfb7811d"
+  ],
+  "author": {
+    "name": "Emilian Peev",
+    "email": "epeev@google.com",
+    "time": "Mon Nov 06 10:41:19 2017 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:33:29 2017 +0000"
+  },
+  "message": "Camera metadata: Check source metadata size\n\nSource size passed by client could be smaller than \u0027camera_metadata_t\u0027.\nIn this case the cast in \u0027allocate_copy_camera_metadata_checked()\u0027 will\nbe incorrect and we will try to access invalid heap memory.\n\nBug: 67782345\nTest: Camera CTS\nChange-Id: I9582c704f414493978d09ffb603b5e8368cda5ce\n(cherry picked from commit 489bbd13bf0add8029444b9d9505b3d118776ea3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dc800860b454bbb7e15b4b6288be615fde60897a",
+      "old_mode": 33188,
+      "old_path": "camera/src/camera_metadata.c",
+      "new_id": "e99abc4f4d959b7cb11763ea6cfcfe33eadcb7d8",
+      "new_mode": 33188,
+      "new_path": "camera/src/camera_metadata.c"
+    }
+  ]
+}

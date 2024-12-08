@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "3b1141d44f448ea9a528ff8af8f128686c35039d",
+  "tree": "48ec69b663f32b5c37f8829a6ae0831f39e40773",
+  "parents": [
+    "6542f433ea49885b6652ab2598a8567d87a3a42e"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Tue Feb 02 14:36:26 2021 -0800"
+  },
+  "committer": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Fri Feb 26 21:17:31 2021 +0000"
+  },
+  "message": "Fix UAF in clearkey service\u0027s MemoryFileSystem\n\nFixes the potential issue of a UAF(Used After Free)\nof a MemoryFileSystem handle in clearkey hidl service.\nThe issue can occur in a race codition where the handle\ncan be freed twice.\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176237595#testPocBug_176237595\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-176237595_sts64\n\nBug: 176237595\nChange-Id: I024f6716f66b21849121bef8780170014f4bf2b9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a194416c7f92856e2a1b5acc06805a9c6fb264f0",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/Android.bp",
+      "new_id": "c6afa60f9622d877e33d13c0d213f8bd7f7d5860",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a77759eaef291975048e6dca0c702512378681ea",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp",
+      "new_id": "c5ceee9a1ec50fc07eb4867bf2c98c1193efafc2",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2dcd00fb27f016b074ce722075762d668a1b941e",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/MemoryFileSystem.cpp",
+      "new_id": "d29acac30a3f7aceeea037d5f8b12cb9462e07a4",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/MemoryFileSystem.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "076beb8a0d5a3cfe8c488180201e4d5d3350234e",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/include/DrmPlugin.h",
+      "new_id": "894985bd1b3d6a51523635facbbe9c96be0504ea",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/include/DrmPlugin.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bcd9fd631a9c9017611e35ec386dad219675b5a1",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/include/MemoryFileSystem.h",
+      "new_id": "6ac0e2c4bb993cde003e62dcc6916a9e3ec93b4e",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/include/MemoryFileSystem.h"
+    }
+  ]
+}

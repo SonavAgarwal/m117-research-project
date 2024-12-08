@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f490fc335772a9b14e78997486f4a572b0594c04",
+  "tree": "96558b8e19c8897345dc94aff03e9aeabc17ad7c",
+  "parents": [
+    "d07f5c14e811951ff9b411ceb84e7288e0d04aaf"
+  ],
+  "author": {
+    "name": "Mikhail Naganov",
+    "email": "mnaganov@google.com",
+    "time": "Mon Jul 24 17:25:47 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:13:27 2017 +0000"
+  },
+  "message": "Add EFFECT_CMD_SET_PARAM parameter checking to Downmix and Reverb\n\nBug: 63662938\nBug: 63526567\nTest: Added CTS tests\n\nChange-Id: I8ed398cd62a9f461b0590e37f593daa3d8e4dbc4\n(cherry picked from commit 804632afcdda6e80945bf27c384757bda50560cb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f27d5ca67a5eea60edf140259a908afa427089e9",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/downmix/EffectDownmix.c",
+      "new_id": "7c685ec94508924de78f31bb0b0a1cfc3772c96c",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/downmix/EffectDownmix.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "12a038f7450d10b65a6def9e2c93c26ccb5f995e",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp",
+      "new_id": "6d7d4cd91a4610d5b0a24ee009d4404c7b4021a2",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp"
+    }
+  ]
+}

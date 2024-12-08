@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e01834bfbafd25fd392bf10014451c4e5f34f829",
+  "tree": "75aa2401b329c6a6326273a034d531caae98732f",
+  "parents": [
+    "c9e31d5a4747e9967ace6d05896c78516c4c0850"
+  ],
+  "author": {
+    "name": "Andy Lutomirski",
+    "email": "luto@amacapital.net",
+    "time": "Thu Dec 04 16:48:16 2014 -0800"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86/tls: Validate TLS entries to protect espfix\n\ncommit 41bdc78544b8a93a9c6814b8bbbfef966272abbe upstream.\n\nInstalling a 16-bit RW data segment into the GDT defeats espfix.\nAFAICT this will not affect glibc, Wine, or dosemu at all.\n\nSigned-off-by: Andy Lutomirski \u003cluto@amacapital.net\u003e\nAcked-by: H. Peter Anvin \u003chpa@zytor.com\u003e\nCc: Konrad Rzeszutek Wilk \u003ckonrad.wilk@oracle.com\u003e\nCc: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\nCc: Willy Tarreau \u003cw@1wt.eu\u003e\nSigned-off-by: Ingo Molnar \u003cmingo@kernel.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f7fec09e3e3a83c9fec36dfe2f0c75906b8c23c1",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/tls.c",
+      "new_id": "e7650bd71109af8819e9cb2c7479a2162353f917",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/tls.c"
+    }
+  ]
+}

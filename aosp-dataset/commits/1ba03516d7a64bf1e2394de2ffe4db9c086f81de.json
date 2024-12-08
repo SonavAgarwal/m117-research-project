@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "1ba03516d7a64bf1e2394de2ffe4db9c086f81de",
+  "tree": "d12cfa40f4b33c92e6e3a73c950efc2a9fc6285d",
+  "parents": [
+    "dedeee88f4c5f2f8c646a73f0dd09e277bdb1dcd"
+  ],
+  "author": {
+    "name": "Svet Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Mon Sep 23 21:32:08 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:34:48 2019 +0000"
+  },
+  "message": "Update PermissionChecker usages to avoid unnecessary attribution.\n\nWe had accidental usages of the PermissionChecker for cases where no\nprivate data was provided to the app but the checkPermission API on\nthe latter also did blame data access on the app. The PermissionChecker\nwas designed to handle IPC calls and not for generic API checks.\n\nTo avoid future accidental incorrect PermissionChecker usages this\nchange renames the existing APIs of the latter to clearly indicate\nthat they should be used for data delivery and also adds sibling\nmethods for doing the same permission checks for preflight purposes.\nAlso the documentation is improved to furhter assist developers.\n\nIn addition, this change fixes accidental permission checker usages\nthat blame when they should not by using the new preflight flavor\nof the permission check APIs.\n\nTest:\n    atest com.android.settingslib.location.RecentLocationAppsTest\n    atest CtsPermissionTestCases\n    added: LocationAccessCheckTest#notificationOnlyForAccessesSinceFeatureWasEnabled\n    added: LocationAccessCheckTest#noNotificationIfFeatureDisabled\n    added: LocationAccessCheckTest#noNotificationIfBlamerNotSystemOrLocationProvider\n    added: LocationAccessCheckTest#testOpeningLocationSettingsDoesNotTriggerAccess\n\nbug:141028068\nMerged-In: I65c71569d0dd8a40bc6fecabb22c5373dd6e806e\nChange-Id: I65c71569d0dd8a40bc6fecabb22c5373dd6e806e\n(cherry picked from commit 7fe065eb660cfe8ae54f8cd1e1e615f47d7b311c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6fe6e991fb1e72d4c6e7a72088bc0357e8762098",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/PermissionChecker.java",
+      "new_id": "95286e4bc1dbf83263292f9128e97183ebcfdb8d",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/PermissionChecker.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "70dfef574ca5323d1018af05d11e035925222d73",
+      "old_mode": 33188,
+      "old_path": "core/java/android/speech/RecognitionService.java",
+      "new_id": "fb13c1f5dde3bbd4da8f621008de22134584d42e",
+      "new_mode": 33188,
+      "new_path": "core/java/android/speech/RecognitionService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ea39317fb045b86e32cecec736e9f1be763e8362",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/location/RecentLocationAccesses.java",
+      "new_id": "81ca9eaf8e36b850362544f8a77509da0eb6f580",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/location/RecentLocationAccesses.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "60c9984e5ed4c9dcfbd9ae5cb18d07fd9d257cb4",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/location/RecentLocationApps.java",
+      "new_id": "104cc8f9841c267ba11d777a105c37877a8a5d09",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/location/RecentLocationApps.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d66803b2cbe97d3c825f406c0e6f2faec6d288c6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/role/RoleManagerService.java",
+      "new_id": "fff9ec7f02c58ad4caa405ac9f324562bf66d7f1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/role/RoleManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e5518d05e9c5a14d8aa600afb576fd6a999f3acf",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "37931be4eb10fed3bc47a5f45038cc3fcfb1c18c",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

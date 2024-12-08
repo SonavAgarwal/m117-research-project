@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "30ab77f42d20c33c0aa9e6ffd2b164d096db32dd",
+  "tree": "0cb3fc3ebb0bc8a997259eb1d0ac2f26cba95de1",
+  "parents": [
+    "e9b7e3a6b7a8886693d298401a20788816a5afdc"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Mon Dec 05 16:39:55 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:31 2016 -0800"
+  },
+  "message": "32807795  Security Vulnerability - AOSP Messaging App: thirdparty can\nattach private files from \"/data/data/com.android.messaging/\"\ndirectory to the messaging app.\n\n* This is a manual merge from ag/871758 -- backporting a security fix from\nBugle to Kazoo.\n* Don\u0027t export the MediaScratchFileProvider or the MmsFileProvider. This\nwill block external access from third party apps. In addition, make both\nproviders more robust in handling path names. Make sure the file paths\nhandled in the providers point to the expected directory.\n\nChange-Id: I9e6b3ae0e122e3f5022243418f2893d4a0859edb\nFixes: 32807795\n(cherry picked from commit a2aa53f83afbd13b04cbdcca494fd3cf659c155d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5ab59103a802fc353134f3bd2f58a80fd48f6879",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "22459c4d525845942cbe8285b5aa55c711c3df8f",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "29ae4f43c48e6f558635d33c347a6b3addac9f22",
+      "old_mode": 33188,
+      "old_path": "src/com/android/messaging/datamodel/MediaScratchFileProvider.java",
+      "new_id": "a19523f2d861389cb4b95c62299506d7ada823e9",
+      "new_mode": 33188,
+      "new_path": "src/com/android/messaging/datamodel/MediaScratchFileProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0022630d6ebe142e4c4c7d278df54a44676355f3",
+      "old_mode": 33188,
+      "old_path": "src/com/android/messaging/datamodel/MmsFileProvider.java",
+      "new_id": "eb49802920e4cd9e631eb8d487c2082658aee116",
+      "new_mode": 33188,
+      "new_path": "src/com/android/messaging/datamodel/MmsFileProvider.java"
+    }
+  ]
+}

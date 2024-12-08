@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "712dcda25084434ffd3e1e0df6c0f7e65441b7f1",
+  "tree": "2a8c68a8394ea242eb54c3d79d63fec3c6f5f713",
+  "parents": [
+    "f1cef676168f819e0546ccb792b50ceb724a5080"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Fri Jan 03 20:46:24 2020 +0800"
+  },
+  "committer": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jan 07 11:30:35 2020 +0000"
+  },
+  "message": "Prevent information disclosure in rw_i93.cc\n\nBug: 143109193\nBug: 143155861\nBug: 143106535\nTest: R/W i93 tags\nChange-Id: I1d33d80760be986af9905304c17ce05cc0f9ce63\nExempt-From-Owner-Approval: get +2 from new owner\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbd7379ab161d0dc5f1bc248618481fd370855b1",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "983eafab7b1294a15f51e405a8cd0068d2b3a74b",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

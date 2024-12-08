@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "654579dbab7cf3a566636bcc7d6617d5ac938f38",
+  "tree": "c0c0db449af819d3075e537a5d0fd3becbc2baa0",
+  "parents": [
+    "0056606ac49688dcf3c08a51ca98fd94d9bf1897"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Mon Oct 22 13:16:37 2018 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:13:47 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Fix heap buffer overflow\n\nBug: b/118143775\nBug: oss-fuzz:11040\nTest: I5fe66d06078f3bc674ceab4fbc8aae2ab67bfe1a\n\nBecause we\u0027re sampling, the offset ends up the same as the width. Back\nup to the left enough to fit the bytes we will write.\n\nInclude SafetyNet logging from\nhttps://skia-review.googlesource.com/c/skia/+/171227\n\nChange-Id: Ie476a0191b66c2322446b9c0922f630d6e971645\nReviewed-on: https://skia-review.googlesource.com/c/164262\n(cherry picked from commit 1a1cec98427fdc9e94614580ec42dbe936c47c55)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f88817f5d323b5fda7c5dd04d8f956b4a96d77af",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkSwizzler.cpp",
+      "new_id": "ca82586c606b945f54346839f11b27e27d820a61",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkSwizzler.cpp"
+    }
+  ]
+}

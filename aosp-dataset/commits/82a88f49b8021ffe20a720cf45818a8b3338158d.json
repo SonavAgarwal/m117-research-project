@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "82a88f49b8021ffe20a720cf45818a8b3338158d",
+  "tree": "e887bb07c4d17f4b14c887f32345655ce019ee58",
+  "parents": [
+    "f51e6147e09580dbd1f1065d873fd906cf5a33ca"
+  ],
+  "author": {
+    "name": "Calin Juravle",
+    "email": "calin@google.com",
+    "time": "Fri May 31 20:00:20 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:54:30 2019 +0000"
+  },
+  "message": "Use conservative permissions when creating files in ART\nam: d224e964bd\n\nChange-Id: I084a7c031c215ce9a18dbcccff42fd9d64fb6e01\n(cherry picked from commit 70c59234bcd15f848eb06496d1ac0480a52fb978)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cb228bd8537bcef1d1a5a12d7a950df378456356",
+      "old_mode": 33188,
+      "old_path": "libartbase/base/os_linux.cc",
+      "new_id": "c972f8f95ccdcb004e12c16742ae4028afaa4832",
+      "new_mode": 33188,
+      "new_path": "libartbase/base/os_linux.cc"
+    }
+  ]
+}

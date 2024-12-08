@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "8019ad13ef7f64be44d4f892af9c840179009254",
+  "tree": "889b754b07fa844410d6782bc1b4473007a9bc99",
+  "parents": [
+    "98d54f81e36ba3bf92172791eba5ca5bd813989b"
+  ],
+  "author": {
+    "name": "Peter Zijlstra",
+    "email": "peterz@infradead.org",
+    "time": "Wed Mar 04 11:28:31 2020 +0100"
+  },
+  "committer": {
+    "name": "Peter Zijlstra",
+    "email": "peterz@infradead.org",
+    "time": "Fri Mar 06 11:06:15 2020 +0100"
+  },
+  "message": "futex: Fix inode life-time issue\n\nAs reported by Jann, ihold() does not in fact guarantee inode\npersistence. And instead of making it so, replace the usage of inode\npointers with a per boot, machine wide, unique inode identifier.\n\nThis sequence number is global, but shared (file backed) futexes are\nrare enough that this should not become a performance issue.\n\nReported-by: Jann Horn \u003cjannh@google.com\u003e\nSuggested-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\nSigned-off-by: Peter Zijlstra (Intel) \u003cpeterz@infradead.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7d57068b6b7aedbc3ddde2b91179853b7e8c6f43",
+      "old_mode": 33188,
+      "old_path": "fs/inode.c",
+      "new_id": "93d9252a00ab4b2ed0fbb274b28e1df468aa71ca",
+      "new_mode": 33188,
+      "new_path": "fs/inode.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3cd4fe6b845e7ff8c6263488030bd3553c302850",
+      "old_mode": 33188,
+      "old_path": "include/linux/fs.h",
+      "new_id": "abedbffe2c9e41e2c4711592bd2776e3d9dcbb77",
+      "new_mode": 33188,
+      "new_path": "include/linux/fs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5cc3fed27d4c2e142d2edf1d582785c5902561e1",
+      "old_mode": 33188,
+      "old_path": "include/linux/futex.h",
+      "new_id": "b70df27d7e85c2c257c3467780d7b835b58d9fe1",
+      "new_mode": 33188,
+      "new_path": "include/linux/futex.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0cf84c8664f207c574325b899ef2e57f01295a94",
+      "old_mode": 33188,
+      "old_path": "kernel/futex.c",
+      "new_id": "e14f7cd45dbd6dc59c373ed4cbdbca7256d87c08",
+      "new_mode": 33188,
+      "new_path": "kernel/futex.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6d0249be2275fd4086783f259f4e2c54722a7c55",
+  "tree": "985f2781b6296b3c6c95780fa1bf082676a960b5",
+  "parents": [
+    "d4271b792bdad85a80e2b83ab34c4b30b74f53ec"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Aug 16 14:24:43 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:24 2016 -0700"
+  },
+  "message": "better validation lengths of strings in ID3 tags\n\nValidate lengths on strings in ID3 tags, particularly around 0.\nAlso added code to handle cases when we can\u0027t get memory for\ncopies of strings we want to extract from these tags.\n\nAffects L/M/N/master, same patch for all of them.\n\nBug: 30744884\nChange-Id: I2675a817a39f0927ec1f7e9f9c09f2e61020311e\nTest: play mp3 file which caused a \u003c0 length.\n(cherry picked from commit d23c01546c4f82840a01a380def76ab6cae5d43f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "35691b92bc6181e9031696206aa469acef09e203",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "394215812abae1549d0d5227479a40b49f9eadd8",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

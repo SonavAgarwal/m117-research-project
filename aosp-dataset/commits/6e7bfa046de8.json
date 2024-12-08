@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6e7bfa046de83596c2a50f72e8ced1ee327db654",
+  "tree": "8726fd4e87912f9542eb5920f0ab452ca3d1f22c",
+  "parents": [
+    "a4649185a98eb7adbdbdfdbf61237d518861e877"
+  ],
+  "author": {
+    "name": "Thomas Gleixner",
+    "email": "tglx@linutronix.de",
+    "time": "Mon Jan 18 19:01:21 2021 +0100"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Sat Jan 30 13:32:13 2021 +0100"
+  },
+  "message": "futex: Handle faults correctly for PI futexes\n\ncommit 34b1a1ce1458f50ef27c54e28eb9b1947012907a upstream\n\nfixup_pi_state_owner() tries to ensure that the state of the rtmutex,\npi_state and the user space value related to the PI futex are consistent\nbefore returning to user space. In case that the user space value update\nfaults and the fault cannot be resolved by faulting the page in via\nfault_in_user_writeable() the function returns with -EFAULT and leaves\nthe rtmutex and pi_state owner state inconsistent.\n\nA subsequent futex_unlock_pi() operates on the inconsistent pi_state and\nreleases the rtmutex despite not owning it which can corrupt the RB tree of\nthe rtmutex and cause a subsequent kernel stack use after free.\n\nIt was suggested to loop forever in fixup_pi_state_owner() if the fault\ncannot be resolved, but that results in runaway tasks which is especially\nundesired when the problem happens due to a programming error and not due\nto malice.\n\nAs the user space value cannot be fixed up, the proper solution is to make\nthe rtmutex and the pi_state consistent so both have the same owner. This\nleaves the user space value out of sync. Any subsequent operation on the\nfutex will fail because the 10th rule of PI futexes (pi_state owner and\nuser space value are consistent) has been violated.\n\nAs a consequence this removes the inept attempts of \u0027fixing\u0027 the situation\nin case that the current task owns the rtmutex when returning with an\nunresolvable fault by unlocking the rtmutex which left pi_state::owner and\nrtmutex::owner out of sync in a different and only slightly less dangerous\nway.\n\nFixes: 1b7558e457ed (\"futexes: fix fault handling in futex_lock_pi\")\nReported-by: gzobqq@gmail.com\nSigned-off-by: Thomas Gleixner \u003ctglx@linutronix.de\u003e\nAcked-by: Peter Zijlstra (Intel) \u003cpeterz@infradead.org\u003e\nCc: stable@vger.kernel.org\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e04bb97f96e631c03ab60f27a2af549651648a89",
+      "old_mode": 33188,
+      "old_path": "kernel/futex.c",
+      "new_id": "224adcdac6c192025206d49a0699dbb450cae0e9",
+      "new_mode": 33188,
+      "new_path": "kernel/futex.c"
+    }
+  ]
+}

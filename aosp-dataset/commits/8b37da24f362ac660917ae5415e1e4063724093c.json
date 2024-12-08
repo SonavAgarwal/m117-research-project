@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8b37da24f362ac660917ae5415e1e4063724093c",
+  "tree": "2dc0c8fc86a4d7a276d17b56b752355d1b7f9d2b",
+  "parents": [
+    "4dad49ab7ebc511178050565feb33fb48fca63ea"
+  ],
+  "author": {
+    "name": "Marcus Meissner",
+    "email": "marcus@jet.franken.de",
+    "time": "Tue Jul 25 23:44:44 2017 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:35 2020 +0000"
+  },
+  "message": "fixes some (not all) buffer overreads during decoding pentax makernote entries.\n\nThis should fix:\nhttps://sourceforge.net/p/libexif/bugs/125/ CVE-2016-6328\n\nCherrypicked from\nhttps://github.com/libexif/libexif/commit/41bd04234b104312f54d25822f68738b\n\nBug: 162602132\nTest: Android camera tests continue to pass\nChange-Id: Ib7d9d3afe67aa37bfa6d23ff88f6334e1f8f4396\n(cherry picked from commit 836cfdb99e8aacf0c49a714141d80f66c2ebada0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7e97c2c24ec2b13f66cb460586fca3fd1d747ffd",
+      "old_mode": 33188,
+      "old_path": "libexif/pentax/mnote-pentax-entry.c",
+      "new_id": "dcb1560c061924af815cee74c5444cb30579d73d",
+      "new_mode": 33188,
+      "new_path": "libexif/pentax/mnote-pentax-entry.c"
+    }
+  ]
+}

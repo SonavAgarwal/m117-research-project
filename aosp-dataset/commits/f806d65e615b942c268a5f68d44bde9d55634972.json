@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f806d65e615b942c268a5f68d44bde9d55634972",
+  "tree": "2963e9920bfd1d9bdf0a54320d11b0eb4bbc9dce",
+  "parents": [
+    "6422e8fb4429936477f2cac82c472e5e4684f26d"
+  ],
+  "author": {
+    "name": "Andrew Scull",
+    "email": "ascull@google.com",
+    "time": "Fri Jan 13 15:28:36 2017 +0000"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Tue Mar 21 13:52:40 2017 -0700"
+  },
+  "message": "resolve merge conflicts of ad4aa1ce7d3d to nyc-mr1-dev\nfix conflict in nyc-mr2-release\nChange-Id: I97ef31536cd06495a08a3f94f81df2d1376186e0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e3b6ecc749cf44286d898b80738a210b17091444",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "f61429fe11af64813fd8e9f177321247d8b7860d",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

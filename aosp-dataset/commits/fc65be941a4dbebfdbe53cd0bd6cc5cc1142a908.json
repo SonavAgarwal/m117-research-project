@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fc65be941a4dbebfdbe53cd0bd6cc5cc1142a908",
+  "tree": "fd7dbe9a4053f0f9402d5ca4a39eb183114e2bf5",
+  "parents": [
+    "53f3b26922267865434c3a204ec24c7fc2d8bdea"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Wed Jul 12 14:07:07 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:52:18 2017 +0000"
+  },
+  "message": "Back-port ag/2491664\n\nBug: 62196835\nTest: Verify overlays disappear on a11y capabilities\ndialog.\n\nChange-Id: Ic675012dd9faa8e53d1d4b126b3ba68fecdab992\n(cherry picked from commit e76e053595660ed2a75adb33ee124a7bfbed164b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1dcc43167a6a6bb4775497276b8d16befa7fc9b0",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "27fe429af1123b03f30e13cbcf6bf4b758e97673",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "196a4ab37291b94624fc05cd287a0e1891c1e77d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment.java",
+      "new_id": "1f69768c0d60dc2583719f197d33f5d7268980b1",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment.java"
+    }
+  ]
+}

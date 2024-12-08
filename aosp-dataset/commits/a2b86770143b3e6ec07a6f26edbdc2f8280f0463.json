@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a2b86770143b3e6ec07a6f26edbdc2f8280f0463",
+  "tree": "0c69a32a1f224ee465a943b5fb27af6d946c4a32",
+  "parents": [
+    "2cafe07d66bfc5cc75d7d2bf61415fc33d711132"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Thu Jan 28 14:08:17 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:50 2021 +0000"
+  },
+  "message": "DO NOT MERGE Add mutex for std::map in btif_av.cc\n\nTAG: #security\nBug: 169252501\nTest: compilation\nIgnore-AOSP-First: security fix\nChange-Id: I592c0a9c0e77869999357611aa99f3d9bc53b8b6\n(cherry picked from commit 1be5b0d94068e47ecaa0a00b2f40ef520850f6ff)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1003b0f8287fd06e15ba76d20d600a5c26e86573",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_av.cc",
+      "new_id": "679ec5ef544d8c5a2535a97577f9684f1f6f6148",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_av.cc"
+    }
+  ]
+}

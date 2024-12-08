@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f88eb7c0d002a67ef31aeb7850b42ff69abc46dc",
+  "tree": "e441fc47971730e402535959123f311151ce331e",
+  "parents": [
+    "68ce6688a5baefde30914fc07fc27292dbbe8320"
+  ],
+  "author": {
+    "name": "Johannes Berg",
+    "email": "johannes.berg@intel.com",
+    "time": "Fri Sep 20 21:54:17 2019 +0200"
+  },
+  "committer": {
+    "name": "Johannes Berg",
+    "email": "johannes.berg@intel.com",
+    "time": "Tue Oct 01 17:56:18 2019 +0200"
+  },
+  "message": "nl80211: validate beacon head\n\nWe currently don\u0027t validate the beacon head, i.e. the header,\nfixed part and elements that are to go in front of the TIM\nelement. This means that the variable elements there can be\nmalformed, e.g. have a length exceeding the buffer size, but\nmost downstream code from this assumes that this has already\nbeen checked.\n\nAdd the necessary checks to the netlink policy.\n\nCc: stable@vger.kernel.org\nFixes: ed1b6cc7f80f (\"cfg80211/nl80211: add beacon settings\")\nLink: https://lore.kernel.org/r/1569009255-I7ac7fbe9436e9d8733439eab8acbbd35e55c74ef@changeid\nSigned-off-by: Johannes Berg \u003cjohannes.berg@intel.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d21b1581a665c9ec0bdcc900d911193fd62224fb",
+      "old_mode": 33188,
+      "old_path": "net/wireless/nl80211.c",
+      "new_id": "7386421e2ad31c98115511a207c8b5fb89951d4f",
+      "new_mode": 33188,
+      "new_path": "net/wireless/nl80211.c"
+    }
+  ]
+}

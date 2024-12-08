@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3097f364237fb552871f7639d37a7afa4563e252",
+  "tree": "5ca56946d18777736585dd2ef44695723fd58018",
+  "parents": [
+    "7a282fb64fef25349e9d341f102d9cea3bf75baf"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Feb 18 08:25:47 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:31 2016 -0800"
+  },
+  "message": "Get service by value instead of reference\n\nto prevent a cleared service binder from being used.\n\nBug: 26040840\nChange-Id: Ifb5483c55b172d3553deb80dbe27f2204b86ecdb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b35cf325886dca740e9777bcb1184cb7a3f54b95",
+      "old_mode": 33188,
+      "old_path": "include/media/mediametadataretriever.h",
+      "new_id": "84b9846f31dfd52ddcfb027d5e533652b81cf335",
+      "new_mode": 33188,
+      "new_path": "include/media/mediametadataretriever.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "39a239dbc46fefd4c14f92c643c2343d4e6c5196",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/mediametadataretriever.cpp",
+      "new_id": "67d413923a51cd74004c739b0dd20f0c0152cdb9",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/mediametadataretriever.cpp"
+    }
+  ]
+}

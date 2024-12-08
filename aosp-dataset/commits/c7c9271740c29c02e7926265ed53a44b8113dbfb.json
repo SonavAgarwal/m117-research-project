@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c7c9271740c29c02e7926265ed53a44b8113dbfb",
+  "tree": "1a662ade9bf04408dfd2fa73bfd4acc1feb6efd2",
+  "parents": [
+    "1618337cac09284fddb5bb14b5e0cfe2946d3431"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Wed May 10 15:38:51 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:01:52 2017 +0000"
+  },
+  "message": "Prevent OOB write in soft_avc encoder\n\nSoft avc encoder cached buffer sizes across a point where the sizes\ncould be reset by an app, allowing crafted requests to hit outside\nof the current buffer. This remedies that by forcing buffer reallocation\nwith new sizes whenever the encoder state at such \u0027reset\u0027 points.\n\nBug: 35421151\nTest: run POC with no crash\nChange-Id: I8c689846142264f7b6a277332260a6bd8a2bd92d\n(cherry picked from commit 463452a94907278ca5e4c5632e50bbe59e861544)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9e7a3be158a445d02d16f9c940e2b35d41e786c9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp",
+      "new_id": "5b06722fbcbd7824990711d02ec803399b1f7d4e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "cf6f899af48d813f3f969eee08d469dea7f354b5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.h",
+      "new_id": "8b24b629eea0e6a9500fd2e34d590e2ef0975564",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.h"
+    }
+  ]
+}

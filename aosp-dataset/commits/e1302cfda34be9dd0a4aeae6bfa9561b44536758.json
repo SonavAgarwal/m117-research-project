@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e1302cfda34be9dd0a4aeae6bfa9561b44536758",
+  "tree": "3307c0fd2951f5fc6ee32575c55c35814a89a270",
+  "parents": [
+    "d749b47414fac334c57a2c192dfff9316674bdcf"
+  ],
+  "author": {
+    "name": "Yifan Hong",
+    "email": "elsk@google.com",
+    "time": "Fri May 11 14:19:42 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:42:10 2018 +0000"
+  },
+  "message": "mapMemory: Do not map if size is \u003e SIZE_MAX\n\nBug: 79376389\nTest: hidl_test\nTest: POC in bug\nChange-Id: Ibaced858aa07bfd7ab6e938cc1339b974b0de14f\nMerged-In: Ibaced858aa07bfd7ab6e938cc1339b974b0de14f\n(cherry picked from commit 694bd8d1b43b9e60623cb3d5bd3f21662680dd7c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3cb64857506e77a9a6bbec078e8d86d0456a6772",
+      "old_mode": 33188,
+      "old_path": "libhidlmemory/mapping.cpp",
+      "new_id": "8f0bcf40d12abb318c8f348049fece67c19ab612",
+      "new_mode": 33188,
+      "new_path": "libhidlmemory/mapping.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a4f45cffc1ddb0875b1ffeaaa6e9c20058ee152e",
+      "old_mode": 33188,
+      "old_path": "transport/memory/1.0/default/Android.bp",
+      "new_id": "470d3b869e6843e456079f068140a168603d71cf",
+      "new_mode": 33188,
+      "new_path": "transport/memory/1.0/default/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bef4767ee8e288d93e31aef11052a4850dfdd993",
+      "old_mode": 33188,
+      "old_path": "transport/memory/1.0/default/AshmemMapper.cpp",
+      "new_id": "cefaaa4b5f3db7829eaa5a6c3a7f046ea2a05223",
+      "new_mode": 33188,
+      "new_path": "transport/memory/1.0/default/AshmemMapper.cpp"
+    }
+  ]
+}

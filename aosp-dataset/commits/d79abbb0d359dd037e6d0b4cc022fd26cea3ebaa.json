@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d79abbb0d359dd037e6d0b4cc022fd26cea3ebaa",
+  "tree": "1868e89a8656a84fe0592da951f17bf62ad8c15d",
+  "parents": [
+    "d22f1447fe2fc10dbf45bde6fb4a7cb6f7a8a7ca"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Sun Nov 17 23:54:21 2019 -0800"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Nov 18 08:23:30 2019 +0000"
+  },
+  "message": "default drm hidl: Fix decrypt destination base ptr\n\nBug: 144351324\nTest: poc_CryptoPlugin_155\nChange-Id: Id5d221cd6978d55c46c0368aceb10c1d2f559fd9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6626c0172f60e9341414238d94b00cdcf9ee749e",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.cpp",
+      "new_id": "c9383ff0fc2f1f98ffb0216be906a39316a59e6b",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.cpp"
+    }
+  ]
+}

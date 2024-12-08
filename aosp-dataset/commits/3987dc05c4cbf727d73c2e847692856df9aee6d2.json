@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3987dc05c4cbf727d73c2e847692856df9aee6d2",
+  "tree": "17ea9f9a271ca679b7e5f45f31666ddbe8d62514",
+  "parents": [
+    "fa24917525b708bd653533120c7685a383d35ba1"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Tue May 18 16:24:07 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 16 01:11:33 2021 +0000"
+  },
+  "message": "Check READ_PRIVILEGED_PHONE_STATE instead of READ_PHONE_STATE for getAvailableSubscriptionInfoList\n\nTest: atest SubscriptionManagerTest#testSubscriptionGroupingWithPermission; Safety net logging\nBug: 185235454\n\nChange-Id: Ideef8793ac3c42ab30ac3004071d6be19e15b5fe\n(cherry picked from commit 9f741b9a3f871cde331f0c0f06abaa42e74f87f8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f5c173eff11823b831af0ed705c9c5d49c6d778c",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/SubscriptionController.java",
+      "new_id": "8a03431f99a1d04a416b6e4cd92807c177bce661",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/SubscriptionController.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c5b97a8387b2ef22dae170732b1e2a218aa5ce25",
+  "tree": "4af4fff8335a9d5d04900d6d42b9e4907e0066f1",
+  "parents": [
+    "c7ca27b373656861da4deb1d97e2cc6884744305"
+  ],
+  "author": {
+    "name": "Cristy",
+    "email": "mikayla-grace@urban-warrior.org",
+    "time": "Sat Apr 27 08:32:23 2019 -0400"
+  },
+  "committer": {
+    "name": "Huizi Yang",
+    "email": "yanghuiz@google.com",
+    "time": "Tue Oct 08 14:05:43 2019 -0700"
+  },
+  "message": "https://github.com/ImageMagick/ImageMagick/issues/1554\n\nBackport of upstream f7206618d27c2e69d977abf40e3035a33e5f6be0\n\nBug: 140328986\n\nChange-Id: Iaa9773b2efe658948d45f20282f7ed47d8331178\nMerged-In: I84d6258cd854be68c752b62964fd746fc6b38fc3\n(cherry picked from commit 57879bb058a6c431111e48fa985518ed28efb169)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "515fc58290f5aacda12a7f5e25534fcc29e0a343",
+      "old_mode": 33188,
+      "old_path": "coders/mat.c",
+      "new_id": "be7abaf0c15895a7dbaf6be9db4b106e01779b8b",
+      "new_mode": 33188,
+      "new_path": "coders/mat.c"
+    }
+  ]
+}

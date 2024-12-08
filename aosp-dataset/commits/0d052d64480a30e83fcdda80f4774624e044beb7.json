@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0d052d64480a30e83fcdda80f4774624e044beb7",
+  "tree": "fc7709f5bf07328286a5dcf3a3fc59c69317ae2c",
+  "parents": [
+    "170ba5679fe8c3a1d892f3c5ffdc16bb892ed853"
+  ],
+  "author": {
+    "name": "Felicia Lim",
+    "email": "flim@google.com",
+    "time": "Thu Jul 28 15:21:19 2016 +0200"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:03 2016 -0800"
+  },
+  "message": "Ensure that NLSF cannot be negative when computing a min distance between them\n\nb/31607432\n\nSigned-off-by: Jean-Marc Valin \u003cjmvalin@jmvalin.ca\u003e\n(cherry picked from commit d9d5ac4027c5ee1da2ff1c6572ae3b35a845db19)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1fa1ea379bdd8a4979e6f19dd74ab9af69942cec",
+      "old_mode": 33188,
+      "old_path": "silk/NLSF_stabilize.c",
+      "new_id": "8f3426b91e6831beb7e282a8655434e121b7069a",
+      "new_mode": 33188,
+      "new_path": "silk/NLSF_stabilize.c"
+    }
+  ]
+}

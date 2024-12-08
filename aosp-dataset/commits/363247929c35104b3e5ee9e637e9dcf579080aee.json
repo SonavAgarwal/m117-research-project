@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "363247929c35104b3e5ee9e637e9dcf579080aee",
+  "tree": "5154e3ff11f0b2b76bfb0430f73adacf5dcb3ba3",
+  "parents": [
+    "1f4b49e64adf4623eefda503bca61e253597b9bf"
+  ],
+  "author": {
+    "name": "Pablo Ceballos",
+    "email": "pceballos@google.com",
+    "time": "Wed Jul 13 14:11:57 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:30 2016 -0700"
+  },
+  "message": "Region: Detect malicious overflow in unflatten\n\nBug 29983260\n\nChange-Id: Ib6e1cb8ae279010c5e9960aaa03513f55b7d873b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ac379901c8cf9bdd4b19ebc8130fd7ae413e523e",
+      "old_mode": 33188,
+      "old_path": "libs/ui/Region.cpp",
+      "new_id": "ee152bf91cd15c7f83273f8b1c8a728598186f72",
+      "new_mode": 33188,
+      "new_path": "libs/ui/Region.cpp"
+    }
+  ]
+}

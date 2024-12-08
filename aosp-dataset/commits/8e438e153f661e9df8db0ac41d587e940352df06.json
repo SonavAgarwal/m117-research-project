@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e438e153f661e9df8db0ac41d587e940352df06",
+  "tree": "78300161723533706691d0890324d0c71c6ee63d",
+  "parents": [
+    "590d1729883f700ab905cdc9ad850f3ddd7e1f56"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Jun 08 14:31:42 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:17 2016 -0700"
+  },
+  "message": "SoftAAC2: fix crash on all-zero adts buffer\n\nBug: 29153599\nChange-Id: I1cb81c054098b86cf24f024f8479909ca7bc85a6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "520ecb4059913438323944418de3515bb690974d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacdec/SoftAAC2.cpp",
+      "new_id": "8ddff909cfbf1621451c5d596813fdb80b8c8301",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacdec/SoftAAC2.cpp"
+    }
+  ]
+}

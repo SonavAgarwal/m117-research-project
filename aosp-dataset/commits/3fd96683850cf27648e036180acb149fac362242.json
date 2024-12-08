@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3fd96683850cf27648e036180acb149fac362242",
+  "tree": "3edb714b9e7eb5ea3ddfa73a5c37c8c7ee77e89b",
+  "parents": [
+    "fc8c226b75a45876e6545c3a217698ada52bd2d6"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Sun Aug 16 17:46:34 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 00:48:25 2015 +0000"
+  },
+  "message": "SoftAVCEnc: check requested memory size before allocation.\n\nBug: 20674674\n\nChange-Id: If80186a7b9078e575d389220f3bebe9f7630a956\n(cherry picked from commit f6fe4340219a8e674f3250fe32d4697ec8184b24)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1d66120950a53c3b4b5efd92b549eaf8491a2481",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp",
+      "new_id": "4e1162826e655c67c770f5fee7ab23b642ba4b7e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp"
+    }
+  ]
+}

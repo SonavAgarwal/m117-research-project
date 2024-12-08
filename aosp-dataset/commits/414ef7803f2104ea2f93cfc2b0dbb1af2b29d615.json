@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "414ef7803f2104ea2f93cfc2b0dbb1af2b29d615",
+  "tree": "7c13d7a31793f3ac17a59cb754d9217a4fc59efb",
+  "parents": [
+    "adc63e4182bc54c5063c4261a8fe96273ee2a88f"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Wed May 15 23:10:19 2019 -0700"
+  },
+  "committer": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Fri May 17 11:41:36 2019 -0700"
+  },
+  "message": "Verify that remote exceptions will not cause object leaks\n\nTest: atest CtsOsTestCases:ParcelTest#testExceptionOverwritesObject\nBug: 34175893\nChange-Id: Idef19c1413a992ccd58c47b3ca1449aad42a8a0a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aca23e37eeb2a1ab83858d614a126cb479f1985e",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/Android.mk",
+      "new_id": "b7e5f09c8c6ac12639f9476e6f7fd952e2b00ad1",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "4092538928a5a34b7cb9d93f5bf624f10d10b24c",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/AndroidManifest.xml",
+      "new_id": "d706470d3e74e46b6e43602d5a50d5bf9902b7b8",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/AndroidManifest.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7d0969340cd25b2bfbba441227a55d253cd07d58",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/ExceptionalParcelable.aidl"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "333cf57e8cf5bd815aa429bc3a238369385c06e8",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/ExceptionalParcelable.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ce7af6deece885a2d0224844173a069e674d39e4",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/IParcelExceptionService.aidl"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d8387e30d41d956f1e80b2e7da6fee4d7f0223d6",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/ParcelExceptionService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "37158503eb1cefe007f455b161a1f90663355b20",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/src/android/os/cts/ParcelTest.java",
+      "new_id": "77d325cb62d77bd9dd57b3adcfc931bb6d4381c2",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/ParcelTest.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b3145760db5d58a107fd1ffd8eeec67d983d45f3",
+  "tree": "d1f2a746231675957ea4b35f4bb5e669baf805f3",
+  "parents": [
+    "d4d3181d013f8d9b96de8e396b029f8a418894a7"
+  ],
+  "author": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Tue Aug 25 00:00:05 2015 +0100"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 01 14:20:48 2015 -0700"
+  },
+  "message": "DO NOT MERGE. Truncate and ellipsize app name if too long for dialog.\n\nIf the given app name is too long for the permissions dialog, then\nit can push the warning that the application will be able to record\nthe screen below the fold, letting the app basically set its own\ndialog message in a way that a user would be difficult to detect as\nfraudulant.\n\nBug: 23345192\nChange-Id: If5881ca75d5c155ef5174351d245dbc3abdaa584\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c23f45dbdaba0a2e7ff5f4b84ab1682178ffe821",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java",
+      "new_id": "9921bda86b4022838b97c5cfd9073f393f8d0f13",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java"
+    }
+  ]
+}

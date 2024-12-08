@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "3f7334822ba4cc53f81f22f3519093bf4e1d7f89",
+  "tree": "f11adc1988bde0a6d676553726c9b3c15c93085e",
+  "parents": [
+    "6ba3009dd91409a33e09c723f74aa488acf1b124"
+  ],
+  "author": {
+    "name": "Sebastien Hertz",
+    "email": "shertz@google.com",
+    "time": "Tue Aug 11 15:39:02 2015 +0200"
+  },
+  "committer": {
+    "name": "Sebastien Hertz",
+    "email": "shertz@google.com",
+    "time": "Wed Aug 19 11:27:22 2015 +0200"
+  },
+  "message": "CTS: check non-zygote apps are not debuggable\n\nAdds an hostside-like CTS test running a Java app (jar file) from\napp_process, without forking from zygote, and checks it is not\ndebuggable (having no JDWP connection) using \u0027adb jdwp\u0027 command.\n\nBug: 23050463\n\n(cherry picked from commit e37f4b4f078394e183547a8a913fd12e69c08cd7)\n\nChange-Id: I5300ccff6ad3c202289f7dad0aa8789f69124c23\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "31dc2fdf760039f2b2a9e11ab9670173a1881cc4",
+      "old_mode": 33188,
+      "old_path": "CtsTestCaseList.mk",
+      "new_id": "b3b826d282dc1445ca61c4f1caf9762aba8c74de",
+      "new_mode": 33188,
+      "new_path": "CtsTestCaseList.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "561d3465008e9549ba1cebb7812c108c999c7749",
+      "new_mode": 33188,
+      "new_path": "hostsidetests/jdwpsecurity/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "13b5be4d40dfd131a1bc152528731d5b8e21a338",
+      "new_mode": 33188,
+      "new_path": "hostsidetests/jdwpsecurity/app/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f2e5980c0d0bf62bcd2d58b184a3393c95a9def0",
+      "new_mode": 33188,
+      "new_path": "hostsidetests/jdwpsecurity/app/src/com/android/cts/jdwpsecurity/JdwpTest.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8e276ed56c163c76e5f0273efc836ceb89dc7b11",
+      "new_mode": 33188,
+      "new_path": "hostsidetests/jdwpsecurity/src/android/jdwpsecurity/cts/JdwpSecurityHostTest.java"
+    }
+  ]
+}

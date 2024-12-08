@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "04e8cd58f075bec5892e369c8deebca9c67e855c",
+  "tree": "3233e05114d4d5e9bc3000266e14d8b13803ada9",
+  "parents": [
+    "e98460acfcb61a5519979f029221a91424320124"
+  ],
+  "author": {
+    "name": "Ramesh Katuri",
+    "email": "ramesh.katuri@ittiam.com",
+    "time": "Mon Jun 25 18:26:18 2018 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:14 2018 +0000"
+  },
+  "message": "Fix for stack corruption in esbr\n\nBug: 110769924\nTest: poc from bug before/after\nChange-Id: I99c6e89902064849ea1310c271064bdeccf7f20e\n(cherry picked from commit 7e90d745c22695236437297cd8167a9312427a4a)\n(cherry picked from commit 5464927f0c1fc721fa03d1c5be77b0b43dfffc50)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a4b89c544147325333a58a602db3ee37515025d8",
+      "old_mode": 33188,
+      "old_path": "decoder/armv8/ixheaacd_qmf_dec_armv8.c",
+      "new_id": "8cfe0021deb2688b4beadcd62c3f15480fcb36c1",
+      "new_mode": 33188,
+      "new_path": "decoder/armv8/ixheaacd_qmf_dec_armv8.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bcb46851ec2bab3857736c6ef338d3a2263ee9a8",
+      "old_mode": 33188,
+      "old_path": "decoder/ixheaacd_esbr_polyphase.c",
+      "new_id": "d51a14c6b0c53ae9d110c086b27cacba6f447989",
+      "new_mode": 33188,
+      "new_path": "decoder/ixheaacd_esbr_polyphase.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e188572ebd6972cf1cdcdb339b293acefd873d70",
+      "old_mode": 33188,
+      "old_path": "decoder/ixheaacd_hbe_trans.c",
+      "new_id": "0c6f191e349f17f9e6af35256e179d73959f14db",
+      "new_mode": 33188,
+      "new_path": "decoder/ixheaacd_hbe_trans.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a674804de5ce8594a6e33ecee6762cff63afe79",
+      "old_mode": 33188,
+      "old_path": "decoder/ixheaacd_qmf_poly.h",
+      "new_id": "0cafcf12a51d40545a7c06da406d7af6450606eb",
+      "new_mode": 33188,
+      "new_path": "decoder/ixheaacd_qmf_poly.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac92ef5f97c9f9c18a61d12b2d94be88decbe140",
+      "old_mode": 33188,
+      "old_path": "decoder/ixheaacd_sbr_dec.h",
+      "new_id": "0beec6d87748e39a6d90c262e6f758a406d0056e",
+      "new_mode": 33188,
+      "new_path": "decoder/ixheaacd_sbr_dec.h"
+    }
+  ]
+}

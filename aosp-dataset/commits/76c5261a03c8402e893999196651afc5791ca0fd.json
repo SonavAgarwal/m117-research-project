@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "76c5261a03c8402e893999196651afc5791ca0fd",
+  "tree": "a260685a05d91b99d621e110b05d524518634dc9",
+  "parents": [
+    "e46e79c3202747b5e44a34d23904319620403aa9"
+  ],
+  "author": {
+    "name": "Ekin Oguz",
+    "email": "ekinoguz@google.com",
+    "time": "Mon Jun 04 13:35:50 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:19:15 2018 +0000"
+  },
+  "message": "Filter Attachment file name of forward slashes for .eml attachments.\n\nBug: b/66230183\nChange-Id: I6715358a07bc5bd9de6ee877b4a235a974767536\n(cherry picked from commit 53b40fd185517ca82a0c4305570c5a5e3b83abf0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4ed33f83ec11f3d9e96c5b9c645e0494a1de784d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/providers/Attachment.java",
+      "new_id": "7f56d1dd0051ca73faf345323cbca019145b7099",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/providers/Attachment.java"
+    }
+  ]
+}

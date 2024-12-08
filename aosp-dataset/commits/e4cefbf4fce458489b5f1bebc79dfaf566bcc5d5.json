@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "e4cefbf4fce458489b5f1bebc79dfaf566bcc5d5",
+  "tree": "3637c2966073473fa74ebec02919cb17fb9b222b",
+  "parents": [
+    "73b49fc7e8194e338a71f96c796ef08f2c0f9534"
+  ],
+  "author": {
+    "name": "Andrew Scull",
+    "email": "ascull@google.com",
+    "time": "Fri Dec 02 16:08:09 2016 +0000"
+  },
+  "committer": {
+    "name": "Andrew Scull",
+    "email": "ascull@google.com",
+    "time": "Thu Jan 12 16:01:59 2017 +0000"
+  },
+  "message": "Don\u0027t save password metrics to disk.\n\nOn FBE devices, don\u0027t save the metrics to disk but compute them when the\npassword is first entered and only store them in RAM.\n\nMerged-in: 5daf273b7e3272269c53eda20ce494d0e7a365b5\nBug: 32793550\nChange-Id: Icee7f615167761177b224b342970a36c7d90f6ba\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "530547348adc65916ce6308e3e2b4008f0a9be56",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/admin/DevicePolicyManager.java",
+      "new_id": "78f0c92d22f09dddabac7fd185599b439e0d0204",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/admin/DevicePolicyManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ddec412e53c14dd935395f4b3f8d5a9a432279ab",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/admin/IDevicePolicyManager.aidl",
+      "new_id": "2a679eb29c55621f628a20803d7ef899de953fa8",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/admin/IDevicePolicyManager.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f2f740f2ee24f9f6cd88087bec0a44f52205e44",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/widget/LockPatternUtils.java",
+      "new_id": "d79a5a41a12d8990a242d1bac22abe5ff78810dd",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/widget/LockPatternUtils.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "42e75c6632a5c8bf2a43656bf80abc638e8957c8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/LockSettingsService.java",
+      "new_id": "80088b78922701d9497d2ece33566a872888fa20",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/LockSettingsService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "2aaf945dae49a40daeb5bbdd6f43a44477a6adbc",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "80dfe66a8ddd4fb38d2512e42b705c35e7d0c097",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5f0f0cc6a10f710dea7e1ddd4ba19acb877a7081",
+  "tree": "acf58984d4f508060f4350e2672c495c7d2781b8",
+  "parents": [
+    "494cd888eb2c5cfda05584dd598815c9268ff3c2"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Wed Oct 24 20:50:02 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:27 2018 +0000"
+  },
+  "message": "Prevent Out of bounds read/write in nfc_ncif_set_config_status\n\nTest: Nfc Enable/Disable; Android Beam; Tag reading\nBug: 114047681\nMerged-In: Iaba48380879373a4807a9d50634f4f40be97ef81\nChange-Id: Iaba48380879373a4807a9d50634f4f40be97ef81\n(cherry picked from commit 74cf5266c1bb9ee064cbc7e2544909d5d001e429)\n(cherry picked from commit f3b6b4e1502771d94418cd2bc02591eb4379db34)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4fb767faf721c4be8d6a7717104b87812e481c52",
+      "old_mode": 33188,
+      "old_path": "src/nfc/nfc/nfc_ncif.cc",
+      "new_id": "93666e05f288aa9eecc134f73a47fd9c4276458a",
+      "new_mode": 33188,
+      "new_path": "src/nfc/nfc/nfc_ncif.cc"
+    }
+  ]
+}

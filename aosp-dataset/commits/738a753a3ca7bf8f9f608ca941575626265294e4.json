@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "738a753a3ca7bf8f9f608ca941575626265294e4",
+  "tree": "d8019528abfe7586e10e83e79b251bd1a1975ff8",
+  "parents": [
+    "4dd7cb699f49b56f94a32080fdac7f0ec8237ff4"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Jun 04 10:40:23 2015 -0700"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Mon Aug 03 22:31:21 2015 -0700"
+  },
+  "message": "SampleTable: fix integer overflow checks.\n\nBug: 20139950\nBug: 22935234\n(cherry picked from commit a105482ae577852ffd08ce88ae5d1ba81db875ac)\n\nChange-Id: I408d261de1a6dd5c4343bcf3a7dfd8a259e0e2f3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a7ceecb3b9defa357691b6c3e8059c4e19134962",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "52ce82b1abda376ec7e7ca315149c674e305e1c4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    }
+  ]
+}

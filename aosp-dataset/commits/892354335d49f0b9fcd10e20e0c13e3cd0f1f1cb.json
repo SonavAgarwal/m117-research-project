@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "892354335d49f0b9fcd10e20e0c13e3cd0f1f1cb",
+  "tree": "fc309fc843d7c9a627b59f0771c02edf4d1375ba",
+  "parents": [
+    "f394f12167fddbc755855d06b615509517c99f14"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 02 16:46:59 2015 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 02 17:48:22 2015 -0700"
+  },
+  "message": "Zero out return values in media binder calls\n\nMore specifically when handling:\n* GET_STREAM_VOLUME in IAudioPolicyService, and\n* GET_CURRENT_POSITION and GET_DURATION in IMediaPlayer\n\nThis prevents leaking uninitialized values across binder in error cases.\n\nBug: 23756261\nChange-Id: I0ffd900ab12b685b0611259ade4a3efb1ec5defe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9ffc48602ff0d13b8298f8c9fc3507efa21cfa94",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioPolicyService.cpp",
+      "new_id": "0dab7e3bf8fb6f311d07db27e0684b782a175393",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioPolicyService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9b57902aec383ae9edab4d81efa12346fb8c8713",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaPlayer.cpp",
+      "new_id": "2a5c7a7bc2eedb4634ffd86b3307c2f777acb878",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaPlayer.cpp"
+    }
+  ]
+}

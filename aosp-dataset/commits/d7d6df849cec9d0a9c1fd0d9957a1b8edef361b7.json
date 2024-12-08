@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d7d6df849cec9d0a9c1fd0d9957a1b8edef361b7",
+  "tree": "fc17541b592ce2d140952f664c279d2ff7fe53c1",
+  "parents": [
+    "e3c46b0a49d045fa38d35e5cf7ad4becaacbbed6"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Mon Oct 16 14:47:31 2017 -0700"
+  },
+  "committer": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Mon Oct 16 14:50:06 2017 -0700"
+  },
+  "message": "stagefright: MP4Extractor: allow 10% overhead on default sample size\n\nBug: 64528824\nChange-Id: Id19ec0d634d9337190d04abdbd97842b66502c01\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a1d48c2b9c3acf703b8108b59dcdda857af3663f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "2cfffa4fa4b55fb73d33b9154da5ff725eea922e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

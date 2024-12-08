@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a422e8c84983c91f804881d36f31a88851400927",
+  "tree": "08f89fbd8ac4e6ade85713bb0ea42f9392605f8b",
+  "parents": [
+    "888a1d7ca67aac9864a695510cd0ab86f3faed54"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Fri Jul 07 11:41:03 2017 -0700"
+  },
+  "committer": {
+    "name": "Kyriakos Ispoglou",
+    "email": "ispo@google.com",
+    "time": "Thu Nov 07 16:20:13 2019 -0800"
+  },
+  "message": "Always copy file before parsing it for installing\n\n(cherry picked from commit 731ab89e06eb9a8d0b0ba8fc7e4df45c42c8741e)\n\nFixes: 129039920\nFixes: 140195904\nMerged-In: Ib2abc1d84311dec40e2f9e78551850984cd7ab82\n(cherry picked from commit cede54cce10db0e3a3a00a7a2617a37df1553146)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1eb6de80521ea334e2ca24c87e09be4731939849",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/InstallStart.java",
+      "new_id": "fa118534f92590cfc442ba07a130cae0f8dc3876",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/InstallStart.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0f41c98227aea7bcd1095487ca3508c67350dcd7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/PackageInstallerActivity.java",
+      "new_id": "d005c37daacfb10c28377d40e59b653228293f63",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/PackageInstallerActivity.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "646a18fef28d19ba5beb6a2e1c00ac4c2663a10b",
+  "tree": "0e38052e8262bb7edead0a19dd5e373ab8b34090",
+  "parents": [
+    "47d4b33b504e14e98420943f771a9aecd6d09516"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed Oct 04 10:10:39 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:29:04 2017 +0000"
+  },
+  "message": "Access AVCDEC context after create fail check\n\nBug: 66969281\nChange-Id: I7c293417079da991cfad675a2d5563423d751610\n(cherry picked from commit 8e6a6fe2e1542b3333ffecb7307a5de671c8a785)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "70df5015c881a0ac0b7389e5414c96b8dd5a9a41",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp",
+      "new_id": "dae6e79a547623b7d301fd49dd17a130130e6a02",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp"
+    }
+  ]
+}

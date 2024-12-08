@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9b8c6d2df35455ce9e67907edded1e4a2ecb9e28",
+  "tree": "215d78d9772cc725538bdbf4b69484f8a577572c",
+  "parents": [
+    "d2ef34d04101da98be587dd5b0455b86de88ed70"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Fri May 20 15:29:31 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:18 2016 -0700"
+  },
+  "message": "Backport of backup transport whitelist\n\nSysconfig define a whitelist of permitted backup transports\n\nPreviously any apk bundled in priv-app could insert a backup transport.\nReduce risk surface by giving the OEM explicit control over who is\nallowed to handle backup data.\n\nBug 28406080\n\nBackport of 494df791728f4d42d67e935c327910975993ad29 from N\n\nChange-Id: I9f90e324169a68720d608f74754d284a7e59cf87\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12003e2e673bbd6aba7708d6d2c95539bbdc8539",
+      "old_mode": 33188,
+      "old_path": "services/backup/java/com/android/server/backup/BackupManagerService.java",
+      "new_id": "30d90af45be7daaaa6ebda7e056cd7ba128f963d",
+      "new_mode": 33188,
+      "new_path": "services/backup/java/com/android/server/backup/BackupManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "cd6134705f01730200615c81be492ce175ee97b3",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/SystemConfig.java",
+      "new_id": "7ef3e12d90733598a34d78b473d4aae4faeb73e4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/SystemConfig.java"
+    }
+  ]
+}

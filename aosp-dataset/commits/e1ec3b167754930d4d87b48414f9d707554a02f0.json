@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e1ec3b167754930d4d87b48414f9d707554a02f0",
+  "tree": "b9f56396c3f5613ccbb53d4b68e4f5e5812bdeab",
+  "parents": [
+    "a6aa18923ed8d11ae592ed1a9cda44d049d84426"
+  ],
+  "author": {
+    "name": "Luke Huang",
+    "email": "huangluke@google.com",
+    "time": "Tue Jul 07 23:11:05 2020 +0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Oct 08 17:09:30 2020 -0700"
+  },
+  "message": "Backport: Fix the side channel attack by using async DnsResolver API with FLAG_NO_CACHE_STORE\n\nBefore this CL, FLAG_NO_CACHE_STORE could be used to perform side\nchannel attack. Because this flag ensures the result is never\nadded to the cache, but will return a cached response if one exists.\nSo make FLAG_NO_CACHE_STORE imply FLAG_NO_CACHE_LOOKUP to block the\npossibility of side channel attacking.\n\nBug: 150371903\nTest: atest\nBecause DnsResolver had been moved to another git project in R,\nuse aosp/1302595 as Merged-In tag to avoid conflict.\nMerged-In: I1ff2dc09f41f76973c5f066b07b15388e722b375\n\nChange-Id: Ic0ef9b22bb5992b083bebc4f530acd63a02ac31c\n(cherry picked from commit 91945c82ec4e8eda4cdd85b77029cceccfa11769)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7fc5669a4e792de7996d9b40032fbb5fa6123c40",
+      "old_mode": 33188,
+      "old_path": "resolv/libnetd_resolv_test.cpp",
+      "new_id": "df4521b6329993a9e2159853064e49f5fbb2e67b",
+      "new_mode": 33188,
+      "new_path": "resolv/libnetd_resolv_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f0ff56410daa458ca953abb0ee03ffaaff852123",
+      "old_mode": 33188,
+      "old_path": "resolv/res_cache.cpp",
+      "new_id": "b4f0340dab9511267f3438f0f4acbd846929cfb8",
+      "new_mode": 33188,
+      "new_path": "resolv/res_cache.cpp"
+    }
+  ]
+}

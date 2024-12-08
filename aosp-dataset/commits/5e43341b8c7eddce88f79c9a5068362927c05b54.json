@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "5e43341b8c7eddce88f79c9a5068362927c05b54",
+  "tree": "a90756926f80ed8c1c03dec7946b21128abacb6f",
+  "parents": [
+    "73b36ef8f76c397614b71514bc03e20e5f3d5dcc"
+  ],
+  "author": {
+    "name": "Doris Ling",
+    "email": "dling@google.com",
+    "time": "Tue Jul 31 14:04:44 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:04 2018 +0000"
+  },
+  "message": "Disable changing lock when device is not provisioned.\n\nWhen the device is not yet provisioned and settings is launched:\n- disable the entry point for changing device lock\n- remove the search panel from settings home page\n- remove the search menu\n\nBug: 110034419\nTest: make RunSettingsRoboTests\nChange-Id: Ieb7eb0e8699229ec0824ccc19d7b958ac44965a2\nMerged-In: Ieb7eb0e8699229ec0824ccc19d7b958ac44965a2\n(cherry picked from commit 770f4abf9de2bb7d74497cc4b5f6795023229ef2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "971ae0406614087e9f55b47b30c0170fd8bdd72d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/SettingsActivity.java",
+      "new_id": "29cd77ade612f94d20be53c5e57571aae40983cc",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/SettingsActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "62978b3089b63f0ae9e5865222131344f56985f4",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/password/ChooseLockGeneric.java",
+      "new_id": "1a8afd02cc123669bb758a0544fc241547d82316",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/password/ChooseLockGeneric.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "179bd797cb7802e126cb93dcbab49c34c33acb34",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/password/SetupChooseLockGeneric.java",
+      "new_id": "885f9dfb420a874132e01eaa15042c218ed80fa1",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/password/SetupChooseLockGeneric.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1729ccdb39a46bd459a79d43ee713617ae31c328",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/search/actionbar/SearchMenuController.java",
+      "new_id": "131f7884fc75c8224be757f431078fda79d25c1a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/search/actionbar/SearchMenuController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "2096629a63d3da8f2a2b47a8866fca38a77e48c0",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/SettingsActivityTest.java",
+      "new_id": "54b01eab76a4b5b49fca4d33131b54467f6321a2",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/SettingsActivityTest.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7a14896a8bbdcef4745c9b53c1b451ebc5943405",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/password/ChooseLockGenericTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7ff4accb1785cb945ccad750dd8c30a475e06968",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/search/actionbar/SearchMenuControllerTest.java",
+      "new_id": "9900df292bc7ec31e93fd26aa56e3167895b5229",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/search/actionbar/SearchMenuControllerTest.java"
+    }
+  ]
+}

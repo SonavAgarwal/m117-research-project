@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "675e212c8c6653825cc3352c603caf2e40b00f9f",
+  "tree": "8674c79c320ce5ef342b9e4b165724de394e887c",
+  "parents": [
+    "e5753ba087fa59ee02f6026cc13b1ceb42a1f266"
+  ],
+  "author": {
+    "name": "Fabien Sanglard",
+    "email": "sanglardf@google.com",
+    "time": "Tue Nov 08 15:31:32 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:47:04 2016 -0800"
+  },
+  "message": "Fix SF security vulnerability: 32660278\n\nBecause of lack of mutex lock when get mSidebandStream, if one thread\ngetSidebandStream, another thread setSidebandStream frequently, an UAF\nwill be triggered.\n\nBug: 32660278\nTest: Marlin device with poc\nChange-Id: Idbcf0976ce2db682d0f13455105c45a5c7481a45\n(cherry picked from commit 2d8a2432e04234d9edbb3b099f9bbbaa36ad4843)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ca2a374e16bc5b1fe32151026844b6eb2282f361",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueConsumer.cpp",
+      "new_id": "73d2042983a0a6094476e6196970a66e65ce0103",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueConsumer.cpp"
+    }
+  ]
+}

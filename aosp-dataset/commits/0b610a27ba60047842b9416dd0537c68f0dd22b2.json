@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0b610a27ba60047842b9416dd0537c68f0dd22b2",
+  "tree": "0bd0ffcffca4ebb5c06a7678bfb778a785401130",
+  "parents": [
+    "828fe0b915f30e22fec03dc1ed2e66220ceebd3e"
+  ],
+  "author": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Tue Nov 10 16:01:35 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:31 2020 +0000"
+  },
+  "message": "Ignore GrantCredentials call with unexpected calling uid.\n\nActivity can be used only in two cases.\n1) Calling uid matches uid grantee.\n2) Calling uid is is system. This flow is used by getToken methods with\nnotifyAuthFailure\u003dtrue.\n\nTest: Existing CTS tests\nBug: 158480899\nChange-Id: I1421c333b6cebb4f7cddcdd8766298f6872e933b\n(cherry picked from commit 10d8a114bbd91c07f2feb5009328b16203ff50b1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "32b61b5ed8ccf60216de9c6ce36e89d664dad2ab",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/GrantCredentialsPermissionActivity.java",
+      "new_id": "5dc6e602e5d614ceb6147fb9b4cc08db8fc9a6c6",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/GrantCredentialsPermissionActivity.java"
+    }
+  ]
+}

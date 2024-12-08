@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a9e6f1dffd84ca758721d9cacd08acb49af0a331",
+  "tree": "609d5dc9d969c0c0db80d68d9613aa4ed3701fca",
+  "parents": [
+    "c966227cf118eabc30901ab89bfa24cc2fbe346a"
+  ],
+  "author": {
+    "name": "Ken Chen",
+    "email": "cken@google.com",
+    "time": "Thu Jul 30 13:24:16 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:15 2020 +0000"
+  },
+  "message": "Fix OOB read in DNS resolver\n\nThe remote server specifies resplen, the length of the response it\nintends to send. anssiz represents the size of the destination buffer.\nIf the reported resplen is larger than the anssiz, the code correctly\nonly reads up to anssiz bytes, but returns resplen. so later functions\nwill access far out of bounds.\n\nThe fix ensures that the length of send_vc return does not exceed the\nbuffer size.\n\nBug: 161362564\nTest: atest pass on HWAddressSanitizer build.\nMerged-In: Id4b5df1be4652e4623847b0b0bad0af65b80fdd5\nChange-Id: Id4b5df1be4652e4623847b0b0bad0af65b80fdd5\n(cherry picked from commit cf6ee247113426ef4e7365a86d00bb5430186802)\n(cherry picked from commit 5214c6bebaadfe307579ee930fc650235b157192)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2db8220ddf14507e2967c1a7b3bbfc082faa6855",
+      "old_mode": 33188,
+      "old_path": "res_send.cpp",
+      "new_id": "04421c5b707677a78b7c6a0636696aaba603fee2",
+      "new_mode": 33188,
+      "new_path": "res_send.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "3274ed8d7e6dfbe7ce4ee7cf2d94aacd7e5e8cca",
+      "old_mode": 33188,
+      "old_path": "resolv_unit_test.cpp",
+      "new_id": "befca9e56517677de562a8999d2565e3b4e3ffa7",
+      "new_mode": 33188,
+      "new_path": "resolv_unit_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e111eeb7f0c230e2cb535d8284cc1718ab81e408",
+      "old_mode": 33188,
+      "old_path": "tests/dns_responder/dns_responder.cpp",
+      "new_id": "1805cb1b7403410b064420eef97b25db78df2968",
+      "new_mode": 33188,
+      "new_path": "tests/dns_responder/dns_responder.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e8c62fb484151f76ab88b1d5130f38de24ac8c14",
+  "tree": "d9f0dd6e806932662c1a158f10a1363ec569ea60",
+  "parents": [
+    "5b3aa21bc70d42b3fcb1764a1be04ab8db5ebfb9"
+  ],
+  "author": {
+    "name": "Adam Lesinski",
+    "email": "adamlesinski@google.com",
+    "time": "Mon Apr 27 12:13:33 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Aug 13 19:53:03 2015 -0700"
+  },
+  "message": "Prevent integer overflow when allocating native_handle_t\n\nUser specified values of numInts and numFds can overflow\nand cause malloc to allocate less than we expect, causing\nheap corruption in subsequent operations on the allocation.\n\nBug: 19334482\nChange-Id: I43c75f536ea4c08f14ca12ca6288660fd2d1ec55\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9a4a5bb386bdf3d9377a72f7c3a1ebdc21df3387",
+      "old_mode": 33188,
+      "old_path": "libcutils/native_handle.c",
+      "new_id": "61fa38ed42d926b51975bb0ba692d3c5ee7ed7c4",
+      "new_mode": 33188,
+      "new_path": "libcutils/native_handle.c"
+    }
+  ]
+}

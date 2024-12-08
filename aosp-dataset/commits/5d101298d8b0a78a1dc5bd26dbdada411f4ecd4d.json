@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5d101298d8b0a78a1dc5bd26dbdada411f4ecd4d",
+  "tree": "6ee149bea15ae8b0b8f279e510535efddc234fef",
+  "parents": [
+    "3737a3fa121796131ea5b782230e65dad9ccf90f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Oct 02 15:12:00 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Oct 06 07:48:29 2015 -0700"
+  },
+  "message": "Check NAL size before use\n\nBug: 24441553\nBug: 24445122\nChange-Id: Ib7f025769adbafd5a2cb64fae5562a0a565945c2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "92065d156ffc3ee407deb7f20be282afb28d04d7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "af6b8bda7687548a4c9d3e2b351cdefb3973f2a5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

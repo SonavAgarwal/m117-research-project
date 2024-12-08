@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d290c6d91461cec729add5bae585e5739aa9adf1",
+  "tree": "34565c39f069fc3cff130c5eb8caa7d180102681",
+  "parents": [
+    "785665677f471b1a6b404ed357b90318e7ec2c3f"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jan 08 22:32:42 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:21 2019 +0000"
+  },
+  "message": "Prevent integer underflow in rw_t2t_handle_tlv_detect_rsp()\n\nBug: 121035711\nTest: NFC Enable/Disable\nChange-Id: Ifa3e5fdf23f267a0d6c3aa8495c4c83f20153025\n(cherry picked from commit 83439b5ca03c9a52ddbf9d9a033c18d9e456a97b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "03d205e8da765824fbf476e5ba1cb1a6d9c81138",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t2t_ndef.cc",
+      "new_id": "c18c68513fb2312015926e86e0a46d772a378529",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t2t_ndef.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b237378c682f84e020f2c612c215967a7e5cd30a",
+  "tree": "330602c62544ba2a780117efe94fed0f92960407",
+  "parents": [
+    "31ce4285cd728af7f5f30c9ec9b25f12e28b676e"
+  ],
+  "author": {
+    "name": "akirilov",
+    "email": "akirilov@google.com",
+    "time": "Mon Apr 02 14:59:10 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:32:48 2018 +0000"
+  },
+  "message": "sonivox: fix hang caused by bad meta-event\n\nBug: 69804002\nBug: 68953854\nBug: 68664359\n\nTest: cts-tradefed run cts --class android.security.cts.StagefrightTest --method testStagefright_bug_68953854\n\nChange-Id: I29e5ffd6f5be25180d7ed65806480257d79a884d\nMerged-In: I19b3ca2d66866039b199d2049c6234df51797b3c\n(cherry picked from commit ba9ea234666052f8415194966bcd242ea6fecf0e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8b54b8e4340ce698d78831c7593a34f4504d5612",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_smf.c",
+      "new_id": "3c284ebf3972b282398152a97cdb9668af9f8b98",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_smf.c"
+    }
+  ]
+}

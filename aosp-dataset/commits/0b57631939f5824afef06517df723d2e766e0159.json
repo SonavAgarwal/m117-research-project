@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0b57631939f5824afef06517df723d2e766e0159",
+  "tree": "f8856c23b5885c4d313744c1a02bafa441dd6eab",
+  "parents": [
+    "a2a36541f0b3603335e74da0a8d2b6a9d5bcec3f"
+  ],
+  "author": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Wed Jan 31 11:05:10 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:11:36 2018 +0000"
+  },
+  "message": "Adjust URI host parsing to stop on \\ character.\n\nThe WHATWG URL parsing algorithm [1] used by browsers says that for\n\"special\" URL schemes (which is basically all commonly-used\nhierarchical schemes, including http, https, ftp, and file), the host\nportion ends if a \\ character is seen, whereas this class previously\ncontinued to consider characters part of the hostname.  This meant\nthat a malicious URL could be seen as having a \"safe\" host when viewed\nby an app but navigate to a different host when passed to a browser.\n\n[1] https://url.spec.whatwg.org/#host-state\n\nBug: 71360761\nTest: vogar frameworks/base/core/tests/coretests/src/android/net/UriTest.java (on NYC branch)\nTest: cts -m CtsNetTestCases (on NYC branch)\nChange-Id: Id53f7054d1be8d59bbcc7e219159e59a2425106e\n(cherry picked from commit fa3afbd0e7a9a0d8fc8c55ceefdb4ddf9d0115af)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9edcc0e9b8d4cfe6a82a9d640f2cfd7e10fde937",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/Uri.java",
+      "new_id": "5ca3a4106a2d9fb35c6151a01e6f4ddc3fcfbbc7",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/Uri.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "27b7f9e185bb60290d2caca11a73e445d60d1be5",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/net/UriTest.java",
+      "new_id": "ea0347d67ad7414c64470f4400284ea1f7046258",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/net/UriTest.java"
+    }
+  ]
+}

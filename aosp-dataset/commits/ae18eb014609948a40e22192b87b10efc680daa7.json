@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ae18eb014609948a40e22192b87b10efc680daa7",
+  "tree": "eec110478dae59646c6413ef602b58b5fba4d7be",
+  "parents": [
+    "864e2e22fcd0cba3f5e67680ccabd0302dfda45d"
+  ],
+  "author": {
+    "name": "Elliott Hughes",
+    "email": "enh@google.com",
+    "time": "Tue Apr 19 14:57:09 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:45 2016 -0700"
+  },
+  "message": "Fix scanf %s in lsof.\n\nBug: http://b/28175237\nChange-Id: Ief0ba299b09693ad9afc0e3d17a8f664c2fbb8c2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "982f5aaf650bb18cf5559cf1bf8ddd5e0221fe63",
+      "old_mode": 33188,
+      "old_path": "toolbox/lsof.c",
+      "new_id": "da78ddd71bf3808d656f4ee8e0d04937bcf5261c",
+      "new_mode": 33188,
+      "new_path": "toolbox/lsof.c"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "65842db06c2d77e53cc5ac61692160d844cc7d0a",
+  "tree": "e0d37e05418a640e4a21472a0821c07518604b15",
+  "parents": [
+    "e4ac35fa524b011f272d396b2c12515382bddb94",
+    "b46eb8d9f8bff2e6ddec1902acc9d2ad65147d68"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 18:09:22 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 18:09:22 2015 -0700"
+  },
+  "message": "Merge commit \u0027b46eb8d9\u0027 into HEAD\n\nSoftAVCEnc: check requested memory size before allocation.\n\nBug: 20674674\n(cherry picked from commit f6fe4340219a8e674f3250fe32d4697ec8184b24)\n\nChange-Id: Ib52a26de912fd5a9a08dd9948885fb4a9b32e9e6\n",
+  "tree_diff": []
+}

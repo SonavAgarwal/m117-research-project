@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a294ae5342410431a568126183efe86261668b5d",
+  "tree": "182c837a1d96a860d1f449574b48927e084fcb03",
+  "parents": [
+    "06067b94b092a3d6f422386bf3ec6d70771a5616"
+  ],
+  "author": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Fri Jan 29 10:19:36 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Tue Mar 01 15:27:02 2016 -0800"
+  },
+  "message": "Fixes creation of incorrect SIP PhoneAccountHandle\n\nWhen a new incoming call occurs in SIP, SipUtil mistakenly uses the\nUri handle instead of the profile name to create the\nPhoneAccountHandle. Since this PhoneAccountHandle is not registered\nwith telecom, it will throw a security exception (as of b/26864502).\n\nBUG: 26874216\nChange-Id: I27611b45f0834fca328c4cc2b867edaf970f7171\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dd76c271fd01888332f731e1f6452509bd2e2459",
+      "old_mode": 33188,
+      "old_path": "sip/src/com/android/services/telephony/sip/SipAccountRegistry.java",
+      "new_id": "025f27fac886c059c73182004003713bdd703332",
+      "new_mode": 33188,
+      "new_path": "sip/src/com/android/services/telephony/sip/SipAccountRegistry.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e885fadd98df56c241300b614a637457696f7f2d",
+      "old_mode": 33188,
+      "old_path": "sip/src/com/android/services/telephony/sip/SipUtil.java",
+      "new_id": "9ca508337f63ce0841ff69a8c14732ade57810d0",
+      "new_mode": 33188,
+      "new_path": "sip/src/com/android/services/telephony/sip/SipUtil.java"
+    }
+  ]
+}

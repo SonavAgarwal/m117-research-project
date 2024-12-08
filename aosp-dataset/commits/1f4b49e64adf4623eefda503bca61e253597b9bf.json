@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1f4b49e64adf4623eefda503bca61e253597b9bf",
+  "tree": "3aa8699af956416a9169c1f5cae0adc7fabd5faf",
+  "parents": [
+    "eb7980c224a54f860b7af5ecf30cbc633ae41289"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Jun 28 18:19:33 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:30 2016 -0700"
+  },
+  "message": "Add bound checks to utf16_to_utf8\n\nBug: 29250543\nChange-Id: I518e7b2fe10aaa3f1c1987586a09b1110aff7e1a\n(cherry picked from commit 7e93b2ddcb49b5365fbe1dab134ffb38e6f1c719)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c7e8ff2e71e7f716a9737e8eeebc4034a80509e0",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "e88ae29518a49a8eed3910ad5019df7d3d985a63",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

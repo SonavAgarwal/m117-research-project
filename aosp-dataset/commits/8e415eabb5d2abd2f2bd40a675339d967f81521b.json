@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e415eabb5d2abd2f2bd40a675339d967f81521b",
+  "tree": "8064b4591f712202391b0498f00f145368fc51f9",
+  "parents": [
+    "ebaa71da6362c497310377df509651974401d258"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed Apr 05 10:31:08 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:01:46 2017 +0000"
+  },
+  "message": "Check for cpb cnt in hrd parsing\n\nBug: 34896431\n\nThe arrays in hrd are of size MAX_CPB_CNT. If cpb cnt is more\nthan MAX_CPB_CNT, more data is parsed and the subsequent buffer\nis corrupted.\n\nChange-Id: I74c01b8c7142b67a358eb5e36b160a7fbf2b69e4\n(cherry picked from commit 3e194e0edde1d9ceb71d18f6f0e0bf156a76a650)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b560a39d85524533e802d27102613260dcdc8800",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "edfaf5a3dfed56a7c70feeedf706ca30187f9799",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

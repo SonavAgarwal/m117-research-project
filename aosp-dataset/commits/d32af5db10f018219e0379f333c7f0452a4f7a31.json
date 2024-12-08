@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d32af5db10f018219e0379f333c7f0452a4f7a31",
+  "tree": "d263de39a2b9466fd5c5caa61c0da365c26af38e",
+  "parents": [
+    "5ffa7ea0dfa9ba3eba8ded0878c5293dc35e74a9"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri Feb 09 12:19:35 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:17:39 2018 +0000"
+  },
+  "message": "M3UParser: detect variant streams without EXT-X-STREAM-INF\n\nBug: 68399439\nChange-Id: I95207b40f23a5f927da7154f9a952046118b5cad\n(cherry picked from commit f3e0afb82f104d6e9986779ba2cf548c6aab1092)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a6482b0f6a0a65cff80e831b7452ed83693a630",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/httplive/M3UParser.cpp",
+      "new_id": "214feab115ddfd38e0e2497d6633cb028aa2ffac",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/httplive/M3UParser.cpp"
+    }
+  ]
+}

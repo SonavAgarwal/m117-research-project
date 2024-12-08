@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "62da9cd2ad06388981f765249cf5537792df9842",
+  "tree": "892ce8c18fd81bdae4bbb7b08edf7810f9877116",
+  "parents": [
+    "1f76f20b2f14b2f08934380c65bf1495e29b969f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue May 14 10:53:06 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:54:59 2019 +0000"
+  },
+  "message": "Fix overflow/dos in 3gg text description parsing\n\nBug: 124781927\nTest: run pocs\nChange-Id: I8765ac9746c3de7d711ef866d4ec0e29972320c0\n(cherry picked from commit 851e22d1dc89a7f708b9d2b56947f69cd1a08b94)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "088eaaee4906e1dccebbbd6fada0c89e0d3b2fcc",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/timedtext/TextDescriptions.cpp",
+      "new_id": "0dc7722f6f7dfdc348a6a8a974a8049a753c3fb6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/timedtext/TextDescriptions.cpp"
+    }
+  ]
+}

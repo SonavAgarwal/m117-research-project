@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2b313d61aed6d99cb2a3ac2dad6f7d3993d0b8ac",
+  "tree": "43baa345c9b2c1e51be64bb165fd72b99ada74fe",
+  "parents": [
+    "f0a0963d1de7adb2688ba3ac18245419b3666003"
+  ],
+  "author": {
+    "name": "Yu-Han Yang",
+    "email": "yuhany@google.com",
+    "time": "Mon Jun 08 14:59:23 2020 -0700"
+  },
+  "committer": {
+    "name": "Yu-Han Yang",
+    "email": "yuhany@google.com",
+    "time": "Sat Jul 18 00:42:21 2020 +0000"
+  },
+  "message": "DO NOT MERGE: Remove unused intent in NiNotification\n\nBug: 154319182\nTest: manual\nChange-Id: I5958a8fb442cf4506e1824243493f91aea34a7cc\nMerged-In: I5958a8fb442cf4506e1824243493f91aea34a7cc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8905143eb37ac2843fa1477b0536fe957083cf5",
+      "old_mode": 33188,
+      "old_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java",
+      "new_id": "5704e1f53461b1ef752737cee0b9969c871c08e5",
+      "new_mode": 33188,
+      "new_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java"
+    }
+  ]
+}

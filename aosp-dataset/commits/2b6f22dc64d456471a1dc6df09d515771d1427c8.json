@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "2b6f22dc64d456471a1dc6df09d515771d1427c8",
+  "tree": "34f4cd60b24fe97ba6694f9bc7b044a4bfa75be0",
+  "parents": [
+    "918eeaa29d99d257282fafec931b4bda0e3bae12"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Apr 08 10:04:48 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:57 2016 -0700"
+  },
+  "message": "h264dec: check for overflows when calculating allocation size.\n\nBug: 27855419\nChange-Id: Idabedca52913ec31ea5cb6a6109ab94e3fb2badd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe112bc35ae0fd4194e8543a812745cab4f43220",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/inc/H264SwDecApi.h",
+      "new_id": "9814e737c34dbd08e4909b788ac20a7d24fe92f5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/inc/H264SwDecApi.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "dcf2ef6fffab3fff75b92ff27468f5764f0729f4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/DecTestBench.c",
+      "new_id": "55c006534d08808f62c00b9c14be78a0c2b57fc5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/DecTestBench.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "aadc75f5519f5969386d76f62b67e1c56474702b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/EvaluationTestBench.c",
+      "new_id": "e756a1fce4dbcece8d2c9bde4b4df14eb20b0f90",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/EvaluationTestBench.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a073dcbf03f02598c668936011819c1183f49456",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/H264SwDecApi.c",
+      "new_id": "f820dfd576cfa15ef6dde551433ee24ea2dd0719",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/H264SwDecApi.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "42170d3272be8440fa5170945856d4c67683a95d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/TestBenchMultipleInstance.c",
+      "new_id": "9a386bbd10d2f7c438cd10dbb09a9aeb4f93cdb6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/TestBenchMultipleInstance.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a816871b0f23ffbd354fd23b08d0c1addaa6795a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_decoder.c",
+      "new_id": "0ac480f8026436dd212b5e8ada59fb1ea11d22cb",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_decoder.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "216ad0476a5fddf4aea50a1d7b14915d5efe70e3",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_util.h",
+      "new_id": "9f0eb7d9241a4b1c62fab11dcfc2368b15fcc03a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_util.h"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "aaba8ef289dee0c143b3dc0fe47e6b9595f22c65",
+  "tree": "281425834d92a96eeb88d91c934a5c633f01a79e",
+  "parents": [
+    "ce472cd14f7262a0f5b3ffe656af05ed673c8e08"
+  ],
+  "author": {
+    "name": "Fabian Kozynski",
+    "email": "kozynski@google.com",
+    "time": "Wed Sep 04 16:53:37 2019 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:19 2019 +0000"
+  },
+  "message": "Use UnlockMethodCache#canSkipBouncer in user switcher\n\nKeyguardMonitor#canSkipBouncer was not updated properly when the phone\nwas unlocked using fingerprint.\n\nThis CL removes that method and changes UserSwitcherController to query\nUnlockMethodCache directly, as it was KeyguardMonitor\u0027s only client for\nthat method.\n\nTest: manual unlocking with FP and with pattern\nTest: no automated test yet\nBug: 140486529\nMerged-In: Idbff4fbabca962c632ff5d78b25418c0502db9a7\nChange-Id: Idbff4fbabca962c632ff5d78b25418c0502db9a7\n(cherry picked from commit d2eb34b689eaa8a9b064b4e69773083c723e3756)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "01498e6bd54dab2d856737a0303052439dd0ab67",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/KeyguardMonitor.java",
+      "new_id": "6fc265e6f983c4f63bf439411279cd226e6b5d48",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/KeyguardMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b53ff0e45cea7339e215142daef1aff1d5551884",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/KeyguardMonitorImpl.java",
+      "new_id": "2b08d68f1072e8cf8f77f95ac91442049dec8383",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/KeyguardMonitorImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "395add76dda49d99829eb9172850a5af892adad6",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/UserSwitcherController.java",
+      "new_id": "35e3923f285b38d5be6ec18d45f14fd36b3a5a98",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/policy/UserSwitcherController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "95c7a4d09f92895b5406e3ef713623e1f49e718e",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/tests/src/com/android/systemui/utils/leaks/FakeKeyguardMonitor.java",
+      "new_id": "2fb0e0e7caf8c8b83e08dc94c8c981df2fa70c03",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/tests/src/com/android/systemui/utils/leaks/FakeKeyguardMonitor.java"
+    }
+  ]
+}

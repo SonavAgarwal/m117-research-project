@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1a6f1fb402b96df561b9672aef1e4fce8a13de80",
+  "tree": "1af102c5314852bd04a96860c401d4921ec7373a",
+  "parents": [
+    "cf9d5d571f97fdce3d100ece113694ec2cd4bd7a"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Wed Sep 16 14:10:21 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:07:50 2020 +0000"
+  },
+  "message": "Do not re-initialize synthetic password\n\nA bug was introduced in R where LSS ends up regenerating SP\nwhen an escrow token is being auto-activated on unsecured user,\ndue to a logic error in shouldMigrateToSyntheticPasswordLocked().\nFix the bug and add some safeguards as well as unit test to\nprevent future regressions.\n\nBug: 168692734\nTest: atest com.android.server.locksettings\nChange-Id: If35f2fd26b49faf6e3d0d75c10b1b3bb95f247c2\n(cherry picked from commit efc1d53df3a2e7116d7ed83bca9bf8e384d32740)\n(cherry picked from commit 2d51788b08aa85afdb27af4f4586ac40dc949097)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "69b02ceb24111232d962b5f78e05d5f4fb8dfef8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/locksettings/LockSettingsService.java",
+      "new_id": "f6308202ab688526cb8e905e022314ce567e600d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/locksettings/LockSettingsService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba851992cbad99c9f63348a8b52478288c6c2b21",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/locksettings/SyntheticPasswordTests.java",
+      "new_id": "2c2fdcaab340f60b0fe5e404a0c8970d011200ba",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/locksettings/SyntheticPasswordTests.java"
+    }
+  ]
+}

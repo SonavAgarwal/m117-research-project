@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "627f1048f02a0b85b61140453f7ba9c76fe674f2",
+  "tree": "d10232649ba86e8a7b31f1f746903300d8712c46",
+  "parents": [
+    "d79424ada68d23868d415a7542ef0ad90bb9faf2"
+  ],
+  "author": {
+    "name": "Martin Brabham",
+    "email": "optedoblivion@google.com",
+    "time": "Fri May 24 15:13:38 2019 -0700"
+  },
+  "committer": {
+    "name": "Huizi Yang",
+    "email": "yanghuiz@google.com",
+    "time": "Tue Oct 08 14:05:49 2019 -0700"
+  },
+  "message": "DO NOT MERGE: btif: require pairing dialog for JustWorks SSP\n\nBug: 110433804\nTest: Manual; atest net_test_bluetooth\nChange-Id: If65a8d53ff368ba3ddddb47cfc0072469090b46a\n(cherry picked from commit ddae6274742e241c03526c7659dca7b3446b9f8d)\n(cherry picked from commit 26ba26be830f04e6fd9c77b075bcae48677d4cce)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9ab2bc29d55f1ddff4236d33216e37145581b503",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.cc",
+      "new_id": "c4df695870a429a7491073e4228c332beabb5273",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.cc"
+    }
+  ]
+}

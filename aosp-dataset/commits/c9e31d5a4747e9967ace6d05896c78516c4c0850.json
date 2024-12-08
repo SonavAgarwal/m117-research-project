@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "c9e31d5a4747e9967ace6d05896c78516c4c0850",
+  "tree": "6b8f4ee2c97b6c9bafa357cc8e22977be77e87a6",
+  "parents": [
+    "211d59c0034ec9d88690c750ccd6da27f6952dc5"
+  ],
+  "author": {
+    "name": "Andy Lutomirski",
+    "email": "luto@amacapital.net",
+    "time": "Sat Nov 22 18:00:32 2014 -0800"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86_64, traps: Stop using IST for #SS\n\ncommit 6f442be2fb22be02cafa606f1769fa1e6f894441 upstream.\n\nOn a 32-bit kernel, this has no effect, since there are no IST stacks.\n\nOn a 64-bit kernel, #SS can only happen in user code, on a failed iret\nto user space, a canonical violation on access via RSP or RBP, or a\ngenuine stack segment violation in 32-bit kernel code.  The first two\ncases don\u0027t need IST, and the latter two cases are unlikely fatal bugs,\nand promoting them to double faults would be fine.\n\nThis fixes a bug in which the espfix64 code mishandles a stack segment\nviolation.\n\nThis saves 4k of memory per CPU and a tiny bit of code.\n\nSigned-off-by: Andy Lutomirski \u003cluto@amacapital.net\u003e\nReviewed-by: Thomas Gleixner \u003ctglx@linutronix.de\u003e\nSigned-off-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ef17af0134750203f803f5a665a86178abfa2107",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/page_32_types.h",
+      "new_id": "4376b458aef76b8a1f94bfc882526049618a7be1",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/page_32_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c896fbe21db50fca525bb321aceab47172ee9d4",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/page_64_types.h",
+      "new_id": "970f3097ee33b9801ee5526656c0c9e3e1cb680e",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/page_64_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "addb207dab92d11ebe4d48650babe07db36a1539",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/dumpstack_64.c",
+      "new_id": "66e274a3d968eb9b382dea4ba13d34169beb8bed",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/dumpstack_64.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a454d0ac8f8d8856889bb188febf8bb94fa9d6f",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_64.S",
+      "new_id": "50e5e59cc77a3abbd541da786ba61f30d3a252f3",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_64.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "74e080123ec927b5619077616933f52371558ead",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/traps.c",
+      "new_id": "00a287358470df63f999ab953ea77c68dd22f2f3",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/traps.c"
+    }
+  ]
+}

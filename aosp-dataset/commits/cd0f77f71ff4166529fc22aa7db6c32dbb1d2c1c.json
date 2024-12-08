@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "cd0f77f71ff4166529fc22aa7db6c32dbb1d2c1c",
+  "tree": "d225b8d2cb6667dc2db23f0bf350f72f8801e02c",
+  "parents": [
+    "6a2a5f92df8879d154d965467e7c6e4342e943d3"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Fri Feb 19 15:38:43 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:55 2021 +0000"
+  },
+  "message": "Memory Disclosure, OOB Write, and Double Free in NFC T3T tag\n\nBug: 179687208\nTest: build ok\nChange-Id: I9fcc8d7813e5192810808c207ac0364e279bef09\n(cherry picked from commit 16a3bb0b54fb6537abb283a6efadb6dfe53399f5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f4027a592686e7955a91e6c13b858c0d34e29bf6",
+      "old_mode": 33188,
+      "old_path": "src/nfc/include/rw_int.h",
+      "new_id": "2e6d4c2cc0b62b7fbd46bf04f920bfed7822561c",
+      "new_mode": 33188,
+      "new_path": "src/nfc/include/rw_int.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "60afe38f8288ec1c9771643ce6eea75119f19631",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t3t.cc",
+      "new_id": "58b84fd600704ec35d830071407ec7812e04eef2",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t3t.cc"
+    }
+  ]
+}

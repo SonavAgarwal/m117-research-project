@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "047eec456943dc082e33220d28abb7df4e089f69",
+  "tree": "0fac1ccb55e942beb438d4a32e39f5bd263a85b9",
+  "parents": [
+    "d3c6ce463ac91ecbeb2128beb475d31d3ca6ef42"
+  ],
+  "author": {
+    "name": "Arve Hjønnevåg",
+    "email": "arve@android.com",
+    "time": "Thu Aug 18 15:42:35 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:56 2016 -0700"
+  },
+  "message": "ServiceManager: Allow system services running as secondary users to add services\n\nThis should be reverted when all system services have been cleaned up to not\ndo this. A process looking up a service while running in the background will\nsee the service registered by the active user (assuming the service is\nregistered on every user switch), not the service registered by the user that\nthe process itself belongs to.\n\nBUG: 30795333\nChange-Id: I1b74d58be38ed358f43c163692f9e704f8f31dbe\n(cherry picked from commit e6bbe69ba739c8a08837134437aaccfea5f1d943)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "73c036722b05f131159b45b7327efaadc56b5da0",
+      "old_mode": 33188,
+      "old_path": "cmds/servicemanager/Android.mk",
+      "new_id": "b214f19efd9f244304cc6d68afc33b2073500f68",
+      "new_mode": 33188,
+      "new_path": "cmds/servicemanager/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a8e6885cc1016fc7c44850bc3ca3cce191b200d",
+      "old_mode": 33188,
+      "old_path": "cmds/servicemanager/service_manager.c",
+      "new_id": "68e3ceb8e6fa6c3a20c0d42f875c7a4c56051106",
+      "new_mode": 33188,
+      "new_path": "cmds/servicemanager/service_manager.c"
+    }
+  ]
+}

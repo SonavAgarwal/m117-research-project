@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "8888cbf8e74671d44e9ff92ec3847cd647b8cdfb",
+  "tree": "d27620df728edf12ec442258b2613b389f07d0c9",
+  "parents": [
+    "e9f90a21c05c630062ce790e32a4b21405c631bd"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Fri Dec 02 16:47:53 2016 -0500"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:14 2017 -0800"
+  },
+  "message": "DO NOT MERGE Do not create an SkRawCodec with zero dimensions\n\nBUG:33300701\n\nCherry-pick of Ifb3a824a36998c5e626c4ad58466845f49d18ebf\nConflicts:\n\tsrc/codec/SkRawCodec.cpp\n\nOriginal message:\n\"\"\"\nDO NOT MERGE Do not create an SkRawCodec with zero dimensions\nAdd a test\n\nBUG\u003dskia:3534\nBUG\u003db/33300701\n\nChange-Id: Ifb3a824a36998c5e626c4ad58466845f49d18ebf\nReviewed-on: https://skia-review.googlesource.com/5568\nCommit-Queue: Leon Scroggins \u003cscroggo@google.com\u003e\nReviewed-by: Matt Sarett \u003cmsarett@google.com\u003e\n\"\"\"\n\n(cherry picked from commit 20de35a0fd855c60b40a7d5d513bbe8e19fda49b)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ea7a4777af682721f80b963b44d7113b8612586d",
+      "new_mode": 33188,
+      "new_path": "resources/empty_images/zero_height.tiff"
+    },
+    {
+      "type": "modify",
+      "old_id": "ab2c55d9aa7d900a4458fbbe3060277ccd5b89b5",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkRawCodec.cpp",
+      "new_id": "eea551e361c4519a5f82b5472678eff477730863",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkRawCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8ce63029a672607e78cc5831a00a69571628e6f1",
+      "old_mode": 33188,
+      "old_path": "tests/CodexTest.cpp",
+      "new_id": "7e6d9504308e5e7e14aeeb1725c28fc3a08e6492",
+      "new_mode": 33188,
+      "new_path": "tests/CodexTest.cpp"
+    }
+  ]
+}

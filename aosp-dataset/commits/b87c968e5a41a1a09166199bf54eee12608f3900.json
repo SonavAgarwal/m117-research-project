@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b87c968e5a41a1a09166199bf54eee12608f3900",
+  "tree": "58065d5f3847794bc69adf5c0e329d4a2a7e21be",
+  "parents": [
+    "c574568aaede7f652432deb7707f20ae54bbdf9a"
+  ],
+  "author": {
+    "name": "Charles He",
+    "email": "qiurui@google.com",
+    "time": "Fri Jul 14 14:41:06 2017 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:20:12 2017 +0000"
+  },
+  "message": "Fix security hole in GateKeeperResponse.\n\nGateKeeperResponse has inconsistent writeToParcel() and\ncreateFromParcel() methods, making it possible for a malicious app to\ncreate a Bundle that changes contents after reserialization. Such\nBundles can be used to execute Intents with system privileges.\n\nThis CL changes writeToParcel() to make serialization and\ndeserialization consistent, thus fixing the issue.\n\nBug: 62998805\nTest: use the debug app (see bug)\nChange-Id: Ie1c64172c454c3a4b7a0919eb3454f0e38efcd09\n(cherry picked from commit e74cae8f7c3e6b12f2bf2b75427ee8f5b53eca3c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "287dc76a9b01154b4be6cfcc33eb58d1d51ff105",
+      "old_mode": 33188,
+      "old_path": "core/java/android/service/gatekeeper/GateKeeperResponse.java",
+      "new_id": "9b529345851b0b53d32c0b336dbef0d84ffe82ca",
+      "new_mode": 33188,
+      "new_path": "core/java/android/service/gatekeeper/GateKeeperResponse.java"
+    }
+  ]
+}

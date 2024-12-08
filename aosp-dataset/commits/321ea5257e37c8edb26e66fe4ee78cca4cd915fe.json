@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "321ea5257e37c8edb26e66fe4ee78cca4cd915fe",
+  "tree": "280cb463bffc11f2d04c23fd08eb2843c3611e25",
+  "parents": [
+    "453b351ac5bd2b6619925dc966da60adf6b3126c"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Mon Nov 14 14:58:34 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:20 2016 -0800"
+  },
+  "message": "Fix security vulnerability: Effect command might allow negative indexes\n\nBug: 32448258\nBug: 32095626\n\nTest: Use POC bug or cts security test\nChange-Id: I69f24eac5866f8d9090fc4c0ebe58c2c297b63df\n(cherry picked from commit 01183402d757f0c28bfd5e3b127b3809dfd67459)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5f18c974755acc99e8f62ea43a1cd7e9c63beeed",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "ed38584d97132165bc0f4b2ed0384ec8bf2bda0a",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4bce636865bdf0e2a79fc9a5d9a69107649c850d",
+  "tree": "0a5b0a831c5a0872690fd99558964a13b81ebbf3",
+  "parents": [
+    "fd5942b332c5f6e4dc50f50181344957334854e1"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Jun 25 11:46:54 2015 -0700"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Wed Aug 19 15:08:40 2015 -0700"
+  },
+  "message": "libstagefright: Fix crash in convertMetaDataToMessage\n\n- The ABuffer used for the Message has a preset value of 1024, if\n  flattening the meta data exceeds this value, a check fails hence\n  the crash.\n- This change creates a new ABuffer if the buffer size would exceed\n  the buffer capacity.\n\nBug: 22771132\n\nCRs-Fixed: 857850\n\n(cherry picked from commit 9c170c076382096b9e767da0e3f9f37dafa76546)\n\nChange-Id: I056ade2f95bc8d82dfe092de7ecddba588cc5b72\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "25afc5b70c648c5f13e98912820c0df13c365268",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/Utils.cpp",
+      "new_id": "d86be6eeb16b3c4e26cab04e3c9f75d3d32232e0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/Utils.cpp"
+    }
+  ]
+}

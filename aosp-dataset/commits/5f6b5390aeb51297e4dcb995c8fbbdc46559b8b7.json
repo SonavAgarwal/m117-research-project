@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5f6b5390aeb51297e4dcb995c8fbbdc46559b8b7",
+  "tree": "6b31d92ed0d2b84dd30a1aa52e31ac2d8d6ec6cc",
+  "parents": [
+    "40dd65db3996399530cf549b3afe0c3a5f884b78"
+  ],
+  "author": {
+    "name": "Riddle Hsu",
+    "email": "riddlehsu@google.com",
+    "time": "Thu Jul 04 16:10:08 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:07:06 2020 +0000"
+  },
+  "message": "Fix potential double destroy of AssetManager\n\nAssume there is a XmlBlock [X] created by a AssetManager [A]\n([A] will have mNumRefs \u003d 2). After [A].close is called\n(mNumRefs \u003d 1) and then both [X] and [A] are going to be GCed,\nif [A].finalize is called first (nativeDestroy), the later\n[X].finalize will invoke [A].xmlBlockGone that triggers the\nsecond nativeDestroy of [A] and leads to crash.\n\nBy clearing the mObject in AssetManager.finalize, the\ndecRefsLocked from other paths won\u0027t call nativeDestroy again.\n\nBug: 136721562\nBug: 144028297\nTest: atest AssetManagerTest\nTest: Build and install CorePerfTests\n      adb shell am instrument -w -r --no-hidden-api-checks -e class \\\n      android.app.ResourcesPerfTest#getLayoutAndTravese,android.graphics.perftests.RenderNodePerfTest \\\n      com.android.perftests.core/androidx.test.runner.AndroidJUnitRunner\n\nChange-Id: Ia938502d2443f5a6de6a3cabdb7ce1d41d3ff6d1\nMerged-In: Ia938502d2443f5a6de6a3cabdb7ce1d41d3ff6d1\n(cherry picked from commit 0a8a1e9d40a3cdff06150c43c623fa4c415226b6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e5ef67b7d4bd8d837855ef84b8f5c257aaeae2e7",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/res/AssetManager.java",
+      "new_id": "2420a6109155afddeac57e521311d56d2daee725",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/res/AssetManager.java"
+    }
+  ]
+}

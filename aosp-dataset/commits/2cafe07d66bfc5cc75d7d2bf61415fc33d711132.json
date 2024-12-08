@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2cafe07d66bfc5cc75d7d2bf61415fc33d711132",
+  "tree": "3c9995a70c64e8e1188f57dd697242ccb969e119",
+  "parents": [
+    "5f3b168e0e0d33f3b3f435f205071c84a8a3051a"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Feb 04 17:30:55 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:46 2021 +0000"
+  },
+  "message": "avrcp: Ignore AVCT commands that are too long\n\nBug: 177611958\nTest: compilation\nTag: #security\nChange-Id: If914b5928cdf16696eb54bfe91c2869cbbf8e36c\n(cherry picked from commit dc07e927b1272be92095a47634dce0ba3b44b4fd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1ac856a2fce990e20434978582298fdf32f4f328",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_api.cc",
+      "new_id": "579aae52c624fc51d1f7536dde201897b67d602b",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_api.cc"
+    }
+  ]
+}

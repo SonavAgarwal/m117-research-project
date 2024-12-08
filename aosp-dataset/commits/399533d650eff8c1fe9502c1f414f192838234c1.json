@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "399533d650eff8c1fe9502c1f414f192838234c1",
+  "tree": "5cc3f701952cda6a09d12f2a40500cfc37ff63b9",
+  "parents": [
+    "3f3ff1aca3ec4d17fd0e6a0d3f23108ddcc95134"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon Jan 07 14:13:07 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:59 2019 +0000"
+  },
+  "message": "Add gServiceSidMap.\n\nLike gServicePrioMap. b/122472540 is filed to merge these maps\nin the future, but creating a separate map so that it can be easily\nbackported.\n\nBug: 121035042\nTest: boot and check for SID values for calls into hwservicemanager\n    coming from clients which called IServiceManager::getService.\n\nChange-Id: I4e5821d91ea694f86911218c23e68fcb987daaf9\nMerged-In: I4e5821d91ea694f86911218c23e68fcb987daaf9\n(cherry picked from commit d7f8d2226f5c7e98d12137732846e4ba55048927)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d0871f6f3ee46807e22725c0c6df71609d10bc4f",
+      "old_mode": 33188,
+      "old_path": "transport/HidlTransportSupport.cpp",
+      "new_id": "c3a30318c5532c974a0adc705e60bd47b10a2122",
+      "new_mode": 33188,
+      "new_path": "transport/HidlTransportSupport.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "cbe6add2edb5e14987d51e07af89dbb6b4fbcaf3",
+      "old_mode": 33188,
+      "old_path": "transport/Static.cpp",
+      "new_id": "a50664466eff144ac91a6c60fb97c55c1545b92d",
+      "new_mode": 33188,
+      "new_path": "transport/Static.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4066869ca60ffe6166c20ed4ecd60da799d4c8d6",
+      "old_mode": 33188,
+      "old_path": "transport/include/hidl/ConcurrentMap.h",
+      "new_id": "1b06dfd69f3f6f7178c6fcfec07e2eb7faeade13",
+      "new_mode": 33188,
+      "new_path": "transport/include/hidl/ConcurrentMap.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "368c2c5a1ccca02a07f3b66119d2559d9e6e10de",
+      "old_mode": 33188,
+      "old_path": "transport/include/hidl/HidlTransportSupport.h",
+      "new_id": "cdcb03e83d9971f71780e51484146572139d4453",
+      "new_mode": 33188,
+      "new_path": "transport/include/hidl/HidlTransportSupport.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0522e448d104eb3be926bfc16b962cb228589861",
+      "old_mode": 33188,
+      "old_path": "transport/include/hidl/Static.h",
+      "new_id": "b15be68f74b02714db57f761229a053df02f3721",
+      "new_mode": 33188,
+      "new_path": "transport/include/hidl/Static.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a06c9a4aef69ae27b951523cf72bf72412bf48fa",
+  "tree": "f04e91f2724f451fe73f223947ca87e956c57f9f",
+  "parents": [
+    "a31be4320756471d3a41e0b75bb209d6be10516f"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Wed Jan 27 11:07:07 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:08 2016 -0800"
+  },
+  "message": "DO NOT MERGE - Restrict ability to add call based on device provision status\n\nAlways return false for canAddCall if device is not yet provisioned.\n\nBug: 26303187\nChange-Id: I9c4ebc8b954a79562b2ec83d59314a3fb621ddfb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3732a4fcd476af433f23d5851f8d8dca621c8b14",
+      "old_mode": 33188,
+      "old_path": "src/com/android/server/telecom/CallsManager.java",
+      "new_id": "3b7269d4335c55c701e244d2765ca266ecb9098b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/server/telecom/CallsManager.java"
+    }
+  ]
+}

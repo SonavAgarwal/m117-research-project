@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a185996c829a159bb27446697329b01464ab3c03",
+  "tree": "7d37786c59629800f86f324fcd4542f99d52997d",
+  "parents": [
+    "e0b64f17785dc50771e73a8a1ef9bdd38d2df4b9"
+  ],
+  "author": {
+    "name": "Pinyao Ting",
+    "email": "pinyaoting@google.com",
+    "time": "Thu Jul 16 16:49:06 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:45 2020 +0000"
+  },
+  "message": "Fix the issue provider can be wrong when requesting slice permission\n\nSlicePermissionActivity reads provider_pkg from intent, which can be\nmodified at will. As a result user might see incorrect package name in\nthe dialog granting slice permission.\n\nBug: 159145361\nTest: manual\nMerged-In: I8b66c02786df4096dad74b7e76255d5ddd1d609d\nChange-Id: I8b66c02786df4096dad74b7e76255d5ddd1d609d\n(cherry picked from commit 4344e632953b103910b48d43f4eb226b38ed5048)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bd1eea51f8af2dfebbcb1196e3ba3d441fa705a3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/slice/SliceProvider.java",
+      "new_id": "46be54814dc95b9e619a8455fe370299b5a176d8",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/slice/SliceProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "449ed8c3bcdba115024886e3985f597cfc31388c",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/SlicePermissionActivity.java",
+      "new_id": "1b241b74324275fe400aef2746c5944f6778c47a",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/SlicePermissionActivity.java"
+    }
+  ]
+}

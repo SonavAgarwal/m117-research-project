@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "7359b3840f06ef75c70d75a5708011fef25a2bab",
+  "tree": "4f2049a552645540001b935f98a0f4e96a1c15bb",
+  "parents": [
+    "ba7f6d7d45776254791dea3b1f5d2acc0dc9b2dd"
+  ],
+  "author": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Thu Jul 02 17:20:26 2020 +0800"
+  },
+  "committer": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Sun Aug 02 14:59:04 2020 +0800"
+  },
+  "message": "Enable the filterTouchesWhenObscured in Special app access\n\n- Enable the filterTouchesWhenObscured attribute on all toggle\n  switches in all pages of the special app access\n\nBug: 155288585\nTest: make RunSettingsRoboTests\nMerged-In: I011cfe4b7e4e624a8338332ac47a353f7f3ab661\nChange-Id: I85842db3faa558ea61bc878ca76ff6d8ce1a4b03\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c36f44e917bad472704a3b22d47e174b8f219fb9",
+      "old_mode": 33188,
+      "old_path": "res/xml/app_ops_permissions_details.xml",
+      "new_id": "b9ef749e138cbdc6b020fce4079c4fbfe564eac5",
+      "new_mode": 33188,
+      "new_path": "res/xml/app_ops_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "6bc73905c2d0876ab0c6a4452828116b45c2e195",
+      "old_mode": 33188,
+      "old_path": "res/xml/external_sources_details.xml",
+      "new_id": "45c70295e5e03ce345c6a11172bc9bf3b7200d2c",
+      "new_mode": 33188,
+      "new_path": "res/xml/external_sources_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "58a34b9110117d96bcd40034b18cdf90769ebc24",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/datausage/UnrestrictedDataAccess.java",
+      "new_id": "d408bc588c07997188948afe2473bca2288bd02a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/datausage/UnrestrictedDataAccess.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "238c11ec0e3d0f727cea9ce4781a839cf7fb99e9",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/notification/ZenAccessSettings.java",
+      "new_id": "789a728e023ca1f8b48a534a0628fad796fb943a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/notification/ZenAccessSettings.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a888dbabda56515eac54abe5e9f95b973bbf432",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/utils/ManagedServiceSettings.java",
+      "new_id": "55c20473753479008742d282c117f51a80ece356",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/utils/ManagedServiceSettings.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "bd694bc388c19f09f1bf4538cdb981debf1c18c8",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesRestrictedSwitchPreference.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7ffa1965d67563c059959b51d30530e07f143628",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesSwitchPreference.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d5f52646974c29e6b7d51230b8ddae0c0a9430dc",
+  "tree": "c6c8fa064004dc1f6b1f5266c22d6193e5420871",
+  "parents": [
+    "f0afcf1943a1844e2a82ac3c5ab4d49427102cd1"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Fri May 12 08:40:23 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:26 2017 +0000"
+  },
+  "message": "Correcting NumCoeff Check in VLD\n\nThe coefficient index should be less than the number of coefficients\nallowed (max \u003d 64). The check has been moved, so we check only before\nreading a new coefficient.\n\nBug: 37237390\nBug: 37203196\nTest: ran POC on patched n-mr2 system\nChange-Id: I61060c524a5c3c26c7d1fe901393df083b2372ea\n(cherry picked from commit edfd6f6089d54c9bdf937b614724cb02179ed178)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12bb617ea8dd080471c49ddc68cfc145ebff3c80",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_vld.c",
+      "new_id": "80ee403547a6aa2bb43f86a974530359eb5b0ff4",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_vld.c"
+    }
+  ]
+}

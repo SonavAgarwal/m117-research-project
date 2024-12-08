@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "8dde7269a5356503d2b283234b6cb46d0c3f214e",
+  "tree": "06ec842433e8f501addbe9d264a46f2f21fd9161",
+  "parents": [
+    "a9a899d3970f41162c8e9c720bf05f3e6226a90a"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Sep 28 11:32:23 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Oct 02 11:15:18 2015 -0700"
+  },
+  "message": "OMX: allow only secure codec to remotely call allocateBuffer.\n\nBug: 24310423\nChange-Id: Iebcfc58b447f925ec2134898060af2ef227266a3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3d29e4a5199731e002ddebf3f3617d334f788e76",
+      "old_mode": 33188,
+      "old_path": "include/media/IOMX.h",
+      "new_id": "27ad694c11670b996caf8813f2ed57ce68429a04",
+      "new_mode": 33188,
+      "new_path": "include/media/IOMX.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "16da65ec53bfd057cf9d6eff3fe5a97a0214b7c3",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "5423c2a9098519cb61844a9b688fd3b6bddaa9b2",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d468dfc3532c701f93ef6c1cabb3a5d0e869838c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMX.h",
+      "new_id": "e7c4f6d5874ac63026a2a71fb29fc017e1f254cc",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMX.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f68e0a91b1c13ed34aaee2e38d0c12f8692b73e4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMXNodeInstance.h",
+      "new_id": "e5fb45b0b330126129ecc8cd95bb00e7e37abc7e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMXNodeInstance.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb7ab5e1ec7e005d27caf15d6d79370f253feb37",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMX.cpp",
+      "new_id": "7f357c9d22f94ff21371ceadb07477cba26acbc6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMX.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f1c5d8ac713bc3a38cbadb2fc591c64db335295",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "94a213a6539e96211ebe7ffd102895b8c6de19f3",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

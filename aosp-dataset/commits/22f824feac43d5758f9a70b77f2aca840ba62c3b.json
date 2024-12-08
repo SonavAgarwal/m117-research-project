@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "22f824feac43d5758f9a70b77f2aca840ba62c3b",
+  "tree": "ddc4b6ec557aa96a5d54d6a9a48ccb240d118d3e",
+  "parents": [
+    "6d3f50d9c31544a3cb9ae76c9ac08f92eb83c449"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Fri Dec 04 16:29:16 2015 -0800"
+  },
+  "committer": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Sat Dec 05 00:59:12 2015 +0000"
+  },
+  "message": "Fix security vulnerability in ICrypto DO NOT MERGE\n\nb/25800375\n\nChange-Id: I03c9395f7c7de4ac5813a1207452aac57aa39484\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a398ff72447bac3b02f40a76c7188358eca19e77",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/ICrypto.cpp",
+      "new_id": "22f8af7c09517fa2c28440a0b1b50f636a6fc50b",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/ICrypto.cpp"
+    }
+  ]
+}

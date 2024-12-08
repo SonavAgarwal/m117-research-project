@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "adb416ac460cb28ca03e7898bdd154b1d0f8c16b",
+  "tree": "2df985d7da5c32e2fd69054e289430ee3804ffd9",
+  "parents": [
+    "9243c1057f9c81734e0ce2413d1405d9aba04200"
+  ],
+  "author": {
+    "name": "Arthur Ishiguro",
+    "email": "arthuri@google.com",
+    "time": "Tue Sep 22 13:05:15 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:39 2020 +0000"
+  },
+  "message": "Prevent mEventCache UAF in SensorEventConnection\n\nSince there is no check to see if SensorEventConnection has been\ndestroyed, the mEventCache pointer can still be used even after it\nwas freed.\n\nBug: 168211968\nTest: Run test code that attempts to enable a sensor after destroying\nthe SensorEventConnection, and verify no system_server crash occurs.\n\nChange-Id: Ia9275b7cc574df371cdb2e1b80c6699df193b580\nMerged-In: Ia9275b7cc574df371cdb2e1b80c6699df193b580\n(cherry picked from commit 3e9afc163256db661b9039120d07501b3a8a7d99)\n(cherry picked from commit 930b583557e46f14b6d0a0dc1700eb33f18a7714)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d14a3014c8bf8345ceed03162efc285d729e2b1d",
+      "old_mode": 33188,
+      "old_path": "services/sensorservice/SensorEventConnection.cpp",
+      "new_id": "3cccaf93293158ab2dc628efefc3a90b5303f893",
+      "new_mode": 33188,
+      "new_path": "services/sensorservice/SensorEventConnection.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f2d5db28f55c31607d0d9605fd233cb709ede39",
+      "old_mode": 33188,
+      "old_path": "services/sensorservice/SensorEventConnection.h",
+      "new_id": "9487a39a92f870400569b76a76c77066fec4ff16",
+      "new_mode": 33188,
+      "new_path": "services/sensorservice/SensorEventConnection.h"
+    }
+  ]
+}

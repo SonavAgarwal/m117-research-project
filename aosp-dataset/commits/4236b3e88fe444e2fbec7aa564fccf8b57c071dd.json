@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4236b3e88fe444e2fbec7aa564fccf8b57c071dd",
+  "tree": "19d669097363414ef9145cdadb7befef1a1df9e6",
+  "parents": [
+    "2adaef294b383e3b8edf855d973ab0be8b35d7db"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Wed May 06 09:57:55 2020 -0700"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Wed May 06 10:00:10 2020 -0700"
+  },
+  "message": "[RESTRICT AUTOMERGE] Add import of MAX_APP_TRANSITION_DURATION\n\nThe commit at ag/10876662 did not contain a required import. This change\nfixes the build.\n\nBug: 145728687\nTest: `mma` in frameworks/base/services/core/java/com/android/server/wm/\n\nChange-Id: Ic37e2dc8498b0f6f5308653f4f9935038a486001\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "23af7d6755cdfd569711a2f6caada73bd1b3e2c3",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/AppWindowToken.java",
+      "new_id": "6cf1e98881f4be4459a1cf57b17ea8d9a8006df9",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/AppWindowToken.java"
+    }
+  ]
+}

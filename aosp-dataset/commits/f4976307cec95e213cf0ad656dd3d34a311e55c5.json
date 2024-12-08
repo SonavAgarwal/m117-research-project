@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4976307cec95e213cf0ad656dd3d34a311e55c5",
+  "tree": "70c2b67842223d291ef297a9dc7f171fc909b83e",
+  "parents": [
+    "6c6edf77e89ec304ca538b3ed29dfe431224b739"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Tue Feb 25 17:48:49 2020 -0800"
+  },
+  "committer": {
+    "name": "Chris Tate",
+    "email": "ctate@android.com",
+    "time": "Tue Mar 31 18:57:40 2020 +0000"
+  },
+  "message": "Verify all possible hosts that match web nav\n\nEven if an \u003cintent-filter\u003e matches non-web schemes in addition to http\nor https, make sure to include its cited hosts in the autoVerify\nevaluation.\n\nBug: 150038428\nTest: atest OsHostTests#testIntentFilterHostValidation\nChange-Id: If9ef0fc53d96e6581c56d86f89fe63bc9a5fb89a\nMerged-In: If9ef0fc53d96e6581c56d86f89fe63bc9a5fb89a\n(cherry picked from commit 1fba0f897f276d5d47962534867e764da8061105)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "093382a632c6420882524a5e69708000ca0c020f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "6bed7f381a6cedcdeb271dd4932ead598bf6cefd",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

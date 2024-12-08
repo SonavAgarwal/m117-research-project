@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47efc676c849e3abf32001d66e2d6eb887e83c48",
+  "tree": "ed39557debb04047f94a4e475dbbb06a639bdf57",
+  "parents": [
+    "3a66fd2174aa4ec3b98efe807075c7413c39ce0d"
+  ],
+  "author": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Mon Aug 14 15:51:29 2017 +0100"
+  },
+  "committer": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Thu Sep 07 10:36:19 2017 +0100"
+  },
+  "message": "Fix integer overflow in utf{16,32}_to_utf8_length\n\nWithout an explicit check, the return value can wrap around and return\na value that is far too small to hold the data from the resulting\nconversion.\n\nNo CTS test is provided because it would need to allocate at least\nSSIZE_MAX / 2 bytes of UTF-16 data, which is unreasonable on 64-bit\ndevices.\n\nBug: 37723026\nTest: run cts -p android.security\nChange-Id: I56ba5e31657633b7f33685dd8839d4b3b998e586\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5fd9155248fac94841e07d98b469d4098b291f15",
+      "old_mode": 33188,
+      "old_path": "libutils/Unicode.cpp",
+      "new_id": "6cff0f4765a6b826a12a1293f6453cb403b79c47",
+      "new_mode": 33188,
+      "new_path": "libutils/Unicode.cpp"
+    }
+  ]
+}

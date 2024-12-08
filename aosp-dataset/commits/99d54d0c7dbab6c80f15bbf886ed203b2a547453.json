@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "99d54d0c7dbab6c80f15bbf886ed203b2a547453",
+  "tree": "0309341a1512a9f209507e0ea02b5fd6fc8205d8",
+  "parents": [
+    "e3fbbdeb251dc59890e469c627fce322614944c0"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Sep 06 15:41:27 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:20:22 2018 +0000"
+  },
+  "message": "Check AVRCP data length when parsing inside avrc_ctrl_pars_vendor_rsp()\n\nBug: 111450417\nTest: PoC test program\nChange-Id: Idd619e52dc7a2944d0d08af824505580e299c163\n(cherry picked from commit 1c14e10cac53d5a5724dcf34c5679ad8819f9442)\n(cherry picked from commit f779ebe368d245c0d9ac954cf7b2b102e7da56be)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "909274d4205bb641d3b6d824d41e67831022d29b",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "038efe62f2e06bdb8c1c2ec5b52b82e2619a84b7",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

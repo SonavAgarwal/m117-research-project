@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "326fe991a4b7971e8aeaf4ac775491dd8abd85bb",
+  "tree": "016235befa6dbf6dc649a092bae77a78a9231aa8",
+  "parents": [
+    "7554755536019e439433c515eeb44e701fb3bfb2"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Jun 13 11:58:50 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:09 2016 -0700"
+  },
+  "message": "Decoder: Initialize first_pb_nal_in_pic for error slices\n\nfirst_pb_nal_in_pic was uninitialized for error clips\n\nBug: 29023649\n\nChange-Id: Ie4e0a94059c5f675bf619e31534846e2c2ca58ae\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cef51b0e24d7e98572bc05c0aa277c69161a73d3",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "801960b9b374a8896a73b67cf0a58fbf6c7ebb6f",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "73bc45dc6ab0e0ac0fe87dbc20b755e4246ed195",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "911b11d4c5de5a7a7909b21dce40d5f217631be8",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

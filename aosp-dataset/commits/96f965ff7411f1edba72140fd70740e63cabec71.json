@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "96f965ff7411f1edba72140fd70740e63cabec71",
+  "tree": "afe177754473236c94ab1379292716cfb24090a5",
+  "parents": [
+    "e6986e1e8d4a57987f47c215490cb080a65ee29a"
+  ],
+  "author": {
+    "name": "Jungshik Shin",
+    "email": "jungshik@google.com",
+    "time": "Fri Jan 15 01:03:06 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Wed Feb 24 13:20:15 2016 -0800"
+  },
+  "message": "[DO NOT MERGE] Fix the way FreeType headers are incldued.\n\nFreeType headers have to be included with macros defined in ftheaders.h.\nNot doing so breaks when the FreeType header location changes as was the case\nbetween FreeType 2.6.0 and 2.6.2.\n\nThis issue blocks updating FreeType to 2.6.2.\n\nFixed in the upstream: \n https://pdfium.googlesource.com/pdfium/+/56461d66054c53fe3abc88208eaf5d84e80e6551\n\nThis CL is back-porting the following AOSP master CL:\n  https://android-review.googlesource.com/#/c/196608/\n\nBUG: 24296662\n\nChange-Id: I174a6ad2d3efcce5a68317957869ae898869f850\nSigned-off-by: Jungshik Shin \u003cjungshik@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6975ead298e7c77303f607ae72d69e38156efde8",
+      "old_mode": 33188,
+      "old_path": "core/include/fxge/fx_freetype.h",
+      "new_id": "7ad981205d8d3a5997bf37e43beafb98fcd1c984",
+      "new_mode": 33188,
+      "new_path": "core/include/fxge/fx_freetype.h"
+    }
+  ]
+}

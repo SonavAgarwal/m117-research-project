@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d64e9594d3d73c613010ca9fafc7af9782e9225d",
+  "tree": "818ca26b64a2e13c874addd876965cc66d03c7a7",
+  "parents": [
+    "250714c67ba9d2029bc88284672949a87b243b9a"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Tue Oct 24 16:07:18 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:29:27 2017 +0000"
+  },
+  "message": "mtp: fix double free of thumbnail data\n\nbug: 67864232\nChange-Id: I6eb51be839df12317273830521c70a4ed80f9496\n(cherry picked from commit e6b98532ee03d0ac1ca93382699893172454a946)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5b874cd826788e188462b6f36bd81051c3af4a89",
+      "old_mode": 33188,
+      "old_path": "media/jni/android_mtp_MtpDatabase.cpp",
+      "new_id": "47ec4648f1253f771f2ed69d6b5bfb687815a740",
+      "new_mode": 33188,
+      "new_path": "media/jni/android_mtp_MtpDatabase.cpp"
+    }
+  ]
+}

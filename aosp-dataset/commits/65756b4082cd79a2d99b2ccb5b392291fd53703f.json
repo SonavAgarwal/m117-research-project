@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "65756b4082cd79a2d99b2ccb5b392291fd53703f",
+  "tree": "f6d3e2af2ee5fd46d6a7fe0e4c4c8d79d1a77428",
+  "parents": [
+    "44749eb4f273f0eb681d0fa013e3beef754fa687"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Mar 18 18:17:14 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:46 2016 -0700"
+  },
+  "message": "SoftAMR: check input buffer size to avoid overflow.\n\nBug: 27662364\nChange-Id: I47380545ea7d85845e141e722b0d84f498d27145\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bcf6a62bfac8515a6734a664c892c086c2655af4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp",
+      "new_id": "77c3742c004530bb105062f45498068376e87526",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0988e17f673037ced85ef5f28fb76bfdb7a643d5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/src/amrdecode.h",
+      "new_id": "f224fb69550c2f38cc1f170bdd6d93fc870e22f1",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/src/amrdecode.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f54ee8761ba539c05dd36abb734139e3d9a2df7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/src/gsmamr_dec.h",
+      "new_id": "dc64d67aca263972eebffd4220dfe7f031e3af17",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/src/gsmamr_dec.h"
+    }
+  ]
+}

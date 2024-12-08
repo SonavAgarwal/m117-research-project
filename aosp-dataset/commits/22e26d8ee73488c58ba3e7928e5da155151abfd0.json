@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "22e26d8ee73488c58ba3e7928e5da155151abfd0",
+  "tree": "00439baacf771d5439c6ec1747cfcdff13eeb4e5",
+  "parents": [
+    "048ba590876b50ad185ad9c82a399f620fcaf2ce"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Dec 01 15:28:29 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:24 2017 -0800"
+  },
+  "message": "DO NOT MERGE - improve audio effect framwework thread safety\n\n- Reorganize handle effect creation code to make sure the effect engine\nis created with both thread and effect chain mutex held.\n- Reorganize handle disconnect code to make sure the effect engine\nis released with both thread and effect chain mutex held.\n- Protect IEffect interface methods in EffectHande with a Mutex.\n- Only pin effect if the session was acquired first.\n- Do not use strong pointer to EffectModule in EffectHandles:\nonly the EffectChain has a single strong reference to the EffectModule.\n\nBug: 32707507\nChange-Id: Ia1098cba2cd32cc2d1c9dfdff4adc2388dfed80e\n(cherry picked from commit b378b73dd7480b584340b8028802c9ca2d625123)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1785a03f10a18a61f097e8f3578a6443a8f17543",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "fec3a57c1fe2c236a2cad86559cd6bb04256926e",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c56dcc1893b14a0f6c4170ffb667325a3b195a46",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.h",
+      "new_id": "40c8a729b48e1a6a34b3a054d6badf3929c9b714",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d245cb0498b54ad7815cd4d258ad2d1d8ea316c",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "d669841a1f9c4d209e027d35067493f3609a4cbd",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "818bf94168220cead0cd050a0804485ba08cdf07",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.h",
+      "new_id": "864d508ed9cd6ad10a24a05aa29688cef8091b8d",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0f403ae805c7770d5ff2676c9d1e462d56da47ea",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.cpp",
+      "new_id": "7423ea9aee506ed5d2b9da577ace5e96d5f41d8d",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f353f3b83540d4f9d8e08004eb588530422b5472",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.h",
+      "new_id": "ebeabb5b82f46b02d874115b5d9591ca377ca7e4",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c9b3abc683ca211a50077b16c0a5e0125179f7ea",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/service/AudioPolicyInterfaceImpl.cpp",
+      "new_id": "a75e3ddcc0d4a2b28de192b09f980596ab6bf352",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/service/AudioPolicyInterfaceImpl.cpp"
+    }
+  ]
+}

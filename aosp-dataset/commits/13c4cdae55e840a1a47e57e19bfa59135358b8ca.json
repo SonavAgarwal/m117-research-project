@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "13c4cdae55e840a1a47e57e19bfa59135358b8ca",
+  "tree": "5934dfefbc4ce805c0923618834d84248dfae5fa",
+  "parents": [
+    "b10c4698bc5484a52acdba27b45c05a18e3cc512"
+  ],
+  "author": {
+    "name": "Hai Shalom",
+    "email": "haishalom@google.com",
+    "time": "Mon Mar 01 08:11:54 2021 -0800"
+  },
+  "committer": {
+    "name": "Hai Shalom",
+    "email": "haishalom@google.com",
+    "time": "Mon Mar 01 20:59:08 2021 +0000"
+  },
+  "message": "P2P: Fix a corner case in peer addition based on PD Request\n\np2p_add_device() may remove the oldest entry if there is no room in the\npeer table for a new peer. This would result in any pointer to that\nremoved entry becoming stale. A corner case with an invalid PD Request\nframe could result in such a case ending up using (read+write) freed\nmemory. This could only by triggered when the peer table has reached its\nmaximum size and the PD Request frame is received from the P2P Device\nAddress of the oldest remaining entry and the frame has incorrect P2P\nDevice Address in the payload.\n\nFix this by fetching the dev pointer again after having called\np2p_add_device() so that the stale pointer cannot be used.\n\nFixes: 17bef1e97a50 (\"P2P: Add peer entry based on Provision Discovery Request\")\nSigned-off-by: Jouni Malinen \u003cjouni@codeaurora.org\u003e\n\nBug: 181489537\nTest: Compiles\n\nMerged-In: Ief7781491bd545fc1028b9b386fe7a4564102848\n(cherry picked from commit c09ec815894987f8c0c65f8ab897b4068020593e)\n\nChange-Id: I7364cbe034c31d99d707600242f01ea2f09bb941\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3994ec03f86ba404d4876513cf6f0c644753ea1f",
+      "old_mode": 33188,
+      "old_path": "src/p2p/p2p_pd.c",
+      "new_id": "05fd593494ef3ffbef95b5554432e02e7248e29f",
+      "new_mode": 33188,
+      "new_path": "src/p2p/p2p_pd.c"
+    }
+  ]
+}

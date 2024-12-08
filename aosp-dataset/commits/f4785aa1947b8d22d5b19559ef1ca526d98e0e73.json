@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4785aa1947b8d22d5b19559ef1ca526d98e0e73",
+  "tree": "8ebbef3dc99cc3360f0ac74bccfcf9a077efc286",
+  "parents": [
+    "2a389cd3a5f8f5dc787218644f64e101a90a6a6f"
+  ],
+  "author": {
+    "name": "Raph Levien",
+    "email": "raph@google.com",
+    "time": "Thu Feb 11 11:17:44 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:57 2016 -0800"
+  },
+  "message": "Add error logging on invalid cmap - DO NOT MERGE\n\nThis patch logs instances of fonts with invalid cmap tables.\n\nBug: 25645298\nBug: 26413177\nChange-Id: I183985e9784a97a2b4307a22e036382b1fc90e5e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9f3447e62afc280376170c323a90510b9ed442e4",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "82fae3054031c81ec8488795b06048ea2748c176",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    }
+  ]
+}

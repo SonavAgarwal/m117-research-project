@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "04ba32f1a4754bf857926ce3a9e4f9e4159b3187",
+  "tree": "8af63a52f028f62b543b15ccf8ba3fd0baefe8b0",
+  "parents": [
+    "8d67a8b1a1a03922e5ecdfdb8c8c5da6b972ce40"
+  ],
+  "author": {
+    "name": "Ken Chen",
+    "email": "cken@google.com",
+    "time": "Sat Jan 26 19:17:00 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:48 2019 +0000"
+  },
+  "message": "Clear Element.mRef immediately after deallocating it\n\nDNSServiceRefDeallocate() and pointer dereferencing in request handler\nthread are protected by two separate lock/unlock pairs on mHeadMutex.\nIf rescan() runs between these, it could dereference mRef, causing\na heap-use-after-free bug.\n\nSolution: set mRef to null immediately after freeing it.\n\nBug: 121327565\nTest: build\nChange-Id: I56ace2ad8a2da528afa375aefb1b9420547658a7\n(cherry picked from commit 9762bc1964a37ec56091ee2b6070e19c5206f615)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f3a9f8bdca2fcd54b80ccf17e6a57bf03a765669",
+      "old_mode": 33188,
+      "old_path": "server/MDnsSdListener.cpp",
+      "new_id": "b54014cd959645ba2043723226a09e7714adea0d",
+      "new_mode": 33188,
+      "new_path": "server/MDnsSdListener.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "35f34c2a18a09660e63cd509a2c37eee70893b67",
+  "tree": "563d31cbf6b649b96227eb23211d01125face68b",
+  "parents": [
+    "1a7ca2f8c750c84c17bf3fd6e97810b7cee176ba"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Wed Nov 07 22:44:56 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:26 2019 +0000"
+  },
+  "message": "Prevent Out of bound error in phNxpNciHal_process_ext_rsp\n\nBug: 118152591\nTest: Nfc Enable/Disable, R/W, P2P\nMerged-In: I53bfc1b7eca4c3306f20488dc5fb8ccf9ed0e330\nChange-Id: I53bfc1b7eca4c3306f20488dc5fb8ccf9ed0e330\n(cherry picked from commit 210180d4eb8971f74aa17d1677e97a342c29c7b1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "646a07b7de3e51069dfecdf221f4ec7641719983",
+      "old_mode": 33261,
+      "old_path": "halimpl/hal/phNxpNciHal_ext.cc",
+      "new_id": "bc3f7ec02d149fb2110a451326d37bab3200da6f",
+      "new_mode": 33261,
+      "new_path": "halimpl/hal/phNxpNciHal_ext.cc"
+    }
+  ]
+}

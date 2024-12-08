@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "adc39de3a148a2058d63bd7a1b8b71ee0a3524ac",
+  "tree": "f6479e874a2a044f01937519855a89215d83c767",
+  "parents": [
+    "51a159329f78f2930496c7339481403707e6ae67"
+  ],
+  "author": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Thu Nov 07 11:37:18 2019 -0500"
+  },
+  "committer": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Fri Nov 08 14:14:49 2019 +0000"
+  },
+  "message": "Fix notification shell commands\n\n- Notification posting is done as calling app\n- make some only callable by shell\n\nTest: atest\nTest: sample app; make sure posted notification is from app itself\nTest: sample app; make sure some commands fail\nTest: make sure all modified commands still work from shell\nFixes: 143339775\nChange-Id: I50ee768e792266ad2091f1913168e89d5d1463ed\n(cherry picked from commit 1c943a2670c1ff499669b42ef72dcd9f07db08c3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "16b33ab2fc6ca7e6ea3ddcec77704f4638c584fa",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "f20957af69131d093f69af3f8f2ef8e0f85fb3b4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "dd0f420b6df5ea925e23ca990b8212e0b805e325",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/notification/NotificationShellCmd.java",
+      "new_id": "c6c98965d668314f15494569ced206d940be7dda",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/NotificationShellCmd.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "fa90b291eeee8f9fa4c8c48dacaf19aa79857414",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationShellCmdTest.java",
+      "new_id": "0d44318e4aaad7669649b9b1b5fb12c52577717a",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationShellCmdTest.java"
+    }
+  ]
+}

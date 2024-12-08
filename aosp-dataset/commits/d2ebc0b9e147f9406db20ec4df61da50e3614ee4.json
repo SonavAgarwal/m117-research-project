@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d2ebc0b9e147f9406db20ec4df61da50e3614ee4",
+  "tree": "ec78e3b3e29c9104836ac8fcd845d40b60aa1789",
+  "parents": [
+    "120f259d0de4dc048a2b9007c0f19b8808e59021"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Sun Aug 16 17:41:50 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 13:51:26 2015 +0000"
+  },
+  "message": "libstagefright: check remaining data size before parsing it.\n\nBug: 23248776\nChange-Id: I45cf53e58e4375afcf260b122264c968ec0ff6c8\n(cherry picked from commit 3bf1e0fdf27e1188b8d3574ed073595b8eacb114)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d34f1a7efb4feb5a35ef395659a1492705e393fa",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "c3fb9bdc4da42f7dce004ee71d97604161b65fcf",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

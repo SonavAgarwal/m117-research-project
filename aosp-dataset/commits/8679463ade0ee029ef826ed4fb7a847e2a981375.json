@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8679463ade0ee029ef826ed4fb7a847e2a981375",
+  "tree": "5713b937c700560fab03d2af722f825f2a74ea99",
+  "parents": [
+    "297598898683b81e921474e6e74c0ddaedbb8bb5"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Oct 25 15:27:03 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:13 2018 +0000"
+  },
+  "message": "MCAP: Check response length in mca_ccb_hdl_rsp\n\nBug: 116319076\nTest: Send a short MCAP response\nChange-Id: I0452f7d2c0f4ecccc7a6501773e26b403b116179\n(cherry picked from commit 0ab53ca2af26f70126d6d9d6600d090a720758fa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98a368852e0d3da6f8961a14c1b778ceafabff83",
+      "old_mode": 33188,
+      "old_path": "stack/mcap/mca_cact.cc",
+      "new_id": "45159ca5c9a2871b5d1e2b09d22218c99b2c9c9d",
+      "new_mode": 33188,
+      "new_path": "stack/mcap/mca_cact.cc"
+    }
+  ]
+}

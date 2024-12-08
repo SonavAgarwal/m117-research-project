@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3bcf0caa8cca9143443814b36676b3bae33a4368",
+  "tree": "2894f8d03a8231f49a88fb58ef0146fb65c056c0",
+  "parents": [
+    "54cb02ad733fb71b1bdf78590428817fb780aff8"
+  ],
+  "author": {
+    "name": "Pablo Ceballos",
+    "email": "pceballos@google.com",
+    "time": "Thu May 26 15:35:55 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:06:26 2016 -0700"
+  },
+  "message": "Add FrameStats default constructor\n\nBug 28592402\n\nChange-Id: I857e46c9ab3ffae0d96923d665d13a4128a6cafa\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5fdf94d92a34500c799d99c22363001b66810431",
+      "old_mode": 33188,
+      "old_path": "include/ui/FrameStats.h",
+      "new_id": "6bfe635c72630488164b589a8bd9a22196671e69",
+      "new_mode": 33188,
+      "new_path": "include/ui/FrameStats.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "aca73722873e908633ff27375f6f93a08cbb7dd3",
+  "tree": "ef5c050e75481fd2ce8be549961651094859886b",
+  "parents": [
+    "3906c7fd66aa70385d73a0dba51944bd3db74e93"
+  ],
+  "author": {
+    "name": "Matt Sarett",
+    "email": "msarett@google.com",
+    "time": "Thu Jul 21 09:19:47 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:21:55 2016 -0700"
+  },
+  "message": "Fix rewinding bug in SkJpegCodec (cherry picked from Skia)\n\nPerforming a sampled and/or subset decode will create some state\nin SkJpegCodec.  If we fail to clean up this state properly,\nsubsequent decodes may try to reuse (and potentailly overflow)\nthe leftover memory.\n\nCommitted: https://skia.googlesource.com/skia/+/2812f03d54b7fa4fd3d724505155d44a5343d91b\n\nBUG:30190637\nBUG:30081412\nChange-Id: I3fc2220c1cf5b6e2bc68e87e19cf54576e2b7a74\n(cherry picked from commit 63a53c1e4b347775d4a36c0826fcd249d0b98f20)\n(cherry picked from commit 52d00b3be74144019413d7aac734e012c00c87c5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d36051511c664c14cc9bfeddc642426b7fc24df1",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkJpegCodec.cpp",
+      "new_id": "77ad5ddb72571176d548701af4549f93ad38c7cc",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkJpegCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "51e41235cbfc47d8df6b43b6978abcc128b49f6c",
+      "old_mode": 33188,
+      "old_path": "tests/CodexTest.cpp",
+      "new_id": "8ce63029a672607e78cc5831a00a69571628e6f1",
+      "new_mode": 33188,
+      "new_path": "tests/CodexTest.cpp"
+    }
+  ]
+}

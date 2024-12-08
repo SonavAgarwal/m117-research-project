@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e6748ee5b5363e660c81c0427c317b7a71a9181",
+  "tree": "d652fd5ce5592b061a96d1f6bbfa1b357cc672f7",
+  "parents": [
+    "57d90982aa7a18a8c76c8dcc418c8da51a71aa9d"
+  ],
+  "author": {
+    "name": "Santiago Seifert",
+    "email": "aquilescanta@google.com",
+    "time": "Mon Feb 08 16:09:38 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 18 23:59:41 2021 +0000"
+  },
+  "message": "Prevent read of uninitialized memory\n\nBug: 173720767\nTest: atest MediaPlayerTest\nChange-Id: Ib6a3d24e07915e8af9d019e54d0501b74aa4671d\n(cherry picked from commit 42a97f5648e9345461422310039fc9d1def0a91a)\n(cherry picked from commit e4497aaaabb2ceadec970882c82ee199b7ac6592)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "20bc23d4f7fedb8bd1844994e37f5d6295940eac",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaPlayer.cpp",
+      "new_id": "eaa2e6363ba74499eff1df79526c415b1cf5cc24",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaPlayer.cpp"
+    }
+  ]
+}

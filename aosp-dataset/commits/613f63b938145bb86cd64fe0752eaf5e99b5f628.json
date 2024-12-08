@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "613f63b938145bb86cd64fe0752eaf5e99b5f628",
+  "tree": "a06555193bab27f789ae3193212163d98df50fe6",
+  "parents": [
+    "12332e05f632794e18ea8c4ac52c98e82532e5db"
+  ],
+  "author": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Wed Mar 30 17:31:48 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:12 2016 -0700"
+  },
+  "message": "Add new, hidden MotionEvent flag for partially obscured windows.\n\nBug: 26677796\nChange-Id: Ic4219b883bb760495e6172ef61e84e9725876ef6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6026d04a1f21b15c4820658b83be24b37c5a2aeb",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/MotionEvent.java",
+      "new_id": "a8d0b907b79c5487b1fc43013167a131cd101f1a",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/MotionEvent.java"
+    }
+  ]
+}

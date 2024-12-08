@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cadfb7a3c96d4fef06656cf37143e1b3e62cae86",
+  "tree": "87fce96a1a1fc3b17f887e9e26c98fdc64166e6f",
+  "parents": [
+    "90f91b36a4ac48f1e131e24a85189f606707e20a"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Aug 21 08:54:54 2015 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:29:14 2016 -0700"
+  },
+  "message": "Fix NULL pointer dereference\n\nBug: 29770686\nBug: 23304983\nChange-Id: I1648aab90bc281702a00744bf884ae8bb8009412\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b08e24edef9f8ca19777957baa233ddbdf407677",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "e2cb6880ccf0f02f0a4d3113679e2497b0222240",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

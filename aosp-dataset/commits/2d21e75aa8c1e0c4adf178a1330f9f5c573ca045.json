@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "2d21e75aa8c1e0c4adf178a1330f9f5c573ca045",
+  "tree": "c24a38e3acb37cf54881be3bbcf5fb51c7156b0a",
+  "parents": [
+    "c365ae6444b86c3ddd19197fd2c787581ebb31df"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Tue Nov 27 18:22:22 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:28 2018 +0000"
+  },
+  "message": "Fix buffer overflow in btif_dm_data_copy\n\nWhen we use a union, we should always define variables as the union type,\nnot as one of the field subtypes. If the latter is cast to the union type,\nbuffer overflow can happen.\n\nBug: 110166268\nTest: compilation\nChange-Id: I473c03b099ad5a326e7a3739f65efd33cf4775bd\nMerged-In: I473c03b099ad5a326e7a3739f65efd33cf4775bd\n(cherry picked from commit ea90417d9965aec1c475418ca8f8f305af12de2d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "15dfae108afe0e47513e3f248e6b44c1732a7443",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "b775d5d49899981ce48821121737876b63340b3f",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "2bd0b24692727bc814500d68bc78984ade0dbbb2",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_utils.cc",
+      "new_id": "5027e3d97df810a641f87f9abb2812f592b34d3f",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_utils.cc"
+    }
+  ]
+}

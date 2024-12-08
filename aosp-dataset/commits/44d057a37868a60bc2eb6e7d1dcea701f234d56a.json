@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "44d057a37868a60bc2eb6e7d1dcea701f234d56a",
+  "tree": "6431b103a3cca2ae4fc00a9889dfa35ff7cbde26",
+  "parents": [
+    "758f0dac9104b46016af98304656a0268ac3e105"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@zytor.com",
+    "time": "Sun May 04 10:00:49 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86, espfix: Make espfix64 a Kconfig option, fix UML\n\ncommit 197725de65477bc8509b41388157c1a2283542bb upstream.\n\nMake espfix64 a hidden Kconfig option.  This fixes the x86-64 UML\nbuild which had broken due to the non-existence of init_espfix_bsp()\nin UML: since UML uses its own Kconfig, this option does not appear in\nthe UML build.\n\nThis also makes it possible to make support for 16-bit segments a\nconfiguration option, for the people who want to minimize the size of\nthe kernel.\n\nReported-by: Ingo Molnar \u003cmingo@kernel.org\u003e\nSigned-off-by: H. Peter Anvin \u003chpa@zytor.com\u003e\nCc: Richard Weinberger \u003crichard@nod.at\u003e\nLink: http://lkml.kernel.org/r/1398816946-3351-1-git-send-email-hpa@linux.intel.com\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4b208461080df49e00e482d6765b8f19db7a0343",
+      "old_mode": 33188,
+      "old_path": "arch/x86/Kconfig",
+      "new_id": "520cde8d680f9636e856ff6f2e5d130593ff7c72",
+      "new_mode": 33188,
+      "new_path": "arch/x86/Kconfig"
+    },
+    {
+      "type": "modify",
+      "old_id": "0fde29333ca08799d4bda54aede9fe4a0fdc4b1f",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/Makefile",
+      "new_id": "111eb356dbeae77d8b4bf23a9e2cf7c47ff4ee7b",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/Makefile"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f009cc7fcb27c01ffb91cb55e138b96b0448366",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/smpboot.c",
+      "new_id": "fe862750583b582083e21380bedb4a5e085fb28c",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/smpboot.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a9e4a76c78072704141cba6ec18e82e30d54a506",
+      "old_mode": 33188,
+      "old_path": "init/main.c",
+      "new_id": "544cccfd7ebe5d6dfe4b48a9b73150f3cc67f73b",
+      "new_mode": 33188,
+      "new_path": "init/main.c"
+    }
+  ]
+}

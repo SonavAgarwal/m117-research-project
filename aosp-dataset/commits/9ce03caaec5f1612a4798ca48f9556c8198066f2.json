@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9ce03caaec5f1612a4798ca48f9556c8198066f2",
+  "tree": "f7e99abffb0dab1582072179fe452ce6e13e4e29",
+  "parents": [
+    "9803ee9d512ab4d308820337224d93c4fa9a3267"
+  ],
+  "author": {
+    "name": "Bram Bonné",
+    "email": "brambonne@google.com",
+    "time": "Mon Oct 19 18:08:55 2020 +0200"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Mar 11 13:48:05 2021 -0800"
+  },
+  "message": "Use EUI64 IPv6 link-local address generation only when randomizing MAC\n\nWhen connected MAC address randomization is used, generate IPv6\nlink-local addresses using EUI64 with the per-network defined MAC\naddress.\nNetworks that do not use MAC address randomization keep using RFC7217\nstable privacy address generation instead.\n\nBug: 154114734\n\nTest: atest ClientModeImplTest\nTest: atest WifiManagerTest\nTest: Connect to network\nTest: Set up hotspot\nTest: Observe that IPv6 link-local address differs for two networks\nusing randomization\nTest: Observe that stable-privacy link-local address is used for network\nwhen not using randomization\n\nMerged-In: Iefb027b17657031116e068bbccdb7b2231a65238\nMerged-In: I0a59c750511aacddb38b19bf64b56fd18ff545c5\nChange-Id: I4512b87459d036630925ca5ac5ea42179c42ea71\n(cherry picked from commit becf46bfdff50dab319210b69d30185f87db7f17)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12c45e90ffff13d99c3111aa7e6ce65a4912930e",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/ClientModeImpl.java",
+      "new_id": "9cf1d6981f9af90b1e1916912d3e9548f192ed6e",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/ClientModeImpl.java"
+    }
+  ]
+}

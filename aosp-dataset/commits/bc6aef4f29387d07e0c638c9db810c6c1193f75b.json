@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bc6aef4f29387d07e0c638c9db810c6c1193f75b",
+  "tree": "a6215b50dc5f40ca141a38811a8b0c841086af92",
+  "parents": [
+    "d5b44f6522c3294d6f5fd71bc6670f625f716460"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Jun 07 14:25:09 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:46:25 2018 +0000"
+  },
+  "message": "HID Host: Check L2CAP packet data length\n\nBug: 80493272\nTest: manual\nChange-Id: I8b1acd11616684729752195fabb4fa34c46a508d\n(cherry picked from commit ca47a05acb66218ff2123f8d4642961f7f2eb5e2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "76c03a6f96b53140defa3b9c245ca761c75f5e7c",
+      "old_mode": 33188,
+      "old_path": "stack/hid/hidh_conn.cc",
+      "new_id": "6f99c882cf799f5a4d1485a0a083a47af4d442b6",
+      "new_mode": 33188,
+      "new_path": "stack/hid/hidh_conn.cc"
+    }
+  ]
+}

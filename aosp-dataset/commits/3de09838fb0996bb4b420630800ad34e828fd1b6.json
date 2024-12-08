@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3de09838fb0996bb4b420630800ad34e828fd1b6",
+  "tree": "c458c2d45072363197f6c51b0354647a2d84b9af",
+  "parents": [
+    "31f351160cdfd9dbe9919682ebe41bde3bcf91c6"
+  ],
+  "author": {
+    "name": "Jaewan Kim",
+    "email": "jaewan@google.com",
+    "time": "Mon Sep 19 21:19:55 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:17:46 2016 -0700"
+  },
+  "message": "DO NOT MERGE Check caller for sending media key to global priority session\n\nPrevent sending media key events from the non-system app to the global\npriority session through the MediaSessionManager.dispatchMediaKeyEvent().\nNote that any app can use the API indirectly with\nthe public API AudioManager.dispatchMediaKeyEvent().\n\nBug: 29833954\nTested: Installed malicious apps and confirmed that they don\u0027t work.\nTested: Run CtsTelecomTestCases and CtsMediaTestCases\nChange-Id: I2a9e78196ba7455324e485f098f095d03b47ee15\n(cherry picked from commit 09c3df004bad9343092e377a7e74e11f9635734a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a4d2cd25cb14023946cad7698073d36dca8dca2e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/media/MediaSessionService.java",
+      "new_id": "70e7b7ea8836f92887e1348215a63acc40b9d08c",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/media/MediaSessionService.java"
+    }
+  ]
+}

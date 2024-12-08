@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f511fda58b8c77b7f81a3586d8ae1cf10a920fce",
+  "tree": "2b33869ab55bd85fc7e55a3b46caace23eae7a93",
+  "parents": [
+    "429804c700a0b0db72c2e8d239f75e9e105e3ebc"
+  ],
+  "author": {
+    "name": "Anthony Stange",
+    "email": "stange@google.com",
+    "time": "Wed Dec 09 16:30:41 2020 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:15 2021 +0000"
+  },
+  "message": "Use strong pointer in ALooper to avoid use-after-free\n\nIf the endpoint that has a reference to the ASensorEventQueue goes away\nwithout calling ASensorManager_destroyEventQueue, then the event queue\u0027s\nreference goes to 0. This causes the event queue to be destroyed, but\nthe looper may still call it since it hasn\u0027t been invalidated yet\ncausing a use-after-free.\n\nTo avoid this, store the event queue as a weak pointer in the looper\u0027s\nqueue and attempt to promote it to a strong pointer when it needs to be\nused. If it can\u0027t be promoted, then it is ignored and cleared later.\n\nBug: 175074139\nTest: Load Android firmware image and run the camera app to verify no\ncrashes are seen.\n\nMerged-In: I1439bf9c0a725818889f7be64e234d952363f4db\nChange-Id: I1439bf9c0a725818889f7be64e234d952363f4db\n(cherry picked from commit 7d712cfe6ddf86c07c4f2baee74ec948c7fc72d0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9930ad40be5cd62fcab770592d28cf213c6fbbd5",
+      "old_mode": 33188,
+      "old_path": "sensorservice/libsensorndkbridge/ALooper.cpp",
+      "new_id": "d3ddbff0c9dd1ef35d8119d9ce88549ff159707c",
+      "new_mode": 33188,
+      "new_path": "sensorservice/libsensorndkbridge/ALooper.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "601eca96f098b00c54924c013e6947b7d1b4ef93",
+      "old_mode": 33188,
+      "old_path": "sensorservice/libsensorndkbridge/ALooper.h",
+      "new_id": "aa14e03226e3f12ce889d8385df8ee2aed166b41",
+      "new_mode": 33188,
+      "new_path": "sensorservice/libsensorndkbridge/ALooper.h"
+    }
+  ]
+}

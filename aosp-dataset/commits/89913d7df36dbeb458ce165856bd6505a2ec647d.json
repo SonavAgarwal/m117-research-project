@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "89913d7df36dbeb458ce165856bd6505a2ec647d",
+  "tree": "e382779616cd3781d15299250298da192b22cb21",
+  "parents": [
+    "46e305be6e670a5a0041b0b4861122a0f1aabefa"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 11 17:32:55 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:20 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: venc: add safety checks for freeing buffers\n\nAllow only up to 64 buffers on input/output port (since the\nallocation bitmap is only 64-wide).\nAdd safety checks to free only as many buffers were allocated.\n\nFixes: Heap Overflow and Possible Local Privilege Escalation in\nMediaServer (libOmxVenc problem)\nBug: 27532497\n\nChange-Id: I31e576ef9dc542df73aa6b0ea113d72724b50fc6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "50153adc1d91bc3d179d5d97a1f1ba12ad1e5043",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/inc/omx_video_base.h",
+      "new_id": "5db06139420c6fd2b29e2b498b49d87e6757d930",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/inc/omx_video_base.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "1aee2c1ed729293d0143672e1c387ad9000a6cfc",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp",
+      "new_id": "36276780123385c2cf36e60d2886bba8fe8d5b34",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "70d62607c6ae7bd85fbb0c7f4ee98a1d248ec029",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp",
+      "new_id": "32d8c0af9723c44296a36f5503bb4994b19bcecb",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp"
+    }
+  ]
+}

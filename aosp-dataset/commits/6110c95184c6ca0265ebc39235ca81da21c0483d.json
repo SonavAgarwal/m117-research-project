@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6110c95184c6ca0265ebc39235ca81da21c0483d",
+  "tree": "735f558cd9feb77b8f16a781ba8d903bdcdca9fe",
+  "parents": [
+    "ddaa6338c89cc17388f4f9b86594fa2869bf1101"
+  ],
+  "author": {
+    "name": "Jack He",
+    "email": "siyuanh@google.com",
+    "time": "Wed Mar 20 17:38:11 2019 -0700"
+  },
+  "committer": {
+    "name": "Jack He",
+    "email": "siyuanh@google.com",
+    "time": "Wed Mar 20 17:39:56 2019 -0700"
+  },
+  "message": "DO NOT MERGE Atoms: Add BluetoothClassicPairingEvent\n\n* Add BluetoothClassicPairingEvent to log pairing and encryption\n  related statistics\n\nBug: 124301137\nTest: test drive with statsd\nChange-Id: Idca6f6d340e03af91c5a6fb4102666d44167635b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "18aa0d06d6dcdda9ff115e3f495255655703f265",
+      "old_mode": 33188,
+      "old_path": "cmds/statsd/src/atoms.proto",
+      "new_id": "30995d28e985b312774cfaf4fadfc4230051a3ca",
+      "new_mode": 33188,
+      "new_path": "cmds/statsd/src/atoms.proto"
+    }
+  ]
+}

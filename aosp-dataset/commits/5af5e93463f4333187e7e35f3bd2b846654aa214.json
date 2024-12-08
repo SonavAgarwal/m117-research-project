@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "5af5e93463f4333187e7e35f3bd2b846654aa214",
+  "tree": "bd06012636caa3f66a4eab97bf82b0591a90ada2",
+  "parents": [
+    "1638945d4ed9403790962ec7abed1b7a232a9ff8"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Thu May 12 14:15:24 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:06 2016 -0700"
+  },
+  "message": "Use SSL_session_reused to check when a session was reused\n\nThe returned session_id could be exactly the same in the case of TLS\nsession tickets, so use the SSL_session_reused API to determine exactly\nwhen a session was reused.\n\n(cherry picked from commit 1115fa0f6dbbff3a913fbce39ca98f9a78425c72)\n\nBug: 28751153\nChange-Id: Ie82e4d1bb326d7e7deb7981a1e57df393f6c0e1f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "264901f77285c4bd6e8faad406c1e3a7981f50a8",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/NativeCrypto.java",
+      "new_id": "0633e987fb8dc1812d64b35c31c12eb9dbcf1bc4",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/NativeCrypto.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0101935a358ead0dc5d6077ed89c80b9f4527c66",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/SSLParametersImpl.java",
+      "new_id": "312f9234167b33870374bb7d1e410291aff82ed7",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/SSLParametersImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c687504093a57190289203dbb54fb9d5aea50d2",
+      "old_mode": 33188,
+      "old_path": "src/main/native/org_conscrypt_NativeCrypto.cpp",
+      "new_id": "fe08d7ce6b9712beb3f03dc6e4f052c68e618965",
+      "new_mode": 33188,
+      "new_path": "src/main/native/org_conscrypt_NativeCrypto.cpp"
+    }
+  ]
+}

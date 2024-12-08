@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "514271fd61e4219e99a8e5306cdc7b80c3c1c445",
+  "tree": "f9b8dcc5f9e73c83e5f9019f248bf29968545cd7",
+  "parents": [
+    "712eb51dc9af1d4cdb987918607a5e4cebfe9f6b"
+  ],
+  "author": {
+    "name": "Adam He",
+    "email": "adamhe@google.com",
+    "time": "Fri Oct 25 11:58:15 2019 -0700"
+  },
+  "committer": {
+    "name": "Adam He",
+    "email": "adamhe@google.com",
+    "time": "Fri Nov 15 23:37:00 2019 +0000"
+  },
+  "message": "DO NOT MERGE - Temporary fix to disable augmented autofill requests coming from\npassword fields.\n\nBug: 141703197\nTest: atest android.autofillservice.cts.augmented\nChange-Id: I9b12c2c49645cacc59c2005b039fa7ec975c3b9c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "91f77ea0462dafaf2d0729452a30f3fdb5366f32",
+      "old_mode": 33188,
+      "old_path": "core/java/android/service/autofill/FillRequest.java",
+      "new_id": "63a38ddc2b1d108c12375ef3969af2651dbfecff",
+      "new_mode": 33188,
+      "new_path": "core/java/android/service/autofill/FillRequest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f7ae0e7e2456e435594ca38e74d1f2e4d8c64c4",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/autofill/AutofillManager.java",
+      "new_id": "bfa34ed76f07deae860b820a32f5e4e047472c17",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/autofill/AutofillManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0918c5fdefa88709327042cfa7922081faf881ec",
+      "old_mode": 33188,
+      "old_path": "core/java/android/widget/TextView.java",
+      "new_id": "83f9b388181e11c0bf99fde82db359cd30f4b80f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/widget/TextView.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "87991beefceef56f13c67875015020a291e99615",
+      "old_mode": 33188,
+      "old_path": "services/autofill/java/com/android/server/autofill/Session.java",
+      "new_id": "ce2bc82389ef273b19bed20080badb3217505b1a",
+      "new_mode": 33188,
+      "new_path": "services/autofill/java/com/android/server/autofill/Session.java"
+    }
+  ]
+}

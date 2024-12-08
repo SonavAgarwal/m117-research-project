@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "29a2baf3195256bab6a0a4a2d07b7f2efa46b614",
+  "tree": "1c9497f5ac41c008466314545ce4401d48fcb148",
+  "parents": [
+    "6154eb070b9f224a8daebf0a852d61f07d2c5cf3",
+    "849c5c7ba6d8670788efdd6977c306ca2a3069c7"
+  ],
+  "author": {
+    "name": "Ningyuan Wang",
+    "email": "nywang@google.com",
+    "time": "Tue Oct 11 11:42:12 2016 -0700"
+  },
+  "committer": {
+    "name": "Ningyuan Wang",
+    "email": "nywang@google.com",
+    "time": "Tue Oct 11 11:43:53 2016 -0700"
+  },
+  "message": "resolve merge conflicts of 849c5c7 to mnc-dev\n\nThis resovles the merge conflict for ag/1514448/\nAfter Android M, this function uses num_bssid instead of num_ap.\nBoth are prone to stack overflow attacks.\n\nBug: 31856351\nTest: compile, unit tests, manual test\n\nChange-Id: I194850a4c79ddf478d98e750f65b24e82d99ebc0\n",
+  "tree_diff": []
+}

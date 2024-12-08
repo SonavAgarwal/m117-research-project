@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0ac06cc4c607ffc5ee85077ffd059633f3b8c050",
+  "tree": "6139d6d3d44ab44f181e009aa1d3ffb03d72b250",
+  "parents": [
+    "8f2229abfc45f9c29769fcf172c33c6c54890658"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Tue Aug 27 09:48:01 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:05 2019 +0000"
+  },
+  "message": "sqlite3_android.cpp: disable _TOKENIZE\n\nComment out the tokenize function. This code doesn\u0027t appear to be used.\nA future change will further clean up this code and delete it properly.\n\nBug: 139186193\nTest: compiles and boots\nChange-Id: I0b2c37b6716162228205fc1ca8bea0f397f36baf\n(cherry picked from commit c52a17358593062a7eb75a023c115df9ad89563b)\n(cherry picked from commit 2f967a222a948027bb7f02970370ccaa8ae608a2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "659ee6c9b4adfede0d5045a7b1bf140ed55e9492",
+      "old_mode": 33188,
+      "old_path": "android/sqlite3_android.cpp",
+      "new_id": "d65f872f005b644a8b76ebcedfe1b8c07b0ac68f",
+      "new_mode": 33188,
+      "new_path": "android/sqlite3_android.cpp"
+    }
+  ]
+}

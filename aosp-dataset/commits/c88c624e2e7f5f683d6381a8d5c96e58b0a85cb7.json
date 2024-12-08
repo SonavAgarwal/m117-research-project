@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c88c624e2e7f5f683d6381a8d5c96e58b0a85cb7",
+  "tree": "1f48b44f3f90bbdf38a67a826fa8815564d44678",
+  "parents": [
+    "248eaba9c16caee729318c8138ab8dce651303f0"
+  ],
+  "author": {
+    "name": "Valerie Hau",
+    "email": "vhau@google.com",
+    "time": "Wed Apr 17 13:15:02 2019 -0700"
+  },
+  "committer": {
+    "name": "Valerie Hau",
+    "email": "vhau@google.com",
+    "time": "Thu Apr 18 12:19:45 2019 -0700"
+  },
+  "message": "Deprecate Mapper 2.0 from Q launching devices\n\nBug: 130669566, 62535446\nTest: build, boot\nChange-Id: I1bd576d5a8e8b8fef50a81eae1de18898fe895dd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a4e77cc0c148e5eaa25ab2dfda6cb9c0ad94ca38",
+      "old_mode": 33188,
+      "old_path": "compatibility_matrices/compatibility_matrix.4.xml",
+      "new_id": "a34f746d8968ef73fd8eb29c707d9a4d1d3dc506",
+      "new_mode": 33188,
+      "new_path": "compatibility_matrices/compatibility_matrix.4.xml"
+    }
+  ]
+}

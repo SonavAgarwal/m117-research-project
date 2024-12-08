@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c365ae6444b86c3ddd19197fd2c787581ebb31df",
+  "tree": "b7b65576365d282631cb8aee06edb42e89bcfc3c",
+  "parents": [
+    "62270868d5aa630b1a25c32186c9bdad1b555095"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Tue Nov 20 22:31:31 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:24 2018 +0000"
+  },
+  "message": "Fix potential usage of freed memory in btif_hl_proc_sdp_query_cfm\n\nBug: 116222069\nTest: compilation\nChange-Id: Iebe2c500dfc2806ca321fdcd170e20c680619d4d\n(cherry picked from commit 889efd5b9165ed7641fcd75eabbbef56be2ef5df)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dcd08151f6d40ac915e4421e085bf6b6776e9e8e",
+      "old_mode": 33188,
+      "old_path": "bta/hl/bta_hl_main.cc",
+      "new_id": "c224a76e613c6352784a8f872bfdb88dcf623294",
+      "new_mode": 33188,
+      "new_path": "bta/hl/bta_hl_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "a317f7955a67ef6f120257a4252cd90dce213869",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hl.cc",
+      "new_id": "184dbf4eb207a329da9fc19de006449f57cd6049",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hl.cc"
+    }
+  ]
+}

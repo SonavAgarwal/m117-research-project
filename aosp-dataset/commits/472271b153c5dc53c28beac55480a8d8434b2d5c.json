@@ -1,0 +1,318 @@
+)]}'
+{
+  "commit": "472271b153c5dc53c28beac55480a8d8434b2d5c",
+  "tree": "9112405a19254acdd7e1b37b4d667135cc0e2764",
+  "parents": [
+    "514139f4b40cbb035bb92f3e24d5a389d75db9e6"
+  ],
+  "author": {
+    "name": "Sharvil Nanavati",
+    "email": "sharvil@google.com",
+    "time": "Mon Jun 20 19:16:12 2016 -0700"
+  },
+  "committer": {
+    "name": "Zach Jang",
+    "email": "zachjang@google.com",
+    "time": "Wed Jun 22 16:28:31 2016 -0700"
+  },
+  "message": "DO NOT MERGE Fix potential DoS caused by delivering signal to BT process\n\nBug: 28885210\nChange-Id: I63866d894bfca47464d6e42e3fb0357c4f94d360\n\n Conflicts:\n\tbtif/co/bta_hh_co.c\n\tbtif/src/btif_core.c\nMerge conflict resolution of ag/1161415 (referencing ag/1164670)\n- Directly into mnc-mr2-release\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "29803366e2c0b9b29dfc34339733c8422edaaf5d",
+      "old_mode": 33188,
+      "old_path": "audio_a2dp_hw/audio_a2dp_hw.c",
+      "new_id": "a17b01cc175f5859a7bb301a5699137d0459d942",
+      "new_mode": 33188,
+      "new_path": "audio_a2dp_hw/audio_a2dp_hw.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bd6fd6f061287adfd211da2454193feb2811326f",
+      "old_mode": 33188,
+      "old_path": "btif/co/bta_hh_co.c",
+      "new_id": "f689f24eade3665855d159fe4ef971da27509ec5",
+      "new_mode": 33188,
+      "new_path": "btif/co/bta_hh_co.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9aa91f7a0e108c3d237cf8dde9617ad88c35e0c3",
+      "old_mode": 33188,
+      "old_path": "btif/co/bta_hl_co.c",
+      "new_id": "f1331459a3f45d9d3c0484bf47827100a970bbd5",
+      "new_mode": 33188,
+      "new_path": "btif/co/bta_hl_co.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "0ff9651fb391501c4045d977dbe4098c56942722",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_core.c",
+      "new_id": "1f28dc8badf96a20e4e27b2b0c7559ced102baa3",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_core.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c7a5ffe479d898f53063a3798f852c9b32ca77d7",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.c",
+      "new_id": "c8d66a0fc9da9d30853684967c702675f264a977",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b977ae34cb25422e15dde8465de3df568dfe1e3",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hh.c",
+      "new_id": "0d503209a6d423cab306b589d2baaad22f558f36",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hh.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d0c0d73013297470ca32e7b95a2e39f4e65146c",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hl.c",
+      "new_id": "995146e8ed4cce726f652642d749140e106f51f1",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hl.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cbb8d9745b5bb35e2646209b737fb3ad47ab2d51",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_pan.c",
+      "new_id": "6010ae2f0d1a1e94ade3f36b0f77947660d20c5f",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_pan.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6667ddb959b6b7ccef0c3fc0fc899d3b8d600f10",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_rc.c",
+      "new_id": "eeb4f0bff56ae2e4abf15edf334e6e821f927d9b",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_rc.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "04c5b676b195cd05cf58425ef7fcba594972f54c",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sock_l2cap.c",
+      "new_id": "7b1a5cf02a60d8d87d8d00bfbaa4e0e387a17a10",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sock_l2cap.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f80ed562f07d4b23252d675d8eb29091f49a8283",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sock_rfc.c",
+      "new_id": "605099e964fd81d4beeff28dac88a9a378d241d7",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sock_rfc.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "459aebac247707f5cd171764ba39d17d363456da",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sock_thread.c",
+      "new_id": "ebf636d36a83aecc4470e94868575b74eb6dd13d",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sock_thread.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "baa3ed3d9426e7a23a383c1cde5f7f74bb406542",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sock_util.c",
+      "new_id": "ead113f131dd8689dc62fd25ecc78df4b23218ea",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sock_util.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "72ad479e09780be531e4c1e2ca14572c515d4194",
+      "old_mode": 33188,
+      "old_path": "gki/ulinux/gki_ulinux.c",
+      "new_id": "703e9927849c0be858dbb5397f4ecbdee746b871",
+      "new_mode": 33188,
+      "new_path": "gki/ulinux/gki_ulinux.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d859e68424642013be0b2c18275fecaa66db6f16",
+      "old_mode": 33188,
+      "old_path": "hci/src/btsnoop.c",
+      "new_id": "7b6b97f30c9911dd7cc1338b191bf9f5aaa8dbbf",
+      "new_mode": 33188,
+      "new_path": "hci/src/btsnoop.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6a9cd61aa84921286e84dd770ed09c1b1b66303",
+      "old_mode": 33188,
+      "old_path": "hci/src/btsnoop_net.c",
+      "new_id": "1aff83290c72070c87a8f70899a24589c0f6ca40",
+      "new_mode": 33188,
+      "new_path": "hci/src/btsnoop_net.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a48c691d49b3917f70231756c65aad1cf814d67",
+      "old_mode": 33188,
+      "old_path": "hci/src/hci_hal_h4.c",
+      "new_id": "fc0d27838bcfcb978e7c55ec27770e4cfdc9ef2a",
+      "new_mode": 33188,
+      "new_path": "hci/src/hci_hal_h4.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9b3707c7f55d91b7aadd948d65beb82c27b34d80",
+      "old_mode": 33188,
+      "old_path": "hci/src/hci_hal_mct.c",
+      "new_id": "5219e039bb5edcce3377e7dc943ed506430157d2",
+      "new_mode": 33188,
+      "new_path": "hci/src/hci_hal_mct.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5138ce6e1091c3be932d330bb5b77a07697d32de",
+      "old_mode": 33188,
+      "old_path": "hci/src/hci_layer.c",
+      "new_id": "16f72c60699c286cdda01163a977adbd43863678",
+      "new_mode": 33188,
+      "new_path": "hci/src/hci_layer.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d64e8c4d21b118125960967eadd18058149c56bb",
+      "old_mode": 33188,
+      "old_path": "hci/test/hci_hal_h4_test.cpp",
+      "new_id": "9ee8006c3cce1480d0c3427308ac2fd5b92379d2",
+      "new_mode": 33188,
+      "new_path": "hci/test/hci_hal_h4_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "911aabcfdea8b24da7057429a9e1136fd927f4b4",
+      "old_mode": 33188,
+      "old_path": "hci/test/hci_hal_mct_test.cpp",
+      "new_id": "a857629b3f251b146226f11b66388e8d84dbaa27",
+      "new_mode": 33188,
+      "new_path": "hci/test/hci_hal_mct_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c87f5310aeed05e536b970927ccee67a48160694",
+      "old_mode": 33188,
+      "old_path": "osi/src/config.c",
+      "new_id": "3d5d87ff3171e6a296503430511708a25937f021",
+      "new_mode": 33188,
+      "new_path": "osi/src/config.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3ca8ad13c328c7abf487cbdfaba1941edbb435f4",
+      "old_mode": 33188,
+      "old_path": "osi/src/eager_reader.c",
+      "new_id": "e93947d51afaaf5c5128a73f22ce209aeb89b5bb",
+      "new_mode": 33188,
+      "new_path": "osi/src/eager_reader.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "08b50982e338da09b52ab6185a690ddf71d93326",
+      "old_mode": 33188,
+      "old_path": "osi/src/reactor.c",
+      "new_id": "32bd1bef1b67ef683eb9b16b6c08688212fb1dbb",
+      "new_mode": 33188,
+      "new_path": "osi/src/reactor.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5ee9926492d67a9d6142ed11b8136e02b1bd39e1",
+      "old_mode": 33188,
+      "old_path": "osi/src/semaphore.c",
+      "new_id": "76fba0d551930242964a4ccfa4a82b4c2fd3c8a6",
+      "new_mode": 33188,
+      "new_path": "osi/src/semaphore.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "91f084e79a5910569e4d4630a3e5486dd83ac971",
+      "old_mode": 33188,
+      "old_path": "osi/src/socket.c",
+      "new_id": "9905ae30080adb6ab1e8f4f0eb9596f9cead35ba",
+      "new_mode": 33188,
+      "new_path": "osi/src/socket.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "287d4081244f809e169b691ac9a565369b93633f",
+      "old_mode": 33188,
+      "old_path": "osi/test/alarm_test.cpp",
+      "new_id": "fec828f909b157d54162458a9c13775846800451",
+      "new_mode": 33188,
+      "new_path": "osi/test/alarm_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b0039ab3f21cab718a6c4f1a5f883e9c1a76a34e",
+      "old_mode": 33188,
+      "old_path": "osi/test/atomic_test.cpp",
+      "new_id": "6cde546e521c97e246ae322cd423f4269487e2ad",
+      "new_mode": 33188,
+      "new_path": "osi/test/atomic_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad00e17b0763a219025be53d0bde03ba2bd2b3f2",
+      "old_mode": 33188,
+      "old_path": "osi/test/eager_reader_test.cpp",
+      "new_id": "d979f42a6f601e77d4636d3e26f8b0d42f51a90a",
+      "new_mode": 33188,
+      "new_path": "osi/test/eager_reader_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e3a0092a0be3085a2fdf496ddbb9461229ffa13",
+      "old_mode": 33188,
+      "old_path": "osi/test/reactor_test.cpp",
+      "new_id": "73a6ae07be541433d6980c86de192b3a5953f6bc",
+      "new_mode": 33188,
+      "new_path": "osi/test/reactor_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e01de39a2600883687e387b9cabcb679d95b1005",
+      "old_mode": 33188,
+      "old_path": "test/suite/support/callbacks.h",
+      "new_id": "2ef35156ca4de133b7bf36005022e3a7eab41ce9",
+      "new_mode": 33188,
+      "new_path": "test/suite/support/callbacks.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc433bcda6c2e0601c280dc644254c4e23d14c03",
+      "old_mode": 33188,
+      "old_path": "tools/hci/main.c",
+      "new_id": "97fbef1e7ee86d9e9a6edf53833969f78d27e001",
+      "new_mode": 33188,
+      "new_path": "tools/hci/main.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f3c746e09fe01d6c32c3bdad1a48ecf79965e536",
+      "old_mode": 33188,
+      "old_path": "udrv/ulinux/uipc.c",
+      "new_id": "5a94d73c84d37053c06ad162719ee02aa8b1f71e",
+      "new_mode": 33188,
+      "new_path": "udrv/ulinux/uipc.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "35a86eef3c0eef760f7e61c52a343327ba601630",
+  "tree": "5c927d1acc8f860effa89044bf16ac504e2ff118",
+  "parents": [
+    "c2905409c20c8692d4396b8531b09e7ec81fa3fb"
+  ],
+  "author": {
+    "name": "Samuel Tan",
+    "email": "samueltan@google.com",
+    "time": "Mon Jul 18 09:49:59 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:58 2016 -0700"
+  },
+  "message": "VenueNameElement: fix off-by-one enum bounds check\n\nFix the off-by-one error in the conditionals that check\nwhether the Venue Group and Venue Type codes in the ANQP\nelement are in the \"Reserved\" range.\n\nBUG: 30169673\nBUG: 29464811\nTEST: Manually set up AP with Hotspot 2.0 support, broadcasting\n      Venue Group value 0xc, and ensure that device does not\n      crash when in range of this AP.\n\nChange-Id: I14adc3a919e19b67fc0f46bf09d0cffb88b5354e\n(cherry picked from commit 48ee5f1e1c6e2a2dc63e9cb84c42f532c8a6847a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0b27dd330caef0bbb6800e2fb393857eca90fb1",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/anqp/VenueNameElement.java",
+      "new_id": "f944c4098eeb16696ba503d1bf2992b2ded2734f",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/anqp/VenueNameElement.java"
+    }
+  ]
+}

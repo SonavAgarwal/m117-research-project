@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8a414674747f166171f68294836967660905d068",
+  "tree": "857afbc233ceeb7a4a66d7b5ee165fb96f974e18",
+  "parents": [
+    "ad6884776d084586fe8236a39fd1e5eeed667c9f"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Fri Sep 27 21:14:50 2019 +0800"
+  },
+  "committer": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Sun Feb 02 08:50:57 2020 +0000"
+  },
+  "message": "Protect Bluetooth device information when using NFC pairing\n\nBug: 140417248\nTest: Manual test\nMerged-In: I22528d6574a5d5db584aab7eb648b5e083598895\nChange-Id: Ia9ac9013da05450753c32537d6c2ac26cb930724\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "75310e1762e250a891fd769f143e3651db1d41f7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+      "new_id": "c87fc36ce7356db52d51853a7f7b83a30e203263",
+      "new_mode": 33188,
+      "new_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
+    }
+  ]
+}

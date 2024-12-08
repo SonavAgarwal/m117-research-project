@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "992389668ef2a626c8eaf729bcd5edd3d66cc7e0",
+  "tree": "d817f5938d100011037b50e8460b75ef64c63c3a",
+  "parents": [
+    "f7b0943e0ce3161f5dcbc9c3e544ef04a727b275"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Apr 01 16:18:53 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:32 2019 +0000"
+  },
+  "message": "NuPlayerCCDecoder: fix memory OOB\n\nTest: cts\nBug: 129068792\nChange-Id: Id78ddc983f245feda3a81da3448196340b57f5c9\n(cherry picked from commit e1c7348e1c3fed25c16ae4673101f48b1ed95b7e)\n(cherry picked from commit 0f7ff70737d58abda69fa6d4524b1943d6c41461)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fb123600265759c3ef4cb3a94b769bf6d0779f8c",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/NuPlayerCCDecoder.cpp",
+      "new_id": "7b2b6fb782128496873d99515a222897029c8e29",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/NuPlayerCCDecoder.cpp"
+    }
+  ]
+}

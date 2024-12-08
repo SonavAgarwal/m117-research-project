@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d8cc1fe9294accf05c6afcbe7821a485b9939af7",
+  "tree": "bb597514614487d1a226151f1a2fde0179dcabcd",
+  "parents": [
+    "d4af2450c500c7d153fd66771b613f6e6882bf08"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Jun 15 18:43:46 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:11 2017 +0000"
+  },
+  "message": "audio effects: filter reserved effect commands\n\nBlock effect commands reserved for framework use when\nreceived on server side IAudioEffect. Applications have no reason\nto use these commands and they present a unnecessary attack surface.\n\nBug: 62019992\nTest: run CTS tests for audio effects\nChange-Id: Ie680d5d5650f99dbabf93891703e1cde2c2e852d\n(cherry picked from commit c7ab309ecbb289cd1296430f724166a26bd45afe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f908d6df3a127dd77c69ff4224436ce439a0d446",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "b58868598d073ba13f6f824056e60c7588b84abe",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

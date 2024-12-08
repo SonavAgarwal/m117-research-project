@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f9ed2fe6d61259e779a37d4c2d7edb33a1c1f8ba",
+  "tree": "a5e768aa60bd7ce59fda24188f1c5e028e3ad9c1",
+  "parents": [
+    "de2430fd7855b7941250e1c3744756ec9e699bd1"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Mar 16 10:32:05 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:44 2016 -0700"
+  },
+  "message": "Add VPX output buffer size check\n\nand handle dead observers more gracefully\n\nBug: 27597103\nChange-Id: Id7acb25d5ef69b197da15ec200a9e4f9e7b03518\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e161fb8e9695c968906e680c21b6b728f50b9344",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp",
+      "new_id": "02e85a1e4bceaaa8b9ad65b829c7a3bde04e3b91",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f357c9d22f94ff21371ceadb07477cba26acbc6",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMX.cpp",
+      "new_id": "56b60551fd7d2a0748f8a3a9baa56331a7eaa807",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMX.cpp"
+    }
+  ]
+}

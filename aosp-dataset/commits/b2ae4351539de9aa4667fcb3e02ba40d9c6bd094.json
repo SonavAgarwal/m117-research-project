@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b2ae4351539de9aa4667fcb3e02ba40d9c6bd094",
+  "tree": "aa8ac42170bb5e669d625f7bc351327780feda61",
+  "parents": [
+    "916a9684295fb578f4b3c6c16b621ef201a49964"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Aug 19 17:31:51 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 20 03:36:58 2015 +0000"
+  },
+  "message": "libstagefright: fix overflow in pvdec_api.cpp.\n\nBug: 20674086\nChange-Id: Ie2c711865c3b92f3fa2f3c7a436fa0e3687eb8b3\n(cherry picked from commit d7bb1cd786e5ea4ac61119cc1a08082474f7787b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "419e3f4ed1122b63bab6ebfe44455fb404c5fa89",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp",
+      "new_id": "30d5cbd6d30072dbea43b6dcb55d18b5076f1591",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "56d153259cc3e16a6a0014199a2317dde333c978",
+  "tree": "3b7aa227659f87e6e39bbfa4484cb1c98d8ec0b2",
+  "parents": [
+    "24d7c408c52143bce7b49de82f3913fd8d1219cf"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Feb 07 10:35:31 2017 -0800"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Feb 07 10:45:34 2017 -0800"
+  },
+  "message": "eas_mdls: fix OOB read.\n\nBug: 34031018\nChange-Id: I8d373c905f64286b23ec819bdbee51368b12e85a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b08e24edef9f8ca19777957baa233ddbdf407677",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "af35d32ad66318c56d9977216b414915dbd567c6",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

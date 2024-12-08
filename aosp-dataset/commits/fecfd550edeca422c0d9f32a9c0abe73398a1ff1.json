@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fecfd550edeca422c0d9f32a9c0abe73398a1ff1",
+  "tree": "4ddc10eaa47e4cd7d6647291bca96a728cd3723c",
+  "parents": [
+    "16024ea7c4bae08c972cf6b3734029aad33e8870"
+  ],
+  "author": {
+    "name": "Hongming Jin",
+    "email": "hongmingjin@google.com",
+    "time": "Fri Jul 29 14:29:54 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:15:58 2016 -0700"
+  },
+  "message": "Only return password for account session flow if the caller is signed\nwith system key and have get_password permission.\n\nBug: 30455516\nChange-Id: I78484c59e4de1dff685ab91a0a8e7a756fffd9bf\n(cherry picked from commit 9342e137c68e9d31e61b774f7a6583ed5f8353f9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7465ed92e4692471e288ab8eef1a512f2e52c92f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/AccountManager.java",
+      "new_id": "d3551b73cf3f1975a62a7240e787f101de0ffb08",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/AccountManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7bd04b08ede24fac08450647473368e178fba59",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+      "new_id": "747ddc255bf607f817734ebd2914a3bd3417ab7b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+    }
+  ]
+}

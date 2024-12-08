@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0d13824315b0491d44e9c6eb5db06489ab0fcc20",
+  "tree": "db7c89355b36f62897e36124a5a2377ccfc741cd",
+  "parents": [
+    "4a5ef2e42a0e67db1e18f8223807b8008e68ae08"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Oct 06 15:31:52 2016 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Oct 06 22:50:30 2016 +0000"
+  },
+  "message": "Fix divide by zero\n\nand be stricter about the layout of various boxes in mp4 files.\n\nBug: 31318219\nChange-Id: I50034d5b6b1967ca6e88aabeacf49f26ba3c0d32\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8ad75b0909ad41b03c4e8f81d0d8ad98f1af763",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaExtractor.cpp",
+      "new_id": "72d1d7c57f93893b95d1acee9c29d364995472d6",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaExtractor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e7fe0d16e7497951df41033fe08526c73664a5d2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "751b07d15d96a5ba7efed564a9b4c700ba8e4060",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "99a263a7f04c5c6f101388007baa18cf1e8c30bf",
+  "tree": "7df1c1142dcb552269cf7c4811e6d657e5b317c5",
+  "parents": [
+    "490fcbd75795c6223abd806750cd5078f9c884dd"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Mon Apr 02 10:05:56 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:31 2018 +0000"
+  },
+  "message": "DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result\n\nCheck the number of UUIDs from remote device\n\nBug: 74016921\nTest: manual\nChange-Id: I1ca1f66bfc935f5fd219e8147511bdac7d2789ef\n(cherry picked from commit 67ec216daa43f71adf103de6c4156c5a892c1460)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "187bc68e0d40e88387aebcaab2d2ac985d9fa1fc",
+      "old_mode": 33188,
+      "old_path": "bta/dm/bta_dm_act.cc",
+      "new_id": "175e3faf2a9610fe1544c151bac147a5266a90cd",
+      "new_mode": 33188,
+      "new_path": "bta/dm/bta_dm_act.cc"
+    }
+  ]
+}

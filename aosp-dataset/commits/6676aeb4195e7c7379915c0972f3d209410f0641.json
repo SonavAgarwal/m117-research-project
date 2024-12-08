@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6676aeb4195e7c7379915c0972f3d209410f0641",
+  "tree": "8fc4a1b9b1e3b32c7c254479b23b55717eeebc96",
+  "parents": [
+    "026745ef046e646b8d04f4f57d8320042f6b29b0"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Oct 14 17:19:53 2016 +0530"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Oct 18 12:19:18 2016 -0700"
+  },
+  "message": "Decoder: Fixes in handling errors in Mbaff clips.\n\nFixes mb_x, mb_y and first_mb_in_slice for Mbaff error streams\n\nBug: 30481714\n\nChange-Id: Ie99f3b57e48a620a4bc7aee88031955a2e1b6753\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "32f79c8231171249d7e62495304c24154af7470d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "7c3b9cf74edf0e55955cf1281d5a0892b378ff3b",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c01545d7689b83c29024a5c79e9ac2b6669ee0d4",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "3567785dc41cd598227566aac1b8e2bdcd0a4a83",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

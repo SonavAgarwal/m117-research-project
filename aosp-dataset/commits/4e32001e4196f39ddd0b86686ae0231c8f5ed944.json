@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4e32001e4196f39ddd0b86686ae0231c8f5ed944",
+  "tree": "28146079479037506f2c9d1aca66a9fdf9194c45",
+  "parents": [
+    "db829699d3293f254a7387894303451a91278986"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Wed Mar 30 17:13:00 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:55 2016 -0700"
+  },
+  "message": "DO NOT MERGE codecs: check OMX buffer size before use in (vorbis|opus)dec\n\nBug: 27833616\nChange-Id: I1ccdd16a00741da072527a6d13e87fd7c7fe8c54\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2afa0ed9791f663e29891434a03c889aafb150d7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp",
+      "new_id": "2e44ed7168df3dc5f4da96ec59b95ff4208aa1de",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4e1e6a560ff22feef0e36b73da017c7031f63140",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp",
+      "new_id": "5f4e3464acff058a6a51d4a2d9d9bf18701cff34",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp"
+    }
+  ]
+}

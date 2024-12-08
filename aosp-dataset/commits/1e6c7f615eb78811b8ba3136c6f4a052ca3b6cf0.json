@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e6c7f615eb78811b8ba3136c6f4a052ca3b6cf0",
+  "tree": "152cbf7529b1a96c383e719ead49f02077db8f22",
+  "parents": [
+    "2c39575764f5aa4718b5e68be0441e84d3aa9ce7"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Wed May 06 17:42:00 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Fri May 15 22:24:44 2020 +0000"
+  },
+  "message": "Use FLAG_IMMUTABLE for ServiceStateTracker\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 155094269\nChange-Id: If127b73c975b5b3f004500de7f9baa6a7bc00ce4\nMerged-In: If127b73c975b5b3f004500de7f9baa6a7bc00ce4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "de677c9b553de28082f2c553f47b35390ee1a712",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/ServiceStateTracker.java",
+      "new_id": "333dae93a0ab459cf3d7e3720f577c8147970185",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/ServiceStateTracker.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ea8d43c47462fda80359abf84c04a6cf7ce90f64",
+  "tree": "d7ec5c1b9da124546a82f96b3a52e21f870510ed",
+  "parents": [
+    "f83f9bc23d7a0b10df7fa9c705008fd29ad3bac5"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jul 09 16:17:23 2019 +0800"
+  },
+  "committer": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jul 09 10:14:10 2019 +0000"
+  },
+  "message": "Prevent OOB read in rw_t4t.cc part 2\n\nBug: 120865977\nBug: 120274615\nBug: 124462242\nTest: Read T4T Tag\nChange-Id: I4d70537d71442205a9456c0ece7a836fa4473558\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fd358eb9f1697346bd57ed794be323d8a3f4f103",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t4t.cc",
+      "new_id": "92ff5d9ec744ba340dae81fe36da8de36561d0e1",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t4t.cc"
+    }
+  ]
+}

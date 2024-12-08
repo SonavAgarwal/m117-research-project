@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ce7fcb95d5111ad8c554e7ec8ff02f9b40196cdc",
+  "tree": "b54cde5aefecaa8a8d6df27f19eab56e16974bcd",
+  "parents": [
+    "cf379e9a272bff57d5e4093f1a64affce1846e18"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Fri Sep 21 14:04:22 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:24:26 2018 +0000"
+  },
+  "message": "Prevent OOB error for T2T read/writes\n\nBug: 112161557\nTest: Tag reading, HCE\nMerged-In: If170e107b172a590b53f916b12865a1839a25667\nChange-Id: If170e107b172a590b53f916b12865a1839a25667\n(cherry picked from commit 783bc0052f02c8672fe0b57d1cf94735e2a816c0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "275296385d0921f4df09fde4dfedbe9438bc0f33",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t2t_ndef.c",
+      "new_id": "83910e48fac8977523f1b4605473606a137dc4ce",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t2t_ndef.c"
+    }
+  ]
+}

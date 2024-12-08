@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "42a25c46b844518ff0d0b920c20c519e1417be69",
+  "tree": "a1854d073160a8c22ca22933dcdcc6ca2f48069e",
+  "parents": [
+    "8e438e153f661e9df8db0ac41d587e940352df06"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jun 07 12:26:43 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:17 2016 -0700"
+  },
+  "message": "Don\u0027t use sp\u003c\u003e\u0026\n\nbecause they may end up pointing to NULL after a NULL check was performed.\n\nBug: 28166152\nChange-Id: Iab2ea30395b620628cc6f3d067dd4f6fcda824fe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bb3d0d845aae73004049fc55f9fbeabdd2260e2f",
+      "old_mode": 33188,
+      "old_path": "include/media/IMediaDeathNotifier.h",
+      "new_id": "aca66787e480a140e8d049825a9c73eb5395a2d7",
+      "new_mode": 33188,
+      "new_path": "include/media/IMediaDeathNotifier.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d4360ea5f547ccae7db610778184a44bfd8985db",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaDeathNotifier.cpp",
+      "new_id": "c43ef663353ef7b7d2307103cc3590d4f1fc59b4",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaDeathNotifier.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "502ab2dcfca2fee8e1848803e27303e8842ce291",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/mediaplayer.cpp",
+      "new_id": "dcce3ccd39112dd78f23f42a80ddeca2db49b4a5",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/mediaplayer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8bbd8f1762974be8a1336652de68ea88554a308c",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/mediarecorder.cpp",
+      "new_id": "0eb7de583036dfabf5b719bf795848e96e276e46",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/mediarecorder.cpp"
+    }
+  ]
+}

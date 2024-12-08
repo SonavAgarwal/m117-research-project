@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2f2043f18463a5c963c138d24346870b1066e7a6",
+  "tree": "02883b31fd0dc1d8dfa5f8757002aa6ae2366245",
+  "parents": [
+    "49a57cd2346a716eca07153ac83026787fb9d03a"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Wed Jan 10 16:12:50 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:08:17 2018 +0000"
+  },
+  "message": "AVRCP: Check the number of text attributes requested\n\nTest: Build\nBug: 69478941\nChange-Id: Ibc456511c8d7339213f08b07d70f5e25be140d68\n(cherry picked from commit 249bb665b1020e81547246f5b29ed9040d696388)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cc5ec1de0ef116b42bf2be9c4edd218c51be8bd8",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_tg.cc",
+      "new_id": "1ed6963a807fcd60306f05f8f69bed84fc4aa716",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_tg.cc"
+    }
+  ]
+}

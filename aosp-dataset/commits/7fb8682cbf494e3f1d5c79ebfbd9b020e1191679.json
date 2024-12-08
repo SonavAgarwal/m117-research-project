@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7fb8682cbf494e3f1d5c79ebfbd9b020e1191679",
+  "tree": "cbae562b6e875cf3d447e5f0763b34ea07b1a292",
+  "parents": [
+    "daf29a6dbfafc6c06654a3878c0ad2a7f8ebc063"
+  ],
+  "author": {
+    "name": "Ashwini Oruganti",
+    "email": "ashfall@google.com",
+    "time": "Wed Dec 04 17:05:19 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:37 2019 +0000"
+  },
+  "message": "Don\u0027t leak input events to dumpsys on user builds\n\nRemove the details of KeyEvent and MotionEvent logs.\nBug: 139945049\nTest: Tested on a device, the input functions work as expected and input\nevent logs are not leaked to dumpsys on user builds.\n\nChange-Id: I98c9c375f18963177bf0c1d8829a217b4ad4acc6\nMerged-In: I98c9c375f18963177bf0c1d8829a217b4ad4acc6\n(cherry picked from commit a70a3ff7f2d34c68e2af738c1a1bcb66fe25e4a7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c2ff4c9629747a8ee00cda9cc29fd47ccb1e2b13",
+      "old_mode": 33188,
+      "old_path": "services/inputflinger/InputDispatcher.cpp",
+      "new_id": "b921d954dc59ec8fc19ac7a904d1a80bcb78dc27",
+      "new_mode": 33188,
+      "new_path": "services/inputflinger/InputDispatcher.cpp"
+    }
+  ]
+}

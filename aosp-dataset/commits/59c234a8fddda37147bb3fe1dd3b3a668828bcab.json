@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "59c234a8fddda37147bb3fe1dd3b3a668828bcab",
+  "tree": "8f8c67ac303e33daae04c392636888ffad3b3681",
+  "parents": [
+    "1570b62c88d7c5b9c6bfe43da8cc16ea30d3e8df"
+  ],
+  "author": {
+    "name": "Joseph Pirozzo",
+    "email": "pirozzoj@google.com",
+    "time": "Mon May 25 10:36:26 2020 -0700"
+  },
+  "committer": {
+    "name": "Joseph Pirozzo",
+    "email": "pirozzoj@google.com",
+    "time": "Mon May 25 17:48:01 2020 +0000"
+  },
+  "message": "Enable bitpool sanity checks\n\nEnable bitpool sanity checks to run all the time, not just in debug\nmode.\n\nTag: #security\nTest: sbcdecoder_fuzzer\nBug: 146398979\nChange-Id: Iff58305cd18de35e37290f0c09fba01ee14e787a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "85c37d6ead13e4ece737db91128ef6ff6160cf3d",
+      "old_mode": 33188,
+      "old_path": "embdrv/sbc/decoder/srce/decoder-sbc.c",
+      "new_id": "0fee49e9fddff07f9c41fdbc3da3fc901160e2c4",
+      "new_mode": 33188,
+      "new_path": "embdrv/sbc/decoder/srce/decoder-sbc.c"
+    }
+  ]
+}

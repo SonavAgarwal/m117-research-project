@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "90cfe17643aa4ecbe7cbfb1c787217456f764e08",
+  "tree": "df22fd614ed9638d11a602c9011966c277ac71d5",
+  "parents": [
+    "c4ce178c261e6a2dc1aa4c1e1d570f0efd980e47"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Wed Oct 28 14:00:32 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:24 2020 +0000"
+  },
+  "message": "Hide overlays over uninstall confirm dialog\n\nTest: atest CtsPackageUninstallTestCases\nFixes: 171221302\nChange-Id: I38b6d85871064d76f2911e20acc74b4ab76406b3\n(cherry picked from commit cdec871e660202ac20fea9805c35ca8e7fc66b20)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be778e92787e03e8b2921bc5739c344b625a8998",
+      "old_mode": 33261,
+      "old_path": "packages/PackageInstaller/src/com/android/packageinstaller/UninstallerActivity.java",
+      "new_id": "94829b506f95c23bf95af791296200bbccabc8f6",
+      "new_mode": 33261,
+      "new_path": "packages/PackageInstaller/src/com/android/packageinstaller/UninstallerActivity.java"
+    }
+  ]
+}

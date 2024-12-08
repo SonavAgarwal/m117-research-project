@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "41484bba25aa9f658dcc0880f5c060eb92709907",
+  "tree": "2b3f73f8bdec1365b237f75adcd6849e8582f456",
+  "parents": [
+    "251dfbee7fb5986c7e93362556ea556785e4d0e4"
+  ],
+  "author": {
+    "name": "Songchun Fan",
+    "email": "schfan@google.com",
+    "time": "Tue Dec 01 12:02:44 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:55 2020 +0000"
+  },
+  "message": "[SettingsProvider] fix font size scale validator\n\nBUG: 156260178\nTest: builds\nChange-Id: I32f3b7ece78ec8cc97c52a0484151a6a777aa9da\n(cherry picked from commit edeb081ad8b22b4a32ff90610f9f06182025e41c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c5d4fa9f1b409d7939812bd0b7aed3dfbef08b33",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsProvider/src/android/provider/settings/validators/SystemSettingsValidators.java",
+      "new_id": "cb610fc6114210f595e571f6d6d9b538a8dd8ebe",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsProvider/src/android/provider/settings/validators/SystemSettingsValidators.java"
+    }
+  ]
+}

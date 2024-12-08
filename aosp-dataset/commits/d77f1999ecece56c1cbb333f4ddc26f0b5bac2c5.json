@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d77f1999ecece56c1cbb333f4ddc26f0b5bac2c5",
+  "tree": "b4902b8ba82ee98c28878ab62dff092858081560",
+  "parents": [
+    "ade7583ddd1877d25d3605be111319e5d8d760e4"
+  ],
+  "author": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Wed Dec 09 10:08:25 2015 -0800"
+  },
+  "committer": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Thu Dec 10 01:26:43 2015 +0000"
+  },
+  "message": "Fix crashes with lots of discovered LE devices\n\nWhen loads of devices are discovered a config file which is too large\ncan be written out, which causes the BT daemon to crash on startup.\n\nThis limits the number of config entries for unpaired devices which\nare initialized, and prevents a large number from being saved to the\nfilesystem.\n\nBug: 26071376\nChange-Id: I4a74094f57a82b17f94e99a819974b8bc8082184\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "42bcbb8b087550a9d00d3d6b6e9f77fe546cbfd8",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_config.c",
+      "new_id": "81bc660c629d00f3a149f2cbd4a47a50ec6e5c5a",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_config.c"
+    }
+  ]
+}

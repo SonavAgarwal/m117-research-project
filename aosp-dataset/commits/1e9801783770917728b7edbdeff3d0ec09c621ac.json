@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e9801783770917728b7edbdeff3d0ec09c621ac",
+  "tree": "fb935b10fa0ac015868c8f0c3512a1b07c4c15f5",
+  "parents": [
+    "c17ad2f0c7e00fd1bbf01d0dfed41f72d78267ad"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Thu Jul 07 12:57:02 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:00 2016 -0700"
+  },
+  "message": "omx: prevent input port enable/disable for software codecs\n\nBug: 29421804\nChange-Id: Iba1011e9af942a6dff7f659af769a51e3f5ba66f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "60c1e2e01806b6cd7562c0dedce8ca619ed5a47a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/SimpleSoftOMXComponent.cpp",
+      "new_id": "13afd4569e6c4ba7930448f1179cce55b1ddadd6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/SimpleSoftOMXComponent.cpp"
+    }
+  ]
+}

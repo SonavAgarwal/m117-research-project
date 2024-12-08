@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d7603583f90c2bc6074a4ee2886bd28082d7c65b",
+  "tree": "bfca8adb748c7396243bc1914c06758d23082c5f",
+  "parents": [
+    "88f64719d75620d144af5bba39a00a3f178ae60a"
+  ],
+  "author": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Thu Jun 30 14:20:18 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:39 2016 -0700"
+  },
+  "message": "debuggerd: verify that traced threads belong to the right process.\n\nFix two races in debuggerd\u0027s PTRACE_ATTACH logic:\n  1. The target thread in a crash dump request could exit between the\n     /proc/\u003cpid\u003e/task/\u003ctid\u003e check and the PTRACE_ATTACH.\n  2. Sibling threads could exit between listing /proc/\u003cpid\u003e/task and the\n     PTRACE_ATTACH.\n\nBug: http://b/29555636\nChange-Id: I4dfe1ea30e2c211d2389321bd66e3684dd757591\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "908af107a9905f387476919932ddccc6e328cefd",
+      "old_mode": 33188,
+      "old_path": "debuggerd/debuggerd.cpp",
+      "new_id": "7b57c2012e09ba49839cae4aa77f95e560eb28ba",
+      "new_mode": 33188,
+      "new_path": "debuggerd/debuggerd.cpp"
+    }
+  ]
+}

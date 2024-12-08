@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7b82cbbe3411396b187b68548f2c325b42e964a6",
+  "tree": "c92cfc8f4b9159f974a06b6994b38dc1dadfd3e1",
+  "parents": [
+    "fbe5177bd5d704dabf434458649fd93a07d8d654"
+  ],
+  "author": {
+    "name": "Zim",
+    "email": "zezeozue@google.com",
+    "time": "Fri Dec 04 11:20:02 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 16 01:11:20 2021 +0000"
+  },
+  "message": "Block SAF directory access to /sdcard/Android\n\nThis works for target R+ apps, but need to come up with a better story\nfor target \u003cR. The enforcement in DocumentsUI is target SDK based\nand those apps bypass the block_tree flag.\n\nBug: 157320644\nTest: atest DocumentsTest\nChange-Id: I93aea7cd5d3b7befea1f78e1cf3f31f8250f1d33\n(cherry picked from commit 9d508579aed406220c11022cfc983da46396bd07)\nMerged-In: I93aea7cd5d3b7befea1f78e1cf3f31f8250f1d33\n(cherry picked from commit 1ea98d44490a2383a604b546a5671a783c1000dd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "11d1b0a9ef2a26974172d28e07bc5b021cbfcae4",
+      "old_mode": 33188,
+      "old_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+      "new_id": "087275e73ee82a3f0cadd66f57206eff5ba0353c",
+      "new_mode": 33188,
+      "new_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+    }
+  ]
+}

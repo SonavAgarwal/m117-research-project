@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8cb1c83742196077a6c58019a08cf83ed9aaf0eb",
+  "tree": "65d75a1c4ebcd6d7d9198111b7cb356e1529b3a6",
+  "parents": [
+    "dba05b7c7c2782c88056a3f53615a66a6945426e"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Mon Dec 03 14:16:46 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:55:54 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: aaudio: Fix converting negative FIFO counters to index\n\nThe index into the FIFO is calculated by using:\n\n    counter % capacity\n\nBut the counter is signed and when it is negative the\nmodulo can have a negative result. That can cause\na negative array index and an access out of bounds.\n\nThis is not normally a problem because the counter\nis 64 bits and it will not overflow until the audio\nhas run for a few million years. But a hacker might\nbe able to modify this internal counter and force\nan error.\n\nThe solution involves casting to a uint64_t before doing\nthe modulo.\n\nNote that there may still be a discontinuity when the\ncounter wraps from -1 to 0. But that will not result\nin an out-of-bounds access. It may cause a noise but\nan app could simply create a noise directly. So that is\nnot considered an exploit.\n\nBug: 120789744\nTest: test_atomic_fifo.cpp\nChange-Id: I6fe57bcb44528d29b5edb817c592e5e9a8aaf8eb\n(cherry picked from commit f4f81427681d2a736fc9b783dd967bc0661cca73)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "14a2be1caf5b647b00d7a4bf609386efc7a6feaa",
+      "old_mode": 33188,
+      "old_path": "media/libaaudio/src/fifo/FifoControllerBase.cpp",
+      "new_id": "51a8e34725dd087509d4debc08923bfc68777a53",
+      "new_mode": 33188,
+      "new_path": "media/libaaudio/src/fifo/FifoControllerBase.cpp"
+    }
+  ]
+}

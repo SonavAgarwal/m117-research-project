@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "95610818918f6f11fe7d23aca1380e6c0fac2af0",
+  "tree": "de010c19cc17d7826f5672879d76bc7245f8ac0a",
+  "parents": [
+    "749e9b49c3220896d91d24db72d491b09c1320c6"
+  ],
+  "author": {
+    "name": "Amit Mahajan",
+    "email": "amitmahajan@google.com",
+    "time": "Mon Aug 15 09:06:34 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:58 2016 -0700"
+  },
+  "message": "Replace variable-length arrays on stack with malloc.\n\nBug: 30202619\nChange-Id: Ib95e08a1c009d88a4b4fd8d8fdba0641c6129008\n(cherry picked from commit 943905bb9f99e3caa856b42c531e2be752da8834)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "19457f43b83247f7a94fecc15b3cb718bec8a140",
+      "old_mode": 33188,
+      "old_path": "libril/RilSapSocket.cpp",
+      "new_id": "32d383e6151abdf170a6d2f64c5b30d84823ff77",
+      "new_mode": 33188,
+      "new_path": "libril/RilSapSocket.cpp"
+    }
+  ]
+}

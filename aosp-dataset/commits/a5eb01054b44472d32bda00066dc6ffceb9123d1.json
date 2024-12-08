@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "a5eb01054b44472d32bda00066dc6ffceb9123d1",
+  "tree": "72dca432230af926de6327c7cd42de7544f539ce",
+  "parents": [
+    "0864ae9732240a343fe4fc4c393071964e2e9854"
+  ],
+  "author": {
+    "name": "Riddle Hsu",
+    "email": "riddlehsu@google.com",
+    "time": "Thu Dec 03 15:57:36 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:22 2021 +0000"
+  },
+  "message": "Only update native InputApplicationHandle once\n\nThis makes sure the write operation (NativeInputApplicationHandle\n::updateInfo) is always called from window manager side once when\ncalling SurfaceControl.Transaction#setInputWindowInfo or\nInputManagerService#setFocusedApplication. If the info of input\napplication handle is changed, a new instance will be created.\nThat avoids the race condition of reading the fields of the same\nInputApplicationInfo instance from input dispatcher.\n\nBug: 171857140\nBug: 161334769\nBug: 174768985\nTest: WindowInputTests\n\nMerged-In: Ief84bbe6e6fa4da5309912059904932ccf775b75\nMerged-In: I70de9835c7699fe6f56fc3655b0fee5c317ecc3a\nChange-Id: I70de9835c7699fe6f56fc3655b0fee5c317ecc3a\n(cherry picked from commit a68473ce978f3e3ad73bd127cdcfcf663d9fd4d9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3d05e2a0b9f68ada605e717a53a0188c9d6f6578",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/InputApplicationHandle.java",
+      "new_id": "9b96f7fd1c5c36071a748f77dd45dcdd51e02914",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/InputApplicationHandle.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f74b2a510ca50393147e90a7cec38fdf4bbb2e4",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/InputWindowHandle.java",
+      "new_id": "71d26b8880f7e7776a6a2088a3e7481c53f62130",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/InputWindowHandle.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "71edfd553e7eadce99961699c718abd1d4127859",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_hardware_input_InputApplicationHandle.cpp",
+      "new_id": "c1ecae8618273ce1591d7c7297b7eec664600ceb",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_hardware_input_InputApplicationHandle.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a13d0fc64c44290beea13f177260702479ccc32",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/ActivityRecord.java",
+      "new_id": "dc4caf8de0fda84c0a385e479856208e856fde3f",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/ActivityRecord.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f840d9273f606d7fda7929217e153a9d05bceb92",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/DragState.java",
+      "new_id": "7b562a9f4446015404991be3eb40db6467a259ab",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/DragState.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3b39b6ba18c53495a5a65e69362a6a14ede203dd",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/InputConsumerImpl.java",
+      "new_id": "19185736fc89279735666f7b3fe321510c85116e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/InputConsumerImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3663ee14ea99ea34d709678e1fa0e1ea9cc2ca35",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/InputMonitor.java",
+      "new_id": "8366fde24d541bcfb0f2d16ecf70a75b7403fddc",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/InputMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c68b660bb76fd0ffda5a9cbc90ecff58540348f6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/TaskPositioner.java",
+      "new_id": "44f4a58af7ab1e49a43c3810da9e6f10e7d14f6a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/TaskPositioner.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "bab83dc6ea7053a3ae6638849086444ae0453662",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowState.java",
+      "new_id": "faa483a48ea4f2d26dec89c8654ca8d773d51cab",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowState.java"
+    }
+  ]
+}

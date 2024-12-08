@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d7d4d5686b2e3c37c7bf10a6a2adff1c95251a13",
+  "tree": "acdc749b3f036ad0371411dcfd19964fb110d2f5",
+  "parents": [
+    "0d7c2f5a14d1055f3b4f69035451c66bf8f1b08e"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Mar 21 16:45:32 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:40 2018 +0000"
+  },
+  "message": "PAN: Always allocate in bta_pan_data_buf_ind_cback\n\nChange I63b857d031c55d3a0754e4101e330843eb422b2a caused a double\nfree.  Move the free call to pan_data_buf_ind_cb().\n\nFree the buffer before every return in pan_data_buf_ind_cb.\n\nBug: 74950468\nTest: manual tethering test with DUT sharing its connection\nChange-Id: If4526f3042699581e2cdde79a362eef0f83768eb\nMerged-In: If4526f3042699581e2cdde79a362eef0f83768eb\n(cherry picked from commit 98232b084c66368234d19fafe3076bc1c0f1b578)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "41e0bf6b43da90429a04dbaa53357f7e0e88f6f6",
+      "old_mode": 33188,
+      "old_path": "bta/pan/bta_pan_act.cc",
+      "new_id": "789cce8e3959539d24f88608df01066a015103bd",
+      "new_mode": 33188,
+      "new_path": "bta/pan/bta_pan_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "f621fdb6431e1cad837dbd6ebb2ecd8df0fd2466",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "463fca33b7bacc5874b654a9d9bf8e8479e36941",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d7cd27b070de1baa7029737fb0a93195e57adf38",
+      "old_mode": 33188,
+      "old_path": "stack/pan/pan_main.cc",
+      "new_id": "6a554231f17d18980fc5f6df102035164111b358",
+      "new_mode": 33188,
+      "new_path": "stack/pan/pan_main.cc"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1e0bb31f6a809b49014483dc118b9d9ad31ade68",
+  "tree": "12bec35ce75c1fb356b96a72a22038a59a4ef3cf",
+  "parents": [
+    "226ea26684d4cd609a5b456d3d2cc762453c2d75"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Mon Jul 17 15:41:12 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:45:04 2017 +0000"
+  },
+  "message": "Free p_pending_data from tBNEP_CONN to avoid potential memory leaks\n\nBug: 63146105\nTest: External script\nChange-Id: I1281779ccf38d1d2dfb1a6dc0e45c0e533cabbca\nMerged-In: I1281779ccf38d1d2dfb1a6dc0e45c0e533cabbca\n(cherry picked from commit 4982eb5df30cbcbee5c8b8807be95fdc6dfa63c5)\n(cherry picked from commit a654681c5558904a8abfa1bbab8eafb651c13231)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae3480dd2141856ee909e5e9b94a58acd0dfa080",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "b0fad6a658d6fd4705a56303954bf3c5ed13f636",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "3f5e13eba74c69f34ea524ce6ef5746e04ebe796",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_utils.cc",
+      "new_id": "f2be4110861a52309ac18fa9553b7c5a52ae00e6",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_utils.cc"
+    }
+  ]
+}

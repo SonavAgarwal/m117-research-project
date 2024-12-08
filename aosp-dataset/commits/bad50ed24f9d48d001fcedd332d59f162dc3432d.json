@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bad50ed24f9d48d001fcedd332d59f162dc3432d",
+  "tree": "1443e8741df9aa77cb6410d23f52c97df24fe96b",
+  "parents": [
+    "6072de17cd812daf238092695f26a552d3122f8c"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Tue Jul 28 21:41:54 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:45:05 2020 +0000"
+  },
+  "message": "libutils: check vsnprintf error\n\nFor encoding errors, this function will return a negative value which\ncauses problems down the line. Check for an error and return. Also,\ninteger overflows are guarded.\n\nBug: 161894517\nTest: fuzzer test case\nChange-Id: Ia85067d4258bde4b875c832d6223db5dd26b8838\nMerged-In: Ia85067d4258bde4b875c832d6223db5dd26b8838\n(cherry picked from commit ee22384c54d42149491c8b9dbcda0d8c5e88eddc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d13548e4c5d927f9e2393e46488523d7c700ee19",
+      "old_mode": 33188,
+      "old_path": "libutils/String8.cpp",
+      "new_id": "9d50e0bc51d812f78e7f1a88e64d7ba631101d7d",
+      "new_mode": 33188,
+      "new_path": "libutils/String8.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b722e6d0bef5bdcf3cf7368b765ed08a98bdee1c",
+  "tree": "fd8c8a278f240a7d30c834becec62c2f9a041c0d",
+  "parents": [
+    "c3c58abf138f90d4233b6360609af14c52f5d8bc"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Fri Apr 24 19:19:31 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 16:57:12 2020 +0000"
+  },
+  "message": "Use PendingIntent.FLAG_IMMUTABLE in PendingIntent in NotificationMgr\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 153356561\nChange-Id: Ib278926f4327b3fcbec25795b78643774911d1dc\nMerged-In: Ib278926f4327b3fcbec25795b78643774911d1dc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "942c1e27a1694806c6879c5c3dfab887ab3fd920",
+      "old_mode": 33188,
+      "old_path": "src/com/android/phone/NotificationMgr.java",
+      "new_id": "3a404de199f7e4e96e7d171cd5ea1713306def1e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/phone/NotificationMgr.java"
+    }
+  ]
+}

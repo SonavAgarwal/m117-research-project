@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3a3a5d145d380deef2d5b7c3150864cd04be397f",
+  "tree": "67b0097caf625005cb36e59759bc6cc81ddbee22",
+  "parents": [
+    "9db468581809dc745b31fef83c8470a11d46e774"
+  ],
+  "author": {
+    "name": "Andre Furtado",
+    "email": "afurtado@google.com",
+    "time": "Thu Aug 18 10:28:37 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:41:01 2016 -0700"
+  },
+  "message": "30481342: Security Vulnerability - TOCTOU in MmsProvider allows access to files as phone (radio) uid\n\nProblem: MmsProvider.openFile validated the current _data column\nin the DB and then called ContentProvider.openFileHelper which was again\nreading from the DB. A race condition could cause the second DB read to\nread an updated, malicious value.\n\nFix: instead of doing the first DB check and calling\nContentProvider.openFileHelper, we\u0027re now just calling\nMmsProvider.safeOpenFileHelper which does a single check.\n\nTest: used the POC provided for this incident.\n\nb/30481342\n\nChange-Id: I653129359130b9fae59d4c355320b266c158a698\n(cherry picked from commit 5bc7f9682d72c89ba252be6471b2db9b7e7815e3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5acfe13308ed63a464328b9ea66c52247731634f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/telephony/MmsProvider.java",
+      "new_id": "71e84c65a6338f7eb26bd62b4a6964d12a555308",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/telephony/MmsProvider.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3b76870d146b1350db8a2f7797e06897c8c92dc2",
+  "tree": "21a471721a075c7848d738916f1fb293be2bb3e9",
+  "parents": [
+    "cc0942d0c2a57c5025063c62689ee01b39736dc2"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Sep 10 09:47:29 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Sep 16 09:42:09 2015 -0700"
+  },
+  "message": "DO NOT MERGE - IAudioFlinger: always initialize variables to ensure no info leak when writing them to Parcel.\n\nBug: 23953967\nChange-Id: Ibbe841da149038675e9e8daea76c77558bc8564b\n(cherry picked from commit 983dca391a76fb45df999fc40e8766b9ddb63511)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d31de583c61c7380cd6dd6d9451ad07b558b74ec",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioFlinger.cpp",
+      "new_id": "a6ed199cb8c1c0c759306b42e4be4894e7222c3f",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6e01aa2d1e00849c02d043222ded49fcd2fe81e",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioPolicyService.cpp",
+      "new_id": "e8409566049779adc1e263d77cf4aecae7743af7",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioPolicyService.cpp"
+    }
+  ]
+}

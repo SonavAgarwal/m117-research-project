@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "31f351160cdfd9dbe9919682ebe41bde3bcf91c6",
+  "tree": "a649b865809a8ce7cb400cd3bd1ff339e554d9d4",
+  "parents": [
+    "d5b0d0b1df2e1a7943a4bb2034fd21487edd0264"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Mon Sep 19 08:53:20 2016 -0400"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:17:27 2016 -0700"
+  },
+  "message": "Fix build break due to automerge of 7d2198b5\n\nBug: 30100884\n\nChange-Id: I8fa379a74b5d9467b5b9498bd18de2a043963c6f\n(cherry picked from commit baae57ab24db7d3b0bf7f84c05954173f1ee15fe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "758646f4c62d2c2b01b4cc46421a8cf2f1dfd337",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/PacManager.java",
+      "new_id": "58c76ec7674a9f56102403c5262342955d50968c",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/PacManager.java"
+    }
+  ]
+}

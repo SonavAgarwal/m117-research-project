@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "03a53d1c7765eeb3af0bc34c3dff02ada1953fbf",
+  "tree": "eb3466b1b14225cec1d89468849383d9f3d87bfd",
+  "parents": [
+    "a59b827869a2ea04022dd225007f29af8d61837a"
+  ],
+  "author": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Tue Mar 22 16:52:13 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:18 2016 -0700"
+  },
+  "message": "Add new MotionEvent flag for partially obscured windows.\n\nDue to more complex window layouts resulting in lots of overlapping\nwindows, the policy around FLAG_WINDOW_IS_OBSCURED has changed to\nonly be set when the point at which the window was touched is\nobscured. Unfortunately, this doesn\u0027t prevent tapjacking attacks that\noverlay the dialog\u0027s text, making a potentially dangerous operation\nseem innocuous. To avoid this on particularly sensitive dialogs,\nintroduce a new flag that really does tell you when your window is\nbeing even partially overlapped.\n\nWe aren\u0027t exposing this as API since we plan on making the original\nflag more robust. This is really a workaround for system dialogs\nsince we generally know their layout and screen position, and that\nthey\u0027re unlikely to be overlapped by other applications.\n\nBug: 26677796\nChange-Id: I9e336afe90f262ba22015876769a9c510048fd47\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "617175bb3517fbc2a525faf2ac6fca2a3cfb9fac",
+      "old_mode": 33188,
+      "old_path": "include/input/Input.h",
+      "new_id": "82fc6599a7f051b8288b1cfa0ce39a2d65dbe5e0",
+      "new_mode": 33188,
+      "new_path": "include/input/Input.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0fba1bf3e4d67348eca6d066e08d42ed244afec1",
+      "old_mode": 33188,
+      "old_path": "services/inputflinger/InputDispatcher.cpp",
+      "new_id": "c9e876fd29038952c0fbebf406b614f01a878157",
+      "new_mode": 33188,
+      "new_path": "services/inputflinger/InputDispatcher.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "98355c6bdb86192dcf242bc79c4725d802a591b0",
+      "old_mode": 33188,
+      "old_path": "services/inputflinger/InputDispatcher.h",
+      "new_id": "1c054f5ce0c799c0ab4d1b4f5cc338e7caa4100a",
+      "new_mode": 33188,
+      "new_path": "services/inputflinger/InputDispatcher.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fda3ffa2bb8810d6c9222388ad15e034218da5ce",
+      "old_mode": 33188,
+      "old_path": "services/inputflinger/InputWindow.cpp",
+      "new_id": "1b913c51b3d5d9da6d35bcee9ea30a76012a9743",
+      "new_mode": 33188,
+      "new_path": "services/inputflinger/InputWindow.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "42457ce41000b1e679724a91400e0b3247df6097",
+      "old_mode": 33188,
+      "old_path": "services/inputflinger/InputWindow.h",
+      "new_id": "0ac7fce549ce943c33a7b3bb8d3c77c7c1608f9b",
+      "new_mode": 33188,
+      "new_path": "services/inputflinger/InputWindow.h"
+    }
+  ]
+}

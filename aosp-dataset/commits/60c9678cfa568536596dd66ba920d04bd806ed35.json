@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "60c9678cfa568536596dd66ba920d04bd806ed35",
+  "tree": "7cd8ec61a8df8a63ee1b7b25ea8276591ae07036",
+  "parents": [
+    "fab4a3fa419158001944ec0a439fd4471881aa77"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Tue Apr 23 16:03:18 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:55 2019 +0000"
+  },
+  "message": "Zero hidl-generated structs\n\nBug: 131356202\nTest: boot, lshal\nChange-Id: I8fb10532b6fdf9afa419f19fc634981e7cbd3c10\nMerged-In: I8fb10532b6fdf9afa419f19fc634981e7cbd3c10\n(cherry picked from commit c0a87677e806ee54748dac040360332b84c494ba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d18ceaa8c3c4893487e7ec7cfad5d5b7956079a3",
+      "old_mode": 33188,
+      "old_path": "Interface.cpp",
+      "new_id": "1c66b3156fc8e16861b79d0154346f66446fa390",
+      "new_mode": 33188,
+      "new_path": "Interface.cpp"
+    }
+  ]
+}

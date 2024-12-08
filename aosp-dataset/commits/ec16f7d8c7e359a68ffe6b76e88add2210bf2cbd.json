@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "ec16f7d8c7e359a68ffe6b76e88add2210bf2cbd",
+  "tree": "2cafd2e1fc0aaf85d046c540281c359d0114cbf2",
+  "parents": [
+    "0627e76edefd948dc3efe11564d7e53d56aac80c"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Jan 11 17:28:16 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:08:01 2018 +0000"
+  },
+  "message": "Allocate/free the SDP connection timers only during stack startup/shutdown\n\nThis avoids freeing the sdp_conn_timer within the alarm callback itself.\n\nBug: 67110137\nTest: Manual\nChange-Id: I775b4b532cd42cf207258c53c6052a167a124627\nMerged-In: I775b4b532cd42cf207258c53c6052a167a124627\n(cherry picked from commit ef6a4a0c9d9220a7d909863349d7a0c0b967d54c)\n(cherry picked from commit 0dbe21d88e05a43d6882248144e4e9128f4c1928)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c8472112e85186ce1d5afd6cf16596bbefd4955f",
+      "old_mode": 33188,
+      "old_path": "stack/btu/btu_init.cc",
+      "new_id": "e383fd32765d2bfdb192db7cc598317459406133",
+      "new_mode": 33188,
+      "new_path": "stack/btu/btu_init.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "e9fd2252c339a5cae1257f96b1dbe10134dde31a",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_main.cc",
+      "new_id": "8f72aaa781bd44259f7573ebbaea570b3fa0eba2",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "720c74672bb749f1795ee79d89199e74452c6455",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_utils.cc",
+      "new_id": "803e963c2985599438aa145eeaca509cbb77fc62",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_utils.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "3a046b693aae2ffd2ab781a304c540749925d4f3",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdpint.h",
+      "new_id": "a2d5089bf83f63dd967e268882da068138d33887",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdpint.h"
+    }
+  ]
+}

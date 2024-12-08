@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "a78887bcffbc2995cf9ed72e0697acf560875e9e",
+  "tree": "8990924542b1c18a270670e8920acd8ab8bae6e7",
+  "parents": [
+    "cc676ebd95247646e67907ccab150fb77a847335"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Jun 01 13:31:45 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:09 2016 -0700"
+  },
+  "message": "Decoder: Fix slice number increment for error clips\n\nBug: 28673410\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e2fa32258a3645774ec5dc63a01141888e56f920",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "bcdd376152c32747e65d5c2ff50ee584a205ee48",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "94ec8a8c5c73700c5c6b59ef93ae41d452b77ec9",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "1d970714b467dd9bd62e47970c7d4c4e039b5186",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a589d8441756b5c52d6184fd643ed542030ac783",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "ca5c39317543b1c8fd3b6f7a44090560b5e83401",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5ff92f8c9c28c4ded6b91d0bc72f43d3dd6581f2",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "73bc45dc6ab0e0ac0fe87dbc20b755e4246ed195",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

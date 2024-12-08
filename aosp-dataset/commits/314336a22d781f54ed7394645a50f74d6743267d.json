@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "314336a22d781f54ed7394645a50f74d6743267d",
+  "tree": "65c31fa24d0f1b0d6ecc94db061ec1ea29bf758c",
+  "parents": [
+    "02fc52878d8dba16b860fbdf415b6e4425922b2c"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Wed Oct 10 19:35:37 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:24:20 2018 +0000"
+  },
+  "message": "Fix possible OOB read\n\nBug: 74249842\nChange-Id: I0dbe43f0da1f5a8f14bcb69659752de4bd70ca98\n(cherry picked from commit 6e6c347e798bf8195a9a02457edf871a97b1cfad)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b0b4dc7c97d2129823fed8f0eef2a30413c4fdd7",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_discovery.cc",
+      "new_id": "974c02e73f1451aefd581034c1649d016aae8135",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_discovery.cc"
+    }
+  ]
+}

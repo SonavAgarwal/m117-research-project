@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a426f6ed5620a39388aa78ed1d01c465f47958c",
+  "tree": "71be809e80e4b45ef5ef7841905b6b69e9d06569",
+  "parents": [
+    "fb756ca94cca87aa2d4e95431290ed4228a1bf94"
+  ],
+  "author": {
+    "name": "Cheney Ni",
+    "email": "cheneyni@google.com",
+    "time": "Fri Aug 23 23:05:19 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:52 2019 +0000"
+  },
+  "message": "AdapterService: Check the PIN code length before using\n\nThe length is assigned by the framework. We should be better to check\nagain before using, and dropped any unexcepted input.\n\nBug: 139287605\nTest: PoC, atest -t BluetoothInstrumentationTests:com.android.bluetooth.btservice\nChange-Id: Ie2dd01e0b192e7ed1fe4b464618ddfa415dbf15c\n(cherry picked from commit d6c84aa34962333448e0ed8e4ddbc9de8b73c5ac)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "508eacf684b6b4d12cb67314df15bc420b34bdbd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/btservice/AdapterService.java",
+      "new_id": "53cf7238513d9779fc4c0d9244a16fb0b381b3aa",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/btservice/AdapterService.java"
+    }
+  ]
+}

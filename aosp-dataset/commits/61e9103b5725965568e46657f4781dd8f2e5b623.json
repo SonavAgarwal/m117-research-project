@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "61e9103b5725965568e46657f4781dd8f2e5b623",
+  "tree": "5005cace64ece84c08eab669901ef2c8e579375e",
+  "parents": [
+    "0813c5aaa9ee870a4bac375e462c296aa28ef6a6"
+  ],
+  "author": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Wed Jun 29 08:43:00 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:22 2016 -0700"
+  },
+  "message": "Check uid for notification policy access.\n\nBug: 29421441\nChange-Id: Ia0a7b06112dde1c925ec3232f50bf4d90b17b5e5\n(cherry picked from commit 0cd1b789567b60b963fc7b8935e898ea0e61a617)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "11c65250f94c636bc2def7865bac0ea5eea4ecb3",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "ee09e163988e82a4ea1bf1e288c5177eba745091",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    }
+  ]
+}

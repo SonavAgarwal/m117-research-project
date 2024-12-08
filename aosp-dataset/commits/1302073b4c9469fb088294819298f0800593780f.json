@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1302073b4c9469fb088294819298f0800593780f",
+  "tree": "2ec349b63d4ec48390014fbac5a64e5c44281e55",
+  "parents": [
+    "aaba8ef289dee0c143b3dc0fe47e6b9595f22c65"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Thu Sep 05 17:31:12 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:24 2019 +0000"
+  },
+  "message": "Add MANAGED_PROVISIONING_DPC_DOWNLOADED.\n\nTest: Just adding a constant\nBug: 132261064\nChange-Id: I2bce277ff8f2de4614e19d5385fe6712b076f9c9\nMerged-In: I2bce277ff8f2de4614e19d5385fe6712b076f9c9\n(cherry picked from commit a5e4422d14b950a159562accbb8bd59cd1874f5d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "383d8dbce791793445635d85b492f66daba6f990",
+      "old_mode": 33188,
+      "old_path": "core/java/android/provider/Settings.java",
+      "new_id": "f7cfb577fc0e1c3e52ce0e8c06c342146632f2d4",
+      "new_mode": 33188,
+      "new_path": "core/java/android/provider/Settings.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "cd36ba746a3916dbb7e561703feaeb836e256a3e",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/provider/SettingsBackupTest.java",
+      "new_id": "2bc150a564b21e96b8bb443773b41ab88ef422c0",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/provider/SettingsBackupTest.java"
+    }
+  ]
+}

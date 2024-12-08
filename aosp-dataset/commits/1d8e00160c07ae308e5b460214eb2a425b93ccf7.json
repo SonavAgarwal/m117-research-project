@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1d8e00160c07ae308e5b460214eb2a425b93ccf7",
+  "tree": "beb9c1c168d7d67c3f49eef40d5eb9637f759e09",
+  "parents": [
+    "8f86843a3773a9eb03b4d4beabd2ce3c654f4113"
+  ],
+  "author": {
+    "name": "Amit Mahajan",
+    "email": "amitmahajan@google.com",
+    "time": "Thu Jun 11 10:51:05 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:05:07 2015 -0700"
+  },
+  "message": "DO NOT MERGE Change to add STK_PERMISSION for stk related commands.\n\nBug: 21697171\nChange-Id: I7649c7341428194963ac74e9ae622dfa76ea738b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "097cf4795f51825a08d8eda1f54b806de2f1403c",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "668a99e230d3706918a2de5603acab6a088a9e12",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

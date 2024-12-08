@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "462aaeaa616e0bb1342e8ef7b472acc0cbc93deb",
+  "tree": "ccab797f89938a393fb19b3b8b899231101abddc",
+  "parents": [
+    "962fb40991f15be4f688d960aa00073683ebdd20"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Jul 25 14:01:59 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:45 2018 +0000"
+  },
+  "message": "DO NOT MERGE. Execute \"strict\" queries with extra parentheses.\n\nSQLiteQueryBuilder has a setStrict() mode which can be used to\ndetect SQL attacks from untrusted sources, which it does by running\neach query twice: once with an extra set of parentheses, and if that\nsucceeds, it runs the original query verbatim.\n\nThis sadly doesn\u0027t catch inputs of the type \"1\u003d1) OR (1\u003d1\", which\ncreates valid statements for both tests above, but the final executed\nquery ends up leaking data due to SQLite operator precedence.\n\nInstead, we need to continue compiling both variants, but we need\nto execute the query with the additional parentheses to ensure\ndata won\u0027t be leaked.\n\nTest: atest cts/tests/tests/database/src/android/database/sqlite/cts/SQLiteQueryBuilderTest.java\nBug: 111085900\nChange-Id: I6e8746fa48f9de13adae37d2990de11c9c585381\nMerged-In: I6e8746fa48f9de13adae37d2990de11c9c585381\n(cherry picked from commit 57b04a86802ff879af78e782a8582462323e34e7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c6c676f8175860b6f1d1ed0707dab5a919e66588",
+      "old_mode": 33188,
+      "old_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java",
+      "new_id": "f3efc6fd98d5e4445b4f6705e27c9e03ce400548",
+      "new_mode": 33188,
+      "new_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "95602e325ae1ee9cf383db38cb0a8d47567618dc",
+  "tree": "d3fe47046cd4091bba78e62bccd6728cc9f10c1c",
+  "parents": [
+    "260e747d200c7b984b16bcfeca992cb3b478276f"
+  ],
+  "author": {
+    "name": "Yu-Han Yang",
+    "email": "yuhany@google.com",
+    "time": "Fri Jan 15 14:24:09 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:08 2021 +0000"
+  },
+  "message": "DO NOT MERGE: Do not inject mock location to chipset\n\nBug: 177561690\nTest: on device\nChange-Id: Icafbdf54fe807f8779377b13cb4e4eb265db692e\n(cherry picked from commit abccd8f7bc76e19e92d2dfebe2247e97619f7234)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a6a607e4ce66fe3fa0f65653d2914180150b256e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/location/gnss/GnssLocationProvider.java",
+      "new_id": "8d1d3afab5c5f62c7f7e8d9835605ee530856885",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/location/gnss/GnssLocationProvider.java"
+    }
+  ]
+}

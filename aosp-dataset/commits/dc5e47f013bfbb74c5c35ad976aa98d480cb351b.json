@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dc5e47f013bfbb74c5c35ad976aa98d480cb351b",
+  "tree": "be28037ffd63652ab9906a0aa65396a30baa1148",
+  "parents": [
+    "252a8c0956fe5a10bc18d9d4c6337edf29657d72"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Jun 08 14:01:42 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 24 15:42:10 2015 -0700"
+  },
+  "message": "DO NOT MERGE - SoftwareRenderer: sanity check buffer size before copying data.\n\nBug: 21443020\nChange-Id: I63cf86217b8201fb41809c23e4b752b845a93ee2\n(cherry picked from commit 760f92f8b6da9c9cf128cb18fe3c09402fdde6cd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1899b4040517a4411e61b68813193492de0341fd",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/colorconversion/SoftwareRenderer.cpp",
+      "new_id": "f9067572050ab7353990e04702f9c5bdbc481559",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/colorconversion/SoftwareRenderer.cpp"
+    }
+  ]
+}

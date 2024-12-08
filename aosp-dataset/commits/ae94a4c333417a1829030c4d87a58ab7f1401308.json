@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ae94a4c333417a1829030c4d87a58ab7f1401308",
+  "tree": "1e5c3a102c6bf9944436a8df3e461911bc5b2ffd",
+  "parents": [
+    "6bde1f2e5c1700370fe98eba5e7b00b13debe68b"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Fri Mar 30 16:27:37 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:41:23 2018 +0000"
+  },
+  "message": "DO NOT MERGE Fix unexpected behavior in smp_sm_event\n\nBug: 74121126\nTest: manual\nChange-Id: Ie5dd841d6461ad057c4ab572007f38c5446aba53\n(cherry picked from commit 652798b2f2d6c90e0fc95c00ccfb91e2870b03d4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "829a5d48f58dd947f1c5f7bef6addb06a7dcc075",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_main.cc",
+      "new_id": "49e2ece7b17aa83ff4240712a6ff3ecbec4606c4",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_main.cc"
+    }
+  ]
+}

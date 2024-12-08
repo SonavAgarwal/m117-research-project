@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4bed684c939b0f8809ef404b8609fe4ef849263",
+  "tree": "46b9901f752eef22275df775ad0418803b82f113",
+  "parents": [
+    "5f621b5b1549e8379aee05807652d5111382ccc6"
+  ],
+  "author": {
+    "name": "Svetoslav Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Tue Dec 20 15:15:26 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:32:57 2017 -0800"
+  },
+  "message": "[DO NOT MERGE] Prevent crash from early Toast surface destruction.\n\nTo understand this change it\u0027s first helpful to review Toasts.\nThe ViewRoot is constructed on the client side, but it\u0027s added,\nto a window token controlled by the NotificationManagerService.\nWhen we call NotificationManagerService#cancelToast, the system\nwill remove this window token. With the window token removed,\nthe WindowManager needs to destroy the surface to prevent orphaned\nwindows. If we destroy the Surface before removing the toast on the\nclient side however, we\u0027ve never asked the ViewRoot to stop rendering\nand we could have a crash. To solve this we just have to ensure we call\nremoveView before cancelToast.\n\nBug: 31547288\nBug: 30150688\n\nChange-Id: Ic7e8914a7fb2134a8b9e0c2f3810d7f075c8391e\n(cherry picked from commit 016c9c8cb58c6940ae8296291ee33148a17ede65)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a400d90c64c5afe446e30c1d785030cc4e6e791f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/widget/Toast.java",
+      "new_id": "4d9192ba8d24e4eaaf27f0e906e752e9d2789386",
+      "new_mode": 33188,
+      "new_path": "core/java/android/widget/Toast.java"
+    }
+  ]
+}

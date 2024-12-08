@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aa4da6fa7ca2454f0713de0a5a583b5b8160166b",
+  "tree": "849d18a0d5ad54470904bfbfe7e24004ede61cb3",
+  "parents": [
+    "d4f0d88e701f5323621bd352cf4cbcd14bc349c4"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Aug 17 17:57:47 2015 -0700"
+  },
+  "committer": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Thu Aug 20 20:16:22 2015 +0000"
+  },
+  "message": "DO NOT MERGE Part of fix for libmedia OOB write anywhere\n\nClarify that decrypt destination is not a pointer for\nsecure case.\n\nb/23223325\n\nChange-Id: I642dcf790a9eb9e32175f3e0d8f040c82228e3ac\n(cherry picked from commit ed555d70d80964f40563d89a4e6d6a80f83f4b89)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0d5f99008520679e8251ffae5eddd140eb855d62",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/ICrypto.cpp",
+      "new_id": "7bd120e2a3d192e91f35825110e7f52363133669",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/ICrypto.cpp"
+    }
+  ]
+}

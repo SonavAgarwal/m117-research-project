@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "026745ef046e646b8d04f4f57d8320042f6b29b0",
+  "tree": "6bb607f615ca25f7b4dad954399d5eaf96e40c94",
+  "parents": [
+    "c2e8ffe451e2a78161037ca09a3516e65c80675c"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Apr 26 17:23:03 2016 +0530"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Oct 18 12:19:06 2016 -0700"
+  },
+  "message": "Decoder: Ignore few dpb errors\n\nIgnore dpb errors, where decoder fails to release a non-existing picture\nfrom reference lists. This is needed to decode streams where few pictures\nare missing.\n\nChange-Id: I8ece68cb1fa22473029e16158cd86ce7a197027a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7c4305b7b68ed2abcbd2d9d4c5de1e23acf3599a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_dpb_mgr.c",
+      "new_id": "a75aeee74d511bdc9d1bdca69b6fa14181970890",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_dpb_mgr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "31413707cba4489f2b85cdf8ce8c6289cbf39578",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "c01545d7689b83c29024a5c79e9ac2b6669ee0d4",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

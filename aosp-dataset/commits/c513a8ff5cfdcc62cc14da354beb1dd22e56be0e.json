@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "c513a8ff5cfdcc62cc14da354beb1dd22e56be0e",
+  "tree": "26cdc04c867616e701d3409b5f74859a5912f502",
+  "parents": [
+    "9dcf5f1defadb6c88458015f131413a1bc082824"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Jul 06 13:39:02 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:30 2017 +0000"
+  },
+  "message": "Allocate buffers of the right size when BT_HDR is included\n\nBug: 63146105\nTest: External script\nChange-Id: I1f2c871e3fcf57aabdad9d07905e6dae643bd496\nMerged-In: I1f2c871e3fcf57aabdad9d07905e6dae643bd496\n(cherry picked from commit 8810ffba990f8f53172c445ebde8707525bb7813)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8e6ba929f45c019808ee7c74e0742cd11fabc882",
+      "old_mode": 33188,
+      "old_path": "stack/avdt/avdt_api.cc",
+      "new_id": "bf45ad3f3b0fe97fd59b8620708685e6d36031c8",
+      "new_mode": 33188,
+      "new_path": "stack/avdt/avdt_api.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "4800e78d0049b4ed3b39c9a77b2d86c97df0f4f8",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "ae3480dd2141856ee909e5e9b94a58acd0dfa080",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "2568fc8afb398a5305d7f1bdcc67899c775a69f5",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2cap_client.cc",
+      "new_id": "8c4eafe851494d3cb76983ceaee1201978107237",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2cap_client.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "72efb853474ee951d9007b710af38fd77dc45491",
+      "old_mode": 33188,
+      "old_path": "stack/mcap/mca_cact.cc",
+      "new_id": "c39700f20dedff86ee4b70c373f9819dde8c3117",
+      "new_mode": 33188,
+      "new_path": "stack/mcap/mca_cact.cc"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "366a34842d67cb61d5ef57b244d95802615012c5",
+  "tree": "f40735dcba0130071ae788b752c19aa8eecc607b",
+  "parents": [
+    "ca0f4701221caf2d6902becf4a1ca6c05b61ab10"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Mar 29 13:49:50 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:56:43 2019 +0000"
+  },
+  "message": "Add missing return check for short_term_ref_pic_set()\n\nBug: 129401104\nBug: 130025324\nTest: vendor\nChange-Id: I685dd29ec13cca0ced5de8eb3aea1d0da5952a62\n(cherry picked from commit 299cceb9e492c62039a6b5780b3efdd093be1c3b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3f67998187766ff0666546ff8fa125ab295d8022",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "c7e147da6f9e056682c9563ed661c51451a661dc",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "70998f78f76fc81cc0b7ca5250566781dc5538cd",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "2ef174c1c78abcb6323e3c8ebcc4177a9dd79e9d",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

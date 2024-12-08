@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "948d4753664cc4e6b33cc3de634ac8fd5f781382",
+  "tree": "abde036a7477061c0ae5ca992a9df3f2ad644ed4",
+  "parents": [
+    "8c47eebd81c996f17198edb2fa504c04d48d567e"
+  ],
+  "author": {
+    "name": "Pavel Grafov",
+    "email": "pgrafov@google.com",
+    "time": "Thu Aug 02 20:10:12 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:07 2018 +0000"
+  },
+  "message": "Test for error in handling getters changing element kind.\n\nBug: 111274046\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n/data/nativetest64/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\nMerged-In: I99def991ebcb7c26ba7ca4b4b31ef1cdeaea7721\nChange-Id: I99def991ebcb7c26ba7ca4b4b31ef1cdeaea7721\n(cherry picked from commit 59b9b11a462fe3aad313b8538fb98468f22d9095)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fdd6e85d5e291187461641ac61b18ea0d043298a",
+      "old_mode": 33188,
+      "old_path": "Android.mk",
+      "new_id": "ae0e768e5553d9292f3f63f7ababd230982a2157",
+      "new_mode": 33188,
+      "new_path": "Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "9c9722ed5799f6507d6a4ba86503cf0cad576282",
+      "old_mode": 33188,
+      "old_path": "test/Android.mk",
+      "new_id": "edf91074259d7e1dc8e6c82e739d6455b0750f36",
+      "new_mode": 33188,
+      "new_path": "test/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "335d59e8392de03a427b5176f56caacc55ccae6d",
+      "new_mode": 33188,
+      "new_path": "test/js-unittest/change_element_kind.js"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad9c8268127111721b1652f8212833f5782951a5",
+      "old_mode": 33188,
+      "old_path": "test/proxy_resolver_v8_unittest.cc",
+      "new_id": "be7ecee6e0669f98fcd47faef4911a060e6d6ef0",
+      "new_mode": 33188,
+      "new_path": "test/proxy_resolver_v8_unittest.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1042366d8664501e8cf3226f454febdd75dc94c6",
+      "old_mode": 33188,
+      "old_path": "test/proxy_test_script.h",
+      "new_id": "80c96c744d543edf249b36551c2cbff794508554",
+      "new_mode": 33188,
+      "new_path": "test/proxy_test_script.h"
+    }
+  ]
+}

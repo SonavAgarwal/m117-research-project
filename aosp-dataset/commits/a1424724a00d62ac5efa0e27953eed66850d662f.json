@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a1424724a00d62ac5efa0e27953eed66850d662f",
+  "tree": "eb39ec3fad43da3435127fd13a64eb8e6d62a657",
+  "parents": [
+    "45c97f878bee15cd97262fe7f57ecea71990fed7"
+  ],
+  "author": {
+    "name": "Naveen Kumar Ponnusamy",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed Feb 15 13:58:22 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:32 2017 -0700"
+  },
+  "message": "Handle error return from ref list in slice hdr parsing\n\nThe error returned by ref_list function was not handled by the\ncaller parse_slice_header.\n\nBug: 34672748\nChange-Id: I55f6cb0e651746e77f7ff3375115894ec3964203\n(cherry picked from commit 25206ffa6eeb25f32103e69f893287425ab1bd10)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e9c307332e291adc36c959c1b078e99c6eef3fbd",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "744484e6b591850b398f02fd3eab996c8b3256fd",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

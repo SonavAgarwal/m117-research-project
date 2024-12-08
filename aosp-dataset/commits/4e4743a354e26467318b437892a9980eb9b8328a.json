@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4e4743a354e26467318b437892a9980eb9b8328a",
+  "tree": "0b3074ad0b7ad79882a83480e256aea439d02fcb",
+  "parents": [
+    "01875b0274e74f97edf6b0d5c92de822e0555d03"
+  ],
+  "author": {
+    "name": "Sudheer Shanka",
+    "email": "sudheersai@google.com",
+    "time": "Thu Jun 16 08:58:00 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:53:07 2016 -0700"
+  },
+  "message": "Add pm operation to set user restrictions.\n\nBug: 29189712\nChange-Id: I6fdb3b68dfe3f51119e5ce8008880fc7d9c793df\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "58c3a9ccc89e44cec117006602d9e89209d0b5a9",
+      "old_mode": 33188,
+      "old_path": "cmds/pm/src/com/android/commands/pm/Pm.java",
+      "new_id": "4869adff8f0176c110b819a6f77649dab6d88610",
+      "new_mode": 33188,
+      "new_path": "cmds/pm/src/com/android/commands/pm/Pm.java"
+    }
+  ]
+}

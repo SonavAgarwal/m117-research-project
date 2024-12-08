@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "0bb5ced60304da7f61478ffd359e7ba65d72f181",
+  "tree": "27f1768d87fdcf05c87f0740c27abd3958e85d8c",
+  "parents": [
+    "94d9e646454f6246bf823b6897bd6aea5f08eda3"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Mar 10 15:02:13 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:55 2016 -0700"
+  },
+  "message": "Fix size check for OMX_IndexParamConsumerUsageBits\n\nsince it doesn\u0027t follow the OMX convention. And remove support\nfor the kClientNeedsFrameBuffer flag.\n\nBug: 27207275\nChange-Id: Ia2c119e2456ebf9e2f4e1de5104ef9032a212255\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7fabcb32f100f7e34084b50de67dace276d67c0b",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/OMXCodec.h",
+      "new_id": "b0404aa93d5113492fade63dff9ad842c89782d9",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/OMXCodec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "84925f19eda580dea24b682cb34aaf1826a573b5",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "9be9b413d8ee69a1298d58df862fb07598404a77",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b1dde80a95eb72c70271a9ccd3197dd024d5f638",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OMXCodec.cpp",
+      "new_id": "4618e21f1895eb0207491c8f67727afc77d795e0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OMXCodec.cpp"
+    }
+  ]
+}

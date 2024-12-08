@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "04be7ae5771ee1edc6cbe2af26998755d7be5a68",
+  "tree": "ff6fb423dc7373d4da41e3235a89b14ae75c72a2",
+  "parents": [
+    "6a999cabb30958e180048d70df46b39fcbf60dda"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Tue May 29 16:55:58 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 10 20:30:44 2018 +0000"
+  },
+  "message": "DO NOT MERGE: SDP: Recalculate param_len after max_list_len\n\nBug: 78136869\nTest: manual connection to an A2DP device\nChange-Id: I71392cf1a70567fec957feb36768069ac5258aa1\n(cherry picked from commit 9cc9eea21c7868034242b7ab8be750c565e46bfd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "121c248adcf1fa4ca7e082cd8710eff3187c90cf",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "d2bbd6c4d689a31775d5aefaf33568bfeb049e1c",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

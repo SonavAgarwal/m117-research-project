@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "b552ebf70913cc79085bcc4212235ea45e036d3b",
+  "tree": "5d2dddfa4a56a694b4943f0fae767bb58b99d5c7",
+  "parents": [
+    "aeab10e819bbc4e34d85df4a815a45e6c9bbbc4b"
+  ],
+  "author": {
+    "name": "Benedict Wong",
+    "email": "benedictwong@google.com",
+    "time": "Thu May 17 15:16:51 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:19:18 2018 +0000"
+  },
+  "message": "DO NOT MERGE: Update DownloadProvider for correct meteredness\n\nThis patch updates DownloadProvider to use the fixed meteredness hidden\nAPIs for OC-MR1. This corrects a bug where DownloadProvider would fail\nto allow downloads to proceed when VPNs are connected, but the\nunderlying networks are metered.\n\nBug: 78644887\nTest: Flashed on Walleye and tested.\nChange-Id: I13c1bd6d7ab26489923329bc7985060228e9bb29\n(cherry picked from commit b627002ea9dc2511bad6ea5e68f4248f36c4a3eb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9c92005344ac56e5308d503d0aac4d9c13f218d8",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadThread.java",
+      "new_id": "d3ec568c16e15c537bf10598ede20e10fa233cc0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadThread.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1c2ba58126146328dc3d49e4294ed85a76521d7d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/RealSystemFacade.java",
+      "new_id": "2d9b3a3047cfba41e5cfd3f1c1b451f829f31fbc",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/RealSystemFacade.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "53d14041a476b23aca7b0fc781f3333bb429572f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/SystemFacade.java",
+      "new_id": "dec0cb283896584a7e6751cdf874fe8af6343e0d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/SystemFacade.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "de483c7f3c3ee0a26926650be040c40b07036c1b",
+      "old_mode": 33188,
+      "old_path": "tests/src/com/android/providers/downloads/FakeSystemFacade.java",
+      "new_id": "aa7b8af43945f69bb4c9aa70d73997870dbe8544",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/providers/downloads/FakeSystemFacade.java"
+    }
+  ]
+}

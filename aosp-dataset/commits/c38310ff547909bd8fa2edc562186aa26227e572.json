@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "c38310ff547909bd8fa2edc562186aa26227e572",
+  "tree": "551781f6b38d9c703603ff58d0d09dffae12a2c5",
+  "parents": [
+    "32615136ae12dfbbb47366522fc2320a0bbdafd5"
+  ],
+  "author": {
+    "name": "Valerie Hau",
+    "email": "vhau@google.com",
+    "time": "Wed Aug 28 14:08:17 2019 -0700"
+  },
+  "committer": {
+    "name": "Valerie Hau",
+    "email": "vhau@google.com",
+    "time": "Mon Sep 02 19:29:24 2019 +0000"
+  },
+  "message": "Restrict Automerge: Fix reinterpret_cast security bug\n\nThis patch fixes a security bug in SurfaceFlinger.  Bug is due to a\nreinterpret_cast used when obtaining a sp\u003cLayer\u003e from an sp\u003cIBinder\u003e passed\nfrom a client.  Without a checking mechanism, client could pass a\nmalicious data packet.  This is a modified cherry-pick of a patch by Rob Carr\nthat utilizes a map to identify the appropriate layer based on\nthe incoming IBinder token.\n\nOriginal patch commit:\n\n\"Author: Robert Carr \u003cracarr@google.com\u003e\nDate:   Thu Apr 11 13:18:21 2019 -0700\n\nSurfaceFlinger: Validate layers before casting.\n\nReinterpret casting random IBinder \u003d no-fun. I first attempted\nto use inheritance of \"getInterfaceDescriptor\" in Layer::Handle but\ndeparting from \"standard-layout\" (e.g. using virtual methods) means that\ndowncasting with static/reinterpret_cast is no longer valid. Instead I opted\nfor the pattern the system-server uses of maintaing a map.\n\nNow that we look up the handle in a map rather than casting IBinder\nto Layer::Handle we need to make sure we have unique instances of the\nhandle. In general this is true but we weren\u0027t doing this in the\ncreateWithSurfaceParent where we had an extra call to getHandle. Here\nwe both refactor createWithSurfaceParent so it works with the new\nchanges and also add protection for getHandle. We also fix an error\nwhere the handle map was populated outside of lock.\n\"\n\nBug: 137284057\nTest: build, boot, manual, SurfaceFlinger_test\nChange-Id: I9b5f298db2da9cd974c423eb52f261a90f0d17dc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bd987dd6386210cda4f91ac78f32d96e71a1f139",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/SurfaceControl.h",
+      "new_id": "38de29915b354120fb2bc243e95bdb02091fb5b1",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/SurfaceControl.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0b59147c5a2c6ac559a0a21d848ae41ce42856ac",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Client.cpp",
+      "new_id": "09d87b29d6a85969e1ea3c7ba7535f358bf1de3c",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Client.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "49437ed7fdceb2c695e7d678b3fd6b247be0e8cb",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Client.h",
+      "new_id": "36b685db58fe814d0c82adcd1b36061443bec6c6",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Client.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a14bb98d8daa5cc5d67d95533f018c1198148d8e",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Layer.cpp",
+      "new_id": "13b12e29bdbbfe16cf3afa696b430574b0cc7724",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Layer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "22396796ed442f0070da0507c0b7be38939caf18",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Layer.h",
+      "new_id": "bd483e836b625ba8b5590b1b498a768ddb996bf8",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Layer.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "25cb5896e19142a461f831127a46b290a249c655",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "6ce2cb8e3091236c75e93cdb656aa258f859d223",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "60bf94ffec13a2525bd779f9fdc50c34597ffa2e",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.h",
+      "new_id": "11cdad1f8da1e5738f2f98c1a1526d97cced5fba",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "322e8a0fea92edcbef503776df6f6602556f95a1",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/tests/Android.bp",
+      "new_id": "2331dfd13dbcd90e096b164b0adb2089467bf412",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/tests/Android.bp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "42d1f5aa6c1992ed88aa1c7b4c54889127da3dbf",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/tests/InvalidHandles_test.cpp"
+    }
+  ]
+}

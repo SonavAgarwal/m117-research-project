@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "9009da96e00434501d9398bbfbc636902c757632",
+  "tree": "7cf98d5d64ccac04bda4e67547fd94d1a9c83d08",
+  "parents": [
+    "72aa93cbe72008b1d0486b3ab3e8c7faf01b45f6"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Tue Oct 02 16:26:38 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Oct 20 00:18:19 2018 +0000"
+  },
+  "message": "HIDD: Check descriptor length and increase buffer\n\nSince maximum descriptor length is 2048, we need to assign 2054 bytes of\nbuffer for another 6 bytes of data. Also added a const for maximum\ndescriptor length.\n\nBug: 113572366\nTest: manual\nChange-Id: Ie2b25c9e1a9f2019cbc7e6fbecbb08b643c87946\nMerged-In: Ie2b25c9e1a9f2019cbc7e6fbecbb08b643c87946\n(cherry picked from commit c0530b211e8a5b43e556c6d47d424b231afb8e99)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4a4825483372c789be92a391391d72e900c793bf",
+      "old_mode": 33188,
+      "old_path": "bta/hd/bta_hd_int.h",
+      "new_id": "0748b677e3c84566c3691b50fed732fe14ea7cee",
+      "new_mode": 33188,
+      "new_path": "bta/hd/bta_hd_int.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "414cf74bd2dd7497d9cf316385ad3ff1a77f8e5d",
+      "old_mode": 33188,
+      "old_path": "stack/hid/hidd_api.cc",
+      "new_id": "f93511e58af3e924df6632a8270116654a44da5a",
+      "new_mode": 33188,
+      "new_path": "stack/hid/hidd_api.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "8df616c77afa28c8efc6a9570d4ae2312247f6f5",
+      "old_mode": 33188,
+      "old_path": "stack/include/hiddefs.h",
+      "new_id": "df01e7d5dda293deb6fadbd363b0c699b9806098",
+      "new_mode": 33188,
+      "new_path": "stack/include/hiddefs.h"
+    }
+  ]
+}

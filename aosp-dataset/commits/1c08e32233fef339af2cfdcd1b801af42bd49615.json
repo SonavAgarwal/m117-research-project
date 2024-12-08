@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1c08e32233fef339af2cfdcd1b801af42bd49615",
+  "tree": "2d4157bc48d6f42f4b9401628ef24ef91f636afc",
+  "parents": [
+    "44ac913d6c7c2f9e6dc328e8bb7cfc99284cb5f6"
+  ],
+  "author": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Mon Apr 05 16:58:17 2021 -0400"
+  },
+  "committer": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Tue Apr 06 14:45:28 2021 +0000"
+  },
+  "message": "Restrict alarm broadcast\n\nTo android only\n\nTest: NotificationManagerTest, NotificationManagerServiceTest\nBug: 175614289\nChange-Id: I4f8e56729d90f8f5288d08881129b1c45d5790e7\nMerged-In: I4f8e56729d90f8f5288d08881129b1c45d5790e7\n(cherry picked from commit abf15b731af248f512b7cc31ea99019436841af4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "40d09d4b42287ef4d763c7b6accf1f517e71d75f",
+      "old_mode": 33261,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "d058e6c4f2ecef732e3033b2b7958deef8c933ed",
+      "new_mode": 33261,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1d783532374b006a2dcbe7bb973f514408ea04a4",
+      "old_mode": 33261,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java",
+      "new_id": "302764e67289ea324fa5cd17e1d2092af01e035f",
+      "new_mode": 33261,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java"
+    }
+  ]
+}

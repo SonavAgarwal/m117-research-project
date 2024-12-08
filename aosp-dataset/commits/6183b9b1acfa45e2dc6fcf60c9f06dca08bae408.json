@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6183b9b1acfa45e2dc6fcf60c9f06dca08bae408",
+  "tree": "83dcd8bd6c52904bb71d39d90f6e1033ea93c7e8",
+  "parents": [
+    "a945243b5c259933145d11f1e177a16388b82859"
+  ],
+  "author": {
+    "name": "Raff Tsai",
+    "email": "rafftsai@google.com",
+    "time": "Fri Mar 08 16:19:30 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:50 2019 +0000"
+  },
+  "message": "Do not allow draw on top for App notification settings\n\nFixes: 119115683\nTest: manual\nChange-Id: Ib7b878a23b4a99171c58b5de992fb87feca8a28a\nMerged-In: Ib7b878a23b4a99171c58b5de992fb87feca8a28a\n(cherry picked from commit fe86a2a51f0b8e01e5f595bd60edc594eef58aba)\n(cherry picked from commit 9fa8329b02d5db5c782ca815fd955ee7bceb5c86)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "99e94589cc5aaab6e4cf404be8fdfa4b9527ad4a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/notification/AppNotificationSettings.java",
+      "new_id": "bbfbe5ea86e2e182b5f7852c9978dd373941288a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/notification/AppNotificationSettings.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0815eb32f379006135b36c574d7a283dfb3620f6",
+  "tree": "b2e720fde07e2846ed1a78453ef53caa0222845c",
+  "parents": [
+    "8dcfc827cd9eb24de5a58b9f3cfcb89e4278b9cb"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Thu Mar 05 15:14:38 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sun May 17 21:10:00 2020 +0000"
+  },
+  "message": "Cherry-pick \"Refactor Regexp.prototype\"\nOriginal change: https://chromium-review.googlesource.com/c/v8/v8/+/1547660\n\nBug: 147664838\nTest: pacrunner32 test.pac\nTest: gts-tradefed run gts-dev --module GtsGmscoreHostTestCases --test com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest\n\nChange-Id: Iac9370d48ca0ed84d5903ab0469c0ae01d62a621\nMerged-In: Iac9370d48ca0ed84d5903ab0469c0ae01d62a621\n(cherry picked from commit df2d4b58f6fa0d0f0c563eac34d0bea2768d9bec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c787a502979da1392a191732ce5d07958df1f1aa",
+      "old_mode": 33188,
+      "old_path": "src/regexp/regexp-utils.cc",
+      "new_id": "8d4b16044bed734666690379beec6812c96ecc4a",
+      "new_mode": 33188,
+      "new_path": "src/regexp/regexp-utils.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "3e77bf1f3b23de4f5756e5bd75f275767f7ca17c",
+      "old_mode": 33188,
+      "old_path": "src/runtime/runtime-regexp.cc",
+      "new_id": "6c2f6d296f19fb0116026026db7bb47706bb9ff3",
+      "new_mode": 33188,
+      "new_path": "src/runtime/runtime-regexp.cc"
+    }
+  ]
+}

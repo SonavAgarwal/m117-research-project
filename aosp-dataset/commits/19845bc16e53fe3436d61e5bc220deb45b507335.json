@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "19845bc16e53fe3436d61e5bc220deb45b507335",
+  "tree": "9295e9b27460c21c33c62c21dcd067ce89141efd",
+  "parents": [
+    "a5eb01054b44472d32bda00066dc6ffceb9123d1"
+  ],
+  "author": {
+    "name": "Muhammad Qureshi",
+    "email": "muhammadq@google.com",
+    "time": "Fri Jan 15 12:58:50 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:31 2021 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix potential out of bounds writes in LogEvent.\n\nmUidFieldIndex, mExclusiveStateFieldIndex,\nmAttributionChain{Start|End}Index are stored using int8_t.\nThese values can overflow when mValues.size() exceeds INT8_MAX.\nAdd proper bounds checking to ensure these values don\u0027t exceed\nINT8_MAX.\n\nBug: 174488848\nBug: 174485572\nTest: m\nTest: statsd_test\nTest: TreeHugger\nChange-Id: I416e2de06ca2935017e15d4e91000652831e6b6c\n(cherry picked from commit 53251a491faab1fb88e28b7cafe5913842b8d71d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f56fa6221bc99666d1466196b1ebfb02b92adeb7",
+      "old_mode": 33188,
+      "old_path": "cmds/statsd/src/logd/LogEvent.cpp",
+      "new_id": "4f031724763f94dca081ee9df1e12bdfca0e9b6c",
+      "new_mode": 33188,
+      "new_path": "cmds/statsd/src/logd/LogEvent.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5c170c07eb7d9b5e28cb08124b59e4727a0f010f",
+      "old_mode": 33188,
+      "old_path": "cmds/statsd/tests/LogEvent_test.cpp",
+      "new_id": "aed25475da113cb50855069df1c74f5ca59329d2",
+      "new_mode": 33188,
+      "new_path": "cmds/statsd/tests/LogEvent_test.cpp"
+    }
+  ]
+}

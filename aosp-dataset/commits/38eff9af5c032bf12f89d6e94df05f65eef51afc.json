@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "38eff9af5c032bf12f89d6e94df05f65eef51afc",
+  "tree": "5058913011bb9d70ba2f4d417c5b6d1753cd569b",
+  "parents": [
+    "90eee3397ad45bdae462f9f2ce0ef7d3b1e2957d"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 19:07:48 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Aug 17 19:07:48 2015 -0700"
+  },
+  "message": "SoftAVCEncoder: fix mismatched type for comparison.\n\nBug: 20674674\nChange-Id: Iace5b8c882339b3a9d2e706375255aeeeb0532fe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "523e78543af99c9ae75fdf47352c7250f8607b77",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp",
+      "new_id": "e3fdc89be73168a906f31df9635e59955fa65efe",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp"
+    }
+  ]
+}

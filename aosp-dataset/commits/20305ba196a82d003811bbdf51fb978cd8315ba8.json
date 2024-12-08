@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "20305ba196a82d003811bbdf51fb978cd8315ba8",
+  "tree": "b02b1378193ac32cbe10a11b9251cbf64b18be97",
+  "parents": [
+    "026f04c83281557a0d24df0bd19d72c74cdc320e"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Fri Dec 11 11:56:15 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:58 2021 +0000"
+  },
+  "message": "avrc_copy_packet: Zero initialize packet\n\nBug: 174149901\nChange-Id: Iefa41749ebbacd34afaa24131de7ee25d706e23f\nTag: Security\nTest: POC\n(cherry picked from commit 960c3f3c9a1f912544b92b7a744e22069a0bc27e)\n(cherry picked from commit 0f447e4fffc45b10d29e1cfcc2eb66067abaf034)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6ad7e4f129abd679d2c03cae13c52795ee6fd88a",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_api.cc",
+      "new_id": "1ac856a2fce990e20434978582298fdf32f4f328",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_api.cc"
+    }
+  ]
+}

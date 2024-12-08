@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c19199167c87841006350cc7c0a59881416e8748",
+  "tree": "2f8544603311ff7d5bae69d5aee5322895058bc4",
+  "parents": [
+    "7c4653274b7d254d2d6114e7eb7a5ffe6e5ad0c1"
+  ],
+  "author": {
+    "name": "xiao jin",
+    "email": "jin.xiao@intel.com",
+    "time": "Mon Jul 30 14:11:12 2018 +0800"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Sun Aug 11 12:22:18 2019 +0200"
+  },
+  "message": "block: blk_init_allocated_queue() set q-\u003efq as NULL in the fail case\n\ncommit 54648cf1ec2d7f4b6a71767799c45676a138ca24 upstream.\n\nWe find the memory use-after-free issue in __blk_drain_queue()\non the kernel 4.14. After read the latest kernel 4.18-rc6 we\nthink it has the same problem.\n\nMemory is allocated for q-\u003efq in the blk_init_allocated_queue().\nIf the elevator init function called with error return, it will\nrun into the fail case to free the q-\u003efq.\n\nThen the __blk_drain_queue() uses the same memory after the free\nof the q-\u003efq, it will lead to the unpredictable event.\n\nThe patch is to set q-\u003efq as NULL in the fail case of\nblk_init_allocated_queue().\n\nFixes: commit 7c94e1c157a2 (\"block: introduce blk_flush_queue to drive flush machinery\")\nCc: \u003cstable@vger.kernel.org\u003e\nReviewed-by: Ming Lei \u003cming.lei@redhat.com\u003e\nReviewed-by: Bart Van Assche \u003cbart.vanassche@wdc.com\u003e\nSigned-off-by: xiao jin \u003cjin.xiao@intel.com\u003e\nSigned-off-by: Jens Axboe \u003caxboe@kernel.dk\u003e\n[groeck: backport to v4.4.y/v4.9.y (context change)]\nSigned-off-by: Guenter Roeck \u003clinux@roeck-us.net\u003e\nSigned-off-by: Alessio Balsini \u003cbalsini@android.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "77b99bf16c83cf169144f082b18b5b1f8a33e7a9",
+      "old_mode": 33188,
+      "old_path": "block/blk-core.c",
+      "new_id": "bdb906bbfe1981a88e2f7b6cab750e9e4c5194e3",
+      "new_mode": 33188,
+      "new_path": "block/blk-core.c"
+    }
+  ]
+}

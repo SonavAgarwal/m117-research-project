@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "09ba8fdffd9c8d74fdc6bfb51bcebc27fc43884a",
+  "tree": "83a0578d4dead888c3780e940f2491ed16cef9fb",
+  "parents": [
+    "a4e80ee2cdae43fb92d3560924bce5e33cdb9c4c"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Wed Feb 07 08:10:08 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:11:44 2018 +0000"
+  },
+  "message": "Fix VerifyCredentialResponse parcelling code\n\nThere was an asymmetry between parcelling and unparcelling of\nVerifyCredentialResponse that could lead to type confusion if\npacked with other objects in a Parcel.\n\nTest: none\nBug: 71714464\nChange-Id: Icff68879e249422ccca49f2bb7db85c35b4cb353\n(cherry picked from commit 54813e988884f0d604d5358569f10feda8622f46)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ad6020c0846cadddc0fc626a129fdde4cf22de5b",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/widget/VerifyCredentialResponse.java",
+      "new_id": "7d1c706470921e06ba419e65f77ba6f9e0db1149",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/widget/VerifyCredentialResponse.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fa3781fe0fb654659634d7b4703b6ed2ae27fdeb",
+  "tree": "d50182551c44e77f1cc33c2cc0052f072be34388",
+  "parents": [
+    "1859a38c4d8f438eba9cb7b39be102747407fa36"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri May 01 15:16:20 2020 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Thu May 07 18:46:03 2020 +0000"
+  },
+  "message": "clearkey hidl: fix oob read in decrypt\n\nValidate sum of subsample sizes do not overrun source buffer.\n\nBug: 154123412\nTest: poc_CryptoPlugin_cpp_183\nTest: MediaDrmClearkeyTest\nTest: NativeMediaDrmClearkeyTest\nChange-Id: I27b05479202e0caedfd052c683aa1ef187f65679\nMerged-In: I27b05479202e0caedfd052c683aa1ef187f65679\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cd2224db97907e0017aa06b13684d81f4f3e4c64",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/CryptoPlugin.cpp",
+      "new_id": "a3f5bf55a8159b970a8d3c499eb2cd940500b60f",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/CryptoPlugin.cpp"
+    }
+  ]
+}

@@ -1,0 +1,1890 @@
+)]}'
+{
+  "commit": "9d4853418ab2f754c2b63e091c29c5529b8b86ca",
+  "tree": "b1cf94f99abde231d070f862c13e712b29976e6d",
+  "parents": [
+    "5d53c06967da74189935063f7a75da6719a9c733"
+  ],
+  "author": {
+    "name": "Matt Sarett",
+    "email": "msarett@google.com",
+    "time": "Fri Jan 08 13:00:42 2016 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Tue Feb 16 12:28:05 2016 -0800"
+  },
+  "message": "DO NOT MERGE Update libpng to 1.6.20\n\nBUG:23265085\nChange-Id: I85199805636d771f3597b691b63bc0bf46084833\n(cherry picked from commit bbe98b40cda082024b669fa508931042eed18f82)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9f198806f48f1aa49495da5512ecd2f65f070141",
+      "old_mode": 33188,
+      "old_path": "ANNOUNCE",
+      "new_id": "4dae783b55969e3335fc09cf6d9af5eb7367b444",
+      "new_mode": 33188,
+      "new_path": "ANNOUNCE"
+    },
+    {
+      "type": "modify",
+      "old_id": "b3e09f8574bce9ede37e8fca5907ccfad6ac560e",
+      "old_mode": 33188,
+      "old_path": "CHANGES",
+      "new_id": "28094fd26cb371c2117e2b22283739f7ca0ac1e9",
+      "new_mode": 33188,
+      "new_path": "CHANGES"
+    },
+    {
+      "type": "modify",
+      "old_id": "34d62b5d14e1f1a9ebc59ba50f85b065a6302261",
+      "old_mode": 33188,
+      "old_path": "CMakeLists.txt",
+      "new_id": "7bc49c5b7cb070790abac7912cbda4d0937554fc",
+      "new_mode": 33188,
+      "new_path": "CMakeLists.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "f987378009856bde14e8c371a6852799d2fa2d4d",
+      "old_mode": 33188,
+      "old_path": "INSTALL",
+      "new_id": "a294ffe633a4b3ce599567920f5a7b1172cd079f",
+      "new_mode": 33188,
+      "new_path": "INSTALL"
+    },
+    {
+      "type": "modify",
+      "old_id": "94f5e9500af29fc07df92bd9d4e3237090cc60fa",
+      "old_mode": 33188,
+      "old_path": "LICENSE",
+      "new_id": "82dbe117f6d741b5cef03c04aa6c1e93d2b61477",
+      "new_mode": 33188,
+      "new_path": "LICENSE"
+    },
+    {
+      "type": "modify",
+      "old_id": "052e596b63bc28ba8433048ca3cc78427c8779d5",
+      "old_mode": 33188,
+      "old_path": "Makefile.am",
+      "new_id": "73097dbccc9337bf6bd20571b69c2992ed0cd71f",
+      "new_mode": 33188,
+      "new_path": "Makefile.am"
+    },
+    {
+      "type": "delete",
+      "old_id": "aae22574314dc292afe853e5abcd05db7eb7fcf3",
+      "old_mode": 33188,
+      "old_path": "Makefile.in",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "42c0428880a927bd1bf3df1b700309f4a2ebafc8",
+      "old_mode": 33188,
+      "old_path": "NOTICE",
+      "new_id": "11f6ffe5db47ea0eb803bd509d165c30c751c76a",
+      "new_mode": 33188,
+      "new_path": "NOTICE"
+    },
+    {
+      "type": "modify",
+      "old_id": "57f287bf134bada866c5f6e286d3f36919e8a76c",
+      "old_mode": 33188,
+      "old_path": "README",
+      "new_id": "59f1f918ae226d17d006f8ae42bd866a859511ed",
+      "new_mode": 33188,
+      "new_path": "README"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b582ca57313b7ed6f6c9eff8b2deac1c38e7b09c",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "58890dd207546a911208ade7e73c8f08eb195433",
+      "new_mode": 33188,
+      "new_path": "README.version"
+    },
+    {
+      "type": "modify",
+      "old_id": "63613b8dd4b019a1a7a428e67deda176076c4156",
+      "old_mode": 33188,
+      "old_path": "TODO",
+      "new_id": "72633774fff0a024e0bee03405586500366e4930",
+      "new_mode": 33188,
+      "new_path": "TODO"
+    },
+    {
+      "type": "delete",
+      "old_id": "30f6452fdee4102cde7a541b5ad57acc89bab8f8",
+      "old_mode": 33188,
+      "old_path": "aclocal.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "952b8029f91547f492aa3cecfbb13f3b00d2954a",
+      "old_mode": 33188,
+      "old_path": "arm/arm_init.c",
+      "new_id": "fb3d50d04ae8dc5dad891905d13127a379494e59",
+      "new_mode": 33188,
+      "new_path": "arm/arm_init.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "40d97775d630ee91255d544044a0e17abb710979",
+      "old_mode": 33188,
+      "old_path": "arm/filter_neon.S",
+      "new_id": "3b061d6bbf28d707749edfd37e8cd7045bc55ae6",
+      "new_mode": 33188,
+      "new_path": "arm/filter_neon.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "e7a09f4364d334b0789c8eb1cc9ceaceeeb7289a",
+      "old_mode": 33188,
+      "old_path": "arm/filter_neon_intrinsics.c",
+      "new_id": "d42c78890911c2cbf6ac035970dd8233f7421d04",
+      "new_mode": 33188,
+      "new_path": "arm/filter_neon_intrinsics.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9af34bde24b2d1c8d1f042c5c71031cbf78d8cdd",
+      "old_mode": 33261,
+      "old_path": "autogen.sh",
+      "new_id": "91607171bbdeb602185f986fb210663be685fedd",
+      "new_mode": 33261,
+      "new_path": "autogen.sh"
+    },
+    {
+      "type": "delete",
+      "old_id": "531136b068ef00e23d38429e6ee9a57d581a0870",
+      "old_mode": 33188,
+      "old_path": "compile",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "9afd676206481a1f280f5da099fe1717246ae1e5",
+      "old_mode": 33261,
+      "old_path": "config.guess",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "1b7f4d62b086092b2870ad57bceb1f973f7a7d01",
+      "old_mode": 33188,
+      "old_path": "config.h.in",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "61cb4bc22db8e0a490b5ea5bffe6575c10ff92e0",
+      "old_mode": 33261,
+      "old_path": "config.sub",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "496d3be12b1c5e2f2fdaa5901fa0c1127779def0",
+      "old_mode": 33261,
+      "old_path": "configure",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "a1ec12909a1cf715c4cbc5fee011355aa1e778a5",
+      "old_mode": 33188,
+      "old_path": "configure.ac",
+      "new_id": "845ae1c354b79dd1ccefb2b51fad856cc691a7f8",
+      "new_mode": 33188,
+      "new_path": "configure.ac"
+    },
+    {
+      "type": "modify",
+      "old_id": "bcd433d3523687b4c148349d23f0273a720bf013",
+      "old_mode": 33188,
+      "old_path": "contrib/README.txt",
+      "new_id": "97963c6d5455380c0bc18ab3910c81520871d511",
+      "new_mode": 33188,
+      "new_path": "contrib/README.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "535c8d3f76b59dff28bc545fe70ed8db584c2a8f",
+      "old_mode": 33188,
+      "old_path": "contrib/arm-neon/README",
+      "new_id": "b4248cf289792b259e86377e1d4630e213f4ccc2",
+      "new_mode": 33188,
+      "new_path": "contrib/arm-neon/README"
+    },
+    {
+      "type": "modify",
+      "old_id": "696e297ef4c4cfed27b9be56d506de5ad5f76d38",
+      "old_mode": 33188,
+      "old_path": "contrib/arm-neon/linux-auxv.c",
+      "new_id": "4d26bd3b354e85c3f83b6c1f5a57f1ff1b441856",
+      "new_mode": 33188,
+      "new_path": "contrib/arm-neon/linux-auxv.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "182f3760576bc7d77ab61a0b73e45275787fde78",
+      "old_mode": 33188,
+      "old_path": "contrib/arm-neon/linux.c",
+      "new_id": "94f9bb1e09fad75cd38f586882b0c499abbe7164",
+      "new_mode": 33188,
+      "new_path": "contrib/arm-neon/linux.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "386e522a3348137cceab9f45480db8a3a9603ca9",
+      "old_mode": 33188,
+      "old_path": "contrib/examples/iccfrompng.c",
+      "new_id": "603037e7097203c5116df4e8b3729d317b9e34ae",
+      "new_mode": 33188,
+      "new_path": "contrib/examples/iccfrompng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e0d43e3f09b70db8bf7e440c4c5750d171489ccf",
+      "old_mode": 33188,
+      "old_path": "contrib/examples/pngpixel.c",
+      "new_id": "f762379ed3ca2a80f29920f4be388706e9ff192f",
+      "new_mode": 33188,
+      "new_path": "contrib/examples/pngpixel.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b1b3be677b90870ce430aa58511dbb4086d81f0d",
+      "old_mode": 33188,
+      "old_path": "contrib/examples/pngtopng.c",
+      "new_id": "4acf6b3ad4d844c77eeb54e56a6ac2e971b40821",
+      "new_mode": 33188,
+      "new_path": "contrib/examples/pngtopng.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "59dd313688c190afd5d6b9d33bd78935b51a22b2",
+      "new_mode": 33188,
+      "new_path": "contrib/examples/simpleover.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c8cadf87bdd087061e93c11570490b93e111930e",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/Makefile.unx",
+      "new_id": "1a73e03bff4898cc25978fa6b9570dab25ede26a",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/Makefile.unx"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5e1fb1a4e2668dfb912569a67fef6963b97a3b4",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/readpng.c",
+      "new_id": "9167403e5977ec82a4066e8d58916e8ea6473929",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/readpng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6a132eca2d6b7c73aabb2a92d6b0f5492596428",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/readpng2.c",
+      "new_id": "a9e7ba59dae7e59a7445b296f83f186628d5979c",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/readpng2.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "be9a56d95fd2a350df9b1593d7af62279646cb52",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/readppm.c",
+      "new_id": "7fefc3943ec47a1df394efbc1c1e631dba8e8934",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/readppm.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6d10e1b84ed3cb63a8070017066a317715cbbd50",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/rpng-x.c",
+      "new_id": "ddd7c58d6f35d1da198d8a7eaab2408994e111de",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/rpng-x.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "223e737409a07696782e430a003b6a8e73c1df76",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/rpng2-win.c",
+      "new_id": "a7b9dfaafa4a975aff3cd0ef5505b6407d7c446c",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/rpng2-win.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f24b632be04953d77437b55b67f3d4c9eb163c4",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/rpng2-x.c",
+      "new_id": "0c8ddeba223930f379fe21f648c68aa8798f6f06",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/rpng2-x.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "0dda62ea8c545c787d1a8f1cb7c33ab6d14abd3d",
+      "old_mode": 33188,
+      "old_path": "contrib/gregbook/writepng.c",
+      "new_id": "c5c9534797b8f173a2c222d768bfccda3759799b",
+      "new_mode": 33188,
+      "new_path": "contrib/gregbook/writepng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba360d15a2021dea673050207734ebf61d8db085",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/fakepng.c",
+      "new_id": "6512c1401049bed7b1f2ab3aff163e7dd3ef53d2",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/fakepng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f11b29645b579cac244bb0523a0891039fcc1b9",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/makepng.c",
+      "new_id": "60d96d198dc906aede79918fee31874659ed7d4f",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/makepng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "372845ead634bee354a95a400dd962011fa64733",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/pngimage.c",
+      "new_id": "442b2f430012b93201854bd37e3e5b22eaaa25eb",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/pngimage.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3356f1c46fff5b9259d30084f658741873e233a3",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/pngstest-errors.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d20e8f224174a79d54f96d7398def18fe623a163",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/pngstest.c",
+      "new_id": "3374c7202fa21be1e669f707ffbac4ab36200e63",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/pngstest.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b8c4899de771ebb1bd5184e20f7a45de0daa557a",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/pngunknown.c",
+      "new_id": "0d52ff8ab5db942f14441223ee5737cb984b5273",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/pngunknown.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "788b693272d43546b7aa513b034d0905b0a31ef3",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/pngvalid.c",
+      "new_id": "bdd3c9188d6accbf33a4c34995a2b5ac731d2852",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/pngvalid.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7ba46d0b96b3b8ba227a7a3c12ab65d322353a14",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/readpng.c",
+      "new_id": "3336d4e2180ee264302f3389253c3807c85b4544",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/readpng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cdb00dbf7e7802679476f62065a3dfb8c99c6f5b",
+      "old_mode": 33188,
+      "old_path": "contrib/libtests/tarith.c",
+      "new_id": "cb17ffa7641ddd443074df3bd4cb06f33faeb6e2",
+      "new_mode": 33188,
+      "new_path": "contrib/libtests/tarith.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "449cf36750bc5199cc208d16fd9949e79302e31c",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/png2pnm.bat",
+      "new_id": "449cf36750bc5199cc208d16fd9949e79302e31c",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/png2pnm.bat"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa9513ddc2776614d2f0289d4934323ee2f03b2d",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/png2pnm.c",
+      "new_id": "f68d7ff7281a00ff5ffc42a15a106e67be612c11",
+      "new_mode": 33188,
+      "new_path": "contrib/pngminus/png2pnm.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b1c05370dff42195fcccfbf9e786aef97903c0c1",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/png2pnm.sh",
+      "new_id": "b1c05370dff42195fcccfbf9e786aef97903c0c1",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/png2pnm.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "911bb8dff9ef127ab677487b6c2b8e57f35ff753",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/pngminus.bat",
+      "new_id": "911bb8dff9ef127ab677487b6c2b8e57f35ff753",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/pngminus.bat"
+    },
+    {
+      "type": "modify",
+      "old_id": "2a0a9d8fbba2f862cd9bed864bf234ca4cd3b702",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/pngminus.sh",
+      "new_id": "2a0a9d8fbba2f862cd9bed864bf234ca4cd3b702",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/pngminus.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "f756cb84de463f4e2c9261cdeb4eb6dc91ce7445",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/pnm2png.bat",
+      "new_id": "f756cb84de463f4e2c9261cdeb4eb6dc91ce7445",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/pnm2png.bat"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9903dd324d0b5fa3c157f05ec533a4ce16e5611",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/pnm2png.c",
+      "new_id": "8fa64cd1faf70cca9b635775f1da527aecf1d769",
+      "new_mode": 33188,
+      "new_path": "contrib/pngminus/pnm2png.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d79df2fae08b8de4d9a7ad93576e7f6120a4f483",
+      "old_mode": 33188,
+      "old_path": "contrib/pngminus/pnm2png.sh",
+      "new_id": "d79df2fae08b8de4d9a7ad93576e7f6120a4f483",
+      "new_mode": 33261,
+      "new_path": "contrib/pngminus/pnm2png.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "ec4af9473f1780d291c1c30caa0d0c1b50127b2b",
+      "old_mode": 33188,
+      "old_path": "contrib/pngsuite/README",
+      "new_id": "a7fde8f36d7ac7fca3ad18a5396cac6faf5a385c",
+      "new_mode": 33188,
+      "new_path": "contrib/pngsuite/README"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ce43260cb4c9a8965cb3b7f3fd6dc84f78e07950",
+      "new_mode": 33188,
+      "new_path": "contrib/tools/genpng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "41c5d6dd278fb92ac7bf6a6f0d4fdb4077d0dc1c",
+      "old_mode": 33188,
+      "old_path": "contrib/tools/intgamma.sh",
+      "new_id": "41c5d6dd278fb92ac7bf6a6f0d4fdb4077d0dc1c",
+      "new_mode": 33261,
+      "new_path": "contrib/tools/intgamma.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "1210bd9c813f9e4454781cf3e7feb007eb46c241",
+      "old_mode": 33188,
+      "old_path": "contrib/tools/png-fix-itxt.c",
+      "new_id": "c7654c11363c45093d92c65b7a4f8065de6e689a",
+      "new_mode": 33188,
+      "new_path": "contrib/tools/png-fix-itxt.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3b64627c26ee4bcf2a100bb7772e769e87806b9e",
+      "old_mode": 33188,
+      "old_path": "contrib/tools/pngfix.c",
+      "new_id": "7fde31c6ed1c49851730f2e560d50393eae442e8",
+      "new_mode": 33188,
+      "new_path": "contrib/tools/pngfix.c"
+    },
+    {
+      "type": "delete",
+      "old_id": "4ebd5b3a2f2d689de95251c9424e2763aa159de5",
+      "old_mode": 33261,
+      "old_path": "depcomp",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "77d907797ceb3ef032f353eaf16194abfa9bd530",
+      "old_mode": 33188,
+      "old_path": "example.c",
+      "new_id": "f8591e668af8a6449d51cc4900c19926c504f24c",
+      "new_mode": 33188,
+      "new_path": "example.c"
+    },
+    {
+      "type": "delete",
+      "old_id": "377bb8687ffe16bfc79ea25c8667cabf72aaf2c2",
+      "old_mode": 33261,
+      "old_path": "install-sh",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "73e09abd060855962e829466142de152d05b6608",
+      "old_mode": 33188,
+      "old_path": "libpng-manual.txt",
+      "new_id": "87eeb2b58376d84a29ee165089f451aadaa102a0",
+      "new_mode": 33188,
+      "new_path": "libpng-manual.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "db4990f339d2fe84a956abcbacdc7c7abc7ceff5",
+      "old_mode": 33188,
+      "old_path": "libpng.3",
+      "new_id": "357d0ec5a8b5be9fab99adacc58f5b21f34f931e",
+      "new_mode": 33188,
+      "new_path": "libpng.3"
+    },
+    {
+      "type": "modify",
+      "old_id": "844a9fcef0623c0f2cf2c2ff037c33cfafd52684",
+      "old_mode": 33188,
+      "old_path": "libpngpf.3",
+      "new_id": "4da0843fcbfbe91762ad8b4c9e71cd144422f7d1",
+      "new_mode": 33188,
+      "new_path": "libpngpf.3"
+    },
+    {
+      "type": "delete",
+      "old_id": "63ae69dc6fecaf83c52fba2ad334f4b1369fb1cd",
+      "old_mode": 33188,
+      "old_path": "ltmain.sh",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "db98974ff5d59295d7e0edfec2eb2069dc78ef1a",
+      "old_mode": 33261,
+      "old_path": "missing",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "3beacfae532c6d31e915c9f319e51c2847cffc1d",
+      "old_mode": 33188,
+      "old_path": "png.5",
+      "new_id": "76a327ba68a81afca37367805b062c1598ee07ce",
+      "new_mode": 33188,
+      "new_path": "png.5"
+    },
+    {
+      "type": "modify",
+      "old_id": "59e991b5c6708033ec60c2c04e7d1ff59f730a67",
+      "old_mode": 33188,
+      "old_path": "png.c",
+      "new_id": "c183e3f8faf8f38cee95d8fb7b7edc9c2297cb64",
+      "new_mode": 33188,
+      "new_path": "png.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "57141d5254d18bb27adf5672830325247f7df62a",
+      "old_mode": 33188,
+      "old_path": "png.h",
+      "new_id": "3ac3ee952ec80555215875745971e6cdba7843b6",
+      "new_mode": 33188,
+      "new_path": "png.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "afc0ead2b6cc22bd8edf0f01656fd08938192157",
+      "old_mode": 33188,
+      "old_path": "pngconf.h",
+      "new_id": "92f250000ce95d04803cebfe747c36cb4e652104",
+      "new_mode": 33188,
+      "new_path": "pngconf.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b43c59cde5f64fcf467fafe5822bc4c72c610f5e",
+      "old_mode": 33188,
+      "old_path": "pngdebug.h",
+      "new_id": "6a01b106ede3384fc261bfa1e1022757393736e3",
+      "new_mode": 33188,
+      "new_path": "pngdebug.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5876b477cbcd7c320e2b358e1555e6b7dd63393c",
+      "old_mode": 33188,
+      "old_path": "pngerror.c",
+      "new_id": "bdb959ee517b345d21a4c8cbce05c1a6bf03926b",
+      "new_mode": 33188,
+      "new_path": "pngerror.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "aca63a9589ce022367deddabef46e42b3b4db444",
+      "old_mode": 33188,
+      "old_path": "pngget.c",
+      "new_id": "743a6a9bbccdaebcb73a1a69f80342d97bc8aa42",
+      "new_mode": 33188,
+      "new_path": "pngget.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "26bf26502cf2d9fbfe7cdef0db3fbfdea1fdd376",
+      "old_mode": 33188,
+      "old_path": "pnginfo.h",
+      "new_id": "4bd264b8690ff8c32f94812e69b58920894d43fe",
+      "new_mode": 33188,
+      "new_path": "pnginfo.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a15bf9f6a569b09bc7bf0aead4e4122039b22663",
+      "old_mode": 33188,
+      "old_path": "pnglibconf.h",
+      "new_id": "ff01a93012c377b7680e19bae4bb7a2be81b401c",
+      "new_mode": 33188,
+      "new_path": "pnglibconf.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8ee0866f67aa4ac9458f44e71bfff07bc392b521",
+      "old_mode": 33188,
+      "old_path": "pngmem.c",
+      "new_id": "45ac5579b2119d11241c9a9a377e26c6d34d438c",
+      "new_mode": 33188,
+      "new_path": "pngmem.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c8404e4766b6622d56f18e37bb9f41d60390537",
+      "old_mode": 33188,
+      "old_path": "pngpread.c",
+      "new_id": "89ffc4018f6826a7931072bde8eb4180cbbe2ade",
+      "new_mode": 33188,
+      "new_path": "pngpread.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "96b0ca1fbc4c574dc71db82f839db8f606650d89",
+      "old_mode": 33188,
+      "old_path": "pngpriv.h",
+      "new_id": "bf7cc7449eae2de5a7284de6385eb05d6a37999d",
+      "new_mode": 33188,
+      "new_path": "pngpriv.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2ce83edc0c7d794753fd79dcc8634b3a6bbbf465",
+      "old_mode": 33188,
+      "old_path": "pngread.c",
+      "new_id": "769960850952c10ea56417b1c9803b04c65a83bd",
+      "new_mode": 33188,
+      "new_path": "pngread.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "429dffdd74011534c9e0fd01239c76c9e7c35a22",
+      "old_mode": 33188,
+      "old_path": "pngrio.c",
+      "new_id": "23d72b10e7e8a99d9db48d82a1930849df46b60c",
+      "new_mode": 33188,
+      "new_path": "pngrio.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "53953966e6512cbc22fa1deca00a8906b7331657",
+      "old_mode": 33188,
+      "old_path": "pngrtran.c",
+      "new_id": "608adef414865a3fc3b0bab1d708fb751d0c65f6",
+      "new_mode": 33188,
+      "new_path": "pngrtran.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f78934807c6cb8b429eae1c384b5d0ad8b83c6c3",
+      "old_mode": 33188,
+      "old_path": "pngrutil.c",
+      "new_id": "8382444d81d0ca00f34ee83089d7b74efa0c43e4",
+      "new_mode": 33188,
+      "new_path": "pngrutil.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "fd718c95cee0c403cb403d2f321bf9351e66efaf",
+      "old_mode": 33188,
+      "old_path": "pngset.c",
+      "new_id": "8fd7965fca5fac2dfa5cca4ea38e89536bb8b029",
+      "new_mode": 33188,
+      "new_path": "pngset.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e40e17d5e2e63087d38f9ea258bf4b9636a7638a",
+      "old_mode": 33188,
+      "old_path": "pngstruct.h",
+      "new_id": "dd2e38e26c86b5de18916f57e917a7a136a7c3b7",
+      "new_mode": 33188,
+      "new_path": "pngstruct.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "3b1f055db628afcb8e4bb8e1f616bb7ff8d612d5",
+      "old_mode": 33188,
+      "old_path": "pngtest.c",
+      "new_id": "5d50e66059ba37c383f16970dc4500587025b772",
+      "new_mode": 33188,
+      "new_path": "pngtest.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "94f18df27e9c596326b3d945d5940b63cc36a367",
+      "old_mode": 33188,
+      "old_path": "pngtrans.c",
+      "new_id": "0c0d92d8fd6dd3666a13dd6f0a4b8af00f6b201a",
+      "new_mode": 33188,
+      "new_path": "pngtrans.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d39564b51de632bbcb5a80ec12de73b99903a00",
+      "old_mode": 33188,
+      "old_path": "pngusr.dfa",
+      "new_id": "83067c38c07c40c6f31f12a4ed859c2495c56c83",
+      "new_mode": 33188,
+      "new_path": "pngusr.dfa"
+    },
+    {
+      "type": "modify",
+      "old_id": "1b525f94848a60d72a1d97cc4cdffca0df2261d4",
+      "old_mode": 33188,
+      "old_path": "pngwio.c",
+      "new_id": "db76e6b8d788924dafaf0a2ffba772bdc91a2a98",
+      "new_mode": 33188,
+      "new_path": "pngwio.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cff7864cb7136cb808d020ca91c042ab4b4fd4fd",
+      "old_mode": 33188,
+      "old_path": "pngwrite.c",
+      "new_id": "0d4ee9f7ae0ea156f0757d444232ce4df8e2b796",
+      "new_mode": 33188,
+      "new_path": "pngwrite.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "215bd68a9d872d0c3ed9451149e3a94027e56176",
+      "old_mode": 33188,
+      "old_path": "pngwtran.c",
+      "new_id": "5dc949157d410ba0edbeb07b9a06d82f203562c4",
+      "new_mode": 33188,
+      "new_path": "pngwtran.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "755bbdb28f02f97cf43977f1666193c3c4983c03",
+      "old_mode": 33188,
+      "old_path": "pngwutil.c",
+      "new_id": "0ee102b5fba02734798684e5a97e9f8440666e63",
+      "new_mode": 33188,
+      "new_path": "pngwutil.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "2ee18ff2a2c3b9ac17c9067225c0be21eeb52e07",
+      "old_mode": 33188,
+      "old_path": "projects/vstudio/readme.txt",
+      "new_id": "38664638862a586ec1c89233ad9dc6f3c0df7d55",
+      "new_mode": 33188,
+      "new_path": "projects/vstudio/readme.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "8438f36fe570a2cc3b69a596980c17a9da5f2128",
+      "old_mode": 33188,
+      "old_path": "projects/vstudio/zlib.props",
+      "new_id": "7faf359435f340ba4b18ec736cbaf9178f543abf",
+      "new_mode": 33188,
+      "new_path": "projects/vstudio/zlib.props"
+    },
+    {
+      "type": "modify",
+      "old_id": "c468d975cd271e1c0c70bfa01c0ed4ca8077945e",
+      "old_mode": 33188,
+      "old_path": "scripts/README.txt",
+      "new_id": "68245f0c859c8166d6008737b4b8b9cc25a1130f",
+      "new_mode": 33188,
+      "new_path": "scripts/README.txt"
+    },
+    {
+      "type": "rename",
+      "old_id": "c4b5a38180cbe3675c039a110644e158b3096474",
+      "old_mode": 33188,
+      "old_path": "scripts/def.dfn",
+      "new_id": "c3e424df77de62642c2ddffdf51e59f2717b9789",
+      "new_mode": 33188,
+      "new_path": "scripts/def.c",
+      "score": 82
+    },
+    {
+      "type": "modify",
+      "old_id": "afa498cb5ab1e983511859325d0ad0b00bd5ef9c",
+      "old_mode": 33188,
+      "old_path": "scripts/dfn.awk",
+      "new_id": "346b9db7d59c53d8907492ce3b0771d79dac52e2",
+      "new_mode": 33261,
+      "new_path": "scripts/dfn.awk"
+    },
+    {
+      "type": "rename",
+      "old_id": "fa59f88e9c420a6022861321136ff05c74db20f9",
+      "old_mode": 33188,
+      "old_path": "scripts/intprefix.dfn",
+      "new_id": "254f8e94b45e97d7c1e050d5406fbdcf0a9ccff4",
+      "new_mode": 33188,
+      "new_path": "scripts/intprefix.c",
+      "score": 73
+    },
+    {
+      "type": "modify",
+      "old_id": "b466432d54642032a192cee519fc15e35022ff4c",
+      "old_mode": 33261,
+      "old_path": "scripts/libpng-config-body.in",
+      "new_id": "b466432d54642032a192cee519fc15e35022ff4c",
+      "new_mode": 33188,
+      "new_path": "scripts/libpng-config-body.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "462de7479ba2d1d9344321cd24ef06a261402180",
+      "old_mode": 33261,
+      "old_path": "scripts/libpng-config-head.in",
+      "new_id": "8e25732058bd07a76165eeebb3077190bc37ec16",
+      "new_mode": 33188,
+      "new_path": "scripts/libpng-config-head.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "1ae258b56ab775c0df92b0234884120a8ad59bb2",
+      "old_mode": 33188,
+      "old_path": "scripts/libpng.pc.in",
+      "new_id": "83f7accf12a7b297e91e6b6809d23f62d69b76d6",
+      "new_mode": 33188,
+      "new_path": "scripts/libpng.pc.in"
+    },
+    {
+      "type": "delete",
+      "old_id": "44e0ecff11e3a16ca7656be45268d0bd597afc51",
+      "old_mode": 33188,
+      "old_path": "scripts/libtool.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "5d9acd8e23bcfd20d353804aff13666ecbed54f4",
+      "old_mode": 33188,
+      "old_path": "scripts/ltoptions.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "9000a057d31ddf75cb85ccda8757de4493bcdbe7",
+      "old_mode": 33188,
+      "old_path": "scripts/ltsugar.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "07a8602d48d615a65800b14446d8c8c8694f2818",
+      "old_mode": 33188,
+      "old_path": "scripts/ltversion.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "c573da90c5ccebffba4dce9a6462036bfa986d5f",
+      "old_mode": 33188,
+      "old_path": "scripts/lt~obsolete.m4",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6e7fed0ad791186eb1ad5883adffb486f26a19f",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.32sunu",
+      "new_id": "7d4b7c53a07e22228b76dd756f0387538e94375d",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.32sunu"
+    },
+    {
+      "type": "modify",
+      "old_id": "6186290094493bffa94623f9e034c1dff8fd2a99",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.64sunu",
+      "new_id": "341fce969b9a3b85ef2ae89890502cb45d1063d8",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.64sunu"
+    },
+    {
+      "type": "modify",
+      "old_id": "228b5c22a7550f0004a9590608f53e8447416245",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.amiga",
+      "new_id": "16a4bd5d331896ae0b2ba608afd36993863c6c6a",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.amiga"
+    },
+    {
+      "type": "modify",
+      "old_id": "051d3036ec0b2786fb5b66521854be42f9246fde",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.atari",
+      "new_id": "b5dbd4934ac4ca27c774771e60548dcb1431e812",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.atari"
+    },
+    {
+      "type": "modify",
+      "old_id": "c2a912211dc05864dc0bd459f6a9d88521ff6800",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.bc32",
+      "new_id": "bdbc4cb2f91ffd2f656510812f0d92096b87356c",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.bc32"
+    },
+    {
+      "type": "modify",
+      "old_id": "f897d11441fdb6f3f9207ca7e0fc26380405bb1e",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.beos",
+      "new_id": "01346f190a502e85044b60f0f9a42b864c24f063",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.beos"
+    },
+    {
+      "type": "modify",
+      "old_id": "a032510d41c680a2cd9a23e8ba73be50fd217b0a",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.bor",
+      "new_id": "6693772dbe6738703ee75fafc0fdd830a5ae63e6",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.bor"
+    },
+    {
+      "type": "modify",
+      "old_id": "e2ff2739b4d6cafb795b7fc267264fe90d5fd847",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.cegcc",
+      "new_id": "45eea776b8f4bc23774627c9f41be45986b1e5b0",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.cegcc"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c38c2652e52f27d7283d74ea34c392eec014be7",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.darwin",
+      "new_id": "be3f92c54b4406cab6f707231ae92c0f56eca374",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.darwin"
+    },
+    {
+      "type": "modify",
+      "old_id": "1ba9efbadeada0efc7a63573b52e8d10d472e460",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.dec",
+      "new_id": "8566a0297b54a913d2e585d4afb1fdd21e635237",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.dec"
+    },
+    {
+      "type": "modify",
+      "old_id": "a43f34a142ca66d6e35ee9f10791c96f345590b8",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.dj2",
+      "new_id": "e59c432b44b4b64a5c924e9f359d14a7f5ce8424",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.dj2"
+    },
+    {
+      "type": "delete",
+      "old_id": "6da6d4ae31117e03931596a5189b538491121ca1",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.elf",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "03a15df6cd65186ec6edc4a29272fbc3a38b55dc",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.freebsd",
+      "new_id": "cad1a5aa873c66ffbd9645ba81c854f002153f2e",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.freebsd"
+    },
+    {
+      "type": "modify",
+      "old_id": "a592294fc4506a82b509e37c6b69501e5662fa32",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.gcc",
+      "new_id": "ba92d150931804e3b34ea3cc323844c2adcdaaf3",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.gcc"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c15a0bde397ac38ab5a29cabd6b45ce68951272",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.hp64",
+      "new_id": "5948be8ecf243b35b565d22b8309c75b36c8d1f9",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.hp64"
+    },
+    {
+      "type": "modify",
+      "old_id": "67d8f42a6836e4f2c466da8ddbebe0b7b232cf4c",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.hpgcc",
+      "new_id": "5c8791b13372d8eb518eecba813b4f0802e9f23a",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.hpgcc"
+    },
+    {
+      "type": "modify",
+      "old_id": "bef2e2397649905ae97bfacf35cfb78615891f4a",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.hpux",
+      "new_id": "b07612dc7dec0e0cecbfeb5550d79114d289f0ae",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.hpux"
+    },
+    {
+      "type": "modify",
+      "old_id": "861a5515712e1cfdb433c8fcd1ac35d8dc44699e",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.ibmc",
+      "new_id": "89b11966b0df3e23326d309d317f7108880d93f1",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.ibmc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1abfc6ed68e86720b1ce2d11d2bc87f1033e9eb5",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.intel",
+      "new_id": "418726159d30deb2581f8b944e4acdc3098ccb7f",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.intel"
+    },
+    {
+      "type": "modify",
+      "old_id": "7209215171076187c6736aec96b178c2a3e32dd5",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.knr",
+      "new_id": "d8de064c4df9838e5a5532206abf65e1f1b1b540",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.knr"
+    },
+    {
+      "type": "modify",
+      "old_id": "73a30c8733c1d204d7ec96010df6f7abed402796",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.linux",
+      "new_id": "27dda8517c519b8102440bdfae1b2db63f9af566",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.linux"
+    },
+    {
+      "type": "modify",
+      "old_id": "a0df0018ab5adea1e30a21bdc4cb23738964b686",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.mips",
+      "new_id": "5633608c8b8f2305616d47daa4956373fa91d9b6",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.mips"
+    },
+    {
+      "type": "modify",
+      "old_id": "905ed72c574f175390529291bbe60404b6ca355b",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.msc",
+      "new_id": "539d62e94ee7b20c83d97459ea6a2dbea9354701",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.msc"
+    },
+    {
+      "type": "modify",
+      "old_id": "69fbb4d68488c7ada8c7ef33e810d2ce74076bdf",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.msys",
+      "new_id": "fea7427fe66a0c3994ea3c6afb8d4d06bde1c1d6",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.msys"
+    },
+    {
+      "type": "modify",
+      "old_id": "783e5d53d953f974793816e5e5b54c78f43dedbf",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.ne12bsd",
+      "new_id": "58f4bda701c641b3a8bebfeca64c6eae4ca0abb8",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.ne12bsd"
+    },
+    {
+      "type": "modify",
+      "old_id": "af4eb934ec761662264ab1b4f6f8e9f1714af910",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.netbsd",
+      "new_id": "407290e591e9a9e88f5ccb2985c7a3877556a2e9",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.netbsd"
+    },
+    {
+      "type": "modify",
+      "old_id": "c61fa2ef738c5d8a74df113acbcd0b93fe9bf990",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.openbsd",
+      "new_id": "ef5be8154888c9c4df53d43d0a09451da76be81f",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.openbsd"
+    },
+    {
+      "type": "modify",
+      "old_id": "a8de13f09724815d48112ffcbdadcdd07f2a64b9",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.sco",
+      "new_id": "b9c7c402ba481e40fe93d78ad0b6969adf24634d",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.sco"
+    },
+    {
+      "type": "modify",
+      "old_id": "a2c203e3e26dcdaf31691e41faf8a24d7e97f68c",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.sggcc",
+      "new_id": "a0d051dbda87a43cd5fdc04b30a9dd4f7962a241",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.sggcc"
+    },
+    {
+      "type": "modify",
+      "old_id": "96c61b089065bcd652ed0d6682e798eaab459626",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.sgi",
+      "new_id": "7df09022208443dc23fac43ebcae4ce0c7cb547d",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.sgi"
+    },
+    {
+      "type": "modify",
+      "old_id": "67821f8a989542451af228b94fac6a156e873cd8",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.so9",
+      "new_id": "ba9308c8a0e181b5d0df9553a20bb02cdea834c6",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.so9"
+    },
+    {
+      "type": "modify",
+      "old_id": "813219966359c9f76bd18600b434b93d5fa4cbdf",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.solaris",
+      "new_id": "8a450d37157214e96dc692d281b0a669bb2d908c",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.solaris"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d24148527511750d428a051d0b112557c870310",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.solaris-x86",
+      "new_id": "b6d24375d4dddfc61ebd8ee23d51324b09d84e22",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.solaris-x86"
+    },
+    {
+      "type": "modify",
+      "old_id": "30a21e23fa690d4e417adfb0ac3a76b4d9b4383f",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.std",
+      "new_id": "ee6a868354570176c0ffa8f5ad9b9b3bf5e18a16",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.std"
+    },
+    {
+      "type": "modify",
+      "old_id": "bc5f9267b49d22679f9c86a10de6ed069206bf82",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.sunos",
+      "new_id": "efe308c4781f315ef315ca154e568be09d7faeeb",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.sunos"
+    },
+    {
+      "type": "modify",
+      "old_id": "62279b76b978919de12c24eed5d7a81e24966d4d",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.tc3",
+      "new_id": "1d015026cbc96bfc3331e36e6fa59a2c87c5bcc0",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.tc3"
+    },
+    {
+      "type": "modify",
+      "old_id": "b26c4acc77d4f96e288457f1df11634633425afd",
+      "old_mode": 33188,
+      "old_path": "scripts/makefile.vcwin32",
+      "new_id": "2bd143cc0aeb91e9b1bc78a09547fb657a3338fd",
+      "new_mode": 33188,
+      "new_path": "scripts/makefile.vcwin32"
+    },
+    {
+      "type": "modify",
+      "old_id": "9aff15db20c92fe270df6ddab819ecb30ca1c645",
+      "old_mode": 33261,
+      "old_path": "scripts/options.awk",
+      "new_id": "81b82ff09c5594c28b6112b59780d27800c822c1",
+      "new_mode": 33261,
+      "new_path": "scripts/options.awk"
+    },
+    {
+      "type": "modify",
+      "old_id": "4d4ea8a3b71ba134a48674feb9a831a643bd4237",
+      "old_mode": 33261,
+      "old_path": "scripts/pnglibconf.dfa",
+      "new_id": "b2b7b430950a04b587b5f665430153fcaceaae80",
+      "new_mode": 33188,
+      "new_path": "scripts/pnglibconf.dfa"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d4ef5a1673af7ccd71e1149735ae217ae209750",
+      "old_mode": 33188,
+      "old_path": "scripts/pnglibconf.h.prebuilt",
+      "new_id": "adf4238ff7856e3b7138b5f06d4f8581ba46b14b",
+      "new_mode": 33188,
+      "new_path": "scripts/pnglibconf.h.prebuilt"
+    },
+    {
+      "type": "modify",
+      "old_id": "c7117ddc48f7e99e9dc8052e5cd39ce23fc24e53",
+      "old_mode": 33261,
+      "old_path": "scripts/pnglibconf.mak",
+      "new_id": "c125ca2c977808e65a475a56b7359cc5677acc0b",
+      "new_mode": 33261,
+      "new_path": "scripts/pnglibconf.mak"
+    },
+    {
+      "type": "rename",
+      "old_id": "0997310c56a11b4525dce5479b861dab2f904e52",
+      "old_mode": 33188,
+      "old_path": "scripts/prefix.dfn",
+      "new_id": "8b604a09195c12870d8a137b2a354bc6b01cdee2",
+      "new_mode": 33188,
+      "new_path": "scripts/prefix.c",
+      "score": 73
+    },
+    {
+      "type": "rename",
+      "old_id": "9ccd810fdec52f15f0ba90cf07a1d7e6c92d8011",
+      "old_mode": 33188,
+      "old_path": "scripts/sym.dfn",
+      "new_id": "ea9e4c50705edf9550547b3b516715c2d43fd2eb",
+      "new_mode": 33188,
+      "new_path": "scripts/sym.c",
+      "score": 64
+    },
+    {
+      "type": "rename",
+      "old_id": "6f52918d4791500acde47cbb634a87575ed2ccc3",
+      "old_mode": 33188,
+      "old_path": "scripts/symbols.dfn",
+      "new_id": "28b841d8b6e5661eacc618d002134ea14a5b6b5d",
+      "new_mode": 33188,
+      "new_path": "scripts/symbols.c",
+      "score": 83
+    },
+    {
+      "type": "modify",
+      "old_id": "f509932ff50131efdbe28e23e11a70725049e789",
+      "old_mode": 33188,
+      "old_path": "scripts/symbols.def",
+      "new_id": "a4b806b3c88febae26daf42803a27549c31d7e38",
+      "new_mode": 33188,
+      "new_path": "scripts/symbols.def"
+    },
+    {
+      "type": "rename",
+      "old_id": "61ba7d80bc6932070158d94e580f50dd3864a97c",
+      "old_mode": 33188,
+      "old_path": "scripts/vers.dfn",
+      "new_id": "de7319716f39877aaa3f00170d37a0ceffa9e22b",
+      "new_mode": 33188,
+      "new_path": "scripts/vers.c",
+      "score": 69
+    },
+    {
+      "type": "delete",
+      "old_id": "d30605660a0612aa12702dd7e0d0a3c86e7f7dad",
+      "old_mode": 33188,
+      "old_path": "test-driver",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "c134a8a84834682386ea5d1796baf5b932195c03",
+      "old_mode": 33188,
+      "old_path": "test-pngtest.sh",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5eb9895eed19d1244b20d0619a584e574b55537",
+      "old_mode": 33261,
+      "old_path": "tests/pngimage-full",
+      "new_id": "1198ed05c088b982f500666d992388301b5bbb96",
+      "new_mode": 33261,
+      "new_path": "tests/pngimage-full"
+    },
+    {
+      "type": "modify",
+      "old_id": "2d4b5db225b3f3a75a24088e36b2607848b70600",
+      "old_mode": 33261,
+      "old_path": "tests/pngimage-quick",
+      "new_id": "328dc27b5d5881ba392df2cbca3f1f6b2c0a5453",
+      "new_mode": 33261,
+      "new_path": "tests/pngimage-quick"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5cbdbcae4379053d143221db2d19b2f9c4a1df7",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest",
+      "new_id": "255ed098f17cd49f340bd41b997711e8cfbffe16",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest"
+    },
+    {
+      "type": "delete",
+      "old_id": "4a495ccb8f0ba3a588f9bfd92a0877b61c44d3cc",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-0g01",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "1a607c8e17ab7b84d653fee2d7fae32024ce903c",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-0g02",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "595ba01e333ead0abe2ba4a279441b36c448dd77",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-0g04",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "21a8b4bb4e05782e7d832fb73384fa8fa1146b5f",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-0g08",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "0104c37bdd5e6f9010c08712ffe345bb73ebb6ce",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-0g16",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b2ec21bf64bba021776c1fc080f28e389d4e6106",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-1.8"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d00596d55821b9c685a0416c687072934b504e12",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-1.8-alpha"
+    },
+    {
+      "type": "delete",
+      "old_id": "9e0de6f1e03d76be77492434388e4f6fe29328e8",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-2c08",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "c1b88b04ed677eba8e2082b5dacf3f4000ffa372",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-2c16",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "6aeb8d06cf968b8a78fa1ccb6fb4bf09286713e4",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-3p01",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "770a75c0b10d30ef924bcb6505099159c6449db8",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-3p02",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "957d6ae341e2374988ad81c1ab0d08129d6a0c0c",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-3p04",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "d0947afdef13ccafe8f9f84503481a49ad71a1a6",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-3p08",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "2fab57f01dfca1d66a2ff6622de44801b8222892",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-4a08",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "e4ad5aa9adbdbce6069d82feb8f483470c80a1e3",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-4a16",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "aa6c03c3d97dedd92cad09c60dbe0cf949378d7d",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-6a08",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "545b1b394bbdaf96d7a6ce591add4bf083840a23",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-6a16",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "ebf3a7b59ea8e9b7218ed7f360c5ad43febabcb1",
+      "old_mode": 33261,
+      "old_path": "tests/pngstest-error",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4a5b3fe8c31fa286f101dbe64f1a07f13f212fb5",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-linear"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4114210363dc4f06d1c7af99a5d53bca10c85c86",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-linear-alpha"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "09ad740b582ef2b6f65c2f8f47977a715017a5e2",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-none"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "af6083ff839c20abe1ead89295403ff8ec99e677",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-none-alpha"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d8460812c2bebf6c5198b96b915d3a68af0a3363",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-sRGB"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f1e57d339ccf303aced9555ae8ac7e87556615e5",
+      "new_mode": 33261,
+      "new_path": "tests/pngstest-sRGB-alpha"
+    },
+    {
+      "type": "modify",
+      "old_id": "71d915a9ca374a8f98f308337daa81448d6aae2b",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-IDAT",
+      "new_id": "8e7281aa84a229f1bccb55dbaf277ad75860183e",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-IDAT"
+    },
+    {
+      "type": "modify",
+      "old_id": "f1f02d4c7b11dd476cdbed2aeaf4ba9f2b5533d7",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-discard",
+      "new_id": "c96dab370c3a2fd3036c6bffb702bb936bec9751",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-discard"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c52824f83c614400c4ff53b78296ca2e3bdff1e",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-if-safe",
+      "new_id": "31a4954fbb4440986f885960977ea30a1586e30a",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-if-safe"
+    },
+    {
+      "type": "modify",
+      "old_id": "e087ef25a7e10c4fbd2a698432e7f83bca0e5f33",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-sAPI",
+      "new_id": "4317b1847d01a2a1cee36fd3ef323867b5f52e9e",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-sAPI"
+    },
+    {
+      "type": "modify",
+      "old_id": "1b945dc3476ffc3f8fd23ed7e6109147d95aa83a",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-sTER",
+      "new_id": "59c5ecd54fe69de1b7ac107280053e287a257c17",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-sTER"
+    },
+    {
+      "type": "modify",
+      "old_id": "ae849308ce8179ce9960c5a3bade1b4e9f1d0900",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-save",
+      "new_id": "21412c42a65b001d82c0b5436653c1a79f96dc9a",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-save"
+    },
+    {
+      "type": "modify",
+      "old_id": "396c6e40d4e245b7964b77732dba4ab10a36f81b",
+      "old_mode": 33261,
+      "old_path": "tests/pngunknown-vpAg",
+      "new_id": "04f07b69a328a34fb8a7aa51039175d703d29008",
+      "new_mode": 33261,
+      "new_path": "tests/pngunknown-vpAg"
+    },
+    {
+      "type": "modify",
+      "old_id": "b322338295007bc6aa5a4e9b9f2d078b2ee3740f",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-16-to-8",
+      "new_id": "074945d3103996f96c9232644f6f3dd547091167",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-16-to-8"
+    },
+    {
+      "type": "modify",
+      "old_id": "ed04fa511b81577929fb86898390b91dc1330ca2",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-alpha-mode",
+      "new_id": "b16e8abc4e33ff33deea8b576e76fa173b185a25",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-alpha-mode"
+    },
+    {
+      "type": "modify",
+      "old_id": "658e5fe4def1d255d498ee2b2c59d329e73252be",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-background",
+      "new_id": "3dbf58d8a051ef4ffdd67173bd638db285eaad40",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-background"
+    },
+    {
+      "type": "modify",
+      "old_id": "bdda566a06b21a60ceb82d2cd48d220ed2a49c0e",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-expand16-alpha-mode",
+      "new_id": "4fa10bde27e396abef5b834945580df29482aa8e",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-expand16-alpha-mode"
+    },
+    {
+      "type": "modify",
+      "old_id": "f993c21aebb82fcf068ccccd7f9b43e57ace3967",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-expand16-background",
+      "new_id": "ad9a91762ba8615e8706fb817926c55cff5713da",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-expand16-background"
+    },
+    {
+      "type": "modify",
+      "old_id": "f462534e8542de41f74c0a8aed2b6b1241b932d3",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-expand16-transform",
+      "new_id": "5fd1f280baf1955a6d3c478132f71203ebe986c4",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-expand16-transform"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa82fe04fea6f353e260ef7b8e0a4e8d65addc12",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-sbit",
+      "new_id": "6ca08e9e3481a15239e6cdd0edee7a16c15f9af8",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-sbit"
+    },
+    {
+      "type": "modify",
+      "old_id": "2cfca91467769bfa9f22de9457b119d2f4bd664f",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-threshold",
+      "new_id": "3fe4edf77a9313fd0e75930c2c7f73734d9df2aa",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-threshold"
+    },
+    {
+      "type": "modify",
+      "old_id": "a71ab4d5ec71dc826b4f8296ce56a8286e02280e",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-gamma-transform",
+      "new_id": "3fa62c688ac380cf5873dbb7e03c6e9add6d98a1",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-gamma-transform"
+    },
+    {
+      "type": "delete",
+      "old_id": "a31b28355700ad31c82df6ea2ad527e3e20c4630",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-progressive-interlace-size",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "59042eb1720bda06b5e1a2569a17b2957a4d4acc",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-progressive-interlace-standard",
+      "new_id": "a8cdf9e1a38db8a2f317f00866db7885657146fd",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-progressive-interlace-standard"
+    },
+    {
+      "type": "delete",
+      "old_id": "edf9a8a79eee7313d437db1e62605b604a35dd22",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-progressive-interlace-transform",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "868d6dcc32410f7cf0c771a76e69abd0c66ea6c2",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-progressive-size"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa1b4b4db3ad861d5884c9d80bfdd3b0a679e2b7",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-progressive-standard",
+      "new_id": "bf7e5c1c2c04dde257dc7c9b624b73c5e16e1353",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-progressive-standard"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa1b4b4db3ad861d5884c9d80bfdd3b0a679e2b7",
+      "old_mode": 33261,
+      "old_path": "tests/pngvalid-standard",
+      "new_id": "a89b884245d365f7cce4565789d8d9c229943208",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-standard"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c7536aeb897fa18fcdca52a69edbb595b5f70c5d",
+      "new_mode": 33261,
+      "new_path": "tests/pngvalid-transform"
+    },
+    {
+      "type": "delete",
+      "old_id": "9187a0f17040832ac1f98a8c8c27e6f4f5d73d87",
+      "old_mode": 33188,
+      "old_path": "updatenotes",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    }
+  ]
+}

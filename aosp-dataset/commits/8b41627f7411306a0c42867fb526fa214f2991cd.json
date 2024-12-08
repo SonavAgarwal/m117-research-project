@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8b41627f7411306a0c42867fb526fa214f2991cd",
+  "tree": "34a514e31f5c98a5e9982e1fcc14249851728d48",
+  "parents": [
+    "88daa7e9d975b8b6674157dd6e81d358c7d16393"
+  ],
+  "author": {
+    "name": "Vinit Deshpande",
+    "email": "vinitd@google.com",
+    "time": "Thu Jul 23 11:46:52 2015 -0700"
+  },
+  "committer": {
+    "name": "Vinit Deshpande",
+    "email": "vinitd@google.com",
+    "time": "Fri Oct 16 17:30:27 2015 +0000"
+  },
+  "message": "Fix a race in WifiNative objects\n\ndisconnectFromSupplicant doesn\u0027t have any synchronization;\nso it can cause problems when WifiStateMachine is disconnecting\nand P2p statemachine is sending commands.\n\nBug: 22667667\nChange-Id: I92e6ee44618813341e171f84442791a6403a5010\n(cherry picked from commit b577f391af2c484e443c19b3df1d62cc0924692a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb812296a2f1603a0e889571b5d278f0da23cc2c",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiNative.java",
+      "new_id": "e5b6af30b0d422c734199dab52f79f6b1b7340ba",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiNative.java"
+    }
+  ]
+}

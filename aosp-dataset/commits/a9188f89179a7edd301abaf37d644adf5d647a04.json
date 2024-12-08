@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a9188f89179a7edd301abaf37d644adf5d647a04",
+  "tree": "9cfec3c3209a5c01278c332c195f73e3af94d5bf",
+  "parents": [
+    "220f9a066552359b0f96c27cdbd7ca35160bcbc6"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Mon Feb 13 18:48:39 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:45 2017 -0700"
+  },
+  "message": "AudioFlinger: Check framecount overflow when creating track\n\nTest: Native POC\nBug: 34749571\nChange-Id: I7529658e52ac7e64d162eb5338f10fb25eaa8fe7\n(cherry picked from commit 1883f69de5f2c4e71df58d5b71d7c39f9779b50c)\n(cherry picked from commit eaa3969f757291f151efedde17ec529b8659024d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ba6e6e599dd5ce81f2642ee141f215747b1e6b27",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Tracks.cpp",
+      "new_id": "f18b88d7247abc5f16339b8c3e7fdb1c6733f205",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Tracks.cpp"
+    }
+  ]
+}

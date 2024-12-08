@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "2917b1f0d7cd219d8a9d51d5d8606f4d5074c307",
+  "tree": "c7c9c0d293e235448b6b796204e0468d0cf8c71a",
+  "parents": [
+    "b869620327dabaebe715a7d8fb3d12cdddd5a221"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Mon Apr 29 18:03:58 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:07 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Make LockTaskController default behaviour match ScreenPinningSettings.\n\nFixes: 127605586\nTest: atest LockTaskControllerTest\nChange-Id: I7d4c53fd6740f500d1a0ce18b47b83ed895300a5\n(cherry picked from commit 5d6c1e8f451a920695e92fd321bbffe9c75f9aaa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "151ef4942432f513ec138655dab21b1a8834f4d3",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/LockTaskController.java",
+      "new_id": "ab67b8a3f534dafa33ac9907694b6245f27f4f7b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/LockTaskController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f46d712df65b2eefb44c7cf862e0fcccf6845f88",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/am/LockTaskControllerTest.java",
+      "new_id": "35aa491885645bc9adc04ad91f38acf904189589",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/am/LockTaskControllerTest.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bdf1dc655cf226d10077e0926049bac0aed0127e",
+  "tree": "e440aa0955e6bb296f6e009914b0ca017e341041",
+  "parents": [
+    "b95bf95007526bbafe6b790aed0afc75a8dea4e4"
+  ],
+  "author": {
+    "name": "Eran Messeri",
+    "email": "eranm@google.com",
+    "time": "Fri Oct 18 14:15:10 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:58 2019 +0000"
+  },
+  "message": "KeyChain: Do not allow hiding Cert Install dialog\n\nDo not allow apps to float a window on top of the certificate\ninstallation / naming dialog.\n\nThis obscures the CA certificate installation dialog and could be used\nto trick a user into installing a CA certificate.\n\nThis is fixed by adding the HIDE_NON_SYSTEM_OVERLAY_WINDOWS system\nflag when the activity is created (onCreate), so that another activity\nstarting in the foreground would not be able to obscure the dialog.\n\nBug: 139017101\nTest: Manual, with an app that floats a window.\nChange-Id: Iff8e678743c3883cf1f7f64390097a768ca00856\n(cherry picked from commit afdacb2ec4c5cdc2fb2a9943fa5b48100f4725c8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "56ac88486d559d9b9db9b3225c4c3356a73e6af4",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "df73092992bbe558005306b654420822a5c6188a",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b381cb4a5b1e17c862973b0051b3706d1149300",
+      "old_mode": 33188,
+      "old_path": "src/com/android/certinstaller/CertInstaller.java",
+      "new_id": "dd849a714b9aba0c63f5aca20d95b2dff611d27c",
+      "new_mode": 33188,
+      "new_path": "src/com/android/certinstaller/CertInstaller.java"
+    }
+  ]
+}

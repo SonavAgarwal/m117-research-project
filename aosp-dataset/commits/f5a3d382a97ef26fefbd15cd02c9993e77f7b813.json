@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f5a3d382a97ef26fefbd15cd02c9993e77f7b813",
+  "tree": "c29b7d232b0a568aea6014fa86c7b30ad5f1fd10",
+  "parents": [
+    "cd64099ce26f8c458f5dfbc3410dc67d810cd209"
+  ],
+  "author": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Fri Aug 23 13:50:23 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 08:23:22 2019 +0000"
+  },
+  "message": "Handles null outInfo in deleteSystemPackageLI\n\nThis change adds null checks before accessing outInfo in\ndeleteSystemPackageLI.\n\nBug: 142083996\nTest: manual; remove static dependency on eng build and reboot\nChange-Id: If0fd48343e89cbb77ccd25826656194195d5b0cd\n(cherry picked from commit 17471016508bb9c9ffb8c3946dda0b4897d722f1)\n(cherry picked from commit 5a3888c613bbc8f70a5d9e4d53526a5ae1491bb5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dd8cb4dba0a7190f756b9ea35c1a6cd057b3ea21",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "52f569f2d802bd3a455232e0bbfe933e4e0fd843",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

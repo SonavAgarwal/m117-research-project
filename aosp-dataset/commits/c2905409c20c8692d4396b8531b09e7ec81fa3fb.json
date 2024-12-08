@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c2905409c20c8692d4396b8531b09e7ec81fa3fb",
+  "tree": "1957b9cabef53dffc9cd78142eafefdab52713e4",
+  "parents": [
+    "eaebcd45c5d1eaa54e585f3537e3adfc81414d40"
+  ],
+  "author": {
+    "name": "Samuel Tan",
+    "email": "samueltan@google.com",
+    "time": "Tue Jul 19 17:35:57 2016 -0700"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Thu Aug 25 11:49:32 2016 -0700"
+  },
+  "message": "ANQPFactory: catch all potential parsing errors\n\nFix Merge Conflict for nyc-release\n\nThe ANQP Element parsing code that parses untrusted data broadcasted\nby APs is currently untested, and might contain errors that will\ntrigger exceptions that can crash the system service (e.g. null pointer\nexceptions).\n\nTo contain this risk, catch all possible exceptions from the invoking\nANQP element parsing code from ANQPFactory, and throw them again\nas ProtocolExceptions, which users of ANQPFactory already catch.\n\nBUG: 30230534\nChange-Id: Icaba02c0e6739d94482cf4a5e704b59f8d4105b4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2bba188915d319ec7271e2a0a93794a8456e1dcb",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/anqp/ANQPFactory.java",
+      "new_id": "f3ade09d14383ff7c1caa09ccdf53c0a91ec9216",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/anqp/ANQPFactory.java"
+    }
+  ]
+}

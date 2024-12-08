@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9fe27a9b445f7e911286ed31c1087ceac567736b",
+  "tree": "cc2d7ded702a55b8d9b279423b2378d06b945e47",
+  "parents": [
+    "d5eaf5c741978b242906fd19b737007d7767b66a"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Jun 07 16:18:52 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 30 04:24:00 2018 +0000"
+  },
+  "message": "Add bound check for rfc_parse_data\n\nBug: 78288018\nTest: manual\nChange-Id: I44349cd22c141483d01bce0f5a2131b727d0feb0\n(cherry picked from commit 6039cb7225733195192b396ad19c528800feb735)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aba555d852e52b0e4ac35230fca93af1c23a7079",
+      "old_mode": 33188,
+      "old_path": "stack/include/rfcdefs.h",
+      "new_id": "ca9b3ce5207ff9e677197bd1a64ec61ad4153581",
+      "new_mode": 33188,
+      "new_path": "stack/include/rfcdefs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b21e3cfe0f2915e79e90cd9df95d2e7d9597492",
+      "old_mode": 33188,
+      "old_path": "stack/rfcomm/rfc_ts_frames.cc",
+      "new_id": "fe465b2b04dbb0b4f66ba17df5e822f166418259",
+      "new_mode": 33188,
+      "new_path": "stack/rfcomm/rfc_ts_frames.cc"
+    }
+  ]
+}

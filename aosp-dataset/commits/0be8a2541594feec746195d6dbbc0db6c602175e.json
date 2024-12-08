@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0be8a2541594feec746195d6dbbc0db6c602175e",
+  "tree": "b38655df4629e83460c61b022fb967ff04141771",
+  "parents": [
+    "9cb10d49b1319ea1207cc2f445089aa9266ffc71"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon Jun 19 10:40:56 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:52 2017 +0000"
+  },
+  "message": "DO NOT MERGE Check frame handle validity before freeing buffer.\n\nin CameraSource::releaseRecordingFrame(), validate the\nVideoNativeHandleMetadata field when received. Avoid releasing invalid\nhandles (and thus invalid memory) if this has been corrupted in user space.\n\nBug: 37662122\nTest: poc before/after on nyc-mr2\nChange-Id: If48c050a5c20552604a90f19130ad5837e80bf52\n(cherry picked from commit e779e08977ff0be086cae86c8d05e55805a967a4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "893da89bbb12e00e700743229f69610e309a003e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/CameraSource.cpp",
+      "new_id": "b7d9965ad6e22c358588bf4406e4d0f6506dea96",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/CameraSource.cpp"
+    }
+  ]
+}

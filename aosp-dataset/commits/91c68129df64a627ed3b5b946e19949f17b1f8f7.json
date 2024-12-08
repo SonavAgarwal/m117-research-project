@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "91c68129df64a627ed3b5b946e19949f17b1f8f7",
+  "tree": "534087b8df9e0f8bcdd37605ced5f330db2ae47d",
+  "parents": [
+    "9dcb83d4e222c984fdf1c8f8a4c2ddf6c46a8699"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Thu Jun 06 19:07:54 2019 +0800"
+  },
+  "committer": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Thu Jun 13 02:35:53 2019 +0000"
+  },
+  "message": "Prevent integer overflow in NDEF_MsgValidate\n\nBug: 126200054\nTest: Read a Ndef Tag\nChange-Id: I156047fa8b6219a4d4d269f7ca720f9a0ee55e17\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "01663f00343f4b8d52d1039e254fabfe4a897df0",
+      "old_mode": 33188,
+      "old_path": "src/nfc/ndef/ndef_utils.c",
+      "new_id": "cb909d510d2e272c19579297e227ee5ca1c84a7e",
+      "new_mode": 33188,
+      "new_path": "src/nfc/ndef/ndef_utils.c"
+    }
+  ]
+}

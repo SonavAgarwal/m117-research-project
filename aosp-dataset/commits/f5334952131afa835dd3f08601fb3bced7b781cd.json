@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "f5334952131afa835dd3f08601fb3bced7b781cd",
+  "tree": "1e64855b298c247452040d1e4f4796d2289e7a3a",
+  "parents": [
+    "96daf7d4893f614714761af2d53dfb93214a32e4"
+  ],
+  "author": {
+    "name": "Jim Miller",
+    "email": "jaggies@google.com",
+    "time": "Mon Aug 08 20:16:22 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:54 2016 -0700"
+  },
+  "message": "Bind fingerprint when we start authentication\n\nThis fixes a bug where it was possible to authenticate the wrong user.\nWe now bind the userId when we start authentication and confirm it when\nauthentication completes.\n\nFixes bug 30744668\n\n(Cherry pick from Change-Id: I346d92c301414ed81e11fa9c171584c7ae4341c2)\n\nChange-Id: I3584790c39eb2e8c435ad1b2d887bf9b8ebd36fe\n(cherry picked from commit 837d052ed4b5b75dfd4af44f5ad268e683bf2e13)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1ff2e8a11a878b21e6077a7a2f6b12a7da9475ae",
+      "old_mode": 33188,
+      "old_path": "core/java/android/hardware/fingerprint/FingerprintManager.java",
+      "new_id": "f17fd55bd22aaca62c6081f60af4f2d070b64420",
+      "new_mode": 33188,
+      "new_path": "core/java/android/hardware/fingerprint/FingerprintManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "57a429fe5fa757614f4dd7d90ad540190d1ae672",
+      "old_mode": 33188,
+      "old_path": "core/java/android/hardware/fingerprint/IFingerprintServiceReceiver.aidl",
+      "new_id": "b024b29fef06b023e4feaafde9b337c88f5bb1b9",
+      "new_mode": 33188,
+      "new_path": "core/java/android/hardware/fingerprint/IFingerprintServiceReceiver.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "a8419bf4cbdfb77f6dafc5a7f428e64036d8b136",
+      "old_mode": 33188,
+      "old_path": "packages/Keyguard/src/com/android/keyguard/KeyguardUpdateMonitor.java",
+      "new_id": "a84d33eff0494dbd43383b31971c6fede1d69986",
+      "new_mode": 33188,
+      "new_path": "packages/Keyguard/src/com/android/keyguard/KeyguardUpdateMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c04b9a1bed0fbee73619e638a446601f3382de60",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/fingerprint/AuthenticationClient.java",
+      "new_id": "87da866603cc5d4cb6f37b55f0674fcf301aa69d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/fingerprint/AuthenticationClient.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "081a3afd048feb82021efc7385bbc09925b672b1",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/fingerprint/FingerprintService.java",
+      "new_id": "015c8e2618cc8254ac308cfe42265dfb33118bed",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/fingerprint/FingerprintService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ed1888ebc3888399ec5144491e43bf7d871028e5",
+  "tree": "c9422dbafa34da263cf18f2fa4da4cb28891c18a",
+  "parents": [
+    "e58ce8ace5b8dca6ebe8744dfa6ac687f0d50042"
+  ],
+  "author": {
+    "name": "Eran Messeri",
+    "email": "eranm@google.com",
+    "time": "Mon Sep 14 18:11:56 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:08:10 2020 +0000"
+  },
+  "message": "Install CA certificates into KeyStore\n\nWhen the user installs a CA certificate (via Settings), store that\ncertificate into the system KeyStore.\n\nThis is necessary for it to be available as a VPN trust anchor.\nNote that this is a temporary fix and long-term the user should install\nVPN trust anchor separately of CA certificates. Particularly in the\ncontext of VPN, it\u0027s undesirable for the VPN provider\u0027s endpoint\nauthentication certificate to also be a root CA on the device, as all\ntraffic goes through the VPN.\n\nTest: Manual, installed CA certificate via cert installer and ensured it\u0027s available in VPN settings.\nBug: 163413737\nChange-Id: Ib6a308177b7ce6c55fb45af9809e0efc5c48a079\n(cherry picked from commit a21a521ae9c1fbd099f0fd84df8776a0c1c020f8)\n(cherry picked from commit 6d6ea3f68307b3bf41bf22bfcbc0f1290a56c14b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "68a7cfadfdb8773d7c96b2b2bbe9c35a18b0229c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/keychain/KeyChainService.java",
+      "new_id": "6c03fa10c385660d5109400116fe081a5fd2deb0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/keychain/KeyChainService.java"
+    }
+  ]
+}

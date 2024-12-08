@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "0b98d304c467184602b4c6bce76fda0b0274bc07",
+  "tree": "318e08cf213d173f6aeddd8aa772b75880919193",
+  "parents": [
+    "d44e5bde18a41beda39d49189bef7f2ba7c8f3cb"
+  ],
+  "author": {
+    "name": "Svet Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Mon Apr 20 08:28:30 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:04:56 2015 -0700"
+  },
+  "message": "DO NOT MERGE Don\u0027t take flags when creating app widget config activity.\n\nbug:19618745\n\nChange-Id: I7973ebfc67ebf52f14890dda9eb891a7b8a5a095\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8e86824761e2757a319a439c34aca0beedc6b6b7",
+      "old_mode": 33188,
+      "old_path": "core/java/android/appwidget/AppWidgetHost.java",
+      "new_id": "7eb4b2f2a36475f4e3b72fcf1abbf22c974f6da2",
+      "new_mode": 33188,
+      "new_path": "core/java/android/appwidget/AppWidgetHost.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "008d38b4893aa9799a302c1dab9c605cb5632568",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/appwidget/IAppWidgetService.aidl",
+      "new_id": "faac3926dbd1b4f463657099e4796b018bc375ad",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/appwidget/IAppWidgetService.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "76235146cdb633f5c44de4f74f0a0ed857a07f4d",
+      "old_mode": 33188,
+      "old_path": "services/appwidget/java/com/android/server/appwidget/AppWidgetServiceImpl.java",
+      "new_id": "154555711d3a526d4100aa72809e71355deb05c4",
+      "new_mode": 33188,
+      "new_path": "services/appwidget/java/com/android/server/appwidget/AppWidgetServiceImpl.java"
+    }
+  ]
+}

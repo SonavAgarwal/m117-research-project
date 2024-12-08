@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "407d475b797fdc595299d67151230dc6e3835ccd",
+  "tree": "0924f43fb9ccf6ebbf227b9da67d74b570766307",
+  "parents": [
+    "deba0610c89d54390c9d2d0a0f3b79fd7679779c"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Thu Jul 16 15:04:12 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Tue Aug 18 02:33:07 2015 +0000"
+  },
+  "message": "MatroskaExtractor: detect infinite loop when parsing NALs\n\nBug: 21335999\nChange-Id: I76bd34610e52048ffcf16e41aa6175afc8a14ee4\n(cherry picked from commit 2dcf6138ebc9c5688aeae151d2fbde55a2826128)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cf20428d355cf1055686d5e6e8565ca198ada3d9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/matroska/MatroskaExtractor.cpp",
+      "new_id": "25d0cf1af7f81a08d600f0527b6680d08ce18390",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/matroska/MatroskaExtractor.cpp"
+    }
+  ]
+}

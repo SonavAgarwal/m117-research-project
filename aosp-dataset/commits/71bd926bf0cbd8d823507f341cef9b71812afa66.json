@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "71bd926bf0cbd8d823507f341cef9b71812afa66",
+  "tree": "50fe1adc44506f224c35a738519997b436f72e04",
+  "parents": [
+    "5281bee360d9a9f90ea3fd2fffcd507332da117a"
+  ],
+  "author": {
+    "name": "Nikita Ioffe",
+    "email": "ioffe@google.com",
+    "time": "Fri Nov 27 18:57:44 2020 +0000"
+  },
+  "committer": {
+    "name": "Nikita Ioffe",
+    "email": "ioffe@google.com",
+    "time": "Tue Dec 01 22:54:05 2020 +0000"
+  },
+  "message": "Fix potential use-after-free bug in reboot\n\nInstead of operating on raw pointers, init now uses name of the\nservices as it\u0027s primary identifier. Only place that still uses\nvector\u003cService*\u003e is StopServices.\n\nIn addition, ServiceList::services() function is removed, which should\nhelp avoiding similar bugs in the future.\n\nBug: 170315126\nBug: 174335499\nTest: adb reboot\nTest: atest CtsInitTestCases\nChange-Id: I73ecd7a8c58c2ec3732934c595b7f7db814b7034\nMerged-In: I73ecd7a8c58c2ec3732934c595b7f7db814b7034\n(cherry picked from commit bbba64826fdfb7be1f04b7bbb125fbe6d25e5028)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dd1ab4d61985d51a6992a31722de90ef22e927c6",
+      "old_mode": 33188,
+      "old_path": "init/lmkd_service.cpp",
+      "new_id": "c982925add1cde1b476b817198855e79f369978c",
+      "new_mode": 33188,
+      "new_path": "init/lmkd_service.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "23a07aa644b4db4474884acc66480d014874ce61",
+      "old_mode": 33188,
+      "old_path": "init/reboot.cpp",
+      "new_id": "a4fb08e0b670b8e13ee1536a9994a0fae234b484",
+      "new_mode": 33188,
+      "new_path": "init/reboot.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "3b9018bc079154dfb50e4544ef56af27194944c7",
+      "old_mode": 33188,
+      "old_path": "init/service_list.h",
+      "new_id": "555da258ad67abf54b8b95d00bf4246258c248f4",
+      "new_mode": 33188,
+      "new_path": "init/service_list.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ae68679bd901fc02f2ded19ed1bb1bce4fee3cf4",
+      "old_mode": 33188,
+      "old_path": "init/test_utils/service_utils.cpp",
+      "new_id": "6426ed9fd800f72c86e024fc7eeaa5a4c498600b",
+      "new_mode": 33188,
+      "new_path": "init/test_utils/service_utils.cpp"
+    }
+  ]
+}

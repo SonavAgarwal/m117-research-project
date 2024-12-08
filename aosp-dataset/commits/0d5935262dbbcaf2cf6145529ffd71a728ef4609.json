@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0d5935262dbbcaf2cf6145529ffd71a728ef4609",
+  "tree": "f481f3c3cdac3573c8557fee6bf64380e37da7cf",
+  "parents": [
+    "b124c9e86a5f8466f527501c6677b4b1b165c0b1"
+  ],
+  "author": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Wed Aug 12 13:40:31 2015 -0700"
+  },
+  "committer": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Wed Aug 12 14:04:11 2015 -0700"
+  },
+  "message": "Properly check for Blob max length\n\nsizeof(mBlob.value) is incorrect because writeBlob pads up to the next\nAES_BLOCK_SIZE\n\nBug:22802399\nChange-Id: I377edca2c7ea2cf4455f22f5f927fdad79893729\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "031f4c84ce497a04c2a6a0cd7572148f0019b2e0",
+      "old_mode": 33188,
+      "old_path": "keystore/keystore.cpp",
+      "new_id": "64809ad344ac6c3249fb1cf635c8702aa222166b",
+      "new_mode": 33188,
+      "new_path": "keystore/keystore.cpp"
+    }
+  ]
+}

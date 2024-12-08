@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2950276f61220e00749f8e24e0c773928fefaed8",
+  "tree": "b3e71a9c2675315fcc5c0a93ec5d3508094b35ed",
+  "parents": [
+    "65ff5247cb85e2bd1fb7f65228542fe8266f6d9e"
+  ],
+  "author": {
+    "name": "Fyodor Kupolov",
+    "email": "fkupolov@google.com",
+    "time": "Tue Feb 20 17:02:35 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:57:58 2018 +0000"
+  },
+  "message": "Verify last array\u0027s length in readFromParcel\n\nLength of the last array in readFromParcel should be the same as\nvalue of mNextIndex.\n\nTest: PoC app in the bug\nBug: 73252178\nChange-Id: I69f935949e945c3a036b19b4f88684d906079ea5\n(cherry picked from commit 3b8bc2e45048527d7682b24b96957c34433da382)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "956ce99c0ad8df6674f1aa3d2d28e356a6dd86d5",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/app/procstats/SparseMappingTable.java",
+      "new_id": "91b205479988a5bc416c4b4ac9bd1b684530e1e6",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/app/procstats/SparseMappingTable.java"
+    }
+  ]
+}

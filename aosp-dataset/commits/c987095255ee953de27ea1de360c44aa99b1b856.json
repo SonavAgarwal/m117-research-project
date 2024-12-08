@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c987095255ee953de27ea1de360c44aa99b1b856",
+  "tree": "31a138c70db70930497917668e0e6df6d2b116ce",
+  "parents": [
+    "6b9003b3ab00db12d0d8eb5ff81fb83f2c5e5e33"
+  ],
+  "author": {
+    "name": "John Shao",
+    "email": "johnshao@google.com",
+    "time": "Wed Jul 29 22:17:01 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:42 2020 +0000"
+  },
+  "message": "Correct vulnerability when setting pending intents on import/export notifications by setting FLAG_IMMUTABLE\n\nFor cases where we were setting an empty content intent, setContentIntent has not been required since Gingerbread\n\nBug: 161718556\nTest: build\nChange-Id: I1f62fdc077401fea2c48a31527464464f08a6b64\n(cherry picked from commit 1d595f80e9c5157f8ca0285b572c9f1463e05c58)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "13d80caa1d532c5d93b429ac68a0c1e9f5875069",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/vcard/ExportProcessor.java",
+      "new_id": "66308c6bf05e57c1d796e00eaf2e052fb5061823",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/vcard/ExportProcessor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f8f43207cc69263ee919ffd85f69ed4949e0f945",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/vcard/NotificationImportExportListener.java",
+      "new_id": "efd686189cfaf71635baf08487eb101e5c810ef0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/vcard/NotificationImportExportListener.java"
+    }
+  ]
+}

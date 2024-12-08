@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f47bc301ccbc5e6d8110afab5a1e9bac1d4ef058",
+  "tree": "2269fe3961180d8c4c0b60529dc9b68fd27b25d3",
+  "parents": [
+    "c078223146c667cea03b090444efee76ce1a8ec0"
+  ],
+  "author": {
+    "name": "fionaxu",
+    "email": "fionaxu@google.com",
+    "time": "Mon Jun 20 19:11:57 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:58:17 2016 -0700"
+  },
+  "message": "backport security fix: avoid set NITZ time to 2038\n\nBug: 29083635\nChange-Id: I21c5f4147d8146f92b7e33f0967a179ae644a263\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e6b0867abdc3d107f5b52d3d7e7ea66a689c78b5",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/cdma/CdmaServiceStateTracker.java",
+      "new_id": "85980e99c831f45c664df9459ce0dc0602cc38bd",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/cdma/CdmaServiceStateTracker.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d3a84d41c738ae0f29fad8f631111e480198ca2",
+      "old_mode": 33261,
+      "old_path": "src/java/com/android/internal/telephony/gsm/GsmServiceStateTracker.java",
+      "new_id": "03fbd7f76b85902282b1dd1d0232f3e7950a0ef7",
+      "new_mode": 33261,
+      "new_path": "src/java/com/android/internal/telephony/gsm/GsmServiceStateTracker.java"
+    }
+  ]
+}

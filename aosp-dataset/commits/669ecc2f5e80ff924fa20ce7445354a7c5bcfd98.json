@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "669ecc2f5e80ff924fa20ce7445354a7c5bcfd98",
+  "tree": "98b17dff8675f39e4b09fa433d39ffec6fe3f8a5",
+  "parents": [
+    "75ac84c0bf57d646dfae468916fcdcc071570293"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Fri Jan 30 17:38:06 2015 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:11 2016 -0800"
+  },
+  "message": "ensure /data/tombstones exists on all Android devices\n\n/data/tombstones is referenced by core platform code, but is not\nguaranteed to exist on all Android devices. Move the directory\ncreation out of device specific files and into the core\ninit.rc file.\n\nBug: https://code.google.com/p/android/issues/detail?id\u003d93207\nChange-Id: I94ae5199a6a32c4fe555ca994fc4a8345e0c9690\n\nBug: http://b/26403620\n(cherry picked from commit 0359d778a564a5c63baba08a33484fb69eda4d1e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cbcb84278839c1ca826768b6becdfb6a219b2afd",
+      "old_mode": 33188,
+      "old_path": "rootdir/init.rc",
+      "new_id": "34b10d2066a3016e561da7509a7d873738ed5d23",
+      "new_mode": 33188,
+      "new_path": "rootdir/init.rc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "abf0663ed884af7bc880a05e9529e6671eb58f39",
+  "tree": "1c916a06d8bc90f2372f8419b7c3dd49cee8cf0e",
+  "parents": [
+    "556bb0f55324e8839d7b735a0de9bc31028e839e"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Thu May 05 13:37:55 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:05 2016 -0700"
+  },
+  "message": "Remove generic socket access from untrusted processes\n\nSELinux defines various classes for various socket types, including\ntcp_socket, udp_socket, rawip_socket, netlink_socket, etc. Socket\nclasses not known to the SELinux kernel code get lumped into the generic\n\"socket\" class. In particular, this includes the AF_MSM_IPC socket\nclass.\n\nBluetooth using apps were granted access to this generic socket class at\none point in 2012. In 1601132086b054adc70e7f8f38ed24574c90bc37,\na TODO was added indicating that this access was likely unnecessary. In\ncb835a2852997dde0be2941173f8c879ebbef157, an auditallow was added to\ntest to see if this rule was actually used, and in master branch\nd0113ae0aed1a455834f26ec847b6ca8610e3b16, this rule was completely\ndeleted.\n\nRevoke access to the generic socket class for isolated_app,\nuntrusted_app, and shell for older Android releases. This is\nconceptually a backport of d0113ae0aed1a455834f26ec847b6ca8610e3b16, but\naffecting fewer domains to avoid potential breakage.\n\nAdd a neverallow rule asserting that this rule isn\u0027t present for the\nuntrusted domains. Contrary to our usual conventions, the neverallow\nrule is placed in bluetooth.te, to avoid merge conflicts and simplify\npatching.\n\nBug: 28612709\nBug: 25768265\nChange-Id: Ibfbb67777e448784bb334163038436f3c4dc1b51\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f77bd0dbf3e221a3d0b97f7cd40e1335949f5431",
+      "old_mode": 33188,
+      "old_path": "bluetooth.te",
+      "new_id": "8c8ecb1776595dfb1345d544fa0007f16b10ecd7",
+      "new_mode": 33188,
+      "new_path": "bluetooth.te"
+    }
+  ]
+}

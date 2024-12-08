@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "544294737dfc3b585465302f1f784a311659a37c",
+  "tree": "2d2c42cc22393a02c8494e3c77c275070b863cec",
+  "parents": [
+    "a9435e1ebfc0768cca850985a1bc01162c3ab352"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Jul 09 12:16:26 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 10 20:29:42 2018 +0000"
+  },
+  "message": "Remove \"public\" download feature.\n\nIt was never a supported API, and has been reported as causing\nsecurity issues, so remove it.\n\nBug: 111084083\nTest: builds\nChange-Id: I26345b192ffd55216bb8c8fdb82cb5869d68d3db\n(cherry picked from commit 35e123117be9ec5d61dbaea60f6eac06c0e80dc4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e177da177a9b20bdd8e09c7ae1a7a2faccf51acd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "db7db65aee21b4c07c8acd099b0fbbb16311d3f7",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    }
+  ]
+}

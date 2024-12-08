@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d53aced041b7214a92b1f2fd5970d895bb9934e5",
+  "tree": "fbbe3de134e7cb9f5c84034d95ef047988f22cfd",
+  "parents": [
+    "f394f12167fddbc755855d06b615509517c99f14"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Aug 27 13:49:32 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Aug 31 15:12:35 2015 +0000"
+  },
+  "message": "Fix timedtext parsing\n\nAdd bounds checking and fix other bugs.\n\nBug: 23284974\nBug: 23541506\nBug: 23542351\nBug: 23542352\nChange-Id: I53551efdf109ce1833e0c361efaf4cee7a851023\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f9c1fe093803961c4e71cf7093115abf70196cf7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/timedtext/TextDescriptions.cpp",
+      "new_id": "c762a74d08fb788bea083cd1bf9c160c52689665",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/timedtext/TextDescriptions.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0144917505e943fb572eae248d18ca83fd95fec7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/timedtext/TextDescriptions.h",
+      "new_id": "bf67f3f86344945a65ce6032e2eae78900f63276",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/timedtext/TextDescriptions.h"
+    }
+  ]
+}

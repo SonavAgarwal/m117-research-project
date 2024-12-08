@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "665ac7bc29396fd5af2ecfdfda2b9de7a507daa0",
+  "tree": "0136ae60f604954b2340da71a0fc0936fe865b01",
+  "parents": [
+    "5eb8e5a503781c4c5b21851d5aac0c072af09ad2"
+  ],
+  "author": {
+    "name": "Russell Brenner",
+    "email": "russellbrenner@google.com",
+    "time": "Mon Nov 09 11:35:42 2015 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Mon Nov 30 18:04:47 2015 -0800"
+  },
+  "message": "Block developer settings during SUW\n\nBlock access to development settings by tapping on the build number\nin \"About phone\". Once SUW has completed, taps will be allowed.\n\nBug: 25290269\nChange-Id: I9b2787712237f28fba446abab15a9e1c075d0419\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a001fd78687717edabec3c1d96950a0272efd61a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/DevelopmentSettings.java",
+      "new_id": "c80da67861163026a8829c851e233760e846349e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/DevelopmentSettings.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "88c77abd51607936cde71691d313e7d1ee1542c6",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/DeviceInfoSettings.java",
+      "new_id": "405b33df34453033eb4fdec9f765047f5b9ddd52",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/DeviceInfoSettings.java"
+    }
+  ]
+}

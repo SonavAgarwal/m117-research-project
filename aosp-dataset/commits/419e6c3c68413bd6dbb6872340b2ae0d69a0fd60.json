@@ -1,0 +1,174 @@
+)]}'
+{
+  "commit": "419e6c3c68413bd6dbb6872340b2ae0d69a0fd60",
+  "tree": "f39e4b7c0da5ee7ee4a0a7b5ea9e23f962536a56",
+  "parents": [
+    "0cc9a6e6e1f8e675c1238e5e05418cabcc699b52"
+  ],
+  "author": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Fri Aug 28 12:59:48 2015 +0100"
+  },
+  "committer": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Wed Sep 09 12:05:06 2015 +0100"
+  },
+  "message": "libutils: Fix integer overflows in VectorImpl.\n\nUse external/safe-iop to check for overflows on arithmetic\noperations.\n\nAlso remove an unnecessary copy of Vector/SharedBuffer from\ncodeflinger and use the copy from libutils instead.\n\nNote that some of the unit tests are somewhat useless due to\ntest-runner limitations : gtest\u0027s ability to filter on abort message\ndoesn\u0027t work when combined with messages formatted by android\u0027s logging\nsystem.\n\nbug: 22953624\n\n(cherry picked from commit c609c31fb56ae434caa2d0153cd0a2f74a715071)\n\nChange-Id: I61644633db6b54fa230683615de9724f7fabf6fb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "484cf50543cd9fce3472a9d5b79cc0f4bdb35f93",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/Android.mk",
+      "new_id": "8a427b3a8aaff27aa995887f3d854aa0bb5f2395",
+      "new_mode": 33188,
+      "new_path": "libpixelflinger/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "c03dd9a3911807d4deac25ba22d4ea79a0ed4c19",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/ARMAssembler.h",
+      "new_id": "e0c7646cfe524013a8a1aaec535236348a4b32b4",
+      "new_mode": 33188,
+      "new_path": "libpixelflinger/codeflinger/ARMAssembler.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8479270098c0d16d3b616d1ae32dd36841e34a78",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/Arm64Assembler.h",
+      "new_id": "c9be116147a2ea84084dd95996048fb96a3c987c",
+      "new_mode": 33188,
+      "new_path": "libpixelflinger/codeflinger/Arm64Assembler.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fa67dd072b7b8bf7d0a6ea576dc0e44a308dcec3",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/CodeCache.h",
+      "new_id": "0fb6fd5fe9cdc52e3a97b00f28d6f8d86b76ffdf",
+      "new_mode": 33188,
+      "new_path": "libpixelflinger/codeflinger/CodeCache.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "430ab064c799faf1adc26e5e30b2c9fd450c4ac9",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/MIPSAssembler.h",
+      "new_id": "8fea8cb1256a8f0d4a64008173a05ebb18ab8aeb",
+      "new_mode": 33188,
+      "new_path": "libpixelflinger/codeflinger/MIPSAssembler.h"
+    },
+    {
+      "type": "delete",
+      "old_id": "47ae9d79eeb5b118a2680eb8c01cc0e50c88cef9",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/Errors.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "9d8668b9cfbf8db9a165c0593d2d92daea1cb4bd",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/KeyedVector.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "ef453fa6c38410a080ddb0d70165c417c655acf0",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/SharedBuffer.cpp",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "d69b4179b299da935f327d914b35204013bfd3ee",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/SharedBuffer.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "a2b700542c2884db65b6c6b4ee0b12c5ea9af4e1",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/SortedVector.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "7abff072f75524dd1a4c4fc1e093bdd7ad50f161",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/TypeHelpers.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "c07a17aa5c7e8196f5dbafa557cc5e7be92b02bf",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/Vector.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "689129a656862abdb3d11e938abe20f14169b2f7",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/VectorImpl.cpp",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "56089b3251fcddb25aeadd2793998637b205be0c",
+      "old_mode": 33188,
+      "old_path": "libpixelflinger/codeflinger/tinyutils/VectorImpl.h",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "4127b995acccb3073f590da74e5de7b1fecc0ca3",
+      "old_mode": 33188,
+      "old_path": "libutils/Android.mk",
+      "new_id": "035846bb4957926e18352ae6e6513310741ab46e",
+      "new_mode": 33188,
+      "new_path": "libutils/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "30ca6635e51311710776d7fa1a396e8baaf17cb6",
+      "old_mode": 33188,
+      "old_path": "libutils/VectorImpl.cpp",
+      "new_id": "de65a6cba534d5a6c49b4290584875860ba9a0b0",
+      "new_mode": 33188,
+      "new_path": "libutils/VectorImpl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d29c05445a7e5c3573cca03bdc2c1bbee5ab2caf",
+      "old_mode": 33188,
+      "old_path": "libutils/tests/Vector_test.cpp",
+      "new_id": "801318721bbe75089910255c4252f301283ef42e",
+      "new_mode": 33188,
+      "new_path": "libutils/tests/Vector_test.cpp"
+    }
+  ]
+}

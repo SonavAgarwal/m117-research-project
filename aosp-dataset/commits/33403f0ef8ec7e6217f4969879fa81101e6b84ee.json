@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "33403f0ef8ec7e6217f4969879fa81101e6b84ee",
+  "tree": "6036db6c23094fc0aadb3703349aa97f0a86c5dd",
+  "parents": [
+    "ea63cf2b4479bcef697592e57025b63b60b2af4c"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri May 29 18:35:06 2020 -0700"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri May 29 18:44:33 2020 -0700"
+  },
+  "message": "AudioFlinger: fix fast capture silence\n\nSilencing fast catpure tracks was not properly implemented.\nFix by zeroing fast capture thread HAL read buffer if the silenced\ntrack is the only active, or by invalidating the silenced track\nif other non fast tracks are active.\n\nBug: 157708122\nTest: repro steps in the bug\nChange-Id: I88b19540815bc1491b9e76c1ae6b6f85e32afa8f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dd84bf2b0cdfdee98f8a1c63422c3ac2576a15a8",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/FastCapture.cpp",
+      "new_id": "d6d6e257cdd55d87ba9354954ebbd688352a28c5",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/FastCapture.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "53eeba59d5911ea81ea9463fac6bbdd30e8eb155",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/FastCaptureDumpState.cpp",
+      "new_id": "b8b386696bea2b84f3b5439dc9deeed5e042429f",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/FastCaptureDumpState.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6f9c4c31881e051d535baf0bc42d13f6c7966d6e",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/FastCaptureDumpState.h",
+      "new_id": "a1b8706e95ea9c070898e09ba4504368d4f32701",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/FastCaptureDumpState.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d2872327765bb3135a3de806703f38283ba8002f",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/FastCaptureState.h",
+      "new_id": "f949275e564b0cf6456a75e8f7c68eb609cb1a1a",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/FastCaptureState.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a4899f9b18bbd0d698e4953bd0b356d7c27e1d7",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.cpp",
+      "new_id": "849c05081695148c99a90c48e089a499050bb25c",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.cpp"
+    }
+  ]
+}

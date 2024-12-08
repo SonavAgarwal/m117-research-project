@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c024c5886aaf4fc98c53a761398fac5c399de789",
+  "tree": "f2ac588dc8f91e7f2270b1d0039fb658439d51a3",
+  "parents": [
+    "719eec38438445656de4b4167cc1f6751c9811a8"
+  ],
+  "author": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Mon Feb 22 15:58:57 2021 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 18 23:59:47 2021 +0000"
+  },
+  "message": "Add pkg target to snoozing alarm\n\nTest: SnoozeHelperTest\nBug: 174493336\nChange-Id: I6aaf80a11dcae2eca41d4647411126ed41587027\n(cherry picked from commit 6b5813b1f10181f3949386201c4a8f5e6ed4d00f)\n(cherry picked from commit 88854d15efbcce0a686745f7d392c87c41729452)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9a9e733cb390092af9cf6420896c6a7e4e8a12d5",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/notification/SnoozeHelper.java",
+      "new_id": "da472be811568a09d71deff51de68c0e197886c7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/SnoozeHelper.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3deeea2d45772ede6ed028da0583fb052f74e8c9",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/SnoozeHelperTest.java",
+      "new_id": "c2ead5f15ceb1558e587ebf76c25f2c366a393fe",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/SnoozeHelperTest.java"
+    }
+  ]
+}

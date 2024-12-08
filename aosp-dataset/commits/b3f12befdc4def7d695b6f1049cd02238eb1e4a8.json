@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "b3f12befdc4def7d695b6f1049cd02238eb1e4a8",
+  "tree": "8baa3b1d20f65fc3474b051a7d62e22254885fdb",
+  "parents": [
+    "43733f70eca85bd6726b446b586fcea851eff88c"
+  ],
+  "author": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Fri Jun 26 10:27:07 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:24 2020 +0000"
+  },
+  "message": "Shows a consent dialog on the local device when pairing a bluetooth low\nenergy device if the local device has a display.\n\nTag: #security\nBug: 157038281\nTest: Manual\nMerged-In: I7de396230beb84bd0fa2b0cea346523b6824472a\nChange-Id: I7de396230beb84bd0fa2b0cea346523b6824472a\n(cherry picked from commit 03580fc44067b4289d1d77bd2f3ddf1e5974cf30)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0da5585a56ed685adc4f853f4ff7f110ca037d7",
+      "old_mode": 33188,
+      "old_path": "bta/dm/bta_dm_act.cc",
+      "new_id": "d1b260c1923025bd57ea7aa0a25f5557ae338d6b",
+      "new_mode": 33188,
+      "new_path": "bta/dm/bta_dm_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "5079232e002cccbd9f20c1563f23a6153cd7c8aa",
+      "old_mode": 33188,
+      "old_path": "bta/include/bta_api.h",
+      "new_id": "b7d7d30519bc495653245775384cfd5ede8a09e1",
+      "new_mode": 33188,
+      "new_path": "bta/include/bta_api.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "63ff0e74a4d69816b2aa184a81cb08a221a67e6e",
+      "old_mode": 33188,
+      "old_path": "btif/include/btif_dm.h",
+      "new_id": "fae8929d2f342e62f743bde4c9b0df633464ac51",
+      "new_mode": 33188,
+      "new_path": "btif/include/btif_dm.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f2fcee86b4275928570c471566eeb5e2a7e42de7",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.cc",
+      "new_id": "48d32909e208952ad4b882663f286a9713546ee5",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1c4aa371182ca33d63cd09b874ee039186018032",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_ble.cc",
+      "new_id": "06a597a77cf415375558f69545a7c5c03a1b282e",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_ble.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "b291ce5daefed8c8b959dbeb54c4bd177cf21e9d",
+      "old_mode": 33261,
+      "old_path": "stack/include/btm_api_types.h",
+      "new_id": "05f12f0c2cc9fc02946433de0a04eb53b8dfb4b2",
+      "new_mode": 33261,
+      "new_path": "stack/include/btm_api_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "cee120421f87be08e205c696e39607da1a67dd26",
+      "old_mode": 33188,
+      "old_path": "stack/include/smp_api_types.h",
+      "new_id": "96e7d9efd9a15d4997ca1ae285a8cee2c3baa210",
+      "new_mode": 33188,
+      "new_path": "stack/include/smp_api_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "21b960be636131de38c131480c4fba7b20f68bba",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "1239542225cc9abf4ebbd02676916ac064368225",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "e0823569a034e2f9885ba5b776336a419ce87273",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_api.cc",
+      "new_id": "ff8cdf5017a0127c6594aba903b5b702a46df2a9",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_api.cc"
+    }
+  ]
+}

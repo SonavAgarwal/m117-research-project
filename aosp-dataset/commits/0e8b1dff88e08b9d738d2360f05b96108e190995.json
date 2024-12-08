@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0e8b1dff88e08b9d738d2360f05b96108e190995",
+  "tree": "16e4a9dc7f8925fab39746303a54343a017fa454",
+  "parents": [
+    "c4f152575bd6d8cc6db1f89806e2ba1fd1bb314f"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Dec 20 11:08:57 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fix in the case of error in the first MB in frame.\n\nIn case of error in first MB in a frame, ps_dec-\u003ei4_submb_ofst\nwas decremented to result in negative offsets.\n\nBug: 33351708\n(cherry picked from commit 56b5563f3eecb845148a2948beb3f07343784f3f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1134ef0eb8e02aba4ff4eac3fab1ab965106990b",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "0ae7e9e63d6770d030fe694fc90daa524d434a09",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e71450baa7cbac36fdd1e08490a5b41683b9fc44",
+  "tree": "377caf89e919c6950527a7ea93e7de18058759c0",
+  "parents": [
+    "5feb2a956f51b5126479a1664ebeec28cb611644"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon May 06 19:39:50 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:46 2019 +0000"
+  },
+  "message": "Zero hidl-generated structs (bufferpool)\n\nBug: 131356202\nTest: boot\nChange-Id: I9fb6f42c7500d0629dbe7ab3d52a204fa2b9920a\nMerged-In: Ie971e00e0bcc093bb49e8ab39d6ad15e22540855\n(cherry picked from commit 2d47a48e620b53772a062bb3f966461440da597b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9e741e74cf1e0f317488b6ad9b2c3786157b107c",
+      "old_mode": 33188,
+      "old_path": "codec2/vndk/bufferpool/Connection.cpp",
+      "new_id": "54f5c21992526956967eb3ceba9c9b0b23cf79f9",
+      "new_mode": 33188,
+      "new_path": "codec2/vndk/bufferpool/Connection.cpp"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+)]}'
+{
+  "commit": "a8a90255d43845e307b6d133c710b802dbece622",
+  "tree": "25e95a741ac22c5a8bdc5f0d859296f7a64f460d",
+  "parents": [
+    "4c2a3f0d0f9dac9bea02d5a45901f89e24d6597c"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Mon Jun 15 20:42:39 2020 -0700"
+  },
+  "committer": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Thu Jun 18 01:37:50 2020 +0000"
+  },
+  "message": "Add tests for revoking install permissions when definer is uninstalled.\n\nBug: 155648771\nTest: atest RemovePermissionTest\nChange-Id: I66decb0833c3a17c39ea9918b3444f0be1b6bdad\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "22329e6dc4bf7f4add415236de57ebe2869522a6",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/AndroidTest.xml",
+      "new_id": "e895763f18d98a828721066dd2027b4e59b11e23",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/AndroidTest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "466fb7f87d5be7324ee3cb42641d483c532e65f6",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/src/android/permission/cts/RemovePermissionTest.java",
+      "new_id": "57e875531db98db9360e1b0e3eb10f7571d676c5",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/src/android/permission/cts/RemovePermissionTest.java"
+    },
+    {
+      "type": "rename",
+      "old_id": "94fa99e9e16b87b43da416ebc02f5bf75b1aa17a",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionDefinerApp/Android.bp",
+      "new_id": "0679b6af8e04a37fd58188f31794d80085e10355",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionDefinerApp/Android.bp",
+      "score": 94
+    },
+    {
+      "type": "copy",
+      "old_id": "7a0e40554b4ea66c431d2b2a6413ad142c93db36",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionUserApp/AndroidManifest.xml",
+      "new_id": "2df67431b353434995e0d5e251bacca8df774fd9",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionDefinerApp/AndroidManifest.xml",
+      "score": 72
+    },
+    {
+      "type": "copy",
+      "old_id": "94fa99e9e16b87b43da416ebc02f5bf75b1aa17a",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionDefinerApp/Android.bp",
+      "new_id": "3f560deddda453a1868cf0773d4a73ca0cb48e3d",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionEscalatorApp/Android.bp",
+      "score": 94
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c339d124f4c14f6172f67b9111781e279c2b6df6",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionEscalatorApp/AndroidManifest.xml"
+    },
+    {
+      "type": "rename",
+      "old_id": "6531cec3cf29b288dc62366ac1d3181a9b3b86da",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionUserApp/Android.bp",
+      "new_id": "c75d64b567f389007e8308a414848c35ced30f61",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionUserApp/Android.bp",
+      "score": 94
+    },
+    {
+      "type": "rename",
+      "old_id": "7a0e40554b4ea66c431d2b2a6413ad142c93db36",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionUserApp/AndroidManifest.xml",
+      "new_id": "acfafa9869d2a241d7785034b66573963108e581",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstallPermissionUserApp/AndroidManifest.xml",
+      "score": 80
+    },
+    {
+      "type": "delete",
+      "old_id": "75ce5677531d2971815b3c2f4b01b41a93b22f78",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionDefinerApp/AndroidManifest.xml",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "delete",
+      "old_id": "0943be7750aba271d7527766ba8781fed04a4fb3",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/testapps/RevokePermissionWhenRemoved/InstalltimePermissionDefinerApp/res/values/strings.xml",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    }
+  ]
+}

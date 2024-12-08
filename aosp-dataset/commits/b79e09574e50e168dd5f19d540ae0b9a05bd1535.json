@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b79e09574e50e168dd5f19d540ae0b9a05bd1535",
+  "tree": "e0da7beb36c29162ac800a8afb329ee6c1f0f382",
+  "parents": [
+    "86da57f0c3d2d7185735e2bd129b65c73dda24a1"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Thu Mar 03 15:33:47 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:39 2016 -0700"
+  },
+  "message": "Remove newlines from config output\n\nSpurious newlines output while writing the config file can\ncorrupt the wpa_supplicant configuration.  Avoid writing these.\n\nBug: 27371366\nChange-Id: I3bb99b8c46dba1c81cbccc76ed0cd01abc3ccef9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4d801ccfcc769d76c5b0261871d82aa5696fb1ec",
+      "old_mode": 33188,
+      "old_path": "wpa_supplicant/config.c",
+      "new_id": "4051ae179e6075d0e40f33299af2185375ab2415",
+      "new_mode": 33188,
+      "new_path": "wpa_supplicant/config.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47750a5f1b19695ac64d6f7aa6e7e0918d3c8977",
+  "tree": "54ad3570c9ae7bd78217f32bed443454c5fe4401",
+  "parents": [
+    "fc7c2b3b0c7a83858683689bc758928e4a7cfb1c"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu May 11 14:43:54 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:02:10 2017 +0000"
+  },
+  "message": "Check chunk size\n\nto make sure we actually advance in the file\n\nBug: 37093318\nTest: decoded poc and other files with and without change\nChange-Id: I94cf65336ce4132c17c39b651dc520264f02a704\n(cherry picked from commit f01750adb0558d1885c7d5a5c8900d2187d0d38d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "296d783fa322b5df3e76a4df8e0e45750de14b10",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "8097ba4536cceb73778287f9b606a01339a10cd3",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

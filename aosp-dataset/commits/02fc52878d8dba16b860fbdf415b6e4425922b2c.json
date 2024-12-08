@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "02fc52878d8dba16b860fbdf415b6e4425922b2c",
+  "tree": "4d22447c5a62d8002f539b58513d826c01b89d13",
+  "parents": [
+    "55343c265a2e94f855f4c7a882063673040a2a86"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Mon Sep 17 15:59:30 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:24:17 2018 +0000"
+  },
+  "message": "DO NOT MERGE - Check SDU lower bound before allocate p_data\n\nBug: 112321180\nTest: SL4A BleCocTest:test_coc_insecured_connection_write_ascii\nChange-Id: Id0c9aa2097f0b6bdc2bb9fa9086daa9452188e1d\n(cherry picked from commit 6fc96f847be808a4f38eae45b5e9bbc3f18b9a2d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9c2742f562cdfd075d2edbadee31a327094763c2",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_fcr.cc",
+      "new_id": "9030096841eed16719c0fb05750eb55215b928c8",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_fcr.cc"
+    }
+  ]
+}

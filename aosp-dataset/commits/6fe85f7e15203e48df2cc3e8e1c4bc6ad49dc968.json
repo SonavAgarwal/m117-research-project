@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6fe85f7e15203e48df2cc3e8e1c4bc6ad49dc968",
+  "tree": "175705598616625d8f7cac9f55e372d6d3d1e444",
+  "parents": [
+    "304ef91624e12661e7e35c2c0c235da84a73e9c0"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Fri Aug 07 11:19:24 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:40:29 2015 -0700"
+  },
+  "message": "MPEG4Extractor.cpp: handle chunk_size \u003e SIZE_MAX\n\nchunk_size is a uint64_t, so it can legitimately be bigger\nthan SIZE_MAX, which would cause the subtraction to underflow.\n\nhttps://code.google.com/p/android/issues/detail?id\u003d182251\n\nBug: 23034759\nChange-Id: Ic1637fb26bf6edb0feb1bcf2876fd370db1ed547\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe4527d14a55d4cf5f0e01ee1b9ac8b1f7ff6068",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "03d2a2951379d5bdabe8fa7ff5cf2d4a1bc06d78",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

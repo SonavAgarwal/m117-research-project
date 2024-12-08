@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "24d7c408c52143bce7b49de82f3913fd8d1219cf",
+  "tree": "4e664c02e640a846c4c2059557b3809b5810a3d2",
+  "parents": [
+    "3ac044334c3ff6a61cb4238ff3ddaf17c7efcf49"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Jan 12 10:37:30 2016 -0800"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Jan 12 13:57:46 2016 -0800"
+  },
+  "message": "Sonivox: add SafetyNet log.\n\nBug: 26366256\nChange-Id: Ief72e01b7cc6d87a015105af847a99d3d9b03cb0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7263fdecd9605fe3f8e0b804e850e51215a94c5",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_wtengine.c",
+      "new_id": "854d4b461c5058f295b96af50ab252a18f984873",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_wtengine.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "25a70db4899197bf314cb69b7529cb543112ecd3",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_wtsynth.c",
+      "new_id": "92579512e76b18141908b538ea041b46f0adbe93",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_wtsynth.c"
+    }
+  ]
+}

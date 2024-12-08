@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "f6e1f661b95908660c2bcf200266734c30803910",
+  "tree": "301ae68ad94b7636b5d2a5bd7ae5f5140dbb0d78",
+  "parents": [
+    "10bfd644d0adaf334c036f8cda91a73984dbb7b9"
+  ],
+  "author": {
+    "name": "Mathy Vanhoef",
+    "email": "Mathy.Vanhoef@cs.kuleuven.be",
+    "time": "Fri Jul 14 15:15:35 2017 +0200"
+  },
+  "committer": {
+    "name": "Glen Kuhne",
+    "email": "kuh@google.com",
+    "time": "Mon Oct 16 09:50:37 2017 -0700"
+  },
+  "message": "hostapd: Avoid key reinstallation in FT handshake\n\nDo not reinstall TK to the driver during Reassociation Response frame\nprocessing if the first attempt of setting the TK succeeded. This avoids\nissues related to clearing the TX/RX PN that could result in reusing\nsame PN values for transmitted frames (e.g., due to CCM nonce reuse and\nalso hitting replay protection on the receiver) and accepting replayed\nframes on RX side.\n\nThis issue was introduced by the commit\n0e84c25434e6a1f283c7b4e62e483729085b78d2 (\u0027FT: Fix PTK configuration in\nauthenticator\u0027) which allowed wpa_ft_install_ptk() to be called multiple\ntimes with the same PTK. While the second configuration attempt is\nneeded with some drivers, it must be done only if the first attempt\nfailed.\n\nBug: 65245581\nTest: WiFi integration tests\nChange-Id: I9d60b25a655eeb2dc19694e49d2f34d537849a13\nMerged-In: I9d60b25a655eeb2dc19694e49d2f34d537849a13\nSigned-off-by: Mathy Vanhoef \u003cMathy.Vanhoef@cs.kuleuven.be\u003e\nSigned-off-by: Glen Kuhne \u003ckuh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e1a671203e09ec154973050d66a33c575ecb9d71",
+      "old_mode": 33188,
+      "old_path": "src/ap/ieee802_11.c",
+      "new_id": "c6234dc8f96b62002f663c058e907ec5746593df",
+      "new_mode": 33188,
+      "new_path": "src/ap/ieee802_11.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b26c04cddf5455543d3b06eb430947e07332194",
+      "old_mode": 33188,
+      "old_path": "src/ap/wpa_auth.c",
+      "new_id": "71f468b8183e35fa2c5834db3df57bb2e5e2d58c",
+      "new_mode": 33188,
+      "new_path": "src/ap/wpa_auth.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "0920a169dffb4742577d3f0768263a923fcb5c9b",
+      "old_mode": 33188,
+      "old_path": "src/ap/wpa_auth.h",
+      "new_id": "387d1468aa6774b77e9a6c16a8f1f4467b83259e",
+      "new_mode": 33188,
+      "new_path": "src/ap/wpa_auth.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c267a179d01ae2c195331e244603010f06c43582",
+      "old_mode": 33188,
+      "old_path": "src/ap/wpa_auth_ft.c",
+      "new_id": "210d300fde225f34b1a6ebc94114784371c8bfa3",
+      "new_mode": 33188,
+      "new_path": "src/ap/wpa_auth_ft.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "90318d81e887c81cfb14753411d9ad18ecb0f9c4",
+      "old_mode": 33188,
+      "old_path": "src/ap/wpa_auth_i.h",
+      "new_id": "9564f24239fa3d95112842b5a7d5cd69e7001412",
+      "new_mode": 33188,
+      "new_path": "src/ap/wpa_auth_i.h"
+    }
+  ]
+}

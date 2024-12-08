@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1607141d0d6b6b5265c8375cb1af808f2d0a71ab",
+  "tree": "db0c2a8bce8c75c976a161044992f21448c427e2",
+  "parents": [
+    "5acf81a1f4df34451b76e76a416b8a262ba7f485"
+  ],
+  "author": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Mon Jan 07 16:57:31 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:18 2019 +0000"
+  },
+  "message": "DPM: Fix regression from I54376f60ac53451ace22965d331b47cd8c2e614e\n\nFixes an issue where setting a password via DPM would never\nsatisfy a QUALITY_COMPLEX password requirement.\n\nChange-Id: I3fbc952bd44291ac22728c626b128fc0c1aae232\nMerged-In: I3fbc952bd44291ac22728c626b128fc0c1aae232\nFixes: 120915644\nBug: 110172241\nTest: atest \u0027com.android.cts.devicepolicy.DeviceAdminHostSideTestApi24#testRunDeviceOwnerPasswordTest\u0027\nTest: Set credential via DPM.resetPassword(), factory reset device to trigger FRP, verify FRP shows.\n(cherry picked from commit ea8d82c08a9d489a48ef810d7c40a4d20f806aa0)\n(cherry picked from commit b122ae9660526c83d4a7bf1c1f99107afee23001)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8f5d36abcf2c02c755d4e80ff0dad5e82d54993c",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "11fe76383c76511ab44fbd05019d6afc1e7a9142",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

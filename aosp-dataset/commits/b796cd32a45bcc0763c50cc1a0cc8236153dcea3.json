@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b796cd32a45bcc0763c50cc1a0cc8236153dcea3",
+  "tree": "ebd5f788b62c400144fd05befbed8e9e43f7f6b0",
+  "parents": [
+    "4525320403bfb85eb1629f9b43718970491f98ed"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Dec 07 22:56:03 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:11:23 2018 +0000"
+  },
+  "message": "Fix bad type for txPower in PeriodicAdvertisingReport serialization\n\nBug: 69634768\nTest: compilation\nChange-Id: Icedfbaf1ba933637e935ada0fd98aea42c73f2b2\nMerged-In: Icedfbaf1ba933637e935ada0fd98aea42c73f2b2\n(cherry picked from commit 5332988c62e2f2ededb29ac3bfc4774551fe956f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "51b93cbd64dcfbf98a34b6617751aa1c35a7cd65",
+      "old_mode": 33188,
+      "old_path": "core/java/android/bluetooth/le/PeriodicAdvertisingReport.java",
+      "new_id": "6fc8d553946e31ef45a1cef3d2ceeb93d161077e",
+      "new_mode": 33188,
+      "new_path": "core/java/android/bluetooth/le/PeriodicAdvertisingReport.java"
+    }
+  ]
+}

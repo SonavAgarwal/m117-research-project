@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9cb10d49b1319ea1207cc2f445089aa9266ffc71",
+  "tree": "ddee517c5e3398ce0ac8fa9d956027a5aaa2ce83",
+  "parents": [
+    "b58464fa783c75ba9d304f670a4392df6fa98ed8"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Tue May 30 16:01:11 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:43 2017 +0000"
+  },
+  "message": "Change MPEG2 reinit Error Handling\n\nChanging reinit handling to not notify error in case init fails.\n\nBug: 37237396\nTest: ran poc before/after on nyc-mr2\nChange-Id: I694a9d2ccee7622d9c736efac12c9ec8639911f4\n(cherry picked from commit a67eacace769095eb04b01681c99d931e68a4b08)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "634207e6241f6064d6290bb8ee587d23d8627f1b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp",
+      "new_id": "1fac739aa5dd9659f854d0792393d4959be6755a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "534bbaeead15bc3c540efd947b3a5ade62cf27be",
+  "tree": "fb92900c62e624a69ff1e62e71ef8deec3ae25f4",
+  "parents": [
+    "2f4d456c2c50fe7681f5707ec2e8af0b003f54ee"
+  ],
+  "author": {
+    "name": "Charles Chen",
+    "email": "charlesccchen@google.com",
+    "time": "Thu Sep 17 23:04:57 2020 +0800"
+  },
+  "committer": {
+    "name": "Charles Chen",
+    "email": "charlesccchen@google.com",
+    "time": "Thu Sep 17 15:33:47 2020 +0000"
+  },
+  "message": "Fix VrDisplayTest failure\n\nBefore CL[1], the system regarded system created displays as\ntrusted displays, which provided the ability to gain the focus\nwithout user\u0027s touch.\n\nAfter CL[1], the system checked if a virtual display is trusted by\nthe flag FLAG_TRUSTED. Therefore, the activity lunched on the\nVr2dDisplay can not gain the focus because Vr2dDisplay didn\u0027t\nhold the flag FLAG_TRUSTED.\n\nThis CL adds the flag to Vr2dDisplay to make it a trusted display.\n\nCL[1]: ef7b1333f0e87cd07af115719b94dd37e2de54dc\n\nBug: 168268396\nTest: Vr2DisplayTests\nChange-Id: Iac88859d3fa7cbb75214efcc6ce4a88e0eb718f2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3f2b5c231dcaac0b86db1cfb8999e68fa994415f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/vr/Vr2dDisplay.java",
+      "new_id": "a713e5b13667d17ef920b850be7bc21098a2c984",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/vr/Vr2dDisplay.java"
+    }
+  ]
+}

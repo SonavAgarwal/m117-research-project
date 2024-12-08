@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "211d59c0034ec9d88690c750ccd6da27f6952dc5",
+  "tree": "5f8c8069364c227d77c54c2e1bdc2f3b79a1b6a7",
+  "parents": [
+    "fdc6c1052bc7d89a5826904fbb4318677e8442ce"
+  ],
+  "author": {
+    "name": "Andy Lutomirski",
+    "email": "luto@amacapital.net",
+    "time": "Sat Nov 22 18:00:31 2014 -0800"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86_64, traps: Fix the espfix64 #DF fixup and rewrite it in C\n\ncommit af726f21ed8af2cdaa4e93098dc211521218ae65 upstream.\n\nThere\u0027s nothing special enough about the espfix64 double fault fixup to\njustify writing it in assembly.  Move it to C.\n\nThis also fixes a bug: if the double fault came from an IST stack, the\nold asm code would return to a partially uninitialized stack frame.\n\nFixes: 3891a04aafd668686239349ea58f3314ea2af86b\nSigned-off-by: Andy Lutomirski \u003cluto@amacapital.net\u003e\nReviewed-by: Thomas Gleixner \u003ctglx@linutronix.de\u003e\nSigned-off-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "db230f8e440dbb0a847d9a2c0e6b8a6fb9c9d314",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_64.S",
+      "new_id": "1a454d0ac8f8d8856889bb188febf8bb94fa9d6f",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_64.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "772e2a846deca5a125e06a694a6dd3ae58ceb364",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/traps.c",
+      "new_id": "74e080123ec927b5619077616933f52371558ead",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/traps.c"
+    }
+  ]
+}

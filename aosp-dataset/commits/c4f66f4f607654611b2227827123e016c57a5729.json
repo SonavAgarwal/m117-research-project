@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "c4f66f4f607654611b2227827123e016c57a5729",
+  "tree": "d4e69e0a11fa0f73dbf2c4fa66f2f9174c5f2005",
+  "parents": [
+    "e3854655e75d97552140d77cca5d20c121a17ef9"
+  ],
+  "author": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Tue May 22 16:56:35 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:18:06 2018 +0000"
+  },
+  "message": "WM: Prevent secondary display focus while keyguard is up\n\nFixes an issue where input intended for the keyguard could end up going\nto a different display.\n\nTo prevent this, make sure that only the default display can get focused\nwhen the keyguard is showing.\n\nChange-Id: I6463c44aedca06930d2c9bda7c45ffd93141308c\nMerged-In: I6463c44aedca06930d2c9bda7c45ffd93141308c\nFixes: 71786287\nTest: atest DisplayContentTests\n(cherry picked from commit 3cd5e3d9bbb3255e874b8fa27d7ed506164905dd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c4ffb4c06a26d42dd9f23e111354ae8615b37a06",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/WindowManagerPolicy.java",
+      "new_id": "235e61a129f6a9b3ec4f04673c4b59f62bcfb211",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/WindowManagerPolicy.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "da14c360f16ab341d7cccfbb15adea812dc85d1e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/policy/PhoneWindowManager.java",
+      "new_id": "d3469c2346a592067a8838729181d73b64a63661",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/policy/PhoneWindowManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "941cd4441e23ae7b37cbe82b923e6702f7dd3b4e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java",
+      "new_id": "fd34c510d98da57de56de843ddd8aec70f942fe1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a9e56f34b0d641bd6e03496343c6eea667b8811b",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/RootWindowContainer.java",
+      "new_id": "5a75262a80233752ccb96fd33e674a1e9e928231",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/RootWindowContainer.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5cc43bd90190d6879baa9d4b56096b09b5e942f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "d378fa3ca2294494e2bed6189731e05939eca818",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "10d241357ff493c1c033ababd60ce4fbbfa75742",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/wm/DisplayContentTests.java",
+      "new_id": "a6cada7b42e2ceacd339ff09f3a4ab0d5b3fe033",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/wm/DisplayContentTests.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "eca27eefb2cd36428a35c4fe2b32a9e6c1c42f37",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/wm/TestWindowManagerPolicy.java",
+      "new_id": "27ea325b8d804fc9bec2404593c559c56ec5a708",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/wm/TestWindowManagerPolicy.java"
+    }
+  ]
+}

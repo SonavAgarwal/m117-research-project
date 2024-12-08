@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "18ac2d928d163d748b77a0257bf51ed259ce9a23",
+  "tree": "b9ce6ce1f5f3d0a4936db3b5b87deaa5064e80f3",
+  "parents": [
+    "7a86a094a50fa98d773e9e90964fac762ac948b3"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Thu Dec 20 15:52:46 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:27 2019 +0000"
+  },
+  "message": "Add sanity check in huff_decode()\n\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\nBug: 119292397\nChange-Id: I33e99629665df9aa6262c90dd7ebdde4b4b9d773\n(cherry picked from commit b81f869de3f7c5b6395606d5f36cef57987eae8f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a8ccfdf7ca3d6c50879960b4ffb2f2af2b8a49f",
+      "old_mode": 33188,
+      "old_path": "libFDK/src/nlc_dec.cpp",
+      "new_id": "6e98ce0dbedf8cd9990be35b7983bcc846cacf57",
+      "new_mode": 33188,
+      "new_path": "libFDK/src/nlc_dec.cpp"
+    }
+  ]
+}

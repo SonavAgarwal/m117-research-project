@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "b1c1a377a84e06dd8ad17ddebbe30ddd1efa983f",
+  "tree": "7448e0cb38970a19efe2c465c570fca110bb9ddd",
+  "parents": [
+    "c27d3ddd2f8796963144666aa7d3d006ddcad35e"
+  ],
+  "author": {
+    "name": "Yiwei Zhang",
+    "email": "zzyiwei@google.com",
+    "time": "Wed Jul 03 13:39:32 2019 -0700"
+  },
+  "committer": {
+    "name": "Yiwei Zhang",
+    "email": "zzyiwei@google.com",
+    "time": "Fri Sep 20 13:57:24 2019 -0700"
+  },
+  "message": "GpuStats: refactor single stats pieces into a uniform way\n\nThis change makes it easy for adding single stats pieces into GpuService without\nadding or modifying the binder interface each time.\n\nBug: 141003796\nTest: adb shell dumpsys gpu\nChange-Id: I2907065a55d03a6c1494737e6f0a77f6e94272eb\nMerged-In: I2907065a55d03a6c1494737e6f0a77f6e94272eb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4a39069a0ebb15467203385dd7dd5f283b283ea1",
+      "old_mode": 33188,
+      "old_path": "libs/graphicsenv/GraphicsEnv.cpp",
+      "new_id": "bb9e263ac4629bcbfcfe240db1eed60614be7a2c",
+      "new_mode": 33188,
+      "new_path": "libs/graphicsenv/GraphicsEnv.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f9624918f09d6ec0ff1a7c1044bbca4ff8aef54",
+      "old_mode": 33188,
+      "old_path": "libs/graphicsenv/IGpuService.cpp",
+      "new_id": "db16f3cfa63b0ffdf474b4f043c9b2596133d4e7",
+      "new_mode": 33188,
+      "new_path": "libs/graphicsenv/IGpuService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5d19db493310801cc30d3e27312088a7edda2d1",
+      "old_mode": 33188,
+      "old_path": "libs/graphicsenv/include/graphicsenv/GraphicsEnv.h",
+      "new_id": "937bcd9ac61223093d86bdaef094b7af513cb9ad",
+      "new_mode": 33188,
+      "new_path": "libs/graphicsenv/include/graphicsenv/GraphicsEnv.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "34f1c7ee7e9e3b0e753370e4b355cc2a307c7aed",
+      "old_mode": 33188,
+      "old_path": "libs/graphicsenv/include/graphicsenv/IGpuService.h",
+      "new_id": "b8d0bd173c69059109c080841af814c7ebb89c6d",
+      "new_mode": 33188,
+      "new_path": "libs/graphicsenv/include/graphicsenv/IGpuService.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8accf9d450a03828a87781fece0854e7d4be605f",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/GpuService.cpp",
+      "new_id": "c8253e05c2693af3616d8f64a5401f89481c0240",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/GpuService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "822690134ab1f02adccaffe14d40c316b9a34fab",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/GpuService.h",
+      "new_id": "7d44a35814f686f0ffc732689f006ea08384c32d",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/GpuService.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "37c6abc96b56bad0c062797d05af34ec61bac97c",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/gpustats/GpuStats.cpp",
+      "new_id": "5d27e7281d479d838d674abdf0b46cb620e6ecd4",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/gpustats/GpuStats.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b293f5988d3c4cefee34e2f1ffa4dc57227c0048",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/gpustats/GpuStats.h",
+      "new_id": "378f7f470df158a84d8f20fc174ed536182dadde",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/gpustats/GpuStats.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "23506bad544124c2929480bad669f1566269070a",
+      "old_mode": 33188,
+      "old_path": "vulkan/libvulkan/driver.cpp",
+      "new_id": "a53bb5933be98cf133e0663eca693bd4c870ac20",
+      "new_mode": 33188,
+      "new_path": "vulkan/libvulkan/driver.cpp"
+    }
+  ]
+}

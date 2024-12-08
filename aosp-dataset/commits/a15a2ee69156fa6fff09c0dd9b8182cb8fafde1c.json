@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a15a2ee69156fa6fff09c0dd9b8182cb8fafde1c",
+  "tree": "cd7431778028bb857b0e21a224682e2d4a98ae28",
+  "parents": [
+    "4436f1f214d4831e4b3615b3f4fc96abf3ffa20a"
+  ],
+  "author": {
+    "name": "xinhe",
+    "email": "xinhe@google.com",
+    "time": "Fri Oct 16 11:08:15 2015 -0700"
+  },
+  "committer": {
+    "name": "xinhe",
+    "email": "xinhe@google.com",
+    "time": "Mon Oct 19 11:42:55 2015 -0700"
+  },
+  "message": "Security Vulnerability in android::onPnoNetworkFound [DO NOT MERGE]\n\n   Ask for system permission to enable ePNO\n\nb/24872703\n\nChange-Id: I8a7aafdb3f4074089777ad6b1402d4bf4954e81a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "652899e80c9440b0843aa443a991fea8f7d2213a",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiConfigStore.java",
+      "new_id": "02ddd0005c63703981927fd4e8b9aba4b44d987c",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiConfigStore.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "46058ad2c84dcfb0d2f2aa8139d18d53bdd09e18",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiServiceImpl.java",
+      "new_id": "ca85fbc50c7ff3d8bae7839aa3215bd1580f4e82",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiServiceImpl.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "871412cfa05770cfd8be0a130b68386775445057",
+  "tree": "18db7142cdadef6b21d109022cf606af566c7bb3",
+  "parents": [
+    "41c800b90de31114108a985e5d11ba94a45fcd78"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Thu Jan 11 00:14:53 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:26 2018 +0000"
+  },
+  "message": "Fix potential buffer overflow in mediadrmserver\n\nbug:71389378\ntest: gts media tests\n\nChange-Id: Ic7d4b456bc874b92fbe202e3dafb7ceac747ebc7\n(cherry picked from commit 5231cc164fe040a3ab5fcb28baae4e0a4f9fdf4c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8506d95c0ff7ff41a51d82bde4c99ec20ce6fa75",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/ICrypto.cpp",
+      "new_id": "37dc83bb8b8bbc2be77a3873d5121969d3c5d6d7",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/ICrypto.cpp"
+    }
+  ]
+}

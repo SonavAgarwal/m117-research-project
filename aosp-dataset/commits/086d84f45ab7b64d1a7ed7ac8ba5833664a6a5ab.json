@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "086d84f45ab7b64d1a7ed7ac8ba5833664a6a5ab",
+  "tree": "05678105c5712f7a425231183a207eccbe498430",
+  "parents": [
+    "c82e31a7039a03dca7b37c65b7890ba5c1e18ced"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue May 26 11:14:36 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:03:00 2015 -0700"
+  },
+  "message": "IOMX: Add buffer range check to emptyBuffer\n\nBug: 20634516\nChange-Id: If351dbd573bb4aeb6968bfa33f6d407225bc752c\n(cherry picked from commit d971df0eb300356b3c995d533289216f43aa60de)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c04d95f2f38d65e2245188b601c02e6845b3defa",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "01ce247cae59d5c620e44a03f22f1373400f03f5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

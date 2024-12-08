@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "14e2f9df79ecb25db9e88843406d738d607101b4",
+  "tree": "acd326cdb8bb9d4a5d2959a20d175aa4023fb3cb",
+  "parents": [
+    "cb4844800cb05df1279e2c2934d852aa28e71aec"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackcwyu@google.com",
+    "time": "Fri Feb 01 15:58:05 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:59 2019 +0000"
+  },
+  "message": "Merge \"Prevent OOB error in rw_i93_sm_read_ndef()\" into oc-dev am: 46f44fd653 am: e010bdd3de\nam: e079b7a95a\n\nChange-Id: I6e24e6eca85a59767f5227755389e63b32ad1254\n(cherry picked from commit baa27d0bcc73012684fab286c52a0830f0f1ccb3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bcc6421370a5cb5a54dd6a2f258b91dbd051bfeb",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "48edb7635cee1bedfb53b47b941c44a40fb0b367",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

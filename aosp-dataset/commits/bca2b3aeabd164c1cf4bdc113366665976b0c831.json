@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bca2b3aeabd164c1cf4bdc113366665976b0c831",
+  "tree": "e919bc28cacd9aa194f36ccdbc8bf7753106bba5",
+  "parents": [
+    "11ce805c9f1eb66752a5829e3cd26576f6f4ae09"
+  ],
+  "author": {
+    "name": "Beth Thibodeau",
+    "email": "ethibodeau@google.com",
+    "time": "Thu Mar 25 17:19:30 2021 -0400"
+  },
+  "committer": {
+    "name": "Beth Thibodeau",
+    "email": "ethibodeau@google.com",
+    "time": "Thu Apr 01 18:16:59 2021 +0000"
+  },
+  "message": "Increase maximum allowed size for status bar icons\n\nThe previous size was causing some apps to crash which otherwise worked\nfine. This more closely matches the hard limit in RecordingCanvas\n(which we need to stay below to prevent SystemUI from crashing).\n\nFixes: 182891864\nFixes: 182232777\nBug: 169255797\nTest: atest StatusBarIconViewTest\nTest: manual - posting notifications with different drawable sizes\nChange-Id: I8deacc651e05a202ec980eeb8bcdf4f92daea8eb\n(cherry picked from commit 5cd7976f7d2b702f803f0628f61f02491834cd41)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "25ae5c2dadef14fc59ecfc9ab919ff1a3055edfe",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/StatusBarIconView.java",
+      "new_id": "db9afd6ea799bdc07f1513f9a588ab70cc81aa2c",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/StatusBarIconView.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "daa805a8f6e6a1e5ed70027cb5ba9645e8c38918",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/tests/src/com/android/systemui/statusbar/StatusBarIconViewTest.java",
+      "new_id": "edafa6549027527c436555925fdcea3f3175bd54",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/tests/src/com/android/systemui/statusbar/StatusBarIconViewTest.java"
+    }
+  ]
+}

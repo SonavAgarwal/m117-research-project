@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f51115bd8e44c2779b74477277c6f6046916e7cf",
+  "tree": "a178d186a3a2c95529c24ddc35f02307a8c0d7e3",
+  "parents": [
+    "c86eae32ebb0cc580a13dde30fe765a96b8e701c"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Aug 12 10:41:00 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Aug 12 18:51:25 2015 +0000"
+  },
+  "message": "libstagefright: fix possible overflow in ID3.\n\nBug: 23129786\nChange-Id: I2e6b7a6927aa4362ab49dd6824bbb1abf7b4e661\n(cherry picked from commit 09da86913ca97d7a818a8917b6601527e5e18a24)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7f478f764bf5fa9ab26543d2fbc124baec13dc18",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "d34f1a7efb4feb5a35ef395659a1492705e393fa",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

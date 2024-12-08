@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "71313114a147ee3fc4a411904de02ea8b6bf7f91",
+  "tree": "d17a5d69f5d70420449c57d439d29de476ac2c28",
+  "parents": [
+    "f7135ed552cf454fbf9b1c1208c23c28f4c864fe"
+  ],
+  "author": {
+    "name": "Jaegeuk Kim",
+    "email": "jaegeuk@google.com",
+    "time": "Mon Aug 20 13:39:27 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:21 2018 +0000"
+  },
+  "message": "make_f2fs: issue discard commands on mkfs\n\nWe\u0027d better to discard whole partition for better performance.\n\nBug: 112868088\nTest: factory reset\nChange-Id: I9c0c711f2b081e4d0b4e145ab08f95b382925847\nSigned-off-by: Jaegeuk Kim \u003cjaegeuk@google.com\u003e\n(cherry picked from commit e72a0b95a8bc2911947b569821476b0d29f45c1a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d9d72b4f57bd9e88b68d72103f98ff0c3ec4b61d",
+      "old_mode": 33188,
+      "old_path": "Android.bp",
+      "new_id": "b0019ac3ae30cc08bb612b2f842939e80a68aa96",
+      "new_mode": 33188,
+      "new_path": "Android.bp"
+    }
+  ]
+}

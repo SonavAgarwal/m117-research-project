@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d2f47191538837e796e2b10c1ff7e1ee35f6e0ab",
+  "tree": "af1b0470da255756c44fa2b1c790ee2bbd84bf4d",
+  "parents": [
+    "4e32001e4196f39ddd0b86686ae0231c8f5ed944"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Sun Mar 20 10:44:44 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:55 2016 -0700"
+  },
+  "message": "codecs: check OMX buffer size before use in (h263|h264)dec\n\nBug: 27833616\nChange-Id: I0fd599b3da431425d89236ffdd9df423c11947c0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c1a149fe8710555f3777c816d5619842af7b6e4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp",
+      "new_id": "bb59ae4c6ca83ec377f32f3b20b97f8363791563",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6b8b395bed77caddfcdb6429e48c53249f0892c3",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/SoftAVC.cpp",
+      "new_id": "2f61d1257142307a306f29e2eafd4a72685f8f70",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/SoftAVC.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "069107dfa8083f47351f45184512abce5a2f2e14",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/SoftAVC.h",
+      "new_id": "b8c180788ad971118078856942b387f0bbb794b0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/SoftAVC.h"
+    }
+  ]
+}

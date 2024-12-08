@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "1f73a728ef4b6d7d350c0715bdb10d59e5b5f9be",
+  "tree": "499fca93f3bdfb0549e49a2fa2736e002b9bd698",
+  "parents": [
+    "fb7587fe4dd9d519b60c6b56803648a1a1808995"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue Mar 03 12:51:15 2020 -0800"
+  },
+  "committer": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue May 12 13:49:28 2020 -0700"
+  },
+  "message": "spdif: fix possible buffer overflow\n\nSPDIF burst buffer could overflow if given bad data.\nCheck for frmsiz in header being too low.\nPrevent numeric overflow in pending bytes calculation.\nPrevent numeric overflow when checking for buffer overflow.\n\nBug: 145262423\nTest: tests/spdif_tests.cpp\nChange-Id: Ifc7f8c8946388e19f39f35d649a5936568f8b9b2\nMerged-In: Ifc7f8c8946388e19f39f35d649a5936568f8b9b2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3c84d73cd19cced9aa1a625c0169210b0a8ca69b",
+      "old_mode": 33188,
+      "old_path": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h",
+      "new_id": "1a432d820fc9e45495a27c62bca7e1f4cc11e2fa",
+      "new_mode": 33188,
+      "new_path": "audio_utils/include/audio_utils/spdif/SPDIFEncoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6ebe9e38bd21037e0298e169f0eb7e758dcaf78f",
+      "old_mode": 33188,
+      "old_path": "audio_utils/spdif/AC3FrameScanner.cpp",
+      "new_id": "3cd9d152ac4bcac5ad94ab7414ea80ff22e82d41",
+      "new_mode": 33188,
+      "new_path": "audio_utils/spdif/AC3FrameScanner.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "81de943bb9839108f420ee331ae388604c09d244",
+      "old_mode": 33188,
+      "old_path": "audio_utils/spdif/FrameScanner.cpp",
+      "new_id": "893dfca4a4de11ce9177ec5c94c76bfba31f0bfb",
+      "new_mode": 33188,
+      "new_path": "audio_utils/spdif/FrameScanner.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "250f961ba53fe8fd1c1cf5f5a4500c0b5c15bdb9",
+      "old_mode": 33188,
+      "old_path": "audio_utils/spdif/SPDIFEncoder.cpp",
+      "new_id": "8a1bf51af74520aa0607b8548a4b4e4f039a117d",
+      "new_mode": 33188,
+      "new_path": "audio_utils/spdif/SPDIFEncoder.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7a282fb64fef25349e9d341f102d9cea3bf75baf",
+  "tree": "25f6a80e2e838fd5440f19187fca3ef3d8353f84",
+  "parents": [
+    "1171e7c047bf79e7c93342bb6a812c9edd86aa84"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Feb 23 14:48:46 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:31 2016 -0800"
+  },
+  "message": "Also fix out of bounds access for normal read\n\nPrevious fix accidentally only fixed the fragmented read case.\n\nBug: 27208621\nChange-Id: Ie16f1920b84c8aba613842659238fcd5925694ad\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6fcc0952430a2ed1b1cc0f742fa719dbbd75df78",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "f84dfdfaaeedc5708ff76812ec75267d21251588",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

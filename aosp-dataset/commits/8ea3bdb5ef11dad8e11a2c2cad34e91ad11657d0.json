@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8ea3bdb5ef11dad8e11a2c2cad34e91ad11657d0",
+  "tree": "e847fcfeec02e91a7d75243d147d21f4638a4c84",
+  "parents": [
+    "3bac8972fef779497064bd78b1ab3c15f61f861f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Oct 06 15:06:48 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:38 2020 +0000"
+  },
+  "message": "Fix memory overflow in ESQueue\n\nBug: 170240631\nTest: poc\nChange-Id: I92433cd10cba05168f42fe8552bc6a02e1f203e7\n(cherry picked from commit 91fed774acc81072616a39b353ca930563de90e3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4bb21fa96278a1b2f7c33b6f6f27c46742183c99",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/mpeg2ts/ESQueue.cpp",
+      "new_id": "ea5d2de60feb0c3ba7da6dff56ff8c11125a4f3a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/mpeg2ts/ESQueue.cpp"
+    }
+  ]
+}

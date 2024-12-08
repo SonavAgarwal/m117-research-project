@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f5927de29337fa532c64d0ef8c7cb68f7c89889",
+  "tree": "00600826f981928fc8a74e6f41e1cbf2be08fcb2",
+  "parents": [
+    "145f317ddca317878ad0474ca56ab703c99bd8a5"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Tue Nov 29 16:28:47 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:09 2017 -0800"
+  },
+  "message": "libvpx: Cherry-pick 1961a92 from upstream\n\nDescription from upstream:\nvp9,tile_worker_hook: correctly set jmp target\n\nvp9_init_macroblockd() resets the error_info to cm\u0027s global copy; this\nneeds to be set to the thread-level target to avoid jumping to the\nincorrect stack, resulting in hang or crash.\nbroken since:\n1f4a6c8 vp9/tile_worker_hook: add multiple tile decoding\nincludes v1.5.0, v1.6.0\n\nBug: 32589224\nChange-Id: Iab62663fcfa9db2a5ef4bb8de6d9ef1c17d0c882\n(cherry picked from commit d620aa3a2907f6bf218425c98c89426036c80e47)\n(cherry picked from commit 57e9ae1497cab99b0c87847a64055242deb396df)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f1916639bb16e363d24aee87e30aabd97a0fd4c2",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp9/decoder/vp9_decodeframe.c",
+      "new_id": "d0ba63136c2b377db28079b4b56aefd0d7d3bff0",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp9/decoder/vp9_decodeframe.c"
+    }
+  ]
+}

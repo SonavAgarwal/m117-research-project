@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "93068b048d0cab72805ec7dd2020b433c82e5f45",
+  "tree": "58fcc58164a5559aec7c0ee47064e2a612f2bbb2",
+  "parents": [
+    "61750f1181ace3ca390489599e36f0e3b725afb0"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Tue Apr 20 16:38:46 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:21 2021 +0000"
+  },
+  "message": "CRLF Injection in Nfc ConfirmConnectActivity\n\nCRLF Injection in Nfc ConfirmConnectActivity to Trick User Into Pairing\nvia Bluetooth Name in NDEF Message\n\nBug: 176445224\nTest: build ok\nChange-Id: I6fbe5024de40c240f45a8a0c1c8ede13e8ee259f\n(cherry picked from commit ff1fcc3edd8c01cc3f258e1ed7580af45df2f3ec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5574469a033bd728191b132be04b2cb77049a629",
+      "old_mode": 33188,
+      "old_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+      "new_id": "159eee0c972e5091e6bf30fdcb3ed65d0164539f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
+    }
+  ]
+}

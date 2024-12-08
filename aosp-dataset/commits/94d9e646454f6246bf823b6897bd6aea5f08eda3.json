@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "94d9e646454f6246bf823b6897bd6aea5f08eda3",
+  "tree": "b3b831abb4860c06a436712636dfb35793156c15",
+  "parents": [
+    "295c883fe3105b19bcd0f9e07d54c6b589fc5bff"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Mar 10 14:29:26 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:55 2016 -0700"
+  },
+  "message": "Fix initialization of AAC presentation struct\n\nOtherwise the new size checks trip on this.\n\nBug: 27207275\nChange-Id: I1f8f01097e3a88ff041b69279a6121be842f1766\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8d9bd219c05fca9df3df26f22f0d8cec7ba218f3",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/ACodec.cpp",
+      "new_id": "6399b79121faa740853af3d011f6a372bac5893f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/ACodec.cpp"
+    }
+  ]
+}

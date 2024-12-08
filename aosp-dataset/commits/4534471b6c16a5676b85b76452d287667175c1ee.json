@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4534471b6c16a5676b85b76452d287667175c1ee",
+  "tree": "0ca19773c963180d0e4dd9896d2ebb1e3350e70c",
+  "parents": [
+    "b71de110cb487a23ea250e78c7725af18525adf4"
+  ],
+  "author": {
+    "name": "Adam He",
+    "email": "adamhe@google.com",
+    "time": "Fri Oct 25 12:01:18 2019 -0700"
+  },
+  "committer": {
+    "name": "Adam He",
+    "email": "adamhe@google.com",
+    "time": "Mon Nov 18 23:22:11 2019 +0000"
+  },
+  "message": "DO NOT MERGE - Tests changed for temporary fix to disable augmented autofill requests coming from\npassword fields.\n\nBug: 141703197\nTest: atest android.autofillservice.cts.augmented\nChange-Id: Ib776ee3a4261988494bf83b8a87fad3cb6b888cc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "beb598e795eb61ac36d7efe3bb61f2bedb4ef1de",
+      "old_mode": 33188,
+      "old_path": "tests/autofillservice/src/android/autofillservice/cts/augmented/AugmentedLoginActivityTest.java",
+      "new_id": "a29f918a9fcf7f0d3ab5fb3fa27273b5857e41d2",
+      "new_mode": 33188,
+      "new_path": "tests/autofillservice/src/android/autofillservice/cts/augmented/AugmentedLoginActivityTest.java"
+    }
+  ]
+}

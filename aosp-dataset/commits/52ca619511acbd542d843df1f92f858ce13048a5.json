@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "52ca619511acbd542d843df1f92f858ce13048a5",
+  "tree": "59574ba8ab04d9c93bcbf69ecaa98c03cd88e61a",
+  "parents": [
+    "3ed3c6b79a7b9a60c475dd4936ad57b0b92fd600"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Mon Jul 10 18:08:04 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:27:18 2017 +0000"
+  },
+  "message": "Fix slice address zero for not first slice in pic\n\nThe parameter slice address is parsed only slices that are not\nfirst slice in the pic and the value cannot be zero.\n\nBug: 64380202\nTest: ran PoC on master\nChange-Id: Ic21c40cf67c916806113d2425790a27cb658b5d2\n(cherry picked from commit ed3f6bb877ae9e241afd6a6a13d5a6afd692ddc0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "56d4a4001601b9e5e4244679d4cf34269a866f14",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "70998f78f76fc81cc0b7ca5250566781dc5538cd",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d6bd6091686dd7ea3b410fb8dce3794429066453",
+  "tree": "0a80a7bade0268e609d04b9a0a8d8a9cd6e5d843",
+  "parents": [
+    "238762d94ee190b90127b93aad364657c1d8a564"
+  ],
+  "author": {
+    "name": "jiabin",
+    "email": "jiabin@google.com",
+    "time": "Thu Apr 05 17:16:20 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:32:50 2018 +0000"
+  },
+  "message": "Init gain config to prevent uninit leak.\n\nIn AudioPortConfig, we only initialize index for audio_gain_config, but\nnot other fields. That may cause uninit leak at listAudioPorts and\nlistAudioPatches.\n\nBug: 77238250\nBug: 77238762\nTest: try repo steps at the bug description.\nChange-Id: I57e3bd0598f9aa698a6fa3d3c0218b046de34e2f\n(cherry picked from commit ebe0777edcf3b9c6bde9771d65399e2363dc6e40)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fcf9070394e4ab023081451964a7ba722da0b377",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/AudioPort.cpp",
+      "new_id": "cdaffe79fcb8706aac3975929b660d5783d6739a",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/AudioPort.cpp"
+    }
+  ]
+}

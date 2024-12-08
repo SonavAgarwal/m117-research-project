@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "64bc0b8c0c495c487604d483aa57978db7f634be",
+  "tree": "131da8808ebff245165fd37b87c397893f7c944b",
+  "parents": [
+    "c5eaf3ae70d5ea3a7d390294002e4cf9859b3578"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon May 15 15:40:14 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:05:57 2017 +0000"
+  },
+  "message": "Modifying MetaData invalidates previous char*\n\nso don\u0027t use those char* after having updated the MetaData\n\nBug: 36576151\nChange-Id: I1430f3151cb929e436fbdac566cf91fc4164b934\n(cherry picked from commit 423e74647d1b8fd8b2905356af1fc2b1c67a0f3f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "23b36d46f5bc42458b35e42eb671a5ad13394572",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "2d6e7767d90e6dc13233e2f7f400f008e4e9bee3",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

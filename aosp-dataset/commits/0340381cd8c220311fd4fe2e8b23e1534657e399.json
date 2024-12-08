@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0340381cd8c220311fd4fe2e8b23e1534657e399",
+  "tree": "738cc1a6dff7899bae147c37ee521ecca0be7840",
+  "parents": [
+    "85c0ec4106659a11c220cd1210f8d76c33d9e2ae"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Dec 15 18:04:53 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Initialize ps_cur_slice-\u003eu1_mbaff_frame_flag correctly for error cases\n\nBug: 34097213\nBug: 33641588\nChange-Id: I40a6c5af7f1e46e1623ae1b399db3073123390fe\n(cherry picked from commit 1d5640f2f9013e8de68cedc3e57a6b02b495b3c2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "05a82a6bf22519aadc4b41302de3ac3c781ea67d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "80603c2248cbe741ecf788238d8716427ef00849",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

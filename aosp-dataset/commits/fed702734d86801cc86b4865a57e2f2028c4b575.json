@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fed702734d86801cc86b4865a57e2f2028c4b575",
+  "tree": "c9577f6c2205f0243ce9f7dd8655d2e621b15084",
+  "parents": [
+    "7546c106004910a4583b2d7d03c6498ecf383da7"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Dec 18 10:09:18 2015 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:49 2016 -0800"
+  },
+  "message": "Fixed out of bound reads in stack variables\n\nOut of bound reads in the following variables are fixed\n\nscaling_mat_offset in ihevcd_iquant_itrans_recon_ctb()\nai1_offset_y, ai1_offset_cb and ai1_offset_cr in ihevcd_sao_shift_ctb()\n\nThese values were read but not used\n\nb/32915871\n\nChange-Id: Ib07e2ed1bdcc600700d4e9e5d970f6cc2164ab1b\n(cherry picked from commit 4def2dfabf8afcb185942131c1e67bb3ff211f05)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a55864456f31c85a0051e29d1cf4740c2cce27cf",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_iquant_itrans_recon_ctb.c",
+      "new_id": "88ace442c32817e4fc4304915ab162644e212970",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_iquant_itrans_recon_ctb.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "27023179d662c37b95f25d42ba4d508111237f13",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_sao.c",
+      "new_id": "dc852c6476823e20f42de046130b1fb1bbbc35c5",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_sao.c"
+    }
+  ]
+}

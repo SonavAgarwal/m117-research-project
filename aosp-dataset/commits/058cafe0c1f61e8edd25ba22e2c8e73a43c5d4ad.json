@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "058cafe0c1f61e8edd25ba22e2c8e73a43c5d4ad",
+  "tree": "74996ad64de8c0898ff7935d2fff5e037149787d",
+  "parents": [
+    "576c4d816c8efe8b9bf7dc88880d8ccde3beacee"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Fri Jan 31 16:25:45 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:56 2020 +0000"
+  },
+  "message": "Add SafetyNet logging for package names read from config.\n\nBug: 145981139\nTest: manual\nChange-Id: I86c6bfc0a6e28e634e0fd201e424b7ee6882ba2c\n(cherry picked from commit 6b14ea266e9c5d72db901272f9c8e6e0ef0a51f3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dbb29470d4ee35501d6c5278bd46afd2e02d9597",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "442643d66d13633bec990fe662f45457d1ada49b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

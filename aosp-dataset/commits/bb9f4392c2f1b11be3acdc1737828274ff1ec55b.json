@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bb9f4392c2f1b11be3acdc1737828274ff1ec55b",
+  "tree": "7b7a98657e51cf1dfe99324dd10da386d98d45c4",
+  "parents": [
+    "cd44a6b68316929039721ca5254bed48280dd40b"
+  ],
+  "author": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Wed Jul 29 13:53:36 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:57 2015 -0700"
+  },
+  "message": "Fix unchecked length in Blob creation\n\nApplications can specify arbitrary blobs using insert(), check their\nlength to prevent overflow issues.\n\nBug:22802399\nChange-Id: I4097bd891c733914df70da5e2c58783081d913bf\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "63f7ee2647351c4d203421837de0208b45dcbe15",
+      "old_mode": 33188,
+      "old_path": "keystore/keystore.cpp",
+      "new_id": "58d2fd6dc4e35d0e37d703234cf45660ca06b1d9",
+      "new_mode": 33188,
+      "new_path": "keystore/keystore.cpp"
+    }
+  ]
+}

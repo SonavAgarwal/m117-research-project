@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a952197bd161ac0e03abc6acb5f48e4ec2a56e9d",
+  "tree": "38634ffb0ab1938bc94bea4df55e06001b66d961",
+  "parents": [
+    "d37eb96212c6fe4819c66bd0a1e0a2f9f7501602"
+  ],
+  "author": {
+    "name": "Riddle Hsu",
+    "email": "riddlehsu@google.com",
+    "time": "Sat Feb 22 23:20:41 2020 +0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Mon Mar 30 13:56:09 2020 -0700"
+  },
+  "message": "RESTRICT AUTOMERGE Create separated tasks for different apps from startActivities\n\nAssume there are 2 applications A, B with different uids.\nThere are 4 activities A1, A2, B1, B2 with default task\naffinity and launch mode.\n\nAfter A1 called startActivities(B1, A2, B2):\n Original   : Task(A1, B1, A2, B2)\n This Change: Task(A1, B1), Task(A2, B2)\nIn other words, the source caller cannot launch its activity\nabove the activity of other application in the same task, and\nit can still launch activity of other application in its task.\n\nBug: 145669109\nTest: run cts --test android.server.cts.StartActivityTests \\\n      -m CtsServicesHostTestCases\nChange-Id: I97bd875146a52f62b8fe82235487ccefb2955e8e\n(cherry picked from commit 973ecc619c0bb87a03481774ea9e86d2924601e4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fa2e04f70a3000fdf69c94a169f9c29dff7a2679",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStarter.java",
+      "new_id": "aec552d3e1450bdc92648c7e5de2bc29f1052cff",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStarter.java"
+    }
+  ]
+}

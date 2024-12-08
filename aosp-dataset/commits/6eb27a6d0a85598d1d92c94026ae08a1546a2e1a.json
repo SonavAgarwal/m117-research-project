@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6eb27a6d0a85598d1d92c94026ae08a1546a2e1a",
+  "tree": "1396be4ee910fea35e7bb1907d6f77043b061480",
+  "parents": [
+    "cdf9a1509b0ef1450b2b9b8c349abdbc7902be95"
+  ],
+  "author": {
+    "name": "Weng Su",
+    "email": "wengsu@google.com",
+    "time": "Thu Apr 29 18:08:56 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:47 2021 +0000"
+  },
+  "message": "[DO NOT MERGE] Modify Wi-Fi details settings to restricted style\n\n- Show restricted text in guest mode\n\n- Screenshot:\n  https://screenshot.googleplex.com/6nYcmazMM46TxaB\n\nBug: 177573895\nTest: manual test\nmake RunSettingsRoboTests \\\n       ROBOTEST_FILTER\u003dWifiNetworkDetailsFragmentTest\n\nChange-Id: I5f857b2079e0f550e4be601d27dd54dac56b2f57\n(cherry picked from commit d4cec9b628ba8004eb96adf7fca9091166981c03)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8af9a7f190539ae36e5008633bb583aac87221e5",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/wifi/details/WifiNetworkDetailsFragment.java",
+      "new_id": "9aefa7d4a34872eea795edf8db1acc4cbaa45f52",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/wifi/details/WifiNetworkDetailsFragment.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f4693cf56580e73e785416d046f9544f5b3e0fcf",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/wifi/details/WifiNetworkDetailsFragmentTest.java"
+    }
+  ]
+}

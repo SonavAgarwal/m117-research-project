@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68035c80e129c4cfec659aac4180354530b26527",
+  "tree": "8c677f775193224437fa16928d3b228a2937b1eb",
+  "parents": [
+    "d239aa00fe7bb40175822da4b4300c140877fe06"
+  ],
+  "author": {
+    "name": "Will Deacon",
+    "email": "will@kernel.org",
+    "time": "Fri Nov 08 16:48:38 2019 +0100"
+  },
+  "committer": {
+    "name": "Mauro Carvalho Chehab",
+    "email": "mchehab+huawei@kernel.org",
+    "time": "Thu Jan 23 13:15:23 2020 +0100"
+  },
+  "message": "media: uvcvideo: Avoid cyclic entity chains due to malformed USB descriptors\n\nWay back in 2017, fuzzing the 4.14-rc2 USB stack with syzkaller kicked\nup the following WARNING from the UVC chain scanning code:\n\n  | list_add double add: new\u003dffff880069084010, prev\u003dffff880069084010,\n  | next\u003dffff880067d22298.\n  | ------------[ cut here ]------------\n  | WARNING: CPU: 1 PID: 1846 at lib/list_debug.c:31 __list_add_valid+0xbd/0xf0\n  | Modules linked in:\n  | CPU: 1 PID: 1846 Comm: kworker/1:2 Not tainted\n  | 4.14.0-rc2-42613-g1488251d1a98 #238\n  | Hardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS Bochs 01/01/2011\n  | Workqueue: usb_hub_wq hub_event\n  | task: ffff88006b01ca40 task.stack: ffff880064358000\n  | RIP: 0010:__list_add_valid+0xbd/0xf0 lib/list_debug.c:29\n  | RSP: 0018:ffff88006435ddd0 EFLAGS: 00010286\n  | RAX: 0000000000000058 RBX: ffff880067d22298 RCX: 0000000000000000\n  | RDX: 0000000000000058 RSI: ffffffff85a58800 RDI: ffffed000c86bbac\n  | RBP: ffff88006435dde8 R08: 1ffff1000c86ba52 R09: 0000000000000000\n  | R10: 0000000000000002 R11: 0000000000000000 R12: ffff880069084010\n  | R13: ffff880067d22298 R14: ffff880069084010 R15: ffff880067d222a0\n  | FS:  0000000000000000(0000) GS:ffff88006c900000(0000) knlGS:0000000000000000\n  | CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033\n  | CR2: 0000000020004ff2 CR3: 000000006b447000 CR4: 00000000000006e0\n  | Call Trace:\n  |  __list_add ./include/linux/list.h:59\n  |  list_add_tail+0x8c/0x1b0 ./include/linux/list.h:92\n  |  uvc_scan_chain_forward.isra.8+0x373/0x416\n  | drivers/media/usb/uvc/uvc_driver.c:1471\n  |  uvc_scan_chain drivers/media/usb/uvc/uvc_driver.c:1585\n  |  uvc_scan_device drivers/media/usb/uvc/uvc_driver.c:1769\n  |  uvc_probe+0x77f2/0x8f00 drivers/media/usb/uvc/uvc_driver.c:2104\n\nLooking into the output from usbmon, the interesting part is the\nfollowing data packet:\n\n  ffff880069c63e00 30710169 C Ci:1:002:0 0 143 \u003d 09028f00 01030080\n  00090403 00000e01 00000924 03000103 7c003328 010204db\n\nIf we drop the lead configuration and interface descriptors, we\u0027re left\nwith an output terminal descriptor describing a generic display:\n\n  /* Output terminal descriptor */\n  buf[0]\t09\n  buf[1]\t24\n  buf[2]\t03\t/* UVC_VC_OUTPUT_TERMINAL */\n  buf[3]\t00\t/* ID */\n  buf[4]\t01\t/* type \u003d\u003d 0x0301 (UVC_OTT_DISPLAY) */\n  buf[5]\t03\n  buf[6]\t7c\n  buf[7]\t00\t/* source ID refers to self! */\n  buf[8]\t33\n\nThe problem with this descriptor is that it is self-referential: the\nsource ID of 0 matches itself! This causes the \u0027struct uvc_entity\u0027\nrepresenting the display to be added to its chain list twice during\n\u0027uvc_scan_chain()\u0027: once via \u0027uvc_scan_chain_entity()\u0027 when it is\nprocessed directly from the \u0027dev-\u003eentities\u0027 list and then again\nimmediately afterwards when trying to follow the source ID in\n\u0027uvc_scan_chain_forward()\u0027\n\nAdd a check before adding an entity to a chain list to ensure that the\nentity is not already part of a chain.\n\nLink: https://lore.kernel.org/linux-media/CAAeHK+z+Si69jUR+N-SjN9q4O+o5KFiNManqEa-PjUta7EOb7A@mail.gmail.com/\n\nCc: \u003cstable@vger.kernel.org\u003e\nFixes: c0efd232929c (\"V4L/DVB (8145a): USB Video Class driver\")\nReported-by: Andrey Konovalov \u003candreyknvl@google.com\u003e\nSigned-off-by: Will Deacon \u003cwill@kernel.org\u003e\nSigned-off-by: Laurent Pinchart \u003claurent.pinchart@ideasonboard.com\u003e\nSigned-off-by: Mauro Carvalho Chehab \u003cmchehab+huawei@kernel.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "428235ca263572ae8187eb99206ddf452310a7d9",
+      "old_mode": 33188,
+      "old_path": "drivers/media/usb/uvc/uvc_driver.c",
+      "new_id": "2b688cc39bb816256fa13802b3a07abedcc13aff",
+      "new_mode": 33188,
+      "new_path": "drivers/media/usb/uvc/uvc_driver.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "98f11fd1a4752beed56b5fe7a4097ec0ae0c74b3",
+  "tree": "7031a01d0bc5a97a33b487a1428093e90368bbd3",
+  "parents": [
+    "99131cf64253cf997d8ee6e356843e376a141846"
+  ],
+  "author": {
+    "name": "Sanket Padawe",
+    "email": "sanketpadawe@google.com",
+    "time": "Thu Nov 12 14:55:51 2015 -0800"
+  },
+  "committer": {
+    "name": "Sanket Padawe",
+    "email": "sanketpadawe@google.com",
+    "time": "Thu Nov 12 23:54:06 2015 +0000"
+  },
+  "message": "Uncheck checkbox for contact sharing by default for non carkit devices.\n\n+ In BT pairing dialog, uncheck checkbox for contact sharing by default\nfor devices not recognized as carkits at pair time.\n\nBug: 23607427\nChange-Id: I7f1d40d86e713e248d3c225459be4895c4f75d76\n(cherry picked from commit dbc47fb262a4273417d99dabab757854aa3b0eaf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7fa31b3f04ae3b6e71ca6404fcc6f6fb907d2e3d",
+      "old_mode": 33261,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPairingDialog.java",
+      "new_id": "1ff99f787a386b915efbc8e6a1a0e6bbd769a534",
+      "new_mode": 33261,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPairingDialog.java"
+    }
+  ]
+}

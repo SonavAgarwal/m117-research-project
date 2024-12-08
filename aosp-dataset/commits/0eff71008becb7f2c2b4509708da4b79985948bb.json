@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "0eff71008becb7f2c2b4509708da4b79985948bb",
+  "tree": "143c8b6a1bab7e25e0857f4b4f9991bbe0349de6",
+  "parents": [
+    "8ea80f29ea5fdf383ee3ae59ce35e55421a339f8"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Mon Apr 03 12:46:02 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:07 2017 -0700"
+  },
+  "message": "DO NOT MERGE: Fix XPointer paths beginning with range-to\n\nThe old code would invoke the broken xmlXPtrRangeToFunction. range-to\nisn\u0027t really a function but a special kind of location step. Remove\nthis function and always handle range-to in the XPath code.\n\nThe old xmlXPtrRangeToFunction could also be abused to trigger a\nuse-after-free error with the potential for remote code execution.\n\nFound with afl-fuzz.\n\nFixes CVE-2016-5131.\n\nBug: 36554209\nChange-Id: I2bd369290a884c432d16796884d48db6285f8502\n(cherry picked from commit e875e1cd1fc92fd2daa57826024125cbd0b195c7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b1463830570adfca9a6937bab68a300b0bfe78c0",
+      "old_mode": 33188,
+      "old_path": "test/XPath/xptr/vidbase",
+      "new_id": "884b1065d7fdddf815411ffc48cf2e7287d7ea8c",
+      "new_mode": 33188,
+      "new_path": "test/XPath/xptr/vidbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "751665b836a3f49e5df0eb74681b78556bf7c1d0",
+      "old_mode": 33188,
+      "old_path": "xpath.c",
+      "new_id": "67afbca5eb3db71e015c3e20f7ffedcdec3a31f6",
+      "new_mode": 33188,
+      "new_path": "xpath.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e86b445cb7b07cc06c209fe7f58985773bfc1779",
+      "old_mode": 33188,
+      "old_path": "xpointer.c",
+      "new_id": "d8a2e5994c8856906aabb031dcb52845269be13c",
+      "new_mode": 33188,
+      "new_path": "xpointer.c"
+    }
+  ]
+}

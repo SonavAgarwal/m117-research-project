@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d1d248d10cf03498efb7041f1a8c9c467482a19d",
+  "tree": "22e9a5d7790a57d7f341f1d36ec4ce8269c7183b",
+  "parents": [
+    "505b9350f6bbee90c68d7d89bf13075283907e66"
+  ],
+  "author": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Mon Jul 18 14:10:18 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:38 2016 -0700"
+  },
+  "message": "Make TTY broadcasts protected\n\nCurrently, any app can broadcast the intent to update the TTY mode. This\nchange updates the intents to protected broadcasts so that only system\ncan broadcast them. Otherwise, a SecurityException will be thown.\n\nBug: 29832693\nChange-Id: Ic9a91be3d8d15043e3165b766348cff301dd5da1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "61257f8f949398d3c740c777fcf70be90200dd41",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "b5e3e002b53ab668caca8bdbe36a5b02d0e09f9d",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

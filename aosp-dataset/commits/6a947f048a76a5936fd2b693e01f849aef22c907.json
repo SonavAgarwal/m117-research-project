@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6a947f048a76a5936fd2b693e01f849aef22c907",
+  "tree": "54326e3b168832fe34d393dcd4f709c7a2b000cc",
+  "parents": [
+    "8e81142af3dceb913ca50f67df3ded84233f932a"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Fri Aug 24 21:50:35 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:20:02 2018 +0000"
+  },
+  "message": "Verify number of Map entries written to Parcel\n\nMake sure the number of entries written by Parcel#writeMapInternal\nmatches the size written. If a mismatch were allowed, an exploitable\nscenario could occur where the data read from the Parcel would not\nmatch the data written.\n\nFixes: 112859604\nTest: cts-tradefed run cts -m CtsOsTestCases -t android.os.cts.ParcelTest\n\nChange-Id: I325d08a8b66b6e80fe76501359c41b6656848607\nMerged-In: I325d08a8b66b6e80fe76501359c41b6656848607\n(cherry picked from commit 057a01d1f38e9b46d3faa4059fdd7c8717681ea0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "514292872e90d917a334d7073271e8e6763ed890",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/Parcel.java",
+      "new_id": "460f12510d451f82e570a6f437e3c9bc5d8f1277",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/Parcel.java"
+    }
+  ]
+}

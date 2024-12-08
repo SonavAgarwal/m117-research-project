@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "297598898683b81e921474e6e74c0ddaedbb8bb5",
+  "tree": "c9747d80624ad35f0f524996497181a191273b8a",
+  "parents": [
+    "bf9ff0c5215861ab673e211cd06e009f3157aab2"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Oct 24 17:05:12 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:11 2018 +0000"
+  },
+  "message": "SDP: Check p_end in save_attr_seq and add_attr\n\nBug: 115900043\nTest: Sanity pairing and SDP PTS\nChange-Id: Ib642f79ed22b65ede5ff786cb1e163d172480f11\n(cherry picked from commit b8a5081b00fc9730092d8392786f3f4e659cb602)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "95f55bf364971ff5f021da80fa228e16b1deaf1e",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_discovery.cc",
+      "new_id": "1ca2ad3ede6e2dcc26bf470b798d0b5464240a88",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_discovery.cc"
+    }
+  ]
+}

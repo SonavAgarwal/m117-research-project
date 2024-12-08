@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "55271d454881b67ff38485fdd97598c542cc2d55",
+  "tree": "1ad23b2daa7530e3920c73bb7a5723224188de08",
+  "parents": [
+    "4e4743a354e26467318b437892a9980eb9b8328a"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Wed Nov 11 10:23:43 2015 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:34:48 2016 -0700"
+  },
+  "message": "WifiEnterpriseConfiguration: Do not print credentials in toString\n\nBUG:25624963\nChange-Id: I939a12a27d6b915d8a9cc8b142f645fba0ee42ec\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "59b22bda08335414ed1274eaa6e21b8b8d76ab3a",
+      "old_mode": 33188,
+      "old_path": "wifi/java/android/net/wifi/WifiEnterpriseConfig.java",
+      "new_id": "16035ad803531d6efa3eedb94ad0c9aab65154e1",
+      "new_mode": 33188,
+      "new_path": "wifi/java/android/net/wifi/WifiEnterpriseConfig.java"
+    }
+  ]
+}

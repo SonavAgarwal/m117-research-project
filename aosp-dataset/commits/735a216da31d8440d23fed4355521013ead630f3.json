@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "735a216da31d8440d23fed4355521013ead630f3",
+  "tree": "a77e80cfdf86ea636e0d82712f1d4cdde0a8a753",
+  "parents": [
+    "097d262fda183f09ac337a5db6f80e52c152c328"
+  ],
+  "author": {
+    "name": "Pavel Grafov",
+    "email": "pgrafov@google.com",
+    "time": "Thu Mar 18 22:46:08 2021 +0000"
+  },
+  "committer": {
+    "name": "Pavel Grafov",
+    "email": "pgrafov@google.com",
+    "time": "Thu Apr 01 12:39:32 2021 +0100"
+  },
+  "message": "Prevent disconnecting admin-configured VPN\n\nFirst, if the VPN is configured by an admin, the preference is\ndisabled and tapping on it will results in a policy disclouser\ndialog.\nIn addition restriction checks in the dialog also check if the\nVPN is admin-configured.\n\nBug: 179975048\nTest: Manual, setting VPN in profile and primary user and via DPM API.\nTest: make RunSettingsRoboTests -j\nMerged-In: Id59d2ac2782e83601bc3093d3a092faea36ff5d9\nChange-Id: Id59d2ac2782e83601bc3093d3a092faea36ff5d9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ea9e546a6e56c9817eef1fde1cd4184d446d9b26",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/vpn2/AppDialogFragment.java",
+      "new_id": "60c65965a00ea187ce1c3ffd7b227ded48a2cdf0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/vpn2/AppDialogFragment.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6b64250df327f5a500b8b71e89fd764ea0f64545",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/vpn2/AppPreference.java",
+      "new_id": "8ee2f5f2d0ce7c698a5ae8ad12da17676d63f17c",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/vpn2/AppPreference.java"
+    }
+  ]
+}

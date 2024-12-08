@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ea309b07ac2309671a4462c8b747f731b58c6d5b",
+  "tree": "73170a4a5fd8da36daf67cbd471ddc11a8843cf6",
+  "parents": [
+    "02a2efe9a7bddf4823af4bc66e2f18c6e96e4491"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Tue Apr 23 13:47:45 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:57 2019 +0000"
+  },
+  "message": "Check access to user and password fields in APN db\n\nWhen apps query the APN db and filter on the user or password fields,\nmake sure they have the proper permission for accessing APN data.\n\nBug: 124107808\nTest: CTS\nMerged-In: I96dc8d2b82571e31c958ae3d243c8d5daebea01c\nMerged-In: Ia7be0ecdfca5e7adf6163dc015a413a98f1b9287\nChange-Id: I96dc8d2b82571e31c958ae3d243c8d5daebea01c\n(cherry picked from commit 9a74213831bac05c1bbc3183ab8e2f182e5e50cb)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9be49fecfa0096efde0913eccd96608bc89a4d9e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/telephony/SqlTokenFinder.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "df1e58ca2199fa409c09e13e188924140ab84ecb",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/telephony/TelephonyProvider.java",
+      "new_id": "8ff9121ee7b6f3175c821bca4f7fee76bf8ebbd2",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/telephony/TelephonyProvider.java"
+    }
+  ]
+}

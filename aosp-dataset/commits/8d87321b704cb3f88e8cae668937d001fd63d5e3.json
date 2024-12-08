@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8d87321b704cb3f88e8cae668937d001fd63d5e3",
+  "tree": "be464d7766a1405655e7b5213a4b610f0d1ad45f",
+  "parents": [
+    "5a856f2092f7086aa0fea9ae06b9255befcdcd34"
+  ],
+  "author": {
+    "name": "mspector@google.com",
+    "email": "mspector@google.com",
+    "time": "Mon Feb 08 17:07:06 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 15:07:03 2016 -0800"
+  },
+  "message": "3 uninitialized variables in IOMX.cpp\n\nUninitialized MetadataBufferType pointer in case:\nSET_INPUT_SURFACE\nSTORE_META_DATA_IN_BUFFERS\nCREATE_INPUT_SURFACE\n\nFix: initialize them to kMetadataBufferTypeInvalid\n\nBug: 26324358\nChange-Id: Ib3bcac9bedc98bc65efa39f67cdbffbd90b374c9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8f55eb9a3b5297b811cbcc8f085468fbb19de17e",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "07f369778cf8434d71a954976e3925a035597384",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    }
+  ]
+}

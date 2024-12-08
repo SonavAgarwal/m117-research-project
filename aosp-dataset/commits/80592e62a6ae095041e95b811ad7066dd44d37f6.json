@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "80592e62a6ae095041e95b811ad7066dd44d37f6",
+  "tree": "9efbd9228978118d6882c9220cddd4c96d59aced",
+  "parents": [
+    "71fe9d0ff90fee7a15e9be352f87adf638d82d8d"
+  ],
+  "author": {
+    "name": "Max Bires",
+    "email": "jbires@google.com",
+    "time": "Wed Nov 29 14:38:48 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:31:56 2018 +0000"
+  },
+  "message": "Fixing security vuln by tightening race condition window.\n\nA proper fix for this feature requires reworking binder permission\nchecking to take the selinux context and not the pid. This is feature\nwork that should be done for P to properly fix these race conditions\nthat occur elsewhere in the code.\n\nBug: 68217699\nTest: KeyStore keygen permissions cannot be bypassed through PID cycling\nChange-Id: I1ba5210010d6c413c9b1dbde3df0cc566400bfac\nMerged-In: I1ba5210010d6c413c9b1dbde3df0cc566400bfac\n(cherry picked from commit ef4f067c03543d8c8f2f8218bc69af12692ba000)\n(cherry picked from commit 05fbbe5f3d47454a85da374cad9b54e4978c2c70)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb5fe86b1058409dd7e599c23d5a16c1428b9cad",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.cpp",
+      "new_id": "be13a7b28f3cca4c072402be21c710bd89182a04",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.cpp"
+    }
+  ]
+}

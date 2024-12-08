@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a9a7f65a10b7514a4070a93d419796498926b5b3",
+  "tree": "f2e4afd1cb7749807da2f63feb49fcc2feb2fa24",
+  "parents": [
+    "a44860c880327bb57ac5ad843ffdc5963a55b9cf"
+  ],
+  "author": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Thu Jun 18 19:00:18 2020 -0700"
+  },
+  "committer": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Fri Jun 19 11:20:21 2020 -0700"
+  },
+  "message": "Stop expecting WifiConfig extra from CONFIGURED_NETWORKS_CHANGED_ACTION broadcast\n\nWifiConfig is no longer sent in this broadcast\ndue to privacy concerns, so stop reading this\nextra. Instead, query WifiManager to find the\nmatching WifiConfiguration to update.\n\nBug: 158874479\nTest: make RunSettingsRoboTests -j40 ROBOTEST_FILTER\u003d\"com.android.settings.wifi.details.WifiDetailPreferenceControllerTest\"\nChange-Id: Ie52339220acbbe111a6aa5f785fbfa409c405b5b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7616c4bda50483e9e3b2e7a5dc797dc007a695f0",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java",
+      "new_id": "8dd8d7ad6a4673368c6c15828fefd5fe3e0d864e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/wifi/details/WifiDetailPreferenceController.java"
+    }
+  ]
+}

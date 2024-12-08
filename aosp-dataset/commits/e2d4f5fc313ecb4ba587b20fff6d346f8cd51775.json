@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e2d4f5fc313ecb4ba587b20fff6d346f8cd51775",
+  "tree": "eed8293260a8ad75c741ba7906c530e7bb1e476f",
+  "parents": [
+    "82f050f736e0bbf5ef7fe8b4dcd76ecb0a590334"
+  ],
+  "author": {
+    "name": "Todd Kennedy",
+    "email": "toddke@google.com",
+    "time": "Thu Sep 22 13:25:46 2016 -0700"
+  },
+  "committer": {
+    "name": "Todd Kennedy",
+    "email": "toddke@google.com",
+    "time": "Thu Sep 22 13:26:50 2016 -0700"
+  },
+  "message": "Force APKs to be streamed\n\nWhen using the new \"cmd\" command, APKs must be streamed instead of specifying\na file.\n\nChange-Id: I977cd817ac545d7c5293f53b9fa4b155bea7449e\nFixes: 31251489\nTest: manually installed packages using \u0027adb install\u0027, \u0027adb shell cmd package install\u0027 and \u0027adb shell pm install\u0027\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e5ddfd09d82be48e91a5f579335c61934d73f799",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerShellCommand.java",
+      "new_id": "b6cecc94aecbcf116e82ac14e5511303f817c4d7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerShellCommand.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f04f2b72c6656659274eacb51dd7558e19914f89",
+  "tree": "541a2f2c5844833ff53bbd9a22e4512ad144bcb2",
+  "parents": [
+    "9817e77d44b65abce2aba7f4d6c6372ed09a4a52"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 05 16:19:48 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:32 2019 +0000"
+  },
+  "message": "Fix type confusion in libpac\n\nFrom the upstream patch\n(https://chromium.googlesource.com/v8/v8.git/+/55a98076827edac8eba775f8025df3749bcd8367%5E%21/#F0):\n\n\"\"\"\nFix regexp fast path in MaybeCallFunctionAtSymbol\n\nThe regexp fast path in MaybeCallFunctionAtSymbol had an issue in which\nwe\u0027d call ToString after checking that the given {object} was a fast\nregexp and deciding to take the fast path. This is invalid since\nToString() can call into user-controlled JS and may mutate {object}.\n\nThere\u0027s no way to place the ToString call correctly in this instance:\n1 before BranchIfFastRegExp, it\u0027s a spec violation if we end up on the\n  slow regexp path;\n2 the problem with the current location is already described above;\n3 and we can\u0027t place it into the fast-path regexp builtin (e.g.\n  RegExpReplace) either due to the same reasons as 1.\n\nThe solution in this CL is to restrict the fast path to string\narguments only, i.e. cases where ToString would be a nop and can safely\nbe skipped.\n\"\"\"\n\nBug: 117556606\n\nTest: /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\n\nChange-Id: Ifb58de2b3c547c442f1ad69e0bca0fa934d1f728\n(cherry picked from commit ce91afbb1b8ed1c0bbde11609be1f93e4bbfa461)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7cef567cf9555a22e4ce27029a4b61db6410d91a",
+      "old_mode": 33188,
+      "old_path": "src/builtins/builtins-string.cc",
+      "new_id": "04be7a3f2bde988ec08169a88b5763b0f5f89622",
+      "new_mode": 33188,
+      "new_path": "src/builtins/builtins-string.cc"
+    }
+  ]
+}

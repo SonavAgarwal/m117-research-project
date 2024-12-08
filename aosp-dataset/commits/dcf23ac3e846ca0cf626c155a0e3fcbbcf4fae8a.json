@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "dcf23ac3e846ca0cf626c155a0e3fcbbcf4fae8a",
+  "tree": "bcec3946a19e79751a97280bed14a633ad1a8ff8",
+  "parents": [
+    "5076190daded2197f62fe92cf69674488be44175"
+  ],
+  "author": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@linux-foundation.org",
+    "time": "Wed Mar 18 07:52:21 2020 -0400"
+  },
+  "committer": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@linux-foundation.org",
+    "time": "Wed Mar 18 13:03:38 2020 -0700"
+  },
+  "message": "locks: reinstate locks_delete_block optimization\n\nThere is measurable performance impact in some synthetic tests due to\ncommit 6d390e4b5d48 (locks: fix a potential use-after-free problem when\nwakeup a waiter). Fix the race condition instead by clearing the\nfl_blocker pointer after the wake_up, using explicit acquire/release\nsemantics.\n\nThis does mean that we can no longer use the clearing of fl_blocker as\nthe wait condition, so switch the waiters over to checking whether the\nfl_blocked_member list_head is empty.\n\nReviewed-by: yangerkun \u003cyangerkun@huawei.com\u003e\nReviewed-by: NeilBrown \u003cneilb@suse.de\u003e\nFixes: 6d390e4b5d48 (locks: fix a potential use-after-free problem when wakeup a waiter)\nSigned-off-by: Jeff Layton \u003cjlayton@kernel.org\u003e\nSigned-off-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3b942ecdd4be76c3c1bb5e0c996bf34a41357f60",
+      "old_mode": 33188,
+      "old_path": "fs/cifs/file.c",
+      "new_id": "8f9d849a00125c5a21dcbe6fa904b3d5df133f7c",
+      "new_mode": 33188,
+      "new_path": "fs/cifs/file.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "426b55d333d5b1d85c032ead9c7a82e9ccef9a07",
+      "old_mode": 33188,
+      "old_path": "fs/locks.c",
+      "new_id": "b8a31c1c4fff3c2a4e35c57a953d9bf025569a4b",
+      "new_mode": 33188,
+      "new_path": "fs/locks.c"
+    }
+  ]
+}

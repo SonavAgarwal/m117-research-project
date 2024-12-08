@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6b2d0bb5460d92abcd5b5b95b269ba2348039cd1",
+  "tree": "cef0220f2034f9f73984611f4d9e47ffd55f7d58",
+  "parents": [
+    "2d210988322c344b2c95337472bda94e13923f99"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Sun Sep 08 22:55:33 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:49 2019 +0000"
+  },
+  "message": "Add boundary check in nfa_hci_handle_admin_gate_rsp\n\nBug: 124524315\nTest: Nfc Enable/Disable with NFC SIM\nMerged-In: Ic5b9398f7fc4f3aa8c83bd902e47d7785c5a6161\nChange-Id: Ic5b9398f7fc4f3aa8c83bd902e47d7785c5a6161\nExempt-From-Owner-Approval: new owner approved\n(cherry picked from commit dc58f77ff10e8a6502208249741ab6879c038bf1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "89a56ca3788dada6a946db1c4c34e99f243e4194",
+      "old_mode": 33188,
+      "old_path": "src/nfa/hci/nfa_hci_act.cc",
+      "new_id": "4ad97540e1032c9438dac42ff00c5cdb1ef46b40",
+      "new_mode": 33188,
+      "new_path": "src/nfa/hci/nfa_hci_act.cc"
+    }
+  ]
+}

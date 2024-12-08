@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8ec845c8fe0f03bc57c901bc484541bdd6a7cf80",
+  "tree": "4e12649c0f396e454cc55e630c52ed3e05c8f52c",
+  "parents": [
+    "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Fri May 15 13:40:15 2015 -0700"
+  },
+  "committer": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Mon Aug 17 11:02:09 2015 -0700"
+  },
+  "message": "stagefright: check IMemory::pointer() before using the allocation\n\nbug: 19779574\nChange-Id: I4ffe8c3fadc07da211f421e75ee83010b01d9cbb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "92768183c7ce87b17cec8da3130a6ddf5b38a5c9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/ACodec.cpp",
+      "new_id": "2c9af32ba8fb858bd5f9119b097941d7561a66ac",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/ACodec.cpp"
+    }
+  ]
+}

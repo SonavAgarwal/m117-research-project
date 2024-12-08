@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4523a5863f7d8f449600e85e946cfdc9cff408b2",
+  "tree": "2f21c816c4170ebe9e512207ad78bf2ead5be492",
+  "parents": [
+    "fb7587fe4dd9d519b60c6b56803648a1a1808995"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Wed Mar 04 11:54:59 2020 -0800"
+  },
+  "committer": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue May 12 20:55:38 2020 +0000"
+  },
+  "message": "audio_utils: test SPDIFEncoder\n\nTest SPDIF and AC3FrameScanner\n\nBug: 145262423\nTest: atest spdif_tests\nTest: But if that does not work, try this:\nTest: mmm system/media/audio_utils\nTest: adb push $OUT/data/nativetest64/spdif_tests/spdif_tests /system/bin/.\nTest: adb shell spdif_tests\nChange-Id: I411a9b911f5e5e7a0528f9a9bc4bcb29e0657b62\nMerged-In: I411a9b911f5e5e7a0528f9a9bc4bcb29e0657b62\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e104868fde5f955665727bb783b1fd0e57612166",
+      "old_mode": 33188,
+      "old_path": "audio_utils/tests/Android.bp",
+      "new_id": "25357e066360532351eeeb474a19faa4239107ed",
+      "new_mode": 33188,
+      "new_path": "audio_utils/tests/Android.bp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "96a8a16b05c3b09421090741edf7cac80538bb0f",
+      "new_mode": 33188,
+      "new_path": "audio_utils/tests/spdif_tests.cpp"
+    }
+  ]
+}

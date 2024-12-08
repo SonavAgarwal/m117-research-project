@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "dfbbb54f14f83d45ad06a91aa76ed8260eb795d5",
+  "tree": "495a25d6633f997c2a826b4bd7d1dab13fecba2f",
+  "parents": [
+    "676c26e6a2ab3b75ab6e8fdd984547219fc1ceb5"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Mon May 22 14:10:15 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:12 2017 +0000"
+  },
+  "message": "Fix resolution change within a decode call.\n\nIf resolution changes within a decode call,due to multiple\nsps, the decoder hangs as the the application will\ngive the same data again in the next decode call. This\nresults in a hang. Fixed this by flaging an error,\nwhen sps/resoultion changes within a process call.\n\nBug: 38487564\nTest: ran POC on patched O-based system w/o hanging\nChange-Id: I30095b2e8bf573c1a58a316a23b1a5e6a4af589b\n(cherry picked from commit fe18375850fe04b8c4ff2f1b20069e161f718e53)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "694078841575ed9aefd6377365df42a850067a19",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "640fdea55bbc843924c6e2b5a05c04cbebd82bd2",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "068ee5b3ab1a5d5d3b23048d7a905bdf7a3a107e",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "2694114c51db69c46a6d8665b7a3bb68a5bef5b6",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4260393a1cad5468deb8ceda6ab5b344a4f390a6",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_structs.h",
+      "new_id": "cde3dd7984c71c5c14ce9128db4a3f1520706a11",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_structs.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "505d1d117865ee5261b91c3555c0c71a757e5cf3",
+  "tree": "5a317d80317cd5b3b88baeeeabc8aaf78107f3e7",
+  "parents": [
+    "0bad802dc17fc283171923479960d6dab6342d3c"
+  ],
+  "author": {
+    "name": "Haibo Huang",
+    "email": "hhb@google.com",
+    "time": "Mon May 06 12:43:47 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:56:54 2019 +0000"
+  },
+  "message": "Fix uninitialized value in sfntly\n\nBug: 116114182\nTest: build\nChange-Id: Ief84dd8a19bdb461945e07504270be76a3545701\nMerged-In: Ief84dd8a19bdb461945e07504270be76a3545701\n(cherry picked from commit 51ecc82faa63aacdde6648f80a3898b53653da78)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4447b272b9b971b97508a138ea5954bef47bda08",
+      "old_mode": 33188,
+      "old_path": "README.android",
+      "new_id": "39b0cf9cc580a854631504d3954173d2c67f4809",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    },
+    {
+      "type": "modify",
+      "old_id": "dfe9a7b4e32e363b39131fb6c60bcaf01811231b",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/port/file_input_stream.cc",
+      "new_id": "883c1fd9d531a07030fd6d353e1278e1dc901bdd",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/port/file_input_stream.cc"
+    }
+  ]
+}

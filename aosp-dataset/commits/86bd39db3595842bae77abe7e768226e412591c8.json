@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "86bd39db3595842bae77abe7e768226e412591c8",
+  "tree": "6cfe6f7bc26d2c892d331e41f99abb7a02de4dfc",
+  "parents": [
+    "21d93d42d910e2e5f0a978d52498bda6a131e6e4"
+  ],
+  "author": {
+    "name": "Hui Yu",
+    "email": "huiyu@google.com",
+    "time": "Thu Aug 06 16:55:19 2020 -0700"
+  },
+  "committer": {
+    "name": "Hui Yu",
+    "email": "huiyu@google.com",
+    "time": "Wed Aug 26 18:24:44 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Set mAllowWhileInUsePermissionInFgs correctly when bindService() from background.\n\nPass original callingPid and callingUid into\nshouldAllowWhileInUsePermissionInFgsLocked() after\nBinder.clearCallingIdentity().\n\nBug: 163084228\nTest: atest cts/tests/app/src/android/app/cts/ActivityManagerFgsBgStartTest.java#testFgsLocationStartFromBGWithBind\nChange-Id: I7a240621267648ea54e7dc737ebc55bc665e39b6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3f867f656c245cdfa5fe4234439d76590586809c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActiveServices.java",
+      "new_id": "dd0e1f6458f99196f86e585b3d953821558684a8",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActiveServices.java"
+    }
+  ]
+}

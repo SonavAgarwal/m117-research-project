@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dd28d8ddf2985d654781770c691c60b45d7f32b4",
+  "tree": "6cb6f24c10c749016615adb6c3eff8fbc6a4a3d6",
+  "parents": [
+    "4e5954ddfa79c165fafa5f318b1f827947fd4be2"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Jun 13 17:33:23 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 01:20:30 2018 +0000"
+  },
+  "message": "DO NOT MERGE AVRC: Copy browse.p_browse_data in btif_av_event_deep_copy\n\np_msg_src-\u003ebrowse.p_browse_data is not copied, but used after the\noriginal pointer is freed\n\nBug: 109699112\nTest: manual\nChange-Id: I1d014eb9a8911da6913173a9b11218bf1c89e16e\n(cherry picked from commit 1d9a58768e6573899c7e80c2b3f52e22f2d8f58b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "14d44443981d162cdcf4c6eeac6aeaa1c929a807",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_av.cc",
+      "new_id": "0178e36d06ed5eb7700b37936847c06007390560",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_av.cc"
+    }
+  ]
+}

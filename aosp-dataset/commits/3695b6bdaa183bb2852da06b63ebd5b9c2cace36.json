@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3695b6bdaa183bb2852da06b63ebd5b9c2cace36",
+  "tree": "ad6ebd3f8ad2734c7e6748fe7cc92584a20fe826",
+  "parents": [
+    "cf606f3df2a7189049e0484af5558369df7e3eac"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Dec 05 12:24:09 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fix initialization of ps_next_dpb during reference list creation\n\nps_dpb_mgr-\u003eps_dpb_ht_head is a linked list with\nps_dpb_mgr-\u003eu1_num_lt_ref_bufs number of valid buffers.\nSo ps_next_dbp has to be initialized to ps_dpb_mgr-\u003eps_dpb_ht_head\nfor each u1_lt_index loop iteration\n\nBug: 33387820\nChange-Id: I2dfd962bad5640a829afc123adbd0709e563e621\n(cherry picked from commit 54cbe1b29b35e8bd8ebbaed2b5eeacfeecca98cc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "69199cfc576664b14e63fd40a2199b01ad448e09",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_bslice.c",
+      "new_id": "4c5ee056acd3558e07384e2092f96861887e9d15",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_bslice.c"
+    }
+  ]
+}

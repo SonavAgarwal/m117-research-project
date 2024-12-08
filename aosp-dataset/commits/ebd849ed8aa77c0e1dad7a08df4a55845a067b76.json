@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ebd849ed8aa77c0e1dad7a08df4a55845a067b76",
+  "tree": "ca6d77dc34d13cf5d7f1a4ee93f5686d48804c34",
+  "parents": [
+    "2e69265781b31753615261217aae41113d756daf"
+  ],
+  "author": {
+    "name": "Chris Craik",
+    "email": "ccraik@google.com",
+    "time": "Thu Feb 08 15:58:34 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:17:42 2018 +0000"
+  },
+  "message": "Add bounds checking for transparency lookup\n\nBug: 71361451\nTest: manual test with sample app\n\nChange-Id: Icaa626cfc93115fe1cc2f42040b396c2318bb6e4\n(cherry picked from commit 53f97a2dd69b5b74e0fae2108ebab9276760aa47)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3ba09dcac2958c6ed1e2f0af3ddb246a20c99d46",
+      "old_mode": 33188,
+      "old_path": "framesequence/jni/FrameSequence_gif.cpp",
+      "new_id": "ed4783425d51af84e9c5d78f6e2e6c5517916daf",
+      "new_mode": 33188,
+      "new_path": "framesequence/jni/FrameSequence_gif.cpp"
+    }
+  ]
+}

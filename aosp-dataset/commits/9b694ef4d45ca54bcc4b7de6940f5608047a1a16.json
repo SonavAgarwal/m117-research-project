@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9b694ef4d45ca54bcc4b7de6940f5608047a1a16",
+  "tree": "afe77c1e17453208192cf7c20a85961c84440bcd",
+  "parents": [
+    "3516e98daa362286cd7e1daec7ef1e207e34c5b4"
+  ],
+  "author": {
+    "name": "yawanng",
+    "email": "yawanng@google.com",
+    "time": "Mon Feb 08 22:38:28 2021 +0000"
+  },
+  "committer": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Thu Feb 18 18:19:44 2021 +0000"
+  },
+  "message": "Adds caller check to getAllPackages()\n\nThis change enforces that only system, root or shell may call\ngetAllPackages(), a hidden API that shares all package names regardless\nof user, instant app or package visibility rules.\n\nThe only exception is the uid of iorapd. iorapd needs the package info\nto prefetch the right data.\n\nBug: 179618216\nBug: 174661955\nTest: run iorapd and check it works well.\nChange-Id: I77460ae19a4d41151577646441f11e2eddbb741a\n(cherry picked from commit 8124efd57b50056d22e1b63c32c366ebdf049598)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a4077fbee892e9bd1f1d64c90c77252f468a0a63",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/Process.java",
+      "new_id": "a89aefaa8c5bd29ad330051c1c718aad58d2c1b9",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/Process.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "18f2655dc2d6ae99cad08c85bc41e9678c0b2a69",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "6b53fc5838a310880fc297a6f71ae4f566279153",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

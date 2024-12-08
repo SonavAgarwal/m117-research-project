@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fdb1b40e7bb147c07bda988c9501ad223795d12d",
+  "tree": "ec0cc698998c8bbef49304c1270de5da07f2f4b9",
+  "parents": [
+    "ca3b04f17f2ec6efb3a853b1d9aa8643a461ef36"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Fri Aug 19 09:09:11 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Tue Sep 27 15:55:56 2016 -0700"
+  },
+  "message": "DO NOT MERGE libvpx: Cherry-pick 8b4c315 from upstream\n\nDescription from upstream:\nvp9_alloc_context_buffers: clear cm-\u003emi* on failure\n\nthis fixes a crash in vp9_dec_setup_mi() via\nvp9_init_context_buffers() should decoding continue and the decoder\nresyncs on a smaller frame\n\nBug: 30593752\nChange-Id: Iafbf1c4114062bf796f51a6b03be71328f7bcc69\n(cherry picked from commit 737c8493693243838128788fe9c3abc51f17338e)\n(cherry picked from commit 3e88ffac8c80b76e15286ef8a7b3bd8fa246c761)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ac417b692e1bf3fe2d20828f5f2425bee702d3cf",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp9/common/vp9_alloccommon.c",
+      "new_id": "ed337a0c9c51dc9fc231af04ac51aa78724d60dd",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp9/common/vp9_alloccommon.c"
+    }
+  ]
+}

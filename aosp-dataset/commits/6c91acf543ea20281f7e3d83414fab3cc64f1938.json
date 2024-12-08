@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6c91acf543ea20281f7e3d83414fab3cc64f1938",
+  "tree": "e43556c1c49ca07fc6e582f59b9bf235deef497f",
+  "parents": [
+    "2410a6fa4286efc8c5b5a5f33f6eeb023bfb6abb"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Apr 13 09:26:04 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:03 2017 +0000"
+  },
+  "message": "Notify Errors Appropriately from SoftMPEG2\n\nThis is to ensure that the framework realises that an error has\noccured and does not call onQueueFilled if the error is fatal.\n\nBug: 36715268\n\nChange-Id: If02499d306aa9b6df64a7f25d43d1bdf318a10cd\n(cherry picked from commit eae3ad0585d17bab12bbd831b58407c122732a1c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5ed037ac7721959234034f0c44cef6ae9bebb0c7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp",
+      "new_id": "634207e6241f6064d6290bb8ee587d23d8627f1b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "700ef5f36a17b2dc08c29ffdf358c0c6d5fff3b8",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.h",
+      "new_id": "1285c5be4a72094878d0c93710f9612f20078a3c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.h"
+    }
+  ]
+}

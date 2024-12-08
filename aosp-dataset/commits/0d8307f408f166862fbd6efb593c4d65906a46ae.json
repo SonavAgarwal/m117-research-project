@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0d8307f408f166862fbd6efb593c4d65906a46ae",
+  "tree": "cc6375eaadcdca2e680ee982875408441841d391",
+  "parents": [
+    "f905c68ad5128293048ba6bb2e85d4603f50cc20"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Dec 12 11:03:14 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:52 2019 +0000"
+  },
+  "message": "Enforce BLUETOOTH_PRIVILEGED in setPhonebookAccessPermission\n\nBug: 145130871\nTest: POC\nMerged-In: Ib4985e18de9f6695acc371da78deb240d42671f1\nChange-Id: I3b8897166e223179fcbcf8c7a64e0c4d4ca974ef\n(cherry picked from commit 8d1e8979f56acfe477bd3b84994a716a8391a8eb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "53cf7238513d9779fc4c0d9244a16fb0b381b3aa",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/btservice/AdapterService.java",
+      "new_id": "2d3d69e4882cb72a4771f20dece52269c6ce877d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/btservice/AdapterService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bdbabb2ca4ebb4dc5971d3d42cb12f8048e23a23",
+  "tree": "caa935383a66a1507d68a0427faacde104f9cb1c",
+  "parents": [
+    "d3689fb0ddcdede16c13250a7a30ca76b113c9c1"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Jun 21 22:56:11 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:46:03 2018 +0000"
+  },
+  "message": "Add packet length checks in l2cble_process_sig_cmd\n\nBug: 80261585\nTest: compilation\nChange-Id: Icf55747dc948bcce140a12658237554938e2d717\n(cherry picked from commit 02f47a752c818277b31852e3ff940764d5c7f9c7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ec0992a9179fe1cc96aa6391e7dfd0f6c9bbd552",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_ble.cc",
+      "new_id": "5fc01f9b9ec6e1980083afceb3f0b43582bf91dd",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_ble.cc"
+    }
+  ]
+}

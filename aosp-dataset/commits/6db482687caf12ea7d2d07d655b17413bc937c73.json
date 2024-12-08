@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6db482687caf12ea7d2d07d655b17413bc937c73",
+  "tree": "95ab0779ef76842fd143861fb7b6d4b6a3ee1a6f",
+  "parents": [
+    "47750a5f1b19695ac64d6f7aa6e7e0918d3c8977"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu May 11 15:17:42 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:03:02 2017 +0000"
+  },
+  "message": "Fix infinite recursion\n\nBug: 36725407\nTest: decoded poc and other files with and without fix\nChange-Id: I9e23b2dbf133321bb01ae47c39761e17e46bd846\n(cherry picked from commit ede62341663cf356edb20e3d14424aec767ea66b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "830b6e578c9df68c7ab0d99c9d543354834f46f7",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_xmf.c",
+      "new_id": "169eb7e0a80d4abf7fad02e90e322db14b0a66ab",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_xmf.c"
+    }
+  ]
+}

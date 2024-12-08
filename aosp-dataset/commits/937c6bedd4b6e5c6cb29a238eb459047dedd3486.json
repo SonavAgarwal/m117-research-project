@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "937c6bedd4b6e5c6cb29a238eb459047dedd3486",
+  "tree": "de9072b197da1e8b0e7ebe6a0ea2f162237d191d",
+  "parents": [
+    "916a9684295fb578f4b3c6c16b621ef201a49964"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Aug 18 14:32:16 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 20 03:53:44 2015 +0000"
+  },
+  "message": "libstagefright: fix overflow in MPEG4Source::parseSampleAuxiliaryInformationOffsets.\n\nBug: 23270724\nChange-Id: Id7ba55c7bf6860fbfc892bbb6378aac644c82da4\n(cherry picked from commit c51ab7dd82bf4e24666fc72a55e03e2f530204d5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "089936211196f509e1a9ec1428aea1299ab7c4f2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "116c457751f965fd89aab245f1c2838fa1ef509a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "49acada519d088d8edf37e48640c76ea5c70e010",
+  "tree": "369b86ed5eacd04b048a866b817874566e44513b",
+  "parents": [
+    "51b05b715024adff4fa59ab2e18c0b56c5d3af5e"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Tue May 29 17:38:39 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:16 2018 +0000"
+  },
+  "message": "DO NOT MERGE SMP: Check p_cb-\u003erole in smp_br_state_machine_event\n\nBug: 80145946\nTest: manual\nChange-Id: Ic83eaa4be868d5a345d80cd50a6915c0af719a53\n(cherry picked from commit 519b61392a96fbd45bdcc0bfddc881167c20cc23)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "260b9c4fd47cc9a6d88cb4435129bedc24d5af83",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_br_main.cc",
+      "new_id": "55405ccfd97df500ffa100ed09c536ccc7d08ab9",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_br_main.cc"
+    }
+  ]
+}

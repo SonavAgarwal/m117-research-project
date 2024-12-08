@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7f0e3dab5a892228d8dead7f0221cc9ae82474f7",
+  "tree": "9008e8c7c81057ff2ac925b58b6526ba0bb334b4",
+  "parents": [
+    "05d50538e01e65538263f5e758316caa487e4a0f"
+  ],
+  "author": {
+    "name": "Chris Craik",
+    "email": "ccraik@google.com",
+    "time": "Wed Nov 16 10:33:54 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Dec 01 15:05:37 2016 -0800"
+  },
+  "message": "resolve merge conflicts of 3802db4 to mnc-dev\n\nbug:32338390\nChange-Id: I304c0c8c646808e690918eae7d34f0852e2b0fa8\n(cherry picked from commit fffaa9f25edddc6fa10512c1cc19f625c2abee8c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c33a7e24edc8e59d70ce3edebb219bf496c1165c",
+      "old_mode": 33188,
+      "old_path": "framesequence/jni/FrameSequence_webp.cpp",
+      "new_id": "034847a6a28f3f89845eaf331f3b02be014ffb40",
+      "new_mode": 33188,
+      "new_path": "framesequence/jni/FrameSequence_webp.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "94dcc3b886f8a3f44899a9abe02e75a7210029fb",
+      "old_mode": 33188,
+      "old_path": "framesequence/jni/FrameSequence_webp.h",
+      "new_id": "a29574c8a2d65e1b1fda7db0de3d6b5de770c9d9",
+      "new_mode": 33188,
+      "new_path": "framesequence/jni/FrameSequence_webp.h"
+    }
+  ]
+}

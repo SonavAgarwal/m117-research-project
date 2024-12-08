@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "5a132594b531f1f48098a790927f82080cc27f61",
+  "tree": "5cae2d5d3053b47df8999782599121b493161650",
+  "parents": [
+    "fd5942b332c5f6e4dc50f50181344957334854e1"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Aug 18 11:17:24 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Aug 19 12:43:56 2015 -0700"
+  },
+  "message": "libstagefright: fix handling of mSampleTimeEntries and mNumSampleSizes in SampleTable.\n\nBug: 23247055\nChange-Id: I29ef59c7ff09248063714e5013f7c33f66c5eebd\n(cherry picked from commit 3564c4562f46bede6ef1ea716c4fd4f77e470ae8)\n(cherry picked from commit 108cd2dc8df55f3f2ecdfbb4bb0ae981a74b6860)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c7cba4a869f4295a750cc86f84dcb734c0808ba",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "d7251f419280c3da19d6100bb1c106c6a178dcd9",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d06df7bcd2ec262a01957a3c1e65456862c412c9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/SampleTable.h",
+      "new_id": "460492bb335cb64d1de1e18227bbaccfb6ad9795",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/SampleTable.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0d9dfd649bae9c181e3afc5d571903f1eb5dc46f",
+  "tree": "5fa360968d3e6dd0cd2de5f04d70875532e028bf",
+  "parents": [
+    "d7917089078210e30e5136822e63f530c9e66268"
+  ],
+  "author": {
+    "name": "Régis Décamps",
+    "email": "regisd@google.com",
+    "time": "Tue Feb 23 16:16:54 2016 +0100"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:05 2016 -0800"
+  },
+  "message": "Don\u0027t allow file attachment from file:///data.\n\nCommit 24ed2941ab132e4156bd38f0ab734c81dae8fc2e allows file://\nattachment on the /data directory if they are from the same process.\n\nThis was done to work around applications that shared their internal\ndata file. However, this is bad practice, and other apps should share\ncontent:// Uri instead.\n\nWith this change, Email doesn\u0027t allow this anymore. This fixes\nsecurity issue 199888.\n\nAlso, add Analytics for these errors\ncompose_errors \u003e send_intent_attachment \u003e data_dir\n\nhttps://code.google.com/p/android/issues/detail?id\u003d199888\nb/26989185\nChange-Id: I7cae3389f4f7cf5f86600a58c6ccdffaf889d1c3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b7bab75461d736c35046524fb8e9b130d8904a83",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/compose/ComposeActivity.java",
+      "new_id": "36456bf03b5ca32291d165afcf4ed5c926554e44",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/compose/ComposeActivity.java"
+    }
+  ]
+}

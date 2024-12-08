@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5cabe32a59f9be1e913b6a07a23d4cfa55e3fb2f",
+  "tree": "5748e327b1c24dfef91d6c344f267ad3a113c75f",
+  "parents": [
+    "8415635765380be496da9b4578d8f134a527d86b"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Jan 24 18:08:59 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Jan 30 16:33:02 2017 -0800"
+  },
+  "message": "avc_utils: skip empty NALs from malformed bistreams\n\nAvoid a CHECK and make it the decoder\u0027s repsonsibility to handle a\nmalformed bistream gracefully.\n\nBug: 34509901\nBug: 33137046\nTest: StagefrightTest#testStagefright_bug_27855419_CVE_2016_2463\nChange-Id: I2d94f8da63d65a86a9c711c45546e4c695e0f3b4\n(cherry picked from commit 91fe76a157847825601b8f7a627efd1c9cbadcae)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0396dc63accf9dcbe72387701f6889d5e122407f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/avc_utils.cpp",
+      "new_id": "763381e1c7ce8b5f9bfd338fb24c5c6d8e3525d2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/avc_utils.cpp"
+    }
+  ]
+}

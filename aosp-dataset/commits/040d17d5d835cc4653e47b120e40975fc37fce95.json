@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "040d17d5d835cc4653e47b120e40975fc37fce95",
+  "tree": "d66fa1e18f4737b6013e6ac0a2ea494988ec3ce9",
+  "parents": [
+    "2bbb11cdbe2749db2f689c7e2a52ebb78a34b30c"
+  ],
+  "author": {
+    "name": "Hai Shalom",
+    "email": "haishalom@google.com",
+    "time": "Mon Feb 04 12:53:10 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:38 2019 +0000"
+  },
+  "message": "[wpa_supplicant] Fix security vulnerability wpa_supplicant/wnm_sta.c:376\n\nFix Security Vulnerability - Security Report - [Out of bounds read in\nwnm_parse_neighbor_report_elem in external/wpa_supplicant_8/wpa_supplicant/wnm_sta.c:376]\n\nBug: 122074159\nTest: Connect to AP, run traffic\nTest: Run poc_wnm_sta_376 on device, comfirm new error message appears\nChange-Id: If0ff673d2536135469144ee69b3f4e1831be73bf\n(cherry picked from commit cb95c3f41acb3bcdd6477b59f945554bc1849465)\n(cherry picked from commit 5e6e3f710fd8f317f479fc9b7a5bfed1bef89f9f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "28346ea966c2c54c69a7c71c37eda26a9549e6aa",
+      "old_mode": 33188,
+      "old_path": "wpa_supplicant/wnm_sta.c",
+      "new_id": "3e27f0c298b249342a3b9cdb24aa6b35065593dd",
+      "new_mode": 33188,
+      "new_path": "wpa_supplicant/wnm_sta.c"
+    }
+  ]
+}

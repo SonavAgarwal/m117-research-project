@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f6bf0102bdc1adff973e08d8ce9c869c4e2efade",
+  "tree": "2e0c00c827bb114029bfa893b3f4eb1499737075",
+  "parents": [
+    "c6c446f9e022adf20064e65a17574804f8af8e7d"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Fri Sep 02 11:36:46 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:00 2016 -0700"
+  },
+  "message": "Fix stack content leak vulnerability in mediaserver\n\nbug: 30875060\nChange-Id: I03f4d08b7b31ac5b507cfc9e65e5607c73972d95\n(cherry picked from commit 9a6861cbd3bb0e1b8fe4c105795256ee032f9664)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7f131f47edfc6431360ee8640ebacd3a24d057d8",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IDrm.cpp",
+      "new_id": "51a113031dd9fa80842fa4df18ea72ece4213b74",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IDrm.cpp"
+    }
+  ]
+}

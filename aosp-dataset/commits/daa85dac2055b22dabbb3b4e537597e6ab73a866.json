@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "daa85dac2055b22dabbb3b4e537597e6ab73a866",
+  "tree": "073ee24d15c6082d47a3fa9c3b3340ca5f30f5cc",
+  "parents": [
+    "65756b4082cd79a2d99b2ccb5b392291fd53703f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Mar 25 08:26:18 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:46 2016 -0700"
+  },
+  "message": "Fix AMR decoder\n\nPrevious change caused EOS to be ignored.\n\nBug: 27843673\nRelated-to-bug: 27662364\nChange-Id: Ia148a88abc861a9b393f42bc7cd63d8d3ae349bc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "77c3742c004530bb105062f45498068376e87526",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp",
+      "new_id": "955309aa92a43b3ab44b08fd50a09533eee76a8c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp"
+    }
+  ]
+}

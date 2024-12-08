@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cf4c5675c2c7ab822ed1ff12350c78575153f3cb",
+  "tree": "bead95a560ace26eceff8a1b0cdaaae9efde9c13",
+  "parents": [
+    "4d1c89b8267cbe2153fac904a06f16d1ae97043e"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Thu Feb 27 10:20:17 2020 -0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Mar 12 13:34:11 2020 -0700"
+  },
+  "message": "[DO NOT MERGE] Fix uninitialized data in IHDCP decrypt\n\nbug: 150156584\ntest: build\nChange-Id: Ia4ab8e4b4db0b895d0ca36592c0469adb3b89aac\n(cherry picked from commit 58af3de44d17e6ba716178e147474a20765c1441)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a46017ff9dfd416b8bb0e6f8217193e4c71897b5",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IHDCP.cpp",
+      "new_id": "c608175dddd668295231e1d8073d3988dde591ad",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IHDCP.cpp"
+    }
+  ]
+}

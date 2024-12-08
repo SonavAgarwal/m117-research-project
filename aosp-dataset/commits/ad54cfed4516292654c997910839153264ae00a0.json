@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ad54cfed4516292654c997910839153264ae00a0",
+  "tree": "72735690d255ad4d0b05610ac3c15208de39130c",
+  "parents": [
+    "e1d784619a3c5de9073465645eb98ea6595a4507"
+  ],
+  "author": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Wed Mar 23 11:42:53 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:48:14 2016 -0700"
+  },
+  "message": "Don\u0027t demangle symbol names.\n\nBug: http://b/27299236\nChange-Id: I26ef47f80d4d6048a316ba51e83365ff65d70439\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "97f0ef44550ef9faa77905d5b155626d238b18d6",
+      "old_mode": 33188,
+      "old_path": "libbacktrace/Backtrace.cpp",
+      "new_id": "42769ed902f34c077626e66b8828d1ba48cc2917",
+      "new_mode": 33188,
+      "new_path": "libbacktrace/Backtrace.cpp"
+    }
+  ]
+}

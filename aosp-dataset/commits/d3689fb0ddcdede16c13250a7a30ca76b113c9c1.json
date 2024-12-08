@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d3689fb0ddcdede16c13250a7a30ca76b113c9c1",
+  "tree": "f90dbdb3f557e2eeafb58740db7719f3d1775e0f",
+  "parents": [
+    "68688194eade113ad31687a730e8d4102ada58d5"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Wed Jul 11 02:57:07 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:45:43 2018 +0000"
+  },
+  "message": "Don\u0027t use Address after it was deleted\n\nBug: 110216173\nChange-Id: Id3364cf53153eafed478546d7347ed1673217e91\n(cherry picked from commit 9930f6f4e14e64966869b119994126283d645fd0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "03c5b90d5fb5c0a2c8766eed8fed500acb93006f",
+      "old_mode": 33188,
+      "old_path": "bta/dm/bta_dm_act.cc",
+      "new_id": "5abda87bd37b451835cae1b808a8bce62f8e45e2",
+      "new_mode": 33188,
+      "new_path": "bta/dm/bta_dm_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "66382e89f1f6ea22eb001ca51bef08aea8e1a2b9",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_dev.cc",
+      "new_id": "5368fad0741b68825e2c39bd6f731fe71be90989",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_dev.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "146a1b833092142a3dd17201be614862390e2704",
+      "old_mode": 33188,
+      "old_path": "stack/include/btm_api.h",
+      "new_id": "6ffc0f924ba6dffd64b06b948acb127e0bced678",
+      "new_mode": 33188,
+      "new_path": "stack/include/btm_api.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8cbef48ba6e3d3f844b895f8ca1a1aee74414fff",
+  "tree": "5845148f48103aca2f8da7e7ead79901f7e109e9",
+  "parents": [
+    "8a9f53ee2c661e8b5b94d6e9fbb8af3baa34310d"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 20 16:25:04 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 20 23:53:06 2015 +0000"
+  },
+  "message": "Sonivox: make sure waveIndex is valid in Parse_rgn() in eas_mdls.c.\n\nBug: 23335715\nChange-Id: I4a5522c46dcda9285db1f830337aa2642ddc4fd1\n(cherry picked from commit 99e0e2e2c1fd0f895b6d4bdf0a85798cf044218e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "51cce704d07dee2b5de768a0cb98fbc9b8abef14",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "d66c734450c2b5e0eccc50ac1bd0b21382cece9c",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "daf29a6dbfafc6c06654a3878c0ad2a7f8ebc063",
+  "tree": "c1188f7619cefb5b78a13fad7cb77b3ddeee3f76",
+  "parents": [
+    "1bd17e25559b6f010fbb805620a30ed5ecd3a7e5"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Tue Oct 15 11:49:22 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:31 2019 +0000"
+  },
+  "message": "Resize object capacity when shrinking Parcel\n\nBug: 140419401\nTest: atest android.os.cts.ParcelTest\nChange-Id: I04edee415e1984ba5fb97c5c1b09892a360cf221\n(cherry picked from commit c67d9f33b36cbb95b121d058f51d6653f1ec4334)\n(cherry picked from commit d9d10dbdf2f20af3dd01376d2130c71c052e42f3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "afa3d3334907c59a325f02da51bd9f0864ad3197",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "5ad30271d75300500f0b1233e3c284551fd11e40",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

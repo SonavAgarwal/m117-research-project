@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "29fa7d2ffc3bba55173969309e280328b43eeca1",
+  "tree": "b54a928063c7591db489e57cef92c829fe4fc09f",
+  "parents": [
+    "0553024a5d7ca6593f61335ead1bade23d3d2e40"
+  ],
+  "author": {
+    "name": "dcashman",
+    "email": "dcashman@google.com",
+    "time": "Wed Sep 09 11:59:04 2015 -0700"
+  },
+  "committer": {
+    "name": "dcashman",
+    "email": "dcashman@google.com",
+    "time": "Wed Sep 09 12:01:35 2015 -0700"
+  },
+  "message": "Add DUMP permission check to WifiScanner service.\n\nBug: 23936840\nChange-Id: Ia1853db65bf277ed096c1385097bab2e5f76922d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7d3d3ac7b0cb7c8a94db7aa92c46bf1dbf3a727",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiScanningServiceImpl.java",
+      "new_id": "8f2cd3bd7384b76043b4ecf5c13cc672831b75c4",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiScanningServiceImpl.java"
+    }
+  ]
+}

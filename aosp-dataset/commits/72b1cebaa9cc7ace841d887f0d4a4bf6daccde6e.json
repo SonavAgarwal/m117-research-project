@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "72b1cebaa9cc7ace841d887f0d4a4bf6daccde6e",
+  "tree": "447f1e05b2304f8c2eb2c0dca31193b512a14619",
+  "parents": [
+    "83c8be063854a84843042a2089f63e77777f18e8"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Jan 11 17:43:40 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:12:39 2018 +0000"
+  },
+  "message": "SDP: Check p_req_end before reading from p_req\n\nBug: 69384124\nTest: Connect a headset\nChange-Id: Ia30c58ed39977552e5ddc21cc3c1b54c6b1d8abe\nMerged-In: Ia30c58ed39977552e5ddc21cc3c1b54c6b1d8abe\n(cherry picked from commit dd856fbc4ade8f7d78873db3533b4c9fd7c6d612)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b18f429592d3e6e2ac8ff88463f47208bf8388af",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "e4ed60a92a1a4e535ce5e0b7f020ffe45c845f9d",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "803e963c2985599438aa145eeaca509cbb77fc62",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_utils.cc",
+      "new_id": "e6589d4033b48d8ba73611d610bb2682798b85a0",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_utils.cc"
+    }
+  ]
+}

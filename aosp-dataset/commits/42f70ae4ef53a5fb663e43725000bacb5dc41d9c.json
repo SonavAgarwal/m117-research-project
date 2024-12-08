@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "42f70ae4ef53a5fb663e43725000bacb5dc41d9c",
+  "tree": "71bbffb3ce6c0167937f484739702c5502bc252d",
+  "parents": [
+    "61646846b3c26789d0cc5d2a18b58ed8e94cd58a"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Sep 16 16:10:55 2019 -0700"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Sep 19 08:43:56 2019 -0700"
+  },
+  "message": "decoder: Reset slice header at start of slice header decode\n\nReset slice header to zero, to avoid using invalid slice header\ncontents from prior headers parsed.\n\nBug: 140692129\nTest: poc in bug\nChange-Id: Ib2b7c006069b0226b5f2d741f9da7b681be26f82\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2ef174c1c78abcb6323e3c8ebcc4177a9dd79e9d",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "f08aa64295cf2e60ea13ce6e0a7467c795edc41c",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

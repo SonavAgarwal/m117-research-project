@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "594cc251fdd0d231d342d88b2fdff4bc42fb0690",
+  "tree": "259269a399e6504a7cf8739201cf172d1cbb197a",
+  "parents": [
+    "0b2c8f8b6b0c7530e2866c95862546d0da2057b0"
+  ],
+  "author": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@linux-foundation.org",
+    "time": "Fri Jan 04 12:56:09 2019 -0800"
+  },
+  "committer": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@linux-foundation.org",
+    "time": "Fri Jan 04 12:56:09 2019 -0800"
+  },
+  "message": "make \u0027user_access_begin()\u0027 do \u0027access_ok()\u0027\n\nOriginally, the rule used to be that you\u0027d have to do access_ok()\nseparately, and then user_access_begin() before actually doing the\ndirect (optimized) user access.\n\nBut experience has shown that people then decide not to do access_ok()\nat all, and instead rely on it being implied by other operations or\nsimilar.  Which makes it very hard to verify that the access has\nactually been range-checked.\n\nIf you use the unsafe direct user accesses, hardware features (either\nSMAP - Supervisor Mode Access Protection - on x86, or PAN - Privileged\nAccess Never - on ARM) do force you to use user_access_begin().  But\nnothing really forces the range check.\n\nBy putting the range check into user_access_begin(), we actually force\npeople to do the right thing (tm), and the range check vill be visible\nnear the actual accesses.  We have way too long a history of people\ntrying to avoid them.\n\nSigned-off-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3920f456db79a11f24ecf0f5f859ee4fc00ea258",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/uaccess.h",
+      "new_id": "a87ab5290ab44529c2d58845c863cf65a589b09e",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/uaccess.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "55d8f9b8777fc1156bc0136544f67c5d84e589fa",
+      "old_mode": 33188,
+      "old_path": "drivers/gpu/drm/i915/i915_gem_execbuffer.c",
+      "new_id": "485b259127c36fdb4aeb619559e790f394ff412a",
+      "new_mode": 33188,
+      "new_path": "drivers/gpu/drm/i915/i915_gem_execbuffer.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bf2523867a02a549197060100b32492a245d09ca",
+      "old_mode": 33188,
+      "old_path": "include/linux/uaccess.h",
+      "new_id": "37b226e8df13f3b6235277485519b5de37cf6fe2",
+      "new_mode": 33188,
+      "new_path": "include/linux/uaccess.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "705d4ae6c018a4377a0f9952c562276cd6217986",
+      "old_mode": 33188,
+      "old_path": "kernel/compat.c",
+      "new_id": "f01affa17e225d29be50f58b8f9c430e971ae42a",
+      "new_mode": 33188,
+      "new_path": "kernel/compat.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a01b671dc1fb40a703b169937355923430ebf29",
+      "old_mode": 33188,
+      "old_path": "kernel/exit.c",
+      "new_id": "2d14979577ee1ef536bf3e554057e14dab90ce0f",
+      "new_mode": 33188,
+      "new_path": "kernel/exit.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b53e1b5d80f429e611cd0be58e9ec1079fb68ead",
+      "old_mode": 33188,
+      "old_path": "lib/strncpy_from_user.c",
+      "new_id": "58eacd41526c58339a7cb35ef92a618f0f3517e4",
+      "new_mode": 33188,
+      "new_path": "lib/strncpy_from_user.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "60d0bbda8f5e581178719e9122b0e9f19b0876a5",
+      "old_mode": 33188,
+      "old_path": "lib/strnlen_user.c",
+      "new_id": "1c1a1b0e38a5f5c853cf935ed06eb9abb2b56ef2",
+      "new_mode": 33188,
+      "new_path": "lib/strnlen_user.c"
+    }
+  ]
+}

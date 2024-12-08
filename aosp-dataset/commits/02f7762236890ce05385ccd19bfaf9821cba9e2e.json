@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "02f7762236890ce05385ccd19bfaf9821cba9e2e",
+  "tree": "1d19f3d53d424bea1f81f6cd8f7b50995b386418",
+  "parents": [
+    "1377e5897ed9e60caed5ce6e0ac75fc244c22706"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Mon Feb 01 21:50:48 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:25:03 2021 +0000"
+  },
+  "message": "OOB Write in NFC stack when handling MIFARE Classic TLVs\n\nBug: 178725766\nTest: build ok\nChange-Id: I6b987168a552f286171dc610af691390853bc126\n(cherry picked from commit 147b052f8456872081c18af85573eeb186c6efc2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "27797ad28b231d78cf2f9c39cf8da07d30c44120",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_mfc.cc",
+      "new_id": "aaa590869643cb32df8ccc8d829f44a548206131",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_mfc.cc"
+    }
+  ]
+}

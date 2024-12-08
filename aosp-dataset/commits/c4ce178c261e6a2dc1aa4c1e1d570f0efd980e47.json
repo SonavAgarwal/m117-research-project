@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c4ce178c261e6a2dc1aa4c1e1d570f0efd980e47",
+  "tree": "e84d57d52e4ad2765082739bc14205bf4161ba8c",
+  "parents": [
+    "03da463b2a94c36e3b46f0a110ec43710b82d404"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Tue Nov 03 15:12:44 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:08 2020 +0000"
+  },
+  "message": "Revoke permission on non-runtime -\u003e runtime upgrade\n\nNot only on normal -\u003e runtime.\n\nTest: atest PermissionEscalationTest\nBug: 154505240, 168319670\nChange-Id: If3b420067b4d7111dcf67ae6f98e42176158b679\nMerged-In: If3b420067b4d7111dcf67ae6f98e42176158b679\n(cherry picked from commit 33e24c883c5797fe7ba05468bde967fb0e46e66d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2d4b5012bf15f83a9b9a26811c143debdf63caad",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/BasePermission.java",
+      "new_id": "5e04171a3bcacc9db0681431fbb19078fa6cecf4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/BasePermission.java"
+    }
+  ]
+}

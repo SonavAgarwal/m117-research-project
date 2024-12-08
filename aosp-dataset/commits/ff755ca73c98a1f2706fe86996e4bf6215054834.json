@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ff755ca73c98a1f2706fe86996e4bf6215054834",
+  "tree": "07916eb815af05df68db29530f887eb75e52235e",
+  "parents": [
+    "328d1b448a782e9544004990cad7aaaaae58d364"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Tue Aug 15 14:44:49 2017 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:12:39 2017 +0000"
+  },
+  "message": "Make dnsmasq more stable.\n\n1. Fix the length check in extract_name.\n2. Add a size check to answer_request.\n\nBug: 64575136\nTest: builds\nTest: wifi tethering works\nChange-Id: Ie38321ab02b7cfdc603958a884cd8f37724fedcc\n(cherry picked from commit f25df861463c07908f39d9b43fe8888a4b31e848)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ae0bfa58af942292ea68f2a324b284dba0fe2d7",
+      "old_mode": 33261,
+      "old_path": "src/rfc1035.c",
+      "new_id": "265e4dfc8b5f5094e4de1c0f7ae817738c955ca4",
+      "new_mode": 33261,
+      "new_path": "src/rfc1035.c"
+    }
+  ]
+}

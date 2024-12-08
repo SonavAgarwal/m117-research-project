@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "1f24c730ab6ca5aff1e3137b340b8aeaeda4bdbc",
+  "tree": "240a349e5c0a5e783cd192317d3aa47c935861c2",
+  "parents": [
+    "b351eabb428c7ca85a34513c64601f437923d576"
+  ],
+  "author": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Mon Jun 20 17:00:14 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:18 2016 -0700"
+  },
+  "message": "DO NOT MERGE: Camera: Adjust pointers to ANW buffers to avoid infoleak\n\nSubtract address of a random static object from pointers being routed\nthrough app process.\n\nBug: 28466701\nChange-Id: Idcbfe81e9507433769672f3dc6d67db5eeed4e04\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3dc0ffb9bb8e15e6408d8c775cc732ff6f5fd3f7",
+      "old_mode": 33188,
+      "old_path": "camera/ICameraRecordingProxy.cpp",
+      "new_id": "517b64f87bef24df43fefc0145e5738641f146bb",
+      "new_mode": 33188,
+      "new_path": "camera/ICameraRecordingProxy.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2aac28465c3b83fc6fbfdf1905260b98ad891247",
+      "old_mode": 33188,
+      "old_path": "include/camera/ICameraRecordingProxy.h",
+      "new_id": "4edf9cd1bb635473d4c503793ae94bf0c4245bf3",
+      "new_mode": 33188,
+      "new_path": "include/camera/ICameraRecordingProxy.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "069e897f58f84334d742c7cb8a0ce2aad6a5fb52",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/CameraSource.h",
+      "new_id": "6c938a5529c7673853beb41be087948b8c1fca5f",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/CameraSource.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "66280dad1068d940690224218f002e1d0dd1a76b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/CameraSource.cpp",
+      "new_id": "fa306448189ddb989ce61b4c8d5922c3682f59b0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/CameraSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "66d7b00ae16bc91b14d9f5fe1b7d2c15abcff0eb",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api1/client2/StreamingProcessor.cpp",
+      "new_id": "9e6c0db9da519cd0f60c6ef6d6ed5128d2984366",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api1/client2/StreamingProcessor.cpp"
+    }
+  ]
+}

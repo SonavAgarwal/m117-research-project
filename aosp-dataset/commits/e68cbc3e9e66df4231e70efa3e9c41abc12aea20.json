@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e68cbc3e9e66df4231e70efa3e9c41abc12aea20",
+  "tree": "a9f9f223944d8a00fa8c374dffad81a7701451a6",
+  "parents": [
+    "7dcd0ec9c91688cfa3f679804ba6e132f9811254"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Wed May 27 17:53:02 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:48 2015 -0700"
+  },
+  "message": "Disregard alleged binder entities beyond parcel bounds\n\nWhen appending one parcel\u0027s contents to another, ignore binder\nobjects within the source Parcel that appear to lie beyond the\nformal bounds of that Parcel\u0027s data buffer.\n\nBug 17312693\n\nChange-Id: If592a260f3fcd9a56fc160e7feb2c8b44c73f514\n(cherry picked from commit 27182be9f20f4f5b48316666429f09b9ecc1f22e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "99c934cdd4c79dc8b9d2ad7e2117b8bf92333109",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "87ce5d076e6232e587ed4c0aa4169af473b22417",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

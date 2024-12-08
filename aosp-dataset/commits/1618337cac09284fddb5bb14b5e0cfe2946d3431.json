@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1618337cac09284fddb5bb14b5e0cfe2946d3431",
+  "tree": "4dbb9331c4354f9b182d026240b39c2c92ba581b",
+  "parents": [
+    "594bf934384920618d2b6ce0bcda1f60144cb3eb"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Mar 27 15:04:25 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:58:41 2017 +0000"
+  },
+  "message": "Don\u0027t allow using or allocating a buffer after the first state transition\n\nBug: 35467458\nChange-Id: Ia76c8cec8ad2abb95ca29b2a89075f7acab4b174\n(cherry picked from commit e25320450ca414dd859fd5d80bcd18ecc91630de)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "43a50ae0c20c3d27e7b0832c70c5e085deca9d3b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "c3514b3b8b81a46c9c52329fbc9d829cbb1dcc89",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

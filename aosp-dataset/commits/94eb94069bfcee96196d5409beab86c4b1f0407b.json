@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "94eb94069bfcee96196d5409beab86c4b1f0407b",
+  "tree": "087519cd66351f5ab0a8e469298255ddf0ae5d8c",
+  "parents": [
+    "c08c38e345a686ed12d5b4f944bb451c9293a254"
+  ],
+  "author": {
+    "name": "lucaslin",
+    "email": "lucaslin@google.com",
+    "time": "Tue Apr 20 03:25:32 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:51 2021 +0000"
+  },
+  "message": "Fix the security issue that preloaded apps can get SSID \u0026 BSSID\n\nNetworkMonitor sends \"android.net.conn.NETWORK_CONDITIONS_MEASURED\"\nbroadcast with Wifi SSID \u0026 BSSID. The receiver of this broadcast\nis only required to have \"android.permission.ACCESS_NETWORK_CONDITIONS\"\npermission but not the \"android.permission.ACCESS_FINE_LOCATION\".\nIt\u0027s incorrect because if the apps want to know the Wifi SSID and\nBSSID, they should get the run-time permission with user consent.\nSince this broadcast is not used anymore, delete it and the related\ncode.\n\nBug: 175213041\nTest: atest NetworkStackNextTests NetworkStackTests\nChange-Id: I12050737291c7fa0ebff4e7411b91f4c6f57a413\nMerged-In: I12050737291c7fa0ebff4e7411b91f4c6f57a413\nIgnore-AOSP-First: This is a security patch which cannot submit in\nAOSP.\n(cherry picked from commit 0dc33442b74703f7700ba78b05d3c5ec30c07055)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "40de26e02c7c2066498126afb7d4a81833e005e3",
+      "old_mode": 33261,
+      "old_path": "src/com/android/server/connectivity/NetworkMonitor.java",
+      "new_id": "fe393f9a8db8eaa07b7b8df6a76a6d9e1d1eb9b4",
+      "new_mode": 33261,
+      "new_path": "src/com/android/server/connectivity/NetworkMonitor.java"
+    }
+  ]
+}

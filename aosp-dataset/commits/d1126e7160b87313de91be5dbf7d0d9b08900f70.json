@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d1126e7160b87313de91be5dbf7d0d9b08900f70",
+  "tree": "c9f7cd4bcc3cfb56b4fc64f82e867b31ae75f4a9",
+  "parents": [
+    "c4d6e387984e09e86a58e6485555a2d651f0481f"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Fri May 29 14:49:25 2020 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:13 2020 +0000"
+  },
+  "message": "Use killProcessGroup when killing app zygote.\n\nTo make sure we kill all untracked children, too.\n\nBug: 156741968\nBug: 157598956\nTest: manual inspection, PoC no longer works.\nChange-Id: I5d8efeb05ddec08a7fc7c00eabca6590c4cfdd8c\n(cherry picked from commit 0a91f61ac8387c02528e0f6f0948296ba9d5ca77)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6daa5b4dc6d8bf7bd7e860b8897b6901ead444bb",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/AppZygote.java",
+      "new_id": "66f50e4b261019a46c307b43107943cad8406bec",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/AppZygote.java"
+    }
+  ]
+}

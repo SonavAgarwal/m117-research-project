@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "972991f8bcdcbabd5f9973bc1f498ecffe0ae303",
+  "tree": "4fc16fd95d0f16d4300cbe961765a2dcccd418ff",
+  "parents": [
+    "f265872ab865a8cb6a423b0be8e6db019d87267d"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Tue Apr 30 17:56:45 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:26 2019 +0000"
+  },
+  "message": "Zero-initialize hidl_vec data\n\nBug: 131356202\nTest: manually check padding in structs allocated in these arrays\nTest: libhwbinder_benchmark, well within variance (this test allocates\n    arrays).\n\nBefore:\n---------------------------------------------------------------------\nBenchmark                           Time             CPU   Iterations\n---------------------------------------------------------------------\nBM_sendVec_binderize/4          34935 ns        15081 ns        36091\nBM_sendVec_binderize/8          39140 ns        16846 ns        38865\nBM_sendVec_binderize/16         36495 ns        15833 ns        44182\nBM_sendVec_binderize/32         39785 ns        17182 ns        38870\nBM_sendVec_binderize/64         35647 ns        15466 ns        38215\nBM_sendVec_binderize/128        39145 ns        16873 ns        44856\nBM_sendVec_binderize/256        38836 ns        16801 ns        41596\nBM_sendVec_binderize/512        41014 ns        17831 ns        40161\nBM_sendVec_binderize/1024       37534 ns        16270 ns        41794\nBM_sendVec_binderize/2048       37662 ns        16471 ns        42331\nBM_sendVec_binderize/4096       38551 ns        16809 ns        35635\nBM_sendVec_binderize/8192       36139 ns        15865 ns        42185\nBM_sendVec_binderize/16384      51743 ns        22600 ns        31556\nBM_sendVec_binderize/32768      46644 ns        20616 ns        30220\nBM_sendVec_binderize/65536      68763 ns        30412 ns        25429\n\nAfter:\n---------------------------------------------------------------------\nBenchmark                           Time             CPU   Iterations\n---------------------------------------------------------------------\nBM_sendVec_binderize/4          39549 ns        17214 ns        35193\nBM_sendVec_binderize/8          38786 ns        16822 ns        37402\nBM_sendVec_binderize/16         37787 ns        16492 ns        37100\nBM_sendVec_binderize/32         40796 ns        17567 ns        36399\nBM_sendVec_binderize/64         41024 ns        17797 ns        45328\nBM_sendVec_binderize/128        36169 ns        15707 ns        39602\nBM_sendVec_binderize/256        37136 ns        16094 ns        47081\nBM_sendVec_binderize/512        37998 ns        16443 ns        48487\nBM_sendVec_binderize/1024       35190 ns        15318 ns        40091\nBM_sendVec_binderize/2048       37665 ns        16399 ns        39498\nBM_sendVec_binderize/4096       45963 ns        19877 ns        36884\nBM_sendVec_binderize/8192       40075 ns        17620 ns        34013\nBM_sendVec_binderize/16384      46224 ns        20315 ns        34384\nBM_sendVec_binderize/32768      49775 ns        21994 ns        35334\nBM_sendVec_binderize/65536      60181 ns        27238 ns        22205\n\nChange-Id: Ica6c55e7346b9e1ba91192472e2b229cb786802c\nMerged-In: Ica6c55e7346b9e1ba91192472e2b229cb786802c\n(cherry picked from commit 03b0bf2f20bccc3d6c005c41a866fc35a68458d5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f5d9e71f69e2f13f687043bbec7154908c1efd10",
+      "old_mode": 33188,
+      "old_path": "base/include/hidl/HidlSupport.h",
+      "new_id": "f8f79a59dd44e06d0d110e4c640eeb862d7f0eff",
+      "new_mode": 33188,
+      "new_path": "base/include/hidl/HidlSupport.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3cb1b6944e776863aea316e25fdc16d7f9962902",
+  "tree": "f4065d4385ea3ede601968648864698f41bbd3e4",
+  "parents": [
+    "086d84f45ab7b64d1a7ed7ac8ba5833664a6a5ab"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue May 26 11:32:13 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:03:00 2015 -0700"
+  },
+  "message": "IOMX: Enable buffer ptr to buffer id translation for arm32\n\nBug: 20634516\nChange-Id: Iac9eac3cb251eccd9bbad5df7421a07edc21da0c\n(cherry picked from commit 2d6b6601743c3c6960c6511a2cb774ef902759f4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "104dcfc44c91d176e6cc32d67b5159815c978116",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMXNodeInstance.h",
+      "new_id": "b26e940e64de8d48375c783ab9e62b63c40ada94",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMXNodeInstance.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "01ce247cae59d5c620e44a03f22f1373400f03f5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "b9a91f7f32262b48630f58b2145d8c6826455227",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

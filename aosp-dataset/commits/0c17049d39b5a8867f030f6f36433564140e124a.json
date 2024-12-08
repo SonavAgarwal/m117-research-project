@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0c17049d39b5a8867f030f6f36433564140e124a",
+  "tree": "379f9f10575f241549575a35348c0f65aef728c4",
+  "parents": [
+    "e237a83f95767f669b83508bb1f594091cbd6bac"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Mon Oct 12 16:23:15 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:01 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nFix CDM package check\n\nCDM was using a pckage check that returns a value intead of throwing,\nresulting in failing to throw on querying other package\u0027s associations\n\nTest: ensure attached bug no longer reproduces\nBug: 167244818\nChange-Id: I21319b6f5495dcae681541c76b847aad0c00b8ab\n(cherry picked from commit 30b022a8d207573aeaf735a33439884afe60c684)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d6759b3e2cca962bf5f8ff6d4c7bea035aeab4df",
+      "old_mode": 33188,
+      "old_path": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java",
+      "new_id": "29fc1674bab9220738c472099f204e10be79dc9f",
+      "new_mode": 33188,
+      "new_path": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bf47eb9c67ed364f3c288954857aab9d9311db4c",
+  "tree": "5ba3da2bb1e2103a1719e9c014dfb290392ff0b1",
+  "parents": [
+    "e4ac35fa524b011f272d396b2c12515382bddb94"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Fri Aug 14 13:50:02 2015 -0700"
+  },
+  "committer": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Mon Aug 17 17:14:50 2015 +0000"
+  },
+  "message": "do not dequeue from native window after we hit fatal error -- DO NOT MERGE\n\nbug: 22845824\nChange-Id: I8c375790c697e02b6ab3ea54b84d3f70d5e78141\n(cherry picked from commit 346de3c26a8fbd0fa0c8102f4a21ea4dcee4432a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fcccc6d56594a69316a141c19bfec45abc17d184",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/ACodec.h",
+      "new_id": "a0e5d8427e9caffd4660d7eb99573cd935b719d8",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/ACodec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f2f9cfaa38c534c261d2318fb03b39a4c986bac",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/ACodec.cpp",
+      "new_id": "9eae0f96326e5a7f5a64d2f135c3e5f8a1af7afc",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/ACodec.cpp"
+    }
+  ]
+}

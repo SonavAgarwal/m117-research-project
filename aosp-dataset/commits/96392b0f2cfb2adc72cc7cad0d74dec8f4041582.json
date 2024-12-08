@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "96392b0f2cfb2adc72cc7cad0d74dec8f4041582",
+  "tree": "a6002216ebf290e2237b0889227299c88748d151",
+  "parents": [
+    "987f4b2bfe0dce192c08b71c7207bbc6411e5106"
+  ],
+  "author": {
+    "name": "Chris Manton",
+    "email": "cmanton@google.com",
+    "time": "Tue Mar 10 08:59:02 2020 -0700"
+  },
+  "committer": {
+    "name": "Chris Manton",
+    "email": "cmanton@google.com",
+    "time": "Tue Apr 07 21:18:55 2020 +0000"
+  },
+  "message": "Check a2dp packet length is zero\n\nBug: 142546668\nTest: net_test_stack_a2dp_native\n\nChange-Id: I105b445293c02cb4f37c759fd5b05758fd4e3646\nMerged-In: I105b445293c02cb4f37c759fd5b05758fd4e3646\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5f6e3786141962e905c86dfb9f383d726ca01bfc",
+      "old_mode": 33188,
+      "old_path": "TEST_MAPPING",
+      "new_id": "d29c2f7d029259c748c72f6e42d59f7d905327b6",
+      "new_mode": 33188,
+      "new_path": "TEST_MAPPING"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7f5a4532dd7a9e6a13d6809a7c65025d0dac33c",
+      "old_mode": 33188,
+      "old_path": "stack/Android.bp",
+      "new_id": "4863afbcec1807e5366f18088e28ed56359f90d4",
+      "new_mode": 33188,
+      "new_path": "stack/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "444af34260cbba00f8bb2714f65cbcfed6ecfe49",
+      "old_mode": 33188,
+      "old_path": "stack/a2dp/a2dp_vendor_ldac_decoder.cc",
+      "new_id": "d49337a98d98e97d9ec6ef5d020a76f24084fdc0",
+      "new_mode": 33188,
+      "new_path": "stack/a2dp/a2dp_vendor_ldac_decoder.cc"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9666a7c9dc00f6fb05708228a702f232f900db14",
+      "new_mode": 33188,
+      "new_path": "stack/include/ldacBT_bco_for_fluoride.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ac8c2609ce056f2ee92ebaff8949c324340e083e",
+      "new_mode": 33188,
+      "new_path": "stack/test/a2dp/a2dp_vendor_ldac_decoder_test.cc"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6f06218fb5714468eebaf0cc180757979fed598f",
+      "new_mode": 33188,
+      "new_path": "stack/test/a2dp/misc_fake.cc"
+    }
+  ]
+}

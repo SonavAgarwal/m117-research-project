@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6de34f8ee714691dbc3c089245bf832006826ebe",
+  "tree": "20e94304ac413abeba5e79da7b65ff4c5d143e8c",
+  "parents": [
+    "a032a689a3df9fa2b5b9e9fad248c467f18d5337"
+  ],
+  "author": {
+    "name": "lumark",
+    "email": "lumark@google.com",
+    "time": "Mon Feb 10 18:41:57 2020 +0800"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 31 23:40:19 2020 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Restrict app transition maximum duration\n\nAs WindowState#startAnimation for restricting window animation duration\n(currently is 10 secs),\n\nFor security reason, we also need to restrict app transition animation\nduration as 3 secs to prevent malicious app may set a long duration or\ninfinity repeat counts through ActivityOption#makeCustomAnimation or\nActivity#overridePendingTransition with custom animation set.\n\nBug: 145728687\nTest: manual as issue provided test app\nChange-Id: I39051d6e4d2b681ce2becbafe14aab3f3d8ebf6b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e6a83dedded9017e20320a24cd160ef62c0a42e0",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/AppTransition.java",
+      "new_id": "6aed41a4df3cdad338d380c762732c6e2d14ccaf",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/AppTransition.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "eab5e0dd270ea9baffe44d6dca87f2873180978f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/AppWindowToken.java",
+      "new_id": "ebb8a9f35434cc2bdd19866134273f55efb5e874",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/AppWindowToken.java"
+    }
+  ]
+}

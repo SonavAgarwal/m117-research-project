@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "083263937bfb1623adf6015da7ca3cdc258e0352",
+  "tree": "d54a8f6abca0694cfbee1f3564eee63160fcf235",
+  "parents": [
+    "efe34a570d91b826b009d40e44c2e470dd180ace"
+  ],
+  "author": {
+    "name": "Sungtak Lee",
+    "email": "taklee@google.com",
+    "time": "Tue Aug 07 18:01:50 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:46 2018 +0000"
+  },
+  "message": "NuPlayer2CCDecoder: Add bound check before memcpy\n\nTest: none\nBug: 111874331\nChange-Id: I6764802e8e8afd7e970ee433741f73a9b3d366dd\n(cherry picked from commit 71920217d6017a5112ecd73abc4e68c16d680458)\n(cherry picked from commit e96c64a0d21d1ab2c9ba9726766fd8432462888a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e48e3882340ce3e2239c26f7432ddc46a86a5fff",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayer2/nuplayer2/NuPlayer2CCDecoder.cpp",
+      "new_id": "e2159659f5f11b178ff7e6389ca6737e20247648",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayer2/nuplayer2/NuPlayer2CCDecoder.cpp"
+    }
+  ]
+}

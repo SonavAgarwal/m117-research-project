@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6a2127f162788add4da891fcd22882b9e2b65bad",
+  "tree": "c5801b7ff43fd9b7600e721eb8e66055288cf863",
+  "parents": [
+    "94c1d740cfe001e5faf62d3c447c4e1e9f4aa325"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Thu Apr 25 03:44:52 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:25 2019 +0000"
+  },
+  "message": "Zero-initialize HIDL structs before passing\n\nTest: cts-tradefed run cts-dev --module CtsMediaTestCases --compatibility:module-arg CtsMediaTestCases:include-annotation:android.platform.test.annotations.RequiresDevice\n(only existing failures/flakes)\nBug: 131267328\nBug: 131356202\nChange-Id: I91e6e0c692d470f4d3a713068545cedf5ae925a7\nMerged-In: I91e6e0c692d470f4d3a713068545cedf5ae925a7\n(cherry picked from commit c4a5f5ec811b149428e0835b7aabc6c4c802e720)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3b89291dc8498be5ab41f475f4f020e66b235854",
+      "old_mode": 33188,
+      "old_path": "libs/gui/bufferqueue/1.0/H2BGraphicBufferProducer.cpp",
+      "new_id": "fe99620f99b54099dfa0fb2a1ddff7141ca87311",
+      "new_mode": 33188,
+      "new_path": "libs/gui/bufferqueue/1.0/H2BGraphicBufferProducer.cpp"
+    }
+  ]
+}

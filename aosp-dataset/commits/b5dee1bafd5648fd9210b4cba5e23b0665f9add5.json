@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b5dee1bafd5648fd9210b4cba5e23b0665f9add5",
+  "tree": "34a2d301ba6d8683436a6ce04d6751fa1cf3b94d",
+  "parents": [
+    "5239804b28b3e49fdea54fc73e431f262c1cf727"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Nov 29 18:54:21 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:10 2018 +0000"
+  },
+  "message": "Bluetooth: Check descriptors size in BluetoothHidDeviceAppSdpSettings\n\nBug: 119819889\nTest: compilation\nChange-Id: If51d0e2af74d99758f79a603d40cc2f5c84e4dde\n(cherry picked from commit 63519217e8c0682369b5b3dc11417f79b3b48b7e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "237082e4cb664780769a2556173299c7d32cffcf",
+      "old_mode": 33188,
+      "old_path": "core/java/android/bluetooth/BluetoothHidDeviceAppSdpSettings.java",
+      "new_id": "2f0b44f76ffb37911da5f40c19d13503c32696d5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/bluetooth/BluetoothHidDeviceAppSdpSettings.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f11e95b21007f24e5ab77298370855f9f085b2d7",
+  "tree": "aefbe9c812eb3a65c4ad95ea202052ef97943ef7",
+  "parents": [
+    "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Jul 01 13:05:50 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sat Aug 15 03:59:05 2015 +0000"
+  },
+  "message": "Check buffer size before using it\n\nBug: 21814993\nChange-Id: Idaac61b4b9f4058b94e84093644593ba315d72ff\n(cherry picked from commit c1a104aaad2d84a57bf5d87dd030d2bef56bf541)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "56bd875ab0f632dc20f75cafec764ad5585de196",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "46010caa12e7bec7c0551f03a6b46b3c058c466a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

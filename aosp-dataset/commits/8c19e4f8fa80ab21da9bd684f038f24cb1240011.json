@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8c19e4f8fa80ab21da9bd684f038f24cb1240011",
+  "tree": "04637f817e5f2560ecb1fdd80fa141d24d7b2d57",
+  "parents": [
+    "3526a4ac552f93a83ea838ddae5de45e1e068af0"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Mon May 13 11:57:09 2019 -0700"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Wed May 22 21:38:08 2019 +0000"
+  },
+  "message": "AOSP/UnifiedEmail - bug fix to composing messages.\n\nAs part of porting https://critique.corp.google.com/#review/247540041,\nneeded to make EXTRA_TO, EXTRA_CC, EXTRA_BCC, EXTRA_SUBJECT, EXTRA_BODY\npublic so that they couuld be accessed from packages/apps/Email package.\n\nBug: 127320867\n\nTest: manual - Ran the following tests on Pixel phone. Tested the email UI.\n\n$ make -j 40\n  -rw-r--r-- 1 rtenneti primarygroup 6375626 May  5 19:49 out/target/product/marlin/system/product/app/Email/Email.apk\n\n$ make UnifiedEmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 311703 May  5 20:04 out/target/product/marlin/testcases/UnifiedEmailTests/arm64/UnifiedEmailTests.apk\n\n$ make EmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 365023 May 13 14:39 out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb install -r out/target/product/marlin/system/product/app/Email/Email.apk\n$ adb install -r out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n$ adb install -r out/target/product/marlin/testcases/UnifiedEmailTests/arm64/UnifiedEmailTests.apk\n\n$ adb shell am instrument -w com.android.mail.emailtests\n  Time: 3.519\n  OK (157 tests)\n\nChange-Id: I2a0e1048bac20c4346ec16d4bc8151297971fe0d\nMerged-In: I2a0e1048bac20c4346ec16d4bc8151297971fe0d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bfb8a1c5a36cef8de3ce54766d96f986ae81b4ff",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/compose/ComposeActivity.java",
+      "new_id": "7d6834470750b912235166f3205be9d28eae10fe",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/compose/ComposeActivity.java"
+    }
+  ]
+}

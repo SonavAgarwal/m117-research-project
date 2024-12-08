@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "de806dfdb6dd3b9dec5d1d23c9029fb300799cf8",
+  "tree": "dc432f69d7da937658d9a68698bca22046dd6060",
+  "parents": [
+    "5c8263095ed5c6f5c08d049f6559abde49658d26"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Fri Aug 15 17:54:06 2014 +0900"
+  },
+  "committer": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Mon Sep 08 15:47:52 2014 +0900"
+  },
+  "message": "Fix DoS vulnerability in DHO_OPTIONSOVERLOADED.\n\nBug: 16677003\n\n(cherry picked from commit 371e319488e62475a4185a93bf47580860268561)\n\nChange-Id: I01446092c7ca9e0133d835cfdae8a9ee467d7aaf\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c22e767b89d4feb8f16e854e2f3fe1497913049e",
+      "old_mode": 33188,
+      "old_path": "dhcp.c",
+      "new_id": "53f479566a262bde95cf8943bcb251e2d8c5a84f",
+      "new_mode": 33188,
+      "new_path": "dhcp.c"
+    }
+  ]
+}

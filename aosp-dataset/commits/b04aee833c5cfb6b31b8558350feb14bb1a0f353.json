@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b04aee833c5cfb6b31b8558350feb14bb1a0f353",
+  "tree": "7c2d2f9e70830bc5db8485d6feb96ad5d4f487a8",
+  "parents": [
+    "f9ed2fe6d61259e779a37d4c2d7edb33a1c1f8ba"
+  ],
+  "author": {
+    "name": "Chien-Yu Chen",
+    "email": "cychen@google.com",
+    "time": "Wed Mar 09 12:21:01 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:45 2016 -0700"
+  },
+  "message": "Camera3Device: Validate template ID\n\nValidate template ID before creating a default request.\n\nBug: 26866110\nBug: 27568958\nChange-Id: Ifda457024f1d5c2b1382f189c1a8d5fda852d30d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "50d9d75c31df924e872bf51631a30fb14ca3af63",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/device3/Camera3Device.cpp",
+      "new_id": "8b43154b71063d9e29748df9e0e3165f727b61ab",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/device3/Camera3Device.cpp"
+    }
+  ]
+}

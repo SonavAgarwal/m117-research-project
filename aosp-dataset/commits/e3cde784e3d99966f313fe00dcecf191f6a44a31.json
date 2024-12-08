@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e3cde784e3d99966f313fe00dcecf191f6a44a31",
+  "tree": "62cd5505b2420006c0746a2a7dc872e9a8d3dff2",
+  "parents": [
+    "aaa0fee0d7a8da347a0c47cef5249c70efee209e"
+  ],
+  "author": {
+    "name": "Wale Ogunwale",
+    "email": "ogunwale@google.com",
+    "time": "Thu Jun 11 12:44:47 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:04:59 2015 -0700"
+  },
+  "message": "Prevent system uid component from running in an app process\n\nBug: 21669445\nChange-Id: I11d0bc5301d7e2a64972221f54f3cbd611f8e404\n(cherry picked from commit 44368567f840e3469b5fd2c9399ed444b6f46ebf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4d37ab86dda16fd7e4bdf9ba24ea083bab067d71",
+      "old_mode": 33261,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "2020bca6116956196c313bcc4d4dbcaa5df22c35",
+      "new_mode": 33261,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

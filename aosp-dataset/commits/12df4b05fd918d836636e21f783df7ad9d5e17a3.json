@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "12df4b05fd918d836636e21f783df7ad9d5e17a3",
+  "tree": "3a45a146e21a1b0d03cbafd25dddf1d6e5f7e932",
+  "parents": [
+    "dcace892979fc35748417b33f51cf84cec6288c4"
+  ],
+  "author": {
+    "name": "Emilian Peev",
+    "email": "epeev@google.com",
+    "time": "Fri May 11 09:53:13 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:42:12 2018 +0000"
+  },
+  "message": "Merge commit \u0027f9e3022c474619c69a46ae7dbe11b5b531dbad57\u0027 into am-0d58d39a-0539-474e-b9c8-36cc976d15e8\n\n* commit \u0027f9e3022c474619c69a46ae7dbe11b5b531dbad57\u0027:\n  Camera: Initialize metadata padding field\n\nTest: Camera CTS\nBug: 77238656\nChange-Id: I6c8b3138a0e2176228180d7b1edc9f9352d0c07f\n(cherry picked from commit 6837fddebdc0ee6afe15517a620f754d88a3da42)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e99abc4f4d959b7cb11763ea6cfcfe33eadcb7d8",
+      "old_mode": 33188,
+      "old_path": "camera/src/camera_metadata.c",
+      "new_id": "f33da8dc27a3ee520355dbcc2f3c0a6d4488cabb",
+      "new_mode": 33188,
+      "new_path": "camera/src/camera_metadata.c"
+    }
+  ]
+}

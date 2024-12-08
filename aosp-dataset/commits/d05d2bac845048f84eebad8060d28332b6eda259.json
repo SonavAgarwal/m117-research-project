@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d05d2bac845048f84eebad8060d28332b6eda259",
+  "tree": "1591cbfe99b3ada2b80238cef373fa687d3072a9",
+  "parents": [
+    "07a21754f45672b27e765d8c7677c9663c6dce91"
+  ],
+  "author": {
+    "name": "Tony Mak",
+    "email": "tonymak@google.com",
+    "time": "Thu Aug 10 14:19:43 2017 +0100"
+  },
+  "committer": {
+    "name": "Tony Mak",
+    "email": "tonymak@google.com",
+    "time": "Fri Aug 18 16:22:40 2017 +0000"
+  },
+  "message": "DPC should not be allowed to grant development permission\n\nTest: cts-tradefed run cts-dev --module CtsDevicePolicyManagerTestCases --t  com.android.cts.devicepolicy.MixedDeviceOwnerTest#testPermissionGrant_developmentPermission\nTest: cts-tradefed run cts-dev --module CtsDevicePolicyManagerTestCases --t  com.android.cts.devicepolicy.MixedProfileOwnerTest#testPermissionGrant_developmentPermission\nTest: cts-tradefed run cts-dev --module CtsDevicePolicyManagerTestCases --t  com.android.cts.devicepolicy.MixedDeviceOwnerTest#testPermissionGrant\nTest: cts-tradefed run cts-dev --module CtsDevicePolicyManagerTestCases --t  com.android.cts.devicepolicy.MixedProfileOwnerTest#testPermissionGrant\nTest: Run \"Permissions lockdown\" test in CtsVerifier\n\nBug: 62623498\n\nMerged-In: If83d8edd0eea99145421e967ae47fdc264a5cf7c\n\nChange-Id: I129bfe850981cf0b3646b7c1cf19c8a3ec69f512\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "911bb2a701735f6ceea4001d1c50abd9f4216a56",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "55a1a459f20294bd44c23321d529df92da77708f",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

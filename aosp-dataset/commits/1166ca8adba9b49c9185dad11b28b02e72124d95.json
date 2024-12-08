@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1166ca8adba9b49c9185dad11b28b02e72124d95",
+  "tree": "d0c2005fab72174ed6bc92ed8b12663b44387ef2",
+  "parents": [
+    "bb716492f4a76cec57f9793fb719b1823cca21de"
+  ],
+  "author": {
+    "name": "Peter Qiu",
+    "email": "zqiu@google.com",
+    "time": "Mon Dec 12 13:50:01 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:33:02 2017 -0800"
+  },
+  "message": "WifiInstaller: remove the installation file\n\nPreviously, the installation file deletion was done by the parsing\nfunction WifiManager#buildWifiConfig.  This results in a security\nvulnerability with the parsing function since the caller can use\nthat function to delete arbitrary files.\n\nThe underlying API used by WifiManager#buildWifiConfig is updated\nto not perform the file deletion.  So as the caller of that API,\nwe are responsible for deleting the installation file.\n\nBug: 33178389\nTest: Verify passpoint configuration installation works using shamu\nChange-Id: I3b88347c86dcb213033b5aa76e7e19a5524bee05\n(cherry picked from commit bfd17d2ab2be44f9827bcbb4d57833698813f79b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "889c7608080f73b6c86c89e826e27080b5128463",
+      "old_mode": 33188,
+      "old_path": "src/com/android/certinstaller/WiFiInstaller.java",
+      "new_id": "728c8eccbdfce9541b73686a49d8201addb27954",
+      "new_mode": 33188,
+      "new_path": "src/com/android/certinstaller/WiFiInstaller.java"
+    }
+  ]
+}

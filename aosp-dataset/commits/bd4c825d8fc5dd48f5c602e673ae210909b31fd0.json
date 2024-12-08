@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bd4c825d8fc5dd48f5c602e673ae210909b31fd0",
+  "tree": "3b2aeb489a89efdf9800f46caffa112e14da7d34",
+  "parents": [
+    "5d46e9a1784c02f347af107a978fe9fbd7af7fb2"
+  ],
+  "author": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Thu Apr 06 17:44:08 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:04:07 2017 +0000"
+  },
+  "message": "Fix 36385715 heap overflow when loading HDR files\n\nChange-Id: I0fa1f69b4d87e32cfbd559db472cc89304ae2b37\nFix: 36385715\nTest: PoC\n(cherry picked from commit e6247a186731f593924c316382d4971f90126265)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "23254d64d39d5f0b86fe89dfadc94f27996d7d25",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/gdx2d/stb_image.h",
+      "new_id": "1e48cc40db61691971e3709c0c4c5fbcd6ea338c",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/gdx2d/stb_image.h"
+    }
+  ]
+}

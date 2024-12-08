@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5859ae22db0a2d16af3e3ca19d582de37daf5eb6",
+  "tree": "3647d19671592c75fa7c4c131f866344c0ad6d6b",
+  "parents": [
+    "aa47b14d595b17c6db5f0920ea2eaa94ec8ebbd9"
+  ],
+  "author": {
+    "name": "Chih-Hung Hsieh",
+    "email": "chh@google.com",
+    "time": "Fri Feb 27 12:19:59 2015 -0800"
+  },
+  "committer": {
+    "name": "Chih-Hung Hsieh",
+    "email": "chh@google.com",
+    "time": "Fri Feb 27 12:19:59 2015 -0800"
+  },
+  "message": "Add macro definitions for clang/llvm.\n\nChange-Id: I62d1a167eebfb266e846b1de7f23873f1dfdab56\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b72b69bcc18e13a330f9b21ae1b37c45e25f8084",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/macros.h",
+      "new_id": "fd48a7facefe67245a167bef97333e0b449677da",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/macros.h"
+    }
+  ]
+}

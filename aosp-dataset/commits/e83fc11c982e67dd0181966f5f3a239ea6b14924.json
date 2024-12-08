@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e83fc11c982e67dd0181966f5f3a239ea6b14924",
+  "tree": "0e6316f1fdc0a918cd1007db04bffcc40ca12ce1",
+  "parents": [
+    "4707e2b64db6c5d06a1b663f1000562b786d5a06"
+  ],
+  "author": {
+    "name": "Sunny Goyal",
+    "email": "sunnygoyal@google.com",
+    "time": "Thu Sep 08 14:32:06 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:37 2016 -0700"
+  },
+  "message": "Preventing a shortcut which requires permissions from being added to\nhomescreen\n\nA shortcut can be added by any app as INSTALL_SHORTCUT is a normal\nlevel permission. But the intent is actually launched by the launcher\napp which can have other permission as well.\n\n\u003e When adding a shortcut from the broadcast, verify that the intent does\nnot require any permission\n\u003e When adding a shortcut using the two-step drop process, verify that\nthe source app also has the permission to create such a shortcut\n\nBug: 30778130\nChange-Id: I33a391bc0af81248aaff4459aaa79d1adc77926b\n(cherry picked from commit fb5096d07bb3bb59fd4b5db6b68613030169b4bd)\n(cherry picked from commit 116d34bc634cfe12ffa2f291df286629d5abdcfd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "921e90ced86547aa4ec12d93b7e1bfb12d75f88c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/launcher3/InstallShortcutReceiver.java",
+      "new_id": "d2eff55a62fbc61a317fe44d8317b10ebc82c5d4",
+      "new_mode": 33188,
+      "new_path": "src/com/android/launcher3/InstallShortcutReceiver.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "23a57396f07d339b9c0e51933b2da909200c5142",
+      "old_mode": 33188,
+      "old_path": "src/com/android/launcher3/Launcher.java",
+      "new_id": "104e90cf5b077073a76390111e9419891dddee3f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/launcher3/Launcher.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5e60ed6ee83c26cd263670e0871ef6d14798c979",
+      "old_mode": 33188,
+      "old_path": "src/com/android/launcher3/util/PackageManagerHelper.java",
+      "new_id": "938dcb4fcaa478937cd36beb424a38f7e688f330",
+      "new_mode": 33188,
+      "new_path": "src/com/android/launcher3/util/PackageManagerHelper.java"
+    }
+  ]
+}

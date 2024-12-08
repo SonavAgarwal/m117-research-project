@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "45b202513ba7440beaefbf9928f73fb6683dcfbd",
+  "tree": "f6a665385bb8c9060d173139cb5dac4762400b9c",
+  "parents": [
+    "fefc4f4e94945bfde3e3aa5524756f36f06b739d"
+  ],
+  "author": {
+    "name": "Fabien Sanglard",
+    "email": "sanglardf@google.com",
+    "time": "Wed Jan 18 16:43:18 2017 -0800"
+  },
+  "committer": {
+    "name": "Fabien Sanglard",
+    "email": "sanglardf@google.com",
+    "time": "Thu Jan 19 00:47:49 2017 +0000"
+  },
+  "message": "Fix security vulnerability\n\nChange-Id: I4c9ea3a3177131fa29d2561da71ef18bec3af108\nTest: angler, marlin\nBug: 32628763\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a10a8138e34dfcc82fc2fb00fec6b70bbb6b8e93",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "4e97321dbfc40ce767b45de0d5c0b0ab120eacfe",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f3b269f0ea416598f01e381b629b6431478e453",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger_hwc1.cpp",
+      "new_id": "8f6fd660e44cb9e1386ea1935759b347ccee3425",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger_hwc1.cpp"
+    }
+  ]
+}

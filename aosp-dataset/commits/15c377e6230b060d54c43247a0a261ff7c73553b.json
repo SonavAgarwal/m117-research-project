@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "15c377e6230b060d54c43247a0a261ff7c73553b",
+  "tree": "24da255040e6e9ef76c5d1b3aa2c2f71d3de80d9",
+  "parents": [
+    "c5bd09cfa93a7e92d736eedbb585af85ad4ecbe8"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Thu Nov 08 09:40:09 2018 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:13:34 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Add SkAndroidFrameworkUtils::SafetyNetLog\n\nCherry-picked from upstream (minus SkPngCodec-specific\ncode):\nhttps://skia-review.googlesource.com/c/skia/+/170354\n\nBug: 117838472\nBug: 118372692\nBug: 118143775\nTest: Iae4d7f393c892111b12282c5eae31d79912721f9\nChange-Id: I463f8b2c11c07098e9ec24448f66fcafcf6cd76b\n(cherry picked from commit 2277702eee7eb6e99002b6b5248254fe9ffd5f76)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0457d035349ef64bf93ee2f6c9c980cb38408d01",
+      "old_mode": 33188,
+      "old_path": "include/android/SkAndroidFrameworkUtils.h",
+      "new_id": "46d251626e5469b1509f5eb1b31af2e491967ba3",
+      "new_mode": 33188,
+      "new_path": "include/android/SkAndroidFrameworkUtils.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5fbc2cae1877fced7c7e8b8db0074aa3f6ad35bd",
+      "old_mode": 33188,
+      "old_path": "src/android/SkAndroidFrameworkUtils.cpp",
+      "new_id": "f0a7b8a2fc44721280573abe441d4410df412a70",
+      "new_mode": 33188,
+      "new_path": "src/android/SkAndroidFrameworkUtils.cpp"
+    }
+  ]
+}

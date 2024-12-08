@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "969f2c97f04a0570a23d4d94b6f0a0642d2224cb",
+  "tree": "83d58fdd71ac6b5460d7ad7bc9dc05f3144b92e4",
+  "parents": [
+    "0e4a89e436be1fc249f3d16e63af4d60c62c815d"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue Sep 12 16:42:44 2017 -0700"
+  },
+  "committer": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue Oct 03 19:17:22 2017 +0000"
+  },
+  "message": "aaudio: disable MMAP mode by not creating AAudioService\n\nOnly Legacy mode will work, which uses AudioFlinger.\n\nNote that another CL with the same ID in oc-mr1-dev is used to prevent\nAAudio MMAP from being disabled in MR1 and master.\n\nBug: 65280854\nBug: 65262790\nTest: See bugs. Any attempt to use MMAP will fail to open the service.\nMerged-In: Ic68d136c99c16134aa704495311ab25285fd76a9\nChange-Id: Ic68d136c99c16134aa704495311ab25285fd76a9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ee02d23c331f215fc89f6cd2d9c4586311efb4ec",
+      "old_mode": 33188,
+      "old_path": "media/audioserver/main_audioserver.cpp",
+      "new_id": "ba47fd43476ef245022e2c8525b9e3cba92103aa",
+      "new_mode": 33188,
+      "new_path": "media/audioserver/main_audioserver.cpp"
+    }
+  ]
+}

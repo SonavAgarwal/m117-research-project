@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1938c5be3be49f2652b84a58f1f448d57871e28e",
+  "tree": "830aff0990e3f4186bcf0a532469a4ea328252dd",
+  "parents": [
+    "9d83abae226a1ffd6d0e9bca4b2c998d6126d51c"
+  ],
+  "author": {
+    "name": "Grace Jia",
+    "email": "xiaotonj@google.com",
+    "time": "Thu Jun 18 14:12:56 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:20 2020 +0000"
+  },
+  "message": "Fix security vulnerability of TelecomManager#getPhoneAccountsForPackage\n\nCheck calling package and READ_PRIVILEGED_PHONE_STATE to avoid potential\nPII expotion.\n\nBug: 153995334\nTest: atest TelecomUnitTests:TelecomServiceImpl\nChange-Id: Ie834633dc4031d19af90e922ef0f111c3c8d7cb2\n(cherry picked from commit 9d8d0cf3dcf741afe7ed50e60da513a47b0e8d59)\n(cherry picked from commit f3f2d7c2dcb558081f02e282078c0c42c5c3e1b1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "62e0f3fe15675c2319b6024652b630426c940850",
+      "old_mode": 33188,
+      "old_path": "src/com/android/server/telecom/TelecomServiceImpl.java",
+      "new_id": "9ccae9a37d383f71ef455e81d48759448bda721f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/server/telecom/TelecomServiceImpl.java"
+    }
+  ]
+}

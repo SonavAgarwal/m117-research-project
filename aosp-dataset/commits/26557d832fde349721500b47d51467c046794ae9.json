@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "26557d832fde349721500b47d51467c046794ae9",
+  "tree": "a08118e74fc28067f2825bf9dd5d4084127289b8",
+  "parents": [
+    "96974782cd914120272a026ebc263dd38098f392"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri May 19 14:34:10 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:11:52 2017 +0000"
+  },
+  "message": "m4v_h263: check header first before decoding a frame.\n\nTest: fix the file in the bug\nBug: 37660827\nChange-Id: I9d6919f96c0c9f29221be1e8e852ecb21062bad9\n(cherry picked from commit db545366c2e893dbbe1a42d858c52067101beda6)\n(cherry picked from commit 38142b60f5144f92d99463fa1d65c543382d1264)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1dd631ad31f6a32d7ab3693e25d7acd8db041214",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp",
+      "new_id": "411a251d150717ad633d3e7362ef65d735c8c536",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp"
+    }
+  ]
+}

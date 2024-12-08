@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "70dd1f77873913635288e513564a6c93ae4d0a26",
+  "tree": "3eb6f7cfdf72de1047f9f6e0c8e54253d7e2abeb",
+  "parents": [
+    "455730f8e76ef539a9dcfdad2d38b7541a7654d4"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 11:37:01 2015 -0400"
+  },
+  "committer": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 11:37:01 2015 -0400"
+  },
+  "message": "Fix NOT_RESTRICTED network capability and enforce it.\n\nWith this change:\n1. NOT_RESTRICTED should be removed from NetworkRequests that bring up\n   special restricted carrier networks (e.g. IMS, FOTA).\n2. NetworkRequests without NOT_RESTRICTED require CONNECTIVITY_INTERNAL\n   permission to register\n3. Binding sockets to networks without NOT_RESTRICTED requires\n   CONNECTIVITY_INTERNAL permission\n\nBug:21637535\nChange-Id: I5991d39facaa6b690e969fe15dcbeec52e918321\n(cherry picked from commit af171aa4dcf294bf2d1b9bed54ef9a6b0ec76361)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d83da445350181dbdcedf0e4be2c9c8dfc5f331e",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/dataconnection/DataConnection.java",
+      "new_id": "545ea23411ca7a479e7349b2c52624a1607a7dc3",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/dataconnection/DataConnection.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "20eeec5e50888fa99bd81361399dad55da0e00b1",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/dataconnection/DcTracker.java",
+      "new_id": "12e4bbbb2df84c6ae369a3d33a938ef6a87ac1dd",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/dataconnection/DcTracker.java"
+    }
+  ]
+}

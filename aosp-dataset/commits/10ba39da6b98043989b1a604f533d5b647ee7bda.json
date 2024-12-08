@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "10ba39da6b98043989b1a604f533d5b647ee7bda",
+  "tree": "da155f024bdb70b1c4a82e99bfbcc9f366866477",
+  "parents": [
+    "a5bc19e1f5e5c159b1a4019f84ed2958cdf26818"
+  ],
+  "author": {
+    "name": "Luke Huang",
+    "email": "huangluke@google.com",
+    "time": "Mon Oct 05 18:37:47 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:53:43 2021 +0000"
+  },
+  "message": "dnsmasq: fix heap overflow\n\nBackport CVE-2017-14491.\n(http://thekelleys.org.uk/gitweb/?p\u003ddnsmasq.git;a\u003dcommit;h\u003d0549c73b7ea6b22a3c49beb4d432f185a81efcbc)\n\nBug: 158221622\nTest: 1. Manual testing - build dnsmasq with asan enabled and test the\n         corresponding functionalities.\n      2. Test tethering still worked fine\nChange-Id: I90390535198fe0a7b8084879d39f813d8de51ab3\n(cherry picked from commit b7ae3453bfcc139be75c8dec5cdb8a1453eb6e16)\n(cherry picked from commit 2c415e570aed0b955698238a274a50f3ffa4892e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2c5f964bf83741d5988977f3346d6e0c96f854fd",
+      "old_mode": 33188,
+      "old_path": "src/dnsmasq.h",
+      "new_id": "9af3a2c8c2f6e694e50085d5bf9bcb255920ed62",
+      "new_mode": 33188,
+      "new_path": "src/dnsmasq.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0f883e1e9b8eaa26a855d10db5ce9cfca8f36009",
+      "old_mode": 33188,
+      "old_path": "src/rfc1035.c",
+      "new_id": "47479aba65eeed5aa7b7e071e27d8724753598f6",
+      "new_mode": 33188,
+      "new_path": "src/rfc1035.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f74ecb993ce7aa7e1683b900d5836d00cd4fea8a",
+      "old_mode": 33188,
+      "old_path": "src/rfc2131.c",
+      "new_id": "c0f649a5082e1b3f21db8d244cc434c7e2ff5259",
+      "new_mode": 33188,
+      "new_path": "src/rfc2131.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "53e31371d036167a6910385f4822783b76682114",
+      "old_mode": 33188,
+      "old_path": "src/util.c",
+      "new_id": "11b43a0680f6b81784d319cf8ba75ba4bf08df80",
+      "new_mode": 33188,
+      "new_path": "src/util.c"
+    }
+  ]
+}

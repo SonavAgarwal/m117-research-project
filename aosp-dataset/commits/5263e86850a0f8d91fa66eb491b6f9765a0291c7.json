@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5263e86850a0f8d91fa66eb491b6f9765a0291c7",
+  "tree": "04abfb5c9eef1bf7f298bd9d44da8c9857a84344",
+  "parents": [
+    "20491714c2ca0a8fd789220e9a8afba3701f5113"
+  ],
+  "author": {
+    "name": "Etan Cohen",
+    "email": "etancohen@google.com",
+    "time": "Sun Dec 30 18:00:37 2018 -0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Sep 10 13:51:16 2020 -0700"
+  },
+  "message": "[WIFI] Make Aware + Connectivity agent network specifiers sensitive\n\nConfigure the Wi-Fi Aware agent network\nspecifier as sensitive. This will strip it out from the\nnetwork capabilities before the capabilities are forwarded to the\napp.\n\nNecessary since the agent network specifier contains information\nwhich the apps should not have.\n\nBug: 161853197\nBug: 161370134\nTest: atest ConnectivityServiceTest (frameworks/base/tests/net)\nTest: atest frameworks/base/tests/net\nTest: atest frameworks/opt/net/wifi/tests/wifitests\nTest: atest frameworks/opt/telephony/tests/telephonytests\nTest: atest frameworks/opt/net/ethernet/tests\nTest: atest android.net.cts - some flakiness!\nTest: act.py ThroughputTest\nTest: act.py DataPathTest\nTest: atest SingleDeviceTest (cts)\nChange-Id: Ia6adf2afa0f2052dc46a504ceb3e5aaba591aab8\nMerged-In: I9673107a2ee13bca63539fc7dbee7f376af3ebcb\n(cherry picked from commit 7f60f432fbfac7ed1e258c32d278d2f27657994b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7c99c497c54b77e2f58cf66691a5db651bdaa6c6",
+      "old_mode": 33188,
+      "old_path": "wifi/java/android/net/wifi/aware/WifiAwareAgentNetworkSpecifier.java",
+      "new_id": "6b1485356dc2d658317208ceee040ba4876dc185",
+      "new_mode": 33188,
+      "new_path": "wifi/java/android/net/wifi/aware/WifiAwareAgentNetworkSpecifier.java"
+    }
+  ]
+}

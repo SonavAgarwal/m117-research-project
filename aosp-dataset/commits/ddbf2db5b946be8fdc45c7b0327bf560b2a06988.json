@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ddbf2db5b946be8fdc45c7b0327bf560b2a06988",
+  "tree": "ed5765b8b9b4a82dd23d6a49aa9e0aeb75ba6a59",
+  "parents": [
+    "9c5a09fd23d595a39234a7879a3567a1158d3b62"
+  ],
+  "author": {
+    "name": "Adam Powell",
+    "email": "adamp@google.com",
+    "time": "Thu Apr 28 16:32:18 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 10:29:15 2016 -0700"
+  },
+  "message": "Backport ChooserTarget package source check from N\n\nFix a bug where a ChooserTargetService could supply a ChooserTarget\npointing at a non-exported activity outside of its own package and\nhave it launch.\n\nBug 28384423\n\nChange-Id: I3f5854f91c5695ad9253d71055ef58224df47008\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7699673701f0d4a4915f9f0d3bf5bff4076f4c90",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/app/ChooserActivity.java",
+      "new_id": "e137f9407a3d167253f95be19e62c1f896bfc439",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/app/ChooserActivity.java"
+    }
+  ]
+}

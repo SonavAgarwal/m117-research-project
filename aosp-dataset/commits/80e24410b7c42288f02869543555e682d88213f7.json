@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "80e24410b7c42288f02869543555e682d88213f7",
+  "tree": "ba4f5f306328a81c1de7e0ca689a895a95500842",
+  "parents": [
+    "04c6c2121729853e02a762dba4be1a17d4b325b5"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Fri Dec 14 14:55:02 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:02:49 2019 +0000"
+  },
+  "message": "DO NOT MERGE: Use a weak pointer to deliver updates to AVRCP devices.\n\nIf a device disconnects right before a update message gets queued, the\ndevice becomes null and there is a crash when the callback for the\nupdate executes on the disconnected device. This patch switches the\ndevice reference from being Unretained to using a weak pointer so that\nthe callback just doesn\u0027t execute if the device is disconnected.\n\nBug: 120431125\nBug: 120445479\nTest: Use the same test as b/120477414 as that bug causes a disconnect\nat the same time as a media update.\n\nChange-Id: I1dcc08e5c9866106e7ec0dad52505e34b42da600\n(cherry picked from commit f083d1e076ea97e6feaa363f03dab3656bd03ee0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8c22365b20ac4ba04a1c45a333525ac2ba9d46ff",
+      "old_mode": 33188,
+      "old_path": "btif/avrcp/avrcp_service.cc",
+      "new_id": "5a058f4afdfa6d7ab803355ffc2cd46270e35efc",
+      "new_mode": 33188,
+      "new_path": "btif/avrcp/avrcp_service.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "9b25fac034e5593c8823794c07410213b4e957c3",
+      "old_mode": 33188,
+      "old_path": "profile/avrcp/device.cc",
+      "new_id": "7f8ecae3a7d4c9ac57eca1a6ca7b8c534dbc73de",
+      "new_mode": 33188,
+      "new_path": "profile/avrcp/device.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "5ef886d26be42fd0db88d36914d9bffea6a05e10",
+      "old_mode": 33188,
+      "old_path": "profile/avrcp/device.h",
+      "new_id": "b1f34208c6508cab81b4bf0b25d62ff0bada3716",
+      "new_mode": 33188,
+      "new_path": "profile/avrcp/device.h"
+    }
+  ]
+}

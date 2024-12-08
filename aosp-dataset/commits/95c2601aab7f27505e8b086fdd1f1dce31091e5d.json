@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "95c2601aab7f27505e8b086fdd1f1dce31091e5d",
+  "tree": "4f6e94999842ff13b92b574d61e918c9d146dae8",
+  "parents": [
+    "45660529af1f4063a00e84aa2361649e6a9a878c"
+  ],
+  "author": {
+    "name": "Arun Kumar K.R",
+    "email": "akumarkr@codeaurora.org",
+    "time": "Fri Sep 18 19:16:12 2015 -0700"
+  },
+  "committer": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Fri Oct 16 11:49:26 2015 -0700"
+  },
+  "message": "hwc: Fix MDP comp array index access\n\nFix MDP comp array index access in case of High Res pipe allocation.\nThis is already correct in case of Low Res allocation routine.\n\nBug: 24163261\n\nAcked-by: Saurabh Shah \u003csaurshah@codeaurora.org\u003e\n\nChange-Id: I7eaa0711ef8998ea03edba18b74db80459daf4c7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "38d8439ef707466e279cf7e26fb30a3f460e9fef",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp",
+      "new_id": "24b941f283207209ad2650f3005f74fad203803f",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp"
+    }
+  ]
+}

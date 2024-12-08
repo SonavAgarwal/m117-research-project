@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ca8ac8acdad662230ae37998c6c4091bb39402b6",
+  "tree": "f2142f959da7f25a1c70efcfea0db2a853d194bf",
+  "parents": [
+    "6299a6ba13906c695f7a4f6748f7bc5856a110e5"
+  ],
+  "author": {
+    "name": "Raph Levien",
+    "email": "raph@google.com",
+    "time": "Wed Jan 06 14:31:23 2016 -0800"
+  },
+  "committer": {
+    "name": "Raph Levien",
+    "email": "raph@google.com",
+    "time": "Thu Jan 07 21:39:25 2016 +0000"
+  },
+  "message": "Reject fonts with invalid ranges in cmap\n\nA corrupt or malicious font may have a negative size in its cmap\nrange, which in turn could lead to memory corruption. This patch\ndetects the case and rejects the font, and also includes an assertion\nin the sparse bit set implementation if we missed any such case.\n\nExternal issue:\nhttps://code.google.com/p/android/issues/detail?id\u003d192618\n\nBug: 26413177\nChange-Id: Icc0c80e4ef389abba0964495b89aa0fae3e9f4b2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8be45d173c557de0aa955cc0b7f94c9326a65b69",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "4c9643a1d4a02da0734d60a718591e786849fdfc",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7acb7ba345bd3d804f3c9502e86c225011ba713e",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/SparseBitSet.cpp",
+      "new_id": "2265ff2bb2aef2428bf78e8b5fe411a0dde818da",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/SparseBitSet.cpp"
+    }
+  ]
+}

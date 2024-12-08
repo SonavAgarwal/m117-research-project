@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "243e62949f7208d3b82eda3ee4ec22d3dbc1fb19",
+  "tree": "77e209c7bb9b24ba69c411516363b5ca7b0d262e",
+  "parents": [
+    "73c8b92eec8bd566ad02b56985894947047a6fec"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Fri Sep 16 12:12:17 2016 -0600"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Mon Sep 26 20:47:08 2016 +0000"
+  },
+  "message": "Enforce calling identity before clearing.\n\nFix merge conflict into nyc-release\nWhen opening a downloaded file, enforce that the caller can actually\nsee the requested download before clearing their identity to read\ninternal columns.\n\nHowever, this means that we can no longer return the \"my_downloads\"\npaths: if those Uris were shared beyond the app that requested the\ndownload, access would be denied.  Instead, we need to switch to\nusing \"all_downloads\" Uris so that permission grants can be issued\nto third-party viewer apps.\n\nSince an app requesting a download doesn\u0027t normally have permission\nto \"all_downloads\" paths, we issue narrow grants toward the owner of\neach download, both at device boot and when new downloads are\nstarted.\n\nBug: 30537115, 30945409\nChange-Id: If944aada020878a91c363963728d0da9f6fae3ea\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d30018f7bc56d5ea725bc95ccafe4c9eaf85c031",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "d50eedba6d5165f08678672deb551a29819f144b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    }
+  ]
+}

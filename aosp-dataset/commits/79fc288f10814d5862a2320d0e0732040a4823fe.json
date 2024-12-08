@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "79fc288f10814d5862a2320d0e0732040a4823fe",
+  "tree": "9100e237ca73ceb90ff869146b5ef4110ccaabac",
+  "parents": [
+    "69522b36f776a2a8ad7e2ce69cfb58f60165b3d5"
+  ],
+  "author": {
+    "name": "Mark Salyzyn",
+    "email": "salyzyn@google.com",
+    "time": "Fri Nov 20 09:30:29 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:28 2020 +0000"
+  },
+  "message": "storaged: protect global proto_loaded\n\nproto_loaded is not thread safe, so we must protect it with\na mutex proto_lock.\n\nSigned-off-by: hanhongli@360.cn\nSigned-off-by: gongguang@360.cn\nSigned-off-by: Mark Salyzyn \u003csalyzyn@google.com\u003e\nBug: 170732441\nTest: compile\nChange-Id: I93416598b6047e890c66b922b360093aa42db8c5\n(cherry picked from commit d179cbcdc2b1a97f0f3147bc502af22009a882ba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6f920487950346bc1a8d7dc9af4bd68ef33eddcb",
+      "old_mode": 33188,
+      "old_path": "storaged/include/storaged.h",
+      "new_id": "79b5d41ac4248587311332021da1a44529eb6ffb",
+      "new_mode": 33188,
+      "new_path": "storaged/include/storaged.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "573b8c56381de42182bf403e86a10ac8fe997817",
+      "old_mode": 33188,
+      "old_path": "storaged/storaged.cpp",
+      "new_id": "b7aa89ff76e2c8a01877fcc36ffc589656fe6699",
+      "new_mode": 33188,
+      "new_path": "storaged/storaged.cpp"
+    }
+  ]
+}

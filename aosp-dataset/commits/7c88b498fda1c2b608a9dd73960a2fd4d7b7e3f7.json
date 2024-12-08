@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7c88b498fda1c2b608a9dd73960a2fd4d7b7e3f7",
+  "tree": "6922c647535a09be4413fb66b477f9a0ba9b01f3",
+  "parents": [
+    "2c75e1c3b98e4e94f50c63e2b7694be5f948477c"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Wed Sep 14 10:01:37 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Sep 30 11:45:51 2016 -0700"
+  },
+  "message": "IOMX: allow configuration after going to loaded state\n\nThis was disallowed recently but we still use it as MediaCodcec.stop\nonly goes to loaded state, and does not free component.\n\nBug: 31450460\nChange-Id: I72e092e4e55c9f23b1baee3e950d76e84a5ef28d\n(cherry picked from commit e03b22839d78c841ce0a1a0a1ee1960932188b0b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f689eed242a868117fa6d8daf6ce89dc471c08b4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "2e7d97ca49751b6d0ac94591045e25d4977e88ff",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

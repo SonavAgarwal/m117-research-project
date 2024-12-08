@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "30cec963095366536ca0b1306089154e09bfe1a9",
+  "tree": "8d8e58b549c5942824fec00788f36104992e57ca",
+  "parents": [
+    "ebc284cf3a59ee5cf7c06af88c2f3bcd0480e3e9"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Wed Aug 08 11:21:28 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:19 2018 +0000"
+  },
+  "message": "Check packet length in bta_av_proc_meta_cmd\n\nBug: 111893951\nTest: manual - connect A2DP\nChange-Id: Ibbf347863dfd29ea3385312e9dde1082bc90d2f3\n(cherry picked from commit ed51887f921263219bcd2fbf6650ead5ec8d334e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ad3bf3dc4576a354ddeb777fb18c9ba8252e8251",
+      "old_mode": 33188,
+      "old_path": "bta/av/bta_av_act.cc",
+      "new_id": "5625f90bf865c654127769520c8b4116875489bb",
+      "new_mode": 33188,
+      "new_path": "bta/av/bta_av_act.cc"
+    }
+  ]
+}

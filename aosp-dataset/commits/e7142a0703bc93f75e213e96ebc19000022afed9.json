@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e7142a0703bc93f75e213e96ebc19000022afed9",
+  "tree": "a3a01156e936be7ff9dfdfe70ea98c73a5fb503c",
+  "parents": [
+    "e248db02fbab2ee9162940bc19f087fd7d96cb9d"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed May 11 11:11:20 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:16 2016 -0700"
+  },
+  "message": "Check malloc result to avoid NPD\n\nBug: 28471206\nChange-Id: Id5d055d76893d6f53a2e524ff5f282d1ddca3345\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f8789dac7940410460ca82592fa2ce923914d1fa",
+      "old_mode": 33261,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "f6206d27f32912f975e45d34e4aefed5b7ff4923",
+      "new_mode": 33261,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

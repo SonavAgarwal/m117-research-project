@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f22c2a0f0f9e030c240468d9d18b9297f001bcf0",
+  "tree": "894d3145e4f259a3e046505a0cea8f2fc874bcf1",
+  "parents": [
+    "560ccdb509a7b86186fac0fce1b25bd9a3e6a6e8"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 11 17:32:32 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:20 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: vdec: deprecate unused config OMX_IndexVendorVideoExtraData\n\nThis config (used to set header offline) is no longer used. Remove handling\nthis config since it uses non-process-safe ways to pass memory pointers.\n\nFixes: Security Vulnerability - Segfault in MediaServer (libOmxVdec problem #2)\nBug: 27475409\n\nChange-Id: I7a535a3da485cbe83cf4605a05f9faf70dcca42f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3b84707c0064b29e67ec0ae283f3b272df6ee867",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp",
+      "new_id": "977aef2b27f2be7cd3bcfe42cbb024e68955164f",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp"
+    }
+  ]
+}

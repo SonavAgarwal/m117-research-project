@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ff20cd797822dba8569ee518c44e6864d6b4ebfa",
+  "tree": "2404b82811e32c7af6dbd7bdc11e45de3faf43b2",
+  "parents": [
+    "6690f19b09a6bf47660a7d87b21860c5beaac8be"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Mon Apr 03 12:21:57 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:07 2017 -0700"
+  },
+  "message": "DO NOT MERGE: Apply upstream Chromium patch for encoding changes\n\nGive up looking up interned names if the encoding changed during parsing\n\nNEXTL may process encoding changes by refilling the parser\u0027s input\nbuffer, which makes the accumulated length \u0027len\u0027 inaccurate.\n\nChromium bug: http://crbug.com/620679\n\nReview-Url: https://codereview.chromium.org/2603933002\nCr-Commit-Position: refs/heads/master@{#442517}\n\nBug: 36553781\nChange-Id: Id3484fbee201d1e19b684b109009d6590354b1d9\n(cherry picked from commit 008262d3e46b3d5aae2d2f981e26ca69c8bd2b51)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "53a6b7f0c961a9ead7811e66acbdcacf79eee895",
+      "old_mode": 33188,
+      "old_path": "parser.c",
+      "new_id": "669cd57f450c9f5b525cebdfe14ded61bba0eef1",
+      "new_mode": 33188,
+      "new_path": "parser.c"
+    }
+  ]
+}

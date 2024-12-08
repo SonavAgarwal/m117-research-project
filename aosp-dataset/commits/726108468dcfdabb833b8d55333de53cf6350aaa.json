@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "726108468dcfdabb833b8d55333de53cf6350aaa",
+  "tree": "1c6bcfaf4933a9da78810bd28a0aeb0beebc29dc",
+  "parents": [
+    "8e415eabb5d2abd2f2bd40a675339d967f81521b"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Apr 14 14:25:51 2016 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:02:38 2017 +0000"
+  },
+  "message": "DO NOT MERGE Handle streams with change in max_dec_buffering/num_reorder_frames\nwithout resolution change\n\nbackported from master as part of fixing a security issue on\nnyc-*.\n\nBug: 34779227\nTest: successful re-run of POC after patch\nChange-Id: I404099ac24439b5f6eddc9265dc571929433b3ee\n(cherry picked from commit 27ad0d7bffb18dc47ab420789ca45f5481906903)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "edfaf5a3dfed56a7c70feeedf706ca30187f9799",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "b4f843b323537ab0345ad31c90ecd02651036918",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

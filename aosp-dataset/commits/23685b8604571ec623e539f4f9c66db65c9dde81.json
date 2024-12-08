@@ -1,0 +1,111 @@
+)]}'
+{
+  "commit": "23685b8604571ec623e539f4f9c66db65c9dde81",
+  "tree": "ebb0715c185a87e390215cc430b8fd322dc86167",
+  "parents": [
+    "f66c83ebd45a367c609ed7c7443113faa667504e"
+  ],
+  "author": {
+    "name": "Nate Jiang",
+    "email": "qiangjiang@google.com",
+    "time": "Thu Dec 03 14:31:30 2020 -0800"
+  },
+  "committer": {
+    "name": "Roshan Pius",
+    "email": "rpius@google.com",
+    "time": "Tue Dec 15 11:29:32 2020 -0800"
+  },
+  "message": "[Suggestion] Check foreground user for API call\n\nAlso, squashes the follow up commit to create a single CL for\nbackporting:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nPasspointManager: Don\u0027t allow bg user to modify passpoint profiles\nAlso, add safety net logging for this bug.\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nBug: 174749461\nTest: atest com.android.server.wifi\nChange-Id: Ifc79ffeb04a7be99a9c60d9414b72e88275c0514\nMerged-In: Ifc79ffeb04a7be99a9c60d9414b72e88275c0514\n(cherry picked from commit e799efba85cbe52044a067869af71d9c15b573bb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "83cabf756cc466a2635ca37ee6e7704957c26040",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiConfigManager.java",
+      "new_id": "8fc91cb0983ded666390b2fb66da1efe757d325d",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiConfigManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "993debba5be4234116a14109d5937a076b1f281b",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiInjector.java",
+      "new_id": "48f1b3f2edb2ce8776028ce3d6657633aa716112",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiInjector.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "464ced0ad25c18ccb9bc6b24dab0be684c6bf473",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiNetworkSuggestionsManager.java",
+      "new_id": "2632835e62baaf7a3dbae8eb313703f7082998bb",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiNetworkSuggestionsManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5019f54e8492746f9693f0a9e6aaf7cfab3d3917",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiServiceImpl.java",
+      "new_id": "3b4f397963ca087df00d18c071640cc489711f7b",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiServiceImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9cb4254c0890db00f6fe5f403baee5047f52c511",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/hotspot2/PasspointManager.java",
+      "new_id": "d398759ab5180e33b509f45badcf2dab9b887c5a",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/hotspot2/PasspointManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "63197ea6d74e3e393e60d8549a873ff0f6ce1f9b",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/util/WifiPermissionsUtil.java",
+      "new_id": "ebe7ea481f0a164dd18ace42ed298fd00f72322c",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/util/WifiPermissionsUtil.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "28fdade185751f96118a338ca8a7ff99624ccb45",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java",
+      "new_id": "34567e9693db244c6f4d9a44ea15cdb964774360",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "38a0026df049aaad95c215436eb213e412756cbe",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiNetworkSuggestionsManagerTest.java",
+      "new_id": "fd27dcc065cf575b5c22b1c51a2ac816eb791868",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiNetworkSuggestionsManagerTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "22561a159523605e7625baa6885a400202d22744",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiServiceImplTest.java",
+      "new_id": "c1ddd63210d95ac298914763c18fa07fa092f4de",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiServiceImplTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9caf85f4eb7da398bed20ea924555d339caa4e7a",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/hotspot2/PasspointManagerTest.java",
+      "new_id": "cb459728a444e7c45335fcbd45fa174e0308c1c0",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/hotspot2/PasspointManagerTest.java"
+    }
+  ]
+}

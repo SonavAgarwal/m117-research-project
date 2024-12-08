@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5c49b6bf732c88481466dea341917b8604ce53fa",
+  "tree": "6e19aa44e4f84cd234c943fa4a6585e51e0bf928",
+  "parents": [
+    "b26b9425d700359d6ee68d45ac334fd1f2ab82d4"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Fri Dec 09 14:11:08 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:33:06 2017 -0800"
+  },
+  "message": "Prioritize package installer intent filter\n\nPackage Installer intent should always be handled by the package\ninstaller. Only privilegded apps can have a priority \u003e 0.\n\nThe K version is I79fd77b12bad9b79d1a53d08629a2b07919aad2c\nThe L version is I27611baae21c3820f594e8f58aec34fc4d0b1ffb\nThe M version is I7f1726fc9665e57ec63c966570169216eb2e0764\n\nBug: 32553261\nChange-Id: I3d9054ddd475c7e77e1696e31285a6b47d59fa2a\n(cherry picked from commit 540a404bd489d65feca8dbd85216891300e0fcfc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "83364bd6c3da3defb122b9cdc6251635cb7dcd33",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "654e5d1c53e922c86808f73fe55107f21e36abbe",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

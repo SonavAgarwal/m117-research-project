@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "381ccb2b7f2ba42490bafab6aa7a63a8212b396f",
+  "tree": "60446b70e8d242e00557b32ca1302c3babd2d0be",
+  "parents": [
+    "62c07468bc26d1f9487c5298bb2a2f3740db13b1"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Dec 30 13:51:34 2016 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:51 2017 +0000"
+  },
+  "message": "Decoder: Fixes in accessing mbaff flag in error cases\n\nps_dec-\u003eps_cur_slice-\u003eu1_mbaff_frame_flag is updated in ih264d_start_of_pic().\nSo updated value should be used after calling ih264d_start_of_pic()\n\nBug: 33974623\nTest: ran POC from bug\nChange-Id: I0f1ff5e01ed39767f493f197791e51b0da74952f\n(cherry picked from commit 3f6937a0031e4acadc9228559ae2ae47b992b16a)\n(cherry picked from commit 0f2f2b5fde873b8badee949561c17692588647e8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ca3f80bc99e201ab9e5a37d55c2a434c75bbf448",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "a78ea976feffea7705086ef962c5e9b07c2d2499",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

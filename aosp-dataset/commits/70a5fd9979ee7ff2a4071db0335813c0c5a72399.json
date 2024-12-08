@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "70a5fd9979ee7ff2a4071db0335813c0c5a72399",
+  "tree": "2816d41393c984b9ac56d91c58d5b306c3a98ced",
+  "parents": [
+    "459f6cbe7537b1ba0b88b96c44099bc897c1bcc8"
+  ],
+  "author": {
+    "name": "Tej Singh",
+    "email": "singhtejinder@google.com",
+    "time": "Thu Sep 10 23:20:58 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:43 2021 +0000"
+  },
+  "message": "Fix thread safety issue on clearing cache\n\nHistorically, we havent held a lock on ForceClearCache and\nClearCacheIfNecessary. This is not thread safe because kAllPullAtomInfo\nmust be accessed in a lock, especially now that pullers can be\nregistered/unregistered.\n\nTest: atest statsd_test, wrote a repro cl.\nBug: 168156854\nBug: 173552790\nChange-Id: I47d53a6d9d274bca4c78dbfd87e0097091b7b8cb\nMerged-In: I47d53a6d9d274bca4c78dbfd87e0097091b7b8cb\nMerged-In: I8bee7a0a6acecc1274d5acc0adb44c5dde8862e4\n(cherry picked from commit f9a4bb18ffa1605cced3ee4b161675a0c88941be)\n(cherry picked from commit db097214b109be7ca1b3ae470d4a8354c98a5b62)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a9ec7456e557f3b047769a88f01623dd6a653c1",
+      "old_mode": 33188,
+      "old_path": "cmds/statsd/src/external/StatsPullerManager.cpp",
+      "new_id": "99c39f6017b185b8f9927d2b2ea5c499943d2567",
+      "new_mode": 33188,
+      "new_path": "cmds/statsd/src/external/StatsPullerManager.cpp"
+    }
+  ]
+}

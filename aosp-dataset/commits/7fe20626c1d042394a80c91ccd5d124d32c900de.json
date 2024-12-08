@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7fe20626c1d042394a80c91ccd5d124d32c900de",
+  "tree": "04188a5a9e8d6265064026ce6d262dcccf7beaa6",
+  "parents": [
+    "14e2f9df79ecb25db9e88843406d738d607101b4"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Mon Feb 04 11:00:45 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:25:02 2019 +0000"
+  },
+  "message": "Merge \"Prevent OOB read in rw_i93_process_sys_info()\" into oc-dev am: 2c605825f8 am: 6430e95d82\nam: 404c66d3f1\n\nChange-Id: I23a0c2be3563c3dae9b2835e2605b82fd946d064\n(cherry picked from commit 34eb9823a391c1a47e2addfba094ea56106f8112)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "48edb7635cee1bedfb53b47b941c44a40fb0b367",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "5d75605b8f64647415877ce453e97d3d6c0d08e1",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4af8f912aa1ee714638d0f9694d6f856bc8166f3",
+  "tree": "71bbcd4260b47d1d2f6428741da06a09c7e360e9",
+  "parents": [
+    "9ac842a753ebd0b228fe31a81671ff60c23fe1e7"
+  ],
+  "author": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Wed Mar 08 16:32:00 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:52:38 2017 +0000"
+  },
+  "message": "resolve merge conflicts of 3964c51bf2 to nyc-dev\n\nBug: 33123882\nTest: manual tests\nMerged-In: If68343d155364654fa7db55ace3fb3c4db508c7e\nChange-Id: I17ceca883819a161c4eab2a414abf0b64c320378\n(cherry picked from commit 0f04a5a93f846d6f2d528ab6ae0c9e37d701e438)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "80d6bc14593eb06f08bd4fa4d82fb8def7358774",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accounts/ManageAccountsSettings.java",
+      "new_id": "c84e0f463ee02e562868a1173d81fb849c095d51",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accounts/ManageAccountsSettings.java"
+    }
+  ]
+}

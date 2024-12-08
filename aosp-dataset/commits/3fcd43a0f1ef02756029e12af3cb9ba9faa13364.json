@@ -1,0 +1,111 @@
+)]}'
+{
+  "commit": "3fcd43a0f1ef02756029e12af3cb9ba9faa13364",
+  "tree": "45762137883e86c3a8038bb2868fc57fe4bfb029",
+  "parents": [
+    "1f5536aaf17f33c35ce0b505e5b1446850d711b9"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Wed Apr 08 13:13:26 2015 -0700"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Wed Apr 08 15:07:15 2015 -0700"
+  },
+  "message": "sqlite: upgrade to SQLite 3.8.9\n\nDownloaded from http://www.sqlite.org/2015/sqlite-amalgamation-3080900.zip\n\n  $ sha256sum sqlite-amalgamation-3080900.zip\n  40a9f51a250fc41f6b5053a778681c622d82dec592c85de21edd3640eeb5f093  sqlite-amalgamation-3080900.zip\n\ndist/orig contains the stock sqlite3 code, as packaged in the ZIP file above.\n\ndist contains a copy of dist/orig, but with the Android.patch file applied.\nPlease see Android.patch for a list of differences between stock and\nAndroid.\n\nNo new patches are introduced.\n\nBug: 20099586\nChange-Id: Ic7be6d920698984dee67458678086e88db9a06d3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "da4eba25d83f7cd7b28ab0999b7f1a854e5c3c30",
+      "old_mode": 33188,
+      "old_path": "dist/Android.mk",
+      "new_id": "7cf6e752eeebbddaea194f2af6d826275c136ee1",
+      "new_mode": 33188,
+      "new_path": "dist/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "4b8ef9d04927e7cbc77cc8acc56117427f5c6b0e",
+      "old_mode": 33188,
+      "old_path": "dist/Android.patch",
+      "new_id": "79426d505af35a4bffe353d12b25c2c6ea3a6768",
+      "new_mode": 33188,
+      "new_path": "dist/Android.patch"
+    },
+    {
+      "type": "modify",
+      "old_id": "a74dcdb85d46f7bff82a334e5c3614f9f325b5ab",
+      "old_mode": 33188,
+      "old_path": "dist/orig/shell.c",
+      "new_id": "7ff3eb6cb078fdde845c4a39a4d9d2824c16ae65",
+      "new_mode": 33188,
+      "new_path": "dist/orig/shell.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1278e65625402c8c50e5de294a680740e3d304b",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.c",
+      "new_id": "a8922e482839b32e826e61281f5ab2460dd7bfdd",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9879f80d403ead50946aeaca87d6291bb47222bd",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.h",
+      "new_id": "2c244ab69d4a9edfd78435e70a5117c848c5badc",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ecf93f62f6cd9c3bf5044e781556e06fe011ec0e",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3ext.h",
+      "new_id": "f9a066592de296e21e32a952ac04fda42ec760d0",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3ext.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4188a863f494ca393402157f1813ba6fdf12802c",
+      "old_mode": 33188,
+      "old_path": "dist/shell.c",
+      "new_id": "4f8d7a28d8121dd54ec27748623b901dfb6a0748",
+      "new_mode": 33188,
+      "new_path": "dist/shell.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "edd2045c5d23e99b517eb637f658098217e9d455",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.c",
+      "new_id": "f5a68f8d91a964553128a40bb5706e21eee74c87",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9879f80d403ead50946aeaca87d6291bb47222bd",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.h",
+      "new_id": "2c244ab69d4a9edfd78435e70a5117c848c5badc",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ecf93f62f6cd9c3bf5044e781556e06fe011ec0e",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3ext.h",
+      "new_id": "f9a066592de296e21e32a952ac04fda42ec760d0",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3ext.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1c4d535d0806dbeb6d2fa5cea0373cbd9ab6d33b",
+  "tree": "50c2994f77c36f94b66fdfc72228dbd710541fad",
+  "parents": [
+    "593144fa0129f09dc1992ea01b57fdb39fbbdf3f"
+  ],
+  "author": {
+    "name": "Charles He",
+    "email": "qiurui@google.com",
+    "time": "Thu Nov 24 14:05:00 2016 +0000"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:32:55 2017 -0800"
+  },
+  "message": "Prevent writing to FRP partition during factory reset.\n\nAvoid potential race condition between FRP wipe and write operations\nduring factory reset by making the FRP partition unwritable after\nwipe.\n\nBug: 30352311\nTest: manual\nChange-Id: If3f024a1611366c0677a996705724458094fcfad\n(cherry picked from commit a629c772f4a7a5ddf7ff9f78fb19f7ab86c2a9c2)\n(cherry picked from commit a9437bd1caeeb38780d920a81bde8cc7ca280fe0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0f92ed04a457b91786150dc30c4b2b339bc1d437",
+      "old_mode": 33188,
+      "old_path": "core/java/android/service/persistentdata/PersistentDataBlockManager.java",
+      "new_id": "8e8c019e6398d4365dc30e3931d0bc6b3a0115a3",
+      "new_mode": 33188,
+      "new_path": "core/java/android/service/persistentdata/PersistentDataBlockManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "080b46c24a2fd636b84c654313b6345b67f3d218",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/PersistentDataBlockService.java",
+      "new_id": "a989a1703bea8126df49ca43096ce125e15bf4a4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/PersistentDataBlockService.java"
+    }
+  ]
+}

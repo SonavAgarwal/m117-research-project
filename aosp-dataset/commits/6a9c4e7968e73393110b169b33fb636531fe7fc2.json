@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6a9c4e7968e73393110b169b33fb636531fe7fc2",
+  "tree": "865537d22fd47aee4a2c2aaa793f54681bbaed64",
+  "parents": [
+    "35629db6feb980f11bf897768bb05f939d1e66e0"
+  ],
+  "author": {
+    "name": "Janis Danisevskis",
+    "email": "jdanis@google.com",
+    "time": "Wed Jun 05 16:42:12 2019 -0700"
+  },
+  "committer": {
+    "name": "Janis Danisevskis",
+    "email": "jdanis@google.com",
+    "time": "Thu Jun 20 22:31:06 2019 +0000"
+  },
+  "message": "Fix a memory leak in gatekeeper.\n\nIn violation to the documentation of GateKeeper::GetAuthTokenKey and\nGateKeeper::GetPasswordKey, the implementations in SoftGateKeeper\nallocate and return buffers and relinquish ownership causing a memory\nleak, because the caller expects the implementation to retain ownership.\n\nBug: 129768470\nBug: 134557251\nTest: gatekeeper-unit-tests\nChange-Id: I0af9539d3dcd47dfd1e7d80cdee700ea0c2d6d0f\nMerged-In: I0af9539d3dcd47dfd1e7d80cdee700ea0c2d6d0f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8b15d72e22ba55be2baaf835d6ffeddc7c100f26",
+      "old_mode": 33188,
+      "old_path": "gatekeeperd/SoftGateKeeper.h",
+      "new_id": "b4877e618a0ac39bfcfaa0666045ae5ddb32df55",
+      "new_mode": 33188,
+      "new_path": "gatekeeperd/SoftGateKeeper.h"
+    }
+  ]
+}

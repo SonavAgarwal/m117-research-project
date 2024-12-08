@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c894aa36be535886a8e5ff02cdbcd07dd24618f6",
+  "tree": "6dcd5d55bd051e1be66ac5e163b2c2589c439afb",
+  "parents": [
+    "035cb12f392860113dce96116a5150e2fde6f0cc"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Wed Aug 17 14:11:13 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:25 2016 -0700"
+  },
+  "message": "Add EFFECT_CMD_SET_PARAM parameter checking\n\nBug: 30204301\nChange-Id: Ib9c3ee1c2f23c96f8f7092dd9e146bc453d7a290\n(cherry picked from commit e4a1d91501d47931dbae19c47815952378787ab6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "055e91527225c37d97b912514d063e9851969e90",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "28a14f7394a2d4ea751e61181e4be0f9b91c5daf",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

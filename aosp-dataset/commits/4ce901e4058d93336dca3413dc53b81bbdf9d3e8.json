@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4ce901e4058d93336dca3413dc53b81bbdf9d3e8",
+  "tree": "5d113df00d9dd20513187ea6ebcf6f8cb9bd78c1",
+  "parents": [
+    "f8a2d069b41c0f075073ee828a694e55490a3493"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Mon Sep 16 14:49:49 2019 -0700"
+  },
+  "committer": {
+    "name": "Sterling Huber",
+    "email": "hubers@google.com",
+    "time": "Mon Sep 30 17:33:07 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nDo not compute outside given range in TextLine\n\nThis is second attempt of I646851973b3816bf9ba32dfe26748c0345a5a081\nwhich breaks various layout test on application.\nThe empty string must be also handled by the TextLine since it\nretrieves the default line height from the empty string.\n\nBug: 140632678\nTest: StaticLayoutTest\nTest: Manually done\nChange-Id: I7089ed9b711dddd7de2b27c9c2fa0fb4cb53a735\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5de2f030d5f989e02029959542d77b4f9699dff3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/text/TextLine.java",
+      "new_id": "d5b115a699b056118e19d1dcd060ee10d9c02dee",
+      "new_mode": 33188,
+      "new_path": "core/java/android/text/TextLine.java"
+    }
+  ]
+}

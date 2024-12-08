@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "9449ef411f32e2948190f9451726eb558996e8d3",
+  "tree": "85d29e70a0e78cd540914dd75a42d0742b50dfdc",
+  "parents": [
+    "0ad7e37ac954dc3ae8b739439a8d9cf645a46a10"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Wed Aug 09 12:15:02 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:23 2018 +0000"
+  },
+  "message": "Adding Error Check for Output Buffer Size\n\nThe output buffer size given by the application, needs to be checked\nin every process call. This is required in the case of resolution\nchange.\n\nBug: 70399408\nTest: manual\nChange-Id: Id0d615e44d30f61702b3839be7b679d7d77a2411\n(cherry picked from commit 7c88212153fbff998b337e899b496e2e382af54c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "51f704718de763ff541463843bd794f373638cc1",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_api_main.c",
+      "new_id": "e3c83bfa9b56e3879fb6dac4d755b3ed6a22673f",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_api_main.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "46538bf9674ef6814d568a891cc5692c8a366379",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_structs.h",
+      "new_id": "bdda8b837318d2e0bd4715205dba38b7fbf85c9c",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_structs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "cfce43346fe97544e11ff247a8bbf00e265ae916",
+      "old_mode": 33188,
+      "old_path": "test/decoder/main.c",
+      "new_id": "9502dec121fddd3b103bab8d43338b8eecddcbc6",
+      "new_mode": 33188,
+      "new_path": "test/decoder/main.c"
+    }
+  ]
+}

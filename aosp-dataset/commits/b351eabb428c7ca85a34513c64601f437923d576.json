@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b351eabb428c7ca85a34513c64601f437923d576",
+  "tree": "888e4ae858b070631973198fb57e61088e8b53a8",
+  "parents": [
+    "9cd8c3289c91254b3955bd7347cf605d6fa032c6"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Wed May 25 16:54:08 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:18 2016 -0700"
+  },
+  "message": "DO NOT MERGE omx: check buffer port before using\n\nBug: 28816827\nChange-Id: I3d5bad4a1ef96dec544b05bb31cc6f7109aae0a5\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e5fb45b0b330126129ecc8cd95bb00e7e37abc7e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMXNodeInstance.h",
+      "new_id": "babf5b7d98c6d1a02f6ec0ab2a0a60e64fc65985",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMXNodeInstance.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8735eff42689a29e70b62b9cab9376b0f0f48967",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "7f534b5e7edb4712894151670972dfd0eea50805",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

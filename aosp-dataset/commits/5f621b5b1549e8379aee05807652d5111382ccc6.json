@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5f621b5b1549e8379aee05807652d5111382ccc6",
+  "tree": "2c4b5c96aa6ea77e0787269573e777e69e0df5de",
+  "parents": [
+    "1c4d535d0806dbeb6d2fa5cea0373cbd9ab6d33b"
+  ],
+  "author": {
+    "name": "Charles He",
+    "email": "qiurui@google.com",
+    "time": "Thu Dec 01 19:22:33 2016 +0000"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:32:56 2017 -0800"
+  },
+  "message": "Add @GuardedBy annotation to PersistentDataBlockService#mIsWritable.\n\nChange-Id: I1024f2a56badde5c123d025d6fe02f42559cbcb1\nTest: manual\nBug: 30352311\n(cherry picked from commit f6f1d627483b4dad9d65176769a1ee92c59a4810)\n(cherry picked from commit 71d2a41dd9c8be8c4bca5eba339802e1e0c2be3c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a989a1703bea8126df49ca43096ce125e15bf4a4",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/PersistentDataBlockService.java",
+      "new_id": "1a6193d4e6f66baa9a2b488913fb0d519070eb60",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/PersistentDataBlockService.java"
+    }
+  ]
+}

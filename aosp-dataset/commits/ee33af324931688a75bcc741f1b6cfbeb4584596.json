@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ee33af324931688a75bcc741f1b6cfbeb4584596",
+  "tree": "0b472e443973a12a86af3b3b5c75ca7492fb644a",
+  "parents": [
+    "5b3b15827c1bab3935b489216c992bdf489546e7"
+  ],
+  "author": {
+    "name": "Laura Abbott",
+    "email": "labbott@redhat.com",
+    "time": "Fri Oct 18 07:43:21 2019 -0400"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@google.com",
+    "time": "Sat Oct 26 17:05:09 2019 +0200"
+  },
+  "message": "rtlwifi: Fix potential overflow on P2P code\n\ncommit 8c55dedb795be8ec0cf488f98c03a1c2176f7fb1 upstream.\n\nNicolas Waisman noticed that even though noa_len is checked for\na compatible length it\u0027s still possible to overrun the buffers\nof p2pinfo since there\u0027s no check on the upper bound of noa_num.\nBound noa_num against P2P_MAX_NOA_NUM.\n\nBug: 142967706\nReported-by: Nicolas Waisman \u003cnico@semmle.com\u003e\nSigned-off-by: Laura Abbott \u003clabbott@redhat.com\u003e\nAcked-by: Ping-Ke Shih \u003cpkshih@realtek.com\u003e\nSigned-off-by: Kalle Valo \u003ckvalo@codeaurora.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@google.com\u003e\nChange-Id: I90a9b285feb50b6b5c30e242756d47848902b634\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "479a4cfc245d349e105457845719ca79b7ebb10d",
+      "old_mode": 33188,
+      "old_path": "drivers/net/wireless/realtek/rtlwifi/ps.c",
+      "new_id": "5f998ea2d5a67db2fb74d0216a3d0100c49ccc61",
+      "new_mode": 33188,
+      "new_path": "drivers/net/wireless/realtek/rtlwifi/ps.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7109ce3f8f90a28ca9f0ee6e14f6ac5e414c62cf",
+  "tree": "ab17e578cddd7783ae425d7e253cf916b7e6cea2",
+  "parents": [
+    "326fe991a4b7971e8aeaf4ac775491dd8abd85bb"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Jul 12 10:37:28 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:29:10 2016 -0700"
+  },
+  "message": "Fixed error concealment when no MBs are decoded in the current pic\n\nBug: 29493002\nChange-Id: I3fae547ddb0616b4e6579580985232bd3d65881e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "801960b9b374a8896a73b67cf0a58fbf6c7ebb6f",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "6aa71f20a37e9ca485b6d308777eddbf3768ed5c",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

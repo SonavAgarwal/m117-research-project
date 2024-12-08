@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "27798e9cc15435ca3e70df3ac4a201452ad08736",
+  "tree": "d4eca826d7dfce97b23537137397e5be4450d16c",
+  "parents": [
+    "8cd0e2fba8b916e268bc48a04b6ab19a4e523a04"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Fri Aug 09 18:56:42 2019 +0100"
+  },
+  "committer": {
+    "name": "Max Spector",
+    "email": "mspector@google.com",
+    "time": "Wed Sep 18 17:14:22 2019 -0700"
+  },
+  "message": "[DO NOT MERGE] Fix OOB read in v8\u0027s Promise handling\n\nBug: 138441919\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n      /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nChange-Id: I3d9ffb76317f94ee486fbab8712a673d807a0653\n(cherry picked from commit 1d4f1378628c425b2e03a22b5ea1c27f3af7f8c3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0d0238d267e48a339b05d68b72461858392c3611",
+      "old_mode": 33188,
+      "old_path": "src/builtins/builtins-promise.cc",
+      "new_id": "1fb12902521d5a5c61a3d6c7743d2a27b060bc09",
+      "new_mode": 33188,
+      "new_path": "src/builtins/builtins-promise.cc"
+    }
+  ]
+}

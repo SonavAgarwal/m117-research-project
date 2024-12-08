@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "38af82c5ca615f56febcebde714c7cba653fd5ec",
+  "tree": "8cd98b4e9c39f8cca7d8fa493050a2c98200be47",
+  "parents": [
+    "05c7f27079bd44595cc3efb4b9acb1aa6777716c"
+  ],
+  "author": {
+    "name": "Jouni Malinen",
+    "email": "jouni@codeaurora.org",
+    "time": "Mon Oct 29 20:48:07 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:19:34 2018 +0000"
+  },
+  "message": "WNM: Fix WNM-Sleep Mode Request bounds checking\n\nieee802_11_rx_wnmsleep_req() might be called for a short frame that has\nno more payload after the Public Action field, i.e., with len \u003d\u003d 0. The\nbounds checking for the payload length was done only for the information\nelements while the one octet Dialog Token field was read\nunconditionally. This could result in reading one octet beyond the end\nof the received frame data.\n\nDepending on driver interface specific mechanism used for fetching the\nframe, this could result in reading one octet beyond the end of a\nstack/hash buffer or reading an uninitialized octet from within a\nbuffer. The actual value that was read as the Dialog Token field is not\nused since the function returns immediately after having read this value\nwhen there is no information elements following the field.\n\nThis issue was initially added in commit d32d94dbf47a (\"WNM: Add\nWNM-Sleep Mode implementation for AP\") (with CONFIG_IEEE80211V\u003dy build\noption) and it remained in place during number of cleanup and fix\nchanges in this area and renaming of the build parameter to\nCONFIG_WNM\u003dy. The impacted function was not included in any default\nbuild without one of the these optional build options being explicitly\nenabled. CONFIG_WNM\u003dy is still documented as \"experimental and not\ncomplete implementation\" in hostapd/defconfig. In addition, commit\n114f2830d2c2 (\"WNM: Ignore WNM-Sleep Mode Request in wnm_sleep_mode\u003d0\ncase\") made this function exit before the impact read if WNM-Sleep Mode\nsupport was not explicitly enabled in runtime configuration\n(wnm_sleep_mode\u003d1 in hostapd.conf).\n\nFix this by explicitly checking the frame has enough payload before\nreading the Dialog Token field.\n\nBug: 111893132\nChange-Id: I4b61e22c39d1a5683923eff34e43bb0c509913d4\nMerged-In: I4b61e22c39d1a5683923eff34e43bb0c509913d4\nSigned-off-by: Jouni Malinen \u003cjouni@codeaurora.org\u003e\n(cherry picked from commit 7a543744db8ece2376b019040b5668ede68ebd8b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7c4fde08d823f0cdba08a834e7c27d3b8e585f70",
+      "old_mode": 33188,
+      "old_path": "src/ap/wnm_ap.c",
+      "new_id": "adb66c1a6ca7c91e6250dbea05eaae0d461b9df9",
+      "new_mode": 33188,
+      "new_path": "src/ap/wnm_ap.c"
+    }
+  ]
+}

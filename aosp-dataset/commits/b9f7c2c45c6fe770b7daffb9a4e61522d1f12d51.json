@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b9f7c2c45c6fe770b7daffb9a4e61522d1f12d51",
+  "tree": "58aa36b5ee8969566f1a918df90c6843f58f579f",
+  "parents": [
+    "552578a757e0e983708df1a914c8aa9af2838598"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Oct 27 08:42:30 2015 +0530"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Nov 06 12:12:01 2015 -0800"
+  },
+  "message": "DO NOT MERGE Added few memsets to avoid uninitialized reads for error clips\n\nAlso aligned few allocations to 4 byte boundary\n\nBug: 25070493\nBug: 24686670\nChange-Id: I59c996161053e313c873381c5bf6f8c36488483f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "39c1fb6b4d8eab73436a58c812b3ffd469004150",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_api.c",
+      "new_id": "5032cf092348b022d086bd96ccb3b9bd3b77eb5b",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "aec64e2f05501c066c67e8cd5a541b19b3fe48bd",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_utils.c",
+      "new_id": "6a58cb91c2d65c834af9a014bed6c08a423c1277",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_utils.c"
+    }
+  ]
+}

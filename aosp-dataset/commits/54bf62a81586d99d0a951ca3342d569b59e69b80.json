@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "54bf62a81586d99d0a951ca3342d569b59e69b80",
+  "tree": "fe06186d1c0a47a31fe991ba2b9da65ddccfd684",
+  "parents": [
+    "5de55ee07633015693ca7faa33af9c184feb8d98"
+  ],
+  "author": {
+    "name": "David Benjamin",
+    "email": "davidben@google.com",
+    "time": "Mon Aug 22 22:19:01 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:30:57 2017 -0800"
+  },
+  "message": "Rewrite BN_bn2dec.\n\nThis is a more complete fix for CVE-2016-2182. The original commit\nmessage was:\n\"If an oversize BIGNUM is presented to BN_bn2dec() it can cause\nBN_div_word() to fail and not reduce the value of \u0027t\u0027 resulting\nin OOB writes to the bn_data buffer and eventually crashing.\n\nFix by checking return value of BN_div_word() and checking writes\ndon\u0027t overflow buffer.\n\nThanks to Shi Lei for reporting this bug.\"\n\nBoringSSL\u0027s rewrite commit message:\n\"958aaf1ea1b481e8ef32970d5b0add80504be4b2, imported from upstream, had\nan off-by-one error. Reproducing the failure is fairly easy as it can\u0027t\neven serialize 1. See also upstream\u0027s\n099e2968ed3c7d256cda048995626664082b1b30.\n\nRewrite the function completely with CBB and add a basic test.\n\nBUG\u003dchromium:639740\"\n\nChange-Id: I41a91514c4bb9e83854824ed5258ffe4e49d9491\nBug: 32096880\n(cherry picked from commit 29b92ab938c1a17d4d1b3b039042a0f499f58b5d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7e04f18d8f8813d9aad0e6cb57529a0344be50f",
+      "old_mode": 33188,
+      "old_path": "src/crypto/bn/bn_test.cc",
+      "new_id": "b00b4208805e393781d0b4b0aeb7e02400f574c7",
+      "new_mode": 33188,
+      "new_path": "src/crypto/bn/bn_test.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f7af64bf00835ed9be8eeac9dee8f8f0984f5ed",
+      "old_mode": 33188,
+      "old_path": "src/crypto/bn/convert.c",
+      "new_id": "8646e5948013ef5664bec5034e3c2a0a94706ad1",
+      "new_mode": 33188,
+      "new_path": "src/crypto/bn/convert.c"
+    }
+  ]
+}

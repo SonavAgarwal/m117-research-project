@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ccb2efe8d3fccb4321e85048d67c8528e03d4652",
+  "tree": "f7665dd7b34aa5368957a3874d165272f2075ff3",
+  "parents": [
+    "13179a8e75fee98740b5ce728752aa7294b3e32d"
+  ],
+  "author": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Mon Apr 10 15:51:16 2017 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:01:39 2017 +0000"
+  },
+  "message": "CVE 2016-2109 fix\n\nRead ASN.1 data in chunks to prevent invalid inputs from allocating\nexcessive amounts of data.\n\nBug: 35443725\nTest: run cts -m CtsLibcoreTestCases\nTest: manually ran testcase from OpenSSL\nChange-Id: Ia9d6aa40726c0cba26e2060108112f33e00e8270\nMerged-In: Ie00536d7ad815464b2b031f7bcd1b683e12c1623\nMerged-In: If087a69ee075b3c5323abb8d7d740e92bd703bb1\nMerged-In: If77e23607fc77f724f50ad0e0b94eef4beae57ea\nMerged-In: Ia8d0370ece1d5c1750a4331810c610ed5c813224\nMerged-In: Ia945d5ce50335919b0783fe909892703213454ef\n(cherry picked from commit ea156ae109eac7b7cf7d4f6a76f3c4590734789b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "97ec75b5f7cdfbe95d5a404b0ad9cc4903490d30",
+      "old_mode": 33188,
+      "old_path": "src/crypto/asn1/a_d2i_fp.c",
+      "new_id": "af03bc0c83bfdf13cab060fe553c1f220343707c",
+      "new_mode": 33188,
+      "new_path": "src/crypto/asn1/a_d2i_fp.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9191787d0e73712608eff22fca9aea9480d4691e",
+  "tree": "08a1416731fcab5a42482d958e63768db2dd6a73",
+  "parents": [
+    "e42109b559280b4a7d3f4551ed5298edc73eb7db"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Tue Feb 02 22:28:41 2021 -0800"
+  },
+  "committer": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Thu Feb 25 17:55:20 2021 +0000"
+  },
+  "message": "Fix potential decrypt destPtr overflow.\n\nThere is a potential integer overflow to bypass the\ndestination base size check in decrypt. The destPtr\ncan then point to the outside of the destination buffer.\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176444622#testPocBug_176444622\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-17644462264\n\nBug: 176444622\nBug: 176496353\nChange-Id: I63043d10796f82ad805038ba1fad5bd7d5c89961\nMerged-In: I63043d10796f82ad805038ba1fad5bd7d5c89961\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2db360765b1ea566b1bd3b0b588724698dcacc91",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.cpp",
+      "new_id": "8af190b27689ea7249d15f347ca022926d1c2705",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.cpp"
+    }
+  ]
+}

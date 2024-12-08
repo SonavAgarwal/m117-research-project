@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6b7c12366057a5f72fbbe0bc6f166e76172496c4",
+  "tree": "eb3b23362f1b50e5d152e15b8a7ac09d66fc85d6",
+  "parents": [
+    "bfeb15466b6148c2055678d5d77362003cfd1824"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Jun 06 13:54:55 2019 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:56:04 2019 +0000"
+  },
+  "message": "DO NOT MERGE Fix for Bluetooth connection being dropped after HCI Read Encryption Key Size\n\nIf remote device stop the encryption before we call \"Read Encryption Key Size\",\nwe might receive Insufficient Security, which means that link is no longer\nencrypted.\n\nIn such cases we should stay connected, rather than disconnecting the\nlink.\n\nTest: Connect to device that stop encryption right after encryption is\ncomplete, i.e. to change roles.\nBug: 124301137\nBug: 132626699\n\nChange-Id: Iab0fd9f357d18a6b048b971d0393fbb47fd4d793\nMerged-In: Iab0fd9f357d18a6b048b971d0393fbb47fd4d793\n(cherry picked from commit c978f86b506f31567b5991c91cdbe4c142ca8edd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbd7695101d8c5c3799da6b66ad8ad8003514356",
+      "old_mode": 33188,
+      "old_path": "stack/btu/btu_hcif.cc",
+      "new_id": "b5243cdca7d3e3067170bdc5db14255182c19302",
+      "new_mode": 33188,
+      "new_path": "stack/btu/btu_hcif.cc"
+    }
+  ]
+}

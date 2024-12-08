@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5e7e87a383fdb1fece977097a7e3cc51b296f3a0",
+  "tree": "667fbe8db495c12ef13f2cb2f197fab34bbe9a9c",
+  "parents": [
+    "f3eb82683a80341f5ac23057aab733a57963cab2"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Wed Sep 16 10:26:28 2015 -0700"
+  },
+  "committer": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Wed Sep 16 10:26:28 2015 -0700"
+  },
+  "message": "DO NOT MERGE Fix vulnerability in mediaserver\n\nICrypto.cpp: ASLR bypass using DECRYPT IPC\n\nbug: 24074485\nChange-Id: Ia12942d6b86adde28745908d36a728ab5d69a037\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7bd120e2a3d192e91f35825110e7f52363133669",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/ICrypto.cpp",
+      "new_id": "505d782c4a56fad9999b7420e05e30d725f0240b",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/ICrypto.cpp"
+    }
+  ]
+}

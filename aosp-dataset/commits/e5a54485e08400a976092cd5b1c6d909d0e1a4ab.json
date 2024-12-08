@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e5a54485e08400a976092cd5b1c6d909d0e1a4ab",
+  "tree": "1195d30fed374d3152b1efbed96e16cd3554ea90",
+  "parents": [
+    "ea2023406b8306b5562e9113a159c7126438d200"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Mon Feb 13 16:31:20 2017 -0800"
+  },
+  "committer": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Tue Feb 14 00:42:49 2017 +0000"
+  },
+  "message": "EffectBundle: check nb channels to write speaker angles\n\nWhen speaker angles are queried, the size of the array for the\n  returned data is 3x the number of channels (where really it\n  should be max(2, nbChannels)). The code assumed it was at\n  least 3x2 (where 2 is the number of virtual speakers this\n  effect supports) and would thus crash when called for a mono\n  channel mask.\n\nTest: see repro steps in bug\nBug: 32591350\nChange-Id: I33d4bff6b2e19a9fc4284a85a446804878d3a410\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4153a6b5cc64ffb8e7e5d1b5faa1281243fc786a",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "f0091d88d9c5b624db4e34315b424b7341ccbc28",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    }
+  ]
+}

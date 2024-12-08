@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e1b4a889e8b84f5c13b76333d4de90dbe102a0de",
+  "tree": "f1fa17a716787fc3ea13d6c5f62a8396f1819164",
+  "parents": [
+    "c44ad1a4f609116d3a0e224b13ab438c7db594e4"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri Nov 03 17:42:27 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:33:17 2017 +0000"
+  },
+  "message": "get selinux context on add call arrival.\n\ninterfaceChain may take too long and allow for the PID\nto become invalidated.\n\nBug: 68217907\nTest: hidl\u0027s run_all_device_tests, boot + camera/YT sanity\nMerged-In: Ie69d92f9006d10e7e3e4871f5760823291ed8e1f\nChange-Id: Ie69d92f9006d10e7e3e4871f5760823291ed8e1f\n(cherry picked from commit 8165cd3e0044896bed17be2c580d60bc93b4ed2b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "82761e149e9a8f7f3cc41e9685fbe0c9aeb52498",
+      "old_mode": 33188,
+      "old_path": "AccessControl.cpp",
+      "new_id": "fac4dc148fa2ff76ec12de788d79cb253bdcfb82",
+      "new_mode": 33188,
+      "new_path": "AccessControl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e91de27bb10080ab80ef198e0e5f69016368a5c0",
+      "old_mode": 33188,
+      "old_path": "AccessControl.h",
+      "new_id": "63a2098d8635eea275e4a52b472d8797211ef0cd",
+      "new_mode": 33188,
+      "new_path": "AccessControl.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "41b8e452c87461d7fe2719f23be6b24290c42832",
+      "old_mode": 33188,
+      "old_path": "ServiceManager.cpp",
+      "new_id": "0705c7114bd7835235996efc54ecf6cb8f174b13",
+      "new_mode": 33188,
+      "new_path": "ServiceManager.cpp"
+    }
+  ]
+}

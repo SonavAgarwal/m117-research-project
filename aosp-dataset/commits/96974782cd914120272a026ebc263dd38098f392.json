@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "96974782cd914120272a026ebc263dd38098f392",
+  "tree": "4ea3cc89a4c45d21bf3acd449f014b8f6285c78a",
+  "parents": [
+    "8995285da14e1303ae7357bf8162cbec13e65b68"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Jun 05 14:34:48 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:11:35 2017 +0000"
+  },
+  "message": "Fix integer overflow in mediadrmserver\n\nbug:37710346\nChange-Id: If18cfb5bb1d1f1b2997d2a0e1685590d674181f4\n(cherry picked from commit eb21712f81aa9f6d5b055113595220ee1506f35c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0216b8d1a919cc7d396ec147728e4ce08ba35c09",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/InitDataParser.cpp",
+      "new_id": "6a4f8d569544f026b747e278b3fd9475f9406df1",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/InitDataParser.cpp"
+    }
+  ]
+}

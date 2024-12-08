@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "234848dd6756c5d636f5a103e51636d60932983c",
+  "tree": "28bdc859f88afcdee24a0bd055d451e94c5b127f",
+  "parents": [
+    "a602e8b2af2cf9e9fe08793b3f778b4627ac6bad"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Tue Jun 06 15:02:43 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:15:17 2017 +0000"
+  },
+  "message": "Fix security vulnerability: Equalizer setParameter memory overflow\n\nBug: 37563371\n\nTest: use POC on bug or cts security test\nChange-Id: Ia04f172fb21b11463ffa9ea023d69a3db01e0731\n(cherry picked from commit 617cd5c7f46c2312c7253001c46e7eea4c0315e0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1cd40d269bd7d95d686b2d0b2a6bdc4813bd35cc",
+      "old_mode": 33188,
+      "old_path": "post_proc/equalizer.c",
+      "new_id": "8c9449aa639152d41ab266d055a3bdffc29a8738",
+      "new_mode": 33188,
+      "new_path": "post_proc/equalizer.c"
+    }
+  ]
+}

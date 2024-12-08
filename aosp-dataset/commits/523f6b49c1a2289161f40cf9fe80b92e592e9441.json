@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "523f6b49c1a2289161f40cf9fe80b92e592e9441",
+  "tree": "bde8ec5825a0b4a5ee9509336a877bdeb6a0ee52",
+  "parents": [
+    "a9188f89179a7edd301abaf37d644adf5d647a04"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Feb 23 16:08:09 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:46 2017 -0700"
+  },
+  "message": "Validate lengths in HEVC metadata parsing\n\nAdd code to validate the size parameter passed to\nHecvParameterSets::addNalUnit().  Previously vulnerable\nto decrementing an unsigned past 0, yielding a huge result value.\n\nBug: 35467107\nTest: ran POC, no crash, emitted new \"bad length\" log entry\nChange-Id: Ia169b9edc1e0f7c5302e3c68aa90a54e8863d79e\n(cherry picked from commit e0dcf097cc029d056926029a29419e1650cbdf1b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "718710a01ab0661f41feb4b7a5d0fcbd4e86f985",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/HevcUtils.cpp",
+      "new_id": "7d463a91c83e5d2fd68a70bbe9afc36d1be29c4d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/HevcUtils.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "61b620ad4f773e86c03e0719ae24268babcc62a9",
+  "tree": "97996bae7141ee1bcfd4c7c238642b0da410cd88",
+  "parents": [
+    "a13cfc03e1030a59de4f4e1a6ced03a72353237f"
+  ],
+  "author": {
+    "name": "lucaslin",
+    "email": "lucaslin@google.com",
+    "time": "Mon Oct 05 20:00:07 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:07:29 2020 +0000"
+  },
+  "message": "Fix storing the wrong value of mLockdown in setting\n\nWhen user is stopped, the Vpn#onUserStopped() will be called and\nthe value of mLockdown will be set to false then store into\nsetting.\nThis is a wrong behavior because user doesn\u0027t change it, so for\nthis kind of case, there is no need to store the value of\nmLockdown in setting.\nIn fact, there is no need to call Vpn#saveAlwaysOnPackage() when\nuser is stopped because there is nothing changed.\n\nBug: 168500792\nTest: atest FrameworksNetTests\nChange-Id: Ie85a347216614b7873bfdf199165d89527ada3a8\n(cherry picked from commit 9226fc3723a477751705011cd7eecf063b1c3707)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "347beab0c42fc2af69b5469e977e6af213b605c2",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/Vpn.java",
+      "new_id": "bcb17bc9e2dc9988088a47f3d710d5bcc135e475",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/Vpn.java"
+    }
+  ]
+}

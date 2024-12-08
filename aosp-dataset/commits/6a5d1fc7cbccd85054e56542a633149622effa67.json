@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6a5d1fc7cbccd85054e56542a633149622effa67",
+  "tree": "a0a4b68c895c0603bfa7eea77f0115e06ea1dacd",
+  "parents": [
+    "60e1f87c7f4dbaf748c788bdbfa7b90434343bc5"
+  ],
+  "author": {
+    "name": "Kevin Rocard",
+    "email": "krocard@google.com",
+    "time": "Mon Nov 13 11:15:27 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:30:25 2018 +0000"
+  },
+  "message": "IAudioPolicyService: Add attribute tags sanitization\n\nWhen audio_attributes_t was read from the binder parcel,\nthe string tags field was copied without checking that\nit contained a \u0027\\0\u0027.\n\nThis could lead to read past the end when tags were used.\n\nThis patch always adds a \u0027\\0\u0027 at the end of the buffer when\ndeserializing.\n\nBug: 68953950\nTest: manual playback/record\nTest: send binder payload without \\0 in tags attribute, check that only\n      AUDIO_ATTRIBUTES_TAGS_MAX_SIZE - 1 char are printed.\nChange-Id: I285258cbf7cfaf26b191d1f31b3b1e2d724c4934\nMerged-In: I285258cbf7cfaf26b191d1f31b3b1e2d724c4934\nSigned-off-by: Kevin Rocard \u003ckrocard@google.com\u003e\n(cherry picked from commit 39fdbd097a147b5c719dac9ad2759e6c44eb3a4e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ceba211466c110f57fc1a7d5ff33ea43b40a89e2",
+      "old_mode": 33188,
+      "old_path": "media/libaudioclient/IAudioPolicyService.cpp",
+      "new_id": "d838975fba3556fa5741d9af8c40564dc4186839",
+      "new_mode": 33188,
+      "new_path": "media/libaudioclient/IAudioPolicyService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9b3e35ea572d4e1758bcca1afa28c2580c740743",
+      "old_mode": 33188,
+      "old_path": "media/libaudioclient/include/media/IAudioPolicyService.h",
+      "new_id": "60ba4ba28bef1d688624876a9f80af03d4f50b66",
+      "new_mode": 33188,
+      "new_path": "media/libaudioclient/include/media/IAudioPolicyService.h"
+    }
+  ]
+}

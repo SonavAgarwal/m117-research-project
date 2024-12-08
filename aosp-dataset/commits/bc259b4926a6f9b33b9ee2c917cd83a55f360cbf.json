@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bc259b4926a6f9b33b9ee2c917cd83a55f360cbf",
+  "tree": "880c455fb301a8427e4158a9d55507b608d02cc0",
+  "parents": [
+    "f1f1c3e00f8d1baad0215b057e6d894517eeaddb"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Tue Jun 05 16:08:06 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:40 2018 +0000"
+  },
+  "message": "DO NOT MERGE: Don\u0027t reuse buffer when building response\n\nBug: 79541338\nTest: Compile and connect to remote headset\nChange-Id: I2d808f941d3c71fcb6306c733717624be10478e0\n(cherry picked from commit 9bbce8603846159dec0d506ba867b7616557a303)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b67a6b764bf5c2beb39d541f085a339dc45cfa49",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_api.cc",
+      "new_id": "bdf78b73635b69ab9307cb50ce814be1b5ec89e4",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_api.cc"
+    }
+  ]
+}

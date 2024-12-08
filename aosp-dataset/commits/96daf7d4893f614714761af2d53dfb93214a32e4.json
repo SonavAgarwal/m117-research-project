@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "96daf7d4893f614714761af2d53dfb93214a32e4",
+  "tree": "6e5f6d8ddb35fe6524a0b441f75fa10ae33f4676",
+  "parents": [
+    "6c049120c2d749f0c0289d822ec7d0aa692f55c5"
+  ],
+  "author": {
+    "name": "Jim Miller",
+    "email": "jaggies@google.com",
+    "time": "Wed Aug 10 15:43:17 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:53 2016 -0700"
+  },
+  "message": "Fix vulnerability in LockSettings service\n\nFixes bug 30003944\n\nChange-Id: I8700d4424c6186c8d5e71d2fdede0223ad86904d\n(cherry picked from commit 2d71384a139ae27cbc7b57f06662bf6ee2010f2b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2e0dfa5fa73124531b06672309d00d86c5c7da39",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/widget/LockPatternUtils.java",
+      "new_id": "7f2f740f2ee24f9f6cd88087bec0a44f52205e44",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/widget/LockPatternUtils.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d64fe32cca55517569738e5827082cf4ad5d6da2",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/LockSettingsService.java",
+      "new_id": "42e75c6632a5c8bf2a43656bf80abc638e8957c8",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/LockSettingsService.java"
+    }
+  ]
+}

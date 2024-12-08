@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68688194eade113ad31687a730e8d4102ada58d5",
+  "tree": "2065634e8a8c3763821501cf72a8636522eb32bc",
+  "parents": [
+    "43cd528a444d0cc5bbf3beb22cd583289bcf7334"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Fri Jun 22 04:46:39 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:45:31 2018 +0000"
+  },
+  "message": "SDP: return error on offset bigger than atribute length\n\nTest: none\nBug: 79217770\nChange-Id: I8b594882dd07644b1a747c53d6166db466b7e998\n(cherry picked from commit 0a74ffa44cbe48f674387cc951e6011c28ca003c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "91b5ae2e576cd816d8702b258e611c1aee095228",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "386f62fa5eb6446a35afaa91a0f2d4f25a35ada3",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "218b813d5bc2d7d3952ea1861c38b4aa944ac59b",
+  "tree": "3e70e95f5bab3a79e522d5ae00b7871805221760",
+  "parents": [
+    "f5334952131afa835dd3f08601fb3bced7b781cd"
+  ],
+  "author": {
+    "name": "David Christie",
+    "email": "dnchrist@google.com",
+    "time": "Tue Aug 23 16:19:51 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:55 2016 -0700"
+  },
+  "message": "DO NOT MERGE: Fix vulnerability where large GPS XTRA data can be\ninjected.\n-Can potentially crash system with OOM.\nBug: 29555864\n\nChange-Id: I7157f48dddf148a9bcab029cf12e26a58d8054f4\n(cherry picked from commit 79375723f0f201a6759ddbfda57d491ff3fea64e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c464371bf16a100b1a31cd0401a95a2e98e09c57",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/location/GpsXtraDownloader.java",
+      "new_id": "874857ac3883c8b218fe2a1358b09eff96a09115",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/location/GpsXtraDownloader.java"
+    }
+  ]
+}

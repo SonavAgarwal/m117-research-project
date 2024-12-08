@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4f04632f4441f2d2fdd6cdab674150f35b69ba03",
+  "tree": "8689914bf83d49c30a798654036018fdb055a0a0",
+  "parents": [
+    "e01da9a84f49b3e7ff4c8a876cdeb32b7beec1ea"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Wed May 29 16:09:49 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:59 2019 +0000"
+  },
+  "message": "DO NOT MERGE Add flag to default dialer change dialog\n\nAdd PRIVATE_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS to default dialer\nchange dialog to prevent clickjacking.\n\nFixes: 132275252\nTest: manual. CTS infeasible since it\u0027s UI.\nChange-Id: I0d5997915a71e317d5c0d654a499d8cbd21f2299\n(cherry picked from commit 047d272541e388cd96638c6d6a7ccb676d34ac3f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "107389bec11dae21d81c1b16801f9fdeba040125",
+      "old_mode": 33188,
+      "old_path": "src/com/android/server/telecom/components/ChangeDefaultDialerDialog.java",
+      "new_id": "2becabcc7ac463f63b9be8b174e262a0a4054b3b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/server/telecom/components/ChangeDefaultDialerDialog.java"
+    }
+  ]
+}

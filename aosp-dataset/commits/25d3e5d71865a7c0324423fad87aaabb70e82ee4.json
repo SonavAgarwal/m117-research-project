@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "25d3e5d71865a7c0324423fad87aaabb70e82ee4",
+  "tree": "14f309400ec9b2f730e9f5078ea9e104dcc11424",
+  "parents": [
+    "89d1267d151fd635049748c2387bb6a8b3bad925"
+  ],
+  "author": {
+    "name": "Daniel Rosenberg",
+    "email": "drosen@google.com",
+    "time": "Tue Sep 22 17:03:02 2015 -0700"
+  },
+  "committer": {
+    "name": "Daniel Rosenberg",
+    "email": "drosen@google.com",
+    "time": "Tue Oct 13 20:30:37 2015 +0000"
+  },
+  "message": "DO NOT MERGE flounder: update prebuilt kernel\n\ne49f324c: Revert \"[O_TMPFILE] it\u0027s still short a few helpers, but infrastructure should be OK now...\"\n29b0a5d5: Revert \"f2fs: support -\u003etmpfile()\"\n\nBug: 23520714\nChange-Id: I7e55faadfb08b89575f628d01369741ba78ca664\nSigned-off-by: Daniel Rosenberg \u003cdrosen@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "afa7ae0c98ab639af5adbf415ec584f521dc60a1",
+      "old_mode": 33188,
+      "old_path": "Image.gz-dtb",
+      "new_id": "cc18024701ae6f7ecb7ce8bcabe1cfbe13eb484c",
+      "new_mode": 33188,
+      "new_path": "Image.gz-dtb"
+    }
+  ]
+}

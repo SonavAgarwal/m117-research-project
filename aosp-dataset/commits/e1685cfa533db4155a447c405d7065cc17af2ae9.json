@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e1685cfa533db4155a447c405d7065cc17af2ae9",
+  "tree": "3eef9abee5bee950e0b125164997249c6b94e5db",
+  "parents": [
+    "8679463ade0ee029ef826ed4fb7a847e2a981375"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Oct 25 14:33:33 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:17 2018 +0000"
+  },
+  "message": "HH: Check parameter length in bta_hh_ctrl_dat_act\n\nBug: 116108738\nTest: send a malformed GET_IDLE command with no parameters\nChange-Id: Ic57e748a06ea6d4fc16868310d3423ee71a7ac8c\n(cherry picked from commit b8fbe73f0d32686e8393bfe07a84b6f0e8829caf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4d85437c6b502e7a31ed99e74e01f4dbb26b974e",
+      "old_mode": 33188,
+      "old_path": "bta/hh/bta_hh_act.cc",
+      "new_id": "a7bdc9c7687b9163dcd10230eb869ad10269ecb3",
+      "new_mode": 33188,
+      "new_path": "bta/hh/bta_hh_act.cc"
+    }
+  ]
+}

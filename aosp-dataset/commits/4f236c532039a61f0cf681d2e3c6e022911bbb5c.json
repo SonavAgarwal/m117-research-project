@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4f236c532039a61f0cf681d2e3c6e022911bbb5c",
+  "tree": "4704455d5a0fe3f503beb1481df4229531ae971a",
+  "parents": [
+    "b57b3967b1a42dd505dbe4fcf1e1d810e3ae3777"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Apr 28 13:32:41 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:14 2016 -0700"
+  },
+  "message": "Check section size when verifying CRC\n\nBug: 28333006\nChange-Id: Ief7a2da848face78f0edde21e2f2009316076679\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e3c3e80c0ae80700f0da2f184911c1b927558e2a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/mpeg2ts/ATSParser.cpp",
+      "new_id": "2f2b115d2d75495447c3fd8189bc5f8b6a411df6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/mpeg2ts/ATSParser.cpp"
+    }
+  ]
+}

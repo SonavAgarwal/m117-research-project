@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cf6784bfbf713aaa54d8da77e9481b3f02784246",
+  "tree": "0b53efbe99ca0378f46f98c01b243d27b15dc5c9",
+  "parents": [
+    "2de620f9133d0408c612f6c0f986fff936a8e61c"
+  ],
+  "author": {
+    "name": "Bernie Innocenti",
+    "email": "codewiz@google.com",
+    "time": "Mon May 28 22:04:37 2018 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:43:14 2018 +0000"
+  },
+  "message": "vpn: allow IPSec traffic through Always-on VPN\n\nThis won\u0027t leak any traffic outside the VPN as long as there are no\nprocesses owned by uid 0 which generate network traffic (which is\ncurrently the case).\n\nBug: 69873852\nTest: compared the output of \u0027adb shell ip rule show\u0027 before and after\nTest: runtest -x frameworks/base/tests/net/java/com/android/server/connectivity/VpnTest.java\nTest: local CTS tests run: android.net.cts.VpnServiceTest\nTest: local CTS tests run: com.android.cts.devicepolicy.MixedDeviceOwnerTest\nChange-Id: I8758e576c9d961d73f62bfcf0559dd7ecee6e8e6\nMerged-In: I8758e576c9d961d73f62bfcf0559dd7ecee6e8e6\nMerged-In: I1f9b78c8f828ec2df7aba71b39d62be0c4db2550\nMerged-In: I8edeb0942e661c8385ff0cd3fdb72e6f62a8f218\n(cherry picked from commit 00000fe55a4729f8339afdc7eab5c970b2549813)\n(cherry picked from commit ae07a6bf53cc9650039c4f2918baf58d522b49f9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b77c1443e850e9d3e7b7a0d65e719ada529c7340",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/Vpn.java",
+      "new_id": "2a80f0e7c2916db793042c2e6cc38bf30a94b122",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/Vpn.java"
+    }
+  ]
+}

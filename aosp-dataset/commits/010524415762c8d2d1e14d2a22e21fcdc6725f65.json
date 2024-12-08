@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "010524415762c8d2d1e14d2a22e21fcdc6725f65",
+  "tree": "50be63a92875b021fd1a9967cef76c220e3043d8",
+  "parents": [
+    "d2a71cc4b8f11688f85f33507b75d00041c14852"
+  ],
+  "author": {
+    "name": "Chris Tate",
+    "email": "ctate@android.com",
+    "time": "Fri Mar 20 18:12:28 2020 +0000"
+  },
+  "committer": {
+    "name": "Chris Tate",
+    "email": "ctate@android.com",
+    "time": "Fri Mar 20 18:17:41 2020 +0000"
+  },
+  "message": "Revert \"Revoke \u0027always\u0027 web handler status when not autoverifying\"\n\nThis reverts commit d2a71cc4b8f11688f85f33507b75d00041c14852.\n\nReason for revert: Inadvertently broke link handling stickiness even for well behaved apps\n\nBug: 146204120\nTest: install app that handles web urls; set to \u0027always\u0027 in Settings;\ninstall same apk again.  Verify that app is still in \u0027always\u0027 state via\n\u0027adb shell dumpsys package d\u0027\n\nMerged-In: If9046cb420961b8ef0333e9f1115eb69fb92242e\nChange-Id: I36d9c352e741e88b9fc773b084bef3991b6d96ed\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9afaae11b39ae6b7a695f502507a4bc3ec64b2e8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "04cebb30921662292e6ebc8b8c4e8d8d1873764a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "169f8cb91e801c9b46f3c76b45696f8d8657557f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/Settings.java",
+      "new_id": "d9e4db29de071ae7902bd758ce978097e2c43bec",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/Settings.java"
+    }
+  ]
+}

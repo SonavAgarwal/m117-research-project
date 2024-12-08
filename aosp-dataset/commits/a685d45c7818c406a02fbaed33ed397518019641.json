@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a685d45c7818c406a02fbaed33ed397518019641",
+  "tree": "c4efc0ea3734b498ac623a33dc777eba0dadeac4",
+  "parents": [
+    "e6d784bbb5429d86553262856a49da94c8933a67"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Fri Oct 04 14:02:38 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:35:26 2019 +0000"
+  },
+  "message": "[DO NOT MERGE] Fix build breakage caused by change in PermissionsChecker\n\nTest: m -j\nChange-Id: I24c0ee2a8e6826ea81fe46c14bafb3d051bd4e45\n(cherry picked from commit 733c064a0b59eb5543e3fc36d395dcbfdf59500e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "583f7a54efd967f85737964af4372e22d35e3ac2",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/media/LocalCallingIdentity.java",
+      "new_id": "2292ff0967c6155b5fa12aa287aff44336e98516",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/media/LocalCallingIdentity.java"
+    }
+  ]
+}

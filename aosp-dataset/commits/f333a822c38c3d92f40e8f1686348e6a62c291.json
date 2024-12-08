@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f333a822c38c3d92f40e8f1686348e6a62c2912c",
+  "tree": "69026db5c4874e2936489392222b8a86fff1283b",
+  "parents": [
+    "5d2e7de37d4a28cf25cc5d0c64b3a29c1824dc0a"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Aug 21 13:41:42 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sat Aug 22 13:48:18 2015 +0000"
+  },
+  "message": "Sonivox: check loopStart/loopLength against one specific wave, not whole wave pool.\n\nBug: 23307276\nChange-Id: I4c2644feb42c8455be63e48a12ebfc62313cf4cf\n(cherry picked from commit 9cf7e8775823c4e136a9841d41dcdb5fe4f98173)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f260c0537935636b0b67d939f7df246b7bcaab70",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "b08e24edef9f8ca19777957baa233ddbdf407677",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

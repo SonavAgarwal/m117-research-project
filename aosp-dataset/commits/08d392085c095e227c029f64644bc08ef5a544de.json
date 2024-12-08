@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "08d392085c095e227c029f64644bc08ef5a544de",
+  "tree": "56457804454816c247398f18fe0b941357646afc",
+  "parents": [
+    "2751f3d9316e580c848b2eb40db516c0cad3c74f"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Tue May 01 13:18:11 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:17:02 2018 +0000"
+  },
+  "message": "omx: restrict useBuffer according to buffer type and port mode\n\nBug: 77486542\nTest: sts-tradefed run sts -m StsHostTestCases -t android.security.sts.Poc18_06#testPocBug_77486542\nTest: adb shell am instrument -e size small -w \u0027android.media.cts/android.support.test.runner.AndroidJUnitRunner\u0027\nTest: Exercise secure playback with Play Movies app.\nTest: Record video with Camera app and play it back with Photos app\n\nChange-Id: Ief2d2d4d0445074c0ecdc723b1b25997a7631389\n(cherry picked from commit 7d54e8f905784fddcc4c37fd094d4e18a73767bc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "015a14878aa61ff9f66199d50cf0044d7a9601c9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "4f38dee104f9eb4e09194cfa93e82de45d37a954",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

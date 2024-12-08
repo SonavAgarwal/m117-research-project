@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e237a83f95767f669b83508bb1f594091cbd6bac",
+  "tree": "cc639812758d7b31935cbca12464502d7a2e15e1",
+  "parents": [
+    "9588cd7de1f84a3ec8de273fb7d75921024189d8"
+  ],
+  "author": {
+    "name": "Pinyao Ting",
+    "email": "pinyaoting@google.com",
+    "time": "Thu Oct 08 10:14:05 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:58 2020 +0000"
+  },
+  "message": "remove sensitive pii from safetynet logging\n\nBug: 159145361\nTest: manual\nChange-Id: I8f1be55971672c7e8f5aa8848f65b1b9d9f40fb5\nMerged-In: I8f1be55971672c7e8f5aa8848f65b1b9d9f40fb5\n(cherry picked from commit 3b6905bf6a39de7789f93a7ce6ca5d65a3fe589e)\n(cherry picked from commit 1d50760050a7c4e819d5a25d074dfaca04e68fde)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1b241b74324275fe400aef2746c5944f6778c47a",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/SlicePermissionActivity.java",
+      "new_id": "57e656827f1c5d3669e72952ab57e6e071278b0e",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/SlicePermissionActivity.java"
+    }
+  ]
+}

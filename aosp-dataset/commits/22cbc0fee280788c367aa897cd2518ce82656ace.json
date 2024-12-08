@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "22cbc0fee280788c367aa897cd2518ce82656ace",
+  "tree": "b1d2927a4354d2c6dd10a2d7796898dee4a528a2",
+  "parents": [
+    "aabb952afa6c7543d7aee1f1a7f67df9728db9ed"
+  ],
+  "author": {
+    "name": "Ryan Mitchell",
+    "email": "rtmitchell@google.com",
+    "time": "Wed Jan 15 11:00:27 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:06:40 2020 +0000"
+  },
+  "message": "Add CTS test for AssetManager double destroy\n\nIf an AssetManager is closed and then finalized before assets that\nwere opened with that AssetManager were finalized, nativeDestroy\nwill be ran twice.\n\nTest that the fix the double destroy issue works as expected.\n\nBug: 144028297\nTest atest android.security.cts.AssetManagerTest\n\nChange-Id: Iecbb0cc60d1e2f93d7ec1fa263be2910de1a78a8\n(cherry picked from commit 210730e5627e52b6f56a1765e242913908af72bd)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "27b60210553d1a4a401f57a9e28de6e7fce9b77e",
+      "new_mode": 33188,
+      "new_path": "tests/tests/security/src/android/security/cts/AssetManagerTest.java"
+    }
+  ]
+}

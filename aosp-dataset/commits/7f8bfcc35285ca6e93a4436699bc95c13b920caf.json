@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7f8bfcc35285ca6e93a4436699bc95c13b920caf",
+  "tree": "67c8418218a7e13d1cf48b03cc3f12ee09789b01",
+  "parents": [
+    "57dc5964428697a104988f0aa0d1fd1d88fec939"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Fri Feb 09 14:16:59 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:17:51 2018 +0000"
+  },
+  "message": "DO NOT MERGE Truncate new line characters when adding string to config\n\nBug: 70808273\nTest: test with a device with newline character in name\nChange-Id: I8729e12ad5851ee1ffbcb7c08e9a659f768ffc21\n(cherry picked from commit dd9bbfc2458569d9fecf35f7503d1b89b4c69aa0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "10197210b33db3352c7615546f4a232e78d37da7",
+      "old_mode": 33188,
+      "old_path": "osi/src/config.cc",
+      "new_id": "fc64d47460ccfa4010070b36ba76469d555b1576",
+      "new_mode": 33188,
+      "new_path": "osi/src/config.cc"
+    }
+  ]
+}

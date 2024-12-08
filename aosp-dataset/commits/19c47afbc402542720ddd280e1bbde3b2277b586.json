@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "19c47afbc402542720ddd280e1bbde3b2277b586",
+  "tree": "d2c3657298566f4466ea0f6ee51217ffe1a9b7a1",
+  "parents": [
+    "09c291c838bc74bb7c10c22f7232abb946cad8ff"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Wed Dec 02 15:55:23 2015 -0800"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Wed Dec 02 18:05:32 2015 -0800"
+  },
+  "message": "DO NOT MERGE SoundPool: add lock for findSample access from SoundPoolThread\n\nSample decoding still occurs in SoundPoolThread\nwithout holding the SoundPool lock.\n\nBug: 25781119\nChange-Id: I11fde005aa9cf5438e0390a0d2dfe0ec1dd282e8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "583047565a14a5a935e7c5ebc8c1b6bfe568499e",
+      "old_mode": 33188,
+      "old_path": "include/media/SoundPool.h",
+      "new_id": "f57313c671f706d75cee9fbb62b769bce493e109",
+      "new_mode": 33188,
+      "new_path": "include/media/SoundPool.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d2e381bf97e600db9e035bad3445e205522cd764",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/SoundPool.cpp",
+      "new_id": "29ad7ea5db7197748df6205eab6d58a3ba3466aa",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/SoundPool.cpp"
+    }
+  ]
+}

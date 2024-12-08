@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "989b2afc3ebb1bbb4c962e2aff1fd9b3149f83f1",
+  "tree": "6ba7d82d0dfcdc8446a0c3362e2701c5a6026366",
+  "parents": [
+    "b8fee6a6d0a91fb5ddca8f54b0c891e25c1b65ae"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Apr 18 16:38:54 2016 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:01:33 2017 +0000"
+  },
+  "message": "Fix stack buffer overflow in ih264d_process_intra_mb\n\nAligned the sizes of au1_ngbr_pels to ensure SSE42 functions do not\nresult in stack buffer overflow\n\nBug: 36490809\n\nChange-Id: I0bfe493f94647046013759b3ec9db3c627ac471e\n(cherry picked from commit f69e34419b267be7285a7e0e85a019294118ae03)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "279ff878194f687f47bdd9f6274f5fceb57d0710",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_intra_mb.c",
+      "new_id": "211d796e075d88ccd48f5b578629342ce073c86a",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_intra_mb.c"
+    }
+  ]
+}

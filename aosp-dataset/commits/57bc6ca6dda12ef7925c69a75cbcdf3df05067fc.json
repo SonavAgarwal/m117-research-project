@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "57bc6ca6dda12ef7925c69a75cbcdf3df05067fc",
+  "tree": "7fbaffe49642484167449ed6dab5c6b442249b09",
+  "parents": [
+    "2a0d062ac398565c4ddb3f1df56638773d9cba30"
+  ],
+  "author": {
+    "name": "Alan Viverette",
+    "email": "alanv@google.com",
+    "time": "Fri Feb 16 13:56:02 2018 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:58:14 2018 +0000"
+  },
+  "message": "Update internal ViewPager\u0027s SavedState to match Support Library version\n\nMerged-In: Ic4569b21d8a26a62bba91742b442f0c3ea8bcc9e\nChange-Id: I17d085be9ce1a139e75264f1e715df7f565cd41b\nFixes: 71992105\nTest: manual\n(cherry picked from commit 187964aca12115c7ab66f59d1ebb95e4f4130ac6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d5b6def97426d48bccacea77b197c8783a14f741",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/widget/ViewPager.java",
+      "new_id": "df1ed7d392b2aedee41e4cf55b74828b027a0ad2",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/widget/ViewPager.java"
+    }
+  ]
+}

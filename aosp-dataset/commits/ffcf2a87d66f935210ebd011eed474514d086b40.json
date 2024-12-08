@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ffcf2a87d66f935210ebd011eed474514d086b40",
+  "tree": "c3049c129298f8a5eba3fa84d93e4e34c5f345a3",
+  "parents": [
+    "b1734142ff2e507e17f8b277d9ff7483bcba7542"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Dec 17 15:42:03 2019 -0800"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Jan 02 10:22:38 2020 -0800"
+  },
+  "message": "decoder: Fix minimum poc calculation check while adding to display\n\nWhile adding the decoded buffer to display queue, allow buffer with\npoc set to 0x7FFFFFFF\n\nBug: 145364230\nTest: poc in bug\nChange-Id: I2a15f73b8422cfa4fd3360bc21c0cea4542a3375\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9958f9b3df8c8ab408b0eb7d93282bc73bdf0986",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "4bcedd74685d4345046b60c146e34240177413fd",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

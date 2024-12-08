@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0a7d252adb774338c2c69a17651aceca3aec1b23",
+  "tree": "0501f115c822ebb6104e42b8be3cd696fe451d5a",
+  "parents": [
+    "bb9c22af2fd1b338780f95f74bebb56b2df5bba1"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Sep 06 11:01:22 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:23:59 2018 +0000"
+  },
+  "message": "Don\u0027t continue with an invalid iterator\n\nBug: 112181526\nTest: build\nChange-Id: Ifa3bfa60d2303a294ee842de6729a0c911b42f88\n(cherry picked from commit cf6899a77b583d37597c07e6a542422cb9821964)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98e5915469e8315f99305266ea24557967d43d9c",
+      "old_mode": 33188,
+      "old_path": "vda/v4l2_slice_video_decode_accelerator.cc",
+      "new_id": "2d81020ea93cdac70ca8376a821ac9348aadd7e0",
+      "new_mode": 33188,
+      "new_path": "vda/v4l2_slice_video_decode_accelerator.cc"
+    }
+  ]
+}

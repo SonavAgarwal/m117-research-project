@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e6f5d47a7f9eab8a0009f8a563de473cd47d3110",
+  "tree": "0e1425f814ea3a0a731f3466375f9b8434da9136",
+  "parents": [
+    "d9a9a324766b26be2ff0d10537ea0b215b0261e3"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Aug 04 08:38:24 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Aug 05 20:46:11 2015 +0000"
+  },
+  "message": "Extra sanity checks on sample size and resolution\n\nInstead of rejecting the samples later when they don\u0027t fit in the\nbuffer, reject the entire file early.\n\nBug: 22882938\nChange-Id: I748153b0e9e827e3f2526468756295b4b5000de6\n(cherry picked from commit beef7e58c1f1837bdaed6ac37414d8c48a133813)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b44fea56046413a05d151e8fc105ed5d1f27d48c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "b75badd1c7b2165cef736a44668096f995999282",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fd7e28588f149c1683c4f7a0a1c543f51b1cd41a",
+  "tree": "fd7d3a1a46d51121be2d16fb0e56232b1579b642",
+  "parents": [
+    "a9345b686dbbfa927a51598ec7582cf61e35ef55"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Dec 02 11:54:47 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:29 2020 +0000"
+  },
+  "message": "decoder: Update check for first mb in slice\n\nfirst_mb_in_slice shouldn\u0027t be \u003e\u003d mbs in the picture.\n\nTest: poc in bugs\nBug: b/174238784\nBug: b/174507022\nBug: oss-fuzz:27856\nBug: oss-fuzz:28039\nChange-Id: Id3a41c8c2ddf814910fc2d5dd4f57bdd84d28fec\n(cherry picked from commit 7e06940dce7245f03fd950edf7f72ff321b2b451)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "927f1c052f7b8298d219e08cb260d37c93ff8ecc",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "cc1d90ff731c1a50d5f8aec38fc852b4c3a1eb47",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

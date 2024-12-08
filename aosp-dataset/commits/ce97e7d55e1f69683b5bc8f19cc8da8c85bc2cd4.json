@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ce97e7d55e1f69683b5bc8f19cc8da8c85bc2cd4",
+  "tree": "3f39efeb09026bcbc2f67009831d9c401d01adf0",
+  "parents": [
+    "b97c2a93f288df43dd7cc0c45640509a17dddb18"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Fri Jun 08 18:07:14 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Oct 20 00:16:57 2018 +0000"
+  },
+  "message": "Always check whether given channel config is supported.\n\nBug: 112660981\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\nChange-Id: I169161dd31bc624f2cab6be2b4c6518946ed32ba\nMerged-In: I169161dd31bc624f2cab6be2b4c6518946ed32ba\n(cherry picked from commit 25b209f229879a155759d791fe463b8abd283677)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "362e0b6d10134f845a0eedd90bb87e0ede1d68c8",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdecoder.cpp",
+      "new_id": "fab30de4328099a000d800f9c7d691167967be6a",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdecoder.cpp"
+    }
+  ]
+}

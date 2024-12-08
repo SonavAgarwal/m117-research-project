@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bb460899b97f260e7ed556b578318b1133335e1c",
+  "tree": "0e872c7011af9299820de8e47424f8e0a981b7fb",
+  "parents": [
+    "8ea3bdb5ef11dad8e11a2c2cad34e91ad11657d0"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Nov 02 16:58:51 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:41 2020 +0000"
+  },
+  "message": "Fix potential overflow in WAV extractor\n\nBug: 170583712\nTest: fuzzer poc, atest DecoderTest#testDecodeWav\nChange-Id: I73edd5fc0da80dc2cdd26c6fcd09496b2c828ba9\nMerged-In: I73edd5fc0da80dc2cdd26c6fcd09496b2c828ba9\n(cherry picked from commit 66c0c4274d932716b552cdd1d922040bbab41c5f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d19447ae2cf002649178dc629347379ef71a821e",
+      "old_mode": 33188,
+      "old_path": "media/extractors/wav/WAVExtractor.cpp",
+      "new_id": "901b29d051b62a757bfe82b2ca4875d6d62538cd",
+      "new_mode": 33188,
+      "new_path": "media/extractors/wav/WAVExtractor.cpp"
+    }
+  ]
+}

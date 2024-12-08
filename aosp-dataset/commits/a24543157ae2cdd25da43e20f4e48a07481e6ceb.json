@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a24543157ae2cdd25da43e20f4e48a07481e6ceb",
+  "tree": "76e408ade56f04e6da9b483cab9b5885333f8f79",
+  "parents": [
+    "6579fbf033a3cf2957c0319028dc02b7fe684500"
+  ],
+  "author": {
+    "name": "Pavel Grafov",
+    "email": "pgrafov@google.com",
+    "time": "Thu Aug 02 20:18:07 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:16 2018 +0000"
+  },
+  "message": "Backport: Fix Object.entries/values with changing elements\n\nBug: 111274046\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n/data/nativetest64/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\nChange-Id: I705fc512cc5837e9364ed187559cc75d079aa5cb\n(cherry picked from commit d8be9a10287afed07705ac8af027d6a46d4def99)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d5acb6670f0e24fc4838561e7d7303d0d011aeff",
+      "old_mode": 33188,
+      "old_path": "src/elements.cc",
+      "new_id": "501cff7cfab6458700d27a89c256ff0b01b481ba",
+      "new_mode": 33188,
+      "new_path": "src/elements.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "28635d5bead290dd37b9c4f03b30ac45316eafb9",
+      "old_mode": 33188,
+      "old_path": "src/elements.h",
+      "new_id": "376bcbe864c5aacf65bb180c220fb16a8f3aff3b",
+      "new_mode": 33188,
+      "new_path": "src/elements.h"
+    }
+  ]
+}

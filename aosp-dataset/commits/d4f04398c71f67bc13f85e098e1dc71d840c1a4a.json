@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d4f04398c71f67bc13f85e098e1dc71d840c1a4a",
+  "tree": "680f22f438ce42ea2b50ffd8bbb4a33d950b12bb",
+  "parents": [
+    "92531e87ea2af22a6d0e8d56b9a062d4ce16f6ae"
+  ],
+  "author": {
+    "name": "Andras Kloczl",
+    "email": "andraskloczl@google.com",
+    "time": "Tue Mar 09 20:38:56 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:22 2021 +0000"
+  },
+  "message": "Prevent using invalid result uri during multi user image change\n\nTest: manual\nBug: 172939189\nChange-Id: I3e6f6200e82e86d6a2085652906ad2d0d44814f5\nMerged-In: Id2e598878b3250e8b3590905c6def561e2437d55\nMerged-In: I15e15ad88b768a5b679de32c5429d921d850a3cb\n(cherry picked from commit 07e414017c0d1f0c82006a8b59dc404baf696844)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a20513a36645841a9b50c9b5a777f6b34cbce33f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/users/EditUserPhotoController.java",
+      "new_id": "60f720eacf7324a33ae6460367bc8ff293a5296b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/users/EditUserPhotoController.java"
+    }
+  ]
+}

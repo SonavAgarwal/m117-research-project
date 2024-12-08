@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b3e3325d23289a94e66d8ce36a53a7ccf7b52c6d",
+  "tree": "1f0c07036771be681b63464752f198b933b709b1",
+  "parents": [
+    "7d042ad81581382de54b77db5aa289487efe98ee"
+  ],
+  "author": {
+    "name": "Suprabh Shukla",
+    "email": "suprabh@google.com",
+    "time": "Mon Feb 27 15:56:11 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:22 2017 +0000"
+  },
+  "message": "DO NOT MERGE Deleting downloads for removed uids on downloadprovider start\n\nAfter uninstalling an app, if the system was shutdown before the\ndownload provider received the broadcast for UID_REMOVED, another app\ninstalled later in the same uid might be able to gain access to the\nfiles downloaded by this app. Removing any such hanging downloads\nat the start up of the download provider should fix this issue.\n\nTest: Manually tested by uninstalling an app and killing and restarting\nthe process android.process.media, to check that the downloaded files of\nthe uninstalled app were deleted.\n\nBug:22011579\n\nMerged in: I7382c4846f99035b40412a01715aee5873efa9e6\nChange-Id: I7382c4846f99035b40412a01715aee5873efa9e6\n(cherry picked from commit 2ab9a2d15c63cd567805adb8fa4b9c524afc5ceb)\n(cherry picked from commit 3b15466b3cb6207660a73d1cea44a2d018ada23f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "72975582c5062103bbeeeffc5523309fb05bdb2f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "e95eb50be4d1903662ff11253387eb40d206dd1d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    }
+  ]
+}

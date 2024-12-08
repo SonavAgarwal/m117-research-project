@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a5a18239096f6faee80f15f3fff39c3311898484",
+  "tree": "dddbd13c5cbd1ff188ac9aa8d029c1ca79cf8c6c",
+  "parents": [
+    "1921acbf2c82dd0813b3734f2609fe6f971c9c2f"
+  ],
+  "author": {
+    "name": "Ningyuan Wang",
+    "email": "nywang@google.com",
+    "time": "Thu Oct 06 13:29:45 2016 -0700"
+  },
+  "committer": {
+    "name": "Ningyuan Wang",
+    "email": "nywang@google.com",
+    "time": "Tue Oct 11 09:44:02 2016 -0700"
+  },
+  "message": "wifinative jni: check array length to prevent stack overflow\n\nparams.ap is an array with length MAX_HOTLIST_APS \u003d\u003d 128\nWe should check that params.num_bssid does not exceed this value,\notherwise this could be a stack overflow security vulnerability.\n\nCTS will be added in another CL.\n\nBug: 31856351\nChange-Id: I807f349ceef5c2f5a46eec87515d3550f8288739\nTest: compile, unit tests, manual test\nTest: SafetyNet log not triggered under non-exploit conditions\nTest: POC executable does not crash wifi anymore.\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "adc7402f2e76f745320950f8da141980d06f0ea7",
+      "old_mode": 33188,
+      "old_path": "service/jni/com_android_server_wifi_WifiNative.cpp",
+      "new_id": "e9e85ac9d4b3e3e7d458e0ba69fcfdf7d7a44e95",
+      "new_mode": 33188,
+      "new_path": "service/jni/com_android_server_wifi_WifiNative.cpp"
+    }
+  ]
+}

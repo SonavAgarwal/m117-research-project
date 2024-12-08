@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4974dcbd0289a2530df2ee2a25b5f92775df80da",
+  "tree": "3ed942b9ce5b4cefa5cafa2e4d8a6054fd594624",
+  "parents": [
+    "38d9709fe466cc2065b6e5ac8f8264beb6bc9efd"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Thu Jul 07 13:24:03 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:56 2016 -0700"
+  },
+  "message": "DO NOT MERGE | libvpx: cherry-pick aa1c813 from upstream\n\nDescription from upstream:\nvp9: Fix potential SEGV in decoder_peek_si_internal\n\ndecoder_peek_si_internal could potentially read more bytes than\nwhat actually exists in the input buffer. We check for the buffer\nsize to be at least 8, but we try to read up to 10 bytes in the\nworst case. A well crafted file could thus cause a segfault.\nLikely change that introduced this bug was:\nhttps://chromium-review.googlesource.com/#/c/70439 (git hash:\n7c43fb6)\n\nBug: 30013856\nChange-Id: If556414cb5b82472d5673e045bc185cc57bb9af3\n(cherry picked from commit bd57d587c2eb743c61b049add18f9fd72bf78c33)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be5d1600a5b82cb2a3c1214ce8caf1cf7c1f5a7a",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp9/vp9_dx_iface.c",
+      "new_id": "6531e2c618f75589e145b2ef997962ce27318868",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp9/vp9_dx_iface.c"
+    }
+  ]
+}

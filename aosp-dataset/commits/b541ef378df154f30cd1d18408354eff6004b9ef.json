@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b541ef378df154f30cd1d18408354eff6004b9ef",
+  "tree": "b9a91b738bf90737942e1834d35fbf4d4e1caf6d",
+  "parents": [
+    "1e74d335d83280b1bc385e6e7004c33281a4ca0d"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Tue Nov 27 13:47:04 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:15 2018 +0000"
+  },
+  "message": "AOSP/Email - Second part of the Security Vulnerability fix -\n  Email App: Malicious app is able to compose message with hidden\n  attachments and bypass attachments path checks attaching private files\n  from /data/data/com.android.email/*\n\n+ Ported the following CLs. Code is different from gmail. Made the changes\n  to work with Email.\n  ++ https://critique.corp.google.com/#review/136780360\n     +++ Differentiating our Compose intents from other app\u0027s intent.\n\t Added ComposeActivityEmailExternal method and it always returns true.\n         Treat body and quoted text as plaintext if intent is external.\n\nBug: 32068883\nBug: 32502421\nBug: 32589229\n\nTest: manual - Ran the following tests on Pixel phone. Tested the Email UI.\n\n$ adb install -r out/target/product/marlin/system/app/Email/Email.apk\n\n$ adb install -r  app-debug.apk\n   Success\n\n$ adb shell am start -n com.test.poc.poc32589229/.MainActivity -a android.intent.action.MAIN\n  Starting: Intent { act\u003dandroid.intent.action.MAIN cmp\u003dcom.test.poc.poc32589229/.MainActivity }\n\n  Duplicated the steps in https://b.corp.google.com/issues/32589229#comment5\n  and didn\u0027t get the attachments after the fix (was getting attachments before the fix).\n\n$ adb install -r out/target/product/marlin/testcases/EmailTests/EmailTests.apk\n  Performing Streamed Install\n  Success\n\n$ adb shell am instrument -w com.android.email.tests\n  The number of failures are same as before (with or without this change).\n  Tests run: 158,  Failures: 5\n\nChange-Id: I4eda17af7f60e1c92f49ffa6025b328f6481ec76\n(cherry picked from commit c87d04b8c190f52c4f7e8a22dfaa2b5e065415fe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bbe02d4ae6eed36181384d0e71fc9584b2788f70",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "ae130648d8da008c14d9b06c554f6830063a7847",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "455193beac387d0c313e6218d86b2ac24933f25a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/email/activity/ComposeActivityEmailExternal.java"
+    }
+  ]
+}

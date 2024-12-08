@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d16e86f466c2fc18448b654cbe71089c7fede991",
+  "tree": "061894e64e1e5fd371ad0c137d2e7c8a23c92dfa",
+  "parents": [
+    "3d4cf3468533db2e0cbe7e01c4325d8b3f93e2a2"
+  ],
+  "author": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Wed Mar 25 10:46:44 2020 -0700"
+  },
+  "committer": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Thu Mar 26 00:37:00 2020 +0000"
+  },
+  "message": "Require a more specific intent\n\nFixes: 147606347\nTest: run poc, device didn\u0027t reboot\nChange-Id: I8f721ca659d58271880a7adbf386b270b331e55b\nMerged-In: I8f721ca659d58271880a7adbf386b270b331e55b\n(cherry picked from commit a9afc32ddc013424e2d17a091ef3fdfbe18c0d76)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0687b7d8efcefe7e32ae01529400a2afdbf77601",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/keyguard/KeyguardSliceProvider.java",
+      "new_id": "8a0672ca4ffea52aee7e28f4cb9ddfa970611121",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/keyguard/KeyguardSliceProvider.java"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "efd28f6c36d40d0a8dd92f344e1d9a992b315c36",
+  "tree": "10e8e4b0ba0fffdc9bcf31a5729b7ead62f2ae8d",
+  "parents": [
+    "dfbbb54f14f83d45ad06a91aa76ed8260eb795d5"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue May 23 11:53:52 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:19 2017 +0000"
+  },
+  "message": "Initializing reference list for every P/B slice.\n\nReference list needs to be initialized for every P/B\nslice, to ensure colocated picture always points to a\nvalid picture buffer, even in the case of error.\n\nBug: 36279112\n\nChange-Id: I051d7e725b0af209cc7bb333db8da3518adf78a0\n(cherry picked from commit f9d3f9af8fc113acda28e1a4e48d85736ee29c75)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "640fdea55bbc843924c6e2b5a05c04cbebd82bd2",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "2cde4568b135fe88771c99b085f3db04989a3737",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "85b0d0f12d1d73244dcc553ae59d28b31399b411",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_bslice.c",
+      "new_id": "772964ac2d291ddf275c0fa3cea2acec6c821602",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_bslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "97ea27c04dccdc76c182e2bd85d640369e29ba68",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "bcfbe057b601fe2f399140c74c9e671c17aa650f",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7e0815fffa8ebc16527620a6116e07d069684d6e",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "fad2dffdd42f8e57a38a6d70665e5ef6aee8d998",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cde3dd7984c71c5c14ce9128db4a3f1520706a11",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_structs.h",
+      "new_id": "c83c34e4dae5efaaef12d1f398af36dd2a92ac81",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_structs.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "20ac1203a3201ac3e6d05a19325f5569033f3d08",
+  "tree": "3f7799148b31b1e3245b743b35592f0c185892f4",
+  "parents": [
+    "cddcc0d9cf7cbba53e54d67455737a3900ae5d9f"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Wed Dec 05 09:42:25 2018 +0100"
+  },
+  "committer": {
+    "name": "Inna Palant",
+    "email": "ipalant@google.com",
+    "time": "Wed Jan 16 08:55:14 2019 -0800"
+  },
+  "message": "Export maximum number of fds/ints in a native_handle.\n\nSo we can deserialize it consisently and safely.\n\nBug: 120084106\nTest: builds\nChange-Id: I0eafff70d3a7e4d732fe600a0052efb90108208d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "10f5bc094682812283b0fad2c6781a9db7488ecd",
+      "old_mode": 33188,
+      "old_path": "libcutils/include/cutils/native_handle.h",
+      "new_id": "f6cae360ffbac95db246f0dba39130c7ef8fa381",
+      "new_mode": 33188,
+      "new_path": "libcutils/include/cutils/native_handle.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "66f7a3d593018482aa13b9620e15d3cb7fcf216c",
+      "old_mode": 33188,
+      "old_path": "libcutils/native_handle.cpp",
+      "new_id": "b409e5b9d896faa7d7d6a093087c405d98658fa5",
+      "new_mode": 33188,
+      "new_path": "libcutils/native_handle.cpp"
+    }
+  ]
+}

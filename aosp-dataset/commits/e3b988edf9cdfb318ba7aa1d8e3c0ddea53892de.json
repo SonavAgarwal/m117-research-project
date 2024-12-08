@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e3b988edf9cdfb318ba7aa1d8e3c0ddea53892de",
+  "tree": "9765621ed4a6a37cc22eb92aeff1c7f2e15c8c8e",
+  "parents": [
+    "8279c47df01ac6dc28d67c411dfa36c61a068c62"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 05 18:06:51 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:18 2019 +0000"
+  },
+  "message": "Fix Integer Overflow in libpac\n\nFrom the upstream patch\n(https://chromium.googlesource.com/v8/v8.git/+/7b27040e66c8a83006aebc90fe97d21bb42156a7%5E%21/#F0):\n\n\"\"\"\nHarden JSFunction::CalculateInstanceSizeHelper(...)\n\"\"\"\n\nBug: 117556220\n\nTest: /data/local/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\n\nChange-Id: I72321236f4d4cf8da993addc3ef7a1dc018c434b\n(cherry picked from commit cc15c8f69c835e5c1fcfd4992cb21adbda41bd03)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9f9a628062b7db7a5c8cf6f11cd6828d81067725",
+      "old_mode": 33188,
+      "old_path": "src/objects.cc",
+      "new_id": "d5b7777771e212e517a964b20bca4878f9dfe4b4",
+      "new_mode": 33188,
+      "new_path": "src/objects.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "04d3d384d139e4beef8d56ca410b9e863fbdd240",
+      "old_mode": 33188,
+      "old_path": "src/objects.h",
+      "new_id": "289f5fca4f488b1ae379c1151410c98e694c8350",
+      "new_mode": 33188,
+      "new_path": "src/objects.h"
+    }
+  ]
+}

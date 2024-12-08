@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ebc250d16c747f4161167b5ff58b3aea88b37acf",
+  "tree": "7fc0cd90ba94b09a9554001414b661f69b607e9f",
+  "parents": [
+    "462aaeaa616e0bb1342e8ef7b472acc0cbc93deb"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Jul 25 14:52:14 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:50 2018 +0000"
+  },
+  "message": "DO NOT MERGE. Extend SQLiteQueryBuilder for update and delete.\n\nDevelopers often accept selection clauses from untrusted code, and\nSQLiteQueryBuilder already supports a \"strict\" mode to help catch\nSQL injection attacks.  This change extends the builder to support\nupdate() and delete() calls, so that we can help secure those\nselection clauses too.\n\nBug: 111085900\nTest: atest packages/providers/DownloadProvider/tests/\nTest: atest cts/tests/app/src/android/app/cts/DownloadManagerTest.java\nTest: atest cts/tests/tests/database/src/android/database/sqlite/cts/SQLiteQueryBuilderTest.java\nChange-Id: Ib4fc8400f184755ee7e971ab5f2095186341730c\nMerged-In: Ib4fc8400f184755ee7e971ab5f2095186341730c\n(cherry picked from commit 506994268bc4fa07d8798b7737a2952f74b8fd04)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6adae25fc38d7b71b2fdb787c73615366c255ea0",
+      "old_mode": 33188,
+      "old_path": "core/java/android/database/sqlite/SQLiteDatabase.java",
+      "new_id": "96cd043b86764842d0eabd7988164ce15a60d57d",
+      "new_mode": 33188,
+      "new_path": "core/java/android/database/sqlite/SQLiteDatabase.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f3efc6fd98d5e4445b4f6705e27c9e03ce400548",
+      "old_mode": 33188,
+      "old_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java",
+      "new_id": "442e4cf0110cde30153d2a3de4e7bd3d9ddc160f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java"
+    }
+  ]
+}

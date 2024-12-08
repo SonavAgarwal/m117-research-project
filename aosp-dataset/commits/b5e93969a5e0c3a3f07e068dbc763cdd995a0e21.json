@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b5e93969a5e0c3a3f07e068dbc763cdd995a0e21",
+  "tree": "2a33537b3629c8312bf0bd9f8e255f637ff0a819",
+  "parents": [
+    "94c52029653426846c50c639e7f6b5404cedd472"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Jun 12 17:33:58 2017 -0600"
+  },
+  "committer": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@google.com",
+    "time": "Tue Oct 03 20:30:15 2017 +0000"
+  },
+  "message": "DO NOT MERGE. ActivityPicker shouldn\u0027t grant permissions.\n\nThis picker has no business granting any Uri permissions, so remove\nany grant flags that malicious apps may have tried sneaking in.\n\nTest: builds, boots\nBug: 32879772\nChange-Id: I91c48c73287a271bd6c99e60e216dead22e68764\n(cherry picked from commit 3f218e8431cb5648bcb46131551c133ba53ef870)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2c3436fc70547e80b4874d45c8b3d7d33a5f9c8e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/ActivityPicker.java",
+      "new_id": "ae61944cbe1406c91e0e19dfecdbcefb00136a8a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/ActivityPicker.java"
+    }
+  ]
+}

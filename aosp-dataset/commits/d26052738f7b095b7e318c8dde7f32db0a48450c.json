@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d26052738f7b095b7e318c8dde7f32db0a48450c",
+  "tree": "1b405a0f494c813126156bff30de0ebf0d6454c4",
+  "parents": [
+    "f394f12167fddbc755855d06b615509517c99f14"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Wed Sep 02 16:02:19 2015 +0900"
+  },
+  "committer": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Thu Sep 03 06:15:02 2015 +0000"
+  },
+  "message": "Ogg: avoid size_t overflow in base64 decoding\n\nBug: 23707088\nChange-Id: I8d32841fee3213c721cdcc57788807ea64d19d74\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "073c53f1308f419c48670de6761a26d30b674d43",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OggExtractor.cpp",
+      "new_id": "28c9c7c057c3e06ba3681c507961a94b87a0fa8a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OggExtractor.cpp"
+    }
+  ]
+}

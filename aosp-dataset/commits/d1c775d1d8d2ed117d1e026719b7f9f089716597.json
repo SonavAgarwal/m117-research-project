@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d1c775d1d8d2ed117d1e026719b7f9f089716597",
+  "tree": "30f6ec9d73ec3e01cf3eaead51091573c335d771",
+  "parents": [
+    "e786210e50039b2949e45afb33d71d131f8dc3cb"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Apr 20 10:12:57 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:03 2016 -0700"
+  },
+  "message": "Fixed out of bound read in flush_bits\n\nBug: 28168413\nChange-Id: I3db5432a08daf665e160c0dab2d1928a576418b4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b67161d70afb78f2b1395ca7cc9d541319c13191",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_bitstream.c",
+      "new_id": "36092e5e771cfd62804bcb03c4d6ae1c65ca6473",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_bitstream.c"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8daf19b2c8cf7b9325b53e9b93b1eac878759f23",
+  "tree": "0f75c15b6d2f46b7cdc0ad37b1785fb732f684eb",
+  "parents": [
+    "e2247cfb11b05cfe5d9e5a69499dd3182f26e219"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Tue Nov 24 22:20:56 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:53:46 2021 +0000"
+  },
+  "message": "[parser] Fix off-by-one in parameter count check\n\nUpstream: https://chromium-review.googlesource.com/c/1326029\n\nBug: 160610106\nTest: atest proxy_resolver_v8_unittest\nChange-Id: I547b1a0cb88094ed79bf6ffe034df7f8834be4d1\n(cherry picked from commit 089e85f552ec92402d9fcd19d110b0c7521c4601)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "030fc0b9260d6094a304fb284b452a5d3714cda4",
+      "old_mode": 33188,
+      "old_path": "src/messages.h",
+      "new_id": "e94ce16efee3c698f788539e2f94278a5634eafd",
+      "new_mode": 33188,
+      "new_path": "src/messages.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d13724f060be655bc5d11a53ec45174204e7f96",
+      "old_mode": 33188,
+      "old_path": "src/parsing/parser-base.h",
+      "new_id": "60d5e11f35b304994fd4f95860e54e82ebca8ef0",
+      "new_mode": 33188,
+      "new_path": "src/parsing/parser-base.h"
+    }
+  ]
+}

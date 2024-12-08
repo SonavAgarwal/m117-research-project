@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "51c2619c7706575a171cf29819db14e91b815a62",
+  "tree": "2c1dd3b66d40637a4bd9876b07145c338f52982f",
+  "parents": [
+    "f6c7515817f9a4c24d2ff9baba2f916795862098"
+  ],
+  "author": {
+    "name": "Dan Sandler",
+    "email": "dsandler@android.com",
+    "time": "Tue Oct 20 16:01:27 2015 -0700"
+  },
+  "committer": {
+    "name": "Daniel Sandler",
+    "email": "dsandler@android.com",
+    "time": "Fri Oct 23 01:38:36 2015 +0000"
+  },
+  "message": "Delay hiding the cast icon for 3 seconds. DO NOT MERGE\n\nEnsure that the user has had a chance to see it for a few\nseconds after screen recording has ended.\n\n(cherry picked from commit 8fd25bf7711aabffe73213ba1f9056f285270695)\n\nBug: 19121797\nChange-Id: I7a5c12b371b735c756ca5a3e8716c385fb3fbfe9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5c254a26558d51cbe931a3ef3491e009fa0242ee",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java",
+      "new_id": "025a0f981a979c802bd5060e4672c1f564fc8f5f",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/PhoneStatusBarPolicy.java"
+    }
+  ]
+}

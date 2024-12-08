@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ce472cd14f7262a0f5b3ffe656af05ed673c8e08",
+  "tree": "2410225948122fdfcd2a91608cfd2985373681a0",
+  "parents": [
+    "270884373ddd2c8440e43c98286b1bc013418547"
+  ],
+  "author": {
+    "name": "Pinyao Ting",
+    "email": "pinyaoting@google.com",
+    "time": "Thu Aug 08 15:35:20 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:15 2019 +0000"
+  },
+  "message": "fixes a security vulnerability in slice provider\n\nBug: 138441555\nTest: Manual\nChange-Id: Ib1b4fba54ebd3599fe11021d21dc9b09d34e8965\nMerged-In: Ib1b4fba54ebd3599fe11021d21dc9b09d34e8965\n(cherry picked from commit 2b415a4c4465a6294e51ad1a8fcf2e6c1497853b)\n(cherry picked from commit a6364d92edafd79006da671c5d476de77439e45c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ccd49f2e028480f12b02c1639ff68811b57a89c",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/slice/SliceProvider.java",
+      "new_id": "5e530eedd818f8bc0b0c4c0b69c7465d1a9578b5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/slice/SliceProvider.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1642dc003964aed54724d17d840f883f0537cebd",
+  "tree": "ea9f8801f52894c5b097f93cdc2ba8fc8aeeda95",
+  "parents": [
+    "d0fba7ecf19232e5e0c4df1fb8bae80b8ede6500"
+  ],
+  "author": {
+    "name": "Janis Danisevskis",
+    "email": "jdanis@google.com",
+    "time": "Tue Jan 21 14:33:30 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:53:04 2020 +0000"
+  },
+  "message": "Add permission check on onKeyguardVisibilityChanged\n\nWithout this permission check any app can toggle the locked state of\nkeymaster once it has been unlocked for the first time.\n\nBug: 144285084\nTest: Manually tested with debugger that the requred code paths are\n      run.\n\nMerged-In: Idb8a200dc2963e1085e9fddd0c565c5172465e65\nChange-Id: Idb8a200dc2963e1085e9fddd0c565c5172465e65\n(cherry picked from commit 21f452c3722ad7fa39c7d84c4723bcbb723ab164)\n(cherry picked from commit aad9178b5784ee573cfe369afc9aff0171747263)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2336e570335085993b61b2a29856092531d77d24",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.cpp",
+      "new_id": "b6b729520af896272bfb27559fa22acbe59e8f13",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.cpp"
+    }
+  ]
+}

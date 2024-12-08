@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "13294c70a66347c9e5d05b9f92f8ceb6fe38d7f6",
+  "tree": "9d8cc1c20ae09340bad1e1b55e9b6dfdd114d4ca",
+  "parents": [
+    "cb6a56b1d8cdab7c495ea8f53dcbdb3cfc9477d2"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Wed May 30 19:26:16 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:34 2018 +0000"
+  },
+  "message": "Add packet length check for received AVCTP packets\n\nBug: 79944113\nTest: Manual: Custom test program and extra logging\nChange-Id: Icde465fed723bf876ce3885d11099fddcb92de81\nMerged-In: Icde465fed723bf876ce3885d11099fddcb92de81\n(cherry picked from commit 2a934acf498a6b715cc7c634123aa403a70fe9e6)\n(cherry picked from commit d6fb21d8d8ae20addfc51246d840151fc86d8572)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bd99562ca6d09ec3ae34a35605b248ab6abacadc",
+      "old_mode": 33188,
+      "old_path": "stack/avct/avct_bcb_act.cc",
+      "new_id": "70d8ce74347a34f2a8984e1f8112ecc0f1374ab5",
+      "new_mode": 33188,
+      "new_path": "stack/avct/avct_bcb_act.cc"
+    }
+  ]
+}

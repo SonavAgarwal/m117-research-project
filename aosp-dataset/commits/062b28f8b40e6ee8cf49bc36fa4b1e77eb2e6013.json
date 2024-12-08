@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "062b28f8b40e6ee8cf49bc36fa4b1e77eb2e6013",
+  "tree": "5997b3908f4226fcf6e9fa40f2a72cd2c15986d7",
+  "parents": [
+    "e3239314ae709fdd1ca466f9232c12d388aabd25"
+  ],
+  "author": {
+    "name": "Svet Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Mon Sep 23 21:33:53 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 16:24:37 2019 +0000"
+  },
+  "message": "Update PermissionChecker usages to avoid unnecessary attribution.\n\nWe had accidental usages of the PermissionChecker for cases where no\nprivate data was provided to the app but the checkPermission API on\nthe latter also did blame data access on the app. The PermissionChecker\nwas designed to handle IPC calls and not for generic API checks.\n\nTo avoid future accidental incorrect PermissionChecker usages this\nchange renames the existing APIs of the latter to clearly indicate\nthat they should be used for data delivery and also adds sibling\nmethods for doing the same permission checks for preflight purposes.\nAlso the documentation is improved to furhter assist developers.\n\nIn addition, this change fixes accidental permission checker usages\nthat blame when they should not by using the new preflight flavor\nof the permission check APIs.\n\nTest:\n    atest com.android.settingslib.location.RecentLocationAppsTest\n    atest CtsPermissionTestCases\n    added: LocationAccessCheckTest#notificationOnlyForAccessesSinceFeatureWasEnabled\n    added: LocationAccessCheckTest#noNotificationIfFeatureDisabled\n    added: LocationAccessCheckTest#noNotificationIfBlamerNotSystemOrLocationProvider\n    added: LocationAccessCheckTest#testOpeningLocationSettingsDoesNotTriggerAccess\n\nbug:141028068\nMerged-in: I941dfbca9cb5560bd0facfa4671c04c89965919e\nChange-Id: I941dfbca9cb5560bd0facfa4671c04c89965919e\n(cherry picked from commit 150f6207288d128f678940e11167b69e05f1207b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fefe9cdb0c5fba4ddd91744c5693bf319b676065",
+      "old_mode": 33188,
+      "old_path": "hostsidetests/devicepolicy/app/DeviceAndProfileOwner/src/com/android/cts/deviceandprofileowner/PermissionsTest.java",
+      "new_id": "1c633c3eaff8f8f045b476b4bd30988c821c322b",
+      "new_mode": 33188,
+      "new_path": "hostsidetests/devicepolicy/app/DeviceAndProfileOwner/src/com/android/cts/deviceandprofileowner/PermissionsTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "db30b8315967ff3c7f1d8f2e0e6074c906c790ee",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission/src/android/permission/cts/LocationAccessCheckTest.java",
+      "new_id": "4ecf5b69d65bc8854c80900cacdeb82af44a30db",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission/src/android/permission/cts/LocationAccessCheckTest.java"
+    }
+  ]
+}

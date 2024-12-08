@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a59b827869a2ea04022dd225007f29af8d61837a",
+  "tree": "f73b2b42a583950af1e873fe175141ed4f3a5a7f",
+  "parents": [
+    "a30d7d90c4f718e46fb41a99b3d52800e1011b73"
+  ],
+  "author": {
+    "name": "Dianne Hackborn",
+    "email": "hackbod@google.com",
+    "time": "Mon Mar 21 10:36:54 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:47:54 2016 -0700"
+  },
+  "message": "Fix issue #27252896: Security Vulnerability -- weak binder\n\nSending transaction to freed BBinder through weak handle\ncan cause use of a (mostly) freed object.  We need to try to\nsafely promote to a strong reference first.\n\nChange-Id: Ic9c6940fa824980472e94ed2dfeca52a6b0fd342\n(cherry picked from commit c11146106f94e07016e8e26e4f8628f9a0c73199)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ef88181d6d5462cb04ebb60fc192f63ce264cf60",
+      "old_mode": 33188,
+      "old_path": "libs/binder/IPCThreadState.cpp",
+      "new_id": "af18e119abad84fe9ac58b2fdcc3ff65e01de0a3",
+      "new_mode": 33188,
+      "new_path": "libs/binder/IPCThreadState.cpp"
+    }
+  ]
+}

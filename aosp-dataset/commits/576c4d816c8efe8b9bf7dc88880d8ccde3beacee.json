@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "576c4d816c8efe8b9bf7dc88880d8ccde3beacee",
+  "tree": "5881e5beb7a47aa9ced20b48fa27aada76109ce4",
+  "parents": [
+    "f98e1086f5a039d98becf7203367b663e72d09f5"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Tue Nov 05 10:15:36 2019 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:51 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nUpdate keyguard locked state from TrustManagerService\n\nTrustManagerService holds the ground truth about whether a user is\nlocked or not, so update keystore using the information there,\ninstead of doing it from KeyguardStateMonitor. This fixes the issue\nof work profile locked state not being correctly pushed to keystore.\n\nNote: since this change is likely to be backported as a security\npatch, I\u0027m refraining from doing major refactoring right now.\n\nBug: 141329041\nBug: 144430870\nTest: manually with KeyPairSampleApp\nChange-Id: I3472ece73d573a775345ebcceeeb2cc460374c9b\n(cherry picked from commit f9418dbb2c2469dd271e4aebefda5b6a4b485f3a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "646aa13664c4874964f9e5edfcf630f17eb4cba5",
+      "old_mode": 33188,
+      "old_path": "keystore/java/android/security/KeyStore.java",
+      "new_id": "9866c3053714430cd85e568d700f6b8c831cfcc9",
+      "new_mode": 33188,
+      "new_path": "keystore/java/android/security/KeyStore.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f78d2639df1a8a677a442afa1638db27178fe1c5",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java",
+      "new_id": "add0b01f18799dc33079a30dd6eec9fe1ae4a752",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/policy/keyguard/KeyguardStateMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7408dd40b5cad88784541aa26d844d13b36f60db",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/trust/TrustManagerService.java",
+      "new_id": "5f5cd3c461170dbeef4a60f1c059664862500db7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/trust/TrustManagerService.java"
+    }
+  ]
+}

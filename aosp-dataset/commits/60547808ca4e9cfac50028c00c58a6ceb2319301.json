@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "60547808ca4e9cfac50028c00c58a6ceb2319301",
+  "tree": "a04e4b9122d3d6d15a5c794eba70f6ae015622f4",
+  "parents": [
+    "daef4327fe0c75b0a90bb8627458feec7a301e1f"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Wed May 11 16:08:21 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:15 2016 -0700"
+  },
+  "message": "h264bsdActivateParamSets: Prevent multiplication overflow.\n\nReport MEMORY_ALLOCATION_ERROR if pStorage-\u003epicSizeInMbs would\nexceed UINT32_MAX bytes.\n\nBug: 28532266\nChange-Id: Ia6f11efb18818afcdb5fa2a38a14f2a2d8c8447a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3234754b30536a0f5658b2a258f16d7ed6f07a07",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_storage.c",
+      "new_id": "ff7a42ad67c1f61169aebced4ca3a0758b66cef4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/h264dec/source/h264bsd_storage.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb222aed03d798fc074be55e59d9a112338ee784",
+  "tree": "a94ae6b93178d73d0cee45ed20c1a085c17b1f5c",
+  "parents": [
+    "f729a1b0f8df7091cea3729fc0e414f5326e1163"
+  ],
+  "author": {
+    "name": "Dmitry Torokhov",
+    "email": "dmitry.torokhov@gmail.com",
+    "time": "Fri Dec 13 14:56:16 2019 -0800"
+  },
+  "committer": {
+    "name": "Dmitry Torokhov",
+    "email": "dmitry.torokhov@gmail.com",
+    "time": "Fri Dec 13 15:00:42 2019 -0800"
+  },
+  "message": "Input: add safety guards to input_set_keycode()\n\nIf we happen to have a garbage in input device\u0027s keycode table with values\ntoo big we\u0027ll end up doing clear_bit() with offset way outside of our\nbitmaps, damaging other objects within an input device or even outside of\nit. Let\u0027s add sanity checks to the returned old keycodes.\n\nReported-by: syzbot+c769968809f9359b07aa@syzkaller.appspotmail.com\nReported-by: syzbot+76f3a30e88d256644c78@syzkaller.appspotmail.com\nLink: https://lore.kernel.org/r/20191207212757.GA245964@dtor-ws\nSigned-off-by: Dmitry Torokhov \u003cdmitry.torokhov@gmail.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "55086279d044e752e2e009639d36bb89e2462f4d",
+      "old_mode": 33188,
+      "old_path": "drivers/input/input.c",
+      "new_id": "ee6c3234df3634800f257207b3970517d5e68384",
+      "new_mode": 33188,
+      "new_path": "drivers/input/input.c"
+    }
+  ]
+}

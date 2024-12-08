@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "8cafca0e8b1ed8125918e203118c5a4e612fd56c",
+  "tree": "90ba380095ecba2e4b2ba9b631913b9afd118b62",
+  "parents": [
+    "5bdb0a6b72782e505671a387bb5f83222d891d6a"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Sat Sep 17 17:00:37 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:21:53 2016 -0700"
+  },
+  "message": "Decoder: Fixes for handling errors in multi-slice MB Aff streams\n\nInitialize default reference buffer for erroneous interlaced clips\nPick slice_type from decode thread slice structure\nCall start_of_pic only once\n\nBug: 30822755\nChange-Id: I553c646446d99a626d62351aa1b385355191cdc3\n(cherry picked from commit bc71ad2d43dc03b2a71e3423da5385ed3cb9799a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "01f2e01183ffe3ae89737a93c62af67e193a768d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_inter_pred.c",
+      "new_id": "b99a77c473936d22d53e2ff8d68ca8daa7d9af62",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_inter_pred.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "8e008bd3d2a6ea884f3399a690ae5c40c2fee989",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "dfd1ba88f533e7c6839d8d73df8932defbe781c2",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "911b11d4c5de5a7a7909b21dce40d5f217631be8",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "05a82a6bf22519aadc4b41302de3ac3c781ea67d",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e4ec79be45304f819c88c8dbf826d58b68f6c8f8",
+  "tree": "0a9b2cb6ae5da5a626d273eb5e7d957df1a4b468",
+  "parents": [
+    "6f3ddf3f5cf2b3eb52fb0adabd814a45cff07221"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Fri Feb 02 01:11:37 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:18:04 2018 +0000"
+  },
+  "message": "AVRCP: Check number of text attribute values in response\n\nTest: Build\nBug: 71603410\nChange-Id: I6f822b0bc7fc2fb042a70b64cff61583a86b36e2\n(cherry picked from commit 4cd518cb3f8ac6ccb43c94a441bee67e041d0dd5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "82c3cd75514bfcd0dd7ad6cc697df36769e69516",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "334362449104108f15c52c96f9ea06467fc71690",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

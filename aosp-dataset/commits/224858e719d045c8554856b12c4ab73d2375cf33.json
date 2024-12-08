@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "224858e719d045c8554856b12c4ab73d2375cf33",
+  "tree": "7aae8271a085e360ad615823d09a2d293bec2649",
+  "parents": [
+    "8565726f5775a6db97a394aa18a1f6b0e1ce69b7"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Oct 19 16:14:14 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Oct 21 16:07:31 2015 +0000"
+  },
+  "message": "GenericSource: reset mDrmManagerClient when mDataSource is cleared.\n\nBug: 25070434\nChange-Id: Iade3472c496ac42456e42db35e402f7b66416f5b\n(cherry picked from commit b41fd0d4929f0a89811bafcc4fd944b128f00ce2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b6f3a9fa7340ad99fb552808d8e50fb63e999a2b",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp",
+      "new_id": "63d826ca077b6abb22df7b777e643afe29b6e02b",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp"
+    }
+  ]
+}

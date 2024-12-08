@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fba04a52f43315cdb7dd38766822af0324eab7c5",
+  "tree": "23b2b49824f27d1af615051ad84eb7665cd4e30b",
+  "parents": [
+    "c156e721c73ddb697827346581cd61e2655eca7d"
+  ],
+  "author": {
+    "name": "Jorim Jaggi",
+    "email": "jjaggi@google.com",
+    "time": "Fri Jan 06 12:34:37 2017 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:03 2017 -0800"
+  },
+  "message": "Fix buffer overflows\n\nTest: Open Live Earth wallpaper, make sure clouds still update.\nBug: 33621647\nChange-Id: Icc48b6cd8091797a42ba0695cd9191c1f1e02c5a\n(cherry picked from commit 0da62f4818b828f1c97b40a63f13b4c7df4b3ea3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5d4bc3c473f604e13d919a0cb285b78881a84910",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/Android.mk",
+      "new_id": "0dea8311ad2ed04d8f0cac41f8ff9ddefd411094",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "197fddf4a54a74739288b462b2dda9c53e036b48",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/gdx2d/stb_image.h",
+      "new_id": "cf9ab59c2ed3798ee0bb52fe6a0d7471dc2168b7",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/gdx2d/stb_image.h"
+    }
+  ]
+}

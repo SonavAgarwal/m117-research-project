@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5403587a74aee2fb57076528c3927851531c8afb",
+  "tree": "630f36eda2cf59c2fbc020e68f36cb23ac893b7c",
+  "parents": [
+    "9e29523b9537983b4c4b205ff868d0b3bca0383b"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jan 12 12:37:36 2016 -0800"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jan 12 12:37:36 2016 -0800"
+  },
+  "message": "Fix out-of-bounds write\n\nBug: 26365349\nChange-Id: Ia363d9f8c231cf255dea852e0bbf5ca466c7990b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0988ebafb21e06471504011307a7ef9a62a8b50",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "5d8be84eb6378c53f4ddfe285a929235c0629c0a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

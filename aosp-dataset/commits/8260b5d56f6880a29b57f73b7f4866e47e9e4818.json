@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "8260b5d56f6880a29b57f73b7f4866e47e9e4818",
+  "tree": "b90eba18ff8dbebd328d1f92860d281b2757f1ac",
+  "parents": [
+    "a16cd9df50f22ccf65cf27eddc0403791116c75a"
+  ],
+  "author": {
+    "name": "Dan Albert",
+    "email": "danalbert@google.com",
+    "time": "Tue Sep 10 21:52:53 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:55:59 2019 +0000"
+  },
+  "message": "Fix bug in random.\n\nTest: ./run_test.py --bitness 32\nTest: ./run_test.py --bitness 64\nTest: ./run_test.py --bitness 64 --host\nBug: https://bugs.chromium.org/p/chromium/issues/detail?id\u003d994957\nBug: http://b/139690488\nChange-Id: I71708114d7fc8ed90c30b4d32b01d3f3aef7600b\n(cherry picked from commit a1d1caa3d831030ce802ed335a9743180911d553)\n(cherry picked from commit 819e8133bd777d2270ba19d54fd8fa8ac933a417)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "724bd0fc21544392fe8bbfc2a29983516302935d",
+      "old_mode": 33188,
+      "old_path": "include/random",
+      "new_id": "9b29e14a6129cf196cea5287b400762a099cce3d",
+      "new_mode": 33188,
+      "new_path": "include/random"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e6072a4faf90fc2a49d779d2019055c2ab606cc",
+      "old_mode": 33188,
+      "old_path": "test/std/numerics/rand/rand.dis/rand.dist.bern/rand.dist.bern.geo/eval.pass.cpp",
+      "new_id": "3c726a1dba1b19670a67eb9cdd9aeb9132983c57",
+      "new_mode": 33188,
+      "new_path": "test/std/numerics/rand/rand.dis/rand.dist.bern/rand.dist.bern.geo/eval.pass.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "12fcfa354fd37899b8a181d30ea789a1a8dc6a7c",
+      "old_mode": 33188,
+      "old_path": "test/std/numerics/rand/rand.dis/rand.dist.pois/rand.dist.pois.poisson/eval.pass.cpp",
+      "new_id": "e7127d7733e370e905313c4daa07fda7e8a61624",
+      "new_mode": 33188,
+      "new_path": "test/std/numerics/rand/rand.dis/rand.dist.pois/rand.dist.pois.poisson/eval.pass.cpp"
+    }
+  ]
+}

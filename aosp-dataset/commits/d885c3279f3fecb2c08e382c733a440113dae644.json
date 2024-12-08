@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d885c3279f3fecb2c08e382c733a440113dae644",
+  "tree": "e8a8d28fe3b31056abb022bd46a6df5fb65e1cfa",
+  "parents": [
+    "87670f362090b4790d85e1347be9849a7461c2a1"
+  ],
+  "author": {
+    "name": "Bernardo Rufino",
+    "email": "brufino@google.com",
+    "time": "Tue Oct 22 11:53:42 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:25 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nMake toasts non-clickable\n\nSince enforcement was only on client-side, in Toast class, an app could\nuse reflection (or other means) to make the Toast clickable. This is a\nsecurity vulnerability since it allows tapjacking, that is, intercept touch\nevents and do stuff like steal PINs and passwords.\n\nThis CL brings the enforcement to the system by applying flag\nFLAG_NOT_TOUCHABLE.\n\nTest: atest CtsWindowManagerDeviceTestCases:ToastTest\nTest: Construct app that uses reflection to remove flag FLAG_NOT_TOUCHABLE and\n      log click events. Then:\n      1) Observe click events are logged without this CL.\n      2) Observer click events are not logged with this CL.\nBug: 128674520\n\nChange-Id: Ic36585bc4f186e0224f5b687c49c0b3d9266838c\n(cherry picked from commit b81f269ae2afb446b9d4a909fc2bcf038af00c41)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "99a9db316c63acc831b7cf53d3f7013e77566fc9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/DisplayPolicy.java",
+      "new_id": "d4a462822ff37e374fc0f9e76da4059c105c24e7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/DisplayPolicy.java"
+    }
+  ]
+}

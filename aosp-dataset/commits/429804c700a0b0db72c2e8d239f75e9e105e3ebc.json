@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "429804c700a0b0db72c2e8d239f75e9e105e3ebc",
+  "tree": "6468ff799f173030835511dfcf2e4994d92ce07e",
+  "parents": [
+    "79e15d9a357a448519409e022ff88a12dceb2c81"
+  ],
+  "author": {
+    "name": "Anthony Stange",
+    "email": "stange@google.com",
+    "time": "Fri Dec 11 13:52:20 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:10 2021 +0000"
+  },
+  "message": "Ensure looper isn\u0027t used after invalidateSensorQueue\n\nPrevious attempts resulted in improper locking that created a deadlock\nsiutation. This attempt creates a new lock for mValid that should avoid\nany deadlock scenario that could arise from normal use.\n\nBug: 175074139\nTest: Load on Pixel device and run various applications\nMerged-In: I4e5a68b70353161f21e0d93cac1ceb11cc9ad035\nChange-Id: I4e5a68b70353161f21e0d93cac1ceb11cc9ad035\n(cherry picked from commit 99d5d9ac9e30c43e7d8c58cd562e3fffb26f4771)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d1094262b5256f4b0791295bae2b7d3123a69dc9",
+      "old_mode": 33188,
+      "old_path": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp",
+      "new_id": "bf24f6839a3af07e166ce8fc12b8fd3d36b386c8",
+      "new_mode": 33188,
+      "new_path": "sensorservice/libsensorndkbridge/ASensorEventQueue.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4937276bc6a13a158d791c671dcadcaf449600f5",
+      "old_mode": 33188,
+      "old_path": "sensorservice/libsensorndkbridge/ASensorEventQueue.h",
+      "new_id": "7139d34703eb0ac521ddda14d2ec3733820b9390",
+      "new_mode": 33188,
+      "new_path": "sensorservice/libsensorndkbridge/ASensorEventQueue.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "818429daa967c8b6b923704a60ae17b559f0bea8",
+      "old_mode": 33188,
+      "old_path": "sensorservice/libsensorndkbridge/ASensorManager.h",
+      "new_id": "4e9112209a9400d5aaf08294650e267dc4020faf",
+      "new_mode": 33188,
+      "new_path": "sensorservice/libsensorndkbridge/ASensorManager.h"
+    }
+  ]
+}

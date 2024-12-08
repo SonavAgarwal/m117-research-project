@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fcc33ffcbc7552399c6290b5554e2ad7bdce40c6",
+  "tree": "8802cd9dd09ab427e655dfb6234db97dcf4b6d9c",
+  "parents": [
+    "0fa50697bd0d12c309ce45067b2ac54002f558f2"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Thu Nov 29 23:52:29 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:16 2019 +0000"
+  },
+  "message": "Prevent Out of bounds read in ce_t4t.cc\n\nTest: Nfc Enable/Disable; Send wrong length AID to HCE\nBug: 115635871\nChange-Id: Ie522424d5d9e611fac5875a0cf1f8cbd640528ff\n(cherry picked from commit 6900b5ce91f0ec31ce92a933de5f6ea35d1efa4c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "64d2626e9cbdb285ce88f556b88e204831e54c06",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/ce_t4t.cc",
+      "new_id": "9b859e2bdebcdebfef89037604b753e682043712",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/ce_t4t.cc"
+    }
+  ]
+}

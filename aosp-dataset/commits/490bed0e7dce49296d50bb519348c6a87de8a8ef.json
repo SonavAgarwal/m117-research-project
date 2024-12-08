@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "490bed0e7dce49296d50bb519348c6a87de8a8ef",
+  "tree": "2a6ff35b68b77286a32b3b789801a3d5c9be2407",
+  "parents": [
+    "f6650b34ef27d6da8cdccd42e0f76fe756a9375b"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue May 23 15:54:18 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:38 2017 +0000"
+  },
+  "message": "Fixed hang in the case of multiple sps id.\n\nThe sps parameters used to detect change in\nresolution/sps were incorrect. Made a fix to\nuse current sps from decoder context.\n\nBug: 38239864\n\nChange-Id: I2d110e635ced32b3dc7f364e08a97d672fcbae37\n(cherry picked from commit 8c6fe35f6d28f3e8c3a9f9458eea89eba858bded)\n(cherry picked from commit ec3f58500066edee259942057e21489621fca9dd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "352d605895bcd239e474973d4bc7183e11d0e6d7",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "d8c37a69f96285197d2da70e5e05960d49452bf4",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    }
+  ]
+}

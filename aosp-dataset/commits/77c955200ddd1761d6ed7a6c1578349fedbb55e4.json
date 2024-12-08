@@ -1,0 +1,156 @@
+)]}'
+{
+  "commit": "77c955200ddd1761d6ed7a6c1578349fedbb55e4",
+  "tree": "208f41733764440fd0f00b213bfb4c99744b3573",
+  "parents": [
+    "5d1778b530aa0b845b8d6996815665f7cc44bf38"
+  ],
+  "author": {
+    "name": "Mike Reed",
+    "email": "reed@google.com",
+    "time": "Fri Jan 05 11:20:10 2018 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 01:23:07 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Cherry-pick \"begin cleanup of malloc porting layer\"\n\nBug: 78354855\nTest: Not feasible\n\nOriginal description:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n1. Merge some of the allocators into sk_malloc_flags by redefining a flag to mean zero-init\n2. Add more private helpers to simplify our call-sites (and handle some overflow mul checks)\n3. The 2-param helpers rely on the saturating SkSafeMath::Mul to pass max_size_t as the request,\nwhich should always fail.\n\nchromium: 508641\nReviewed-on: https://skia-review.googlesource.com/90940\nCommit-Queue: Mike Reed \u003creed@google.com\u003e\nReviewed-by: Robert Phillips \u003crobertphillips@google.com\u003e\nReviewed-by: Stephan Altmueller \u003cstephana@google.com\u003e\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nConflicts:\n- include/private/SkMalloc.h\nSimply removed the old definitions of SK_MALLOC_TEMP and SK_MALLOC_THROW.\n- public.bzl\nCopied SK_SUPPORT_LEGACY_MALLOC_PORTING_LAYER into the old defines.\n- src/codec/SkIcoCodec.cpp\nDrop a change where we were not using malloc yet.\n- src/codec/SkBmpBaseCodec.cpp\n- src/core/SkBitmapCache.cpp\nThese files weren\u0027t yet using malloc (and SkBmpBaseCodec hadn\u0027t been\nfactored out).\n- src/core/SkMallocPixelRef.cpp\nThese were still using New rather than Make (return raw pointer). Leave\nthem unchanged, as sk_malloc_flags is still valid.\n- src/lazy/SkDiscardableMemoryPool.cpp\nLeave this unchanged; sk_malloc_flags is still valid\n\nIn addition, pull in SkSafeMath.h, which was originally introduced in\nhttps://skia-review.googlesource.com/c/skia/+/33721. This is required\nfor the new sk_malloc calls.\n\nAlso pull in SkSafeMath::Add and SkSafeMath::Mul, introduced in\nhttps://skia-review.googlesource.com/88581\n\nAlso add SK_MaxSizeT, which the above depends on, introduced in\nhttps://skia-review.googlesource.com/57084\n\nAlso, modify NewFromStream to use sk_malloc_canfail, matching pi and\navoiding a build break\n\nChange-Id: Ib320484673a865460fc1efb900f611209e088edb\n(cherry picked from commit a12cc3e14ea6734c7efe76aa6a19239909830b28)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1dd672bea479e18ca7767c90558a13b2683edf59",
+      "old_mode": 33188,
+      "old_path": "include/core/SkTypes.h",
+      "new_id": "a3e295e28525e0079e0b4214fe6108ae2be15ab2",
+      "new_mode": 33188,
+      "new_path": "include/core/SkTypes.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "58e11f657cc4d16b1f0a2fcc71a7b8a387567045",
+      "old_mode": 33188,
+      "old_path": "include/private/SkMalloc.h",
+      "new_id": "5c4f9b6ff70a22d3fe7b99a27bc3ddaf6f73193a",
+      "new_mode": 33188,
+      "new_path": "include/private/SkMalloc.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a6e4dedf9feeed81ea9dfd38ccec21f434fa63dd",
+      "old_mode": 33188,
+      "old_path": "include/private/SkTArray.h",
+      "new_id": "22dded3bbdd9df087ecb1834469d0635f7fa923b",
+      "new_mode": 33188,
+      "new_path": "include/private/SkTArray.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "919d160d0db11b8561dce790f9aab511bfd34a64",
+      "old_mode": 33188,
+      "old_path": "include/private/SkTemplates.h",
+      "new_id": "b4718fc02a907902438d998507800972f0159837",
+      "new_mode": 33188,
+      "new_path": "include/private/SkTemplates.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "51c8069c426ebca4fa4d56ce31037ce17f3ffe89",
+      "old_mode": 33188,
+      "old_path": "public.bzl",
+      "new_id": "9f12265bcc72fd6ba1bc9bcd40a4dbaaf5286f02",
+      "new_mode": 33188,
+      "new_path": "public.bzl"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e61bfe45d93b47aab811906e46407014d35396c",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkIcoCodec.cpp",
+      "new_id": "b793a6dc15a243c0b4fa1f762bfc843e6b1650a5",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkIcoCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8672cd86f9cccee5398508dbaf36a76929d65446",
+      "old_mode": 33188,
+      "old_path": "src/core/SkAutoMalloc.h",
+      "new_id": "1a1a7d264f504749bf2aa28be6a3fd89252bc926",
+      "new_mode": 33188,
+      "new_path": "src/core/SkAutoMalloc.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b41bc90d381ec7c1fff4d477a30571b382ad4397",
+      "old_mode": 33188,
+      "old_path": "src/core/SkAutoPixmapStorage.cpp",
+      "new_id": "03f3f03a63b2c6bfb7a5716db9b9f39b3a9c7ddb",
+      "new_mode": 33188,
+      "new_path": "src/core/SkAutoPixmapStorage.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6928f38ee2dbf5e08c606c25d49e34cd26760158",
+      "old_mode": 33188,
+      "old_path": "src/core/SkMallocPixelRef.cpp",
+      "new_id": "28d92d21fea7189d2782273b9c489d4b18c0ad35",
+      "new_mode": 33188,
+      "new_path": "src/core/SkMallocPixelRef.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6eff790c85c5c08e56ecda331426f2281ba8add4",
+      "old_mode": 33188,
+      "old_path": "src/core/SkMath.cpp",
+      "new_id": "58645dab8fefc309b18c073eca865ecba871997b",
+      "new_mode": 33188,
+      "new_path": "src/core/SkMath.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fec78256b3cd050307a83a2e4b455d688f1dc90b",
+      "old_mode": 33188,
+      "old_path": "src/core/SkRegion_path.cpp",
+      "new_id": "e6af059c8e0bfba9d4364c29f030bc98444097f3",
+      "new_mode": 33188,
+      "new_path": "src/core/SkRegion_path.cpp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0bc0fbfac473dc2d38b421a5dff1fbfb9b7c639a",
+      "new_mode": 33188,
+      "new_path": "src/core/SkSafeMath.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c92b2968b9cb307c3f6442eecc64df1f381a4c1c",
+      "old_mode": 33188,
+      "old_path": "src/gpu/GrBuffer.cpp",
+      "new_id": "cd7862a226bc74c9473fa1bff015a8601519a40c",
+      "new_mode": 33188,
+      "new_path": "src/gpu/GrBuffer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c21decc8074ac962ab486031893fbed813dbd86",
+      "old_mode": 33188,
+      "old_path": "src/ports/SkMemory_malloc.cpp",
+      "new_id": "8c4a91769408691b385a431a3ba7c7208a2f8d5e",
+      "new_mode": 33188,
+      "new_path": "src/ports/SkMemory_malloc.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bf5971ba075f0b4c4bb245123167192b7d944e4a",
+      "old_mode": 33188,
+      "old_path": "src/ports/SkMemory_mozalloc.cpp",
+      "new_id": "e13b94612a5c94f2b8e1f2e2ea6f3bd9abcd3801",
+      "new_mode": 33188,
+      "new_path": "src/ports/SkMemory_mozalloc.cpp"
+    }
+  ]
+}

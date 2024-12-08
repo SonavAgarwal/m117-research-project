@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "89321d6f0d47724dc7f0c17f7d7302d1fe75086b",
+  "tree": "bd4562f9d280a2a694df2f4a77ad5b891bd42cfa",
+  "parents": [
+    "2f320d60bcc8ab32971eed163df3fca79c792fd1"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Tue Feb 11 15:15:22 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:54 2020 +0000"
+  },
+  "message": "AAC Decoder: Use osi_free() to free buffers allocated by osi_malloc()\n\n* buffers allocated by osi_malloc() have canary bytes around it and need special method\n  osi_free() to free them\n\nBug: 148107188\nTest: manual\nChange-Id: Ifcfe494737c47e33755297214d3f637852a8be0b\n(cherry picked from commit b88f8057fd28ca271ccd436a17f6489d4cf46697)\n(cherry picked from commit 7a6fd5459ef8c6a2c21774e1220deb1023ae2935)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d9cd85dc6c4394aa33c64d2f61b45fbbe057de03",
+      "old_mode": 33188,
+      "old_path": "stack/a2dp/a2dp_aac_decoder.cc",
+      "new_id": "d998d7d4706c28967280a6b48664402508496157",
+      "new_mode": 33188,
+      "new_path": "stack/a2dp/a2dp_aac_decoder.cc"
+    }
+  ]
+}

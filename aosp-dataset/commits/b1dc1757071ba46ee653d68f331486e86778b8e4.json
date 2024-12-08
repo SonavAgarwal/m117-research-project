@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b1dc1757071ba46ee653d68f331486e86778b8e4",
+  "tree": "2c24b5b63a0a1a88b023c0fb9a31752257ae9e91",
+  "parents": [
+    "73fdb1af54c396e87c5b7e07c6a84296f4bdb33b"
+  ],
+  "author": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Tue Aug 09 13:23:39 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:15:20 2016 -0700"
+  },
+  "message": "Fix setPairingConfirmation permissions issue (2/2)\n\nsetPairingConfirmation was set to only require BLUETOOTH_ADMIN\npermission which shouldn\u0027t be able to set the confirmation itself.\n\nThis is restricted to BLUETOOTH_PRIVILEGED permission.\n\nBug: 29043989\nChange-Id: I887de32d156e672ec44aa0b286cd7ea7f9f8ad55\n(cherry picked from commit 93326cfd9fb8a20081baa9b975275772798cfd80)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f43fb30abb186e84a1ee6677153765c61fe1bf87",
+      "old_mode": 33188,
+      "old_path": "core/java/android/bluetooth/BluetoothDevice.java",
+      "new_id": "c12317f0771830561251cbadeb67383b9f443c21",
+      "new_mode": 33188,
+      "new_path": "core/java/android/bluetooth/BluetoothDevice.java"
+    }
+  ]
+}

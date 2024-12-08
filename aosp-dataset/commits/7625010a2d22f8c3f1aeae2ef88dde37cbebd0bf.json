@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7625010a2d22f8c3f1aeae2ef88dde37cbebd0bf",
+  "tree": "8206af9bae8bdd1e6726d50317ed0456e65d8ca9",
+  "parents": [
+    "74cd09cb6d7ba7b36c87ae4244b67d2f3367e016"
+  ],
+  "author": {
+    "name": "Tadashi G. Takaoka",
+    "email": "takaoka@google.com",
+    "time": "Fri Sep 16 11:41:07 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:16:41 2016 -0700"
+  },
+  "message": "Catch all exceptions when parsing IME meta data\n\nBug: 30568284\nChange-Id: I0b613f8ce0f014320c5ac1bf445699ea2702a0a2\n(cherry picked from commit dddc438e97509a858319e91988908b27085792d6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5d8fe7c68fe8f6026cb9661fea0ab86c115c2a3a",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/InputMethodManagerService.java",
+      "new_id": "76b10111e90a58e2498b547c50c862c4e74b96ed",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/InputMethodManagerService.java"
+    }
+  ]
+}

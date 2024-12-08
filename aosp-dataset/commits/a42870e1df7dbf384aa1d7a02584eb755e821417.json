@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a42870e1df7dbf384aa1d7a02584eb755e821417",
+  "tree": "b43916a3319f31a88b2067ffb83ad3560e0cd683",
+  "parents": [
+    "c5823fe639049330e33bfaa2c84b4a9ba68bd6e7"
+  ],
+  "author": {
+    "name": "Pengquan Meng",
+    "email": "mpq@google.com",
+    "time": "Fri Mar 23 14:29:55 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:19 2018 +0000"
+  },
+  "message": "Fixed invalid pdu issue\n\nThe device may receive invalid sms pdu, i.e the pdu contins sms header\nwith an invalid seqNumber. This caused InboundSmsHandler crashed constantly.\nThis CL added the range check for the seqNumber to ensure the\nInboundSmsHandler will not crash even if the seqNumber is invalid.\n\nTest: runtest -x GsmInboundSmsHandlerTest -m\ntestMultiPartSmsWithInvalidSeqNumber\nBug: 72298611\n\nMerged-In: Icf291c8530abdc2a528c5cf227cf00135281b899\nChange-Id: Icf291c8530abdc2a528c5cf227cf00135281b899\n(cherry picked from commit 9eec9d02937dd41fc94ad1c874f8467f4698df5c)\n(cherry picked from commit d2f410c0ff07c5a7b79e61bc36527b0259677de7)\n(cherry picked from commit e8955271c5ca1595ae7c495b6cd7c5f8515d65ea)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2d663cd713f4bc4882bd35b0d92cdb2d0c7ccbe6",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/InboundSmsHandler.java",
+      "new_id": "99fd965b637b116c9417e434cf55a9d7047ded13",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/InboundSmsHandler.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "122feb9a0b04290f55183ff2f0384c6c53756bd8",
+  "tree": "1f9d7dee2e31ba8ab9e3b4bd3a2478344cf2116d",
+  "parents": [
+    "a283d524475da1b9ce9013eb2c8709bc7bd9dcfc"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Thu Mar 17 17:12:08 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:36 2016 -0700"
+  },
+  "message": "Add guest mode functionality (3/3)\n\nAdd a flag to enable() to start Bluetooth in restricted\nmode. In restricted mode, all devices that are paired during\nrestricted mode are deleted upon leaving restricted mode.\nRight now restricted mode is only entered while a guest\nuser is active.\n\nBug: 27410683\nChange-Id: If4a8855faf362d7f6de509d7ddc7197d1ac75cee\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b8e9a97b3e6a0021be4ae11a913901069ebcd772",
+      "old_mode": 33261,
+      "old_path": "jni/com_android_bluetooth_btservice_AdapterService.cpp",
+      "new_id": "ad5288eff4a6e03fa20fd929ad32d6a5275a1323",
+      "new_mode": 33261,
+      "new_path": "jni/com_android_bluetooth_btservice_AdapterService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1fbd231af44f1a5ce0d15d0b761606123519ccd4",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/btservice/AdapterService.java",
+      "new_id": "3b96b7f95b8914ec987da4bb70a8e58b28981ccc",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/btservice/AdapterService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "555e175e84fd2cb7ddbddb1ff40d74a36aa9f300",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/btservice/AdapterState.java",
+      "new_id": "b47d3242bc1828cf0eb141bca67a5ffab5e93ac8",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/btservice/AdapterState.java"
+    }
+  ]
+}

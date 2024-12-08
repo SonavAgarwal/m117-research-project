@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "374bb0401a5649af4a97e8d8c7373c7daf37f6ac",
+  "tree": "faf6fd54deebfe306e73ae17a0bebf07299a276c",
+  "parents": [
+    "27feab80ac0aa4bff5318e795629351488ee00bd"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Mon Dec 07 13:11:10 2020 -0800"
+  },
+  "committer": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Mon Dec 07 21:13:07 2020 +0000"
+  },
+  "message": "Legacy pairing: Reject device with same BD_ADDR\n\nChange-Id: If3daec91c3d108a4e7e988608e0600c79ea5f053\nTag: #vulnerability\nTest: manual\nBug: 174626251\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3d5f51cd1deb7f6ab2c3d66f16a6ac7a84490354",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_sec.cc",
+      "new_id": "1831529c80c55732d6250fcb1f2151034fbdf7c2",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_sec.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "859ead528cd09f6fdf3a85df390745054058d12c",
+  "tree": "454623c2eed374ca68f3a926671f753f6259afee",
+  "parents": [
+    "fab928923c8255626049e6f459105d2e4c715384"
+  ],
+  "author": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Wed Nov 06 10:36:39 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Nov 16 00:27:25 2019 +0000"
+  },
+  "message": "DO NOT MERGE: Fixes NPE when preparing app data during init\n\nWhen deleting an unused static shared library on Q, the user manager was\nfetched via mContext.getSystemService. At this time during boot, the\nservice wasn\u0027t registered and so null was returned. This has already\nbeen addressed in R with a move to injecting dependencies in the\nPackageManagerService constructor.\n\nBug: 142083996\nBug: 141413692\nTest: manual; remove static dependency on eng Q build and reboot\nChange-Id: I8ae4e331d09b4734c54cdc6887b273705dce88b1\n(cherry picked from commit 46e6a0b1ff34d3a0a8fc006ba86677780195a1ff)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "703c17acd6cef4f533575099ca5789b52eb4bf80",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "dd8cb4dba0a7190f756b9ea35c1a6cd057b3ea21",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

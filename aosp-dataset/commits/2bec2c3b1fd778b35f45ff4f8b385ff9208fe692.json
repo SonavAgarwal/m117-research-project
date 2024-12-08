@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2bec2c3b1fd778b35f45ff4f8b385ff9208fe692",
+  "tree": "67b66840b544317fef942944b7c4907529f40c38",
+  "parents": [
+    "654bf4f8e9bfef5c974025ce296141587e35099f"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Aug 17 19:00:57 2017 -0700"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Sep 05 18:22:33 2017 +0000"
+  },
+  "message": "EffectBundle: Check parameter and value size\n\nTest: POC CTS AudioEffectTest\nBug: 64477217\nBug: 64478003\nChange-Id: Ia5e6ecb5a356daf5f3fa085d1055748f638795d9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "df6501bdc48e13078d7190235bc0fd91a91c94be",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "1fddf9c9fd0d34f4f215dc7fec7efef9ae08c7aa",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    }
+  ]
+}

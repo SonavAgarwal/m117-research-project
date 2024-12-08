@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1ee4892e66ba314131b7ecf17e98bb1762c4b84c",
+  "tree": "fb76c579b4f5d76995cdc1b5c5f28b2f54efcdfe",
+  "parents": [
+    "61f27551c7c65fbab4b0f8ef5c3f8d8c1fe8fdff"
+  ],
+  "author": {
+    "name": "Tianjie Xu",
+    "email": "xunchang@google.com",
+    "time": "Wed Sep 21 14:58:11 2016 -0700"
+  },
+  "committer": {
+    "name": "Tianjie Xu",
+    "email": "xunchang@google.com",
+    "time": "Thu Sep 22 18:24:53 2016 -0700"
+  },
+  "message": "Fix out of bound access in libziparchive\n\nThe boundary check of an invalid EOCD record may succeed due to the\noverflow of uint32_t. Fix the check.\n\nTest: Open the crash.apk and libziparchive reports the offset error as expected.\n\nBug: 31251826\nChange-Id: I1d8092a19b73886a671bc9d291cfc27d65e3d236\n(cherry picked from commit ae8180c06dee228cd1378c56afa6020ae98d8a24)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "87dac0e74ba1afb10d007be00d8788c94f4e7847",
+      "old_mode": 33188,
+      "old_path": "libziparchive/zip_archive.cc",
+      "new_id": "54d866c2642b7ade28c643637bebc60b713c9485",
+      "new_mode": 33188,
+      "new_path": "libziparchive/zip_archive.cc"
+    }
+  ]
+}

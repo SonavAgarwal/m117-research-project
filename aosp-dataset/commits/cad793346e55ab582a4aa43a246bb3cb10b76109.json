@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cad793346e55ab582a4aa43a246bb3cb10b76109",
+  "tree": "6e34807c587c47f39123c8b438423af109d46bd3",
+  "parents": [
+    "ef942a244dd8b1c9b3707430b826c90ef79a897a"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Fri Mar 08 10:29:11 2019 -0800"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Thu Mar 14 17:28:49 2019 -0700"
+  },
+  "message": "Fix type confusion in libpac\n\nFrom the upstream patch\n(https://chromium.googlesource.com/v8/v8/+/e33fd30777f99a0d6e16b16d096a2663b1031457%5E%21/#F0):\n\n\"\"\"\nFix HAliasAnalyzer for constants\n\"\"\"\n\nBug: 117606285\n\nTest: /data/local/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\nChange-Id: I297f27c69e94666c9f61efb216244b3d534cd018\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1f32b7ac6e4cfcbab96e45b85e8ea59eb935c087",
+      "old_mode": 33188,
+      "old_path": "src/crankshaft/hydrogen-alias-analysis.h",
+      "new_id": "d06aabc76e5044af794c848bf1706e4318c82e8b",
+      "new_mode": 33188,
+      "new_path": "src/crankshaft/hydrogen-alias-analysis.h"
+    }
+  ]
+}

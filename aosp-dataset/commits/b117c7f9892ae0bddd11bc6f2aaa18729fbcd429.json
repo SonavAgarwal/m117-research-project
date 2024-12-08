@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b117c7f9892ae0bddd11bc6f2aaa18729fbcd429",
+  "tree": "29aed4828f5edc5fb840fd562075eb8b3b25712e",
+  "parents": [
+    "d0b9f6155d878426fa948b28b51b4b4c5989201e"
+  ],
+  "author": {
+    "name": "Martin Brabham",
+    "email": "optedoblivion@google.com",
+    "time": "Thu Apr 04 14:57:41 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:02 2019 +0000"
+  },
+  "message": "DO NOT MERGE: osi: Offload mutex pointer to local scope\n\nCreate a shared_ptr for the callback_mutex in the alarm struct.\nWhen performing the callback, make a local shared_ptr reference.\nlock_guard on the local shared_ptr reference.\n\nBug: 117997080\nTest: atest net_test_bluetooth\nChange-Id: Iab800f720f4ccc4735e4d494e0d458eb97b40a4a\n(cherry picked from commit 947c58718f93629f2fba6e16d5163b6da07d0056)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "83a661df7a8ccfbe9e2e46334ed929754251a22c",
+      "old_mode": 33188,
+      "old_path": "osi/src/alarm.cc",
+      "new_id": "07d870422ce29ac66403c49879cab223752b448b",
+      "new_mode": 33188,
+      "new_path": "osi/src/alarm.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7f473d7d37ebfaf586b629c8f8664678d643498",
+      "old_mode": 33188,
+      "old_path": "osi/test/alarm_test.cc",
+      "new_id": "0066e19eb92f909f691ae36dcf0d20e367b24824",
+      "new_mode": 33188,
+      "new_path": "osi/test/alarm_test.cc"
+    }
+  ]
+}

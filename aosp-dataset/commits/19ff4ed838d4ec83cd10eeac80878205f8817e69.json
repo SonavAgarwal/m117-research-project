@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "19ff4ed838d4ec83cd10eeac80878205f8817e69",
+  "tree": "5bae6d9cb83e0c73213f37b6ae383a712b167ef8",
+  "parents": [
+    "ba03cf876e102608433fb5106e9d46b77ca8cb4e"
+  ],
+  "author": {
+    "name": "John Shao",
+    "email": "johnshao@google.com",
+    "time": "Wed Apr 28 19:48:40 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:07 2021 +0000"
+  },
+  "message": "Hide non system overlays in ContactSelectionActivity\n\nBug: 182809425\nTest: build and install\nChange-Id: I84c187eabe14cc8694110b2c6cb7502586511b22\n(cherry picked from commit ea3e6cdd4152b5878121698f3dde6542b897c191)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "57669faaa1204bc2c0d302a79bcca817d854009a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/activities/ContactSelectionActivity.java",
+      "new_id": "2057c9d696e1790f23fa55e7244964326be57aa4",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/activities/ContactSelectionActivity.java"
+    }
+  ]
+}

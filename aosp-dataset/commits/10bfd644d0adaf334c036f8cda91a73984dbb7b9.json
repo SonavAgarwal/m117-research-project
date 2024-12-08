@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "10bfd644d0adaf334c036f8cda91a73984dbb7b9",
+  "tree": "01d449b3a17cd20a603d24e4cec9b9e4ee5a6de4",
+  "parents": [
+    "f7bcce468f1c1d8b2ba61744c305b29f46ce34e9"
+  ],
+  "author": {
+    "name": "Mathy Vanhoef",
+    "email": "Mathy.Vanhoef@cs.kuleuven.be",
+    "time": "Wed Jul 12 16:03:24 2017 +0200"
+  },
+  "committer": {
+    "name": "Glen Kuhne",
+    "email": "kuh@google.com",
+    "time": "Mon Oct 16 09:50:25 2017 -0700"
+  },
+  "message": "Prevent reinstallation of an already in-use group key\n\nTrack the current GTK and IGTK that is in use and when receiving a\n(possibly retransmitted) Group Message 1 or WNM-Sleep Mode Response, do\nnot install the given key if it is already in use. This prevents an\nattacker from trying to trick the client into resetting or lowering the\nsequence counter associated to the group key.\n\nChange-Id: I5a315accb15ca5d2464acc3c370c66e07d57c7ea\nMerged-In: I5a315accb15ca5d2464acc3c370c66e07d57c7ea\nSigned-off-by: Mathy Vanhoef \u003cMathy.Vanhoef@cs.kuleuven.be\u003e\nSigned-off-by: Glen Kuhne \u003ckuh@google.com\u003e\nBug: 65245581\nTest: WiFi integration tests\nMerged-In: I1273cf9ee58154b16512ef4284a8d2c5541d3c01\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a84cc9b2d1aa9a04a224ac4a4279bbe9987d38c8",
+      "old_mode": 33188,
+      "old_path": "src/common/wpa_common.h",
+      "new_id": "ebcfe943479c7b2ded805d45081fb59747abe2b3",
+      "new_mode": 33188,
+      "new_path": "src/common/wpa_common.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "1349873385dfcadcaa33bd3e475af8c0b51690ef",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa.c",
+      "new_id": "bbb7ad9e8da75006808f1c04b0e04af1ecba5b37",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ab54a18f5d557183e54151c8d7be86e89208f866",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa_i.h",
+      "new_id": "b605da92701c4fa8fe133c4f57906a42629a47ba",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa_i.h"
+    }
+  ]
+}

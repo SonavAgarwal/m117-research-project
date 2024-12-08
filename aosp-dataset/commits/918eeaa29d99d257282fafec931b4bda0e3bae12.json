@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "918eeaa29d99d257282fafec931b4bda0e3bae12",
+  "tree": "6119a04b6fa9033159a48a4ac1d53c2e57e6277d",
+  "parents": [
+    "7cea5cb64b83d690fe02bc210bbdf08f5a87636f"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Sun Mar 20 10:44:44 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:56 2016 -0700"
+  },
+  "message": "codecs: check OMX buffer size before use in (avc|hevc|mpeg2)dec\n\nBug: 27833616\nChange-Id: Ic4045a3f56f53b08d0b1264b2a91b8f43e91b738\n(cherry picked from commit 87fdee0bc9e3ac4d2a88ef0a8e150cfdf08c161d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "afbe230619d8fdede94a7aa2865f7249dbac17e7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp",
+      "new_id": "2130ccf856667ae9a3e7c98a316e5cc3cb529943",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9dcabb422d1789dcff99652357649d43ed9fcf1c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.h",
+      "new_id": "c710c7603cf295035f5ff31062e30ab3cbd83555",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e601125c3300fda6f6438d2337de84451f58d9da",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp",
+      "new_id": "a70755c4d4d32954fef760028a92b04523f7b594",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "21bb99e164e11f66cfc0093820bb18d4ecade947",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.h",
+      "new_id": "943edfd97fa8b89af438c4fb807d10770c598ce0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4307c4e556a755e7ea00f130b2b64a17658ddc97",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp",
+      "new_id": "e134d388318c33cf01395db3c60858e3c6eb117c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a625e08f47eef8fbd2298d0f8de7c66f9b81931e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.h",
+      "new_id": "f48b70b2861a07ff0cbe5ad1809ccacb9d3c2056",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.h"
+    }
+  ]
+}

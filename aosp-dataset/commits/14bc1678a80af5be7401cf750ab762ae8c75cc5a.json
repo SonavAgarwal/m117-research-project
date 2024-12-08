@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "14bc1678a80af5be7401cf750ab762ae8c75cc5a",
+  "tree": "a9e3abeee6d16a2c4dc505ea440b17ff76f978ad",
+  "parents": [
+    "913d9e8d93d6b81bb8eac3fc2c1426651f5b259d"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Fri Mar 31 16:58:15 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:02 2017 -0700"
+  },
+  "message": "Set current slice ctb x and y to fill prev incomplete slice\n\nIf previous slice is not completed, update the current slice\nctb_x and ctb_y so that while filling the previous slice,\nthe parse slice code can break properly.\n\nBug: 32322258\nTest: boot, ran POC supplied with bug\nChange-Id: Ie9090694514a018268851560a3f056194ff6fc91\n(cherry picked from commit 830858436bb31036d4260f30c25fa83fd351ed40)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b372e5d92d365afc68d5702c79e9f3f02e087da0",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "62ad6c8907589a3cb9f79c6ee78937c9fe5e0875",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

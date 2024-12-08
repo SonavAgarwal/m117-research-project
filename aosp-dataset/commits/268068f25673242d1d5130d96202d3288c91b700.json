@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "268068f25673242d1d5130d96202d3288c91b700",
+  "tree": "bac45a68cf3359f57e90bb075118385aa7b2a490",
+  "parents": [
+    "63760409ad833cf803482e098367f49741b5f6d3"
+  ],
+  "author": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Tue May 17 17:46:27 2016 -0700"
+  },
+  "committer": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Wed May 18 17:20:30 2016 -0700"
+  },
+  "message": "adb: switch the socket list mutex to a recursive_mutex.\n\nsockets.cpp was branching on whether a socket close function was\nlocal_socket_close in order to avoid a potential deadlock if the socket\nlist lock was held while closing a peer socket.\n\nBug: http://b/28347842\nChange-Id: I5e56f17fa54275284787f0f1dc150d1960256ab3\n(cherry picked from commit 9b587dec6d0a57c8fe1083c1c543fbeb163d65fa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b59c9f200bba80a14fee66cd762b5b3d1fbe08e1",
+      "old_mode": 33188,
+      "old_path": "adb/mutex_list.h",
+      "new_id": "4a188eef74206466a40719d4281cb4346d1c723e",
+      "new_mode": 33188,
+      "new_path": "adb/mutex_list.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2b21f278bfa54d0eeee2228d03b86d07188ef13d",
+      "old_mode": 33188,
+      "old_path": "adb/sockets.cpp",
+      "new_id": "cfa64aedb2a62c2b91ea6648758b9a24488f112f",
+      "new_mode": 33188,
+      "new_path": "adb/sockets.cpp"
+    }
+  ]
+}

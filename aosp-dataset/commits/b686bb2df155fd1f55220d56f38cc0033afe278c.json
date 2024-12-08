@@ -1,0 +1,534 @@
+)]}'
+{
+  "commit": "b686bb2df155fd1f55220d56f38cc0033afe278c",
+  "tree": "71a0b2fb6d915ffec9dffbb0e534b5434d2561e3",
+  "parents": [
+    "0a714d3a14d256c6a5675d6fbd975ca26e9bc471"
+  ],
+  "author": {
+    "name": "Rakesh Kumar",
+    "email": "rakesh.kumar@ittiam.com",
+    "time": "Mon Oct 09 17:14:42 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:27:38 2017 +0000"
+  },
+  "message": "Add PUSH-POP of D registers in Arm Neon 32 bit functions\n\nAccording to ARM calling conventions, D8-D15 are callee saved\nregisters. Hence have to be pushed before used as scratch.\nAdded Push Pop in inter_pred, intra_pred, deblk_luma, itrans,\nitrans_recon, sao, weighted_pred ARM NEON 32 bit functions.\n\nBug: 68320413\nTest: Tested hevcdec\nChange-Id: I71f8868ac4205b0a3680d7ce5b82511653e9c747\n(cherry picked from commit a47cb8865a33a87f163d87781f417884d30d46ed)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "34422ff1cf026d0d778f8c4032cfd40b4467c816",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_deblk_chroma_horz.s",
+      "new_id": "b0a79eb20452767d166cd2c88496f9a037a192f5",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_deblk_chroma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "4cb305ff63bb232001c0053d95219fd4c29388d4",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_deblk_chroma_vert.s",
+      "new_id": "3962b28e087136b212d87abfe50f269d1137c4b0",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_deblk_chroma_vert.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "b12ceb932da8b91925a8c4197db2d1124bda2755",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_deblk_luma_horz.s",
+      "new_id": "76660b38387a4e255bf252647d82eab82a55cddf",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_deblk_luma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "ee247cce1ca3fe68482778ba2c16f244c409c377",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_deblk_luma_vert.s",
+      "new_id": "91662c911c0b78357b137bef3fb3f58a830e9809",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_deblk_luma_vert.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "0da34cc82a33d49c7705585d3a6c4ec8ffe60ec0",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_copy.s",
+      "new_id": "1b38dbbdc422e1016d04baa6f1c124379b0e1abe",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_copy.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "a927fa7c8342203cf63694782bcb102d257932e1",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_copy_w16out.s",
+      "new_id": "4997b84b2e67e053813c401fb403f26943d947d9",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_copy_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "4781d3e4afdf3b8e5c98eded342108055c32223e",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_horz.s",
+      "new_id": "c69b417ae6171418639f3a08656f282f96bc4e42",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "f95937c67fc1206690e22570d7dac8494aace3fe",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_horz_w16out.s",
+      "new_id": "9c498e8f0f1f58dcad568ef85408611e5df4c135",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_horz_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "e7864970559f762e4bc60dbd6211ebe0e148db94",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_vert.s",
+      "new_id": "8b4e48b8c6c70e23a3d1b4d403fb9db7893a785a",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_vert.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba2ea8e28f866fb04bdb72ee9637f56804d6e07f",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_vert_w16inp.s",
+      "new_id": "f9e513ab8cb6f98e39bca1e9c1a95dc9497391c7",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_vert_w16inp.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "00b301167b6ae1fb491bbdeca8f58e6c25ce131c",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_vert_w16inp_w16out.s",
+      "new_id": "0c2ffbdd2cc7a679ba0ef1bd97528f961471729e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_vert_w16inp_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e6776c4605abe8f28fef54a82c617913af01186",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_chroma_vert_w16out.s",
+      "new_id": "84b0792c9e5576893e9f2f9c632757b52893abbd",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_chroma_vert_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "215f8fd1297e30417787f0d224e3f74a071a47c3",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_filters_luma_horz.s",
+      "new_id": "5559aa70542f2a248396ba6a9d915f61d766fdbc",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_filters_luma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "f51d68c526ca85eff667ff36843f4cecd8d4b39f",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_filters_luma_vert.s",
+      "new_id": "3d9ab1c3b5e259f1e64dc28f1f832ae7473be38a",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_filters_luma_vert.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "4fbc5d14b32ec4dfb02c85b6d3d6a0ef12a947ac",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_filters_luma_vert_w16inp.s",
+      "new_id": "97267105489633d112280719b2d862740dcf501b",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_filters_luma_vert_w16inp.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a61369f5284dfd9a8760e591727bd7950133935",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_luma_copy.s",
+      "new_id": "e4f5573e80afea1ebacbc703952eb6180387e140",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_luma_copy.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "771bcb3177f775a00eea8f448ae8f88449e35985",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_luma_copy_w16out.s",
+      "new_id": "84dbbad863b38adafdd1ea16e66ca91b205abf1c",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_luma_copy_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "e8800e0304324918fda4300934a0aed3b20e3265",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_luma_horz_w16out.s",
+      "new_id": "a60bb08a78ce72ff4ce0387c6c2977f3d944ea40",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_luma_horz_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6716fe494bb08d566a6acbcaf761e63fd03a627",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_inter_pred_luma_vert_w16inp_w16out.s",
+      "new_id": "6e0f1eda1bb4d3a54880500377fac2c616ed668a",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_inter_pred_luma_vert_w16inp_w16out.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "72d97305086cd725c6a46c018dfe34091a448061",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_dc.s",
+      "new_id": "6e5900a840125b76ed0c3a1f0c4bc5e2d50ade4e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_dc.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "6089fd8c89d72bce44beff6d49f0df4acb48ba8e",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_horz.s",
+      "new_id": "4512d72d67287d10eeb70cfea24aff7e239bfea6",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "cfa2ddb2a71702cd96a3e6151025352964de2c9f",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_mode2.s",
+      "new_id": "013700df7a4e322ea34f877858e7b67d0c161215",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_mode2.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "b0dd1fa9cca033730f4466ef571093ee2dc721e1",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_mode_18_34.s",
+      "new_id": "6af64506f12945b66e4a8e26a4588cb46a95ea91",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_mode_18_34.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb75e96645f9bd524cfe54e9c4435095e8b0855b",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_mode_27_to_33.s",
+      "new_id": "21b54da0a00e919956e619f5ca7a30a38541ede9",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_mode_27_to_33.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "a5eb3ca6dea2bf70b37c983741cd4250062745f8",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_mode_3_to_9.s",
+      "new_id": "b7dcbfba215ffb4f23a1546c0500da4a91e9ecd8",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_mode_3_to_9.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "30b314470fd1b9ea23402b82e57e12281e9af652",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_planar.s",
+      "new_id": "7d03d55f3c1536a5230faa9e0cea4d80d8dbe156",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_planar.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "b68a045b679b7d2fb24bb4014076de54301fe647",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_chroma_ver.s",
+      "new_id": "ce2ad739b37228fc66a2b8349b836f3cbe76a5cc",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_chroma_ver.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c882cf0f951e749445c1272d8a43c67e649a61d",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_filters_chroma_mode_11_to_17.s",
+      "new_id": "8644cc8c3707c45c3e74a6881d1136f3156005b2",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_filters_chroma_mode_11_to_17.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "2ede914a0edc1474a81654067ef7ed9d381f9da8",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_filters_chroma_mode_19_to_25.s",
+      "new_id": "a5556469ac3a38b148e193aba6090be0a410a89c",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_filters_chroma_mode_19_to_25.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "ec38786a5453813e9dbb910599fd4c265a5d248d",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_filters_luma_mode_11_to_17.s",
+      "new_id": "336af06ff955d49bcdc18f2c2ab3787538cbfc50",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_filters_luma_mode_11_to_17.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "af342bf1587000d4f45a8a67995194f5874c1123",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_filters_luma_mode_19_to_25.s",
+      "new_id": "32268a21f8fad9cd7cdae191cf9c8906a6287935",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_filters_luma_mode_19_to_25.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "f380d94b88181b877b19730df489b8782d7c9dfb",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_dc.s",
+      "new_id": "7d8cb913fe8f7aa3579c293147705a82b6b84e97",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_dc.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "581b673322b278799fe8fde4622d3b1a9db64f26",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_horz.s",
+      "new_id": "2a444049f6d90c89f195aa7f4711ea002283d16b",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_horz.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "cf7999b958481a0a8045c028239c087bb65e9ed7",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_mode2.s",
+      "new_id": "935f02dd1b3a762f6658e7460c5332055b639dfa",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_mode2.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "438c0f56620fd9a4bae7cd505f69e09ed7e7926c",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_mode_18_34.s",
+      "new_id": "9287371ed94b4f44df86a4997694c6360a50a9b0",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_mode_18_34.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "595d82a0e81cf79649d4e121683545b36b4e8ccb",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_mode_27_to_33.s",
+      "new_id": "9d957196d6f639e0705f4571c74ba48adbf9ae0a",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_mode_27_to_33.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "a8e93c8a6aa13cde3792a677a882502f4a937ffe",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_mode_3_to_9.s",
+      "new_id": "e9c871c8176734432811bb4086fbfe0e275c4f47",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_mode_3_to_9.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "666798e8cfe859e1b9ac2cd8d4b6660ed2a7fcc6",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_planar.s",
+      "new_id": "50b6b1b7912631d9d5c9b7b2707cf67e7bdc2880",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_planar.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "5eeaeb38ae95d30253c9e3e1d00833a269bfe678",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_intra_pred_luma_vert.s",
+      "new_id": "96107734a972c2278cbd5c72768164dbede95e1a",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_intra_pred_luma_vert.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "82055ad5c74154b4ba1d41e59ad83a02a77d3f94",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_itrans_recon_16x16.s",
+      "new_id": "198fd52029ea7458e3966dcbcd860ad08b53783e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_itrans_recon_16x16.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "eeb1d6689753185a63f417d818774d3ffccc88d0",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_itrans_recon_32x32.s",
+      "new_id": "65b6ffd94ab05d64c15ef0dd7f8ae1f08935252f",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_itrans_recon_32x32.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "c955502bcebca5781d677e097f1997d0188e023c",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_itrans_recon_4x4.s",
+      "new_id": "fb5796c201ac2f0730f7ecc4d939c3589f075a8c",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_itrans_recon_4x4.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "ab65daec3153a299ddb9a8063bc07eee56736fc5",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_itrans_recon_4x4_ttype1.s",
+      "new_id": "82ed8a0c03641a7156e7c28b30e539fda0065cc9",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_itrans_recon_4x4_ttype1.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "e9b53b448c317d6583f336a87f233bc36d5decac",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_itrans_recon_8x8.s",
+      "new_id": "94113d86a8f3de5b61a7198d7080af5d667101c0",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_itrans_recon_8x8.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "32e149d4fde8adb80366b2f9848677a1e6f2edf1",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_band_offset_chroma.s",
+      "new_id": "a9da7250c6e86a66a828b822726d577a541ba3d5",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_band_offset_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "38753775540ad468b44d72b8c3d7e93761f09e3c",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_band_offset_luma.s",
+      "new_id": "66f29684d9b315acba11ee8417cfbf783885aa73",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_band_offset_luma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "a9fe046975f3a774db0f53be3efdb7738f4f5942",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class0.s",
+      "new_id": "e4bb45572d53c0db2871764222321015c0164927",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class0.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "1dd56f62e1c952b6053a757e84da639dc64106d6",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class0_chroma.s",
+      "new_id": "e11cd4fa2bd36ace2cd5d880d25a23ef73850e3d",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class0_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa1337f39faba41fc0cc26e3cec84ad2657fe2f1",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class1.s",
+      "new_id": "029ac46c9188cc5e347eecdc9669abeecdf4d4cd",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class1.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "09d925f080c3d1d2b09ffdd2fa91aa2f4ea093ab",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class1_chroma.s",
+      "new_id": "b377220df7e84c4ad0d6148c69f314ff1950e7c2",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class1_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "536f941cbe029f4e1fcdb7848323570e4d0a5be9",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class2.s",
+      "new_id": "15d6efa765f4c1ccd264fab78b825e87441ba7fd",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class2.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "6a301cbf1e04b8ad5c461aed01ce06be672a4289",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class2_chroma.s",
+      "new_id": "f7ab3f85400f58298357d5813c5702217aa51952",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class2_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "f3482dc0e2abe0b235edb70fb420a001e3d0c6eb",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class3.s",
+      "new_id": "fb3b05c430511bccfddde2ef0484a51c0b280b66",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class3.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "fe3b459e7e30437e1ac0e2029e70d1f5e52b0e9d",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class3_chroma.s",
+      "new_id": "9f4eb62fa052c2a64554fa163e164099b3d85d75",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class3_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "5308423819ee97a05eaa4acbe0175d9b391c1a30",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_weighted_pred_bi.s",
+      "new_id": "8845b8bb60d79a50b32dc547a277927fca355805",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_weighted_pred_bi.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "6bdb8cc15edfed3e72dca293cf75a38928b1d880",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_weighted_pred_bi_default.s",
+      "new_id": "5b369bed77811b12d97e0908e59b7d8e25fb5c6e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_weighted_pred_bi_default.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "e9b69c1b35ee40e003a06730aeac41ce5b955848",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_weighted_pred_uni.s",
+      "new_id": "1f99ff8e0a4533c7664782ee265860017563b21e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_weighted_pred_uni.s"
+    }
+  ]
+}

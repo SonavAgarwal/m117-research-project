@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "64212a424b4819efb3b6c66e14f6b2b1b1023d4f",
+  "tree": "f27dfc426aca2ca3e77a3e534f395991caa99820",
+  "parents": [
+    "674ce2363382aced0104f52addf191364aa4e6a5"
+  ],
+  "author": {
+    "name": "Emilian Peev",
+    "email": "epeev@google.com",
+    "time": "Tue Feb 18 13:38:04 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:29 2020 +0000"
+  },
+  "message": "Camera: Fix possible ExifUtils heap corruption\n\nBoth EXIF_TAG_IMAGE_WIDTH and EXIF_TAG_IMAGE_LENGTH\nexpect short values as per EXIF spec. Call appropriate\nlibexif function to avoid possible heap corruption.\n\nBug: 148223871\nTest: run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Poc20_02#testPocBug_148223871\nChange-Id: I57a774454b52c16d7da9f90d7e3a3407294606a5\n(cherry picked from commit 649a27ad16faeb7a6bf87a50a33d19d461ece27c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c0afdc18cae20b778a4839e6c8db63a7c38d6c6a",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/utils/ExifUtils.cpp",
+      "new_id": "8a0303a8e05f0b457830adf71af04e76c27498c7",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/utils/ExifUtils.cpp"
+    }
+  ]
+}

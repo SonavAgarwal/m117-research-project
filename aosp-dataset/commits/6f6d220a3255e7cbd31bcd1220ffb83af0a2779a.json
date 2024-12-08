@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6f6d220a3255e7cbd31bcd1220ffb83af0a2779a",
+  "tree": "46e1a76e378c9f2bd444d36bc4c8e5255f59a38d",
+  "parents": [
+    "5408c2c4543ec221d39aadda06b79efb3119c7b8"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Mon Sep 10 15:50:19 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:23:48 2018 +0000"
+  },
+  "message": "Prevent out of bounds accesses in lppTransposer()\n\nCheck validity of pSettings-\u003enoOfPatches to prevent out of bounds\n  access in lppTransposer(), which can also cause memSize to be\n  negative.\n\nBug: 112160868\nTest: see poc in bug\nChange-Id: I789030b116da7f8ea261001b43ef6c677dd58a3d\nMerged-In: I6a2161865d9cb9b51dc37c09d6e3a4a8e5d11f86\n(cherry picked from commit 56ef80d7fec1fd9e201262348a96b8660558105a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "daad82c3a58cd45c802b9c81f36ba887d8e8cd15",
+      "old_mode": 33188,
+      "old_path": "Android.bp",
+      "new_id": "7966dc6add61399685fa04a51f6aed9dac109ba8",
+      "new_mode": 33188,
+      "new_path": "Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "343aec3c1bb4fe8c03de738966b22d3ba9b2be55",
+      "old_mode": 33188,
+      "old_path": "libSBRdec/src/lpp_tran.cpp",
+      "new_id": "ae282d5cf2d5ff763666759ff7673d8fa54f5a0b",
+      "new_mode": 33188,
+      "new_path": "libSBRdec/src/lpp_tran.cpp"
+    }
+  ]
+}

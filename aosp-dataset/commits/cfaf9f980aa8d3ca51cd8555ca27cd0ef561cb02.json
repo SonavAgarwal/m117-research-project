@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cfaf9f980aa8d3ca51cd8555ca27cd0ef561cb02",
+  "tree": "6b6854ced637bffd6bb93658a98de78d6d3724d6",
+  "parents": [
+    "1e1f3eb29e97c00b03a09197eea9469fd4cb3239"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Fri Jul 31 18:17:46 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:26 2020 +0000"
+  },
+  "message": "Add package checking with Uid in EuiccController#getEid\n\nEuiccController does not validate the calling package name\n(i.e. to ensure that it is owned by the calling UID). It is\ntherefore possible for an app to effectively gain carrier\n privileges in the call to EuiccController#getEid by\npassing the package name of another app that does has carrier\n privileges to one or more subscriptions.\n\nTest: safe net log\nBug: 159062405\nChange-Id: I0bf7c8b267a0c9cd877328c4ff3169950e1ff64f\n(cherry picked from commit 1221ede9d8cdea7586ae98357726df3d80e0e448)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "09e17c3dea0ea786419137cd54843d12b7195be4",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/euicc/EuiccController.java",
+      "new_id": "400c326713b0288137edf637c299e6735fc8058c",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/euicc/EuiccController.java"
+    }
+  ]
+}

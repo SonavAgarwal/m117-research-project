@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "58c0e963554ac0be5628f3d2e5058e5c686c128a",
+  "tree": "891ec961f4a82c0679d95e0509938fd091c41fb2",
+  "parents": [
+    "4283f9e410efee9a51c3cf849ddece34b876f65f"
+  ],
+  "author": {
+    "name": "Jouni Malinen",
+    "email": "j@w1.fi",
+    "time": "Sun Oct 01 12:12:24 2017 +0300"
+  },
+  "committer": {
+    "name": "Glen Kuhne",
+    "email": "kuh@google.com",
+    "time": "Mon Oct 16 09:50:40 2017 -0700"
+  },
+  "message": "Extend protection of GTK/IGTK reinstallation of WNM-Sleep Mode cases\n\nThis extends the protection to track last configured GTK/IGTK value\nseparately from EAPOL-Key frames and WNM-Sleep Mode frames to cover a\ncorner case where these two different mechanisms may get used when the\nGTK/IGTK has changed and tracking a single value is not sufficient to\ndetect a possible key reconfiguration.\n\nBug: 65245581\nTest: Wifi Integration Suite\nChange-Id: Iaf052e2dc199504ba53aecca4d9d55a7712e26bc\nMerged-In: Iaf052e2dc199504ba53aecca4d9d55a7712e26bc\nSigned-off-by: Jouni Malinen \u003cj@w1.fi\u003e\nSigned-off-by: Glen Kuhne \u003ckuh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1fa2783d8c98c6283d374fac880d204a2a72024f",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa.c",
+      "new_id": "af72298b97e15a31ae9c2c95b9ced1ecb6411522",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5293ca4bc027dbca7d3dfb51ac789b0cc9d01453",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa_i.h",
+      "new_id": "b061638ddcb931b9f6f9799b0ebf0470a4ab849c",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa_i.h"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "05243b881764136d3ca67b438d2e500d6f134f6a",
+  "tree": "5684725339c4e4fb591846abf8928d128da32043",
+  "parents": [
+    "b3f12befdc4def7d695b6f1049cd02238eb1e4a8"
+  ],
+  "author": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Fri Jul 31 19:44:27 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:29 2020 +0000"
+  },
+  "message": "Check whether local device is an ATV device to determine whether to show\nthe consent dialog for BLE pairing in JUSTWORKS and ENCRYPTION_ONLY mode\n\nTag: #feature\nBug: 157038281\nTest: Manual\nMerged-In: I6d06f5996da71e5a1407e544b0023d82924aa56f\nChange-Id: I6d06f5996da71e5a1407e544b0023d82924aa56f\n(cherry picked from commit e198eb931d834a3117005f31ece43a83ecc0cd60)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "31c5e776afaf11f0936c831182b229012cf26986",
+      "old_mode": 33188,
+      "old_path": "btif/include/btif_api.h",
+      "new_id": "f9b888691b5faca82e309b1091ca735475337c5d",
+      "new_mode": 33188,
+      "new_path": "btif/include/btif_api.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0187b1dc7c59fd5dd5bc5f9d6152cf622428848e",
+      "old_mode": 33188,
+      "old_path": "btif/src/bluetooth.cc",
+      "new_id": "a00c0c662fddc2c0449d5ca103a86bf2b721b552",
+      "new_mode": 33188,
+      "new_path": "btif/src/bluetooth.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "8ac32b2d2d28d4680e0a3479f1c6f8222bf67d07",
+      "old_mode": 33188,
+      "old_path": "include/hardware/bluetooth.h",
+      "new_id": "4251005165616ad2c92ba2cea4ca49b144a96574",
+      "new_mode": 33188,
+      "new_path": "include/hardware/bluetooth.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8043785dc24ecb13456d9c3f2232706cabce075d",
+      "old_mode": 33188,
+      "old_path": "service/hal/bluetooth_interface.cc",
+      "new_id": "42eeb002a972c2479392cd7689ea9952eeca567a",
+      "new_mode": 33188,
+      "new_path": "service/hal/bluetooth_interface.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1239542225cc9abf4ebbd02676916ac064368225",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "22d99588cccde7bbdf76d1388330413681cab473",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "4eadcb6368f7964eafda58a0357494e968e115ae",
+      "old_mode": 33188,
+      "old_path": "test/headless/headless.cc",
+      "new_id": "9083e9c429b7024b1ada6880ee51e8d177884cea",
+      "new_mode": 33188,
+      "new_path": "test/headless/headless.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d68ad0f672a8e486ac611f0c5239ff49c6da3573",
+      "old_mode": 33188,
+      "old_path": "test/suite/adapter/adapter_unittest.cc",
+      "new_id": "85549b0d5566a95b6fb58e03e76eb6806ee9eed0",
+      "new_mode": 33188,
+      "new_path": "test/suite/adapter/adapter_unittest.cc"
+    }
+  ]
+}

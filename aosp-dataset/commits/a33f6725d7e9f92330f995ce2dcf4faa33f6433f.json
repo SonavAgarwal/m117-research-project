@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a33f6725d7e9f92330f995ce2dcf4faa33f6433f",
+  "tree": "7e6ae37f6336803d5fdf81ee713c6bba3ec416b1",
+  "parents": [
+    "12bdb4a06d4e0c96cccd8c7d1bd60c2ffc36defa"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Nov 10 14:28:28 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:01 2016 -0800"
+  },
+  "message": "Handle invalid slice_address in slice header\n\nIf an invalid slice_address was parsed, it was resulting in an incomplete\nslice header during decode stage. Fix this by not incrementing slice_idx\nfor ignore slice error\n\nBug: 32322258\nChange-Id: I8638d7094d65f4409faa9b9e337ef7e7b64505de\n(cherry picked from commit f4f3556e04a9776bcc776523ae0763e7d0d5c668)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "954f8f326ae21f7511e1ea6f246d32613187f395",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_decode.c",
+      "new_id": "d65651972bc3b1ff1904e43e5c1435845b802208",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_decode.c"
+    }
+  ]
+}

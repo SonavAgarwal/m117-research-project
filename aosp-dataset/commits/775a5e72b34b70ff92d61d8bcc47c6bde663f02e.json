@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "775a5e72b34b70ff92d61d8bcc47c6bde663f02e",
+  "tree": "f957c95cca431d5d2141db2517d4f7012f5917a3",
+  "parents": [
+    "02076acde3168be6e11e83a5683c7658f6fed67a"
+  ],
+  "author": {
+    "name": "Chen Chen",
+    "email": "cncn@google.com",
+    "time": "Wed Sep 23 17:02:58 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:08:40 2020 +0000"
+  },
+  "message": "Check Classic key before cross-key derivation\n\nBug: 158854097\nTest: atest net_test_stack_smp\nTag: #security\nIgnore-AOSP-First: Security fix\n\nChange-Id: Id88241324e9fb89ef14e50b52eb459a0d81c492b\n(cherry picked from commit 7cc205ffe8296d1f9af7eed9fce025079dc110cf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "22d99588cccde7bbdf76d1388330413681cab473",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "bfce7cbce2cd29e2787dda895d61cb854260d451",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

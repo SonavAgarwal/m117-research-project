@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e83f0f6a5a6f35323f5367f99c8e287c440f33f5",
+  "tree": "d9ae47defd7efdcd45975ea2f8442ff9d85f4f83",
+  "parents": [
+    "9878bb99b77c3681f0fda116e2964bac26f349c3"
+  ],
+  "author": {
+    "name": "Jim Miller",
+    "email": "jaggies@google.com",
+    "time": "Wed Apr 13 16:35:36 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:14 2016 -0700"
+  },
+  "message": "Fix missing permission check when saving pattern/password\n\nFixes bug 28163930\n\nChange-Id: Ic98ef20933b352159b88fdef331e83e9ef6e1f20\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f1d7da4ee629ccff2b89bab350740e2f0eab63fa",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/LockSettingsService.java",
+      "new_id": "55682c2c7e3dbd85256de995d10d8cbebadb5e6e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/LockSettingsService.java"
+    }
+  ]
+}

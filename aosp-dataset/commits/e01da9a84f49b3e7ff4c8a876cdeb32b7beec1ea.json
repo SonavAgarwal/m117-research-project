@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e01da9a84f49b3e7ff4c8a876cdeb32b7beec1ea",
+  "tree": "ac83e0ee535aa2b9602328ccc22e76c7010b8a79",
+  "parents": [
+    "b65ecc5a1264c78e2543dc6beade501c4d60b282"
+  ],
+  "author": {
+    "name": "Tyler Gunn",
+    "email": "tgunn@google.com",
+    "time": "Mon May 13 13:58:15 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:57 2019 +0000"
+  },
+  "message": "Prevent TelecomManager#endCall from ending emergency calls.\n\nTest: Manual test with test emergency number.\nFixes: 132438333\nChange-Id: I4c29a707ec06059b984b61da7d0425a6082476aa\n(cherry picked from commit 8d57e376b43326db2cb3b51c375ebf2e6ce40840)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ea55e631dc6905715ef0441fd6a13a1cf162b224",
+      "old_mode": 33188,
+      "old_path": "src/com/android/server/telecom/TelecomServiceImpl.java",
+      "new_id": "ded42db9e69beafb076349545358897ad05207b3",
+      "new_mode": 33188,
+      "new_path": "src/com/android/server/telecom/TelecomServiceImpl.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c70264282305351abbec9b967333db4d896583b9",
+  "tree": "d49fb775bdf32dcb66fe70a228c476446d4fbe31",
+  "parents": [
+    "0420a20d94d620f471e47cf3f8c40facca5de58e"
+  ],
+  "author": {
+    "name": "Yujie Qin",
+    "email": "yujieqin@google.com",
+    "time": "Mon May 08 10:14:37 2017 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:04:37 2017 +0000"
+  },
+  "message": "Throw exception on integer overflow in dng_ifd.cpp.\n\nBug: 36724453\nTest: manual, see b/36724453\nChange-Id: I6115361002d3e4167ff7ff654e1fd2176ac24e87\n(cherry picked from commit 2cb858a7ed887b231086ae81e2b35a3614299da3)\n(cherry picked from commit 1cc3bdb6e11a9a6ce4629d77960a895cfb055200)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "317ebf92448e32f8331a21af61bce8b04b500487",
+      "old_mode": 33188,
+      "old_path": "source/dng_ifd.cpp",
+      "new_id": "7f22065856517d4de98270476cc8bd5d6c16bd95",
+      "new_mode": 33188,
+      "new_path": "source/dng_ifd.cpp"
+    }
+  ]
+}

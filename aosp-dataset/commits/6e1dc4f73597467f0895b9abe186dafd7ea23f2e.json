@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6e1dc4f73597467f0895b9abe186dafd7ea23f2e",
+  "tree": "609075f66f7cd3214f385b6781fd21384dfbb7f9",
+  "parents": [
+    "3516e98daa362286cd7e1daec7ef1e207e34c5b4"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Mon Jan 27 15:23:25 2020 -0800"
+  },
+  "committer": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Fri Feb 12 01:02:38 2021 +0000"
+  },
+  "message": "Allow empty tokens in strict grammar\n\nAllow empty tokens in SQLiteQueryBuilder\u0027s strict grammar enforcement\n\nBug: 143230980\nTest: atest SQLiteQueryBuilderTest, manual\nChange-Id: Ie82dded77a3eaa75095333b0e77f10e21c9f7caf\n(cherry picked from commit ea5b2c08df2e01139b8607f6bc0085bc70a17f1d)\nMerged-In: Ie82dded77a3eaa75095333b0e77f10e21c9f7caf\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a0e92b398c4e9c92f81ea7c37ce700f6fba8b30d",
+      "old_mode": 33188,
+      "old_path": "core/java/android/provider/CallLog.java",
+      "new_id": "276f16216b4de674c68d24b92e95568d69d63a1d",
+      "new_mode": 33188,
+      "new_path": "core/java/android/provider/CallLog.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e7364907439578ce5334bce20bb03fef2e88b107",
+  "tree": "6ee26089f62fdbb5a80487099de57c3b3de29163",
+  "parents": [
+    "d2ea50a07756ecb73dc1a5ec773455bc42d062fb"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Jul 16 13:18:04 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:07 2018 +0000"
+  },
+  "message": "DO NOT MERGE. All untrusted selections must go through builder.\n\nWhen accepting untrusted selections, they must be passed directly\nto SQLiteQueryBuilder to ensure that setStrict() can be applied to\ncheck for malicious callers sending unbalanced parentheses.  This\nmeans we can\u0027t mix local and remote selections; they always need to\nbe kept separate.\n\nUse newly added SQLiteQueryBuilder functionality to apply strict\ndetection to update() and delete() calls.\n\nOnly allow the owner of a particular download to query the headers\nfor that download.  Only delete headers for a download once we\u0027ve\nconfirmed that caller can modify that download.\n\nTest: atest packages/providers/DownloadProvider/tests/\nTest: atest cts/tests/app/src/android/app/cts/DownloadManagerTest.java\nBug: 111085900\nChange-Id: I9fd8e0d3cf80d7603bf0092f36fe449467090821\nMerged-In: I9fd8e0d3cf80d7603bf0092f36fe449467090821\n(cherry picked from commit 64b55ea82b1f394369237601ae1f1c78b776aabc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "db7db65aee21b4c07c8acd099b0fbbb16311d3f7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "f8d5aae26f5fda2a40c0a91212e0f5632c6b4c98",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    }
+  ]
+}

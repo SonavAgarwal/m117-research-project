@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "488aa8befd5bdffed6cfca7a399d2266ffd201fb",
+  "tree": "d978f777073a65698e825a2e15031e4ae4a201d1",
+  "parents": [
+    "6f2759c64311b505b1ddc73e2bfc9f0330845780"
+  ],
+  "author": {
+    "name": "Stanley Tng",
+    "email": "stng@google.com",
+    "time": "Tue Dec 11 14:45:13 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:53 2019 +0000"
+  },
+  "message": "DO NOT MERGE A security fix to check buffer length in l2c_lcc_proc_pdu\n\nAdd check to make sure that data buffer is big enough to read the 2\nbytes for length.\n\nAlso, fix a regression from the previous CL that checks the buffer length\nbefore doing a memcpy. The previous check is too strict causing valid\nsized buffers to be rejected. The length check is incorrect and off by the header size.\n\nBug: 120665616\nTest: Run the SL4A Test for LE CoC, BleCoCTest\nMerged-In: I30b7a8af11d3a5f974cb39e06b0e3463bebc8e9a\nChange-Id: I30b7a8af11d3a5f974cb39e06b0e3463bebc8e9a\n(cherry picked from commit fcb1994de1f6ee34b8dc6804a2b32e20bf138073)\n(cherry picked from commit 1f1d8b97d80d25023c4c7b04d2aa18d367f4158d)\n(cherry picked from commit c117a1c951c65033987ed51d53407b359204c187)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8326e4d16210a29df73c51834d5aef0acb0e01ee",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_fcr.cc",
+      "new_id": "88503fbfc984b9b6470594de4a0451ee63628c74",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_fcr.cc"
+    }
+  ]
+}

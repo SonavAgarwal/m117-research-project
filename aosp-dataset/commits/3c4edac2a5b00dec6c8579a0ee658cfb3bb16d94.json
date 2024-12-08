@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3c4edac2a5b00dec6c8579a0ee658cfb3bb16d94",
+  "tree": "676e9ddb2b9944e523c5ffa37c6c0f0f5d30f146",
+  "parents": [
+    "3944c65637dfed14a5a895685edfa4bacaf9f76e"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Thu Jul 14 12:37:52 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:59 2016 -0700"
+  },
+  "message": "Fix build\n\nChange-Id: I96a9c437eec53a285ac96794cc1ad0c8954b27e0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ec85ea9851749cbbacfe73f8bd3db3ebf7bdaa9b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp",
+      "new_id": "79206ea8d9230c28a69b85474a669812a6d621ed",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp"
+    }
+  ]
+}

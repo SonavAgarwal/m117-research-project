@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0a4463e2beddb8290e05ad552e48b17686f854ce",
+  "tree": "8de44ebbeeb30e272ce3b8c2c45673b40a4a0601",
+  "parents": [
+    "4a61d15e7b0ab979ba7e80db8ddbde025c1ce6cc"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Jan 16 17:10:07 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:01 2017 -0800"
+  },
+  "message": "Decoder: Fix in checking first_mb_in_slice\n\nAlso, increment slice header only if previous slice had atleast one MB\nThis is to ensure there is no out of bound read for streams with 1 MB, and\ndue to error 2 slices were being accessed.\n\nBug: 33982658\nChange-Id: I5f1918c09e922ca39f495f6059dfea3fa1d49448\n(cherry picked from commit ef27433ca86c4084f0cff3e284f9e799c3fdfbec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d4e687f3a82cb9cb8195a66b162a59bf66e928c",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "efb94ad601ac197730faaf98178bd262c059ae2d",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "80603c2248cbe741ecf788238d8716427ef00849",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "11a317b50a8ee1217a5cd7c17fa62bf23ec5ce15",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

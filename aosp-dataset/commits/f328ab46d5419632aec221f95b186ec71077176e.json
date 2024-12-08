@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f328ab46d5419632aec221f95b186ec71077176e",
+  "tree": "2b202ad9b33998ea9c6fbbd71e4b2620c8c432af",
+  "parents": [
+    "ca6b0a211eb39ba85eed60ea740c85d1122fc6bc"
+  ],
+  "author": {
+    "name": "Ted Wang",
+    "email": "tedwang@google.com",
+    "time": "Tue Oct 06 20:20:16 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:53 2020 +0000"
+  },
+  "message": "Fix potential OOB write in libbluetooth\n\nCheck event id if of register notification command from remote to avoid\nOOB write.\n\nTag: #security\nBug: 168802990\nTest: atest net_test_btif\n\nChange-Id: I90834b920d61bfb2df9414a25d73ba40033e4748\nMerged-In: I90834b920d61bfb2df9414a25d73ba40033e4748\n(cherry picked from commit 5d37d17af57c70d7faa459b92e5b1a758a5a8adb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f2396b45ea4a42fdc7a1951f33c084820fecacdc",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_tg.cc",
+      "new_id": "5a81d0d8aa998fd141b52a84080ad32f525049c6",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_tg.cc"
+    }
+  ]
+}

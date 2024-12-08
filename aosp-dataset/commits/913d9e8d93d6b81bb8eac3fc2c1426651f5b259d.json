@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "913d9e8d93d6b81bb8eac3fc2c1426651f5b259d",
+  "tree": "7c0dec52f27529794fbede2810632e3add3179aa",
+  "parents": [
+    "bcfc7124f6ef9f1ec128fb2e90de774a5b33d199"
+  ],
+  "author": {
+    "name": "Naveen Kumar Ponnusamy",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Tue Mar 14 10:06:04 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:02 2017 -0700"
+  },
+  "message": "Check only allocated mv bufs for releasing from reference\n\nWhen checking mv bufs for releasing from reference, unallocated\nmv bufs were also checked. This issue was fixed by restricting\nthe loop count to allocated number of mv bufs.\n\nBug: 34896906\nBug: 34819017\n\nChange-Id: If832f590b301f414d4cd5206414efc61a70c17cb\n(cherry picked from commit 23bfe3e06d53ea749073a5d7ceda84239742b2c2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "744484e6b591850b398f02fd3eab996c8b3256fd",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "b372e5d92d365afc68d5702c79e9f3f02e087da0",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "76bb476aef3195cf0fe6b2cedda7f81efdd3c430",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_ref_list.c",
+      "new_id": "0fe6aa42dee51c888650d031ab19fb36e23409b1",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_ref_list.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ce0653ef282b9d7793d77b2cceb97c00232edb09",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_structs.h",
+      "new_id": "1a4698400c7aefb8e92fadf333acbea08619bb7a",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_structs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6c21f5f972d475cc6362aa2b42313e9aa403df9",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_utils.c",
+      "new_id": "797b079d137071e954cd4f9fc934bb2b50714e85",
+      "new_mode": 33261,
+      "new_path": "decoder/ihevcd_utils.c"
+    }
+  ]
+}

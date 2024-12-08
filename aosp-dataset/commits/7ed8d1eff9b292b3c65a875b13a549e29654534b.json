@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7ed8d1eff9b292b3c65a875b13a549e29654534b",
+  "tree": "fa1bf26bacb7f6f89be4dc61fb81f8d3e402207e",
+  "parents": [
+    "74d1927e4122a1748f89ca2ef79406fc06ee94b2"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Oct 05 10:44:23 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Oct 06 21:36:55 2015 +0000"
+  },
+  "message": "ID3: check possible integer overflow for extendedHeaderSize and paddingSize.\n\nBug: 24623447\nChange-Id: Ifbc74454d6e28ad7136efe35ab638a07e46398b1\n(cherry picked from commit b3694ff5a5bcecd4b6cedca156f6effb55bbf4ca)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5a490e9effa86cb8e4801cf28344d9f71226c203",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "3592fee20ac3b2e1f18842344a62aa0f8f4ad143",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

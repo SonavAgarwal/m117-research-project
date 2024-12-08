@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f759b8c4bcce2d3b3d45551be461f04297fa2bd3",
+  "tree": "6b1f8510c36843e66653474c5fb06399e2e13566",
+  "parents": [
+    "a0388f92c70e4321ebfe3c41e08c454d63937998"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Aug 15 12:48:54 2017 -0700"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Aug 15 19:55:28 2017 +0000"
+  },
+  "message": "AudioPolicyService: Acquire mutex for SoundTriggerSession\n\nTest: Enable always on GSA\nBug: 64340921\nChange-Id: I05d8c680be97ba4c92081425596addcc038f7dda\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "313d56e2896e70b46e6693b55d92e2ce27dd2e0a",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/service/AudioPolicyInterfaceImpl.cpp",
+      "new_id": "8d75327c5690dab6a629b34dc34b87e5739f2215",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/service/AudioPolicyInterfaceImpl.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "86141f9df21cb8ac91f9cc9804f5b75d26d98996",
+  "tree": "9ecc76074df61668e63e4dbc59add60e3e194c39",
+  "parents": [
+    "1617cbe5f71c025c5c8c0c468e7e289e3a830afd"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Thu Jan 11 17:46:16 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:33 2018 +0000"
+  },
+  "message": "Fix use of uninitialized value in libmediadrm\n\nbug:70526702\ntest:gts media tests\n\nChange-Id: I29a67dad01ca8c8f649ba12cf08cc86b7eb56523\n(cherry picked from commit 2442047f5c6d368f69fa81917f5aabc9b3c342a0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d613a5b585351eeb375d8aa4b993ca2f67491e7f",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/CryptoHal.cpp",
+      "new_id": "1fdc6e1954521e792658d59b43113fe2bc2216d2",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/CryptoHal.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "37dc83bb8b8bbc2be77a3873d5121969d3c5d6d7",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/ICrypto.cpp",
+      "new_id": "1d70a4e0f07cb00a66226b1feddc1a088421b423",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/ICrypto.cpp"
+    }
+  ]
+}

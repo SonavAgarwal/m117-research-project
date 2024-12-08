@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c4ab1b959280413fb11bf4fd7f6b4c2ba38bd779",
+  "tree": "a21f465cf60229f77b9c9ddc9cb6ac84a8ed93e6",
+  "parents": [
+    "de55e62f6c7ecd57d0a91f2b497885c3bdc661d3"
+  ],
+  "author": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Wed Dec 16 14:55:53 2015 -0800"
+  },
+  "committer": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Tue Jan 19 12:45:57 2016 -0800"
+  },
+  "message": "Cache intermediate CA separately\n\nIntermediate CAs are cached in order to support servers that fail to\nsent a complete chain to a root. These certificates should be cached to\nsupport these servers but these certificates must not be trusted as\ntrust anchors. Store them separately to prevent confusion between\ntrusted roots and cached intermediates.\n\n(cherry-picked from commit 198aca1fb638a2a98e89fb9f284108ad576d0c3b)\nBug: 26232830\nChange-Id: I520f50729b55fc7412c7d133335bc9e3c190bbf6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2af84d67060b8e601be5fe083a1f2ad5f5f8a7f8",
+      "old_mode": 33188,
+      "old_path": "src/platform/java/org/conscrypt/TrustManagerImpl.java",
+      "new_id": "e705a6ec3386242fced11b2887d1b5883444af22",
+      "new_mode": 33188,
+      "new_path": "src/platform/java/org/conscrypt/TrustManagerImpl.java"
+    }
+  ]
+}

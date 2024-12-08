@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f630233ee42214b36e6862dc99114f2c2bdda018",
+  "tree": "eb28a65f5ae0ba2258272d3f0bb76a22e2a28bbf",
+  "parents": [
+    "654bf4f8e9bfef5c974025ce296141587e35099f"
+  ],
+  "author": {
+    "name": "Dongwon Kang",
+    "email": "dwkang@google.com",
+    "time": "Wed Jul 26 13:55:59 2017 -0700"
+  },
+  "committer": {
+    "name": "Dongwon Kang",
+    "email": "dwkang@google.com",
+    "time": "Thu Sep 07 22:33:57 2017 +0000"
+  },
+  "message": "Track graphic buffer mode in OMXNodeInstance\n\nTest: CtsMediaTestCases \u0026 YT \u0026 Play Movies \u0026 Cast\nBug: 62948670\nMerged-In: Icbd9b767f1aef005819e680f77f4a05041988f34\nChange-Id: Icbd9b767f1aef005819e680f77f4a05041988f34\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8e08d15b28deb98daf256f7b8e8f807b494626dd",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMXNodeInstance.h",
+      "new_id": "00c37e103a11176aa47090bcfd8be4b04b5a5968",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMXNodeInstance.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "db99ef28512036ef8bf0e5eebf91e8679b3a8527",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "00b3c7ba8ed0cedf1df5d963f0b225635b4bba53",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

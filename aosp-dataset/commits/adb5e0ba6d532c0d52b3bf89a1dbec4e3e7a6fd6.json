@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "adb5e0ba6d532c0d52b3bf89a1dbec4e3e7a6fd6",
+  "tree": "83681db865ec7d33ce340e7d14541b6ddfe40c86",
+  "parents": [
+    "5252746fe0c0e489cd584bf26d4669560da4b679"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Fri Mar 10 10:50:33 2017 -0500"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Thu Sep 14 20:10:22 2017 +0000"
+  },
+  "message": "Stop explicitly using kCallerPasses_Ownership\n\nBug: 65646012\nBug: 65426286\n\nCherry-picked from master. The original CL just updates BitmapFactory.\nThis also updates ExifInterface in the same way. ExifInterface.cpp no\nlonger existed by the time the Skia change landed.\n\nRequired for Ib7aaf367f68f8764147887d858f65ee14fa7a1d9, which fixes\nthe aforementioned bugs.\n\nTest: No change in behavior, no new tests.\n\nThis enum is going away in https://skia-review.googlesource.com/c/9498,\nand this method is using the default anyway.\n\nMerged-In: I928a72851f90e84f45ce2fa49560f8ba894a8058\nMerged-In: I8f6c761e50cb29476dc0784f58908ec35e3c70e9\nChange-Id: I928a72851f90e84f45ce2fa49560f8ba894a8058\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4001283c4c66bf3f4035693e7d2d270944dcbb32",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/BitmapFactory.cpp",
+      "new_id": "0a143610ebd7e4df9988838b636affdd3a177929",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/BitmapFactory.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "731deae146030b317f14cb35225465656ac4b3ed",
+      "old_mode": 33188,
+      "old_path": "media/jni/android_media_ExifInterface.cpp",
+      "new_id": "20f9ef6d6a492d5e74ac9870b7296d8d71ffbdcc",
+      "new_mode": 33188,
+      "new_path": "media/jni/android_media_ExifInterface.cpp"
+    }
+  ]
+}

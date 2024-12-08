@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f3ddf3f5cf2b3eb52fb0adabd814a45cff07221",
+  "tree": "5b2dc84efa0108ca6a515fa9ffb3218b1f3d413d",
+  "parents": [
+    "1696f97011f5f30f1a630f3b24442ca64232b1f5"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Fri Feb 09 00:21:06 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:18:01 2018 +0000"
+  },
+  "message": "AVRCP: Set maximum string length when copying to buffer\n\nTest: Compile\nBug: 71603262\nChange-Id: I2416cdbcc3e4c5d71ab45998c02eb7cf679b1c10\n(cherry picked from commit a3077fa62c2fc1c6be3a3dd1ecda1eb64472f36f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "99d3c7bfa22f82a8464ebca13eefcf6aa74ac70c",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_tg.cc",
+      "new_id": "12b759897cbf2fed5faa9b9c58013c6499fecf9f",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_tg.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5216e6120160b28d76e9ee4dff9995e772647511",
+  "tree": "de3e33d8d21f5bf06ecaded8ce9db8769e1417d4",
+  "parents": [
+    "6e4b8e505173f803a5fc05abc09f64eef89dc308"
+  ],
+  "author": {
+    "name": "Cheney Ni",
+    "email": "cheneyni@google.com",
+    "time": "Tue Aug 07 21:32:07 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:30 2018 +0000"
+  },
+  "message": "Add packet length checks in mca_ccb_hdl_req\n\nBug: 110791536\nTest: manual\nChange-Id: Ica5d8037246682fdb190b2747a86ed8d44c2869a\n(cherry picked from commit 4de7ccdd914b7a178df9180d15f675b257ea6e02)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "48d0c0ae0c0641a77714cd6256ffda1ca1dc70c7",
+      "old_mode": 33188,
+      "old_path": "stack/mcap/mca_cact.cc",
+      "new_id": "98a368852e0d3da6f8961a14c1b778ceafabff83",
+      "new_mode": 33188,
+      "new_path": "stack/mcap/mca_cact.cc"
+    }
+  ]
+}

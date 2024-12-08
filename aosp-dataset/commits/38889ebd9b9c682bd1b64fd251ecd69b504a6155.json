@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "38889ebd9b9c682bd1b64fd251ecd69b504a6155",
+  "tree": "9f8fe6359dea6c8a59a19bcf7a4fe22e6c4c4dda",
+  "parents": [
+    "85e94f5b67c1beb9402c4de82bd481a5202470de"
+  ],
+  "author": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Thu Apr 13 09:38:39 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:03:53 2017 +0000"
+  },
+  "message": "Fix series of JPEG vulnerabilities\n\nTest: PoC\nBug: 35639138\nChange-Id: I7fc4385d7f446ecfbc7dbd350e4c9bac6db0c9f0\n(cherry picked from commit 117c2d5b213b42b8cb2bedc45b6139a8f4516712)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4c84a332101eaee6d857d8c093ac7fd236098a1d",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/gdx2d/jpgd.cpp",
+      "new_id": "d76e930ea5e1c1d974afb0602479786a67da58f3",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/gdx2d/jpgd.cpp"
+    }
+  ]
+}

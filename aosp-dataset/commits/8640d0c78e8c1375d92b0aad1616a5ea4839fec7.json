@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8640d0c78e8c1375d92b0aad1616a5ea4839fec7",
+  "tree": "216606358f780a8999d26bcc5fba05f6e62f242a",
+  "parents": [
+    "5fe6635e7b675cbb63989688db11f34fe5973b62"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Thu May 28 17:49:53 2020 -0700"
+  },
+  "committer": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Tue Jun 02 09:29:30 2020 -0700"
+  },
+  "message": "Only autoVerify at install for new hosts\n\nRe-run app link verification at update time only when the set of hosts\nhas expanded.  Intentionally revoke verify history when an app stops\nusing autoVerify, as a one-time measure to place it back into the\nnon-autoverify model for tracking the user\u0027s launch preferences.  If the\napp starts using autoVerify again later, it behaves identically to an\napp that has never done so before.\n\nBug: 151475497\nBug: 146204120\nTest: described on master CL\n\nMerged-In: I200d85085ce79842a3ed39377d1f75ec381c8991\nChange-Id: Ibaf087946966ad82d60c7b255e3ee75990716b63\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6bed7f381a6cedcdeb271dd4932ead598bf6cefd",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "b983e34fb87b4a92d7ca3b6c550772371bc210d7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d9e4db29de071ae7902bd758ce978097e2c43bec",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/Settings.java",
+      "new_id": "c69af6c3a284a2205393015be18252ed68aefd9b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/Settings.java"
+    }
+  ]
+}

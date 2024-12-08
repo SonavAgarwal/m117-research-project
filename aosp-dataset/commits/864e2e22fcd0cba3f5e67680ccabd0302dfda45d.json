@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "864e2e22fcd0cba3f5e67680ccabd0302dfda45d",
+  "tree": "857c2c92b9ccf1c65a563dc539d0b33987d1790a",
+  "parents": [
+    "ad54cfed4516292654c997910839153264ae00a0"
+  ],
+  "author": {
+    "name": "Daniel Rosenberg",
+    "email": "drosen@google.com",
+    "time": "Tue Apr 12 16:30:28 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:37 2016 -0700"
+  },
+  "message": "Fix overflow in path building\n\nAn incorrect size was causing an unsigned value\nto wrap, causing it to write past the end of\nthe buffer.\n\nBug: 28085658\nChange-Id: Ie9625c729cca024d514ba2880ff97209d435a165\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06452aa47503c451e2825c4e5b3e139fda05e303",
+      "old_mode": 33188,
+      "old_path": "sdcard/sdcard.c",
+      "new_id": "123fce6a9dc21589cd93cc003627ef0f591ae1a5",
+      "new_mode": 33188,
+      "new_path": "sdcard/sdcard.c"
+    }
+  ]
+}

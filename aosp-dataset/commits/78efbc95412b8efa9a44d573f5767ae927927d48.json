@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "78efbc95412b8efa9a44d573f5767ae927927d48",
+  "tree": "b7d7358bfb8158a32f5e1c0b23e8ed8dbac4e8d3",
+  "parents": [
+    "d42e1204d5dddb78ec9d20d125951b59a8344f40"
+  ],
+  "author": {
+    "name": "Svetoslav Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Thu Dec 29 14:36:58 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 15:01:40 2017 -0700"
+  },
+  "message": "[DO NOT MERGE] Don\u0027t allow permission change to runtime\n\nPrevent apps to change permission protection level to dangerous\nfrom any other type as this would allow a privilege escalation\nwhere an app adds a normal permission in other app\u0027s group and\nthen redefines it as dangerous leading to the group auto-grant.\n\nTest: Added a CTS test which passes.\n\nBug: 33860747\n\nChange-Id: I1ccf546f78ee79ff027cb98124be81c8e5265a82\n(cherry picked from commit fe430be9f102893c95258cc81589df132b7d02b3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "39e2914d73c3f7ca5031e43bef1b55d0c9709edb",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "b6a9940812293b40716a425acb07fddc908751af",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

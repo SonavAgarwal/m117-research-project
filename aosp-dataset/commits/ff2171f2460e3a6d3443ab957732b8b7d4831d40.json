@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ff2171f2460e3a6d3443ab957732b8b7d4831d40",
+  "tree": "1f5b5297a06eb215839a8e35fc5365700e082be3",
+  "parents": [
+    "ab1fb955acc8bbe6b9086a4ab54beab003a887a9"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Wed Apr 04 11:46:56 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:40:50 2018 +0000"
+  },
+  "message": "Don\u0027t pad before calling writeInPlace().\n\nwriteInplace() itself already pads securely, by masking off\nthe padded bytes. If the padding is done before calling\nwriteInplace(), no mask is applied, and heap data can leak.\n\nBug: 77237570\nTest: builds\nChange-Id: Ide27a0002d4ed4196530430760245b971f6a3f44\nMerged-In: Ide27a0002d4ed4196530430760245b971f6a3f44\n\n(cherry picked from commit f8542381b72a7bb2452a5278a00ca8c34edbf8a0)\n(cherry picked from commit 732132b765cd7b667f16cf32f0fe4c852d7d44dd)\n\nChange-Id: Id65e4573e18ab68b804f1cf63a6977a71da01e5d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3fafbb8d1b1c55c5abdfd36d77fd860f88738a98",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "460bbe2fc5ca0c416492fe112c184580aa330348",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

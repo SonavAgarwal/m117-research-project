@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "c9c73fde339b4db496f2c1ff8c18df1e9db5a7c1",
+  "tree": "888734e4cb6c4765b502d867ae33202d125a366d",
+  "parents": [
+    "9fab683c9598d234dd8461335c276ed3e37c91e8"
+  ],
+  "author": {
+    "name": "Robin Lee",
+    "email": "rgl@google.com",
+    "time": "Mon Aug 08 14:48:43 2016 +0100"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:14:06 2016 -0700"
+  },
+  "message": "DO NOT MERGE Stop work challenge freeform bypass\n\nBypassing work challenge in freeform mode was trivial by just keeping\nwork apps open in freeform mode and then switching focus to them from\nanother app.\n\nBecause the only interception point is startActivity this never\ntriggered work challenge.\n\nThe solution is to trigger the check on focus change events and also to\nallow passing the result back into the freeform stack instead of dumping\nour user out into the homescreen.\n\nChange-Id: I141ecf90b5f0e708a21d27141b6fec6074e5d475\nFix: 30693465\n(cherry picked from commit 0737c2b4c2ae6415eced00926235f848d1957bae)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "391323eb54d66752c3cbfac3ff97034475f5a323",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "7612ebf069972484251245995b82f066b6fcbefc",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "36207c48794f8243f6ad5a298a96531fe1a846cd",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStackSupervisor.java",
+      "new_id": "baf96195ee852e4dc786a47af3358c39f2d65636",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStackSupervisor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b3f65a728bff1b61c2ed2b77a0587da4f9ac565",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStarter.java",
+      "new_id": "ba497c711a5bbdd95260243fa433d1dc38079ce8",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStarter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b5280165bb39a91808adf47e73c702193431af95",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "2aaf945dae49a40daeb5bbdd6f43a44477a6adbc",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

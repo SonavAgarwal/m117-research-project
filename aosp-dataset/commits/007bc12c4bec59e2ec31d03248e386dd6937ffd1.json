@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "007bc12c4bec59e2ec31d03248e386dd6937ffd1",
+  "tree": "379fd00159c8d6156419029a436dfc542a62a5fc",
+  "parents": [
+    "40b35a607a0fb122f51f1f9dd7b1e60c4bb8541f"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Tue Nov 06 16:16:17 2018 -0800"
+  },
+  "committer": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Tue Nov 06 16:18:05 2018 -0800"
+  },
+  "message": "Prevent Out of bound error in llcp_dlc_proc_rr_rnr_pdu()\n\nTest: Nfc Enable/disable\nBug: 116788646\nChange-Id: Iefa9ca0a291e0c59a442befccfaa2f17eecd461e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06d025044d81cb3b18803979b085b69bf1a45a8f",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_dlc.c",
+      "new_id": "462aeb656e85c46b4b81a70a79c8dc3e6a7ddb25",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_dlc.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "623b2b604c4ffcd48f137379d6934537510665bf",
+  "tree": "7d8b01d4ad712a796e3164e13ea886a49c1811c0",
+  "parents": [
+    "6549309f6c473b792ec62d1aebadec62bcf07827"
+  ],
+  "author": {
+    "name": "Makoto Onuki",
+    "email": "omakoto@google.com",
+    "time": "Tue Jun 12 13:01:42 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:42:35 2018 +0000"
+  },
+  "message": "Backport Prevent shortcut info package name spoofing\n\nTest: cts-tradefed run cts -m CtsShortcutManagerTestCases -t android.content.pm.cts.shortcutmanager.ShortcutManagerFakingPublisherTest\nBug: 109824443\n\nChange-Id: I90443973aaef157d357b98b739572866125b2bbc\nMerged-In: I78948446a63b428ae750464194558fd44a658493\n(cherry picked from commit 9e21579a11219581a0c08ff5dd6ac4dc22e988a4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "599e5a573437ddfd1337a931fb69dbc94b2ecd7f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/ShortcutService.java",
+      "new_id": "b9c304890420f0efb6e54c692c812cf93cf0d425",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/ShortcutService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2c7008421cb67f5d89f16911bdbe36f6c35311ad",
+  "tree": "24cb5c7df83e3d96aba23737415ae897fe4f4e3d",
+  "parents": [
+    "c372cb67ade0e6b73f00d78abafe6c800f5a9bf2"
+  ],
+  "author": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Tue Aug 09 17:00:25 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:49 2016 -0700"
+  },
+  "message": "Process: Fix communication with zygote.\n\nDon\u0027t write partial requests, and don\u0027t return (or throw) early after\npartially reading a response.\n\nbug: 30143607\nChange-Id: I5881fdd5e81023cd21fb4d23a471a5031987a1f1\n(cherry picked from commit 448be0a62209c977593d81617853a8a428d013df)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f664e70cf7be25e939816af4e492fdf7927c41f2",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/Process.java",
+      "new_id": "21b3f6ed4582e3bffde05bc46e1cde4ae88fd9f4",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/Process.java"
+    }
+  ]
+}

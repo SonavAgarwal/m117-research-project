@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "75419418cfd2f47439d0f65418f4a771cc58d14b",
+  "tree": "c64eb818f4e10757f4e3ae4f42accdcde043f792",
+  "parents": [
+    "8e4928820e972a00342c00cf67e8795a094e6e68"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Fri Dec 04 16:01:46 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:55 2021 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nAllow CDM to hide overlays\n\nSince CDM has sensitive user consent UIs, it should be able to hide\nnon-system overlays\n\nTest: use a 3p overlay app with a visible overlay to ensure overlay disappears when CDM is shown\nBug: 171221090\nChange-Id: I78673b7b95f4c3cb31fab180201eb17c9123bddf\nMerged-In: I78673b7b95f4c3cb31fab180201eb17c9123bddf\n(cherry picked from commit 43e8c61bee99d04f5bb06f883d61fcaeb7debf70)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ea9b52cbf3d512a59fe1e35500e61edb0d530217",
+      "old_mode": 33188,
+      "old_path": "packages/CompanionDeviceManager/AndroidManifest.xml",
+      "new_id": "e4e5b9fa781a2b9b4d85ca861b5430172eb31d5a",
+      "new_mode": 33188,
+      "new_path": "packages/CompanionDeviceManager/AndroidManifest.xml"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dbf3d0fa7b89aa09ec7bf69699f6233c59070dbc",
+  "tree": "59ce08a0f3b6cdb2518126ad99a114d9abe4f48f",
+  "parents": [
+    "d825d0bdf0f55bd452d1f8e44cccb38f9fdd3775"
+  ],
+  "author": {
+    "name": "Dongwon Kang",
+    "email": "dwkang@google.com",
+    "time": "Thu Jul 13 18:41:31 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:48:28 2017 +0000"
+  },
+  "message": "Use heap instead of alloca in res012.c\n\nTest: run the poc with and without the patch\nBug: 62872015\nChange-Id: I80448d4a08aac212e597433b413306a7593e9bff\n(cherry picked from commit 70f5300e5abbb62f1902c1860d32219bf385d89d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be279d036bb2d6100705e3c9ce12c3e646f157db",
+      "old_mode": 33188,
+      "old_path": "Tremolo/res012.c",
+      "new_id": "b26c8a66de430ed443b0429fb05bc8f0432778ac",
+      "new_mode": 33188,
+      "new_path": "Tremolo/res012.c"
+    }
+  ]
+}

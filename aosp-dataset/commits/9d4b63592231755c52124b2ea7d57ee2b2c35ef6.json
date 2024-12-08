@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9d4b63592231755c52124b2ea7d57ee2b2c35ef6",
+  "tree": "55071e98e5ec28f28abdb42d7ee18a8c8b698cd6",
+  "parents": [
+    "e3fab37e2aec7e09a1956ffaa0c05a63a6f539e7"
+  ],
+  "author": {
+    "name": "Matthew Maurer",
+    "email": "mmaurer@google.com",
+    "time": "Thu Mar 28 14:51:45 2019 -0700"
+  },
+  "committer": {
+    "name": "Janis Danisevskis",
+    "email": "jdanis@google.com",
+    "time": "Mon Apr 29 20:08:43 2019 +0000"
+  },
+  "message": "Remove potential double free\n\nJanis noticed that GetAuthTokenKey has ownership retained by the\nimplementer, but the caller in libgatekeeper is delete[]ing it.\n\nBug: 120610663\nBug: 129768470\nTest: gatekeeper-unit-tests, Gatekeeper 1.0 VTS against Trusty\nChange-Id: I67171d707706b1ebe5caad47447762144495e28b\n(cherry picked from commit 6d2ee18a9af8eb9d8580850e434d21e4481fa36e)\n(cherry picked from commit 303e6db4d5fbdd42be5bfda1419c759f8e8e4626)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "44993cf584eb9a43b378e648868a4efd638e22b6",
+      "old_mode": 33188,
+      "old_path": "gatekeeper.cpp",
+      "new_id": "607da7a973b4c9777be685e9cea53c9ea66c64bc",
+      "new_mode": 33188,
+      "new_path": "gatekeeper.cpp"
+    }
+  ]
+}

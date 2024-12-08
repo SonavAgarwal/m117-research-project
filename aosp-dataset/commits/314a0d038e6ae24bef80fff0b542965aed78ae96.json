@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "314a0d038e6ae24bef80fff0b542965aed78ae96",
+  "tree": "f5ac1a6e3ceb5c06e804c0c634f3d0fa98ecd4ee",
+  "parents": [
+    "84732aaa4255955b8fefc39efee9b369181a6861"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed May 17 15:58:28 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:54 2017 +0000"
+  },
+  "message": "Set pic_present at end of pic_init instead of beginning\n\nBug: 37469795\n\nIn pic_init, pic_present was set in the beggining. If pic_present\nwas set, process and buffer managment were done. For an error\nstream, a crash occured when pic_init returned with error after setting\npic_present.\n\nChange-Id: Iea42e6ad2bc5a74517188fa5e4cc434bb96d46c7\n(cherry picked from commit d012a1ffc0a260de924b7af5e3ba30eb65526f8a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "797b079d137071e954cd4f9fc934bb2b50714e85",
+      "old_mode": 33261,
+      "old_path": "decoder/ihevcd_utils.c",
+      "new_id": "7d7657790aa69ddfb0cbf95d97facc4f734d5a31",
+      "new_mode": 33261,
+      "new_path": "decoder/ihevcd_utils.c"
+    }
+  ]
+}

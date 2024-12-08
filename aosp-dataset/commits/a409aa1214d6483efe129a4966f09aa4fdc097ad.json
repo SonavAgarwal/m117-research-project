@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a409aa1214d6483efe129a4966f09aa4fdc097ad",
+  "tree": "57d752c537c3af25a31f9906f50d409c0e3166c6",
+  "parents": [
+    "1de25074adb5d9ed572d6a85e77d3df5ac3a7e9e"
+  ],
+  "author": {
+    "name": "Ryan Mitchell",
+    "email": "rtmitchell@google.com",
+    "time": "Wed May 30 12:17:01 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:18:19 2018 +0000"
+  },
+  "message": "Fix DynamicRefTable::load security bug\n\nDynamicRefTables parsed from apks are missing bounds checks that prevent\nbuffer overflows. This changes verifies the bounds of the header before\nattempting to preform operations on the chunk.\n\nBug: 79488511\nTest: run cts -m CtsAppSecurityHostTestCases \\\n        -t android.appsecurity.cts.CorruptApkTests\n\nChange-Id: I02c8ad957da244fce777ac68a482e4e8fa70f846\nMerged-In: I02c8ad957da244fce777ac68a482e4e8fa70f846\n(cherry picked from commit 18a6ada4aa136da4f50f03fff91d61d448ced195)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c78554f340fc5c57163bde3aeec459c37083b7bd",
+      "old_mode": 33188,
+      "old_path": "libs/androidfw/ResourceTypes.cpp",
+      "new_id": "4813b4c83d041a51abff6178d8b3e497d4b30c50",
+      "new_mode": 33188,
+      "new_path": "libs/androidfw/ResourceTypes.cpp"
+    }
+  ]
+}

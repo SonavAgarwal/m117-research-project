@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ed0820373c236b4ef779653b08ea056e7325b0ed",
+  "tree": "01844525747e768602498ebafe9774f035e81137",
+  "parents": [
+    "c610e30f55844dccf509eab701e372bba7125550"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Wed May 13 12:57:37 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 02:21:15 2020 +0000"
+  },
+  "message": "Use FLAG_IMMUTABLE for CarrierKeyDownloadManager\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 155094269\nChange-Id: I223047644021a647bce72f229998487bee0c007b\nMerged-In: I223047644021a647bce72f229998487bee0c007b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "43e802629f281558c9fb501b7c19d579c7c3c04e",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/CarrierKeyDownloadManager.java",
+      "new_id": "71e9dc5ef6d7ec1e0e94c7b4500d98319a34ebf6",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/CarrierKeyDownloadManager.java"
+    }
+  ]
+}

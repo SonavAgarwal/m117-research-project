@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4b3f2c6c5b84f80fae8eeeb46727811e055715ea",
+  "tree": "3f0ed885bc1e89d213f9f20631432428ad4905ec",
+  "parents": [
+    "3c8471a841747a76d2db00283588bd9bb8508bd2"
+  ],
+  "author": {
+    "name": "Yi Kong",
+    "email": "yikong@google.com",
+    "time": "Wed Oct 19 15:46:47 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:29 2016 -0800"
+  },
+  "message": "Fix URL parser may return wrong host name\n\nDue to a missing bound check in parseURL, it may include part of the\nfragment in the authority field, and returns wrong host name.\n\nBug: 31858037\nTest: libcore.java.net.URLTest#testFragmentWith{Slash,Query}\nChange-Id: I1fc39907cc67f6d674a3790070833123fdef9414\n(cherry picked from commit 78a4344540081fd229b188504d2fee820b7d452a)\n(cherry picked from commit f98287d57549ccaae7b6e8dec9feadd4e0d413c3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "789e3e9f5f13e268489c4ffc8592fb06247f2bd7",
+      "old_mode": 33188,
+      "old_path": "luni/src/test/java/libcore/java/net/URLTest.java",
+      "new_id": "629015f3cdaf9ff1f9270fc53efb07fc57070cc5",
+      "new_mode": 33188,
+      "new_path": "luni/src/test/java/libcore/java/net/URLTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e17736397345d69e7b04cd5c5186ef4ac2357a9d",
+      "old_mode": 33261,
+      "old_path": "ojluni/src/main/java/java/net/URLStreamHandler.java",
+      "new_id": "ddea036627c4a958200a4c4342dae8e8c9820648",
+      "new_mode": 33261,
+      "new_path": "ojluni/src/main/java/java/net/URLStreamHandler.java"
+    }
+  ]
+}

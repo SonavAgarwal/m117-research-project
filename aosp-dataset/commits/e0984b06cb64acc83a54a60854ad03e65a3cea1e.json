@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e0984b06cb64acc83a54a60854ad03e65a3cea1e",
+  "tree": "ceb2d76fe6d227a4fb5eeb551818316714cb71ea",
+  "parents": [
+    "b8293fd0e0fdf278b0adc7315bf04fafd48b9ca7"
+  ],
+  "author": {
+    "name": "Yiwei Zhang",
+    "email": "zzyiwei@google.com",
+    "time": "Tue Jul 28 23:11:21 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:20 2020 +0000"
+  },
+  "message": "GpuService: secure setUpdatableDriverPath\n\nsetUpdatableDriverPath should only be called by system_server and\ndeveloper driver path needs to be protected by a lock.\n\nBug: 162383705\nBug: 159240322\nTest: ./gapit validate_gpu_profiling --os android\nChange-Id: I48896325598acab89079dbc658ddf9b92d303244\nMerged-In: I48896325598acab89079dbc658ddf9b92d303244\n(cherry picked from commit 2b65d6ca48773901c396344c5fdc851ec14a4bdf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "304f1d059e4729750dee191950c960f036550f05",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/GpuService.cpp",
+      "new_id": "81b0a46e0c99d6c10d39ece9fe855a1a50b40e8e",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/GpuService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba44fe04d463f1d99003a6262b2f7986f6da0df7",
+      "old_mode": 33188,
+      "old_path": "services/gpuservice/GpuService.h",
+      "new_id": "d1c3aabcce38682f060560a326f4186eb2c45bc2",
+      "new_mode": 33188,
+      "new_path": "services/gpuservice/GpuService.h"
+    }
+  ]
+}

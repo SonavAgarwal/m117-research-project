@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0e7324e9095a209d4f06ba00812b2b2976fe2846",
+  "tree": "b62cbb09ebef81ae6bb47d172461b8d408dda2c3",
+  "parents": [
+    "5cf8bbd5b29dbf6e3c485f79c30d37c75df50b24"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Sat Nov 19 12:09:33 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:39 2016 -0800"
+  },
+  "message": "change /data/bugreports to /bugreports\n\nIt\u0027s 5 characters shorter, has no runtime costs, can be stored on a\nread-only partition, and avoids problems like b/27262109 and b/27204904.\nIt allows makes some security hardening easier.\n\n(cherry picked from commit c4084c669495fd1b41ce8b6568c71b1f46d26969)\n\nBug: 27262109\nBug: 27204904\nBug: 32799236\nTest: verified new symlink created and old one not present\nChange-Id: Ief362e13569ad9c868a7f0f9c4dbd6a328c96c6b\n(cherry picked from commit 04bbd5c6dd0455af43e96efbc45399bf6fd70d40)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aa5a520927b88557a2a58780d867188bf14c4aa7",
+      "old_mode": 33188,
+      "old_path": "rootdir/Android.mk",
+      "new_id": "7d0c87dc4b19b164198470ef16f07db11a6af706",
+      "new_mode": 33188,
+      "new_path": "rootdir/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "a9b6af0de9191637f85ed3ef8e07302ec1a7c4e2",
+      "old_mode": 33188,
+      "old_path": "rootdir/init.rc",
+      "new_id": "a22d5c13048c27adef1e0e98b780180fe434748a",
+      "new_mode": 33188,
+      "new_path": "rootdir/init.rc"
+    }
+  ]
+}

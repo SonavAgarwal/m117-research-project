@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4a827429765fa167571ec21611ee057d43c8e336",
+  "tree": "8056f4d48d846df00b015cef146481e2614cae32",
+  "parents": [
+    "65b2a36e77376d2b1d0d8bbf4aeddbf7a71df50f"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Fri Jul 19 16:20:26 2019 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:10 2019 +0000"
+  },
+  "message": "Fix broken tests.\n\nSQLiteQueryBuilder now always allows aggregation operations.\n\nBug: 137890034\nBug: 135269143\nBug: 135270103\n\nTest: atest --test-mapping packages/providers/MediaProvider\nChange-Id: Ib35d63c734743efb12c5227c0d5c74b167d1ca6e\n(cherry picked from commit 3983fd88c38f8c812d1bb157e4d1d945ee13c546)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc79edd3593372eb23225365b59c8c051edfb63f",
+      "old_mode": 33188,
+      "old_path": "tests/src/com/android/providers/media/MediaProviderTest.java",
+      "new_id": "11788ff50e9657da3a4295162fc6da729c99df7f",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/providers/media/MediaProviderTest.java"
+    }
+  ]
+}

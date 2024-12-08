@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "935ee775421e0c8a14f26669d9ab99f110ceb7d5",
+  "tree": "cae6dfda460b2d31fabd298ac2b65c9bbc8b2738",
+  "parents": [
+    "ff6208c4121dd6f14da465e3f5f4e0c30cd25d62"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Mon Jan 08 11:37:05 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:55 2018 +0000"
+  },
+  "message": "Removed alarm callback execution statistics\n\nUpdating the alarm state after the callback returns can be problematic\nin case the callback itself deleted the alarm.\n\nBug: 67110137\nTest: Manual\nChange-Id: Id4de06eebedb792cadd63d09efb68672e9bddc69\nMerged-In: Id4de06eebedb792cadd63d09efb68672e9bddc69\n(cherry picked from commit 04574e1cde3b0d46b59b4b6ebab935ac60af9f97)\n(cherry picked from commit 90ffe3f90a7589e4ff9e5e8bdf353cdcdfe88764)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e1c87fc400263bca5ba3f482411a8c9df7720771",
+      "old_mode": 33188,
+      "old_path": "osi/src/alarm.cc",
+      "new_id": "9bf9cc5f863373f44a6a144a4c40cfc9ea0b9819",
+      "new_mode": 33188,
+      "new_path": "osi/src/alarm.cc"
+    }
+  ]
+}

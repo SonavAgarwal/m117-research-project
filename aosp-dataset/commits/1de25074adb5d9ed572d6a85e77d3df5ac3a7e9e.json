@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1de25074adb5d9ed572d6a85e77d3df5ac3a7e9e",
+  "tree": "b1caaf26f825560a02dbf38972d87fb1e411008d",
+  "parents": [
+    "da24aa45a8b65a7b9adbe12ff94bf891bdd38825"
+  ],
+  "author": {
+    "name": "Ryan Mitchell",
+    "email": "rtmitchell@google.com",
+    "time": "Mon May 21 13:59:23 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:18:15 2018 +0000"
+  },
+  "message": "ResStringPool: Prevenet boot loop from se fix\n\nChanges the logs adding in a previous security fix to warnings so\ndevices with malformed APKs currently on them will not undergo DOS when\nthey are upgraded to P.\n\nBug: 79724567\nTest: run cts -m CtsAppSecurityHostTestCases \\\n          -t android.appsecurity.cts.CorruptApkTests\n\nChange-Id: Ied54e4bb14abdaf79da562022c7ea6075187c1f8\n(cherry picked from commit f05f47b2c1838529e682ad8f931d3da72244b1a1)\n(cherry picked from commit c31cf80008fdb06ea8e1eab9764096653e7854b1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "401c7b070188c1c5467d9a7868e704f56ef1265a",
+      "old_mode": 33188,
+      "old_path": "libs/androidfw/ResourceTypes.cpp",
+      "new_id": "c78554f340fc5c57163bde3aeec459c37083b7bd",
+      "new_mode": 33188,
+      "new_path": "libs/androidfw/ResourceTypes.cpp"
+    }
+  ]
+}

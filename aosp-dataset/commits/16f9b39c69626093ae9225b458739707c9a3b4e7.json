@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "16f9b39c69626093ae9225b458739707c9a3b4e7",
+  "tree": "d43751673aa9ce4db385e36801575e8195423a7c",
+  "parents": [
+    "e39d21201183752fd404e4ede0a52e39754774b8"
+  ],
+  "author": {
+    "name": "ray-cy.lee",
+    "email": "ray-cy.lee@mstarsemi.com",
+    "time": "Tue Mar 07 18:25:15 2017 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:32:54 2018 +0000"
+  },
+  "message": "CTS error while media dump()\n\nMediaExtractor should not dump information. CTS is\nchecking and failing due to the dump.\n\nBug: 114770654\nChange-Id: Ie5bae5de39545dede6da4198240b4f38c50050b7\n(cherry picked from commit c20825bd3b751cffcd8d7e66e97c3b1a91ef21e0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3c43a721b236573999cef9f9f5153d04978e5473",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaExtractor.cpp",
+      "new_id": "a8a7b82c01df7b3197ce31891dd7f428c4f3ea4a",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaExtractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "7375a87cd10b2eda4716d503f9100fb8dea6ad99",
+  "tree": "ad01e11afd6ca04d5411e0d642cdfed5626b2e87",
+  "parents": [
+    "8708d35d64df1499edeab1c211ee3d769427cc60"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Wed Dec 26 13:59:23 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:04 2019 +0000"
+  },
+  "message": "getCallingSid: get calling security context\n\nThis call gets the security context of the calling process when\nrequested.\n\nBug: 121035042\nTest: boot\nChange-Id: Ia8a4c0cb4a9c86dcc0d3b7583014237f879a3074\nMerged-In: Ia8a4c0cb4a9c86dcc0d3b7583014237f879a3074\n(cherry picked from commit b935356c420bd09b85dcd62fc61baff85b1685ae)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "66ba1c3af4051ff1e57a488f2d7b2acb945c1e95",
+      "old_mode": 33188,
+      "old_path": "Binder.cpp",
+      "new_id": "147c7ca20c5757f0d861632c8f721bc3928659a0",
+      "new_mode": 33188,
+      "new_path": "Binder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d29ae5181343c496d994c5fb711d1b5664a2a1aa",
+      "old_mode": 33188,
+      "old_path": "IPCThreadState.cpp",
+      "new_id": "b36838e4eaeebe9bc2b9c13cecb87f86eb94f693",
+      "new_mode": 33188,
+      "new_path": "IPCThreadState.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c2d9e3cca98c6ea4dafc4c324b28c3ecc53d7e82",
+      "old_mode": 33188,
+      "old_path": "Parcel.cpp",
+      "new_id": "2b1bb90ebc801e47127eba5c153b846a278956da",
+      "new_mode": 33188,
+      "new_path": "Parcel.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0b32adf79c3b27834db88764f4d69186f188496f",
+      "old_mode": 33188,
+      "old_path": "ProcessState.cpp",
+      "new_id": "37e3611f1f4432bb4bfd29f31166c301094f9468",
+      "new_mode": 33188,
+      "new_path": "ProcessState.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "95c909c74057097b17e01ecf60e2f0d9366d7836",
+      "old_mode": 33188,
+      "old_path": "include/hwbinder/Binder.h",
+      "new_id": "1efa3423093008277c8a9f44ff3ba81080c5dfde",
+      "new_mode": 33188,
+      "new_path": "include/hwbinder/Binder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bed592bf1c7cc898439a798830944c9218d9a8a5",
+      "old_mode": 33188,
+      "old_path": "include/hwbinder/IPCThreadState.h",
+      "new_id": "32eea8c3257fe7bc27d6755dbbe961c20350dd31",
+      "new_mode": 33188,
+      "new_path": "include/hwbinder/IPCThreadState.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d44dca96b08ca080e8e85d81e39afda7f682e870",
+      "old_mode": 33188,
+      "old_path": "include/hwbinder/binder_kernel.h",
+      "new_id": "27a0595139af61f8e987aafeac7345ae15bd90c0",
+      "new_mode": 33188,
+      "new_path": "include/hwbinder/binder_kernel.h"
+    }
+  ]
+}

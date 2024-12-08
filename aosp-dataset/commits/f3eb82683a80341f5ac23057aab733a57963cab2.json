@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f3eb82683a80341f5ac23057aab733a57963cab2",
+  "tree": "b0d65bc29abd7c55df8e8a38135fec58b894686a",
+  "parents": [
+    "2b63b91b84c75afdef4213aa11b0dcc8e7d735a3"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 02 14:02:47 2015 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Sep 08 12:00:17 2015 -0700"
+  },
+  "message": "DO NOT MERGE: Protect data source access with mutex during disconnect\n\nBug: 23658148\nChange-Id: Ic37cac7b5d166143e0b77e9919b0aaef486e4fdd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6859a1a0bd274ff5c1832fa1e6d5de16ff3e8b97",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp",
+      "new_id": "b6f3a9fa7340ad99fb552808d8e50fb63e999a2b",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f8601ea049fe0b6f6828d49e092967ca79fe3748",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/GenericSource.h",
+      "new_id": "1b68283a261f327306403f3b04b3abe5916da183",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/GenericSource.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9ea802b5456a36f1115549b645b65c791eff3c2c",
+  "tree": "70963c25df81816968adfbf8b893f8067e030e7d",
+  "parents": [
+    "8d04aeed70e2b58b1e039875f7f3ef3594e0620f"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Mon May 23 09:13:57 2016 +0200"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:38 2016 -0700"
+  },
+  "message": "Verify setForegroundDispatch caller is in foreground.\n\nBug: 28300969\nChange-Id: Icadfe70cd06f921badd266e7a4efbae15a8c206a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b822afe275831a6375d06d9febdaecc650482d02",
+      "old_mode": 33261,
+      "old_path": "src/com/android/nfc/NfcService.java",
+      "new_id": "d62ec03bc55968fa1674a6f65155cd6db59e64ea",
+      "new_mode": 33261,
+      "new_path": "src/com/android/nfc/NfcService.java"
+    }
+  ]
+}

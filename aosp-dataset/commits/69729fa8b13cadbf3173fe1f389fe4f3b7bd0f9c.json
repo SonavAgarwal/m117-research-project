@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "69729fa8b13cadbf3173fe1f389fe4f3b7bd0f9c",
+  "tree": "86311924decf1476308ee716c3554a6b7bdcc88f",
+  "parents": [
+    "f0ea4c8737ec911074cc4d284f984c5c353f32e2"
+  ],
+  "author": {
+    "name": "Benjamin Franz",
+    "email": "bfranz@google.com",
+    "time": "Tue Jul 12 15:20:47 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:34:53 2016 -0700"
+  },
+  "message": "DO NOT MERGE Block the user from entering safe boot mode\n\nBlock the user from entering safe boot mode if the DISALLOW_SAFE_BOOT\npolicy is set.\n\nBug: 26251884\nChange-Id: I4945d5d676928346c11ea305a5b6a2e1a42e94e6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "71bbdb6761b32357758bdd10cdf9a243b26cae58",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "d695d936b0d4797a4f1018680be6385c76b0d51a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    }
+  ]
+}

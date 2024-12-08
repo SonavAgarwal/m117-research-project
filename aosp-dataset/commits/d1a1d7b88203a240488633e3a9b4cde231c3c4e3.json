@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d1a1d7b88203a240488633e3a9b4cde231c3c4e3",
+  "tree": "f24bdf27aec20955c81a0cd643f658398aa22efb",
+  "parents": [
+    "604f227d4e2b686609049e00b440754639faab4e"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Mon Jul 10 16:24:33 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Sep 29 12:30:44 2017 -0700"
+  },
+  "message": "DoS error - Bitstream Overflow\n\nThe decoder could go into an infinite loop if there was an error\nencountered after the bitstream buffer had been exhausted. Adding a check\nfor the same.\n\nBug: 63316255\nTest: re-ran POC after patching\nChange-Id: Iebef469ef663781b741889a055a70f261915b23a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "59110ce85d1890bf467ce13ed974e74ec554e48a",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "443494bcd525da5f4c225095f8cf917b7c23d2e3",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    }
+  ]
+}

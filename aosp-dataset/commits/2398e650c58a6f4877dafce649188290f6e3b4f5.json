@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2398e650c58a6f4877dafce649188290f6e3b4f5",
+  "tree": "8b84836f4d0eefc67e8d15759d7a8cf7a5de47ce",
+  "parents": [
+    "e0411c7e2887d62350211c633f7c45b68b63282f"
+  ],
+  "author": {
+    "name": "Will McVicker",
+    "email": "willmcvicker@google.com",
+    "time": "Tue Apr 13 15:59:41 2021 -0700"
+  },
+  "committer": {
+    "name": "Will McVicker",
+    "email": "willmcvicker@google.com",
+    "time": "Fri May 07 14:52:04 2021 -0700"
+  },
+  "message": "ANDROID: xt_qtaguid: fix UAF race\n\nMake sure to hold the sock_tag_list_lock while accessing the tag to\navoid a race between getting the tag and free\u0027ing the tag.\n\nBug: 184018316\nFixes: c7ca0ac69702 (\"ANDROID: netfilter: xt_qtaguid: add qtaguid matching module\")\nSigned-off-by: Will McVicker \u003cwillmcvicker@google.com\u003e\nChange-Id: I62404bdaa602586e00821a7d4c5f9b9868a0e90a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a61f4367451973ed7365bb7a1208436b4e80cfe7",
+      "old_mode": 33188,
+      "old_path": "net/netfilter/xt_qtaguid.c",
+      "new_id": "635fcf7a8a8e45a00ed8086d69e981e2494e6f2f",
+      "new_mode": 33188,
+      "new_path": "net/netfilter/xt_qtaguid.c"
+    }
+  ]
+}

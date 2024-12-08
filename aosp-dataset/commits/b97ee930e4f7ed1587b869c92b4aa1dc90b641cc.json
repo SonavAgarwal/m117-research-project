@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "b97ee930e4f7ed1587b869c92b4aa1dc90b641cc",
+  "tree": "b4917494c7a99ff9d4ed9552d2a5f205931593ca",
+  "parents": [
+    "65842db06c2d77e53cc5ac61692160d844cc7d0a"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri May 08 10:50:03 2015 -0700"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Tue Aug 18 11:25:37 2015 -0700"
+  },
+  "message": "DO NOT MERGE - audio flinger: fix fuzz test crash\n\nClear output stream pointer in duplicating thread\nwhen the main output to which it is attached is closed.\n\nAlso do not forward master mute and volume commands to\nduplicating threads as this is not applicable.\n\nAlso fix logic in AudioFlinger::primaryPlaybackThread_l()\nthat could accidentally return a duplicating thread.\nThis never happens because the primary thread is always\nfirst in the list.\n\nBug: 20731946.\nChange-Id: Ic8869699836920351b23d09544c50a258d3fb585\n(cherry picked from commit f6870aefc5e31d4220f3778c4e79ff34a61f48ad)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e48af205a9a79ef28fe899161bd33ca87f224675",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "413ec3e1b2f3480ce38c5a59d6f6824c601891f3",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "71a6a73f5883b4145d51f0d2af3b832c952d8c0a",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.cpp",
+      "new_id": "b429cc26080295d971a1e841572a1f637f6c7c18",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bb9aa1895f8cd832857151fc828c1bcaa2fd204e",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.h",
+      "new_id": "ecb8e4e2bf857fb7ea13ff43e9aa836af17d9e60",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.h"
+    }
+  ]
+}

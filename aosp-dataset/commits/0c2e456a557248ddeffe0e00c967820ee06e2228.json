@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0c2e456a557248ddeffe0e00c967820ee06e2228",
+  "tree": "a98bd977824a928c278e779300957269420c5dfe",
+  "parents": [
+    "85659befb26239dbfb08bd4d61bc10ac758a476b"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon May 20 14:56:05 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:56:06 2019 +0000"
+  },
+  "message": "Delete vestigial Status parcel read.\n\nlibbinder Status has the exception type EX_HAS_REPLY_HEADER for fat\nJava-specific errors. This code jumps Parcel position to an arbitrary\nposition in memory based on a value it reads from this parcel. Since\nthis is unused in HIDL, removing entirely.\n\nBug: 132650049\nTest: HIDL\u0027s run_all_device_tests.sh\nChange-Id: Iac815f92c5da4ead283d3566892b5d4d209dab3b\n(cherry picked from commit 7fd5fbec0c4118203d37cfcc13d9451d3638c53d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4f8d7c56a345d81cde382a208988b74a8746fd61",
+      "old_mode": 33188,
+      "old_path": "transport/HidlBinderSupport.cpp",
+      "new_id": "ec236404efe8b70239fe23172937c19e69839817",
+      "new_mode": 33188,
+      "new_path": "transport/HidlBinderSupport.cpp"
+    }
+  ]
+}

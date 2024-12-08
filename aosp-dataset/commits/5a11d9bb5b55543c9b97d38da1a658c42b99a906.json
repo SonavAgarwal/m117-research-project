@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a11d9bb5b55543c9b97d38da1a658c42b99a906",
+  "tree": "396933003401e721502e061377b8a7e0ef87fc52",
+  "parents": [
+    "82306b4ed120eab59849a21ae85074ab10a67b23"
+  ],
+  "author": {
+    "name": "y",
+    "email": "rtmitchell@google.com",
+    "time": "Thu Apr 05 17:57:27 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:11 2018 +0000"
+  },
+  "message": "ResStringPool: Fix security vulnerability\n\nAdds detection of attacker-modified size and data fields passed to\nResStringPool::setTo(). These attacks are modified apks that AAPT would\nnot normally generate. In the rare case this occurs, the installation\ncannot be allowed to continue.\n\nBug: 71361168\nBug: 71360999\nTest: run cts -m CtsAppSecurityHostTestCases \\\n          -t android.appsecurity.cts.CorruptApkTests\n\nChange-Id: If7eb93a9e723b16c8a0556fc4e20006aa0391d57\nMerged-In: If7eb93a9e723b16c8a0556fc4e20006aa0391d57\n(cherry picked from commit 7e54c3f261d81316b75cb734075319108d8bc1d1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "733ffb180b3b35f4ada45b7fd21a6e520fd917ac",
+      "old_mode": 33188,
+      "old_path": "libs/androidfw/ResourceTypes.cpp",
+      "new_id": "401c7b070188c1c5467d9a7868e704f56ef1265a",
+      "new_mode": 33188,
+      "new_path": "libs/androidfw/ResourceTypes.cpp"
+    }
+  ]
+}

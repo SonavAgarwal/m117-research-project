@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4ed06d14080d8667d5be14eed200e378cba78345",
+  "tree": "0a030b1e7deb125b7b496258f94e168c6d392bb6",
+  "parents": [
+    "5b82f4f90c3d531313714df4b936f92fb0ff15cf"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 25 11:51:05 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:33 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: venc: Avoid processing ETBs/FTBs in invalid states\n\n(per the spec) ETB/FTB should not be handled in states other than\nExecuting, Paused and Idle. This avoids accessing invalid buffers.\nAlso add a lock to protect the private-buffers from being deleted\nwhile accessing from another thread.\n\nBug: 27903498\nSecurity Vulnerability - Heap Use-After-Free and Possible LPE in\nMediaServer (libOmxVenc problem #3)\n\nCRs-Fixed: 1010088\n\nChange-Id: I898b42034c0add621d4f9d8e02ca0ed4403d4fd3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "36276780123385c2cf36e60d2886bba8fe8d5b34",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp",
+      "new_id": "21573e7a275bffcfd9f6fbc25c7b202bce4a46ed",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp"
+    }
+  ]
+}

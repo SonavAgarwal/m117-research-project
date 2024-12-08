@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "21998a351512eba4ed5969006f0c55882d995ada",
+  "tree": "725711649d7ea4ec31c2020a7f0caa46ff4fd2b3",
+  "parents": [
+    "be25d1b5ea6a3a3ecbb5474e2ae8e32d2ba055ea"
+  ],
+  "author": {
+    "name": "Anthony Steinhauser",
+    "email": "asteinhauser@google.com",
+    "time": "Tue May 19 06:40:42 2020 -0700"
+  },
+  "committer": {
+    "name": "Thomas Gleixner",
+    "email": "tglx@linutronix.de",
+    "time": "Tue Jun 09 10:50:54 2020 +0200"
+  },
+  "message": "x86/speculation: Avoid force-disabling IBPB based on STIBP and enhanced IBRS.\n\nWhen STIBP is unavailable or enhanced IBRS is available, Linux\nforce-disables the IBPB mitigation of Spectre-BTB even when simultaneous\nmultithreading is disabled. While attempts to enable IBPB using\nprctl(PR_SET_SPECULATION_CTRL, PR_SPEC_INDIRECT_BRANCH, ...) fail with\nEPERM, the seccomp syscall (or its prctl(PR_SET_SECCOMP, ...) equivalent)\nwhich are used e.g. by Chromium or OpenSSH succeed with no errors but the\napplication remains silently vulnerable to cross-process Spectre v2 attacks\n(classical BTB poisoning). At the same time the SYSFS reporting\n(/sys/devices/system/cpu/vulnerabilities/spectre_v2) displays that IBPB is\nconditionally enabled when in fact it is unconditionally disabled.\n\nSTIBP is useful only when SMT is enabled. When SMT is disabled and STIBP is\nunavailable, it makes no sense to force-disable also IBPB, because IBPB\nprotects against cross-process Spectre-BTB attacks regardless of the SMT\nstate. At the same time since missing STIBP was only observed on AMD CPUs,\nAMD does not recommend using STIBP, but recommends using IBPB, so disabling\nIBPB because of missing STIBP goes directly against AMD\u0027s advice:\nhttps://developer.amd.com/wp-content/resources/Architecture_Guidelines_Update_Indirect_Branch_Control.pdf\n\nSimilarly, enhanced IBRS is designed to protect cross-core BTB poisoning\nand BTB-poisoning attacks from user space against kernel (and\nBTB-poisoning attacks from guest against hypervisor), it is not designed\nto prevent cross-process (or cross-VM) BTB poisoning between processes (or\nVMs) running on the same core. Therefore, even with enhanced IBRS it is\nnecessary to flush the BTB during context-switches, so there is no reason\nto force disable IBPB when enhanced IBRS is available.\n\nEnable the prctl control of IBPB even when STIBP is unavailable or enhanced\nIBRS is available.\n\nFixes: 7cc765a67d8e (\"x86/speculation: Enable prctl mode for spectre_v2_user\")\nSigned-off-by: Anthony Steinhauser \u003casteinhauser@google.com\u003e\nSigned-off-by: Thomas Gleixner \u003ctglx@linutronix.de\u003e\nCc: stable@vger.kernel.org\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed54b3b21c39610c7777f3389c0ec78e3a00d280",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/cpu/bugs.c",
+      "new_id": "8d57562b1d2c38e30d9e3219ff1522a0f00fd6fe",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/cpu/bugs.c"
+    }
+  ]
+}

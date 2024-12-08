@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7950bf47b6944546a0aff11a7184947de9591b51",
+  "tree": "aac602980a2d20094f760c71a6cabe71acf10be3",
+  "parents": [
+    "43a184ad481e2346f03f1398af74c04a3bb46e4d"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Dec 15 18:04:53 2016 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon Feb 13 19:14:18 2017 +0000"
+  },
+  "message": "Fix in returning end of bitstream error for MBAFF\n\nIn case of MBAFF streams, slices should terminate on\neven MB boundary. If bytes are exhausted with odd number\nof MBs decoded for MBAff, then treat that as error.\n\nBug: 33933140\n\nChange-Id: Ifc26b66ff8ebdb3aec5c0d6c512e4cac3f54c5b7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bbb61109ef478ce723a121e9f612b9ccb497026c",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_islice.c",
+      "new_id": "768bc74e0fc8f77d96e3fed2044ff16324b19147",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_islice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a33a03f481222d28019df1510ecf328c8c5eae2a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "bd7eacbf22f46eb4b81078a438836871d0a0ce99",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ab39f6cb7afc48584da3c59d8e2a5e1ef121aafb",
+  "tree": "f5ee6e23b4a3e056465becb618ea2deed380742a",
+  "parents": [
+    "419c6b327562afc9af3bed5e92741e5bf190ec30"
+  ],
+  "author": {
+    "name": "akirilov",
+    "email": "akirilov@google.com",
+    "time": "Tue Oct 16 14:52:05 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:04 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Trust session id only if started with ACTION_CONFIRM_INSTALL\n\nInstallStart was reading sessionInfo whenever the starting intent had\nthe extra EXTRA_SESSION_ID. This could happen even if an external app\ninserted a valid session id into its own REQUEST_INSTALL_PACKAGE intent.\nThis allows apps to potentially spoof the calling package.\n\nTest: Existing tests pass:\natest GtsPackageInstallTestCases GtsNoPermissionTestCases \\\nGtsNoPermissionTestCases25\n\nBug: 112031362\nChange-Id: Icdab1deeaf6b0afe7a61709cd87305336c467e33\n(cherry picked from commit 8af3d62da1a56d8cc3e7c915516cbc4ce8642099)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d06b6f55e14908ea0d12385c51b55ce7ee08c337",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/InstallStart.java",
+      "new_id": "4292737387cf242587c9026390f8d7694da5c46e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/InstallStart.java"
+    }
+  ]
+}

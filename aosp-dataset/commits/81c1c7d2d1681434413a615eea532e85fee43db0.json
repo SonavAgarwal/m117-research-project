@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "81c1c7d2d1681434413a615eea532e85fee43db0",
+  "tree": "29992b1442dc7f72cf6457af5666ea5b77ad9969",
+  "parents": [
+    "a06030f50ac3dec41b6c69a80f9c6162fd36d2fb"
+  ],
+  "author": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Fri Jul 31 19:47:06 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:01 2020 +0000"
+  },
+  "message": "Pass whether the local device is an atv device to the native layer to\ndetermine whether to include pairing dialogs for justworks and\nencryption only LE pairing\n\nTag: #feature\nBug: 157038281\nTest: Manual\nMerged-In: Ib7575ff3d5f7e0c208743eff652440f7947dfed7\nChange-Id: Ib7575ff3d5f7e0c208743eff652440f7947dfed7\n(cherry picked from commit 862adbe35772e3edc82f1ef142f470d0fd1d9557)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "462f1959b1ab178c0e2c5b92d9e7eee971ca60e2",
+      "old_mode": 33188,
+      "old_path": "jni/com_android_bluetooth_btservice_AdapterService.cpp",
+      "new_id": "3e4d272898018f90a79c4e7e0cd276e0fc1a5bad",
+      "new_mode": 33188,
+      "new_path": "jni/com_android_bluetooth_btservice_AdapterService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a5bf8e0b08c5c16b96746a1912cd204f8803b66f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/btservice/AdapterService.java",
+      "new_id": "6c5a7e6f34f3ea04a62c131a4196516d5310eee3",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/btservice/AdapterService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a7282f5b6920bf2c2877f744233243e305920ed5",
+      "old_mode": 33188,
+      "old_path": "tests/unit/src/com/android/bluetooth/btservice/AdapterServiceTest.java",
+      "new_id": "b82e5546d492b58e911cac1ea53ab76f6b0a0e8c",
+      "new_mode": 33188,
+      "new_path": "tests/unit/src/com/android/bluetooth/btservice/AdapterServiceTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "05a9100801d1c7d496c2993d470b6ef7f6198b92",
+      "old_mode": 33188,
+      "old_path": "tests/unit/src/com/android/bluetooth/btservice/ProfileServiceTest.java",
+      "new_id": "4648e1f9dfd342f5870aa00a381c821c3a9d9887",
+      "new_mode": 33188,
+      "new_path": "tests/unit/src/com/android/bluetooth/btservice/ProfileServiceTest.java"
+    }
+  ]
+}

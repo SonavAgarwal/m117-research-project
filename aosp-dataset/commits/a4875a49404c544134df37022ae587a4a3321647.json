@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a4875a49404c544134df37022ae587a4a3321647",
+  "tree": "b61df87fb03e135bf569f730d0f058416acf1dc2",
+  "parents": [
+    "5a9925784a4a34811ae29608b67dee4a580c226b"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Tue Mar 14 14:46:15 2017 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Wed Mar 22 15:23:54 2017 -0700"
+  },
+  "message": "resolve merge conflicts of a3ee2e35 to nyc-dev\n\nBug: 34946955\nChange-Id: Ieff690edd3aa527a0639483ec8e1e3b661f0ecc4\nMerged-In: I0b6f50dee05a58db8c043b4d01fb58c9acbeede9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dab56a24d3571ac5fe15f30d84316b3303b5a743",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_main.c",
+      "new_id": "3c48d6974376ba6808db7344d85a39e6d603f9e9",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_main.c"
+    }
+  ]
+}

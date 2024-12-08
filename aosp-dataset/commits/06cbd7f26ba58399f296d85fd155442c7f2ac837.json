@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "06cbd7f26ba58399f296d85fd155442c7f2ac837",
+  "tree": "479c43cd53eeb9f8118f1fe18672ab6dc9dbc97c",
+  "parents": [
+    "3f9821128abd66c4cd2f040d8243efb334bfad2d"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Tue Jun 20 14:26:43 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:52:05 2017 +0000"
+  },
+  "message": "37742976 - Catch bad gifs\n\n* A security researcher crafted a gif that would cause the Android\nBitmap code to throw an NPE. That would cause messaging to crash when\ndecoding the NPE. Catch the NPE.\n\nTest: manually tested the \"crash.gif\" attached to the bug. Stepped\nthrough the debugger to verify we\u0027re catching the NPE and logging\nthe attempt. Verified normal gifs still work.\n\nBug: 37742976\n\nChange-Id: Iab814d5b0b514bed0cecddd9a76f1fc095f90892\n(cherry picked from commit 3671fd94ae1aad5c51d0730066e7f0c7b4c893ce)\n(cherry picked from commit e0f247e3994869567288f8057d9e3afec1dd2fe6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d50cf4753cbcc51cda8762d0f6eee707c2e83b28",
+      "old_mode": 33188,
+      "old_path": "src/com/android/messaging/datamodel/media/GifImageResource.java",
+      "new_id": "6801165cc3ba8df129dabd46794bb777357d0f26",
+      "new_mode": 33188,
+      "new_path": "src/com/android/messaging/datamodel/media/GifImageResource.java"
+    }
+  ]
+}

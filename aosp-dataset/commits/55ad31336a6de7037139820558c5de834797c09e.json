@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "55ad31336a6de7037139820558c5de834797c09e",
+  "tree": "99c78fbf2a71c8afe3140611cb97e1de3d4b53a1",
+  "parents": [
+    "226fe6c926409f3b64b07f0b74e92e34cc0b515e"
+  ],
+  "author": {
+    "name": "zoran.jovanovic",
+    "email": "zoran.jovanovic@sonymobile.com",
+    "time": "Thu Apr 16 11:03:16 2015 -0700"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Thu Apr 30 21:50:45 2015 +0000"
+  },
+  "message": "SkScaledBitmapSampler: fix memory overwritten\n\nCherry-picked from https://codereview.chromium.org/1085253002\nin Skia.\n\nMemory will be overwritten while downsampling some\ninterlaced gif images, most commonly with odd sizes,\nwhen index of destination row stores in the current\nline computed from GifInterlaceIter meets:\n\n X is an integer in [0..height-1]\n   and\n (X \u003c height)\n \u0026\u0026 ((X - sampleSize/2) % sampleSize \u003d\u003d 0)\n \u0026\u0026 ((X - sampleSize/2)/sampleSize \u003e\u003d height/sampleSize)\n\nSigned-off-by: Lu Tong \u003clu.x.tong@sonymobile.com\u003e\n\nBUG\u003dskia:\n\nReview URL: https://codereview.chromium.org/1085253002\n\nBUG:20723696\nChange-Id: I2cca83a2a5c39b5a497f36b40724262b438ead8b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d78502d2bbd6a3727de5081fcdf3652cfcd6ba45",
+      "old_mode": 33188,
+      "old_path": "src/images/SkScaledBitmapSampler.cpp",
+      "new_id": "2b12bc33e9cd2b0e60e49b2d9400e8ecc3943329",
+      "new_mode": 33188,
+      "new_path": "src/images/SkScaledBitmapSampler.cpp"
+    }
+  ]
+}

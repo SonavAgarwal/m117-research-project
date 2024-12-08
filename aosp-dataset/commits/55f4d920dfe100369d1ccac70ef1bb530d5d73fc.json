@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "55f4d920dfe100369d1ccac70ef1bb530d5d73fc",
+  "tree": "7a8c6aa8d904570307d0ca6dff6220f0eeb1cea0",
+  "parents": [
+    "8a0734cad0c874b539181f62b1f81ce01d4a350f"
+  ],
+  "author": {
+    "name": "Nick Desaulniers",
+    "email": "ndesaulniers@google.com",
+    "time": "Thu Oct 10 14:04:47 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:16:43 2019 +0000"
+  },
+  "message": "[system][bt] fix -Wdangling-gsl\n\nBtAddrString() returns a std::string. It\u0027s not safe to chain a call to\nc_str() as otherwise the returned std::string is a temporary, and the\nexpression evaluates to an immediately dangling pointer.\n\nBug: 139945549\nBug: 142558228\nTest: mm\nChange-Id: I30972458abcc563b24ee0d80b289c3efd6c3e04d\nSigned-off-by: Nick Desaulniers \u003cndesaulniers@google.com\u003e\n(cherry picked from commit 20ed45d6339079645ef9fe576b894e9497684c93)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cc127c33b4d9ac32f5ae08c9f64d6a8e0d1be3d0",
+      "old_mode": 33188,
+      "old_path": "service/low_energy_client.cc",
+      "new_id": "cb8bcf1329ec8cdb7726dd7e1641425bd551edc2",
+      "new_mode": 33188,
+      "new_path": "service/low_energy_client.cc"
+    }
+  ]
+}

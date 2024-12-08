@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c46491e7da14c620fbe490d50b61aa65f256c5d3",
+  "tree": "70405fe412e5c2dcd13be088535b11f43dad3c9f",
+  "parents": [
+    "e752ae55522f2657bb26bd2351ef879a73fa6efb"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Mon Aug 31 18:28:41 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:38 2020 +0000"
+  },
+  "message": "DO NOT MERGE Fix NPE in executeDeletePackageLIF.\n\nThe parameter allUserHandles may sometimes be null.\n\nChange-Id: Ie58cabe4bb1cae7173ad1d027e993a0b82a9f1ef\nBug: 167233572\nBug: 140256621\nTest: atest EphemeralTest\n(cherry picked from commit 01e0f4813af8502faaa683d55dbbc024b3080741)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7a38a4533572412d9f4e2d454b73676143364d64",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "c3c655d632e742f770b22d20f527719cc2a0f28d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

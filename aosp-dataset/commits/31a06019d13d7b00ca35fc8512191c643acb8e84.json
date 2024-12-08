@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "31a06019d13d7b00ca35fc8512191c643acb8e84",
+  "tree": "a23242284ff763face432df28707e6bf837dcf88",
+  "parents": [
+    "203725e4d58e16334d84998c1483c374f541ed9f"
+  ],
+  "author": {
+    "name": "Svet Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Thu Dec 15 14:51:17 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:14 2016 -0800"
+  },
+  "message": "[DO NOT MERGE] Fix vulnerability in MemoryIntArray - fix build file\n\nbug:33039926\nbug:33042690\n\nChange-Id: If0431b77ec546c72f8cc25bb605a851572bb22a6\n(cherry picked from commit c3db570a0064b2dcbe806ddb5de3f678623612ca)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d4a6493880f249891ac46aa6128df35bbced7439",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/Android.mk",
+      "new_id": "4013c4ce42487a691c6f604e0bd311b2ce465f63",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/Android.mk"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "72886b6964f6539908c8e127cd13c3091d2e5a8b",
+  "tree": "1a87890098afd02a882b4c0ae3a2a8c5644306df",
+  "parents": [
+    "464eb1f64697d1ab3f1726b6ce091fd46f306511"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Dec 05 13:36:19 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:46 2016 -0800"
+  },
+  "message": "Decoder: Fix in checking for valid profile flags\n\nApart from Baseline, main and high profile, only extended profile\nis supported provided, constraint_set0_flag or constraint_set1_flag are set to 1\n\nBug: 31999646\nChange-Id: I3b62069efc49e222a7126fba0805fa9124aac8f2\n(cherry picked from commit d7eee555dc124a4ab7977f073c6b4a76c346f760)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e2662061003daec8590a031e508aca4045a56472",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_defs.h",
+      "new_id": "0682339b496e93df95d806432451da180ee9e1a9",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_defs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6cd61f2086f268b1ffa3f45bc37d943dffe4512",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "c687fa131fffeaa03411cc03626a6820d934b52a",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    }
+  ]
+}

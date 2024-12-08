@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c37f7f6fa0cb7f55cdc5b2d4ccbf2c87c3bc6c3b",
+  "tree": "b29d7f3b35fcb42b4d696b2a1a68399e2758e52c",
+  "parents": [
+    "deba0610c89d54390c9d2d0a0f3b79fd7679779c"
+  ],
+  "author": {
+    "name": "Neel Mehta",
+    "email": "nmehta@google.com",
+    "time": "Fri Aug 14 17:38:48 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Tue Aug 18 02:12:26 2015 +0000"
+  },
+  "message": "Fix for memory corruption in ID3::removeUnsynchronizationV2_4().\nBug: 23227354\n\nChange-Id: Iaa36cfda4fd84ca7e039f56086fd61b4118020db\n(cherry picked from commit 77e23413a539df16503e356bd4df4a952f3abc47)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c3fb9bdc4da42f7dce004ee71d97604161b65fcf",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "751b81009990d997534f6e0bcadacbb4ed561da0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

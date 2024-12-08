@@ -1,0 +1,246 @@
+)]}'
+{
+  "commit": "fa6053736808e999483ca0a21fbe16a3075cf2c8",
+  "tree": "44865f842035b9548435aedbd895817eacd2b7c2",
+  "parents": [
+    "a642e3543a4ffdaaf1456768968ae05a205ed4f4"
+  ],
+  "author": {
+    "name": "Colin Cross",
+    "email": "ccross@android.com",
+    "time": "Fri Apr 07 10:50:33 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:37 2017 +0000"
+  },
+  "message": "Merge remote-tracking branch \u0027aosp/upstream-master\u0027 into master\n\nBug: 32096780\nTest: mmma -j external/skia\nChange-Id: Ia60d7b9984c1007e82bfea10c1a6df32418100d5\n(cherry picked from commit bd503d67f403ca1e1d33226626c494d5513701e4)\n(cherry picked from commit d7c3ad1d95c38b33c49a462f2647dc10f1fff7b7)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9961600b0981c0de9ad9bc84147b8ce1b18cb9a1",
+      "new_mode": 33188,
+      "new_path": "README.md"
+    },
+    {
+      "type": "modify",
+      "old_id": "14f5494920b1730b2d837c056b8aa51517dfa84e",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sample/chromium/font_subsetter.cc",
+      "new_id": "0f9bc1341dbd096bf354d2833a864143b4647c29",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sample/chromium/font_subsetter.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "07b1b5b0fa9bad3c222eab9e32452285a6e9712b",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sample/chromium/font_subsetter.h",
+      "new_id": "c8e65e227df301ea2a7d667952fdaf6727062b03",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sample/chromium/font_subsetter.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "528e33612afed3c22f97f4f3672f17a3f4d52cd4",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sample/chromium/subsetter_impl.cc",
+      "new_id": "c53e60729f54f3f62c75346a5035b1d2fea4ef58",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sample/chromium/subsetter_impl.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "ffbf408f9c7f6b9c76ead11322be54e14300c206",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sample/chromium/subsetter_impl.h",
+      "new_id": "738a8d4da8f92ef9aad0c6cfac1660a75909f1f1",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sample/chromium/subsetter_impl.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f7cd110eaf34c50de1f557334815d3a061341a6",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sample/subtly/font_assembler.cc",
+      "new_id": "4717512a5c115ebefe0d9a59e58e4d531420a72e",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sample/subtly/font_assembler.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "915a40c035710d095b8e30762c3b5ddc0fde02c0",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/byte_array.cc",
+      "new_id": "57f9eede907fbfc3bae5f6242a7c8abcc79e7793",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/byte_array.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d2b95eac1b84bbc026e48c26324f7b2e7aa823e2",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/font_data.cc",
+      "new_id": "95bee3e923d12cdda80ba67963afb74c13c2f6db",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/font_data.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d02e8b75db2bc57b5137cd20e2fb1bb93187607f",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/font_data.h",
+      "new_id": "e0e7e7995dfbf29239dba97dffb717b5f1b57f70",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/font_data.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "06d783f2e331a560f34c312e22d1bb45329e2d78",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/readable_font_data.cc",
+      "new_id": "07a0db68e4dd983563363404e9d216d7d76329dc",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/readable_font_data.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "b43c62604156fccff00f6b419d3e6ea82208a238",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/readable_font_data.h",
+      "new_id": "37a0918ef5e9ceba263417f195a633bd8b7fc990",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/readable_font_data.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f6f72f533eb59f957d3f48fbd780f4ee2acedba",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/data/writable_font_data.cc",
+      "new_id": "073e9dff10e37c23ae38cfbb637035188b917d6d",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/data/writable_font_data.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "347e0c13e972e0cecb741d8eecb5d10a64f45c6b",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/font.cc",
+      "new_id": "ca35048ef52779ab502e1b31c3b9dfe2dd119d17",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/font.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "975e8cc52c93cab00b31ae321c6cfa864b413af3",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/font.h",
+      "new_id": "2220adb39d833997726959a9c8c4244befd1bb4a",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/font.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5bcb434af05af9b0e5da182a763cb9baf2e2ad15",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/port/file_input_stream.cc",
+      "new_id": "dfe9a7b4e32e363b39131fb6c60bcaf01811231b",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/port/file_input_stream.cc"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1d9e31956d9645ca190a1eb64487077884b2b54e",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/port/logging.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "56ee81e5dd904624b6dcac92ba749cc6dce0686b",
+      "old_mode": 33261,
+      "old_path": "cpp/src/sfntly/port/memory_input_stream.cc",
+      "new_id": "f6f2b9b4e94dda0132b61f21e0c6883954e01c9e",
+      "new_mode": 33261,
+      "new_path": "cpp/src/sfntly/port/memory_input_stream.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "eed51622d7f702d4a9b43e55f3b1388fd93887c1",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/port/refcount.h",
+      "new_id": "6353b08ca13a4446a515d1364f03c117877e943d",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/port/refcount.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "20a5ba8a892403dc2b29fbfdb4829d07dfab68ea",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/port/type.h",
+      "new_id": "9f82a5aa5abb88b77693297eee3233263ac32641",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/port/type.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "60015ca9540ea53daa2520aac560fc145f86e2b0",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/core/font_header_table.cc",
+      "new_id": "a848afdbf646f491867fa7efd12ce1ca31077e79",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/core/font_header_table.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "841955b42385edbc7f32b7b134644b2ff97f613e",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/core/font_header_table.h",
+      "new_id": "4851775dc068f17186c11e029cd1b8f8b90145e2",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/core/font_header_table.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d2f64f0825b1f04499eecd0ee5bdf08432a0fc0",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/core/name_table.cc",
+      "new_id": "c9fe46888b60f350e1c70b6133ec30a1fb17cc79",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/core/name_table.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "7ca9d9a4fd17ac9d5e99ec45f891fa4140807fac",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/core/os2_table.cc",
+      "new_id": "1fef30973cc19a01f50c1e77c6cbcd2db0a1c7e8",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/core/os2_table.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "b5057046385fb757324c162bbd1ebaf880e4ac54",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/table_based_table_builder.cc",
+      "new_id": "51a5a3baa0c773c54da272dad142a21072496990",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/table_based_table_builder.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "f38fac5c5c4f9f8294abfd8ce7de813c39f64577",
+      "old_mode": 33188,
+      "old_path": "cpp/src/sfntly/table/truetype/glyph_table.cc",
+      "new_id": "0c1e841fee9041cbfd761ef6236817c93fb1e915",
+      "new_mode": 33188,
+      "new_path": "cpp/src/sfntly/table/truetype/glyph_table.cc"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+)]}'
+{
+  "commit": "67f9bd2acfd17f64a33ae8ad14806a0c93b921d8",
+  "tree": "ab336c3c1d26d15757fbf875cfe1b0c1c2b4dd0f",
+  "parents": [
+    "6029322ad78e0120cce18a01ae74e082c0e542fe"
+  ],
+  "author": {
+    "name": "Ben Wagner",
+    "email": "bungeman@google.com",
+    "time": "Fri Mar 10 13:08:15 2017 -0500"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Fri Oct 06 13:46:41 2017 +0000"
+  },
+  "message": "Fix SkFILEStream.\n\nCherry-picked from upstream Skia:\n4d1955c43aaab045511b74a495dfbea4ef0057c5\n\nDifferences:\n- include \u003cmemory\u003e instead of \u003cmemory.h\u003e, to compile.\n- re-include \"SkString.h\", so we don\u0027t have to fix downstream\n  clients that do not IWYU.\n- Stop building SkRTConf and its test. SkRTConf uses code that\n  this patch deletes in SkOSFile. SkRTConf itself is deleted in\n  upstream\u0027s 4e44efe50474d4eebcb30b762e784b3ef2126750. For\n  simplicity in cherry-picking further back this CL does not\n  delete the code, but simply disables it by not building it.\n  (It is only used if SK_DEVELOPER is defined anyway, which\n  is not the case on Android.)\n\nBug: 65646012\nBug: 65426286\nTest: I863385d797d7a6c54e37904b4f023ff694e01785\n\n(Original) Change-Id: I8c66e4e3e857227aed3d0bc497982f4c0d96d917\nMerged-In: I220ec2e2e83f4a002846e89dce855ed5926ca4a1\nMerged-In: Ia36e16282eaf294709ce41f57a0f40fe887c1546\nMerged-In: Ief1b80a012affeda2068b70405ab1a9f08b36867\nReviewed-on: https://skia-review.googlesource.com/9498\nCommit-Queue: Ben Wagner \u003cbungeman@google.com\u003e\nReviewed-by: Leon Scroggins \u003cscroggo@google.com\u003e\n\nConflicts:\n    include/core/SkStream.h\n    src/core/SkStream.cpp\n    src/pdf/SkPDFConvertType1FontStream.cpp\n    src/ports/SkImageEncoder_WIC.cpp\n    src/utils/SkShadowUtils.cpp\n\nChange-Id: Ib7aaf367f68f8764147887d858f65ee14fa7a1d9\n\nExempt-From-Owner-Approval: I should be an OWNER\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "77c258aa062737f32581ff364c5a93cc844af150",
+      "old_mode": 33188,
+      "old_path": "Android.mk",
+      "new_id": "4dbd17bb635ceaa4b70587aa2fd1a402f0d76242",
+      "new_mode": 33188,
+      "new_path": "Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "e51da0fc6e64e1eceaa3ade59681af92a82a9ff0",
+      "old_mode": 33188,
+      "old_path": "dm/Android.mk",
+      "new_id": "f362c99aca133f378772023a108c4fc9e3f39738",
+      "new_mode": 33188,
+      "new_path": "dm/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "f977327e2552d825c4d8536f586ccdd9e8d0c7b1",
+      "old_mode": 33188,
+      "old_path": "include/core/SkOSFile.h",
+      "new_id": "cb775e2bc1eefb89817e75930c07c6fcb74ceefc",
+      "new_mode": 33188,
+      "new_path": "include/core/SkOSFile.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4502416fd964e5c24134d6a721df393ee08c3efe",
+      "old_mode": 33188,
+      "old_path": "include/core/SkStream.h",
+      "new_id": "265fb641c7fe9b6823d7d9dedfee7e31313fe5b0",
+      "new_mode": 33188,
+      "new_path": "include/core/SkStream.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9a3f248af5860641bb91e17d5f416ac1b2465644",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkIcoCodec.h",
+      "new_id": "5a3740d2c09b7ef07c20f5be0bb08ddbe81790db",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkIcoCodec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "320448a30e27acf2c3ce381c99d72b4d5d60ce14",
+      "old_mode": 33188,
+      "old_path": "src/core/SkPath.cpp",
+      "new_id": "9eb5cd184b5cf8006897499dae32e3b0b86428be",
+      "new_mode": 33188,
+      "new_path": "src/core/SkPath.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9529308e8689ff135aa77e24dddb7639ec97a812",
+      "old_mode": 33188,
+      "old_path": "src/core/SkStream.cpp",
+      "new_id": "4f0076874750555bc7a316fb1460385c2c51d1b0",
+      "new_mode": 33188,
+      "new_path": "src/core/SkStream.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "396de68bbe8eb4709232aad53951ee4f3a51b162",
+      "old_mode": 33188,
+      "old_path": "src/ports/SkOSFile_posix.cpp",
+      "new_id": "48b5b95ad37fd5038ae037f0173912b38355943d",
+      "new_mode": 33188,
+      "new_path": "src/ports/SkOSFile_posix.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "915b87b67bdc43cc4e3b8f5aae3166d59868b25e",
+      "old_mode": 33188,
+      "old_path": "src/ports/SkOSFile_stdio.cpp",
+      "new_id": "ee997e9db95a24057491c77791788bf9c2645da7",
+      "new_mode": 33188,
+      "new_path": "src/ports/SkOSFile_stdio.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6bdf9ab1637ed8c117dc5b40ec64d8d20f4b99f0",
+      "old_mode": 33188,
+      "old_path": "src/ports/SkOSFile_win.cpp",
+      "new_id": "414393a1d4736f5a744f6f52b72e2ad333942bef",
+      "new_mode": 33188,
+      "new_path": "src/ports/SkOSFile_win.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c96cbcdae5ff11ddbf2285f9f2a862337d85a44d",
+      "old_mode": 33188,
+      "old_path": "tests/PathOpsExtendedTest.cpp",
+      "new_id": "9e2dfbe2aefa45816d3ca49bdfb5c90c338d983d",
+      "new_mode": 33188,
+      "new_path": "tests/PathOpsExtendedTest.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a3df8d71bb4dde6ab18d453b94be83dc35032471",
+      "old_mode": 33188,
+      "old_path": "tests/StreamTest.cpp",
+      "new_id": "031cc1a623fceefd9fdbbfd40a1990087253bfbf",
+      "new_mode": 33188,
+      "new_path": "tests/StreamTest.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f49e12693b804174cac086148bbd41ea07b94946",
+      "old_mode": 33188,
+      "old_path": "tools/chrome_fuzz.cpp",
+      "new_id": "ff14b5b30776e3a66369eda83e967eace496df7a",
+      "new_mode": 33188,
+      "new_path": "tools/chrome_fuzz.cpp"
+    }
+  ]
+}

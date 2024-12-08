@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "938a5cd87c38bf35d15ffa3414c3a74faecb8bf8",
+  "tree": "fc7ca50ac61aeca461d19a341797d4ebd33db64e",
+  "parents": [
+    "775a5e72b34b70ff92d61d8bcc47c6bde663f02e"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Tue Oct 06 14:48:27 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:08:48 2020 +0000"
+  },
+  "message": "Fix a security issue in sdp_server.cc\n\nBug: 169342531\nTest: POC\nChange-Id: I0e8cdb9a00184f62d11fb06bc30f07b2a35bc49e\n(cherry picked from commit d7573f4fa9007ab7750edfc56305eea97c525cdb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "44cc7bad5929565545ca72759b3303341de5185d",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "2009ddae1ba7b05186e52b7599e6e27419349047",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

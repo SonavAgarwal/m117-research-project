@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4cebe6f1f01a34546b3b843b5267619a61bd7d39",
+  "tree": "6c209731be4af124baae2f8394bc65d2f9351e41",
+  "parents": [
+    "ac104f5121944a74aa012b04a3c3085e5ecc8bbf"
+  ],
+  "author": {
+    "name": "Louis Dionne",
+    "email": "ldionne@apple.com",
+    "time": "Wed Sep 04 12:48:32 2019 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:55:53 2019 +0000"
+  },
+  "message": "[libc++] Add `__truncating_cast` for safely casting float types to integers\n\nThis is needed anytime we need to clamp an arbitrary floating point\nvalue to an integer type.\n\nThanks to Eric Fiselier for the patch.\n\nDifferential Revision: https://reviews.llvm.org/D66836\n\ngit-svn-id: https://llvm.org/svn/llvm-project/libcxx/trunk@370891 91177308-0d34-0410-b5e6-96231b3b80d8\n(cherry picked from commit c9ac8d533010d8915bcfdecab891fb451f71ce74)\n(cherry picked from commit 4561f55204960c0b3bc4594089ddcf56e5655cad)\n\nBug: https://bugs.chromium.org/p/chromium/issues/detail?id\u003d994957\nBug: http://b/139690488\nChange-Id: I300b6565137b51bb3051bb629ec3316edf7f71e9\n(cherry picked from commit 34d1dd71fa4c096107dde636e5c723c32a20d387)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3cc72aa2791e38666ab9ccac29546dd4869923fe",
+      "old_mode": 33188,
+      "old_path": "include/math.h",
+      "new_id": "9dfbb0e78cf2f978fddbdd2f7960625e58199495",
+      "new_mode": 33188,
+      "new_path": "include/math.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "cb3336f52ba2077c0d93b8e69cffd3e67d7fa80b",
+      "new_mode": 33188,
+      "new_path": "test/libcxx/numerics/clamp_to_integral.pass.cpp"
+    }
+  ]
+}

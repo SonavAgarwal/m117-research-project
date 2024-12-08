@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f0afcf1943a1844e2a82ac3c5ab4d49427102cd1",
+  "tree": "a7d48dc00a2bc341d90d713e2fd63457ba359c95",
+  "parents": [
+    "327496c59fb280273e23353061980dd72b07de1f"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Apr 20 09:26:54 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:20 2017 +0000"
+  },
+  "message": "Adding Error Check For PictureStructure Param\n\nChecking to ensure the picture structure read in dec_pic_coding_ext is\nvalid. If invalid, decode should not procede because the buffer obtained\nto decode a picture with invalid picture structure will not be freed.\n\nBug: 37273673\nChange-Id: I1469bb7b5daeab285ad55dcb77f54d0cb5d19dad\n(cherry picked from commit f7546c1710348b975e204b07317a7bfb3c9c69de)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "770f4f2c3603a682eb79af79584b1eeae32149d4",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "4a8408647028e3ace1f8f038e06b3718a67ad21f",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "37345554fea84afd446d6d8fbb87feea5a0dde3f",
+  "tree": "18bc7275acfac00b0f2a294c2180f0203408e686",
+  "parents": [
+    "16fa990ce15cae5dcf3fac059cd18264f50881b2",
+    "3654ad0da5578f78fcf80958589f6995fe284d61"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Feb 14 13:49:07 2017 -0800"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Feb 14 13:49:16 2017 -0800"
+  },
+  "message": "resolve merge conflicts of 3654ad0 to mnc-dr-dev\n\nBug: 33818508\nBug: 34013472\nChange-Id: I2e99cbceba1c00555d624e8975522725e362362b\n",
+  "tree_diff": []
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "09ed70fab1f1424971ccc105dcdf5be5ce2e2643",
+  "tree": "7cba0792014f79748c0fcc7c950cb4d6cc963403",
+  "parents": [
+    "13ff64c2db84f4e7cac3396700e333b48c42c7ee"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Sep 14 13:55:23 2015 -0700"
+  },
+  "committer": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Sep 14 13:55:23 2015 -0700"
+  },
+  "message": "Fix heap data leak vulnerability\n\nbug: 23600291\nChange-Id: I7979e9e25ada01c13775be8580d433a8b4ce4ffe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "db41e0bd708ceea7023997f04c90a76ed21979b2",
+      "old_mode": 33188,
+      "old_path": "drm/common/IDrmManagerService.cpp",
+      "new_id": "c235201796607e65476cecac8326c14b087f7dc3",
+      "new_mode": 33188,
+      "new_path": "drm/common/IDrmManagerService.cpp"
+    }
+  ]
+}

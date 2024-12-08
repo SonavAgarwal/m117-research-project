@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "19814b7ad4ea6f0cc4cab34e50ebab2e180fc269",
+  "tree": "3b7f03a727aae374767943083153945d21b2be89",
+  "parents": [
+    "0340381cd8c220311fd4fe2e8b23e1534657e399"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Jan 16 11:26:26 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fixed DoS in header decode when no PPS is present\n\nWhen the input does not contain PPS and decoder is in header decode\nmode, decoder was entering an infinite loop.\n\nBug: 33621215\n(cherry picked from commit 33e1b190d6db09bd72a9f0f51acef4b14eabd6ff)\n(cherry picked from commit 2cd2f7a33535f29c87a1952e0d4b43a80b6f1f3c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4a81465b0f437c148374ffc0393809642095ed9b",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "f1a0ea09a99e8df720bb534ecf0615f61313e5e9",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

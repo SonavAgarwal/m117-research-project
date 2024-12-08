@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8b5fd8f24eba5dd19ab2f80ea11a9125aa882ae2",
+  "tree": "6e4413e441471558f747e2c21fc16cb414d2cfa0",
+  "parents": [
+    "1f0ab0b089e357da4ecfec4f105726bfc23af5a0"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Apr 26 16:36:03 2016 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Feb 14 04:41:02 2017 +0000"
+  },
+  "message": "Decoder: Treat first slice in a picture as part of new picture always\n\nThis is needed to decode streams with consecutive IDRs.\n\nBug: 34097231\nTest: successful run of POC in security bug\nChange-Id: Ib737a4ef4b8c5bb7a57c90292102dd28af0615fe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6ac55aa7983d2ce54df56ba9f290ceda2f7a0d04",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "c76e186ab0fbab22e00c16b0edf5bb4a75ce12f5",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

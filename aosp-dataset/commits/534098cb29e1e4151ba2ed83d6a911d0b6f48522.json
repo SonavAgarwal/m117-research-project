@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "534098cb29e1e4151ba2ed83d6a911d0b6f48522",
+  "tree": "753ffaa631a5cbc35b9b4935057418afea9faa84",
+  "parents": [
+    "edefe53f8b5ccc2339bec2d8fd9c7516aeb2d319"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Tue Nov 29 10:29:39 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:24 2016 -0800"
+  },
+  "message": "Fix security vulnerability: potential OOB write in audioserver\n\nBug: 32705438\nBug: 32703959\nTest: cts security test\nChange-Id: I920a74cb0a809c623ddf802f3d2808f0f1bd537c\n(cherry picked from commit 3f9a6d3bd97966999fa35b9423b8c0042c8198b3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e49980d1e53aad6c763f7b1f6d8173e4d6292d63",
+      "old_mode": 33188,
+      "old_path": "include/hardware/audio_effect.h",
+      "new_id": "8a88414a4c0c9c411d3078a1a460be3ad5ea32f9",
+      "new_mode": 33188,
+      "new_path": "include/hardware/audio_effect.h"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3002f27a6f54b2cce5fb3cb3693167d37fcf432b",
+  "tree": "7f10ccdf17d34303610301d1d168461b6bc5b77b",
+  "parents": [
+    "343e5f998666f067305ba310a28e56b84de41a04"
+  ],
+  "author": {
+    "name": "Fan Zhang",
+    "email": "zhfan@google.com",
+    "time": "Thu Feb 14 16:07:37 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:02:41 2019 +0000"
+  },
+  "message": "Do not allow draw on top for default sms picker.\n\nFixes: 120484087\nTest: manual\nChange-Id: I4be265565678302fad207839216d5cd65dcb6e94\nMerged-In: I4be265565678302fad207839216d5cd65dcb6e94\n(cherry picked from commit 9d46e1fdfe1b70618c5a92c3e3461a4b379db236)\n(cherry picked from commit 95d0fb7f4911403844666632ece42467f60ad753)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e4b49eedd99c0f629b0af3eae29289fa5787b882",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/SmsDefaultDialog.java",
+      "new_id": "e8efa98adf8368269d9e2bfdccbc81fa22bec1c5",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/SmsDefaultDialog.java"
+    }
+  ]
+}

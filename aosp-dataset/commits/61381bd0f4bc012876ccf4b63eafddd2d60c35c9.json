@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "61381bd0f4bc012876ccf4b63eafddd2d60c35c9",
+  "tree": "c50a58fbb17063bd0d3ded9243192dd41ae4d17f",
+  "parents": [
+    "c2208f2a3098410c5a4c79ad6bd4b6d7e1c0b03f"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Wed Aug 15 14:35:00 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:16 2018 +0000"
+  },
+  "message": "Break audio element loop in case element_count becomes too large.\n\nBug: 112891564\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\nChange-Id: I35f02d23c0cfd620088291a52d9996a0d5a17199\n(cherry picked from commit 3347cfb91a7ecabf5800d72e936f04ce44752bf3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b8b132740c1d8526187ddd31384744e84a3a07b6",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdecoder.cpp",
+      "new_id": "362e0b6d10134f845a0eedd90bb87e0ede1d68c8",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdecoder.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e248db02fbab2ee9162940bc19f087fd7d96cb9d",
+  "tree": "62facf38819d5bbf83c4d888cb81844549443f79",
+  "parents": [
+    "60547808ca4e9cfac50028c00c58a6ceb2319301"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Fri May 13 11:48:11 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:16 2016 -0700"
+  },
+  "message": "Fix security vulnerability in libstagefright\n\nbug: 28175045\nChange-Id: Icee6c7eb5b761da4aa3e412fb71825508d74d38f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9cb6e86545645fec2003ed4a4a6c77a62ff8c9ef",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/DRMExtractor.cpp",
+      "new_id": "e2bc89c5443a75b4c65eb9ac7738a46e86d9ab7d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/DRMExtractor.cpp"
+    }
+  ]
+}

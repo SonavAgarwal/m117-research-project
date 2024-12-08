@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a155de4d70e0b9ac8fc02b2bdcbb2e8e6cca46ff",
+  "tree": "723717d6cd57d2c642d1d36c99d5903700c63535",
+  "parents": [
+    "321ea5257e37c8edb26e66fe4ee78cca4cd915fe"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Nov 15 17:19:58 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:57 2016 -0800"
+  },
+  "message": "Effect: Use local cached data for Effect commit\n\nTest: POC, Cts Effect, BassBoost, EnvReverb, Equalizer,\nTest: LoudnessEnhancer, PresetReverb, Virtualizer, Visualizer\nBug: 32220769\nChange-Id: Iea96ba0daf71691ee8954cca4ba1c10fe827626e\n(cherry picked from commit dd79ccda92c1e9b982b2d0f8877d98e5258fbb73)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bb3067f27bd49ef44ab0321d96913b0756506d6b",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "2f3c1837990535ff3a4b8fe702aa560045e9c6e5",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "866dc26ad4a98cc835d075b627326e7d7e52ffa1",
+  "tree": "54c57c23870e0246066e21e41d21c1168964ec17",
+  "parents": [
+    "335702d106797bce8a88044783fa1fc1d5f751d0"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Jun 28 18:26:10 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:26 2016 -0700"
+  },
+  "message": "Add bound checks to utf16_to_utf8\n\nTest: ran libaapt2_tests64\nBug: 29250543\nChange-Id: I1ebc017af623b6514cf0c493e8cd8e1d59ea26c3\n(cherry picked from commit 4781057e78f63e0e99af109cebf3b6a78f4bfbb6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b7014454771c5958591dd52daaa1986028991330",
+      "old_mode": 33188,
+      "old_path": "tools/aapt/Android.mk",
+      "new_id": "2a490d1097ef5977c4a22d4ab575654f53fe1143",
+      "new_mode": 33188,
+      "new_path": "tools/aapt/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b0c71d93bb5d09b8dac6c99242d86b582d7d51b",
+      "old_mode": 33188,
+      "old_path": "tools/aapt2/util/Util.cpp",
+      "new_id": "5a87c334c59ee77b445e0cf9d08d91a72d08d4da",
+      "new_mode": 33188,
+      "new_path": "tools/aapt2/util/Util.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "239bed589412021ff576a50d6c5bb22d9625058c",
+      "old_mode": 33188,
+      "old_path": "tools/split-select/Android.mk",
+      "new_id": "863abae1e0fb9f821f2c79ebca6f595a25f32480",
+      "new_mode": 33188,
+      "new_path": "tools/split-select/Android.mk"
+    }
+  ]
+}

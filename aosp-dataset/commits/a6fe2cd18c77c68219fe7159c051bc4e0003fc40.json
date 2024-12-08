@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a6fe2cd18c77c68219fe7159c051bc4e0003fc40",
+  "tree": "6a4d4941ad716209041e5228e9a6bd2ec8afa3a6",
+  "parents": [
+    "7e6840ddfe04c29434ca41bcf4a423115ffd3e7a"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Apr 26 14:22:39 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:40:23 2018 +0000"
+  },
+  "message": "DO NOT MERGE Truncate newline and tab characters in BluetoothDevice name\n\nTest: manual\nBug: 73173182\nChange-Id: I7f2201cab36adf7f01d1a794d783cb78a536811f\n(cherry picked from commit 24da173b63b17a0bc6c80b2fcfefa7fe4574a15b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98cd319a399a77008553d2578a61ed2fe85cbe37",
+      "old_mode": 33188,
+      "old_path": "core/java/android/bluetooth/BluetoothDevice.java",
+      "new_id": "9498f125c2a6c0151f4fa73a8cb64444f50216d7",
+      "new_mode": 33188,
+      "new_path": "core/java/android/bluetooth/BluetoothDevice.java"
+    }
+  ]
+}

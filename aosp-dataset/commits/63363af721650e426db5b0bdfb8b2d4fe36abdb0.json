@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "63363af721650e426db5b0bdfb8b2d4fe36abdb0",
+  "tree": "5026f14f145a5b9fc17c518ac1b1dc1a38753616",
+  "parents": [
+    "c2640ef66fe5cc87ef3978592e68ed078a08f6e2"
+  ],
+  "author": {
+    "name": "Matthew Williams",
+    "email": "mjwilliams@google.com",
+    "time": "Tue Jan 19 23:04:04 2016 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:52 2016 -0800"
+  },
+  "message": "Redact Account info from getCurrentSyncs\n\nBUG:26094635\nIf the caller to ContentResolver#getCurrentSyncs does not hold the\nGET_ACCOUNTS permission, return a SyncInfo object that does not\ncontain any Account information.\n\nChange-Id: I5628ebe1f56c8e3f784aaf1b3281e6b829d19314\n(cherry picked from commit b63057e698a01dafcefc7ba09b397b0336bba43d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a586d6fc96ae9d9a8b4bfff56008276bf2390676",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/SyncInfo.java",
+      "new_id": "ab3c30bb2d2a3c67619d4f92efa7371546bd55f5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/SyncInfo.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "165148b7cde57e8b57c524cd2756bb4afb0c83b9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/content/ContentService.java",
+      "new_id": "22141dcb282deec95e7805ea75edfc38103a40f9",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/content/ContentService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d5f240daaee70b3fdd56ee59b02de7719f59225",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/content/SyncStorageEngine.java",
+      "new_id": "1bd1709c74a7121fe4f5430947a5a66990577d7d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/content/SyncStorageEngine.java"
+    }
+  ]
+}

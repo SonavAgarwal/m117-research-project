@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ed79f2cc961d7d35fdbbafdd235c1436bcd74358",
+  "tree": "c7bf8b31a1e93bb039d98d4545eb89a122d47b64",
+  "parents": [
+    "d72ea85c78a1a68bf99fd5804ad9784b4102fe57"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Tue Nov 15 13:00:50 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:47:07 2016 -0800"
+  },
+  "message": "Fix security vulnerability: Effect command might allow negative indexes\n\nBug: 32588016\nBug: 32585400\n\nTest: Use POC bug or cts security test\nChange-Id: I5ef8c756369d488ad5903c163584f24de63d73e3\n(cherry picked from commit 500a9feaf816c719241de83f2ee65c8e2d7ff269)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6d12e9136bf50f0c41d0724df43bd54dec426664",
+      "old_mode": 33188,
+      "old_path": "post_proc/equalizer.c",
+      "new_id": "1cd40d269bd7d95d686b2d0b2a6bdc4813bd35cc",
+      "new_mode": 33188,
+      "new_path": "post_proc/equalizer.c"
+    }
+  ]
+}

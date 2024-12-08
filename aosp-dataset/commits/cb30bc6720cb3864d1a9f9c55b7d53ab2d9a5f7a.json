@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb30bc6720cb3864d1a9f9c55b7d53ab2d9a5f7a",
+  "tree": "46d75021e9cb0c5e1b54b886d1045a6cb94c95a2",
+  "parents": [
+    "7860df221cfc209395a3e90a9b480ce641ad3d6d"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Mon May 18 14:45:11 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:35:36 2020 +0000"
+  },
+  "message": "Fix integer overflow in NewFixedDoubleArray\n\nBug: 150706594\nTest: atest proxy_resolver_v8_unittest\nChange-Id: I23ccda06bdb2dba631236828e5d6eeaf88717812\n(cherry picked from commit 0809cf96aa0a547150173bd0cb06452dce878d61)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c8528f9fdb8f4443c966b6affb77a0cfccf6cec3",
+      "old_mode": 33188,
+      "old_path": "src/heap/factory.cc",
+      "new_id": "2ac0d99005889cb6153f614925ac53e04c5f2e1c",
+      "new_mode": 33188,
+      "new_path": "src/heap/factory.cc"
+    }
+  ]
+}

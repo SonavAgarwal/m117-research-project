@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "06aed1054fbf7b3a434d93e153e6663e4fc3985c",
+  "tree": "ae8d009f6923c15aeaa7e86c867aa054f4d51ac4",
+  "parents": [
+    "ea894cfc5a074ca4fdf6c5c50ff7ed89041ac3d8"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Jun 04 18:02:55 2019 -0700"
+  },
+  "committer": {
+    "name": "JP Sugarbroad",
+    "email": "jpsugar@google.com",
+    "time": "Wed Aug 07 14:37:00 2019 -0700"
+  },
+  "message": "[RESTRICT AUTOMERGE] Pass correct realCallingUid to startActivity() if provided by PendingIntentRecord#sendInner()\n\nPreviously we\u0027d ignore realCallingPid and realCallingUid that\nPendingIntentRecord#sendInner() provided to startActivityInPackage().\nNow we correctly pass it on, preserving past behaviour if none\nprovided.\n\nTest: manual; we added logging statements to check the value of realCallingUid\nin startActivitiesMayWait when launching the calendar app from the calendar widget\nand verified that it was the calendar uid rather than the system uid.\n\nBug: 123013720\nChange-Id: If0c0b67880c2e7a8774f31fbb1ba5f50544d2972\n(cherry picked from commit b255e64a5d282f860bd58ae8f85158b5badce7ba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d7101da90fe02d6d0eb8dec4ea4814478149f6c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "75e2aa43d1acd75764ea023d9784c4cc94638c11",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a7c32009a4c40a06bf2b5d64d14bac0a9c50d367",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStartController.java",
+      "new_id": "be45542d7226838698a8d10a1ba6a9c7f1e54048",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStartController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "73e3d33073fc0ada8e6995e543dbce570c200bdf",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStarter.java",
+      "new_id": "5382f5837caccd1a693e754071b77df25c561e26",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStarter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e0aa2a261b3c47e44fb4f1ec0d984648390b2931",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/PendingIntentRecord.java",
+      "new_id": "f09709d4a6ef26fbc0f34c1c1848d73ebea24df7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/PendingIntentRecord.java"
+    }
+  ]
+}

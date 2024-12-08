@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "335702d106797bce8a88044783fa1fc1d5f751d0",
+  "tree": "b6c9549805996706ba82f23d2a4c7633a1e70cad",
+  "parents": [
+    "e206f02d46ae5e38c74d138b51f6e1637e261abe"
+  ],
+  "author": {
+    "name": "Victor Chang",
+    "email": "vichang@google.com",
+    "time": "Tue Jul 12 23:47:29 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:25 2016 -0700"
+  },
+  "message": "Disallow shell to mutate always-on vpn when DISALLOW_CONFIG_VPN user restriction is set\n\nFix: 29899712\n\nChange-Id: I38cc9d0e584c3f2674c9ff1d91f77a11479d8943\n(cherry picked from commit 9c7b706cf4332b4aeea39c166abca04b56685280)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "774be60d082a1d7950243586019579227245c9c6",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+      "new_id": "5c7221570053c4a9c6e5461df4332e9e0b0eaa20",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "556bb0f55324e8839d7b735a0de9bc31028e839e",
+  "tree": "a754574a8f3a79e925cbf14673e314ba9f32f3e0",
+  "parents": [
+    "489e0b567f902f36e38a1b888105da043677b621"
+  ],
+  "author": {
+    "name": "Jeff Vander Stoep",
+    "email": "jeffv@google.com",
+    "time": "Tue Apr 26 11:29:14 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:05 2016 -0700"
+  },
+  "message": "Further restrict socket ioctls available to apps\n\nRestrict unix_dgram_socket and unix_stream_socket to a whitelist\nfor all domains. Remove ioctl permission for netlink_selinux_socket and\nnetlink_route_socket for netdomain.\n\nBug: 28171804\nBug: 27424603\nChange-Id: I650639115b8179964ae690a39e4766ead0032d2e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0f6c6dac39a8fb6517ac289a3c20e0e5a0c26982",
+      "old_mode": 33188,
+      "old_path": "domain.te",
+      "new_id": "23460c9d191900e073a0a8b10d31326bce47dba6",
+      "new_mode": 33188,
+      "new_path": "domain.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "6012568a1e79dfd645e2a69d373d289ee4648dc9",
+      "old_mode": 33188,
+      "old_path": "ioctl_macros",
+      "new_id": "e0ecbf0f28cc3cbe8ea0d1e11a630ecba77f6c7d",
+      "new_mode": 33188,
+      "new_path": "ioctl_macros"
+    },
+    {
+      "type": "modify",
+      "old_id": "330f0af3861b0554604c86d0d02a84ea53766ebc",
+      "old_mode": 33188,
+      "old_path": "isolated_app.te",
+      "new_id": "535e5de38a540a36dfdbcf3783382e177cc5dfe0",
+      "new_mode": 33188,
+      "new_path": "isolated_app.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "6aa12f23a5a5695906a3bb15c504e9f67874f74b",
+      "old_mode": 33188,
+      "old_path": "net.te",
+      "new_id": "4616eb170d941cf490f8a69585b26882741e107a",
+      "new_mode": 33188,
+      "new_path": "net.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "70b18834bdf14740e782b60a3874e7eae3171eaf",
+      "old_mode": 33188,
+      "old_path": "te_macros",
+      "new_id": "cae44e1e6cd6363bafef294c09e5ad6b53903162",
+      "new_mode": 33188,
+      "new_path": "te_macros"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb7631717fb0d6f6875918dfc4e2fe0c64d06c21",
+      "old_mode": 33188,
+      "old_path": "untrusted_app.te",
+      "new_id": "a17943f264b7297b3e6c7238f3a2d5baf3d319c9",
+      "new_mode": 33188,
+      "new_path": "untrusted_app.te"
+    }
+  ]
+}

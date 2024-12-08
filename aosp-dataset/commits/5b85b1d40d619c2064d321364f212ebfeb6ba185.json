@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5b85b1d40d619c2064d321364f212ebfeb6ba185",
+  "tree": "d06789741c03944ee138c185a1f79fc79ad07c17",
+  "parents": [
+    "9bd7afc0a1de9589c13355178b6edc709bd0bddf"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Aug 18 14:44:54 2015 +0100"
+  },
+  "committer": {
+    "name": "Jon Larimer",
+    "email": "jlarimer@google.com",
+    "time": "Tue Aug 18 20:52:25 2015 +0000"
+  },
+  "message": "libutils: fix overflow in String8::allocFromUTF8\n\nPatch contributed in:\nhttps://code.google.com/p/android/issues/detail?id\u003d182908\n\nBug: 23290056\n\n(cherry picked from commit 4eeacbeec0ae66e9d9395abbf83666709f2e11e3)\n\nChange-Id: Ife1dc0791040150132bea6884f1e6c8d31972d1b\n(cherry picked from commit ebabef275283f771151ec93c17469374b789b2c8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e852d77b7944cc0d660aa86e2e59ea88d33fbbc5",
+      "old_mode": 33188,
+      "old_path": "libutils/String8.cpp",
+      "new_id": "e5a48e55a6890136a1e274ad3d544b01c886a1ca",
+      "new_mode": 33188,
+      "new_path": "libutils/String8.cpp"
+    }
+  ]
+}

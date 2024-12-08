@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bef16671c891e16f25a7b174bc528eea109357be",
+  "tree": "73bba423ccc002934ce3239783fc8922cc0a458f",
+  "parents": [
+    "1e54ae80bf062a4010cde0182a4b34dc9c8cd15f"
+  ],
+  "author": {
+    "name": "Rakesh Kumar",
+    "email": "rakesh.kumar@ittiam.com",
+    "time": "Mon Jun 25 20:48:07 2018 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:09 2018 +0000"
+  },
+  "message": "Adding check for min_width and min_height\n\nAdd check for min_wd and min_ht. Stride is updated if header\ndecode is done.\n\nBug: 74078669\n\nChange-Id: Ided95395e1138335dbb4b05131a8551f6f7bbfcd\n(cherry picked from commit 84eba4863dd50083951db83ea3cc81e015bf51da)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8993479891c762a8058b15b7fd971bcb97abaef",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "c4fcee533e89505f309a3761f48b3e82227cb94e",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bff8c217b547d11caece05a36136c745232bd002",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_decoder.c",
+      "new_id": "726d9cd907c9e4476b92adcb7d3992eb3d1ac35b",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_decoder.c"
+    }
+  ]
+}

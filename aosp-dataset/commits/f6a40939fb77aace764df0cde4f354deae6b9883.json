@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f6a40939fb77aace764df0cde4f354deae6b9883",
+  "tree": "2bb1b69f410b9975e647cadbeb0279393565cd51",
+  "parents": [
+    "7436115ffe6a5387d8fc11780a4f6ce104c7fb1b"
+  ],
+  "author": {
+    "name": "Mikhail Naganov",
+    "email": "mnaganov@google.com",
+    "time": "Fri Dec 14 10:48:17 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:00 2019 +0000"
+  },
+  "message": "audioserver: Use \u0027_exit\u0027 instead of \u0027exit\u0027 in HalDeathHandler\n\nUsing \u0027exit\u0027 from an RPC threadpool thread is not safe, as \u0027exit\u0027\nruns atexit handlers that destroy global objects. This can interfere\nwith code still running on other threads.\n\n\u0027_exit\u0027 does not run atexit handlers, just terminates the process.\n\nBug: 116665972\nTest: kill android.hardware.audio@2.0-service, check logcat\nChange-Id: I5391a659e359e0ca5bba580f1c51dea5df3ea562\n(cherry picked from commit 5beb4810060cda2afea1c89f98caf5c337763c0a)\n(cherry picked from commit 06c5d535332898944d627b6e114d1f39ae3e6c86)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1e3ab584668a5a8463300d6bf2f86ac46964b1d0",
+      "old_mode": 33188,
+      "old_path": "media/libaudiohal/HalDeathHandlerHidl.cpp",
+      "new_id": "6e335230974dc6c5890e722667a2b032ee53730d",
+      "new_mode": 33188,
+      "new_path": "media/libaudiohal/HalDeathHandlerHidl.cpp"
+    }
+  ]
+}

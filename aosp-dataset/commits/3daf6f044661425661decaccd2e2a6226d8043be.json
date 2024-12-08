@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3daf6f044661425661decaccd2e2a6226d8043be",
+  "tree": "cec6abb17a3d0c77250668b424030eb52a8a99bb",
+  "parents": [
+    "16addb8f666dab3c2607b3d9c2dbcf3c88201c86"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Mon Sep 16 15:19:41 2019 -0700"
+  },
+  "committer": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Wed Sep 18 21:15:34 2019 +0000"
+  },
+  "message": "AOSP/UnifiedEmail - Secure UPDATE_WIDGET receiver with a new permission\n\nThe update methods sends a broadcast with the account name, the folder, etc.\nThis implicitly bypasses the GET_ACCOUNT permission if a third-party\napplications listens to this broadcast.\n\n- Introduce a new app permission\n- com.android.email.permission.GET_WIDGET_UPDATE\n- Now the com.android.email.permission.GET_WIDGET_UPDATE is required to\n- receive the emitted broadcast\n- Add this permission to our existing widgets.\n\nPorted changes from cr/106302205\n- added uses-permission GET_WIDGET_UPDATE, so Gmail app has the permission to receive the intent\n\nBug: 139803872\n\nTest: manual - Ran the following tests on Pixel phone. Tested the email UI.\n\n$ make -j 40\n$ make Email -j\n$ make EmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 6356400 Sep 16 14:10 out/target/product/marlin/testcases/Email/arm64/Email.apk\n  -rw-r--r-- 1 rtenneti primarygroup 389599 Sep 16 14:18 out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb install -r -d -g out/target/product/marlin/testcases/Email/arm64/Email.apk\n$ adb install -r -d -g out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n$ adb shell am instrument -w com.android.email.tests\n  Time: 34.746\n  OK (157 tests)\n\n$ atest EmailTests\n  Summary\n  -------\n  EmailTests: Passed: 157, Failed: 0, Ignored: 0, Assumption Failed: 0\n\n  All tests passed!\n\n$ adb install ../security_attack/bug_139803872/poc.apk\n  Captured the logcat output at rtenneti\u0027s x20web logcat.out.0916.1503\n  while reproducting the steps in b/139803872#comment3\n\nChange-Id: Ied292eab76c672c60de57f8ce43df0e0ea6d3464\nMerged-In: Ied292eab76c672c60de57f8ce43df0e0ea6d3464\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "608acdbfb7436d786d76151d3ca22f6a23bdaba1",
+      "old_mode": 33188,
+      "old_path": "res/values/strings.xml",
+      "new_id": "f2501c30755d2b95f64439e53e42e997b24e1ca2",
+      "new_mode": 33188,
+      "new_path": "res/values/strings.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "bbfe1ccb1db4d457580f829845beb257342525a7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/widget/BaseWidgetProvider.java",
+      "new_id": "4a1898986f9e0f30de4e028b5a45e56895667203",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/widget/BaseWidgetProvider.java"
+    }
+  ]
+}

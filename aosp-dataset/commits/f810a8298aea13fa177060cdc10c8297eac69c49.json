@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f810a8298aea13fa177060cdc10c8297eac69c49",
+  "tree": "6b6acb896c8c2b3614799fbb9b17b28559a0cd79",
+  "parents": [
+    "4254be9a0d16bac995aa73d60e8e92839960bd32"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jun 22 17:58:27 2015 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Aug 17 15:29:47 2015 -0700"
+  },
+  "message": "MPEG4Source::fragmentedRead: check range before writing into buffers\n\nBug: 22008959\nChange-Id: I5f6e188adcc593796455bdaf7b0b8aba672b106e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b44fea56046413a05d151e8fc105ed5d1f27d48c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "e3a177a0784161ce2cd4a3fe597323aab3647899",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

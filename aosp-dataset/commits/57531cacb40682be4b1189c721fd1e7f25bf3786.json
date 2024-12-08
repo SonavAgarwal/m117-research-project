@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "57531cacb40682be4b1189c721fd1e7f25bf3786",
+  "tree": "0577ec3b11c139d3c0023621016491a233d489ac",
+  "parents": [
+    "a8bbe96d8b3fc76bd36e7f6582b79c94a7ecaa80"
+  ],
+  "author": {
+    "name": "Jeff Vander Stoep",
+    "email": "jeffv@google.com",
+    "time": "Tue Jan 05 13:16:34 2016 -0800"
+  },
+  "committer": {
+    "name": "Jeffrey Vander Stoep",
+    "email": "jeffv@google.com",
+    "time": "Tue Jan 05 21:24:20 2016 +0000"
+  },
+  "message": "DO NOT MERGE: Further restrict access to socket ioctl commands\n\nRemove untrusted/isolated app access to device private commands.\n\nOnly allow shell user to access unprivileged socket ioctl commands.\n\nBug: 26324307\nBug: 26267358\nChange-Id: Iddf1171bc05c7600e0292f925d18d748f13a98f2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e71e0ce5a764520820c4e67723dd1164ad45a137",
+      "old_mode": 33188,
+      "old_path": "ioctl_macros",
+      "new_id": "6012568a1e79dfd645e2a69d373d289ee4648dc9",
+      "new_mode": 33188,
+      "new_path": "ioctl_macros"
+    },
+    {
+      "type": "modify",
+      "old_id": "1be9eec97092076d0a3f6921e1dfbeef4294c9ff",
+      "old_mode": 33188,
+      "old_path": "shell.te",
+      "new_id": "4b4093dc22e3789954c8a0352f8118ee2dc197de",
+      "new_mode": 33188,
+      "new_path": "shell.te"
+    }
+  ]
+}

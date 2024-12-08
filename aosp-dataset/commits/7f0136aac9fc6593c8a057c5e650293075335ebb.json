@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7f0136aac9fc6593c8a057c5e650293075335ebb",
+  "tree": "10c0bf79337464b1b0749fa43d782098b1f626c5",
+  "parents": [
+    "3d4cf3468533db2e0cbe7e01c4325d8b3f93e2a2"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Sat Jan 25 06:54:06 2020 -0800"
+  },
+  "committer": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Mon Mar 23 18:43:10 2020 +0000"
+  },
+  "message": "Notify all packages is uid-mode is changed\n\nMultiple packages might share a UID, but appOpsService might not have\ncached the uid-\u003epackage mapping for those yet. Hence the only way to\nlist all packages for a uid is to ask package manager.\n\nsetUidMode already handled this correctly, hence factor out the code\ninto notifyOpChangedForAllPkgsInUid and reuse it from\ncommitUidStatePendingLocked.\n\nBug: 148180766\nTest: (on master) atest CtsAppOpsTestCases:android.app.appops.cts.ForegroundModeTest\nChange-Id: I99a8f255a60d3523da7eb36a8f2c9426af1a1fea\nMerged-In: I2d5d6c7aa38d201707349a137c9c29b7987775be\n(cherry picked from commit 29e092bf290bacb980a47da22f722c1542197565)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0fac67f3494e876d54004df90bf359bf0b4b945",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/appop/AppOpsService.java",
+      "new_id": "8529838857e49cf9036c55efdfe60e47ca24e266",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/appop/AppOpsService.java"
+    }
+  ]
+}

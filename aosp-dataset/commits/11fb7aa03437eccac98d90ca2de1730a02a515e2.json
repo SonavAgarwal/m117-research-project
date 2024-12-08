@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "11fb7aa03437eccac98d90ca2de1730a02a515e2",
+  "tree": "d7a9d23f7f8450078ec0e2967252d3fe208bb9ef",
+  "parents": [
+    "3c0e9cebe77840f14a7324f4c8d56df3c4393f23"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon Jul 16 06:40:35 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:11 2018 +0000"
+  },
+  "message": "Fix copy length calculation in sdp_copy_raw_data\n\nTest: compilation\nBug: 110216176\nChange-Id: Ic4a19c9f0fe8cd592bc6c25dcec7b1da49ff7459\n(cherry picked from commit 23aa15743397b345f3d948289fe90efa2a2e2b3e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "365a70cb7d58325a4ef5b30703d2c46a7f034f8e",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_discovery.cc",
+      "new_id": "8d662b8c273facd098d34b5246fae6e648bba3be",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_discovery.cc"
+    }
+  ]
+}

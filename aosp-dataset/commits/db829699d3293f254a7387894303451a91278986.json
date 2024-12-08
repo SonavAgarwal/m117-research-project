@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "db829699d3293f254a7387894303451a91278986",
+  "tree": "7ef2f940d1e8c4ce5f969828caa11b0a55067302",
+  "parents": [
+    "0bb5ced60304da7f61478ffd359e7ba65d72f181"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Mar 21 11:31:53 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:55 2016 -0700"
+  },
+  "message": "Fix OMX_IndexParamConsumerUsageBits size check\n\nBug: 27207275\nChange-Id: I9a7c9fb22a0e84a490ff09c151bd2f88141fdbc0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9be9b413d8ee69a1298d58df862fb07598404a77",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "b082fe492f7769101cfd7de672bbb8f4243f6d33",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    }
+  ]
+}

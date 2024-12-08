@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3944c65637dfed14a5a895685edfa4bacaf9f76e",
+  "tree": "fd0dbc6e9151aebd8e93da347fb383f93ab3b5b8",
+  "parents": [
+    "9f9ba255a0c59544f3555c9c45512c3a2fac5fad"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Jun 28 18:24:52 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:59 2016 -0700"
+  },
+  "message": "Add bound checks to utf16_to_utf8\n\nBug: 29250543\nChange-Id: I3518416e89ed901021970958fb6005fd69129f7c\n(cherry picked from commit 1d3f4278b2666d1a145af2f54782c993aa07d1d9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "acba6d7cd26a44319b27f8b88253ea22f19a8bbf",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.cpp",
+      "new_id": "32f86dff4a190091f1799ba82a191f3ca21f8a67",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.cpp"
+    }
+  ]
+}

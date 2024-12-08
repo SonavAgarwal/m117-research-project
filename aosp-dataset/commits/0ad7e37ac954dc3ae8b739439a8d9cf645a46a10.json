@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0ad7e37ac954dc3ae8b739439a8d9cf645a46a10",
+  "tree": "7a9edadd65e0d4ea26f6db349f33e0c8d6578622",
+  "parents": [
+    "5687dbe62b2785d1b037336eb07e96ab81bddaea"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Mon Dec 18 15:57:18 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:21 2018 +0000"
+  },
+  "message": "Correcting Buffer Allocation for Shared Display\n\nIn case of shared display mode, the picture buffer allocated has to be\nlarger to accomodate the incorrect half pel reference to the last row in\nthe picture. Adding memory for the same.\n\nBug: 70350015\nBug: 70349694\nBug: 70349612\nBug: 70349754\nBug: 70349868\nBug: 70526352\nBug: 70350086\nTest: manual\nChange-Id: I41905d101093ae20ab14193c21669b8c4a24f30c\n(cherry picked from commit 5c1ed47b1fc1a0f763c251d62db14f3d74cb3141)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "606a5dc6b04d6d962590f2d2604f0d82b759d29f",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_api_main.c",
+      "new_id": "51f704718de763ff541463843bd794f373638cc1",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_api_main.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1638945d4ed9403790962ec7abed1b7a232a9ff8",
+  "tree": "1076bd26face81c54a4912f881a56f41ae0281ca",
+  "parents": [
+    "8bec47d2184fca7e8b7337d2a65b2b75a9bc8f54"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Wed Mar 16 16:27:18 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Tue Mar 29 15:59:28 2016 -0700"
+  },
+  "message": "Fix updateAAD when offset is not 0\n\nDue to AAD data not being reset when a Cipher instance was re-used, this\nbug was never uncovered by tests that actually exercise this case.\n\n(cherry picked from commit 95cf7b9b7fbabb77cd341f17da79c947bcc934ab)\n\nBug: 27696681\nBug: 27324690\nChange-Id: Iae9b5794f212a8fc4eeff2a651332e7490f5cada\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "571c8cb2d1e8dbe567bbe6a17cfff7b7711103ed",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/OpenSSLCipher.java",
+      "new_id": "fa174d6340bdf4f039de0eb5c1460c9a38b0b4a9",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/OpenSSLCipher.java"
+    }
+  ]
+}

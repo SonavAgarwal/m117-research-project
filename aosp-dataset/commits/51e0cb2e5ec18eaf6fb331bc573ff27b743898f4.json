@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "51e0cb2e5ec18eaf6fb331bc573ff27b743898f4",
+  "tree": "7d6926695711aae8f8ca71b97d935d3d3d0c5f92",
+  "parents": [
+    "3f571b1bb85cf56903f06bab3a820182115c5541"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Wed Apr 05 09:31:12 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:08 2017 -0700"
+  },
+  "message": "DO NOT MERGE: Use correct limit for port values\n\nno upstream report yet, add it here when we have it\nissue found \u0026 patch by nmehta@\n\nBug: 36555370\nChange-Id: Ibf1efea554b95f514e23e939363d608021de4614\n(cherry picked from commit b62884fb49fe92081e414966d9b5fe58250ae53c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2bd5720de97ca09277141be181d05ff2fe1a2e5a",
+      "old_mode": 33188,
+      "old_path": "uri.c",
+      "new_id": "b32ef10a28d1b0ff9b175d06454bb3699587459e",
+      "new_mode": 33188,
+      "new_path": "uri.c"
+    }
+  ]
+}

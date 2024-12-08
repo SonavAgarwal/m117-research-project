@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "86c2985b0be7590aa979d25a7e5fb927cc1d2dcc",
+  "tree": "bea8d2b9269680ee1742166e2820b9df075b7db5",
+  "parents": [
+    "cb5531e3576fec2be6e366f16dd85696a20552b3"
+  ],
+  "author": {
+    "name": "Siarhei Vishniakou",
+    "email": "svv@google.com",
+    "time": "Fri Nov 16 22:18:53 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:22 2019 +0000"
+  },
+  "message": "Sanitize InputMessage before sending\n\nThe struct InputMessage has many fields, and is force-aligned to 8-byte\nboundaries. There are also some padding fields that carry no\ninformation.\n\nThis struct is typically allocated in the stack and populated with\nvarious values before being sent across as a stream of bytes through the\nsocket.\n\nTherefore, the \"unused\" data portions of the struct could contain\nportions of the stack, since there aren\u0027t ever writes to those memory\nlocations.\n\nTo avoid this information leak, forcefully sanitize the struct. Create a\nnew struct that is explicitly set to zero. Next, only fill the\nmeaningful fields manually.\n\nBug: 115739809\nTest: cts-tradefed run cts -m CtsSecurityBulletinHostTestCases -t android.security.cts.Poc18_12; adb shell monkey 100000\nChange-Id: I7e44dacf1e8fa3156c8e4d2f7784ef0c53dab507\nMerged-In: I7e44dacf1e8fa3156c8e4d2f7784ef0c53dab507\n(cherry picked from commit e730f5aaa1c726ee9998a080e2d7f6284f4afec8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1ea2c2cc0762be347be70024c7836ffa290f3946",
+      "old_mode": 33188,
+      "old_path": "include/input/InputTransport.h",
+      "new_id": "ecdc075ac89ab7c1e969606a006d914c03994f68",
+      "new_mode": 33188,
+      "new_path": "include/input/InputTransport.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa0bf17ca30defa81d923bb8c690fc3c322c9a22",
+      "old_mode": 33188,
+      "old_path": "libs/input/InputTransport.cpp",
+      "new_id": "03f593f8b2141c1b54335fd8697f7463c344966d",
+      "new_mode": 33188,
+      "new_path": "libs/input/InputTransport.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d19f3b8066fbe2bd2236b878796f21e3f6061491",
+      "old_mode": 33188,
+      "old_path": "libs/input/tests/StructLayout_test.cpp",
+      "new_id": "12a67828ac641f159da47b8833b2f21fd63b2773",
+      "new_mode": 33188,
+      "new_path": "libs/input/tests/StructLayout_test.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68f67ef6cf1f41e77337be3bc4bff91f3a3c6324",
+  "tree": "a4c35f9d516031cdf328378b5af491ed3c1a2fd0",
+  "parents": [
+    "c2639afac631f5c1ffddf70ee8a6fe943d0bedf9"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Wed Jul 06 10:13:25 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:58 2016 -0700"
+  },
+  "message": "Fix corruption via buffer overflow in mediaserver\n\nchange unbound sprintf() to snprintf() so network-provided values\ncan\u0027t overflow the buffers.\n\nApplicable to all K/L/M/N branches.\n\nBug: 25747670\nChange-Id: Id6a5120c2d08a6fbbd47deffb680ecf82015f4f6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98498e9a861cbf8a7327097d749697828487392c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/rtsp/ASessionDescription.cpp",
+      "new_id": "47573c367e91191e67abc1506ccef9929a9daecd",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/rtsp/ASessionDescription.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "594bf934384920618d2b6ce0bcda1f60144cb3eb",
+  "tree": "cb138bc2055101a16f9dc84a6d258cae35bf4cd1",
+  "parents": [
+    "961e5ac5788b52304e64b9a509781beaf5201fb0"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon Mar 13 11:59:57 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:48 2017 -0700"
+  },
+  "message": "Add bounds check in SoftAACEncoder2::onQueueFilled()\n\nOriginal code blindly copied some header information into the\nuser-supplied buffer without checking for sufficient space.\nThe code does check when it gets to filling the data -- it\u0027s\njust the header copies that weren\u0027t checked.\n\nBug: 34617444\nTest: ran POC before/after\nChange-Id: I6e80ec90616f6cd02bb8316cd2d6e309b7e4729d\n(cherry picked from commit 6231243626b8b9c57593b1f0ee417f2c4af4c0aa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5f516cbc5ce01f16df04697e25ad9c20e5f8709b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp",
+      "new_id": "f00a5d1b0c4fa034a4968589fd1a0668e60fc1a5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bb88d4430189b66270c66ff9167fc5bcf4356cf2",
+  "tree": "f0aa1482bf178a0b0d183a04e864cd5dc2586356",
+  "parents": [
+    "658620397b161fdfd343f2ff6f6ed51797f39307"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Thu Jun 01 11:44:39 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:23 2017 +0000"
+  },
+  "message": "Added error check for output buffer size.\n\nThe output buffer size given by the application, needs to be checked\nin every process call. This is required in the case of resolution\nchange.\n\nBug: 36006815\nTest: avcdec -i poc.bin\nChange-Id: I16a92cdad23eb7b1e12c1a67c1b2599204f29249\n(cherry picked from commit 3f6c941de5cd959072fa046c9d6cb26fa0f01dc6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2cde4568b135fe88771c99b085f3db04989a3737",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "7c3f7508ebd2c6976df5dad2b479c0335362b747",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "fad2dffdd42f8e57a38a6d70665e5ef6aee8d998",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "ab9f3f632e16d600ef460a0028dd82218ad6c459",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

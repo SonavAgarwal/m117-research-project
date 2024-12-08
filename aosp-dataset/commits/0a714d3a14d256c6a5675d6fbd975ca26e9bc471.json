@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0a714d3a14d256c6a5675d6fbd975ca26e9bc471",
+  "tree": "9b9f648f518a10434e8145286f74aec3b39036dc",
+  "parents": [
+    "066e3b1f9c954d95045bc9d33d2cdc9df419784f"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Mon Jul 10 10:33:13 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:27:33 2017 +0000"
+  },
+  "message": "Fix first frame error return\n\nRemove the check that returns before joining the slave threads\nif there is an error in the first frame. And in slice error mode\ndo not parse bitstream.\n\nBug: 64784973\nTest: no longer hangs on POC\nChange-Id: I3c2e2d9f84304bcb34831d7d796da710154774fa\n(cherry picked from commit 8fff219facbecceee193e823d4faf7866524e92a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "05d66a2a92cc50786b113c7f6821557221cfdae0",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_decode.c",
+      "new_id": "d2ea7a536921792e580790a8f86db3cd26cc69d0",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_decode.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e67febfa816a41f05f141f3235423086f8844c34",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice.c",
+      "new_id": "c1b067e74448d1eb4827994fd6997689cbb09782",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice.c"
+    }
+  ]
+}

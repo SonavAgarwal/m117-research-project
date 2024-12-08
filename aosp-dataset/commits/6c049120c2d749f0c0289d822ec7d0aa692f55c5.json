@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6c049120c2d749f0c0289d822ec7d0aa692f55c5",
+  "tree": "cea122e75c3ad4944ce8d61a0c06297f885b5070",
+  "parents": [
+    "5f256310187b4ff2f13a7abb9afed9126facd7bc"
+  ],
+  "author": {
+    "name": "Amith Yamasani",
+    "email": "yamasani@google.com",
+    "time": "Fri Aug 05 15:25:03 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:52 2016 -0700"
+  },
+  "message": "DO NOT MERGE: Clean up when recycling a pid with a pending launch\n\nFix for accidental launch of a broadcast receiver in an\nincorrect app instance.\n\nBug: 30202481\nChange-Id: I8ec8f19c633f3aec8da084dab5fd5b312443336f\n(cherry picked from commit 55eacb944122ddc0a3bb693b36fe0f07b0fe18c9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c124e5d9a9bc2a97f68377f6ba18d1d0e662b8f6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "391323eb54d66752c3cbfac3ff97034475f5a323",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a279290a34beb9426db3069d99769b2ab7cac9e6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/BroadcastQueue.java",
+      "new_id": "f78f29c4ac6dc82dce0f5645bfc7eeee7780bec3",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/BroadcastQueue.java"
+    }
+  ]
+}

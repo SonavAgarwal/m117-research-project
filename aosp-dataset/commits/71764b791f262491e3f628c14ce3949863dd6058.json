@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "71764b791f262491e3f628c14ce3949863dd6058",
+  "tree": "359ad6a7da6bd990dc8700e7f639a7d3da65c9d7",
+  "parents": [
+    "5f0f0cc6a10f710dea7e1ddd4ba19acb877a7081"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Wed Oct 17 16:14:08 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:30 2018 +0000"
+  },
+  "message": "Prevent OOB error in nfc_ncif_proc_get_routing()\n\nTest: Tag reading; Card Emulation\nBug: 117554809\nChange-Id: Ib49af2eadf870f030a6cddeec390dc498bd5078c\n(cherry picked from commit ded496ea745656018dda505c23726b4304180c38)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "93666e05f288aa9eecc134f73a47fd9c4276458a",
+      "old_mode": 33188,
+      "old_path": "src/nfc/nfc/nfc_ncif.cc",
+      "new_id": "6d6607d15bbe3956b6d264a03f847a3ca8675c01",
+      "new_mode": 33188,
+      "new_path": "src/nfc/nfc/nfc_ncif.cc"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "924050178386e73cc459ec19e47afd7c304c4068",
+  "tree": "f18bc46e01d317c619afeca9b33e0a9b7e0e47de",
+  "parents": [
+    "e6813a5870911b10561db2c259c072123c1c513a"
+  ],
+  "author": {
+    "name": "Nate(Qiang) Jiang",
+    "email": "qiangjiang@google.com",
+    "time": "Fri Mar 06 16:05:17 2020 -0800"
+  },
+  "committer": {
+    "name": "Nate Jiang",
+    "email": "qiangjiang@google.com",
+    "time": "Mon Mar 09 21:00:08 2020 +0000"
+  },
+  "message": "Fix removing enterprise suggestion certificate\n\nMake when remove a enterprise suggestion, use the internal config object\nto remove ketStore. Which has certificate alias.\n\nBug: 150500247\nTest: atest com.android.server.wifi\nMerged-In: Id020e16fb6c26f38eb217248f7296b9ae4b0e781\nChange-Id: I8015d87599d843e022805ce69fd5a4eae4d7b066\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "19603d8c6a34bcd992879478c9d66299c11a51b4",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiNetworkSuggestionsManager.java",
+      "new_id": "426dddb8ebd2f3485e57632792ce592bb595cc49",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiNetworkSuggestionsManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9e183e729db1ead90fbb1e499ff3e8bedf253370",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiNetworkSuggestionsManagerTest.java",
+      "new_id": "dabdfd569237bb6bc6600fa936543d04272c41b4",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiNetworkSuggestionsManagerTest.java"
+    }
+  ]
+}

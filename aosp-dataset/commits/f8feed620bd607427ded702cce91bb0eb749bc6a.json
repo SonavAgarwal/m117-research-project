@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f8feed620bd607427ded702cce91bb0eb749bc6a",
+  "tree": "44699ce64d63fea47e62641469116d3705d0603b",
+  "parents": [
+    "926f647663d589f7b16887ecd10162b64736e521"
+  ],
+  "author": {
+    "name": "nagendra modadugu",
+    "email": "ngm@google.com",
+    "time": "Mon Sep 24 13:40:23 2018 -0700"
+  },
+  "committer": {
+    "name": "nagendra modadugu",
+    "email": "ngm@google.com",
+    "time": "Tue Oct 02 16:16:53 2018 -0700"
+  },
+  "message": "keystore: abort if verification token generation fails\n\nFix a corner case of operation leakage: if verification\ntoken generation fails, then abort the corresponding\noperation on citadel.\n\nBug: 116055338\nTest: pending\nChange-Id: I5163fa43fcff505deef5555318148178118ff41e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c831085372d897a5bd7f6ef11cc9fca523061165",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.cpp",
+      "new_id": "81189ae7e32114fbcb310034dc59a20f51410be1",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.cpp"
+    }
+  ]
+}

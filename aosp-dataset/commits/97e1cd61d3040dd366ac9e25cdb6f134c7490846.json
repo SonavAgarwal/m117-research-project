@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "97e1cd61d3040dd366ac9e25cdb6f134c7490846",
+  "tree": "6e53ba22e6ad6d5ce4a6762cd84dfdc7e98a3986",
+  "parents": [
+    "ec1e122c941045ce5e3e8f1f5eba47c290172f80"
+  ],
+  "author": {
+    "name": "Benedict Wong",
+    "email": "benedictwong@google.com",
+    "time": "Thu May 03 21:07:58 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:17:59 2018 +0000"
+  },
+  "message": "DO NOT MERGE: Fix ConnectivityController meteredness checks\n\nThis patch corrects ConnectivityController\u0027s meteredness checks to\nperform correct meteredness checks while VPNs are running. This fixes a\nbug in O-MR1 where any apps using the DownloadProvider with unmetered\nnetwork constraints fail to start while the VPN is enabled.\n\nThis change adds a bespoke method for ConnectivityController, allowing\nit to correctly identify the meteredness without affecting public API\nsurfaces.\n\nBug: 78644887\nTest: Built, flashed on Walleye, and tested.\nTest: Additional test coverage in subsequent patch(es).\nChange-Id: Ie1d11d93d51d936ce81cd5984af61bde30325983\n(cherry picked from commit d08ab5a641d9d81314c9439724dd34338fa81d58)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d7ecc81ffdba1f13381803c15e19b551d98a68db",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/ConnectivityManager.java",
+      "new_id": "467eb9b0b0bfc1dd91ab80615c8a6de0f6af94ea",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/ConnectivityManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a6fe7389bc723ea1d4c581a601b168e94bff1da2",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/IConnectivityManager.aidl",
+      "new_id": "f11372c2b31cb2752dd60b48cb60dc5350256a9c",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/IConnectivityManager.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1801b80af0d9d9ec558f77a2edb9c63a768b921",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "c2b83d98a8dfe05421e65d5e2e456601b20697e1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "78367fe97a5401d2ceda73258534e7fd07330940",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/job/controllers/ConnectivityController.java",
+      "new_id": "4d5a920dd54f5b55abf89f0d0690bfcfb96e6122",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/job/controllers/ConnectivityController.java"
+    }
+  ]
+}

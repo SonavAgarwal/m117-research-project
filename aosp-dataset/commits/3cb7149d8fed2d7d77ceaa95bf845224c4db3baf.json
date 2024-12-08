@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3cb7149d8fed2d7d77ceaa95bf845224c4db3baf",
+  "tree": "40c8da5f859bd4b85395cc065ef8ef586d5187c5",
+  "parents": [
+    "771571f69ab9498e9104db3c5c367f1def0a5146"
+  ],
+  "author": {
+    "name": "Venkata Jagadeesh Garaga",
+    "email": "vgaraga@codeaurora.org",
+    "time": "Thu Apr 18 17:13:49 2019 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:24:18 2019 +0000"
+  },
+  "message": "GAP: Correct the continuous pkt length in l2cap\n\nL2cap continuous pkt length wrongly calculated in\nreassembly logic when remote sends more data\nthan expected.\n\nWrong pkt length leading to memory corruption\n\nHence the Correct the continuous pkt length in\nl2cap reassembly logic.\n\nBug: 135239489\nBug: 143894715\nCRs-Fixed: 2434229\nTest: make and internal testing\nChange-Id: I758d9e31465b99e436b9b1841320000f08186c97\nMerged-In: I758d9e31465b99e436b9b1841320000f08186c97\n(cherry picked from commit 337bd4579453bd6bf98ff519de3ac1019cd30d28)\n(cherry picked from commit 602f4b44fe30ec8b225e1cee5f96817607d93e5a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5036ed5354fffd2f872813afc48e2227388dd9f6",
+      "old_mode": 33188,
+      "old_path": "hci/src/packet_fragmenter.cc",
+      "new_id": "143fc239fc8d685d9662615a6d91ba869405a80e",
+      "new_mode": 33188,
+      "new_path": "hci/src/packet_fragmenter.cc"
+    }
+  ]
+}

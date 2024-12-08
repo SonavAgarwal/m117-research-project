@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a22314db4e0cfe11ef3e50dac6a13d52f7a595b3",
+  "tree": "113dee0a6e79b7829ba71589d80a0641dfa85941",
+  "parents": [
+    "9db01f32325b3e45ad0a8a0b4a42d8c9ab6c1e78"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Thu Jun 22 15:36:50 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:30:13 2018 +0000"
+  },
+  "message": "Update ctb pu map for I slice\n\nThe update in I slice is required for P/B slices in the same\nframe for accessing neighbor pus.\n\nBug: 62851602\nBug: 63522067\nTest: re-run PoC from b/62851602\nChange-Id: Ie5e43f1cd5649b2745b6527654bc24d8c7d42932\n(cherry picked from commit 43f126112a8f2000cd0744f2fc5d545ff1a9a70c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c1b067e74448d1eb4827994fd6997689cbb09782",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice.c",
+      "new_id": "aedfbe799032cf44e99dac5c2da93b08cc4fcf27",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f57cc31e8d66d45d570331acef07aeb6aff2efb1",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_process_slice.c",
+      "new_id": "72db2cccee6c8e99a935fc928fdfd9fbafa4a3de",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_process_slice.c"
+    }
+  ]
+}

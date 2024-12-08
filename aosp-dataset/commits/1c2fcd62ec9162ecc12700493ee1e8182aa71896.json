@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1c2fcd62ec9162ecc12700493ee1e8182aa71896",
+  "tree": "41b7ba1a199be7935c655b61740b5046ae3680ea",
+  "parents": [
+    "8a4b671f014c0ecf73742296d39ec877aeec651a"
+  ],
+  "author": {
+    "name": "Hui Yu",
+    "email": "huiyu@google.com",
+    "time": "Fri May 17 13:39:52 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:16 2019 +0000"
+  },
+  "message": "Clean up ProcessRecord when reuse a pid.\n\nWhen Zygote starts a process with a pid, system_server may have this\npid associate with a old process which is killed by the OS but\nsystem_server has not finished cleanup. In this case, clean up the old\nProcessRecord so the new process can use the pid.\n\nThis problem is exposed because the asynchronous process start change.\nattachApplicationLocked() may happen before handleProcessStartedLocked() and\nthe mPidsSelfLocked may still have the old ProcessRecord associate with\nthe new process\u0027s pid.\n\nBug: 131105245\nTest: POC test steps in b/131105245.\nChange-Id: I775acda5147291d0cf9836b6ffb3f52d1bf9bffe\nMerged-In: I775acda5147291d0cf9836b6ffb3f52d1bf9bffe\nMerged-In: I5d421f6c68f6b3437d51c94f4aef77e08a7bf002\n(cherry picked from commit 3d47e0ceca4e6528a1bec2a7e94a833b8951d93a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a1d42c0913342b9c3ea53ce02afc3928cc48014f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "32cc605867cef643b8894324d8842230fa63a742",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

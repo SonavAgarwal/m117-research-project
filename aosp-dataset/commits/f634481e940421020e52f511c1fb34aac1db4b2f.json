@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f634481e940421020e52f511c1fb34aac1db4b2f",
+  "tree": "efe044c21270d26207a118fe5632e01f415c282d",
+  "parents": [
+    "43a184ad481e2346f03f1398af74c04a3bb46e4d"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Dec 15 18:04:53 2016 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon Feb 13 19:14:50 2017 +0000"
+  },
+  "message": "Decoder: Initialize default reference buffers for all pictures\n\nReference buffer is now initialized to default value for\neach pic before decoding the first slice in the pic\n\nBug: 34097866\nChange-Id: Id64b123af2188217ce833f11db0e6c0681d41dfd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "880f3a809e3233ba737d44a0e1939ec15f7efd1d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "11e2c7f0fb750ab541cdfb6e9b9710a651ae51ad",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "5d17838adef13062717322e79d4db0b9bb6b2395",
+  "tree": "9c1843b70587f232f51807d0a5fdb68d5042d04d",
+  "parents": [
+    "c1e6fbb52c3f85cc7610d1d07d12be38f70b4ed4"
+  ],
+  "author": {
+    "name": "Flanker",
+    "email": "i@flanker017.me",
+    "time": "Mon Sep 07 15:28:58 2015 +0800"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Tue Oct 20 12:28:15 2015 -0700"
+  },
+  "message": "add number constraint for samples per MotionEvent\n\nBug:23905002\n\nSigned-off-by: Adam Lesinski \u003cadamlesinski@google.com\u003e\n\n(cherry picked from commit 552a8a5d8df32f659b8d11311a244cdc6d3b7733)\n\nChange-Id: I9b7ea859889b7697bee4165a2746602212120543\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e77807634dbf3e723916cbe9fdf2a2ee0de18b27",
+      "old_mode": 33188,
+      "old_path": "include/input/Input.h",
+      "new_id": "97101a77172a314cadc0e76bc66c2c1d26026e71",
+      "new_mode": 33188,
+      "new_path": "include/input/Input.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6f53996b49f2877303f3978a0eb6850c5a7a02d3",
+      "old_mode": 33188,
+      "old_path": "libs/input/Input.cpp",
+      "new_id": "83e241c4eb626785bc03aa58cb8c13bf2b7ab611",
+      "new_mode": 33188,
+      "new_path": "libs/input/Input.cpp"
+    }
+  ]
+}

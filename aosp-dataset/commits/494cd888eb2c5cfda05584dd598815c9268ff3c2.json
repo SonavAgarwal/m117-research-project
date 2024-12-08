@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "494cd888eb2c5cfda05584dd598815c9268ff3c2",
+  "tree": "f8f55fe80133b5cca7a58cfe6f5cdc1115436b17",
+  "parents": [
+    "8bc53213110fed8360d3e212dd61fbc0218e0b1e"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackcwyu@google.com",
+    "time": "Thu Oct 18 11:04:43 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:25 2018 +0000"
+  },
+  "message": "Improve AGF PDU integrity check to prevent OOB error\n\nTest: Nfc Enable/Disable; Android Beam; Tag reading\nBug: 116791157\nChange-Id: I981e867301007b7398d59727f60892824b722735\n(cherry picked from commit eae50694637df88e9d834e9a9c5539c1dd367f63)\n(cherry picked from commit 064f65733004170f13f400d1283e49ed70253f49)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a5ddf26ca0a01925964ee6bd7e225a811554a32",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_link.cc",
+      "new_id": "f144d453731de80d80589606620c302f4ad98cf4",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_link.cc"
+    }
+  ]
+}

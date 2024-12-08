@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2e8f1f0dc5ca3db8a7035938752dd230608e17ab",
+  "tree": "d2bd15857f5bff3e418772dffcfb6d6782663730",
+  "parents": [
+    "021f4f74994635d7739d637f206aca1949eadc0a"
+  ],
+  "author": {
+    "name": "Z Stern",
+    "email": "zalman@google.com",
+    "time": "Tue May 12 13:32:09 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sun May 17 21:09:54 2020 +0000"
+  },
+  "message": "Targeted minimal fix for security issue in CVE-2020-9589.\n\nBug: 156261521\nTest: If0722deb96def186fcd0a2d97e57647a1b5987f8\n\nChange-Id: I380c158e465a995a5b0f88021cbf10bbf050db00\nMerged-In: I380c158e465a995a5b0f88021cbf10bbf050db00\n(cherry picked from commit 8051967ac143c7e07ee636315cee8b56874e22c3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e3b05769c7a75c5ee5b2006f673116f50f3189c4",
+      "old_mode": 33188,
+      "old_path": "source/dng_lossless_jpeg.cpp",
+      "new_id": "9d0d01a8f567ea6e0cc3ebf130a69fc5d9a8db1b",
+      "new_mode": 33188,
+      "new_path": "source/dng_lossless_jpeg.cpp"
+    }
+  ]
+}

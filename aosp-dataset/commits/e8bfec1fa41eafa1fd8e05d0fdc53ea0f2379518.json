@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e8bfec1fa41eafa1fd8e05d0fdc53ea0f2379518",
+  "tree": "6266cd3a0da4504d1d966d75d0300adeb7f98b46",
+  "parents": [
+    "2b67e532653b815e2341a0ac0b59d1b0ef82170d"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Oct 09 19:19:06 2015 +0530"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Oct 21 07:50:33 2015 -0700"
+  },
+  "message": "Aligned ps_pic_pu to 4 bytes\n\nstmia was resulting in SEGV_MAPERR when ps_pic_pu is not aligned to 4 bytes\nBugfix: 24686670, 21468583\n\nChange-Id: I07672d4a790f73cf27964983350181e66edc4d57\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b3fb74396e7db0044d3d87ed9ebd7e0de801e0a9",
+      "old_mode": 33188,
+      "old_path": "common/ihevc_macros.h",
+      "new_id": "27d4f302d2482cfcf5d215106f7220681e33fbf9",
+      "new_mode": 33188,
+      "new_path": "common/ihevc_macros.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c46a4e6e61a77926fc111a9589190a8b10866d31",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_utils.c",
+      "new_id": "aec64e2f05501c066c67e8cd5a541b19b3fe48bd",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_utils.c"
+    }
+  ]
+}

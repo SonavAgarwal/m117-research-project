@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f1d990ce0f116a205f467d9eb2082795e33872b",
+  "tree": "15375ec6e3ef50f3a474854b01d1ff12eb82a031",
+  "parents": [
+    "36b04932bb93cc3269279282686b439a17a89920"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Mar 10 11:28:44 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:47 2017 -0700"
+  },
+  "message": "Fix out of bounds access\n\nBug: 34618607\nChange-Id: I84f0ef948414d0b2d54e8948b6c30b8ae4da2b36\n(cherry picked from commit d1c19c57f66d91ea8033c8fa6510a8760a6e663b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "33f79fdb5da3a0c7214968cb258dc42d233500f7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "8b80ae94964b68deb2995259a0f8576859d1d20c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

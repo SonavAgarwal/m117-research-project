@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "77c185d5499d6174e7a97b3e1512994d3a803151",
+  "tree": "f5ad0fe15b5eac1f8eb5ca52384c022ac2e60b57",
+  "parents": [
+    "0b1936bee532545381db6adf22f31ac437673f30"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Mon Oct 12 17:10:31 2015 -0700"
+  },
+  "committer": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Mon Oct 12 17:27:17 2015 -0700"
+  },
+  "message": "stagefright: check bounds for MediaCodecList.getCodecInfo\n\nBug: 24445127\nChange-Id: I1c6cb9e2518b852d48d5d0d625b54409bd4e13ec\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8605d991c8eaaf4751b0ac11bb5375229782ddda",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/MediaCodecList.h",
+      "new_id": "67754f9af5a73472321de77c79bb3fe01c544a5d",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/MediaCodecList.h"
+    }
+  ]
+}

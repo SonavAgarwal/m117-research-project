@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "acc75528ffda2360dc7a3e5a4dbe8f3ecd71dc27",
+  "tree": "0bf4b830b1c673b50378c35bd8799887fb19a0ad",
+  "parents": [
+    "35ed6c34c7274333911b4add55c29aa8e5538cf7"
+  ],
+  "author": {
+    "name": "Suprabh Shukla",
+    "email": "suprabh@google.com",
+    "time": "Fri Apr 05 16:34:19 2019 -0700"
+  },
+  "committer": {
+    "name": "Suprabh Shukla",
+    "email": "suprabh@google.com",
+    "time": "Tue Apr 09 21:00:10 2019 +0000"
+  },
+  "message": "OP_REQUEST_INSTALL_PACKAGES denied by default\n\nSome system apps may download unknown content and the user should\nbe explicitly asked whether they trust these files. System apps should\nexplicitly use the extra NOT_UNKNOWN_SOURCE to bypass this check.\n\nTest: Builds, boots, existing tests pass:\natest CtsPackageInstallTestCases\n\nLocally verified they pass if CtsPackageInstallTestCases.apk was signed by\nthe platform cert.\n\nBug: 123700348\nChange-Id: I2578251906f6656b83464d1c4fc4db99165841c9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bde1b25b914fcc257a1bc4379dc7c012f8d02413",
+      "old_mode": 33188,
+      "old_path": "packages/PackageInstaller/src/com/android/packageinstaller/PackageInstallerActivity.java",
+      "new_id": "55ff591e3a1ff62ac2d1f3dbff3c2e8e19b0cda9",
+      "new_mode": 33188,
+      "new_path": "packages/PackageInstaller/src/com/android/packageinstaller/PackageInstallerActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1ce9d827d80f087d9ee6f795d585a3131453c131",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "898437ddae415358f6a6cf4414437c10c89cfd0f",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "179f0e9512100b0a403aab8b2b4cf5510bb20bee",
+  "tree": "f62c3e7d1db4260064947eed2e52553b3aa8a1f4",
+  "parents": [
+    "4af8f912aa1ee714638d0f9694d6f856bc8166f3"
+  ],
+  "author": {
+    "name": "Steven Ng",
+    "email": "stevenckng@google.com",
+    "time": "Mon May 15 18:30:04 2017 +0100"
+  },
+  "committer": {
+    "name": "kuantung",
+    "email": "kuantung@google.com",
+    "time": "Thu May 25 16:28:48 2017 -0700"
+  },
+  "message": "Fix phishing attack in ChooseLockGeneric\n\nCherry-pick of 436256c36d69549c77320d073bef27649c1b1d6e\n\nTest: 1) make and run SettingsTests. It passes.\n      2) Manual test 1\n         a) On a device supports fingerprint, set a password but not fingerprint.\n         b) adb shell am start -a android.app.action.SET_NEW_PARENT_PROFILE_PASSWORD\n         c) Confirm Lock password screen is shown\n         d) Select \"Skip fingerprint\". There isn\u0027t a second lock password confirmation screen.\n         e) A new password can be set successfully.\n      3) Manual test 2\n         a) Repeat step 2)a) - 2)c)\n         b) Select \"Fingerprint + PIN\". There isn\u0027t a second lock password confirmation screen.\n         c) A new password and fingerprint can be enrolled successfully.\n\nBug: 33059280\nChange-Id: I1078c6e303fc41aeeb370e5d6518d1f16b5837f1\nMerged-In: I1078c6e303fc41aeeb370e5d6518d1f16b5837f1\n(cherry picked from commit 14153fd25b4757add2107d35e71fcfbb55c1e419)\n(cherry picked from commit 21e0e3ddce7a5c3ed649251f390e05ac91d47c41)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e0590415f4fc0cbeb99865d464e81fccad6f7635",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/ChooseLockGeneric.java",
+      "new_id": "1a70f541b4e5ec2b67f399067a4346104efc3ddb",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/ChooseLockGeneric.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "979c27d93a52e9dc5a8cb3d6b55b5cc18b2eac18",
+      "old_mode": 33188,
+      "old_path": "tests/app/Android.mk",
+      "new_id": "2df9525d2d26c7dada4c549119b143349d5a425d",
+      "new_mode": 33188,
+      "new_path": "tests/app/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "dee6697b7f1467864d7f3a2a7ec87882cf927d49",
+      "new_mode": 33188,
+      "new_path": "tests/app/src/com/android/settings/ChooseLockGenericTest.java"
+    }
+  ]
+}

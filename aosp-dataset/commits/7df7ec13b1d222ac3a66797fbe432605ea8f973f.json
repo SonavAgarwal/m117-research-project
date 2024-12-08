@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7df7ec13b1d222ac3a66797fbe432605ea8f973f",
+  "tree": "47a6ffe7becdd3968bb1deb9fec3469bb4954ea0",
+  "parents": [
+    "90ff43cde176145ff0a02ed85eff985583fbec7a"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Jul 18 14:57:51 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:11:44 2017 +0000"
+  },
+  "message": "Fix audio record pre-processing\n\nproc_buf_out consistently initialized.\nintermediate scratch buffers consistently initialized.\nprevent read failure from overwriting memory.\n\nTest: POC, CTS, camera record\nBug: 62873231\nChange-Id: Ie26e12a419a5819c1c5c3a0bcf1876d6d7aca686\n(cherry picked from commit 6d7b330c27efba944817e647955da48e54fd74eb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e83aff376cfc9fbe5f6be94d9ab7efb10b81d3c4",
+      "old_mode": 33188,
+      "old_path": "audio/hal/audio_hw.c",
+      "new_id": "e2faafd964248741e2db384e2dc752cbd11dbbc7",
+      "new_mode": 33188,
+      "new_path": "audio/hal/audio_hw.c"
+    }
+  ]
+}

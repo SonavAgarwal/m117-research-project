@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "2f0fe27a2bfef0b5b4621009865ed6a8bae64447",
+  "tree": "cff2581aa2bd27421b565bc3d0f04a654db29ede",
+  "parents": [
+    "15d34e3aa841ccd8fcf16743ba96cf04e54df39e"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Tue Apr 13 20:14:16 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:00:57 2021 +0000"
+  },
+  "message": "audio HAL - fix UAFs\n\nBug: 185259758\nTest: N/A\nChange-Id: I5ec70b098a00746108e10ab39e966607d78c84ae\nMerged-In: I5ec70b098a00746108e10ab39e966607d78c84ae\n(cherry picked from commit a8ac7cf706be7a77589070ea7c62f8e1b94ce316)\n(cherry picked from commit 7283cbe8cbb250fc42f0358d4ca4c94f3c32b344)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f1152ca542f9f1273904cebae548bf02528c64fc",
+      "old_mode": 33188,
+      "old_path": "audio/core/all-versions/default/StreamIn.cpp",
+      "new_id": "d38e225c0ed6a035bbfe6c0a430238de16fd86bd",
+      "new_mode": 33188,
+      "new_path": "audio/core/all-versions/default/StreamIn.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1519c48e128dedf7040e76e5312713f9e6cc10a3",
+      "old_mode": 33188,
+      "old_path": "audio/core/all-versions/default/StreamOut.cpp",
+      "new_id": "af3307aaa5db209cb59f3b1cf44c593f1aaf14ff",
+      "new_mode": 33188,
+      "new_path": "audio/core/all-versions/default/StreamOut.cpp"
+    }
+  ]
+}

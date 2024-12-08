@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "c677ee92595335233eb0e7b59809a1a94e7a678a",
+  "tree": "36593aed953512b77ca376f23c33deae6b558d66",
+  "parents": [
+    "980c6a82542ee49ed52113c4ac772ce3d6a5e628"
+  ],
+  "author": {
+    "name": "Andre Eisenbach",
+    "email": "eisenbach@google.com",
+    "time": "Tue Feb 23 01:38:10 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:22 2016 -0800"
+  },
+  "message": "DO NOT MERGE Remove Porsche car-kit pairing workaround\n\nBug: 26551752\nChange-Id: I14c5e3fcda0849874c8a94e48aeb7d09585617e1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "66b5f987b3c0f1284c0f21a39e0f87a4d7378b2c",
+      "old_mode": 33188,
+      "old_path": "include/bt_target.h",
+      "new_id": "b2068eefcdc11851b880f81c460702298006c621",
+      "new_mode": 33188,
+      "new_path": "include/bt_target.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fcb17bb5c539f2e9cf7aa58e03225ddecf8cf83c",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_int.h",
+      "new_id": "0414b1c7824a526a0e1a588489617d417f1a49eb",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_int.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d7bf5ab32ab3eb03493baeca8e4da918df00922",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_sec.c",
+      "new_id": "6c3dab3be26053c1c5d0fe36b72795d05ed1e145",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_sec.c"
+    }
+  ]
+}

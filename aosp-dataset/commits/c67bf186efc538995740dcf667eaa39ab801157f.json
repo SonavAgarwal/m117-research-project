@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c67bf186efc538995740dcf667eaa39ab801157f",
+  "tree": "94e5c5b7f8907cc955612c0e14472684ca18e7b5",
+  "parents": [
+    "11476bf070d250f3c02ad1b57bc9db2459f2f0ae"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Thu Jan 16 14:01:15 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:07:24 2020 +0000"
+  },
+  "message": "OOB write in rw_t2t_handle_tlv_detect_rsp\n\nBug: 147309942\nBug: 147310271\nTest: use proxmark as described in b/147309942\nChange-Id: I44a3f26afb3591d1a94e2e0d7a8b1619beeaa7d6\nExempt-From-Owner-Approval: get +2 from new owner\n(cherry picked from commit 5fbc3a8889be3527283bc99d96ad578dfc8d7f19)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "707f86b928ec7c6885f05b34cdda9566fed42111",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t2t_ndef.cc",
+      "new_id": "d0edf396efe1da925190f445dc5aeef1d6974e18",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t2t_ndef.cc"
+    }
+  ]
+}

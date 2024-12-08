@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "89c03b3b9ff74a507a8b8334c50b08b334483556",
+  "tree": "5411d2d32a4933a4982878e8ab39ca648ecd4855",
+  "parents": [
+    "45d9bbabbe7920bf4e0a68074b97d8260aef2e07"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Sep 20 17:37:55 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:02 2016 -0700"
+  },
+  "message": "SampleIterator: clear members on seekTo error\n\nBug: 31091777\nChange-Id: Iddf99d0011961d0fd3d755e57db4365b6a6a1193\n(cherry picked from commit 03237ce0f9584c98ccda76c2474a4ae84c763f5b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ad7b6fd72d3c473b3ce74f1a84ad6949c2d2bf25",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleIterator.cpp",
+      "new_id": "54c9fa33f3000fa6b4aa15189a26ff03d9679b7b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleIterator.cpp"
+    }
+  ]
+}

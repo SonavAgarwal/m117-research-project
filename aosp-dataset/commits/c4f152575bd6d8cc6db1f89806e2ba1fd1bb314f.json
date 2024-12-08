@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c4f152575bd6d8cc6db1f89806e2ba1fd1bb314f",
+  "tree": "204ef86a2f5ecc8d60fa115b30687a15d8ba5426",
+  "parents": [
+    "3695b6bdaa183bb2852da06b63ebd5b9c2cace36"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Dec 20 12:16:31 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fix in returning incomplete frame error\n\nIn case a slice start code is found and picture decode is not complete\nand a non slice NAL is encountered, then mark the current pic as incomplete\n\nBug: 33250932\nBug: 33139050\n\nChange-Id: I9db4446338b307310805dba90c60c8cbdeee0739\n(cherry picked from commit d1896deaf15ad8c6d148702899426b64601a3358)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c687fa131fffeaa03411cc03626a6820d934b52a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "5fc38e37bd1777044438fad2ee7d04b707602403",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    }
+  ]
+}

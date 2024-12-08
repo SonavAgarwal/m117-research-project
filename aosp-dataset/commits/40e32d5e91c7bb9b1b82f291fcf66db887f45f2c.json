@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "40e32d5e91c7bb9b1b82f291fcf66db887f45f2c",
+  "tree": "fb0916a70ad148fb4826b733a8e8f863d7a38fc9",
+  "parents": [
+    "d5f4612112cd9150d0c9a5150fa09e73c8268dd7"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Mar 12 19:39:03 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:46 2019 +0000"
+  },
+  "message": "AudioFlinger: Prevent multiple effect chains with same sessionId\n\nAllow at most one effect chain with same sessionId on mPlaybackThreads.\n\nTest: poc, CTS effect tests\nBug: 123237974\nMerged-In: Ide46cd23b0a9f4295f0dca2fea23379a76b836ee\nChange-Id: Ide46cd23b0a9f4295f0dca2fea23379a76b836ee\n(cherry picked from commit 1631f06feb36df5406ad00e850dcca9394f67772)\n(cherry picked from commit f963b2bfdaf406b42d371322402172b4380bbba5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc1654e6746c675ca5f1e9cdeeaafee09ef46098",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "c77d082cfe9de3d0d58671033405f266e471c95f",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    }
+  ]
+}

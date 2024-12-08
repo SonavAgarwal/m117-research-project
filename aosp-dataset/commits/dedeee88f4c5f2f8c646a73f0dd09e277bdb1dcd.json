@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dedeee88f4c5f2f8c646a73f0dd09e277bdb1dcd",
+  "tree": "cb3ba4055f652a58d9777f1cf7dd2c29cb113541",
+  "parents": [
+    "462511bc9c2720a7774485802ef1fb0730fddf37"
+  ],
+  "author": {
+    "name": "Todd Kennedy",
+    "email": "toddke@google.com",
+    "time": "Fri Sep 20 13:45:15 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:34:42 2019 +0000"
+  },
+  "message": "Only allow INSTALL_ALLOW_TEST from shell or root\n\nBug: 141169173\nTest: Manual. App can\u0027t be installed as test-only\nChange-Id: Ib6dcca7901aa549d620448c0165c22270a3042be\n(cherry picked from commit b5afc874838857bac783555bd665ac3bdd7966f9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e75f545eafaa5fef64b0c2e1f6548e569737ecdd",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageInstallerService.java",
+      "new_id": "0329e2c5ed45b4a46562e130673486d1a358074c",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageInstallerService.java"
+    }
+  ]
+}

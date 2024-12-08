@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b875a5fe0db2e2d4bf44746bb8ca4dc1e959925e",
+  "tree": "86a024f86891b9f79127920b1d257b726a589702",
+  "parents": [
+    "1b95a26ca579f0dae2678f1642308edb310daebd"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Apr 10 04:31:59 2020 +0530"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Jun 04 11:26:21 2020 -0700"
+  },
+  "message": "m4v_h263: Return error for zero width and height\n\nTest: poc in bug\nBug: 152496149\nBug: 152629190\n\nChange-Id: I07293e97b664e03e29a1392b139132fc137361cd\n(cherry picked from commit 5d8def9a0235d97fd6dfd88fb8b6b25bf98411c5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "679b0911dfa165fe1b7519ed0a851f3197075e58",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp",
+      "new_id": "a11f55e34afa8f177f768e3d3b95299ef2637ace",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp"
+    }
+  ]
+}

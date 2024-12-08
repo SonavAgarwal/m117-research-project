@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6b7373a32e0a0628b497c1fbec5141ca47ef61b5",
+  "tree": "e586ea9cd998922f1a6e6eebd0255bc076e8b159",
+  "parents": [
+    "89321d6f0d47724dc7f0c17f7d7302d1fe75086b"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Feb 13 11:40:44 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:59 2020 +0000"
+  },
+  "message": "GattServcer: Check invalid offset\n\nTest: manual\nBug: 143231677\nChange-Id: I97e2c3ae15fccc482d07d8d621c455cc74900cfd\nMerged-In: I0ca22e7c60292d61c758120c1cd67f6e6edd8ae8\n(cherry picked from commit 7674de8fc890572471831ded8c80d3b52db5b60a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "52fd1edf60bde354894dc5fdbcd78fb2fefe78ee",
+      "old_mode": 33188,
+      "old_path": "service/gatt_server.cc",
+      "new_id": "f46927d7019b358365d561a1fa9adacc587880c3",
+      "new_mode": 33188,
+      "new_path": "service/gatt_server.cc"
+    }
+  ]
+}

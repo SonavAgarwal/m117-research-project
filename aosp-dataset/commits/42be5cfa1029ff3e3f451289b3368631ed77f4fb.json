@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "42be5cfa1029ff3e3f451289b3368631ed77f4fb",
+  "tree": "63c4d36b837e8fa131326784b02aec30980c71f2",
+  "parents": [
+    "4493d84ab2cbd8c36674fcc4009081850b04a63c"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon May 10 19:26:13 2021 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:33 2021 +0000"
+  },
+  "message": "Prevent drawing on top of DevicePickerActivity\n\nBug: 182584940\nChange-Id: I8b27b397bce1708a42b96b1b647c64e23142c468\n(cherry picked from commit 68f799a4c6afc3b96b354d1b8b970780bb6cf58a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "77e8ba4e1c34bf8e47f25a3e45c3a30e3c51bda2",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/DevicePickerActivity.java",
+      "new_id": "a4f025b267ae849cd8a11f4f4dbf55e46548a1e3",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/DevicePickerActivity.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47d4b33b504e14e98420943f771a9aecd6d09516",
+  "tree": "53c0deb26586d60c505447b1f3addb3958e925d3",
+  "parents": [
+    "cf1e36f93fc8776e3a8109149424babeee7f8382"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed Oct 04 09:55:14 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:28:54 2017 +0000"
+  },
+  "message": "Access HEVC context after create fail check\n\nBug: 66969193\nChange-Id: Icd1c8d78986e3795ba7f1c1d50ebeb90d77f6178\n(cherry picked from commit 2bee8317ecfa5dca3c43d99db40491c4e28f832d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2745087ad49c04e3ba3ead1ff06dcdd6ef591fb6",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp",
+      "new_id": "103fc22985f55d52036d592fe52a5b729df9a612",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp"
+    }
+  ]
+}

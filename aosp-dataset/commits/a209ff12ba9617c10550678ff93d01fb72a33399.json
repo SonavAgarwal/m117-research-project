@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a209ff12ba9617c10550678ff93d01fb72a33399",
+  "tree": "1d023f32ee9f59c3174e94700cd9f08e4d0a63e4",
+  "parents": [
+    "7a0e978a5ba16f237c7ef8aac9cb6154d2d183bd"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Tue May 31 17:31:03 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:06:32 2016 -0700"
+  },
+  "message": "Deal correctly with short strings\n\nThe parseMacAddress function anticipates only properly formed\nMAC addresses (6 hexadecimal octets separated by \":\").  This\nchange properly deals with situations where the string is\nshorter than expected, making sure that the passed in char*\nreference in parseHexByte never exceeds the end of the string.\n\nBUG: 28164077\nTEST: Added a main function:\n\nint main(int argc, char **argv) {\n   unsigned char addr[6];\n   if (argc \u003e 1) {\n      memset(addr, 0, sizeof(addr));\n      parseMacAddress(argv[1], addr);\n      printf(\"Result: %02x:%02x:%02x:%02x:%02x:%02x\\n\",\n              addr[0], addr[1], addr[2], addr[3], addr[4], addr[5]);\n   }\n}\n\nTested with \"\", \"a\" \"ab\" \"ab:c\" \"abxc\".\n\nChange-Id: I0db8d0037e48b62333d475296a45b22ab0efe386\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "31166e38f13534ea3123ce42a8b3c804ea7e0556",
+      "old_mode": 33188,
+      "old_path": "service/jni/com_android_server_wifi_WifiNative.cpp",
+      "new_id": "acc02d68718162257621669cefd9b0ff699dac6c",
+      "new_mode": 33188,
+      "new_path": "service/jni/com_android_server_wifi_WifiNative.cpp"
+    }
+  ]
+}

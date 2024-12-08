@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8a9f53ee2c661e8b5b94d6e9fbb8af3baa34310d",
+  "tree": "a4e0b1e302f15d68f96ebcf3ba9d909e154611b6",
+  "parents": [
+    "11bb645de2de83cb48c94192d62f3828a36613b4"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Aug 19 15:08:13 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Aug 19 15:08:13 2015 -0700"
+  },
+  "message": "Check segments and libs\n\nBug: 23286323\nChange-Id: I95ee385d0fb1503a4ce5a96e30d034ac8b81170e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "97672cfcc834b3fae35c0078949171d170137ca5",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/jet.c",
+      "new_id": "2f1541f5d404a248a6ea02d7fd608199d976c908",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/jet.c"
+    }
+  ]
+}

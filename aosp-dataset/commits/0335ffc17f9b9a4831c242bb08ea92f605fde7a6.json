@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0335ffc17f9b9a4831c242bb08ea92f605fde7a6",
+  "tree": "f32bad25a377b5b4605c619055abaffc467411a8",
+  "parents": [
+    "1a6756b78ad1c7fca57cb8521081fc01181e8f83"
+  ],
+  "author": {
+    "name": "Shuzhen Wang",
+    "email": "shuzhenwang@google.com",
+    "time": "Mon Mar 02 14:52:12 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:25 2020 +0000"
+  },
+  "message": "libexif: Fix read buffer overflow\n\nMake sure the number of bytes being copied from doesn\u0027t exceed the\nsource buffer size.\n\nTest: testPocBug_148705132\nBug: 148705132\nChange-Id: Ib0f8441f2d0d4ed33c324630a9400a8412209da7\n(cherry picked from commit 127f882f67b38def9b5424987c32e21064f4d49c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "adfb512274d9556d20df3dbef9efc34a3f8ef0af",
+      "old_mode": 33188,
+      "old_path": "libexif/exif-data.c",
+      "new_id": "b81b8ce72cb758841909f2e7201693e34e5ee38b",
+      "new_mode": 33188,
+      "new_path": "libexif/exif-data.c"
+    }
+  ]
+}

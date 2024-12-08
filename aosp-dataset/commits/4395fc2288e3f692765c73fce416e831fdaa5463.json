@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4395fc2288e3f692765c73fce416e831fdaa5463",
+  "tree": "d606921bb77c990f1aa4a3290e7f6bfd98e24175",
+  "parents": [
+    "726108468dcfdabb833b8d55333de53cf6350aaa"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Wed Apr 05 15:46:49 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:04:15 2017 +0000"
+  },
+  "message": "Fix reallocation for new sps\n\nThis works for mnc-dr-dev and later.\n\nBug: 34779227\nTest: re-ran POC before/after patch to verify behavior\nChange-Id: Ida0bf6bcc236494c3c89b228039501e287839fbe\n(cherry picked from commit 99df61bb9a89cdd123d4f515c44238b48d62642a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b4f843b323537ab0345ad31c90ecd02651036918",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "8b50def1f34beabc404c53cebaf353f9113c2203",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

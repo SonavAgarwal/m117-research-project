@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3378ce511d7a792ddf0d69d11ce5e284309893fd",
+  "tree": "19e8d127c0b7db445fcdd8aa2beff8994d289864",
+  "parents": [
+    "94c1fcc8e417de87d02351ef884368ffddca46a3"
+  ],
+  "author": {
+    "name": "Todd Kjos",
+    "email": "tkjos@google.com",
+    "time": "Mon Aug 12 10:11:52 2019 -0700"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@google.com",
+    "time": "Mon Aug 12 21:12:43 2019 +0200"
+  },
+  "message": "ANDROID: fix binder change in merge of 4.9.188\n\nThe 4.9.188 merge was missing the change to the\nbinder driver associated with the linux-4.9.y\ncommit 16903f1a5ba7 (\"coredump: fix race condition\nbetween mmget_not_zero()/get_task_mm() and core dumping\").\nIt was left out because the android-4.9 binder\ndriver has been significantly refactored compared\nto linux-4.9.y.\n\nThis patch applies the missing change from that\npatch to the binder driver.\n\nChange-Id: I803e558cb629fedff04b14e23ac9f83e98628ede\nFixes: d4fff2d0a879 (\"Merge 4.9.188 into android-4.9\")\nSigned-off-by: Todd Kjos \u003ctkjos@google.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ce006afaf4ed1815927ae857a1bc7b8b3917eba0",
+      "old_mode": 33188,
+      "old_path": "drivers/android/binder_alloc.c",
+      "new_id": "da2842239bd15bc3dedaa0ae200eda6df8893611",
+      "new_mode": 33188,
+      "new_path": "drivers/android/binder_alloc.c"
+    }
+  ]
+}

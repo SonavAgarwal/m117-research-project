@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fe4c71a7a3a8a2184b3096203aa9240e01af621e",
+  "tree": "4325eb95397e8d8f572323976a698c193a456ac6",
+  "parents": [
+    "ff309e242d25154fe0b35de56cadbc9882b17dc9"
+  ],
+  "author": {
+    "name": "Eric Sandness",
+    "email": "sandness@google.com",
+    "time": "Thu Oct 11 13:20:59 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:19:59 2018 +0000"
+  },
+  "message": "Don\u0027t Disable Pkg Verifier When Provisioning\n\nRemove code that temporarily disabled the package verifier during DO\nprovisioning.  This is no longer necessary, since a user dialog box no\nlonger pops up with package verifier on.\n\nChange-Id: Iae25558ac38fddba4b13786b2f0a1a46d91cf4b5\nBug: 116754444\nTest: Ran DO provisioning from QR code manually\nTest: com.android.managedprovisioning.task.InstallPackageTaskTest\nTest:\ncom.android.managedprovisioning.provisioning.DeviceOwnerProvisioningControllerTest\nMerged-In: Iae25558ac38fddba4b13786b2f0a1a46d91cf4b5\n(cherry picked from commit 661ee972c2022955dc101c06114f6df49f29bc7a)\n(cherry picked from commit fcee9be463f43feb1d1825699cfb0b056e8f2e90)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ea93433e20622495b36e3974daa15ec2ae30e23c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/managedprovisioning/task/InstallPackageTask.java",
+      "new_id": "779d2c9d6e3aa1e9a77a7010499cf202f9ef7a64",
+      "new_mode": 33188,
+      "new_path": "src/com/android/managedprovisioning/task/InstallPackageTask.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "18bfd37cfe1340d3acde90cd69dc1538d7a6eb18",
+      "old_mode": 33188,
+      "old_path": "tests/instrumentation/src/com/android/managedprovisioning/task/InstallPackageTaskTest.java",
+      "new_id": "3fab0d24870bb2d891d7c79ec2e2e88b412f902e",
+      "new_mode": 33188,
+      "new_path": "tests/instrumentation/src/com/android/managedprovisioning/task/InstallPackageTaskTest.java"
+    }
+  ]
+}

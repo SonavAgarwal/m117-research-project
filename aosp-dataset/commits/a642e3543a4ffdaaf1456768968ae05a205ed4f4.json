@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a642e3543a4ffdaaf1456768968ae05a205ed4f4",
+  "tree": "a71aee837870db9d66bde7226ae2393c190b794d",
+  "parents": [
+    "61657b2d87b88576ab1b7d7fb5768b0e315c9216"
+  ],
+  "author": {
+    "name": "Colin Cross",
+    "email": "ccross@android.com",
+    "time": "Fri Apr 07 10:46:45 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:31 2017 +0000"
+  },
+  "message": "Merge commit \u0027bbc9221\u0027 into master\n\nThis merges the history from upstream without making any changes to\nthe code.\n\nBug: 33280507\nChange-Id: I303a906c2cb361cdc2b9a6c99da2b09782467254\n(cherry picked from commit 5e48fb0cc42f4c09080930e5c5ded1ef4bc89eed)\n(cherry picked from commit d4aea7c865084a140a965d4c413c6c38f9a2743a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e99dcf130a33f739cbbdda95e5f825ffffb424b0",
+      "old_mode": 33188,
+      "old_path": "README.android",
+      "new_id": "4447b272b9b971b97508a138ea5954bef47bda08",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    }
+  ]
+}

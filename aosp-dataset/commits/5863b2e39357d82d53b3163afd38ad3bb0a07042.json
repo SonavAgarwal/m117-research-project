@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "5863b2e39357d82d53b3163afd38ad3bb0a07042",
+  "tree": "64da0229e3696e243a4d7f45c5d5988027a3e051",
+  "parents": [
+    "ce512058186120a0de2916f6e22be58455df1a49"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Fri Apr 21 11:01:52 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:37 2017 +0000"
+  },
+  "message": "Decoder: Fixed allocation of pv_map_ref_idx_to_poc_buf.\n\nIncreased allocation to include reference list1 also by\ndefault. In the case of error, we could get B_SLICES\neven in BASE_PROFILE. The initialization in the\ndec_slice_struct_t slice structure has also been\nmodified accordingly.\n\nTest: run poc with and without this patch\nBug: 38496660\nChange-Id: I3451d79bbcd9f0d7a80981a9897f877b7f0812bd\n(cherry picked from commit a925a6b539642c8749c91a6f33e362eda8c4a5b6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "772964ac2d291ddf275c0fa3cea2acec6c821602",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_bslice.c",
+      "new_id": "db64ce9d7cd92f05816734efc50cd004a0a92456",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_bslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bcfbe057b601fe2f399140c74c9e671c17aa650f",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "d6b0f23c59a9644759306df88bf808dce93836eb",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "849b9c59962fca1791546641129b551a1ce98a85",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "bdfccb68d16d617bf82a71a5eb76995463793639",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4f6deca24c0ba35b7eb60f544a38c8c3a6af8211",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "7d7475d0b4436c4301cffb1b9544a657124cc4ba",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

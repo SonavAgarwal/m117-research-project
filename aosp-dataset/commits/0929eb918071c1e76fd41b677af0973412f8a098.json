@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "0929eb918071c1e76fd41b677af0973412f8a098",
+  "tree": "a5d0fa7feb5c42665f4877a35bc7434e07ad6578",
+  "parents": [
+    "b66ddb8e5d08324ab3fc068861cd029a8ffba1b8"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Fri May 10 04:33:43 2019 -0700"
+  },
+  "committer": {
+    "name": "Manjae Park",
+    "email": "manjaepark@google.com",
+    "time": "Mon Dec 16 13:10:08 2019 -0800"
+  },
+  "message": "Support strict mode private DNS on VPNs that provide Internet.\n\nCurrently, strict mode private DNS does not work on VPNs because\nNetworkMonitor does not validate VPNs. When a VPN connects, it\nimmediately transitions to ValidatedState, skipping private DNS\nhostname resolution.\n\nThis change makes NetworkMonitor perform private DNS hostname\nresolution and evaluation even on VPNs.\n\nIn order to ensure that the system always immediately switches to\nthe VPN as soon as it connects, remove the unvalidated penalty\nfor VPN networks. This ensures that the VPN score is always 101\nand the VPN always outscores other networks as soon as it\nconnects. Previously, it would only outscore other networks\nwhen no-op validation completed.\n\nBackport of 414b8c8b1ce8ae2ad6ef95c1ffba19062077d3e6.\n\nBug: 122652057\nTest: atest FrameworksNetTests\nTest: manually ran a VPN with private DNS in strict mode\nTest: atest android.net.cts.ConnectivityManagerTest com.android.cts.net.HostsideVpnTests\nChange-Id: Iaa78a7edcf23755c89d7b354edbc28d37d74d891\nMerged-In: Iaa78a7edcf23755c89d7b354edbc28d37d74d891\n(cherry picked from commit 029d9ea11921b7ca5652d24a9563b66c2b70fafc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c995c1e90fd4b6fa4ea25799e0d7249586b5267c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "bdb6d08b9d5aa4d45de996f4c37008eb12503f8a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "24865bcd9a09910f6e66695d1ab5080299749959",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/ConnectivityConstants.java",
+      "new_id": "cd7ef9e76f1d8f8f2ebab9471da3542ccc9efc87",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/ConnectivityConstants.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "505480ea537e2719696a72745a58daecd49adef4",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/NetworkAgentInfo.java",
+      "new_id": "5ee572ecb7b19f2d1a42d79e0fc25864f6384044",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/NetworkAgentInfo.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d3dad1d6f4949c394d7a9c6659187aff8f9bff90",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+      "new_id": "208fb105325acb1b269db2478ee64d5a81da0099",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "64e82eab10f28fd3d02beb5d93c4f5698b916f20",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "4826120ef52b1fb479a2651ca57949a3bc1f4ad9",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    }
+  ]
+}

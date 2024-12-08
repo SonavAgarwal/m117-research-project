@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "41c42f5bb544acf8bede2d05c6325657d92bd83c",
+  "tree": "dc09e1810df4503552253ad27ec3ae1a3569e81b",
+  "parents": [
+    "4da98e32a7c53663b1af4d979b27df214a3d3b46"
+  ],
+  "author": {
+    "name": "Peter Qiu",
+    "email": "zqiu@google.com",
+    "time": "Mon Dec 12 13:56:48 2016 -0800"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Thu Jan 19 23:32:19 2017 +0000"
+  },
+  "message": "configparse: do not delete passpoint configuration file\n\nFix merge conflict into nyc-mr1-security release branches\nIt is the caller\u0027s responsibility for deleting configuration files.\n\nThis avoids the ConfigBuilder from deleting arbitrary files\n(specified by URI) pass-in by the callers.\n\nBug: 33178389\nTest: Verify Passpoint Configuration installation works using Shamu\nChange-Id: I54803dc711ede98a1ec1259077522032c543dca1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9bcfddbb665e8f780baecc4e2cd52bf316aea275",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/configparse/ConfigBuilder.java",
+      "new_id": "ad0165e4cb5074f5dd70e51ea86c85f7b9acd1c3",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/configparse/ConfigBuilder.java"
+    }
+  ]
+}

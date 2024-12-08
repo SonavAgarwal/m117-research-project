@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "45d9bbabbe7920bf4e0a68074b97d8260aef2e07",
+  "tree": "a4a900b4fdff086f6f84a2eacea7469745b202ba",
+  "parents": [
+    "1d4feebdb85db46e138530f360d9ff2490e14353"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Sep 20 13:36:40 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:01 2016 -0700"
+  },
+  "message": "Check mprotect result\n\nmprotect can theoretically fail, which could then let one exploit\na vulnerable codec if one exists on the device.\n\nBug: 31350239\nChange-Id: I7b99c190619f0fb2eb93119596e6da0d2deb8ba5\n(cherry picked from commit 866c800c0624bb13eee44973cc8a2ecd0012de6e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ebb35549ccf9ead2c951abd314613db79b9a3c9",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "1090a8330eb550acd9d479c852181e12121b1774",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    }
+  ]
+}

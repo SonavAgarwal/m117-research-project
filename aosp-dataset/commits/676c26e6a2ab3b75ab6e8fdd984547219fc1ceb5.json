@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "676c26e6a2ab3b75ab6e8fdd984547219fc1ceb5",
+  "tree": "45d0de1bd7792979cdef15097118e68b2504029e",
+  "parents": [
+    "17b46beeae7421f76d894f14696ba4db9023287c"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Mon May 08 17:21:56 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:05 2017 +0000"
+  },
+  "message": "Decoder: Fixed allocation size of pred info buffer\n\nBuffer allocation size for pred info was increased\nin the case number reference frames equal to 1.\n\nBug: 36998372\nChange-Id: I1f84a16703422109d40bed8436f35d0c2069c088\n(cherry picked from commit 9008aed514f7211f6fcad328277ce464b042f622)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c64ee8a886665705341bf10e904e5aa29570c9c5",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "4f6deca24c0ba35b7eb60f544a38c8c3a6af8211",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

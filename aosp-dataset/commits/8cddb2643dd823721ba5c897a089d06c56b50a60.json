@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8cddb2643dd823721ba5c897a089d06c56b50a60",
+  "tree": "2959d5f8b9181f1231f5a71cb7cefd64f2b62d86",
+  "parents": [
+    "8897a25115a78edd4357bb6f1962d4fac52d3ae1"
+  ],
+  "author": {
+    "name": "Makoto Onuki",
+    "email": "omakoto@google.com",
+    "time": "Wed Feb 10 12:16:06 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:26 2021 +0000"
+  },
+  "message": "Add SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS to CalendarDebugActivity\n\nBug: 174046397\nTest: manual test\nChange-Id: Id34eaaf1a8beab80d768186a271201e0b58d4a19\n(cherry picked from commit 11fe2048a5aa5d3d3db315194921130bf2407919)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d8791839bcf09b821703fc1a3684dcfa67747fb",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "fd56187e31476f0418947caf6bb38be381f5dfdb",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "d06e0956acccf316ee7e62834e7d8ff58bb5bd7b",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/calendar/CalendarDebugActivity.java",
+      "new_id": "70a1fe4fcb0e2c5eedd7ecb7fab7c1cb60b82208",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/calendar/CalendarDebugActivity.java"
+    }
+  ]
+}

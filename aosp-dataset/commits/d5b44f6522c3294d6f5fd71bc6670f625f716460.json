@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d5b44f6522c3294d6f5fd71bc6670f625f716460",
+  "tree": "fa2255512588b51746703d6e058fbdf66b7b3424",
+  "parents": [
+    "bdbabb2ca4ebb4dc5971d3d42cb12f8048e23a23"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Jul 12 10:44:29 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:46:14 2018 +0000"
+  },
+  "message": "Fix OOB read in process_l2cap_cmd\n\nTest: manual\nBug: 79488381\nChange-Id: I723866ed40d3647fed99875f659bb95df96a6969\n(cherry picked from commit 5bb66307b555b17d1764e116316ce50c687c9653)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2574f88c5ec1e2c7731f57caca3d6627d8420db2",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_main.cc",
+      "new_id": "a69c029427e3ff2b3256db380a494d74237d6e57",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_main.cc"
+    }
+  ]
+}

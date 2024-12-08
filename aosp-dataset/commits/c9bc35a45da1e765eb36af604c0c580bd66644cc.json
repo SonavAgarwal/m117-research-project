@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "c9bc35a45da1e765eb36af604c0c580bd66644cc",
+  "tree": "5164b81c5f6bb799fa74f7c0ef93bec2b39f2971",
+  "parents": [
+    "0b434bf5eebd5b76a71e04b54c3c810a10373b6c"
+  ],
+  "author": {
+    "name": "Wale Ogunwale",
+    "email": "ogunwale@google.com",
+    "time": "Wed May 16 16:42:29 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Sep 11 23:19:07 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Hide overlay windows when requesting media projection permission.\n\n1: Cherry-pick ag/4067454 - Setting PRIVATE_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS\nupdateNonSystemOverlayWindowsVisibilityIfNeeded on relayoutWindow\n\n2: Cherry-pick ag/3650369 - If PRIVATE_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS changed on\nrelayoutWindow() then updateNonSystemOverlayWindowsVisibilityIfNeeded\n\n3: Add permissions to SystemUI to allow it to hide non-system overlays\n\nBug: 34170870\nTest: manual (see bug for poc)\nChange-Id: I57cb0f390d9a78e721c5ddce49a377d385002753\n(cherry picked from commit 40f7b5832291ec81b921d9d7598447653d926604)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "070634b83552cf34e821aee4126064f41c618507",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/AndroidManifest.xml",
+      "new_id": "2f7f0bb662ac4ead578ee1b780211d45b62f61ec",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "b2a80f4ca52cadc1bbb0b167ffe4003bcb8f88d4",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java",
+      "new_id": "4a6786832df011e252c6d725c5067b37a0077b2a",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/media/MediaProjectionPermissionActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d378fa3ca2294494e2bed6189731e05939eca818",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "5f4c99437af9059016d6b2d5d12f5efff100c53b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    }
+  ]
+}

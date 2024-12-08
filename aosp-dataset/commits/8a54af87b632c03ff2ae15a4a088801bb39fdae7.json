@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "8a54af87b632c03ff2ae15a4a088801bb39fdae7",
+  "tree": "117f5ccc0f00e764873ef3fe434f632c0e37455b",
+  "parents": [
+    "db5266410e95c90e284af304c734e45432cd6d5c"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Sun Dec 17 02:31:18 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Feb 16 22:50:48 2018 +0000"
+  },
+  "message": "Refactor MediaPlayerBase\u0027s notify\n\nTest: make cts -j123 \u0026\u0026 cts-tradefed run cts-dev -m \\\nCtsMediaTestCases --compatibility:module-arg \\\nCtsMediaTestCases:include-annotation:\\\nandroid.platform.test.annotations.RequiresDevice\n\nBug: 70546581\nChange-Id: Ia3a8eb99c2faf6935c63800ba08f65970cede48e\n(cherry picked from commit 082e4f75a383f957a6ed9186ca0692b694e1ce45)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cd0a00366878da5286952614b3901b3e9d5f0be1",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerFactory.cpp",
+      "new_id": "686c059ef66f478bda254aa9e0805cc083302cb8",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerFactory.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6aedeb2ebc77f38cc4a47d20fcb009c746c9efd6",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerFactory.h",
+      "new_id": "e88700cf5847310c97760d004e07f8d7f00afa9a",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerFactory.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e17b8d2f9b20617057724e72072ff2408f8a9bb",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.cpp",
+      "new_id": "34454699b95714591bad2c5d68f9f030f2a7a6c0",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f043f32611385b294c1fb006c3c4bca8c45ac3a0",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.h",
+      "new_id": "34e5e2a0ac6669982e42f6829acffb7c98a5d6fd",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "34f1fe430dc2beaf6008aeae04d3caa897159a1a",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/include/MediaPlayerInterface.h",
+      "new_id": "6d02cce6f3a41af6913a2725e4a67d80d09cac4d",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/include/MediaPlayerInterface.h"
+    }
+  ]
+}

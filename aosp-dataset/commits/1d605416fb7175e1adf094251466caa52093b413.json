@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1d605416fb7175e1adf094251466caa52093b413",
+  "tree": "0116d920c5facf13b63774d9e9a9248748075924",
+  "parents": [
+    "6988f31d558aa8c744464a7f6d91d34ada48ad12"
+  ],
+  "author": {
+    "name": "Alexander Potapenko",
+    "email": "glider@google.com",
+    "time": "Wed May 27 22:20:52 2020 -0700"
+  },
+  "committer": {
+    "name": "Linus Torvalds",
+    "email": "torvalds@linux-foundation.org",
+    "time": "Thu May 28 11:35:40 2020 -0700"
+  },
+  "message": "fs/binfmt_elf.c: allocate initialized memory in fill_thread_core_info()\n\nKMSAN reported uninitialized data being written to disk when dumping\ncore.  As a result, several kilobytes of kmalloc memory may be written\nto the core file and then read by a non-privileged user.\n\nReported-by: sam \u003csunhaoyl@outlook.com\u003e\nSigned-off-by: Alexander Potapenko \u003cglider@google.com\u003e\nSigned-off-by: Andrew Morton \u003cakpm@linux-foundation.org\u003e\nAcked-by: Kees Cook \u003ckeescook@chromium.org\u003e\nCc: Al Viro \u003cviro@zeniv.linux.org.uk\u003e\nCc: Alexey Dobriyan \u003cadobriyan@gmail.com\u003e\nCc: \u003cstable@vger.kernel.org\u003e\nLink: http://lkml.kernel.org/r/20200419100848.63472-1-glider@google.com\nLink: https://github.com/google/kmsan/issues/76\nSigned-off-by: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "13f25e241ac46cbd2f5ffa23de45e60a035a0c1a",
+      "old_mode": 33188,
+      "old_path": "fs/binfmt_elf.c",
+      "new_id": "25d489bc9453330697b70af11bfa7c077883321d",
+      "new_mode": 33188,
+      "new_path": "fs/binfmt_elf.c"
+    }
+  ]
+}

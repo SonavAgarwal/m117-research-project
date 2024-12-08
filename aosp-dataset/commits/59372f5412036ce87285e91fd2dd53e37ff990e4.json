@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "59372f5412036ce87285e91fd2dd53e37ff990e4",
+  "tree": "f678209bc65dcd2cd8a975187ce306a7cefe0578",
+  "parents": [
+    "cff5aa6571a61ec8fd9ff9721d2e5323fb89332c"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Thu Dec 15 15:58:22 2016 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:43 2017 +0000"
+  },
+  "message": "Stop supporting kUnknown_BmpHeaderType DO NOT MERGE\n\nIn SkBmpCodec, if the header size does not match a known header,\nstop trying to create an SkCodec. We do not know of any BMPs with\narbitrarily sized headers, so this should not cause any real\nregressions.\n\nIn addition, this fixes a bug where we attempt to read too much data\nfrom a file. Since we attempt to read the header size in one read,\nand a size reported by the \"BMP\" may be larger than SSIZE_MAX, this\nwill crash when reading from a file.\n\nAdd a test.\n\nBug: 33651913\nBug: 37627194\n\nConflicts:\n- tests/CodexTest.cpp\n  - Add the new test without others that have been added since\n  - Use SkAutoTDelete instead of std::unique_ptr\n\nChange-Id: I0f03acec5981869554b05cd8ccb75d7c87361019\n(cherry picked from commit 71eb09f952b7a8c56149e485cf452f03c0e834c6)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "5999b564ef327ae2e8ab4505fb75c2e2ac606298",
+      "new_mode": 33188,
+      "new_path": "resources/invalid_images/b33651913.bmp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7eb1baf2232d59d23506c106019b51d6eafdb000",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpCodec.cpp",
+      "new_id": "0aa2dad16345903c778f55c51d4bdc7a95df44e5",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "342c3693bab1eba0dc44a78a677e93897696c98a",
+      "old_mode": 33188,
+      "old_path": "tests/CodexTest.cpp",
+      "new_id": "6aa8ed587a0c8a240763748b9cb481063504d44e",
+      "new_mode": 33188,
+      "new_path": "tests/CodexTest.cpp"
+    }
+  ]
+}

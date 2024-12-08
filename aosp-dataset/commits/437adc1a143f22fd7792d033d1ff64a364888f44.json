@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "437adc1a143f22fd7792d033d1ff64a364888f44",
+  "tree": "fb654eb94ad1914f0520b7476ed5f6711381a6fa",
+  "parents": [
+    "01afbf5cc73a2383813a3b073e9163fc1bb15a11"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Dec 03 18:54:14 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:54:05 2021 +0000"
+  },
+  "message": "SDP: Only start discovery once\n\nBug: 174052148\nTest: pair with headphones\nTag: #security\nChange-Id: I1d014a7b793bb1b66e26652f6696499ea36a6510\n(cherry picked from commit cfa5a74ea90a09e1c7413a25f04332ee2d1e3f21)\nMerged-In: I1d014a7b793bb1b66e26652f6696499ea36a6510\n(cherry picked from commit f0994f6e4723eddaa617b68139f064d945d9389e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "88b3bdbcfe2f453a977177f0593a37cc69332d65",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_sdp.cc",
+      "new_id": "dd9ec3c8ca97bdd240c75b0c2b3ee2f2f3e3ba9a",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_sdp.cc"
+    }
+  ]
+}

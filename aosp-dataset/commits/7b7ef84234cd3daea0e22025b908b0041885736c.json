@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7b7ef84234cd3daea0e22025b908b0041885736c",
+  "tree": "20a9eae3c32bdd15ffa5701bf01eacd7f28012de",
+  "parents": [
+    "cb7136a2bc65efa04a6b2489064d2b25e4273263"
+  ],
+  "author": {
+    "name": "Fyodor Kupolov",
+    "email": "fkupolov@google.com",
+    "time": "Thu Feb 09 16:46:06 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:14 2017 +0000"
+  },
+  "message": "[DO NOT MERGE] Enforce user separation on external storage\n\nWith WRITE_MEDIA_STORAGE permission, MediaProvider can access external\nstorage across users.\n\nAccess should be rejected for content in other user\u0027s external storage\nif the caller has no WRITE_MEDIA_STORAGE/INTERACT_ACROSS_USERS\n\nTest: manual + android.provider.cts.MediaStore_FilesTest\nBug: 34114752\nChange-Id: I577cc33574185657592246c1103df4174ff3acf6\n(cherry picked from commit cc1cecc9be51f9655d9acdf1729345d16f078c21)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e181e599c6bf3a3bdb04d9248c8c6d3c23b90236",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/media/MediaProvider.java",
+      "new_id": "1ff9cd3eaabb03d7551a42ace483032daab423eb",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/media/MediaProvider.java"
+    }
+  ]
+}

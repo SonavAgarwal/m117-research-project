@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9dced1626219d47c75a9d37156ed7baeef8f6403",
+  "tree": "8abb946600f74db7ecf52becc50a9d3d48406631",
+  "parents": [
+    "84bdda1e6e1a8c0f1f62073c89d81c14da58d6b9"
+  ],
+  "author": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Wed Aug 09 18:32:09 2017 +0100"
+  },
+  "committer": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Wed Sep 20 15:14:11 2017 +0000"
+  },
+  "message": "zip_archive: reject files that don\u0027t start with an LFH signature.\n\nBug: 64211847\nTest: zip_archive_test\n\n(cherry picked from commit c1a56dcab711a7ee238c0af865920ca51b1408a6)\n\nMerged-In: I275e7c4da05ceeb20401b560c72294f29ef63642\nChange-Id: Ib89f0def696206ff427be27764c158fab88e4b5d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "78de40aed83955767d570908add62c990759e4fe",
+      "old_mode": 33188,
+      "old_path": "libziparchive/zip_archive.cc",
+      "new_id": "d0bbd7220ebcc580b5481bc6a0f3ff1f29dd708a",
+      "new_mode": 33188,
+      "new_path": "libziparchive/zip_archive.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "493a0ce8687315888eea7c4e58e7c6a1a97c4ee8",
+      "old_mode": 33188,
+      "old_path": "libziparchive/zip_archive_test.cc",
+      "new_id": "3035a5e828bbc6aeb939240e3c88a00d64e6d2d7",
+      "new_mode": 33188,
+      "new_path": "libziparchive/zip_archive_test.cc"
+    }
+  ]
+}

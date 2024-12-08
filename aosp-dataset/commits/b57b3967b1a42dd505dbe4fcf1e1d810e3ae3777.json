@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b57b3967b1a42dd505dbe4fcf1e1d810e3ae3777",
+  "tree": "98ea2cd94c1e9ed03951fd9d35ff6b594c324bea",
+  "parents": [
+    "45737cb776625f17384540523674761e6313e6d4"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Wed Apr 20 15:51:48 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Apr 21 19:19:47 2016 -0700"
+  },
+  "message": "SampleTable.cpp: Fixed a regression caused by a fix for bug\n28076789.\n\nDetail: Before the original fix\n(Id207f369ab7b27787d83f5d8fc48dc53ed9fcdc9) for 28076789, the\ncode allowed a time-to-sample table size to be 0. The change\nmade in that fix disallowed such situation, which in fact should\nbe allowed. This current patch allows it again while maintaining\nthe security of the previous fix.\n\nBug: 28288202\nBug: 28076789\nChange-Id: I1c9a60c7f0cfcbd3d908f24998dde15d5136a295\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5344ae4495780d02c46c463cbb568ccec87db756",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "8df9cb8308d961742a387c16576aa961b2ea0544",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "3764adb2213a0fd8bb69427746e45bbec1305f7e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/SampleTable.h",
+      "new_id": "465f37c5ec134340a1dbcc24b56d404aa9dae1be",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/SampleTable.h"
+    }
+  ]
+}

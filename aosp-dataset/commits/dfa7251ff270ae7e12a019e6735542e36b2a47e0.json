@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dfa7251ff270ae7e12a019e6735542e36b2a47e0",
+  "tree": "207bca2b2880a64d8d6f103aa633e3390cb9f596",
+  "parents": [
+    "3a64694b3c08da28735e7d3f986e98bd3d38a4e3"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Jan 13 17:08:35 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:05 2017 -0800"
+  },
+  "message": "Added check for invalid log2_max_transform_block_size in SPS\n\nBug: 33918236\nBug: 33964497\nBug: 33965905\nBug: 33862021\nChange-Id: If121221d0f6e983c05d95d123af9bed378d1961f\n(cherry picked from commit b5cae8181efbb9649ffddb659305a0da59ed445a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "04d22d802f51b2c298020ca180e652ee8114481b",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "ec3d19324350a821b80c6ff88f3d29bcbe830e05",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

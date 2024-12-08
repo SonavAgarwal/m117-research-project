@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "12370c8b5ee9e80c548ff5294790bafd2363cde0",
+  "tree": "516d8e3e328cfb6dab6586d7f9b8b06674ccd7ec",
+  "parents": [
+    "2901ff5e4e69a0581fa3c11adee192fce658b8f0"
+  ],
+  "author": {
+    "name": "Janis Danisevskis",
+    "email": "jdanis@google.com",
+    "time": "Mon Mar 25 10:26:30 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:50 2019 +0000"
+  },
+  "message": "Fix keystore wifi concurrency issue.\n\nKeystore was conceptually single threaded. Even with the introduction of\nKeymaster workers it was always assumed that the service dispatcher\nthread was single threaded. The wifi keystore service, however, calls\ninto the keystore service concurrently.\n\nThis patch adds a lock around all keystore service entry points to make\nsure all dispatcher executions are serialised despite being called from\nboth the binder and hwbinder service thread.\n\nBug: 128810613\nBug: 129145334\nBug: 128774635\nBug: 130045583\nBug: 131622568\nTest: Regressions tested with Keystore CTS test suite.\nMerged-In: I8c5602d2c2cb1dd9423df713037e99b247cee71f\nChange-Id: I8c5602d2c2cb1dd9423df713037e99b247cee71f\n(cherry picked from commit 4ea6d7a447cc9d192277df528b71fed0fbae960c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "81189ae7e32114fbcb310034dc59a20f51410be1",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.cpp",
+      "new_id": "400c814237bf8b06619e719dc1b53ce9f1742c23",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "00563422a030109e2a39abfa7c9388a218f581ab",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.h",
+      "new_id": "0a1c1ddb711e4bd2caceab5bb2761df23bccfa57",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.h"
+    }
+  ]
+}

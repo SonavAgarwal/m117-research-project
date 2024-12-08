@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d3383d5bfab296ba3adbc121ff8a7b542bde4afb",
+  "tree": "ee27820cc68292203f6832fd77c2648dfbe6eace",
+  "parents": [
+    "63363af721650e426db5b0bdfb8b2d4fe36abdb0"
+  ],
+  "author": {
+    "name": "Shreyas Basarge",
+    "email": "snb@google.com",
+    "time": "Sat Feb 20 01:01:10 2016 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:56 2016 -0800"
+  },
+  "message": "NPE fix for SyncStorageEngine read authority am: a962d9eba7 am: 339c4f2b05\nam: 58048c1f17\n\n* commit \u002758048c1f17d54166c6a048af2365d17dd32f4d57\u0027:\n  NPE fix for SyncStorageEngine read authority\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1bd1709c74a7121fe4f5430947a5a66990577d7d",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/content/SyncStorageEngine.java",
+      "new_id": "6adb37eb334ece7465f59490b0d572e51023ea3e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/content/SyncStorageEngine.java"
+    }
+  ]
+}

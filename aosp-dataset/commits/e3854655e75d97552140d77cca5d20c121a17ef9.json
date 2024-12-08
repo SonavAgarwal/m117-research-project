@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e3854655e75d97552140d77cca5d20c121a17ef9",
+  "tree": "cbab80b0b7877fd7cf4a5c4a51ae670a9a3390ea",
+  "parents": [
+    "97e1cd61d3040dd366ac9e25cdb6f134c7490846"
+  ],
+  "author": {
+    "name": "Benedict Wong",
+    "email": "benedictwong@google.com",
+    "time": "Tue Feb 20 15:19:59 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:18:03 2018 +0000"
+  },
+  "message": "DO NOT MERGE: Add unit tests to ensure VPN meteredness\n\nThese new tests ensure that VPNs report the meteredness of their\nunderlying networks correctly. The added test verifies VPN meteredness\nfor cases of metered and unmetered WiFi and Cell\n\nBug: 78644887\nTest: This; ran on walleye-eng\nChange-Id: I28bdc71a336bfd97f7908455d4781d774df44b87\n(cherry picked from commit 66bc52884b1009fca7917ae89e72e8aa40f394d1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c2b83d98a8dfe05421e65d5e2e456601b20697e1",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "6e8c0d4a55c17d8dda627410c444e9a1184eb8e4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6674f20317b3f6b61e04c5ca881eebb653d79ada",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "504a2dbc362b712d0b137f35feb932aee0c35f48",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    }
+  ]
+}

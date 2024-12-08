@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c504e21a118f30955ff0df81ead92313767bc0ab",
+  "tree": "27a410a59bf7380bd183ad87f13dd2cef81f5a44",
+  "parents": [
+    "658dc5b8e9ee47f547a4cf37ce696c70359e1ee9"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Tue Jun 25 18:04:39 2019 -0700"
+  },
+  "committer": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Wed Jun 26 23:35:27 2019 +0000"
+  },
+  "message": "AOSP/Email - Create an empty Bundle if originalExtras doesn\u0027t exit. Backporting the fix to fix NullPointerException.\n\n+ Added \"originalExtras \u003d new Bundle();\" change from cl/247540041\n\nBug: 135889250\nBug: 127320867\n\nTest: manual - Ran the following tests on Pixel phone. Tested the email UI.\n\n$ make -j 40\n  -rw-r--r-- 1 rtenneti primarygroup 6371530 Jun 25 17:23 out/target/product/marlin/system/product/app/Email/Email.apk\n\n$ make EmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 365023 Jun 25 17:49 out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb install -r out/target/product/marlin/system/product/app/Email/Email.apk\n\n$ adb install -r out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb shell am instrument -w com.android.email.tests\n  Time: 2.986\n  OK (157 tests)\n\nChange-Id: Ica9eb7ad3ddd11c752a526c2b1d5f086c74da283\nMerged-In: Ica9eb7ad3ddd11c752a526c2b1d5f086c74da283\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a5cbe9d3a2438c1d9680d338e245ae2592f4c69d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/email/activity/ComposeActivityEmailExternal.java",
+      "new_id": "a94313a86db88c1b60427f6f900e02e63a256d79",
+      "new_mode": 33188,
+      "new_path": "src/com/android/email/activity/ComposeActivityEmailExternal.java"
+    }
+  ]
+}

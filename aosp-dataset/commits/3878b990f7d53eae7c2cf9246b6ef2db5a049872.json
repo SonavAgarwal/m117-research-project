@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3878b990f7d53eae7c2cf9246b6ef2db5a049872",
+  "tree": "30beb7e7b1bca4c232f781bf0e973ae6df450166",
+  "parents": [
+    "f97b6beeb2e2f0977d1c7fa8d2aaafe4e2f4d68a"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Jun 13 14:13:44 2014 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Aug 19 09:39:02 2015 -0700"
+  },
+  "message": "Fail more gracefully on allocation failure\n\nCheck allocations when the size is read from a file and might therefore\nbe invalid.\n\nb/14388161\n\nChange-Id: Ia08cc0a6107f275a70e793ef3b50c0ce16ceeee0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "089936211196f509e1a9ec1428aea1299ab7c4f2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "561f00520ca59b4f78e02d7a487614d45ffe20e4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

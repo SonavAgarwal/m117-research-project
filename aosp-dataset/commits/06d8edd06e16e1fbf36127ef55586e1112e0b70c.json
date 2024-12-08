@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "06d8edd06e16e1fbf36127ef55586e1112e0b70c",
+  "tree": "4a4932c6e0542a50ce4fe25a01111bb058b9e8e1",
+  "parents": [
+    "fe340aad0291879de8d3b33a9bdff4d6a5c8d36a"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Thu Sep 27 16:43:01 2018 -0700"
+  },
+  "committer": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Thu Oct 11 22:43:43 2018 +0000"
+  },
+  "message": "Prevent Out of bounds read in llcp code part 2\n\nBug: 114238578\nBug: 114237888\nBug: 111660010\nTest: Tag read/write; Card Emulation\nMerged-In: Ie1e7f3285e2fcf88382b2be8bb09e1f9fb98be03\nChange-Id: Ie1e7f3285e2fcf88382b2be8bb09e1f9fb98be03\n(cherry picked from commit cf1627d9d3c59dd30e7e4c12d4a95b8f051f644e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "973a1b9c78c2d38ff3c79804e6862e0b4b8bd490",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_util.cc",
+      "new_id": "7c5d8516f239502b21c1b6ec4bc7debd1d95dd0b",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_util.cc"
+    }
+  ]
+}

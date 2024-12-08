@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e206f02d46ae5e38c74d138b51f6e1637e261abe",
+  "tree": "42203aa5a29f02921f3b72dcc8184de1fed1719d",
+  "parents": [
+    "61e9103b5725965568e46657f4781dd8f2e5b623"
+  ],
+  "author": {
+    "name": "Jason Monk",
+    "email": "jmonk@google.com",
+    "time": "Thu Jun 30 13:15:48 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:23 2016 -0700"
+  },
+  "message": "Pre-setup restrictions\n\n - Prevent external tiles from system apps\n - Disable help\n\nBug: 29194585\nChange-Id: I92da498110db49f7a523d6f775f191c4b52a4ad6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "320cd580ff8baf5e13749a0d7e8983f559d54540",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/HelpUtils.java",
+      "new_id": "83a2123fc53787df26d86ec099c4729b2c3a71cc",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/HelpUtils.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "418b138c3b0a1f955e3cd9079ad473af17ed6474",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java",
+      "new_id": "1664c8958e4ba1726889ed9e12db7e56a46cf887",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/drawer/TileUtils.java"
+    }
+  ]
+}

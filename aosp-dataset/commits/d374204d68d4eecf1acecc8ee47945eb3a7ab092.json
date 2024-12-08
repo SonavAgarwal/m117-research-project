@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d374204d68d4eecf1acecc8ee47945eb3a7ab092",
+  "tree": "e13cc3b52820695d67bee35398888cac35014595",
+  "parents": [
+    "a84433b7b7c6467ed653205e9f52cb735659ba5e"
+  ],
+  "author": {
+    "name": "WyattRiley",
+    "email": "wyattriley@google.com",
+    "time": "Thu Feb 28 12:05:56 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:49 2019 +0000"
+  },
+  "message": "DO NOT MERGE - SUPL ES Extension - Safer Init and Not After Boot\n\nSafe order of pointer setting and background thread start\nVerifying mCallEndElapsedRealtimeMillis is not the initial value\n\nBug: 112159033\nBug: 115361555\nBug: 125124724\nTest: Verified not-after-boot with test code b/115361555#comment14\nTest: Reproed NPE with test thread sleep and verify fix\nChange-Id: I25dcd5a5b36c218ea8b7ab88d6909382709fd7ab\n(cherry picked from commit fbcb41f9fbc4e91e023f3103a391182600312ef7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b5313256e4dc3c13138c4a3b256cef5c73b4206e",
+      "old_mode": 33188,
+      "old_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java",
+      "new_id": "4e2f28b243059c40b58ddef52abbd8b1e60973a4",
+      "new_mode": 33188,
+      "new_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "809a48f2b4af88108c22256300000bc477075b91",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/location/GnssLocationProvider.java",
+      "new_id": "59a7cc8c04cb5873a12cd94de196aa5bcf1f6757",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/location/GnssLocationProvider.java"
+    }
+  ]
+}

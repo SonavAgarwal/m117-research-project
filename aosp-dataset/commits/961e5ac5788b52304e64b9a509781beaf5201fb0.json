@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "961e5ac5788b52304e64b9a509781beaf5201fb0",
+  "tree": "dedb02725659600503da6bb6bd46edae9fe450c4",
+  "parents": [
+    "6f1d990ce0f116a205f467d9eb2082795e33872b"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Mar 03 13:37:27 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:48 2017 -0700"
+  },
+  "message": "Fix NPDs in h263 decoder\n\nBug: 35269635\nTest: decoded PoC with and without patch\nChange-Id: I636a14360c7801cc5bca63c9cb44d1d235df8fd8\n(cherry picked from commit 2ad2a92318a3b9daf78ebcdc597085adbf32600d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbc7be1aa130bfa15ff2ec51467b314192d01a04",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/mb_motion_comp.cpp",
+      "new_id": "877723d758725944d464fa42f3bf739c16515ff7",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/mb_motion_comp.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1720c63901420693cea59db2a3108b173e1ed72",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp",
+      "new_id": "8d5d0712b3901bf189cdd5a3055f53dba8db5304",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp"
+    }
+  ]
+}
