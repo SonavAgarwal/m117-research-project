@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "5deb172bf4d9e2b80cda0b8dd5d2b0573e1c86e9",
+  "tree": "20eac22c47f71643097c70f0ccee6cf8c0dba6b8",
+  "parents": [
+    "058cafe0c1f61e8edd25ba22e2c8e73a43c5d4ad"
+  ],
+  "author": {
+    "name": "Riddle Hsu",
+    "email": "riddlehsu@google.com",
+    "time": "Tue Mar 03 18:12:10 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:02 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Use consistent calling uid and package in navigateUpTo\n\nOriginally, if the caller of navigateUpTo is alive, even the calling\nuid is set to the caller who launched the existing destination activity,\nthe uid from caller process has higher priority to replace the given\ncalling uid. So this change doesn\u0027t modify the existing behavior if\nthe caller process is valid. Besides, the case of delivering new intent\nuses the source record as calling identity too, so the case of starting\nnew activity should be consistent.\n\nAlso forbid attaching null application thread to avoid unexpected state\nin process record.\n\nBug: 144285917\nTest: atest ActivityStackTests#testNavigateUpTo\nChange-Id: I60732f430256d37cb926d08d093581f051c4afed\n(cherry picked from commit 8a2c62c2867d30dd2065096b63512d2861ebae51)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8505fcb37a4bef655dd8422ad1c68b0c0a9048d",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "7fee0f0167507d3463b32762257629f37ad306c5",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "56be335c262437818d8eadf62afb862abab22993",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/ActivityStack.java",
+      "new_id": "1a9b11cd62d54ca3a2e5ec4c36fca3a6eff5c5d4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/ActivityStack.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5b697ee896023da933cfbdda4262eb0a5b923cc9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/ActivityStarter.java",
+      "new_id": "f37698de34d54dea6b939ab0909b377a54a684f5",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/ActivityStarter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "bde0ef6aa39eb13e0b89ec15e0ef58104abaa1af",
+      "old_mode": 33188,
+      "old_path": "services/tests/wmtests/src/com/android/server/wm/ActivityStackTests.java",
+      "new_id": "ff27b9bb1c9e4dc742781d7ed4ebf8c1b39886b4",
+      "new_mode": 33188,
+      "new_path": "services/tests/wmtests/src/com/android/server/wm/ActivityStackTests.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "84bdecb868261b60398ce532dc2c5ab8dfa10159",
+      "old_mode": 33188,
+      "old_path": "services/tests/wmtests/src/com/android/server/wm/ActivityTestsBase.java",
+      "new_id": "f94f00203521d5430f657a60c652928c1dbb4dc5",
+      "new_mode": 33188,
+      "new_path": "services/tests/wmtests/src/com/android/server/wm/ActivityTestsBase.java"
+    }
+  ]
+}

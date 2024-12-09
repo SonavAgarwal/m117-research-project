@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a84c4b763ed287f762e4112c73d9fb357605b02c",
+  "tree": "2b7d37b4afa7e78a32735e55583fe2ab6297972f",
+  "parents": [
+    "f88303717d5ed67e6ba13c7177ebd3aada958caf"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 05 15:05:33 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:12 2019 +0000"
+  },
+  "message": "Fix OOB read in libpac ast-numbering.cc\n\nFrom the upstream patch\n(https://chromium.googlesource.com/v8/v8.git/+/fbf974e2af0f62b075e62701581099211f83adb6%5E%21/#F0):\n\n\"\"\"\nAdd missing early-bailouts in ast traversal visitors\n\"\"\"\n\nBug: 117555811\n\nTest: adb shell /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\n\nChange-Id: Ia62b5ea79d79400166b7e238be1933c55730612b\n(cherry picked from commit 8cc1440e71299ca16640b4371adf378d0a61983f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "499760de147efc18fde6bff67458d3a9d8814f1f",
+      "old_mode": 33188,
+      "old_path": "src/ast/ast-numbering.cc",
+      "new_id": "811bd33a50ec149c55b66faf49c184a47dc0d359",
+      "new_mode": 33188,
+      "new_path": "src/ast/ast-numbering.cc"
+    }
+  ]
+}

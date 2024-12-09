@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "270884373ddd2c8440e43c98286b1bc013418547",
+  "tree": "2407e6ece5012ea59c69f024d8ea00eeb24902ed",
+  "parents": [
+    "5960d27c445abd8617349db1a2a9702c3b139c4b"
+  ],
+  "author": {
+    "name": "Nikita Ioffe",
+    "email": "ioffe@google.com",
+    "time": "Tue Jul 30 17:10:27 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:11 2019 +0000"
+  },
+  "message": "Unset INSTALL_DISABLE_VERIFICATION flag if install is not from system\n\nBug: 138650665\nTest: pushed manual privapp that attempts an install\n  with INSTALL_DISABLE_VERIFICATION flag.\n  Checked that PackageVerifier was called.\nChange-Id: I041d2e5f6d2609bfe9475f24eefb936f0c8e2a32\nMerged-In: I041d2e5f6d2609bfe9475f24eefb936f0c8e2a32\n(cherry picked from commit bf8e2576f3cf953217cd68ef616d244d250aaef7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0032e9a8ea519d792157768f33f1f10e57a9f043",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageInstallerService.java",
+      "new_id": "e75f545eafaa5fef64b0c2e1f6548e569737ecdd",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageInstallerService.java"
+    }
+  ]
+}

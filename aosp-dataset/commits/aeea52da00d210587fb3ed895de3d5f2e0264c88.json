@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "aeea52da00d210587fb3ed895de3d5f2e0264c88",
+  "tree": "66093b6bd6d254b099b8de386edd13ed8b8267e7",
+  "parents": [
+    "463a6f807e187828442949d1924e143cf07778c6"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri Jun 19 15:33:57 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Jul 09 14:08:39 2015 -0700"
+  },
+  "message": "audio effects: fix heap overflow\n\nCheck consistency of effect command reply sizes before\ncopying to reply address.\n\nAlso add null pointer check on reply size.\nAlso remove unused parameter warning.\n\nBug: 21953516.\nChange-Id: I4cf00c12eaed696af28f3b7613f7e36f47a160c4\n(cherry picked from commit 0f714a464d2425afe00d6450535e763131b40844)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6686f272f2ab15203163fb3cc9975b1ee05040c1",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/downmix/EffectDownmix.c",
+      "new_id": "4a410375cd77db231789b0a19f508e96f4926eb3",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/downmix/EffectDownmix.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3c2b32016fe6c1169f96fdcc92d58a9cb76f37df",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/loudness/EffectLoudnessEnhancer.cpp",
+      "new_id": "a5a1a3f110f215565fc90af54396e6972e14b30f",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/loudness/EffectLoudnessEnhancer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6aeb91908595d157909be2d62b4927724cbf6f2a",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "40c7fef94f943b75418cfcf61dea4390bd73d44a",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "13f1a0dcb2d398eac153c28a1cca5f39b04e7f39",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp",
+      "new_id": "a48a4e3850fb059f9097dfe16b2c3bf5e33dc795",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "cf98f562ffcaee84d1e6bd404753f9b4b381f63e",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/preprocessing/PreProcessing.cpp",
+      "new_id": "6dd4439c3090b97bb1723bcd6e2236900fb89e41",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/preprocessing/PreProcessing.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e5089da2447ebcd35fdc2d914574cac18236e031",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/visualizer/EffectVisualizer.cpp",
+      "new_id": "0c310c54cbc411d4234b66469fd00ba1ff1b092f",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/visualizer/EffectVisualizer.cpp"
+    }
+  ]
+}

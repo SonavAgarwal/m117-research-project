@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4e6a25843d7ef14301eb8cb5985c84d54785fbc4",
+  "tree": "566db9345a3279e9d316d23c3db1291d8338db6e",
+  "parents": [
+    "64fe4bce7830e6a772a02c1b9772c36d17ad1ba4"
+  ],
+  "author": {
+    "name": "Peter Wang",
+    "email": "tpwang@google.com",
+    "time": "Mon May 11 14:31:11 2020 -0700"
+  },
+  "committer": {
+    "name": "Peter Wang",
+    "email": "tpwang@google.com",
+    "time": "Wed May 13 21:27:33 2020 +0000"
+  },
+  "message": "Restrict access to the resolution PendingIntent created by\nEuiccController to EuiccResolutionUiDispatcherActivity\n\nBug: 156097472\nBug: 155094269\nFix: 156097472\nTest: Local, with jpd@\u0027s PoC app\nChange-Id: Ifdf81cf9d22bf70a488cca3613bd81e18a576ae1\nMerged-In: Ifdf81cf9d22bf70a488cca3613bd81e18a576ae1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d6c5c17091ea8b5a6f85c633d6b8e9c20bd0ff0a",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "7e45783857aff67ea02a505d36999000502b402a",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

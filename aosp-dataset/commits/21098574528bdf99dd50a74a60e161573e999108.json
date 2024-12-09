@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "21098574528bdf99dd50a74a60e161573e999108",
+  "tree": "83a743f5f929388126af794ce98525234c96f35e",
+  "parents": [
+    "11dda1f70e04ac28129dbccbd3037169094da68c"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Fri Aug 19 16:02:30 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:31 2016 -0700"
+  },
+  "message": "sun.security.util: check lengths in DER encoding are non-negative\n\nPort of:\nhttp://hg.openjdk.java.net/jdk8u/jdk8u/jdk/rev/4581ed6af636\n\nThis completes the upgrade to jdk8u60 of the classes\nDerIndefLenConverter and DerInputStream.\n\n(cherry picked from commit e27611b2c8a2c8cb413ff2f5f0c9cbae288aa835)\n\nBug: 30703445\nBug: 29631070\nChange-Id: I052a1ea9959f9623973bf949a96923b603e17774\n(cherry picked from commit 4c3078609421ce333468dd415d62980e68d35c9e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4f5d65880e673f0184a03e8f493935e1078aff8d",
+      "old_mode": 33188,
+      "old_path": "luni/src/test/java/libcore/javax/security/auth/x500/X500PrincipalTest.java",
+      "new_id": "5471b1f5df78d9f249e1c69c7bfa6b76a3e8344a",
+      "new_mode": 33188,
+      "new_path": "luni/src/test/java/libcore/javax/security/auth/x500/X500PrincipalTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "78d9e302d6c9094ce4a224bb6ca9fd8ba353bc60",
+      "old_mode": 33261,
+      "old_path": "ojluni/src/main/java/sun/security/util/DerIndefLenConverter.java",
+      "new_id": "cbd5ecc00e705b5fa2d745daa4f67589d6b9e6bb",
+      "new_mode": 33261,
+      "new_path": "ojluni/src/main/java/sun/security/util/DerIndefLenConverter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f514394dbd48bd38f4efa3240a17dc848bbe6c2",
+      "old_mode": 33261,
+      "old_path": "ojluni/src/main/java/sun/security/util/DerInputStream.java",
+      "new_id": "dae8afdd5fd8834b4b8c15d5b148f41a50304d2e",
+      "new_mode": 33261,
+      "new_path": "ojluni/src/main/java/sun/security/util/DerInputStream.java"
+    }
+  ]
+}

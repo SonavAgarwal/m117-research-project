@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "556de438237965857fde874d22aff0c4232d4d99",
+  "tree": "af0b52f7dcce09438817a56845f6f9cc303ec040",
+  "parents": [
+    "b26c7160cd1dfba9224ba12dc075ac3c658b18c3"
+  ],
+  "author": {
+    "name": "Diksha Gohlyan",
+    "email": "dikshag@google.com",
+    "time": "Thu May 07 00:46:46 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:32 2020 +0000"
+  },
+  "message": "Add back enforceReadPermission for getmetadata\n\nTest: manually tested\nBug: 151095863\n\nChange-Id: I29ef120c10c488550b85269e598aeb6ff9505038\nMerged-In: I4f04f08f76d039196c2c67bac80d4a46ebec87f2\n(cherry picked from commit 71ec29b05022b06ffd4596dc8b339d2067cf58c0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2143a0deb7236f8c66ee96c55e905aa08d7fdbb1",
+      "old_mode": 33188,
+      "old_path": "core/java/android/provider/DocumentsProvider.java",
+      "new_id": "643df6970560eced71a15d3525323c3def1fbdfa",
+      "new_mode": 33188,
+      "new_path": "core/java/android/provider/DocumentsProvider.java"
+    }
+  ]
+}

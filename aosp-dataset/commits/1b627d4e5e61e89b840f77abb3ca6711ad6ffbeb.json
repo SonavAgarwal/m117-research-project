@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "1b627d4e5e61e89b840f77abb3ca6711ad6ffbeb",
+  "tree": "af3dbcf4c362b1e9265a660f5a80facd4ef9133e",
+  "parents": [
+    "c22e479e335628ce8766cfbf06e2ba17e8f9a1bb"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@linux.intel.com",
+    "time": "Tue Apr 29 16:46:09 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86-64, espfix: Don\u0027t leak bits 31:16 of %esp returning to 16-bit stack\n\ncommit 3891a04aafd668686239349ea58f3314ea2af86b upstream.\n\nThe IRET instruction, when returning to a 16-bit segment, only\nrestores the bottom 16 bits of the user space stack pointer.  This\ncauses some 16-bit software to break, but it also leaks kernel state\nto user space.  We have a software workaround for that (\"espfix\") for\nthe 32-bit kernel, but it relies on a nonzero stack segment base which\nis not available in 64-bit mode.\n\nIn checkin:\n\n    b3b42ac2cbae x86-64, modify_ldt: Ban 16-bit segments on 64-bit kernels\n\nwe \"solved\" this by forbidding 16-bit segments on 64-bit kernels, with\nthe logic that 16-bit support is crippled on 64-bit kernels anyway (no\nV86 support), but it turns out that people are doing stuff like\nrunning old Win16 binaries under Wine and expect it to work.\n\nThis works around this by creating percpu \"ministacks\", each of which\nis mapped 2^16 times 64K apart.  When we detect that the return SS is\non the LDT, we copy the IRET frame to the ministack and use the\nrelevant alias to return to userspace.  The ministacks are mapped\nreadonly, so if IRET faults we promote #GP to #DF which is an IST\nvector and thus has its own stack; we then do the fixup in the #DF\nhandler.\n\n(Making #GP an IST exception would make the msr_safe functions unsafe\nin NMI/MC context, and quite possibly have other effects.)\n\nSpecial thanks to:\n\n- Andy Lutomirski, for the suggestion of using very small stack slots\n  and copy (as opposed to map) the IRET frame there, and for the\n  suggestion to mark them readonly and let the fault promote to #DF.\n- Konrad Wilk for paravirt fixup and testing.\n- Borislav Petkov for testing help and useful comments.\n\nReported-by: Brian Gerst \u003cbrgerst@gmail.com\u003e\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nLink: http://lkml.kernel.org/r/1398816946-3351-1-git-send-email-hpa@linux.intel.com\nCc: Konrad Rzeszutek Wilk \u003ckonrad.wilk@oracle.com\u003e\nCc: Borislav Petkov \u003cbp@alien8.de\u003e\nCc: Andrew Lutomriski \u003camluto@gmail.com\u003e\nCc: Linus Torvalds \u003ctorvalds@linux-foundation.org\u003e\nCc: Dirk Hohndel \u003cdirk@hohndel.org\u003e\nCc: Arjan van de Ven \u003carjan.van.de.ven@intel.com\u003e\nCc: comex \u003ccomexk@gmail.com\u003e\nCc: Alexander van Heukelum \u003cheukelum@fastmail.fm\u003e\nCc: Boris Ostrovsky \u003cboris.ostrovsky@oracle.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "881582f75c9ceb14e6eaacc48f3edecef31b3e3a",
+      "old_mode": 33188,
+      "old_path": "Documentation/x86/x86_64/mm.txt",
+      "new_id": "bd4370487b07e2c24c857fc74c5a110905d0593a",
+      "new_mode": 33188,
+      "new_path": "Documentation/x86/x86_64/mm.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "2d883440cb9a282f948d7062684c52789e95d90f",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/pgtable_64_types.h",
+      "new_id": "b1609f2c524cb29b9d81493a5b35c2793c4c07d7",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/pgtable_64_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b7bf3505e1ec0ba4d1c42c51aeae60babf150a55",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/setup.h",
+      "new_id": "93797d17ef329620fc83ce128958292c002ad6bd",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/setup.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7bd3bd31010623367c540755d1dcf3ba0186bdf9",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/Makefile",
+      "new_id": "0fde29333ca08799d4bda54aede9fe4a0fdc4b1f",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/Makefile"
+    },
+    {
+      "type": "modify",
+      "old_id": "727208941030943370fde4160b6f9ad54e62b68b",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_64.S",
+      "new_id": "75ccdc18216b0eef47daac9715ee797450a0f941",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_64.S"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8a64da36310f332ae08452c05a99de7f5da7bf99",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/espfix_64.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bfd348e9936926f56e13ffee8b67cc77ec4a4338",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/smpboot.c",
+      "new_id": "9f009cc7fcb27c01ffb91cb55e138b96b0448366",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/smpboot.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "0002a3a33081c77134569c1872e5a70684dbd646",
+      "old_mode": 33188,
+      "old_path": "arch/x86/mm/dump_pagetables.c",
+      "new_id": "e04e67753238e65c75cab2c8b6484af15ba8883b",
+      "new_mode": 33188,
+      "new_path": "arch/x86/mm/dump_pagetables.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9484f4ba88d05aa589bb737d96836a1a01db55ce",
+      "old_mode": 33188,
+      "old_path": "init/main.c",
+      "new_id": "a9e4a76c78072704141cba6ec18e82e30d54a506",
+      "new_mode": 33188,
+      "new_path": "init/main.c"
+    }
+  ]
+}

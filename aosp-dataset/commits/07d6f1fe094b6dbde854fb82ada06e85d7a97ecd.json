@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "07d6f1fe094b6dbde854fb82ada06e85d7a97ecd",
+  "tree": "5bc9d3fd2a3852e5a7c74a163294d3e62b5bde41",
+  "parents": [
+    "a57034dfe0afd6d7e6877520fcaa1728e6be90a1"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Jul 17 18:51:28 2019 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:33 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nEnable stricter SQLiteQueryBuilder options.\n\nMalicious callers can leak side-channel information by using\nsubqueries in any untrusted inputs where SQLite allows \"expr\" values.\n\nThis change starts using setStrictColumns() and setStrictGrammar()\non SQLiteQueryBuilder to block this class of attacks.  This means we\nnow need to define the projection mapping of valid columns, which\nconsists of both the columns defined in the public API and columns\nread internally by DownloadInfo.Reader.\n\nWe\u0027re okay growing sAppReadableColumnsSet like this, since we\u0027re\nrelying on our trusted WHERE clause to filter away any rows that\ndon\u0027t belong to the calling UID.\n\nRemove the legacy Lexer code, since we\u0027re now internally relying on\nthe robust and well-tested SQLiteTokenizer logic.\n\nBug: 135270103\nBug: 135269143\nTest: atest DownloadProviderTests\nTest: atest CtsAppTestCases:android.app.cts.DownloadManagerTest\nChange-Id: Iec1e8ce18dc4a9564318e0473d9d3863c8c2988a\n(cherry picked from commit 13f49c42599dc2ea0be376be34275aefcb70d398)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1166cb57cca7941ae2ea13b73083bdd932b7ec89",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/DownloadManager.java",
+      "new_id": "77a777024a211fc8de77a58dd09f9711e10b7f08",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/DownloadManager.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "10b9488de1ac87f8122289c3abbae6fcd193a302",
+  "tree": "baa8696f31b0895c76ff30aa7324e44e81a29c80",
+  "parents": [
+    "48babc242360f488792fa511e6f2f31470f4d1dd"
+  ],
+  "author": {
+    "name": "Hui Yu",
+    "email": "huiyu@google.com",
+    "time": "Thu Dec 20 14:19:47 2018 -0800"
+  },
+  "committer": {
+    "name": "akirilov",
+    "email": "akirilov@google.com",
+    "time": "Fri Dec 21 17:26:50 2018 -0800"
+  },
+  "message": "Add CTS test for Magellan SQLite Security Vulnerability.\n\nBug: 121156452\nTest: cts-tradefed run cts -m CtsDatabaseTestCases -t android.database.sqlite.cts.SQLiteSecurityTest\nChange-Id: I6d0570827ac6eda36cc61ccfc14d953818281c21\nMerged-In: I6d0570827ac6eda36cc61ccfc14d953818281c21\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c34a5f53ae95656dcd00be9fc690963f34f3365b",
+      "new_mode": 33188,
+      "new_path": "tests/tests/database/src/android/database/sqlite/cts/SQLiteSecurityTest.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "dba3df609436d7697305735818f0a840a49f1a0d",
+  "tree": "149c859bef74e30495dcad2caa6f214fece751c0",
+  "parents": [
+    "cf8398cbe56504ef331b026d15e2d5228dd8d8c3"
+  ],
+  "author": {
+    "name": "Elliott Hughes",
+    "email": "enh@google.com",
+    "time": "Mon Nov 14 13:56:32 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:38 2016 -0800"
+  },
+  "message": "Check for bad packets in getaddrinfo.c\u0027s getanswer.\n\nThe near duplicate in gethnamaddr.c was already doing so (this fix\nis basically copy and pasted from there, but with both copies modified\nto avoid skirting undefined behavior).\n\nBug: http://b/32322088\nTest: browser still works\nChange-Id: Ied6662be567fb1bddc7ceb138cae1da77fb57976\n(cherry picked from commit 27a4459d945e34fabd7166791a5b862ccea83f23)\n(cherry picked from commit 418fe1eb1aeefc2268a40c5cec0ceb62672fa026)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "829b6791ca1fe323690140e75b8b35c9e7f25b3d",
+      "old_mode": 33188,
+      "old_path": "libc/dns/net/getaddrinfo.c",
+      "new_id": "fd6c004c152ff3f3f139b2b451e2b689e09b9fcc",
+      "new_mode": 33188,
+      "new_path": "libc/dns/net/getaddrinfo.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "42f0d0adfc0ebf011ef3cbe3e7ee894df6be9de3",
+      "old_mode": 33188,
+      "old_path": "libc/dns/net/gethnamaddr.c",
+      "new_id": "75cb2b3c5ec735818853ba668e0c09d5d0f5468f",
+      "new_mode": 33188,
+      "new_path": "libc/dns/net/gethnamaddr.c"
+    }
+  ]
+}

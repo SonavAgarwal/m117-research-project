@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3256e59a87466b1a1d20a6cfe22617e23fa25299",
+  "tree": "1a804f7854fc92a3dca3d6c6e92795e2e81c785f",
+  "parents": [
+    "11d913944f53dd189c027068aaea5fc87316e962"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu Apr 18 16:32:42 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:12 2019 +0000"
+  },
+  "message": "HwBlob: s/malloc/calloc/\n\nSince this blob is passed between processes.\n\nWe could potentially only memset portions of the blob as it is\nwritten to. However, the JHwBlob API itself doesn\u0027t have to have\nwrites in order (even though known usages of it do write in order).\nBecause of this, keeping track of which bytes to pad would be too\nexpensive.\n\nBug: 131356202\nTest: boot, hidl_test_java\nChange-Id: I48f4d7cb20c4bfe747dd323ae3744d323ad097c9\nMerged-In: I48f4d7cb20c4bfe747dd323ae3744d323ad097c9\n(cherry picked from commit d8157bc094569bee74976df2585d632f1793e226)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bb916d2431c5b990f92476fe16d8e67b0e2007d9",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_os_HwBlob.cpp",
+      "new_id": "09589cdb08011945909673d97439fee9c8e388fc",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_os_HwBlob.cpp"
+    }
+  ]
+}

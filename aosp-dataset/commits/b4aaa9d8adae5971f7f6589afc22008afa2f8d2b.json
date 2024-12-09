@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "b4aaa9d8adae5971f7f6589afc22008afa2f8d2b",
+  "tree": "b9122ba1e2baf24c0add2623ec491420bdb98395",
+  "parents": [
+    "3d4cf3468533db2e0cbe7e01c4325d8b3f93e2a2"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Thu Mar 28 13:50:17 2019 -0700"
+  },
+  "committer": {
+    "name": "Sterling Huber",
+    "email": "hubers@google.com",
+    "time": "Mon Mar 16 14:15:22 2020 -0700"
+  },
+  "message": "RESTRICT AUTOMERGE\nPrevent accessing companion records from arbitrary uids\n\nTest: manual\nFixes: 129476618\nChange-Id: I7b18cfcdf58e62a445cbb508116c6ce7c1cea8d7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7e20fc41eeec7a169544d5ae16d7e9d7e7f2be2",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "4528985bc85227fdf6d6350d8697f58702925ce4",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "da139d74f8aefc41c2472a970b9b3e177064d699",
+      "old_mode": 33188,
+      "old_path": "packages/Shell/AndroidManifest.xml",
+      "new_id": "19eac7ccdb027a79221bb7bc0199f34f84d01a3b",
+      "new_mode": 33188,
+      "new_path": "packages/Shell/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "54a3ecb2268723dbd94bc4370f96bb1f02a9e71a",
+      "old_mode": 33188,
+      "old_path": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java",
+      "new_id": "067becbf0c529beb07324da38882abee4af6bb70",
+      "new_mode": 33188,
+      "new_path": "services/companion/java/com/android/server/companion/CompanionDeviceManagerService.java"
+    }
+  ]
+}

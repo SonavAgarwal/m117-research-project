@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ec2fc50d202d975447211012997fe425496c849c",
+  "tree": "30a12a2920d11be5da2575d9c25f713744926f86",
+  "parents": [
+    "e83f0f6a5a6f35323f5367f99c8e287c440f33f5"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Apr 15 10:41:13 2016 -0400"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:17 2016 -0700"
+  },
+  "message": "Don\u0027t pass URL path and username/password to PAC scripts\n\nThe URL path could contain credentials that apps don\u0027t want exposed\nto a potentially malicious PAC script.\n\nBug: 27593919\nChange-Id: I4bb0362fc91f70ad47c4c7453d77d6f9a1e8eeed\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9bdf4f6db8e65d8e0360026c4971a31e6a1c5ee9",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/PacProxySelector.java",
+      "new_id": "85bf79ab3d69d5343951cdb354b1b519fde55e2e",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/PacProxySelector.java"
+    }
+  ]
+}

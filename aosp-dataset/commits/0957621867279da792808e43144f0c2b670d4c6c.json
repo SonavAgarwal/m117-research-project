@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "0957621867279da792808e43144f0c2b670d4c6c",
+  "tree": "fc7e73d40a07d48e9d566a560554d01f794d4f0c",
+  "parents": [
+    "969f2c97f04a0570a23d4d94b6f0a0642d2224cb"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Oct 05 10:58:38 2017 -0700"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Tue Oct 10 00:03:44 2017 +0000"
+  },
+  "message": "Soundtrigger service: fix cross deadlock with audio policy service\n\nDo not hold Module mutex when calling into audio policy manager to\navoid cross deadlock with audio poicy service mutex: Audio policy manager\ncan call into sound trigger service with its mutex held in methods like\nstopInput().\n\nRegression introduced by fix for b/64340921 commit f759b8c4\n\nBug: 64340921\nBug: 67310830\nTest: repro steps in b/67310830\n\nMerged-In: Ie50b2e7c55fe9828a3fd8de6b31eb4a492791583\n\nChange-Id: Ie50b2e7c55fe9828a3fd8de6b31eb4a492791583\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ca3ae08da32056a984b357a46eb8dd8a041ca83",
+      "old_mode": 33188,
+      "old_path": "services/audiopolicy/common/managerdefinitions/src/SoundTriggerSession.cpp",
+      "new_id": "0383b0e92552beb4b63c4eb3c65f7f2e1b3576ef",
+      "new_mode": 33188,
+      "new_path": "services/audiopolicy/common/managerdefinitions/src/SoundTriggerSession.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5b8d99070445351c3ced514890046ad518802074",
+      "old_mode": 33188,
+      "old_path": "services/soundtrigger/SoundTriggerHwService.cpp",
+      "new_id": "19dd41e31a8c7b812454a5292f3d2072f366f011",
+      "new_mode": 33188,
+      "new_path": "services/soundtrigger/SoundTriggerHwService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "60ebb3556aa438b2a5e012a7e07e566113998222",
+      "old_mode": 33188,
+      "old_path": "services/soundtrigger/SoundTriggerHwService.h",
+      "new_id": "95efc4bb0ebf6b419e0eebdca68c29b0ba76d961",
+      "new_mode": 33188,
+      "new_path": "services/soundtrigger/SoundTriggerHwService.h"
+    }
+  ]
+}

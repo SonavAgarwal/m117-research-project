@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0fc5dbf3d1d92ae817cdb8cf06170517a9a9251b",
+  "tree": "b9a0ffcd9cbd81b99e2f0df6e25d4a8853f1aa29",
+  "parents": [
+    "1d1faf36c7e3fe6b672e22ff9c5d39a61b58663c"
+  ],
+  "author": {
+    "name": "Pavel Grafov",
+    "email": "pgrafov@google.com",
+    "time": "Wed Apr 10 12:47:25 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:58 2019 +0000"
+  },
+  "message": "Limit IsSeparateProfileChallengeAllowed to system callers\n\nFixes: 128599668\nTest: build, set up separate challenge\nChange-Id: I2fef9ab13614627c0f1bcca04759d0974fc6181a\n(cherry picked from commit 1b6301cf2430f192c9842a05fc22984d782bade9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cb52931433d4144ca7759a072b915a3350139508",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "00b8366ff86dae82119ed43d46bd60801e1d7fe0",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

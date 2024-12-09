@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "40473c4632a5e5803280058dfd29c3db7f13c406",
+  "tree": "82b77972a0f52915eb96027f262c09ddd06a441d",
+  "parents": [
+    "3d4cf3468533db2e0cbe7e01c4325d8b3f93e2a2"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Sat Jan 25 06:57:04 2020 -0800"
+  },
+  "committer": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Mon Mar 23 18:43:18 2020 +0000"
+  },
+  "message": "Force update uid state when pending uid state is applied\n\nBefore the state was update lazily when someone interacted with\nappopsmanager.\n\nSince Q the the uid state might change depending on the procState\nand hence we might need to trigger the opChanged callbacks when the\nprocState is applied.\n\nBug: 148180766\nTest: (on master) atest CtsAppOpsTestCases:android.app.appops.cts.ForegroundModeTest\nChange-Id: I99720a372db6e79eaba30e4563c09e009cffe86f\nMerged-In: Id974769a4e9d89c01890b7557dd93f8444a3908f\n(cherry picked from commit ab9be4fdb63bf30831fd2e05be1315e6c7f067ae)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0fac67f3494e876d54004df90bf359bf0b4b945",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/appop/AppOpsService.java",
+      "new_id": "4e4fff969c7b4f63154535fc3a3f18b96636874d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/appop/AppOpsService.java"
+    }
+  ]
+}

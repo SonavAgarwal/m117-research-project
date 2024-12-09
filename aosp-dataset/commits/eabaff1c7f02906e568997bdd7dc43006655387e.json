@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "eabaff1c7f02906e568997bdd7dc43006655387e",
+  "tree": "2db016451e52090825b4bd77ff72b288dc8c0ba6",
+  "parents": [
+    "faf2dc95bf26fb075039ed3ee7623e83a281c6dd"
+  ],
+  "author": {
+    "name": "Arthur Ishiguro",
+    "email": "arthuri@google.com",
+    "time": "Mon Jun 25 11:31:33 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 10 20:28:10 2018 +0000"
+  },
+  "message": "Resolve inconsistent parcel read in NanoAppFilter\n\nBug: 77599679\nTest: Compile only\nChange-Id: Ib417a5cb4d51744442d2fb14437cabbe5fd1c266\n(cherry picked from commit abe5a73a4a81e312a1690fbc10a6b99ce98b699a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bf35a3d6fbd69ad25d192fc2a5a1e210f988f158",
+      "old_mode": 33188,
+      "old_path": "core/java/android/hardware/location/NanoAppFilter.java",
+      "new_id": "c44094908f3c2400538927f668f4e809d34a9219",
+      "new_mode": 33188,
+      "new_path": "core/java/android/hardware/location/NanoAppFilter.java"
+    }
+  ]
+}

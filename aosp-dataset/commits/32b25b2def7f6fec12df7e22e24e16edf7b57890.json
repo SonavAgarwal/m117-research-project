@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "32b25b2def7f6fec12df7e22e24e16edf7b57890",
+  "tree": "5d13e7fa4a9f0026540613b74318c9597a440aeb",
+  "parents": [
+    "d735970ceec445c8b4cc6e4041a621774c738b63"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Mon Jun 03 17:42:47 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:54:46 2019 +0000"
+  },
+  "message": "[DO NOT MERGE] Disable optimizing compiler for pac file\n\nBug: 132073833\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n    /data/nativetest64/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nChange-Id: If09d635d48aff0671f955dc6f1edc50fcda773f8\n(cherry picked from commit 7da0d1fa9f0a38bd7dc9c9ded5408a2cc646b349)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f97869465e7db06315b476e1fbf25e0085495eb7",
+      "old_mode": 33188,
+      "old_path": "src/proxy_resolver_v8.cc",
+      "new_id": "0504b03ec45d5ee29d2ccdfd731b1d0fd98a3916",
+      "new_mode": 33188,
+      "new_path": "src/proxy_resolver_v8.cc"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "79d1967168960eca0ff0664ca32920ae34c0fcfc",
+      "new_mode": 33188,
+      "new_path": "test/js-unittest/b_132073833.js"
+    },
+    {
+      "type": "modify",
+      "old_id": "be7ecee6e0669f98fcd47faef4911a060e6d6ef0",
+      "old_mode": 33188,
+      "old_path": "test/proxy_resolver_v8_unittest.cc",
+      "new_id": "73e4405fe49b1e54e891e7a2376c168285706abc",
+      "new_mode": 33188,
+      "new_path": "test/proxy_resolver_v8_unittest.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "80c96c744d543edf249b36551c2cbff794508554",
+      "old_mode": 33188,
+      "old_path": "test/proxy_test_script.h",
+      "new_id": "aa1001690c050b90b68d06d49cd756ed893a3367",
+      "new_mode": 33188,
+      "new_path": "test/proxy_test_script.h"
+    }
+  ]
+}

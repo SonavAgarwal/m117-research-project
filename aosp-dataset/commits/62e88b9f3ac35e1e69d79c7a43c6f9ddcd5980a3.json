@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "62e88b9f3ac35e1e69d79c7a43c6f9ddcd5980a3",
+  "tree": "4bf88728e430bdf8b638a53007bc5359b0529cb7",
+  "parents": [
+    "a4ff69b3554b569a04e4327ca22b9dad262d7141"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Tue Apr 24 17:44:01 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:40:41 2018 +0000"
+  },
+  "message": "Fix fvar table size validation logic - DO NOT MERGE\n\nThe table size calculation was wrong.\n\"axisOffset + axisOffset * axisCount\" should be\n\"axisOffset + axisSize * axisCount\".\n\nBug: 77822336\nTest: minikin_tests\nChange-Id: I0cc88299f44bdad484497d9a55376764446fed12\nMerged-In: I0cc88299f44bdad484497d9a55376764446fed12\n(cherry picked from commit 1a408ab0ef0546dc92bf55f0e060bedf12fb7957)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c5a32f82e85861a26aa03098c1b2bd22891a4c7f",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/FontUtils.cpp",
+      "new_id": "60b3163220c0df375abcadf324b107c725b66b3a",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/FontUtils.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d26d5e42a0854ce64b9571f6524c028359c6f813",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/FontUtils.h",
+      "new_id": "ecb9cdee27c5382990bdcfbfad5fa3fb6d82bde7",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/FontUtils.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "348d186ec4cdf074907e2343d802c8b32b69a8a5",
+      "old_mode": 33188,
+      "old_path": "tests/unittest/Android.bp",
+      "new_id": "770d7bed3fb2dc9537ece8d07ca0a918955cce02",
+      "new_mode": 33188,
+      "new_path": "tests/unittest/Android.bp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "15675c9f2ffb85316aad7a39142647116e51039c",
+      "new_mode": 33188,
+      "new_path": "tests/unittest/FontUtilsTest.cpp"
+    }
+  ]
+}

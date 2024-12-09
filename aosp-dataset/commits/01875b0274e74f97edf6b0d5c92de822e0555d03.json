@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "01875b0274e74f97edf6b0d5c92de822e0555d03",
+  "tree": "8b35ed51a0e2c35299818c5bb99db43ce4b679f6",
+  "parents": [
+    "468651c86a8adb7aa56c708d2348e99022088af3"
+  ],
+  "author": {
+    "name": "Sudheer Shanka",
+    "email": "sudheersai@google.com",
+    "time": "Wed Jun 08 17:13:24 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:52:58 2016 -0700"
+  },
+  "message": "Reduce shell power over user management.\n\nRemove MANAGE_USERS permission from shell and whitelist it for\nsome specific functionality.\n\nBug: 29189712\nChange-Id: Ifb37448c091af91991964511e3efb1bb4dea1ff3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "08bccc1905234ef42a79d8f7bfff9b51d8ec479e",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "4b5445998d107c4481b363f83f63b0119347c927",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9daf5986be888c26baeb66acbc54d8b9a797104",
+      "old_mode": 33188,
+      "old_path": "packages/Shell/AndroidManifest.xml",
+      "new_id": "6a20733d9383a57db6b128f272de104648504b37",
+      "new_mode": 33188,
+      "new_path": "packages/Shell/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "fd9979f1c552af8180fede5922d1b0a3f2faa752",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/UserManagerService.java",
+      "new_id": "96d505b5daa7df8876cdfe958651d4940d90f617",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/UserManagerService.java"
+    }
+  ]
+}

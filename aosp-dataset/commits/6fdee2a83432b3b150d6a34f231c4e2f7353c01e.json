@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "6fdee2a83432b3b150d6a34f231c4e2f7353c01e",
+  "tree": "89d951e6e825431c6e0fe175d1d5df0ae31ec3e1",
+  "parents": [
+    "e7142a0703bc93f75e213e96ebc19000022afed9"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri May 13 10:39:23 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:16 2016 -0700"
+  },
+  "message": "limit mediaserver memory\n\nLimit mediaserver using rlimit, to prevent it from bringing down the system\nvia the low memory killer.\nDefault max is 65% of total RAM, but can be customized via system property.\n\nBug: 28471206\nBug: 28615448\nChange-Id: Ic84137435d1ef0a6883e9789a4b4f399e4283f05\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a3c3d3cc2db1d973721b1ca1e56223c351e82a4b",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/Android.mk",
+      "new_id": "9f836f0689419c1b6f9baf0d53968222b04928ff",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a02ca65a7a3fc16918dd0a46557f26fe82e5498a",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/MediaUtils.cpp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f80dd30eba9ed018e2c6ef5000adce288915a962",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/MediaUtils.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b6de0d90f8bc91ef698e74dc623aa4253882c006",
+      "old_mode": 33188,
+      "old_path": "media/mediaserver/Android.mk",
+      "new_id": "7e017b9edaff950b305c3f86dc9ccdcc177a4b6f",
+      "new_mode": 33188,
+      "new_path": "media/mediaserver/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a485edb18e7bc5dfa03a55f223bc217e22a2644",
+      "old_mode": 33188,
+      "old_path": "media/mediaserver/main_mediaserver.cpp",
+      "new_id": "8cc950803fb213e717496145bf28c22e5142a892",
+      "new_mode": 33188,
+      "new_path": "media/mediaserver/main_mediaserver.cpp"
+    }
+  ]
+}

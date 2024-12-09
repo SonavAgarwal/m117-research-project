@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68cdc8df1cb6622980b791ce03e99c255c9888af",
+  "tree": "fa49dc167307dc935673b327dedd7efd49fc65b2",
+  "parents": [
+    "9a5104b845c1558cc204abfe97c120d14677baa5"
+  ],
+  "author": {
+    "name": "dataanddreams",
+    "email": "dataanddreams@gmail.com",
+    "time": "Mon Nov 30 17:08:54 2015 -0500"
+  },
+  "committer": {
+    "name": "Yuan Lin",
+    "email": "yualin@google.com",
+    "time": "Tue Dec 01 22:13:43 2015 +0000"
+  },
+  "message": "bcmdhd: Add checks for stack buffer overflows\n\nThese two checks prevent exploitable buffer overflows in two scenarios.\n1. Long WPS_ID_DEVICE_NAME in WPS info elements\n2. Invalid SSID determined in certain scan results\n\nBug: 25662233\nChange-Id: Ifb2887737aa6218079745f27d59b5f1364b3892e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e9eb33d486b77c4d1fc312ab29d4009f20a22598",
+      "old_mode": 33188,
+      "old_path": "drivers/net/wireless/bcmdhd/wl_cfg80211.c",
+      "new_id": "f2ba9c879d81915f9c080666ea89788a4d17e726",
+      "new_mode": 33188,
+      "new_path": "drivers/net/wireless/bcmdhd/wl_cfg80211.c"
+    }
+  ]
+}

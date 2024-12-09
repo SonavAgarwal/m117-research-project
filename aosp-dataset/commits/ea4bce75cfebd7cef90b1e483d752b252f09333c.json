@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ea4bce75cfebd7cef90b1e483d752b252f09333c",
+  "tree": "5201cbebc1bd581eb27c290dee5c7b0140190c59",
+  "parents": [
+    "721e4d085ca3d1dc5826c0ba71615529f544d7f7"
+  ],
+  "author": {
+    "name": "Tony Mak",
+    "email": "tonymak@google.com",
+    "time": "Tue Dec 10 07:22:23 2019 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 22:56:01 2019 +0000"
+  },
+  "message": "Put userId at the end of parcel\n\nuserId is a new field added in ag/8350816, and it is written in between\nsome old fields when we parcelize it.\n\nThat breaks AiAi because some of its code rely on the implementation\ndetails of SelectionEvent.writeToParcel.\n\nIn the long run, we may want to update AiAi such that it works\nwithout this assumption, but before that, let\u0027s fix that in platform\nfor now.\n\nBug: 145962464\nBug: 123232892\n\nTest: atest FrameworksCoreTests:android.view.textclassifier.SelectionEventTest\n\nMerged-In: I98137a095cddf0fb4c600e1e09eef507bb750528\nChange-Id: I66f65ac4c81ca964f710404fd081496355276435\n(cherry picked from commit 642c22b223e40459d74332b629692a94de99ec9a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5c81664425e61e237eb8a9bbbc3a40e613a7a2a2",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/SelectionEvent.java",
+      "new_id": "ae9d5c6520f77bbbced585428d4ec5f3391ee325",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/SelectionEvent.java"
+    }
+  ]
+}

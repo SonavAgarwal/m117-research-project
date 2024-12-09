@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e7a2b4d13bff03973dbad2bfb88a04296140433",
+  "tree": "9edd3e31b92875d9a887ab21da9463142c383aed",
+  "parents": [
+    "0cc1982580e8c5c4df519b135b62c662158146b2"
+  ],
+  "author": {
+    "name": "Chien-Yu Chen",
+    "email": "cychen@google.com",
+    "time": "Fri Aug 12 15:40:16 2016 -0700"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Wed Aug 24 15:28:04 2016 -0700"
+  },
+  "message": "Camera: Prevent data size overflow\n\nAdd a function to check overflow when calculating metadata\ndata size.\n\nBug: 30741779\nChange-Id: I6405fe608567a4f4113674050f826f305ecae030\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c58a966932c8566c89bf6873a5cff6c561aeedde",
+      "old_mode": 33188,
+      "old_path": "camera/src/camera_metadata.c",
+      "new_id": "92926872e9e4a40073343769e22ae5b08ad9bda8",
+      "new_mode": 33188,
+      "new_path": "camera/src/camera_metadata.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4048e49956a2dfd49af3adf0f78881bf15f3550f",
+  "tree": "6c8a3f0e21f3937801a0b369e1311fbc1ee277a1",
+  "parents": [
+    "e62a9d7669ac85844d4424474f5c88c096f7160b"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu May 28 00:29:08 2020 +0000"
+  },
+  "committer": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu May 28 20:45:55 2020 +0000"
+  },
+  "message": "String16::remove - avoid overflow\n\nBug: 156999009\nTest: libutils_test (cases added)\nChange-Id: Iad46d95d9848928ba81000090b2fe9aec1e5eaac\nMerged-In: Iad46d95d9848928ba81000090b2fe9aec1e5eaac\n(cherry picked from commit f251c1c581f2d1b9940e60e756315c5e15443990)\n(cherry picked from commit 9a9c8910e9296c9dc8d79c37f589895f5a2a836c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8f1c518414a1d04ee4c0cc90477f938861cc608",
+      "old_mode": 33188,
+      "old_path": "libutils/String16.cpp",
+      "new_id": "7055fc6c3578416515e5df9b985ed4da123c2c21",
+      "new_mode": 33188,
+      "new_path": "libutils/String16.cpp"
+    }
+  ]
+}

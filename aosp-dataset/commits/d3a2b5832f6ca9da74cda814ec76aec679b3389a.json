@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d3a2b5832f6ca9da74cda814ec76aec679b3389a",
+  "tree": "5d09be3d3d575ac5fd0e34011f87fd2bf9b7f273",
+  "parents": [
+    "27ef1fc697faed77c7d2bdabf9432718680e1cae"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Wed Aug 26 14:42:08 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:48 2020 +0000"
+  },
+  "message": "Accept repeated locale as an input of LocaleList construction.\n\nRepeated locale has not been accepted and IllegalArgumentException\nis thrown. Instead of throwing exception, dropping repeated locale\ninstead.\n\nBug: 152410253\nTest: atest LocaleListTest\nChange-Id: I80f243678ac3024eaeb0349f770cff897df7f332\n(cherry picked from commit 7ee68787cca0837f59658d5174e1d586dfe80ad4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab4bb0b9f2cd069e6624d131a6dbe9074cd29d38",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/LocaleList.java",
+      "new_id": "9c0bc45a346e9b68989c176d27b3e01e05d6a95f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/LocaleList.java"
+    }
+  ]
+}

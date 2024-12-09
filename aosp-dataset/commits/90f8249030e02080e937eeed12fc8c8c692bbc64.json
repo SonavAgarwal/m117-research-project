@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "90f8249030e02080e937eeed12fc8c8c692bbc64",
+  "tree": "fe832855e02b8281be9b14b0cb21fb6cb6fac06d",
+  "parents": [
+    "a03e1302db3c51be1e453af179e5549468b501ab"
+  ],
+  "author": {
+    "name": "Abhijeet Kaur",
+    "email": "abkaur@google.com",
+    "time": "Wed Apr 01 17:22:36 2020 +0100"
+  },
+  "committer": {
+    "name": "Rhed Jao",
+    "email": "rhedjao@google.com",
+    "time": "Mon Jun 22 11:52:28 2020 +0000"
+  },
+  "message": "Copy Screenshot to fd if and only if user consent approved\n\nCurrently the dumpstate screenshot file is copied to the screenshot fd\n(provided by the API caller) even when user consent times out.\n\nBug: 152944488\nTest: BugreportManagerTest#normalflow_full\nChange-Id: I0ede8bc8cf5333ea586218a37fd6456f782a50c7\nMerged-in: I0ede8bc8cf5333ea586218a37fd6456f782a50c7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4ac7b689cf3456396974f7d2eabc232edb2b0e70",
+      "old_mode": 33188,
+      "old_path": "cmds/dumpstate/dumpstate.cpp",
+      "new_id": "f4d4f9364f9348547ca4b111e14ac66ff0ef2b78",
+      "new_mode": 33188,
+      "new_path": "cmds/dumpstate/dumpstate.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3294256ba5b9e2ba2d8619d617e3d900e5386564",
+  "tree": "7a7dcf9bd20921e495182431dead4891f40db6ee",
+  "parents": [
+    "c52a3cb704a1b6ed5f2e2c9652ae03a5dbd0450d"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Mon Jan 16 10:49:55 2017 -0800"
+  },
+  "committer": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Fri Jan 27 17:37:58 2017 +0000"
+  },
+  "message": "Fixed the logic for tethering provisioning re-evaluation\n\nPreviously we only re-evaluate provisioning for SIM swap case\nThe new logic covers both SIM swap case\n(ABSENT-\u003eNOT_READY-\u003eUNKNOWN-\u003eREADY-\u003eLOADED) and modem reset\ncase (NOT_READY-\u003eREADY-\u003eLOADED)\n\nTest: Manual\nbug: 33815946\n\nMerged-In: I9960123605b10d3fa5f3584c6c8b70b616acd6f8\nChange-Id: I9960123605b10d3fa5f3584c6c8b70b616acd6f8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "921fd23db82fff29d35f13137e29280c92c51b90",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/Tethering.java",
+      "new_id": "156e278204a54fb363fcbf14f376293180b6d80b",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/Tethering.java"
+    }
+  ]
+}

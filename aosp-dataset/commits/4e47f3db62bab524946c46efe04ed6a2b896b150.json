@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4e47f3db62bab524946c46efe04ed6a2b896b150",
+  "tree": "46aea74e5127e897f19053c94b8832d6ea251e67",
+  "parents": [
+    "c513a8ff5cfdcc62cc14da354beb1dd22e56be0e"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Jul 06 16:58:24 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:37 2017 +0000"
+  },
+  "message": "Add a missing check for PAN buffer size before copying data\n\nBug: 63146237\nTest: External script\nChange-Id: I3e9c8a767a8a2a80ff56ccb48c56ca0d4b8c3402\nMerged-In: I3e9c8a767a8a2a80ff56ccb48c56ca0d4b8c3402\n(cherry picked from commit 1d909399cb4259243dac2e531e3ce6ca1afa77e7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ecc821254479ae7f4f9f892ede58b30481727824",
+      "old_mode": 33188,
+      "old_path": "bta/pan/bta_pan_act.cc",
+      "new_id": "c559993ac97a108c35d682ba4024595de368fe36",
+      "new_mode": 33188,
+      "new_path": "bta/pan/bta_pan_act.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2e16d5fac149dab3c3e8f1b2ca89f45cf55a7b34",
+  "tree": "6456e31c8b573aa2293b953cbc5011b86a16d7c7",
+  "parents": [
+    "b4d6b292bce7d82c93fd454078dedf5a1302b9fa"
+  ],
+  "author": {
+    "name": "Fabien Sanglard",
+    "email": "sanglardf@google.com",
+    "time": "Tue Nov 08 15:35:02 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:21 2016 -0800"
+  },
+  "message": "Fix SF security vulnerability: 32706020\n\nBecause of lack of mutex lock when get mConsumerName, if one thread\ngetConsumerName, another thread setConsumerName frequently, an UAF will\nbe triggered.\n\nChange-Id: Id1bbf0d15de6d16def2f54ecade385058cda3b65\nTest: Marling with poc provided in bug report.\nBug: 32706020\n(cherry picked from commit d073eb7a3f28fd74bfa24c8b7599465cb7de5436)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "48b1db8f592b73f3b478ebd4420c086528d9c5e8",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueProducer.cpp",
+      "new_id": "05923b5d35c78bfdbcfb1795a110171ff80a6acc",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueProducer.cpp"
+    }
+  ]
+}

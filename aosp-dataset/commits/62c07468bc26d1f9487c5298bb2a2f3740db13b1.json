@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "62c07468bc26d1f9487c5298bb2a2f3740db13b1",
+  "tree": "1c1dc290de5163f1eec00f8ef785ca0ade6d3f92",
+  "parents": [
+    "5c3fd5d93a268abb20ff22f26009535b40db3c7d"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue Feb 21 15:47:02 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:45 2017 +0000"
+  },
+  "message": "Fix in the case of MMCO 3 (long term reference idx).\n\nIncrement number of long term reference buffers only when both top field\nand bottom field have been set as long term.\n\n[backport for M/N from master]\n\nBug: 35584425\nTest: ran POC - no hang, no segfault.\n\nChange-Id: I94e3857944da675eda38f8e1a9bd887f48bff524\n(cherry picked from commit 6fa5df8811ea0b8e8459f86dd3c30bf7a9b39482)\n(cherry picked from commit 46e96d40dbca2896b5e20cf48d14798231c97663)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a75aeee74d511bdc9d1bdca69b6fa14181970890",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_dpb_mgr.c",
+      "new_id": "e02cc908c37d82da55996f8b5de5a3a9224f9281",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_dpb_mgr.c"
+    }
+  ]
+}

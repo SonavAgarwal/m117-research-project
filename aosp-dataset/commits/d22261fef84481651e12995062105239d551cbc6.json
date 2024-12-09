@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d22261fef84481651e12995062105239d551cbc6",
+  "tree": "833fdde561c5983bc96c20b0431584a04c9a8ac9",
+  "parents": [
+    "f4bed684c939b0f8809ef404b8609fe4ef849263"
+  ],
+  "author": {
+    "name": "Tom O\u0027Neill",
+    "email": "tomo@google.com",
+    "time": "Thu Dec 22 17:59:47 2016 +0000"
+  },
+  "committer": {
+    "name": "android-merger",
+    "email": "android-merger@vpba3.mtv.corp.google.com",
+    "time": "Thu Jan 19 16:48:31 2017 -0800"
+  },
+  "message": "Fix exploit where can hide the fact that a location was mocked am: a206a0f17e am: d417e54872 am: 3380a77516 am: 0a8978f04b am: 1684e5f344 am: d28eef0cc2 am: 1f458fdc66 am: d82f8a67fc am: 1ac8affd51 am: 56098f81b6 am: 7cec76de0f\nam: 2da05d0f9e\n\nChange-Id: I8c94a06f5fa722312436484609bafcb0585d6d18\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "64ca2e3eb3de871b6f1edaf5c15fdd5ac90eebe7",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/LocationManagerService.java",
+      "new_id": "c9b59adeb2dae4aa1abac2dbed7afa8daf11eb17",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/LocationManagerService.java"
+    }
+  ]
+}

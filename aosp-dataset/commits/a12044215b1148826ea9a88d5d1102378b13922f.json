@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "a12044215b1148826ea9a88d5d1102378b13922f",
+  "tree": "99b57c6f198d9b13411d024c40886fa0aed38b08",
+  "parents": [
+    "50af68e74a756d0fc81eda2a3580dbcf70362d42"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 11:58:50 2015 -0400"
+  },
+  "committer": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 12:48:11 2015 -0400"
+  },
+  "message": "Fix NOT_RESTRICTED network capability and enforce it.\n\nWith this change:\n1. NOT_RESTRICTED should be removed from NetworkRequests that bring up\n   special restricted carrier networks (e.g. IMS, FOTA).\n2. NetworkRequests without NOT_RESTRICTED require CONNECTIVITY_INTERNAL\n   permission to register\n3. Binding sockets to networks without NOT_RESTRICTED requires\n   CONNECTIVITY_INTERNAL permission\n\nBug:21637535\nChange-Id: I5991d39facaa6b690e969fe15dcbeec52e918321\n(cherry picked from commit 487ffe7d3d84bf65212158f7098e8a84b5b55e09)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9194ca8d610d4828b1980530e0449b674e955977",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/ConnectivityManager.java",
+      "new_id": "7cde0050beb13e5427416fa043d1d264827689ca",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/ConnectivityManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "53f9fcdd93c0afbd4db9b5cb8809b22244f1bbe8",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/NetworkCapabilities.java",
+      "new_id": "2e22697cab64536ec9b5c2adf1e8c88c1e90988c",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/NetworkCapabilities.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5a09b460b6a88e98d047e274f377b754400cc9f1",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/NetworkRequest.java",
+      "new_id": "4c8e080b2dee57a8935225798e3a6bc3abbd69bb",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/NetworkRequest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "16250c78af9a630d62e3bd4d5ed15fcf72ecbbff",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/INetworkManagementService.aidl",
+      "new_id": "21352982178c368f7c207769157cda8c613d3b9d",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/INetworkManagementService.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "b4a248fbec8055a8c66c3e109a187194dd8d7405",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "d7ff52700ae0871364c2316a36b333975faf6bd1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "020c95182d211f8137facb6bc658ac926c8fce49",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/NetworkManagementService.java",
+      "new_id": "3670a528dae29ce75de3d7426c8cee5a98517d67",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/NetworkManagementService.java"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+)]}'
+{
+  "commit": "5443b57cc54f2e46b35246637be26a69e9f493e1",
+  "tree": "71d0ce7a959b93e4d41505e0910b4a5d3ba5bef8",
+  "parents": [
+    "e5a54485e08400a976092cd5b1c6d909d0e1a4ab"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Fri Feb 10 14:29:40 2017 +0900"
+  },
+  "committer": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Wed Feb 15 06:20:28 2017 +0000"
+  },
+  "message": "codecs: handle onReset() for a few encoders\n\nTest: Run PoC binaries\nBug: 34749392\nBug: 34705519\nChange-Id: I3356eb615b0e79272d71d72578d363671038c6dd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab0a2285fc48f018e1460a5f257e03eed2e61d7a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.cpp",
+      "new_id": "96bbb850fb39466ca239e1faca903eafbcaa9334",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d148eb7630f22ed27b67ff0242b86617cd93960f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.h",
+      "new_id": "981cbbb18e128fd961c915571aa7a15c71b556e2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e8dabed69c305d41750259e8d5246ad1b5307ba8",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp",
+      "new_id": "a89b43aa063fb6c94710a1a33bc8568d3aa9956b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bce9c244e445a3ecda9dce15134699f1ddb8b794",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.h",
+      "new_id": "f1b81e18f65749386bca364b9085255b1db8742d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "596b329537b88a1cb01638e6962e1372919aa033",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp",
+      "new_id": "c900a7984c8fa33555d2b3cb6f16c02b989ec9c5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b0605b4006173b5c6511519c2db092d5ae3283e6",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.h",
+      "new_id": "1bd29d7d18fda047f8962a020440457af4e0d454",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "adf9058ec7103d11e49bdb1629f17d4c57efc0d2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp",
+      "new_id": "fa01d30b377d56465656102304a5d9b311eeb838",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f4c156411f92f2fde6cd6816c34fa77396e77639",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.h",
+      "new_id": "9188dab8dbe8588584351913f8bbb54b7b54231f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.h"
+    }
+  ]
+}

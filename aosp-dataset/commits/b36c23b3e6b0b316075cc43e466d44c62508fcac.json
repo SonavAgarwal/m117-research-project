@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b36c23b3e6b0b316075cc43e466d44c62508fcac",
+  "tree": "f0edc00e5b4f00b6577ae7b8fb708cc9a1192ea7",
+  "parents": [
+    "3a0fdc1e084a7815b9d16c7c81cd068007b5afa1"
+  ],
+  "author": {
+    "name": "Derek Sollenberger",
+    "email": "djsollen@google.com",
+    "time": "Thu Feb 18 13:07:35 2016 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:26 2016 -0800"
+  },
+  "message": "Update SK_CRASH to default to abort(). DO NOT MERGE\n\nBug: 26593930\nChange-Id: I091a6668b7f72d8ecfefe0fe8ad2f3d101b36b7b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d513d20633a9433e7eaaa8d77102db82838c0821",
+      "old_mode": 33188,
+      "old_path": "include/core/SkPostConfig.h",
+      "new_id": "40b22a724b0a39d6b34a667d988a1ec5a8263d6c",
+      "new_mode": 33188,
+      "new_path": "include/core/SkPostConfig.h"
+    }
+  ]
+}

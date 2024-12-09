@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "82f267012f29089c284340868de7375e77510e62",
+  "tree": "fc2fe7adf2c022af88bdeddb63deb2baf4a8e5fb",
+  "parents": [
+    "f191963f5645f59390b640136fd928e5a492aa84"
+  ],
+  "author": {
+    "name": "Andrew Lewis",
+    "email": "andrewlewis@google.com",
+    "time": "Wed May 20 16:49:23 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:35:54 2020 +0000"
+  },
+  "message": "Fix potential use-after-free issue\n\nNuPlayerListener passed this out of its constructor to\nIStreamSource-\u003esetListener, and it would get wrapped in a smart pointer,\nthen free\u0027d when that method returned.\n\nMove the setListener call after instantiation of NuPlayerListener to\navoid passing this out of the NuPlayerListener constructor.\n\nTest: tested in presubmit\nBug: 151456667\nChange-Id: I996d9ad9eaf0e52992b7f9e10fd94a94c350ad73\n(cherry picked from commit aad519df7fe3b69c8247669ea77ce339a44e8c51)\n(cherry picked from commit 6aaef5a99f15da847a8c55a137bfc6263829e8ff)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ee70306a35af0816c7442dcc1556d1cf307eef30",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/NuPlayerStreamListener.cpp",
+      "new_id": "7dcee727dd8e52d10bd2db220e9cab6f444140fb",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/NuPlayerStreamListener.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f21d2b3323a88135d80223b5186c28a5800a5c07",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/StreamingSource.cpp",
+      "new_id": "3250a4857ad33648f22f26c5327a8b01a0c9d74f",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/StreamingSource.cpp"
+    }
+  ]
+}

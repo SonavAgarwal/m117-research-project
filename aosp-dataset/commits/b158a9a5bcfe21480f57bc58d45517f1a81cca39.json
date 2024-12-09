@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b158a9a5bcfe21480f57bc58d45517f1a81cca39",
+  "tree": "f40f2eedbddd528916ad89df8f7a0a183befbcfb",
+  "parents": [
+    "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Tue Aug 11 15:52:26 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sun Aug 16 06:01:56 2015 +0000"
+  },
+  "message": "Check integer overflow to prevent memory corruption\n\nbug: 23016072\nChange-Id: If3c9a835408773847c0024a812bd8b4915ebd680\n(cherry picked from commit fa8ebb45fd850f56ca1bf64fbed3ac11e10c7d3d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "63cb43012458d79ec1730a14cead26b4ee3bf186",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/DRMExtractor.cpp",
+      "new_id": "9cb6e86545645fec2003ed4a4a6c77a62ff8c9ef",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/DRMExtractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "69bfe2d957d903521d32324190c2754cb073be15",
+  "tree": "3aa7576106aab494e6530ccd3b9fe36969636ce1",
+  "parents": [
+    "6af84c9aa53ebae9d6ac26df6de87c3fc0960ba0"
+  ],
+  "author": {
+    "name": "Colin Cross",
+    "email": "ccross@android.com",
+    "time": "Tue Aug 05 12:05:17 2014 -0700"
+  },
+  "committer": {
+    "name": "Colin Cross",
+    "email": "ccross@android.com",
+    "time": "Tue Aug 12 19:42:56 2014 -0700"
+  },
+  "message": "mm: fix prctl_set_vma_anon_name\n\nprctl_set_vma_anon_name could attempt to set the name across\ntwo vmas at the same time due to a typo, which might corrupt\nthe vma list.  Fix it to use tmp instead of end to limit\nthe name setting to a single vma at a time.\n\nChange-Id: Ie32d8ddb0fd547efbeedd6528acdab5ca5b308b4\nReported-by: Jed Davis \u003cjld@mozilla.com\u003e\nSigned-off-by: Colin Cross \u003cccross@android.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f7e7a8b2df791e520aa157586ed518fc32a4908c",
+      "old_mode": 33188,
+      "old_path": "kernel/sys.c",
+      "new_id": "800c5f22c0aed18e8bf12b8d480347bad8db9182",
+      "new_mode": 33188,
+      "new_path": "kernel/sys.c"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+)]}'
+{
+  "commit": "2c4ee9b7ff3a8ce17ba4e0cfd841eb2027d51619",
+  "tree": "7bb035939cf00adcdf5040f073a46067e8d99a30",
+  "parents": [
+    "c762c01eba62216478f484e2196020fc9f0d87bb"
+  ],
+  "author": {
+    "name": "Calin Juravle",
+    "email": "calin@google.com",
+    "time": "Mon Nov 23 19:21:09 2020 -0800"
+  },
+  "committer": {
+    "name": "Calin Juravle",
+    "email": "calin@google.com",
+    "time": "Fri Apr 02 03:06:39 2021 +0000"
+  },
+  "message": "Do not accept vdex with dex sections from .dm files\n\nCheck that the input vdex does not contain dex files when it originates\nfrom dex metadata files.\n\n(cherry-pick from commit 046cecfed5a4df1e180e3491ba7b566bf50a2026)\n(partial cherry-pick from commit\n33787687f52798fd5b584edb4c88717d134c367a)\n(partial cherry-pick from commit\n858cfd81c4fddbc950f9be2e3599b15aabaa501a)\n\nBug: 111442216\nBug: 178055795\nTest: test-art-host\n\nMerged-In: I5b104329af899ea62dc1779800264bad6b5424a4\nChange-Id: I5b104329af899ea62dc1779800264bad6b5424a4\n(cherry picked from commit eb21b021080547fbddb446935e5a23ec5db8f8e5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a9855cdf4cd98e92113f4b9c1f706ced917b13a4",
+      "old_mode": 33188,
+      "old_path": "build/Android.gtest.mk",
+      "new_id": "95d0f38b6713e262b355d7a9cb44fb6f688668df",
+      "new_mode": 33188,
+      "new_path": "build/Android.gtest.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "6bccdf592602508cf51b60c7df0bc4aeb2fc4f6d",
+      "old_mode": 33261,
+      "old_path": "build/apex/art_apex_test.py",
+      "new_id": "358ef824ea11044609908ed30e624014847ba344",
+      "new_mode": 33261,
+      "new_path": "build/apex/art_apex_test.py"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb76dd99d0d305c0fe239981e9c8b46e7239d2e4",
+      "old_mode": 33188,
+      "old_path": "dex2oat/Android.bp",
+      "new_id": "b2ae48db337c0ca26ddd937d568880259dc431d3",
+      "new_mode": 33188,
+      "new_path": "dex2oat/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "56548949f3b0bf16091a8aa96ee0248297d82915",
+      "old_mode": 33188,
+      "old_path": "dex2oat/dex2oat.cc",
+      "new_id": "abb0bd1367874d979fe70020cf5e1517b238ce30",
+      "new_mode": 33188,
+      "new_path": "dex2oat/dex2oat.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "34c8c5e271b8ff643774950f8153d9ebf5ddf357",
+      "old_mode": 33188,
+      "old_path": "dex2oat/dex2oat_test.cc",
+      "new_id": "ab33c19e27f45b3c42f6d7fe03af8c98f2018451",
+      "new_mode": 33188,
+      "new_path": "dex2oat/dex2oat_test.cc"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0eddab61905416f3ac294f86a09e6a3e98c75034",
+      "new_mode": 33188,
+      "new_path": "dex2oat/dex2oat_vdex_test.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb8a760862d94b02ef815b8d43989593adf5830e",
+      "old_mode": 33188,
+      "old_path": "runtime/dex2oat_environment_test.h",
+      "new_id": "8182e16ff5a448dfa42db78f61a84033ceec9ac5",
+      "new_mode": 33188,
+      "new_path": "runtime/dex2oat_environment_test.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0f09fcc997ef96b3025821acae808b107cb00f37",
+      "old_mode": 33188,
+      "old_path": "test/Android.bp",
+      "new_id": "62367397200750e35d90b2cf8fc02a640071e802",
+      "new_mode": 33188,
+      "new_path": "test/Android.bp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e4862bdd8110eeb1c6016b809072badd6a94acb6",
+      "new_mode": 33188,
+      "new_path": "test/Dex2oatVdexTestDex/Dex2oatVdexTestDex.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "101fa522cff0c15c8a387ab28c3987716e5d3385",
+      "old_mode": 33261,
+      "old_path": "test/etc/run-test-jar",
+      "new_id": "423f9b3c01727207e2400cd4021d7e7fff7fb818",
+      "new_mode": 33261,
+      "new_path": "test/etc/run-test-jar"
+    }
+  ]
+}

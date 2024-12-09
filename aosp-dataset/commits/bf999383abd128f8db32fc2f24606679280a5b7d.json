@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "bf999383abd128f8db32fc2f24606679280a5b7d",
+  "tree": "cddc4fec4045e8864e970eb0ab18ad88be63ee3a",
+  "parents": [
+    "5b3adf422c7fc2271b45970b00f105e2e65c3555"
+  ],
+  "author": {
+    "name": "Mike Klein",
+    "email": "mtklein@google.com",
+    "time": "Mon Sep 17 17:29:39 2018 -0400"
+  },
+  "committer": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Tue Mar 05 10:55:46 2019 -0500"
+  },
+  "message": "RESTRICT AUTOMERGE: Make listener lists threadsafe with a mutex.\n\nBug: 124232283\nTest: Infeasible\n\nCherry-pick of https://skia-review.googlesource.com/155060 in Skia\n\nThere were conflicts due the fact that pi-dev does not have commit\nafa11586d782c7cb3e83b8af48023ff227349516 (\"Make the SkPathRef\nGenIDChangeListener ref counted\") or\n6c8d242b14355bf66c9137e9e4d6c7861d22168f (\"Make atomic lists list for\nbitmaps and paths\" - an alternate fix for this issue) and some smaller\nheader file changes.\n\nChange-Id: I7c2c5cd6603007d099169071a1b7d1a230c621bc\nMerged-In: I91a8fbdd1b8fb4cf8b124ebdf17212c643058ef3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "49f0f97f2fc05d131cb0860170917ca91429ef72",
+      "old_mode": 33188,
+      "old_path": "include/core/SkPixelRef.h",
+      "new_id": "52e679e049d7fb6cccfad99b8609a63f8be1a26b",
+      "new_mode": 33188,
+      "new_path": "include/core/SkPixelRef.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9b52d41c8951d8fa04c53662fca94a561e5ffab",
+      "old_mode": 33188,
+      "old_path": "include/private/SkPathRef.h",
+      "new_id": "0a1c579b715e9d47bfe5c18218bb2e2784735583",
+      "new_mode": 33188,
+      "new_path": "include/private/SkPathRef.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c710f71ba940210c683592d579739ef88c7de022",
+      "old_mode": 33188,
+      "old_path": "src/core/SkPathRef.cpp",
+      "new_id": "a725f7eb679bf90b8bbee9988eb971426a29d08c",
+      "new_mode": 33188,
+      "new_path": "src/core/SkPathRef.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d5e9360cdcaea4dae00f57fc66028ceb41ab1a72",
+      "old_mode": 33188,
+      "old_path": "src/core/SkPixelRef.cpp",
+      "new_id": "868ac8c122edaf17660c34199ec3be9dd4795f00",
+      "new_mode": 33188,
+      "new_path": "src/core/SkPixelRef.cpp"
+    }
+  ]
+}

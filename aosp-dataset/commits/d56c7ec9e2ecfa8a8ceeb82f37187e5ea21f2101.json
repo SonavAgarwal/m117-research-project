@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d56c7ec9e2ecfa8a8ceeb82f37187e5ea21f2101",
+  "tree": "2534012f085f756ecafaf4f5e793bfdc3243627b",
+  "parents": [
+    "49acada519d088d8edf37e48640c76ea5c70e010"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Tue May 29 16:17:32 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:18 2018 +0000"
+  },
+  "message": "Decrease length after reading from array in process_service_attr_req\n\nTest: compilation\nBug: 78136677\nChange-Id: I4807a350e2b4764a93f104ce88f23a957a7e85c0\n(cherry picked from commit 6cd2e8bf6e5707e8e77e7aca6519c58200ee58db)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e4ed60a92a1a4e535ce5e0b7f020ffe45c845f9d",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "121c248adcf1fa4ca7e082cd8710eff3187c90cf",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

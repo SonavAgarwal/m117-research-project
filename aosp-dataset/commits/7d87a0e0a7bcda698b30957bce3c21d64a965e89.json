@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7d87a0e0a7bcda698b30957bce3c21d64a965e89",
+  "tree": "d1a5bea928da2f3adedfa056f67a368cc81304ef",
+  "parents": [
+    "e20c36359d183d291d7933faba4d0635a91f9b2e"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Fri Mar 29 16:14:02 2019 -0700"
+  },
+  "committer": {
+    "name": "Sterling Huber",
+    "email": "hubers@google.com",
+    "time": "Tue Mar 17 09:27:48 2020 -0700"
+  },
+  "message": "RESTRICT AUTOMERGE\nPrevent accessing companion records from arbitrary uids\n\nTest: manual\nBug: 129476618\nChange-Id: Icc713def6192401b1aedeb4c0eb2a7ca021440a0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b20bd67737ed78181321ce4a5ae5de918ed3a276",
+      "old_mode": 33188,
+      "old_path": "tests/tests/permission2/res/raw/android_manifest.xml",
+      "new_id": "b329fa259cb9876edcd26b5346f1aeeb863d4a71",
+      "new_mode": 33188,
+      "new_path": "tests/tests/permission2/res/raw/android_manifest.xml"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "45660529af1f4063a00e84aa2361649e6a9a878c",
+  "tree": "b827135cdc4fe56dc4580b02a0d90daa86203e48",
+  "parents": [
+    "2d278144f9a395b35d383794e0b4a818ad1ef239"
+  ],
+  "author": {
+    "name": "Arun Kumar K.R",
+    "email": "akumarkr@codeaurora.org",
+    "time": "Wed Jun 05 17:21:38 2013 -0700"
+  },
+  "committer": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Fri Oct 16 11:48:57 2015 -0700"
+  },
+  "message": "hwc: Fix to avoid heap corruption\n\n- Check for MAX_NUM_APP_LAYERS before updating yuv indices array.\n- Fall back to GPU composition when number of app layers exceeds\n  MAX_NUM_APP_LAYERS to avoid heap corruption.\n\nBug: 24163261\n\nAcked-by: Ramkumar Radhakrishnan \u003cramkumar@codeaurora.org\u003e\n\nChange-Id: Ieb91b705a0a5f50ce2f8829d1f1ee048d44b7d2e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98126bf0eab349d4d53a23a1cce881753d99223b",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_copybit.cpp",
+      "new_id": "0839122c8f0c438ce2c3cd047ecb00404251c0e4",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_copybit.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ddf56db11430dc1c59e92b72d7104bc2160070d3",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp",
+      "new_id": "38d8439ef707466e279cf7e26fb30a3f460e9fef",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a0255b7e1c0da932000f0167026d3c35149374c7",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_mdpcomp.h",
+      "new_id": "e2800d242672b232ba71e5baab6d5eabaeb51050",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_mdpcomp.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ce3f2818842109eab02cca63fe5a59f22289a750",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_utils.cpp",
+      "new_id": "c68b77ac218fdb353f774ea3927698baee68c391",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_utils.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ee1cbe850788b937109ec37107866f8a25f8cfb1",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_utils.h",
+      "new_id": "aa66f900bf8e47fe06fdbe3d845c9cf8aee73976",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_utils.h"
+    }
+  ]
+}

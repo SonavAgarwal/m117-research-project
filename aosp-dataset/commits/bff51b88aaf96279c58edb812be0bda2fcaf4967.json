@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bff51b88aaf96279c58edb812be0bda2fcaf4967",
+  "tree": "fe211c4dcf52f8c83c50cb69a48cc2cf5becd12b",
+  "parents": [
+    "87ee2378de8938cdf561b043c05a3f26323dfd6b"
+  ],
+  "author": {
+    "name": "Christopher Ferris",
+    "email": "cferris@google.com",
+    "time": "Tue May 26 10:33:18 2020 -0700"
+  },
+  "committer": {
+    "name": "Christopher Ferris",
+    "email": "cferris@google.com",
+    "time": "Thu May 28 15:46:51 2020 -0700"
+  },
+  "message": "Fail explicitly on length overflow.\n\nInstead of aborting when FileMap::create detects an overflow, detect the\noverflow directly and fail the call.\n\nBug: 156997193\n\nTest: Ran unit tests, including new unit test that aborted before.\nMerged-In: Ie49975b8949fd12bbde14346ec9bbb774ef88a51\nChange-Id: Ie49975b8949fd12bbde14346ec9bbb774ef88a51\n(cherry picked from commit 68604b9c29b5bd11e2e2dbb848d6b364bf627d21)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1d899ab7fc0226253ff49e9f4cdcf0797c2029e8",
+      "old_mode": 33188,
+      "old_path": "libutils/FileMap.cpp",
+      "new_id": "0abb86191f046cf6d86496a73bf39e2f57ecc3de",
+      "new_mode": 33188,
+      "new_path": "libutils/FileMap.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f7ce85ca6e7c99eb49278ac4174e0ab391231df",
+      "old_mode": 33188,
+      "old_path": "libutils/FileMap_test.cpp",
+      "new_id": "fd1c9b0a0ee88968324d3ac15b61fdc553fc2152",
+      "new_mode": 33188,
+      "new_path": "libutils/FileMap_test.cpp"
+    }
+  ]
+}

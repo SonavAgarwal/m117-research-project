@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "05d6fa9bcb90886ac2611f86bb7d2af7078eb3ad",
+  "tree": "f1af7f8ceae9868c929a016dc1ad8e9deb749aa7",
+  "parents": [
+    "f5477b05d980647356f6cf64c8c63d43aed8b717"
+  ],
+  "author": {
+    "name": "Weng Su",
+    "email": "wengsu@google.com",
+    "time": "Fri Jan 29 17:24:51 2021 +0800"
+  },
+  "committer": {
+    "name": "Weng Su",
+    "email": "wengsu@google.com",
+    "time": "Wed Feb 03 10:00:07 2021 +0000"
+  },
+  "message": "[Security Report] Fix Settings WifiScanModeActivity Overlaid issue\n\n- Disallowed non system overlay windows\n\n- Screenshot\n  https://screenshot.googleplex.com/77fJ9QN6pV4zFYc\n\nBug: 174047492\nTest: manual test\nMerged-In: Ia7acad6d456ce5ebea2d982d4cb063d4f28cbfff\nChange-Id: Ia7acad6d456ce5ebea2d982d4cb063d4f28cbfff\n(cherry picked from commit d47d8e4fc5959ea5cc57dc074d572a81ec6ddcb0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "53427299df1d67192cd2773ab546c2c055c5fb28",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/wifi/WifiScanModeActivity.java",
+      "new_id": "33cedde7c4b4239c276e32c5f36f3355332a1a4a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/wifi/WifiScanModeActivity.java"
+    }
+  ]
+}

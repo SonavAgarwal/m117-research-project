@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7c4c7fa208e31dc6f355a4488f267122015730a3",
+  "tree": "b85a5134b887b804478c2a595f203a2340fc1f4d",
+  "parents": [
+    "a1d5b40aaaa050af40c0f95d8b2d3e1ae8cfebbf"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Mon Jul 10 12:11:41 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:42 2017 +0000"
+  },
+  "message": "stagefright: fix crash due to bad timestamp index\n\nbug: 62872863\nChange-Id: I7f8ae62173d8b4bef0d6c35166427871408ad9dd\n(cherry picked from commit 069c97e06521035e81ead2eeff8960613fed9254)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1fac739aa5dd9659f854d0792393d4959be6755a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp",
+      "new_id": "7297f40fed1e6e0c93d357fedd6a1ef0de9d91ef",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mpeg2dec/SoftMPEG2.cpp"
+    }
+  ]
+}

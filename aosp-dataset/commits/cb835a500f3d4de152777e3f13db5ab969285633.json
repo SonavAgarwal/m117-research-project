@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb835a500f3d4de152777e3f13db5ab969285633",
+  "tree": "a42c3cd33bbb295e97d4ea65091ff38651faea8e",
+  "parents": [
+    "a07762f712b742269463a8afcb191642cd77d4ea"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu Apr 22 01:07:36 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:02:03 2021 +0000"
+  },
+  "message": "verify embedded buffer matches address in parent\n\nBelow is a diagram showing what scatter gather would look like where we\nhave one reference to a buffer, and then we have a single embedded\nbuffer. For instance, \u0027a1\u0027 might be the hidl_vec object and \u0027a2\u0027 might\nbe the data pointer in this object. In practice, there might be\narbitrarily many levels (this happens when structures contain vectors\nwhich contain structures etc...).\n\n   legend:\n      \"....\" - random data we don\u0027t care about\n      \"|\" - some position in the data\n      \"\u003ca#\u003e\" - some constant address\n\n   offsets into Parcel\u0027s mData:\n    .....|....\u003ca1\u003e....|.....|....\u003ca2\u003e....|.....\n         ^    ^             ^    ^\n         |    |             |    \\- \u0027buffer\u0027 field of structure\n         |    |             |\n         |    |             |  (binder object structure)\n         |    |             \\- mObjects[child]\n         |    |\n         |    \\- binder object structure \u0027buffer\u0027 field\n         |\n         \\- mObjects[parent] (binder object structure)\n\n    kernel-owned ro buffer @ address a1 (\u0027parent\u0027 buffer)\n      .......\u003ca3\u003e....................\n             ^\n             \\- parent buffer as address + parent offset\n                (in the example, this would be the data field\n                 of hidl_vec. This should be a2).\n\n    kernel-owned ro buffer @ address a2 (\u0027child\u0027 buffer)\n      ............................\n             (any random data)\n\nWhat was happening here was that by maliciously constructing\nmObjects[child] to be null, there would be no child object, so the\nkernel wouldn\u0027t know to fixup the embedded buffer (\u003ca3\u003e) and it\nwould be unchanged.\n\nBug: 179289794\nTest: repro w/ POC, and this fixes it\nTest: hidl_test\nChange-Id: Ia26e0fc902510b90ce5bbd55343fa6ded8e4fcf5\n(cherry picked from commit 25614cbc380db86cc3842ac1886b55d92c913e4d)\n(cherry picked from commit fcd86bd0d1b4cfea480a2682c354fb40039f0727)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f1d6dbd54ef9574429a67a4d1966993768831bc9",
+      "old_mode": 33188,
+      "old_path": "Parcel.cpp",
+      "new_id": "2c6bf5d4dfba461b0a64e7a39074fdea5cff45e5",
+      "new_mode": 33188,
+      "new_path": "Parcel.cpp"
+    }
+  ]
+}

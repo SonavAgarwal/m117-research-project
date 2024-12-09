@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b8d1aee993dcc565e6576b2f2439a8f5a507cff6",
+  "tree": "9dcfb84a99a691ea6cca96833b94c880abf6cd2a",
+  "parents": [
+    "b2c89e6f8962dc7aff88cb38aa3ee67d751edda9"
+  ],
+  "author": {
+    "name": "fionaxu",
+    "email": "fionaxu@google.com",
+    "time": "Thu Jul 07 12:10:40 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:31 2016 -0700"
+  },
+  "message": "Do not allow premium SMS during SuW\n\nBug: 29420123\nChange-Id: I41ef7138635f11fbe7f495dd81103458cb969c35\n(cherry picked from commit 15f55ca2f204e664807e047b5f898693b274bab6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "963b8728ed44f6ff87fd444aa0f9ed5f09dfe776",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/SMSDispatcher.java",
+      "new_id": "863f2c0bf58824b360e1e9f080851330bc61e3d2",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/SMSDispatcher.java"
+    }
+  ]
+}

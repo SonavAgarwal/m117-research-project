@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2674a7218eaa3c87f2ee26d26da5b9170e10f859",
+  "tree": "e64a835dfdcee3ecd19006764f578518fae4377b",
+  "parents": [
+    "e846a5f367030f1c7916fb841953bdf82a763822"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Mon May 04 18:36:35 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Jul 09 14:09:31 2015 -0700"
+  },
+  "message": "Prevent integer overflow when processing covr MPEG4 atoms\n\nIf the \u0027chunk_data_size\u0027 value is SIZE_MAX, an integer overflow will occur\nand cause an undersized buffer to be allocated. The following processing\nthen overfills the resulting memory and creates a potentially exploitable\ncondition. Ensure that integer overflow does not occur.\n\nBug: 20923261\nChange-Id: I75cce323aec04a612e5a230ecd7c2077ce06035f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a2d12a1ebf819d611c434e613e1d2b4cd3a34f3d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "850e6aff1b66136c49df845fecb6a84acdf1ce62",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

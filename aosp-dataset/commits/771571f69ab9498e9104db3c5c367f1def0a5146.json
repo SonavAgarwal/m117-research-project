@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "771571f69ab9498e9104db3c5c367f1def0a5146",
+  "tree": "de2e987ea1f105abf2238ee2324d19178b09765e",
+  "parents": [
+    "f5c10a299fba0499fa9b31322fb4cee8a78e1eda"
+  ],
+  "author": {
+    "name": "Ted Wang",
+    "email": "tedwang@google.com",
+    "time": "Tue Nov 26 11:46:38 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:24:11 2019 +0000"
+  },
+  "message": "Fix potential OOB write in btm_read_remote_ext_features_complete\n\nAdd event length check to avoid hci event sent from controller not\ncorrect.\nAdd page number check to avoid page number is bigger than\nHCI_EXT_FEATURES_PAGE_MAX.\n\nBug: 141552859\nBug: 144205318\nTest: inject function\nMerged-In: Iaca4db4ee9bf27362f62aba0da088727e98955d1\nChange-Id: Iaca4db4ee9bf27362f62aba0da088727e98955d1\n(cherry picked from commit 2aa92f871c2f2ea2181b74b49bf152f2606fb7c5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dcb2fb4d962657b83b51b4475a393643781c9b97",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_acl.cc",
+      "new_id": "694577d0e2ba13bed99fedb3dd3f948cd0eb0215",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_acl.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "6b80717c047efaccf6d72714f56c09702ddd478d",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_int.h",
+      "new_id": "ee1d6554a203cea4cde09e004340f8f86ef09d70",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_int.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4612422974bca04e34feefdbf52ff370229c2a95",
+      "old_mode": 33188,
+      "old_path": "stack/btu/btu_hcif.cc",
+      "new_id": "c70448e81436ea51cc2474e7e69ecc97e4672694",
+      "new_mode": 33188,
+      "new_path": "stack/btu/btu_hcif.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef87b5b615d3d5f0c68f6199c43d47aad733de29",
+      "old_mode": 33188,
+      "old_path": "stack/include/hcidefs.h",
+      "new_id": "b11ea6cd54a882d91ecddc176d4114af1d1fda96",
+      "new_mode": 33188,
+      "new_path": "stack/include/hcidefs.h"
+    }
+  ]
+}

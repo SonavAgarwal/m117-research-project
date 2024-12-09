@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c6a2815eadfce62702d58b3fa3887f24c49e1864",
+  "tree": "3f9a78756af8a9ef4abb722b06bb51555f194afb",
+  "parents": [
+    "a6c650a9e7927c7d640828cea66fc96e0bf762ce"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Sep 01 11:14:18 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Sep 03 09:06:37 2015 -0700"
+  },
+  "message": "DO NOT MERGE - libstagefright: sanity check size before dereferencing pointer in Utils.cpp\n\nAlso remove some CHECK\u0027s.\n\nBug: 23680780\nChange-Id: I62d0941e203e40209fa6fbe3f923f3efdc5a6c23\n(cherry picked from commit 7bb772e0c643ff3292599cf485b9dbf232bf39a4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d86be6eeb16b3c4e26cab04e3c9f75d3d32232e0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/Utils.cpp",
+      "new_id": "214e2fc9609abe3869f71d19395bfcb248cf1fd9",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/Utils.cpp"
+    }
+  ]
+}

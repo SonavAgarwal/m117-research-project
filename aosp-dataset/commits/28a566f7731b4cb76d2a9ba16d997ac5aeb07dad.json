@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "28a566f7731b4cb76d2a9ba16d997ac5aeb07dad",
+  "tree": "8781b4c6f6b91e724a513f3a6c1305d2a7c3bdc1",
+  "parents": [
+    "e6fd45c005e1adf42815c46a802689fd8214afde"
+  ],
+  "author": {
+    "name": "Yabin Cui",
+    "email": "yabinc@google.com",
+    "time": "Thu Feb 18 11:32:10 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:16 2016 -0800"
+  },
+  "message": "Fix integer overflows in recovery procedure.\n\nBug: 26960931\nChange-Id: Ieae45caccfb4728fcf514f0d920976585d8e6caf\n(cherry picked from commit 4f2df162c6ab4a71ca86e4b38735b681729c353b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ac6f5c33fdda8f274d9d9aca75668f3bcb3c506e",
+      "old_mode": 33188,
+      "old_path": "minzip/SysUtil.c",
+      "new_id": "8601591002a205ebe37f67a3697047acec2991fb",
+      "new_mode": 33188,
+      "new_path": "minzip/SysUtil.c"
+    }
+  ]
+}

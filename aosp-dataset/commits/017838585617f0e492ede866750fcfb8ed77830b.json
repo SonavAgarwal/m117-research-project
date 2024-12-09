@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "017838585617f0e492ede866750fcfb8ed77830b",
+  "tree": "9d8017de7b84c9d5b3682f6140ac9ea706ccb1cd",
+  "parents": [
+    "b6f856f7a4840b5948695d2249bfae5a7088fe24"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackcwyu@google.com",
+    "time": "Wed Sep 18 21:19:20 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:35:14 2019 +0000"
+  },
+  "message": "Fix stack-use-after-scope in NativeNfcManager.cpp\n\nBug: 141170038\nTest: Nfc Enable/Disable with NFC SIM\nChange-Id: I938af468869f41824f0af447f56a879afe77b52e\n(cherry picked from commit 3c2a9251620ed8b7cb4045b8134df2accc641601)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "92e07ff8a9dace90c2b12e016750a017bb0909e1",
+      "old_mode": 33188,
+      "old_path": "nci/jni/NativeNfcManager.cpp",
+      "new_id": "65f006f6e174ffb95eba626c3fc139b0e5a740d3",
+      "new_mode": 33188,
+      "new_path": "nci/jni/NativeNfcManager.cpp"
+    }
+  ]
+}

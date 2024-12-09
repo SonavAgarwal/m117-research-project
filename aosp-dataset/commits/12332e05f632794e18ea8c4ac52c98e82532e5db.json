@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "12332e05f632794e18ea8c4ac52c98e82532e5db",
+  "tree": "edb1a4b43a464a66a7f6af7c2524f775e189b979",
+  "parents": [
+    "3cd1905d857913241198f65066e1aa78516192ea"
+  ],
+  "author": {
+    "name": "Samuel Tan",
+    "email": "samueltan@google.com",
+    "time": "Mon Mar 14 15:57:02 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:47:51 2016 -0700"
+  },
+  "message": "[DO NOT MERGE] Disallow guest user from changing Wifi settings\n\nDisallow existing and newly created guest users from\nchanging Wifi settings.\n\nBUG: 27411179\nTEST: Flashed device, switched to existing guest user, and verified\n      that Wifi settings are disabled.\nTEST: Flashed device, created new guest user, and verified that Wifi\n      settings are disabled.\n\nChange-Id: Ia1bf4cce0369017b62f69d317c7ab2e30e3949b3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06c3682fa988a1674acd7cf343d3751de6b63e7f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/UserManagerService.java",
+      "new_id": "fd9979f1c552af8180fede5922d1b0a3f2faa752",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/UserManagerService.java"
+    }
+  ]
+}

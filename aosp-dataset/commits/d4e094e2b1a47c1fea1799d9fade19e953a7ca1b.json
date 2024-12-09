@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "d4e094e2b1a47c1fea1799d9fade19e953a7ca1b",
+  "tree": "a0d4e82de71f71d0579149e76bf699581acfb709",
+  "parents": [
+    "215ae4854cefa6404b8b60beea5d42822f7f8288"
+  ],
+  "author": {
+    "name": "Jeff Vander Stoep",
+    "email": "jeffv@google.com",
+    "time": "Wed Jun 13 22:10:37 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:46:50 2018 +0000"
+  },
+  "message": "crash_dump: disallow ptrace of TCB components\n\nRemove permissions.\n\nBug: 110107376\nTest: kill -6 \u003ccomponents excluded from ptrace\u003e\nChange-Id: If8b9c932af03a551e40e786d591544ecdd4e5c98\nMerged-In: If8b9c932af03a551e40e786d591544ecdd4e5c98\n(cherry picked from commit f1554f1588eab05eca7eb7ccba41d5955a563837)\n(cherry picked from commit 573d333589bd1bac02e35f0bd6958758ca65ae9e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fb73f08a994a8912746b87a257e323ae762c5931",
+      "old_mode": 33188,
+      "old_path": "prebuilts/api/28.0/private/crash_dump.te",
+      "new_id": "c3d2ed5bd0e2772c1c2d4968248f33b103a036de",
+      "new_mode": 33188,
+      "new_path": "prebuilts/api/28.0/private/crash_dump.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "f778d2818eb3f0bfc6c88803a25f457f908c0608",
+      "old_mode": 33188,
+      "old_path": "prebuilts/api/28.0/public/crash_dump.te",
+      "new_id": "cd1e5a8e4381ed93b7cd7d3c05c35222cc6539f4",
+      "new_mode": 33188,
+      "new_path": "prebuilts/api/28.0/public/crash_dump.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb73f08a994a8912746b87a257e323ae762c5931",
+      "old_mode": 33188,
+      "old_path": "private/crash_dump.te",
+      "new_id": "c3d2ed5bd0e2772c1c2d4968248f33b103a036de",
+      "new_mode": 33188,
+      "new_path": "private/crash_dump.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "f778d2818eb3f0bfc6c88803a25f457f908c0608",
+      "old_mode": 33188,
+      "old_path": "public/crash_dump.te",
+      "new_id": "cd1e5a8e4381ed93b7cd7d3c05c35222cc6539f4",
+      "new_mode": 33188,
+      "new_path": "public/crash_dump.te"
+    }
+  ]
+}

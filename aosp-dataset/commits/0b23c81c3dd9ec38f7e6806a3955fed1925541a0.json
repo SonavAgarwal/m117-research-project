@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "0b23c81c3dd9ec38f7e6806a3955fed1925541a0",
+  "tree": "b173684cbd3edf9730bb2363b44811b41520e434",
+  "parents": [
+    "494561291a503840f385fbcd11d9bc5f4dc502b8"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Jan 16 14:43:42 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Feb 14 16:59:09 2017 +0000"
+  },
+  "message": "Decoder: Fixed initialization of first_slice_in_pic\n\nTo handle some errors, first_slice_in_pic was being set to 2.\nThis is now cleaned up and first_slice_in_pic is set to 1 only once per pic.\nThis will ensure picture level initializations are done only once even in case\nof error clips\n\nBug: 33717589\nBug: 33551775\nBug: 33716442\nBug: 33677995\n\nChange-Id: If341436b3cbaa724017eedddd88c2e6fac36d8ba\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "04212dcc200b852af6af5a3f23b141eb95b6caed",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "27f4ad08f557ce35a597dbfd6f71ec7d81e71f9e",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b0bdcb6eb1dd14e0b47f8e75b1492d00c456337",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "01aae433faa423792e9f25727da6105bdea93c80",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "72064ed7a415ec3a8482cfb14563b5b27550a2ee",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "ae002f0465ed5b167dbe201b54d69385d8f312a2",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a7c84a9eafd12453667075df78743f4b5bfa6c06",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "1cea3109b6f86e90370e4c60d4065b64ca175eaa",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

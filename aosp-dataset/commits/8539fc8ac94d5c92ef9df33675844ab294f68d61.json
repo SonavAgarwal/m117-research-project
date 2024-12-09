@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8539fc8ac94d5c92ef9df33675844ab294f68d61",
+  "tree": "1710f454d1b182294e9da8a291b65dc302015b72",
+  "parents": [
+    "cbf13894010f3d6346fc06b4c09d6644ffb06704"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri Nov 03 14:47:32 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:33:35 2017 +0000"
+  },
+  "message": "Explicitly check processes are oneway\n\nOtherwise the behavior is effectively undefined when an\ninterface is unexpectedly changed or malicious code tries\nto change things.\n\nTest: hidl\u0027s run_all_device_tests, boot + camera/YT sanity\nBug: 68217907\nMerged-In: I4fe191a8a394441d24052efdb2f524801c80b7e5\nChange-Id: I4fe191a8a394441d24052efdb2f524801c80b7e5\n(cherry picked from commit 1f0d094186b1f0c4f77276c9045a2d159fb85b84)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eee541280a18d5bbdf6b187a0d703f41c3c82fb0",
+      "old_mode": 33188,
+      "old_path": "generateCpp.cpp",
+      "new_id": "158402fb6c07fa39d879ed552589acc73a902305",
+      "new_mode": 33188,
+      "new_path": "generateCpp.cpp"
+    }
+  ]
+}

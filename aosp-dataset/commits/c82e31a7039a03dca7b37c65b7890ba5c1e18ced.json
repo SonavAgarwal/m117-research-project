@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c82e31a7039a03dca7b37c65b7890ba5c1e18ced",
+  "tree": "6238c3bcad634928c91a7b89c8d25cb5b78ea34c",
+  "parents": [
+    "d48f0f145f8f0f4472bc0af668ac9a8bce44ba9b"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Mon Apr 27 18:38:17 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:03:00 2015 -0700"
+  },
+  "message": "HDCP: buffer over flow check -- DO NOT MERGE\n\nbug: 20222489\nChange-Id: I3a64a5999d68ea243d187f12ec7717b7f26d93a3\n(cherry picked from commit 532cd7b86a5fdc7b9a30a45d8ae2d16ef7660a72)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1cf987adfd3d0aceafa4b094aacf3a48ab4edfee",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IHDCP.cpp",
+      "new_id": "9d93320c0f40afd845e7a2a95419e9bd88d8e5f3",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IHDCP.cpp"
+    }
+  ]
+}

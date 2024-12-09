@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ae46511bfa62b56938b3df824bb2ee737dceaa7a",
+  "tree": "530019bf4aaf155cd6aff9a1c2ee6be0bf06d7b2",
+  "parents": [
+    "9d71a7bea4484a58f33add211504080bc437a20b"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Sat Nov 19 12:13:02 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:41 2016 -0800"
+  },
+  "message": "label /bugreports\n\n/data/bugreports is moving to /bugreports\n\nBug: 27262109\nBug: 27204904\nBug: 32799236\nTest: new symlink is in /bugreports and is labeled correctly\n\n(cherry picked from commit d314376da9def2f4a62fd078a177c8521f65eecf)\n\nChange-Id: Ia9aca3ff642b2171e9b0ece7c2b420a0d38006cc\n(cherry picked from commit 87a56541916d8416c98bdb313bebd2e36a5fd43d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3d91e2b254b2db9d4531dcaede19fbfdb4a967d3",
+      "old_mode": 33188,
+      "old_path": "file_contexts",
+      "new_id": "3448f21528f7abd5c34b70d690d6a6939a7bc263",
+      "new_mode": 33188,
+      "new_path": "file_contexts"
+    }
+  ]
+}

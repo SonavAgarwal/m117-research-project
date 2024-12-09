@@ -1,0 +1,129 @@
+)]}'
+{
+  "commit": "721e4d085ca3d1dc5826c0ba71615529f544d7f7",
+  "tree": "f293b2ebd5d39e511edd594e6f5d2d67025b937a",
+  "parents": [
+    "96879019090356e59496c342e5367effdb421d67"
+  ],
+  "author": {
+    "name": "Abodunrinwa Toki",
+    "email": "toki@google.com",
+    "time": "Mon Jul 01 19:41:44 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 22:55:55 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE TextClassifier cross-user vulnerability in direct-reply\n\nSys UI runs on user 0. This can lead to the TextClassifier (TC)\nrunning for the wrong user. Consequencies are user A can launch apps\nin user B via the TC\u0027s predicted actions and selected text being\nunintentionally shared from user A to an app running in user B.\n\nThis fix ensures that the correct user id is passed and verified for\nevery TC request going across process boundaries (i.e. via SystemTC).\n- Sys UI sets the appropriate user id in the TextView\n- TextClassificationManager (TCM) system service is constructed using\n  a context generated from this user id\n- SystemTC sets this user id before querying the TCMService\n- TCMService validates the user id before forwarding the request to\n  the TCService belonging to that user id.\n\nBug: 136483597\nBug: 123232892\nTest: atest android.view.textclassifier\n      atest android.widget.TextViewActivityTest\n      (manual) See I2fdffd8eb4221782cb1f34d2ddbe41dd3d36595c\n\nChange-Id: Ibe68bc9e257521de97cbb014176b2b8ba23547d1\n(cherry picked from commit 34e380cdd64230db81a5754b7b6e2654509af180)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b90588f8d2503c56baa351f2fd720a44b142fff",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/ActionsModelParamsSupplier.java",
+      "new_id": "31645672f04992d0980f00c004b303defd3eab6f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/ActionsModelParamsSupplier.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "aeb99b896b110d11c91e19cd84e7ce0408446690",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/ConversationActions.java",
+      "new_id": "7c527bae475d5038a8fe7f41104522e9b2731944",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/ConversationActions.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9ae0c65e0cff3afbb0ab8f5d22a93e9973d1cb14",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/SelectionEvent.java",
+      "new_id": "5c81664425e61e237eb8a9bbbc3a40e613a7a2a2",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/SelectionEvent.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f8766e3f783d3c9b6301ce7fd2092fcf86c08dc",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/SystemTextClassifier.java",
+      "new_id": "a97c3305208afe9c4f8fabf1127e2f0300f888d2",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/SystemTextClassifier.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "63210516b3e1602154e607729b0d7b2517013259",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextClassification.java",
+      "new_id": "975f3ba0763a60078bfd5da80270bc751394b265",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextClassification.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3bf8e9bd2bf0bd3759ce863dee6a587b4ac95837",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextClassificationContext.java",
+      "new_id": "db07685fe3ae797e0011e2a22506b0b82ed49ccb",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextClassificationContext.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "57da829b3f4460aed91e2028e9b0f770f908fdb3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextClassifierEvent.java",
+      "new_id": "a041296f97db4f0acaa9a789bdc2871a0eaf5ca0",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextClassifierEvent.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c75ffbea0cda5ecbad5751f4fdf6dbd52129253",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextLanguage.java",
+      "new_id": "3e3dc72bd677921dcb641c4323c32188307b8b6e",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextLanguage.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f3e0dc1ed843efde96ed536ae9fd72fd91ee5198",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextLinks.java",
+      "new_id": "d7ac52414923be3c1d845b3c802ca89aadf54a95",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextLinks.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "75c27bdbc1d514a1c15cd4ce4c13eb97be4079cf",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextSelection.java",
+      "new_id": "94e0bc3dcd670caa55302ada3c31469b14911f38",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextSelection.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0918c5fdefa88709327042cfa7922081faf881ec",
+      "old_mode": 33188,
+      "old_path": "core/java/android/widget/TextView.java",
+      "new_id": "944bdcde0821990453b431f14b942ff5bd35842d",
+      "new_mode": 33188,
+      "new_path": "core/java/android/widget/TextView.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f00148335a7c90ed6a961740839d13f4022c552",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/textclassifier/TextClassificationManagerService.java",
+      "new_id": "89a53051426398c50718c82fdf054f31ca0c1513",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/textclassifier/TextClassificationManagerService.java"
+    }
+  ]
+}

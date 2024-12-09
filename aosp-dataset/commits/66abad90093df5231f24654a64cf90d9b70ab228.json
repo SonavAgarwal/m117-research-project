@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "66abad90093df5231f24654a64cf90d9b70ab228",
+  "tree": "bc8f43b8d818175b30e7bdc91580aa2eeb6d3d4d",
+  "parents": [
+    "f1ce5862cf0b457e627a6b33520ecceaa16df3f8"
+  ],
+  "author": {
+    "name": "Gary Mai",
+    "email": "garymai@google.com",
+    "time": "Wed Sep 05 15:17:41 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:19:54 2018 +0000"
+  },
+  "message": "Patch URI vulnerability in contact photo editing\n\nDon\u0027t allow reading of \"file://\" URIs that don\u0027t point to \"/storage\" during the\nphoto saving flow.\n\nThis is to prevent malicious apps from asking us to read our own private\nfiles which we copy into a temporary \"content://\" URI that we give to a\ncropping app (with permission to read).\n\nFixing here patches both PhotoSelectionHandler.java and\nAttachPhotoActivity.java.\n\nTested:\nManual with the fake gallery app. Confirmed that selecting an \"image\"\nwith a URI of our own shared_pref file fails without reading it.\nContactPhotoUtilsTest\n\nBug: 113597344\nChange-Id: Iabb4f8139cedb7d7b865d69a4b95a4997f64c71d\n(cherry picked from commit ccfd94b965c1e9c2e0b239c12137c239c602070d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "943f5ddd9f3aa1935dd9cb25edfc909870e725b9",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/util/ContactPhotoUtils.java",
+      "new_id": "d0e06587d8e16b8b9dfcea725cfe0d97b2536a46",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/util/ContactPhotoUtils.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d17b98c2dea8628e71e8dd9257f47ff60ee31900",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/contacts/util/ContactPhotoUtilsTest.java"
+    }
+  ]
+}

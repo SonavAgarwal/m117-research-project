@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "338aeaf28e9981c15d0673b18487dba61eb5447c",
+  "tree": "08b030eed25deb93283d48ae3f40d9f6a1f05e45",
+  "parents": [
+    "f8ed7d3f0ea87b3fc1aa72859386c82d8d9bdbd4"
+  ],
+  "author": {
+    "name": "Aart Bik",
+    "email": "ajcbik@google.com",
+    "time": "Thu Apr 21 15:51:41 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:29:58 2016 -0700"
+  },
+  "message": "Fix potential buffer overrun.\n\nBUG\u003d27840771\n\nChange-Id: I240f188b2e8f4b45d90138cfb3b14869cf506452\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be7f70b5063ec777faaca7d91750d3ca69af3659",
+      "old_mode": 33188,
+      "old_path": "libdex/OptInvocation.cpp",
+      "new_id": "bfad44b26e95421effcd2b43187903d48df155d0",
+      "new_mode": 33188,
+      "new_path": "libdex/OptInvocation.cpp"
+    }
+  ]
+}

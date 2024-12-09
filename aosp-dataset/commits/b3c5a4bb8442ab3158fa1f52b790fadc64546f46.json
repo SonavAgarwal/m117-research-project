@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b3c5a4bb8442ab3158fa1f52b790fadc64546f46",
+  "tree": "dd29760980bc0637ce09b4c2a3f657125b793c8b",
+  "parents": [
+    "6792cf6361ff339e336287affb0bfe54bf6957a9"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Sep 08 08:48:41 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Sep 08 15:50:08 2015 +0000"
+  },
+  "message": "Fix crash on invalid channel config\n\nBug: 23876444\nChange-Id: I90ad197811ebabceb5b5d74d6d3f20716fbe2d45\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "32d843730dbea40b3ff4ab00ccaa1b1529a6d938",
+      "old_mode": 33188,
+      "old_path": "libPCMutils/src/pcmutils_lib.cpp",
+      "new_id": "cd22171acc40651e33fc369ed8fe7679c5d641d9",
+      "new_mode": 33188,
+      "new_path": "libPCMutils/src/pcmutils_lib.cpp"
+    }
+  ]
+}

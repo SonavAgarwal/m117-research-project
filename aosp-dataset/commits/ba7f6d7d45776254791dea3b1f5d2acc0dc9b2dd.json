@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ba7f6d7d45776254791dea3b1f5d2acc0dc9b2dd",
+  "tree": "c4d5240c48dc16ea69d57453983fa04509ab3bdf",
+  "parents": [
+    "f3afef8419de2910b03c3670ca25e63ac3c08407"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu May 14 02:15:26 2020 +0200"
+  },
+  "committer": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Wed Jun 24 19:02:54 2020 +0000"
+  },
+  "message": "Prevent overlay drawing on top of Bluetooth discovery request dialog\n\nBug: 155650356\nChange-Id: I9cee6e5bb8cef77aa385d664fe0738db1496ef20\nMerged-In: I9cee6e5bb8cef77aa385d664fe0738db1496ef20\n(cherry picked from commit ac671004231fb2ceb85f3101995e22dcc52c8088)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d2e2060291f4619d8ea10bd6c93da4c473da93af",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/RequestPermissionActivity.java",
+      "new_id": "7bc5c07f0ed52bf40fab5bd23d39bb787e28b1f6",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/RequestPermissionActivity.java"
+    }
+  ]
+}

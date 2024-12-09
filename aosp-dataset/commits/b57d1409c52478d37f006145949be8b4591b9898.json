@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b57d1409c52478d37f006145949be8b4591b9898",
+  "tree": "a2db9ff7ea57db83fece561d50a36408444fb645",
+  "parents": [
+    "6372d20de9fd76ffbb65e104d13b20a7c12aeb96"
+  ],
+  "author": {
+    "name": "Jing Ji",
+    "email": "jji@google.com",
+    "time": "Fri Aug 28 14:55:48 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:50 2020 +0000"
+  },
+  "message": "Enforce permission checks in getting app exit reasons\n\nBug: 165595677\nTest: atest CtsSecurityTestCases:ActivityManagerTest\nChange-Id: Ia758d32bce6b2ac4c7145a96eccf68a962f0748b\n(cherry picked from commit e9b1dd415fed5415bc21abbd8e2f653fda5cf30c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3b8518004309e86f4b9b25abef4a8d05794fcf30",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "091c77ecaac3e02b35bdbe5b4fe4442a6a19a011",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

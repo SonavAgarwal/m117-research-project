@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ea5aa166f8a0399cf1ab91b0dc864e01728e3888",
+  "tree": "6bef31d1648cc922c397c19c7324c2937f1ad13f",
+  "parents": [
+    "bdd6d24fb00005fded1d0bb89a7a1875010b651c"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Feb 26 15:47:01 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:41 2019 +0000"
+  },
+  "message": "Reserve enough space for RTSP CSD\n\nmake parameters to GetSizeWidth() reflect values being used in\ncorresponding EncodeSize() invocations so we won\u0027t overflow the buffer.\n\nBug: 123701862\nTest: y\nChange-Id: I78596176e6042c95582494a8ae1b9c3160bf5955\n(cherry picked from commit c025be8ce5f1b34bdf293ac367685c969bd430ba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "201a5dfeef826f4b5762363b8ae677467b5f967d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/rtsp/APacketSource.cpp",
+      "new_id": "c5605b416577565d9ec244f9568c37b830a30c73",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/rtsp/APacketSource.cpp"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "d47661ad82d402c1e0c90eb83970687d784add1b",
+  "tree": "84b40d40ec63ab96aada59819aee639a9232432c",
+  "parents": [
+    "1221f818b39e38f98fe4a5e3234ace8a20f6fde1"
+  ],
+  "author": {
+    "name": "Walter Jang",
+    "email": "wjang@google.com",
+    "time": "Mon Nov 07 09:24:43 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Dec 01 15:08:02 2016 -0800"
+  },
+  "message": "resolve merge conflicts of 9f523b4 to nyc-dev\n\nBug: 32219099\nMerged-In: Ib141ad682488aeabf6d90e8d169d5fff6df7a8dd\nChange-Id: I895b1f9f8ade2dcfa47d1c17e0aaac2edeb75a74\n(cherry picked from commit b7eecdd9a1276b721bb9644a0762dfd969e52709)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "da9ef9777314c1a3bdcd12dd43a19eb60870db52",
+      "old_mode": 33188,
+      "old_path": "res/values/strings.xml",
+      "new_id": "7d5d9ab3ae7ad214c20671339e76b840940dc223",
+      "new_mode": 33188,
+      "new_path": "res/values/strings.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "8339d73e0eff7357f13e7800107e54a69b74ffb3",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/common/activity/RequestImportVCardPermissionsActivity.java",
+      "new_id": "137f44d3ae7a9a726203d77d2d141f8f8b5cd34f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/activity/RequestImportVCardPermissionsActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "51dec0c5b37a96ce5edb304b77e0d57a7203715e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/common/activity/RequestPermissionsActivity.java",
+      "new_id": "03caadf22b1da3f85b62693ba261564e3c128847",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/activity/RequestPermissionsActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "104abbe2b1d5bce059dfab3bf10f6acb154f4df3",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/common/activity/RequestPermissionsActivityBase.java",
+      "new_id": "edb2aa5aa0c7d67e4d7859dc612b345326e4d623",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/activity/RequestPermissionsActivityBase.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "33685c2f73be5a34bfd036c9a8f87c0460ab5fbe",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/common/util/AccountSelectionUtil.java",
+      "new_id": "492b3b56fafc180d66bfcd8ac3b7a513f149544e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/util/AccountSelectionUtil.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9da8c0b796ea4a204dbe32121f20dc4b46e13cd7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/common/vcard/ImportVCardActivity.java",
+      "new_id": "8f2e816700a42b285a73502acb2c32d03dd0754d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/vcard/ImportVCardActivity.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6a437c94449015d9fcb4589c335cda69634b9426",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/common/vcard/ImportVCardDialogFragment.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb6a56b1d8cdab7c495ea8f53dcbdb3cfc9477d2",
+  "tree": "72e9c04635dd58a18e18d30f831bc1d3e60d3c07",
+  "parents": [
+    "289a49814aef7f0f0bb98aac8246080abdfeac01"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Wed May 30 17:56:14 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:32 2018 +0000"
+  },
+  "message": "Add checks whether the AVDTP element data length is valid\n\nBug: 78288378\nTest: Manual: Python script and extra logging\nChange-Id: I715b5977c833d33ff798f008fbf244effa13ea1f\nMerged-In: I715b5977c833d33ff798f008fbf244effa13ea1f\n(cherry picked from commit 9b3f96f50287d8789aff6d6895d7ae02ca6ac619)\n(cherry picked from commit ee30c88a8d49b30860d35b34a57c3037a4045678)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7ab7edc0004e3edb75f13fbd237526ffa67f1007",
+      "old_mode": 33188,
+      "old_path": "stack/avdt/avdt_msg.cc",
+      "new_id": "52ce2e8a638ea52f460b808540e02c4b93afeaed",
+      "new_mode": 33188,
+      "new_path": "stack/avdt/avdt_msg.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "045e30499e3c73fb05b0a97da2420fd27bb263a3",
+  "tree": "ec2955adfd405c33d84caf328ab9ff49e051f011",
+  "parents": [
+    "f8945da46e1d92dad509f15b262e76fa4238224d"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue May 16 15:30:17 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:51:48 2017 +0000"
+  },
+  "message": "Equalizer: Check value size for get preset name\n\nTest: see CTS testAllEffectsEqualizer_CVE_2017_0401\nBug: 37536407\nChange-Id: Ifa515dea10c9293022b7d0971d097f0bd727ac6c\n(cherry picked from commit 8cf151a63177247a370ecdef6f2e1ec0b80901d5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8c9449aa639152d41ab266d055a3bdffc29a8738",
+      "old_mode": 33188,
+      "old_path": "post_proc/equalizer.c",
+      "new_id": "4e4552fe88df542306c7126650286bf222821958",
+      "new_mode": 33188,
+      "new_path": "post_proc/equalizer.c"
+    }
+  ]
+}

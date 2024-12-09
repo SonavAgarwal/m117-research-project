@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bce1305c0ece3dc549663605e567655dd701752c",
+  "tree": "cf38d31f01ec5c2be9e38b39245e2b6bcc908b7c",
+  "parents": [
+    "b7429ea53d6c0936a0f10a5d64164f0aea440143"
+  ],
+  "author": {
+    "name": "Marc Zyngier",
+    "email": "maz@kernel.org",
+    "time": "Sat Aug 29 12:26:01 2020 +0100"
+  },
+  "committer": {
+    "name": "Benjamin Tissoires",
+    "email": "benjamin.tissoires@gmail.com",
+    "time": "Tue Sep 01 10:25:49 2020 +0200"
+  },
+  "message": "HID: core: Correctly handle ReportSize being zero\n\nIt appears that a ReportSize value of zero is legal, even if a bit\nnon-sensical. Most of the HID code seems to handle that gracefully,\nexcept when computing the total size in bytes. When fed as input to\nmemset, this leads to some funky outcomes.\n\nDetect the corner case and correctly compute the size.\n\nCc: stable@vger.kernel.org\nSigned-off-by: Marc Zyngier \u003cmaz@kernel.org\u003e\nSigned-off-by: Benjamin Tissoires \u003cbenjamin.tissoires@gmail.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "359616e3efbbb244e633b4a37ae6361c30abf19f",
+      "old_mode": 33188,
+      "old_path": "drivers/hid/hid-core.c",
+      "new_id": "d2ecc9c4525548c5ae4f1f1a54de70d61c52a91d",
+      "new_mode": 33188,
+      "new_path": "drivers/hid/hid-core.c"
+    }
+  ]
+}

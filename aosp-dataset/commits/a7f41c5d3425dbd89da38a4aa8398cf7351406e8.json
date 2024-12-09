@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a7f41c5d3425dbd89da38a4aa8398cf7351406e8",
+  "tree": "234c70774f703a5aa6f5472932e492bcb64b8aca",
+  "parents": [
+    "7c95c8c1c8273af0dc0c3f481f263c2a35650abb"
+  ],
+  "author": {
+    "name": "Ritu Baldwa",
+    "email": "ritu.baldwa@ittiam.com",
+    "time": "Wed Dec 27 17:45:30 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:13 2018 +0000"
+  },
+  "message": "Decoder: Fixed memory overflow in shared display mode.\n\nThe factor multiplication should happen only at the source,\nnot at the destination.\n\nBug: 71375536\nTest: manual\nChange-Id: Ib5f00b87150a0533880346fac5464b0b1a802c36\n(cherry picked from commit c3b026a87d7da17ca5196e1973137b8691e60bde)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e85daba83511f93a015e8252912510469388847a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "edfb8f1867bf9248ca03f076e464e1c7c20e3f91",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

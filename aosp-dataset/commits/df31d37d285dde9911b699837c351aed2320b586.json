@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "df31d37d285dde9911b699837c351aed2320b586",
+  "tree": "afae6276f42e6d496590ca56fd1acf4396e942b6",
+  "parents": [
+    "b48581401259439dc5ef6dcf8b0f303e4cbefbe9"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Fri Jul 10 11:21:34 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:51 2015 -0700"
+  },
+  "message": "Externally-reported Moderate severity vulnerability in SMS: Apps can bypass the SMS short code notification prompt\n\nBug 22314646\n\nDO NOT MERGE\n\nWhen android.permission.SEND_SMS_NO_CONFIRMATION was renamed to\nandroid.permission.SEND_RESPOND_VIA_MESSAGE in JB-MR2, the necessary change\nin SmsDispatcher was accidentally overlooked.\n\nChange-Id: I2c3aa79da8064e55cec5a786696de519c2bf0b07\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "098ed46ad308c4283818b68c03c416814430434b",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/SMSDispatcher.java",
+      "new_id": "a12c3fddb87ed9044a5fabfb3d6bf905161bcd0c",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/SMSDispatcher.java"
+    }
+  ]
+}

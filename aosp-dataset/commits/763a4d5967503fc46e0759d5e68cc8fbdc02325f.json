@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "763a4d5967503fc46e0759d5e68cc8fbdc02325f",
+  "tree": "8ebeecd995b296a157bbd6ccf05c8cbc6587f52b",
+  "parents": [
+    "8cef97cb2bb8a728e5f70644accad1a3306c6d38"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Nov 19 13:31:08 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:21 2020 +0000"
+  },
+  "message": "Prevent overlay drawing on top of Bluetooth activity dialog\n\nBug: 168504491\nChange-Id: I04ebe580db2b299af2bd5e44e0b0f20bd42f8535\n(cherry picked from commit 4f7edf692f4e8a10521379aaae8c1d52ab275d72)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4dd9a4042ef4f55e4981a0c49bb4ea090e011699",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPermissionActivity.java",
+      "new_id": "be383dc02ba9c01a6561859b726e1b59025fd1bd",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPermissionActivity.java"
+    }
+  ]
+}

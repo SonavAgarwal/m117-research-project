@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "820c105f7a4dc0971ee563caea4c9b346854a2f7",
+  "tree": "8e8187c77a0bc2e59f434046554fc62fb4ca146c",
+  "parents": [
+    "b5611b843918a27ff8cac096ea044f486194e673"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Fri Sep 11 16:31:18 2015 +0900"
+  },
+  "committer": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Mon Sep 14 11:28:21 2015 +0900"
+  },
+  "message": "DO NOT MERGE Avoid size_t overflow in base64 decoding once again\n\nSwitch to foundation base64 function in OggExtractor and fix the\nissue there.\n\nThis reverts commit 28314aef9e8a666dbb75bbd555f6566a6c991f1c.\n\nBug: 23707088\nChange-Id: I268bd50431de5b5e579343bf1b425c42ada6daba\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "130f5a5c0d9e04bae0221d3274817704c4997fbc",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OggExtractor.cpp",
+      "new_id": "900e2b08c29474c8c3318906d95a556effe7b1c2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OggExtractor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "dcf5bef3aea63c038bf9ed9d7de5ad0ec3bb1d3b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/foundation/base64.cpp",
+      "new_id": "7da7db9411f5368762bfe49f25c7f48bc2eb560d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/foundation/base64.cpp"
+    }
+  ]
+}

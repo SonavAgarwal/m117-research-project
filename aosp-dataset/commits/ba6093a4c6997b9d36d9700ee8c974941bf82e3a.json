@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ba6093a4c6997b9d36d9700ee8c974941bf82e3a",
+  "tree": "8f295f522d965924e9b4e4aff2c7d34a06dc4221",
+  "parents": [
+    "f97b6beeb2e2f0977d1c7fa8d2aaafe4e2f4d68a"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Aug 18 09:55:24 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Aug 18 09:55:24 2015 -0700"
+  },
+  "message": "Sanity check padding/delay values for gapless playback\n\nBug: 23306638\nChange-Id: I2b5160e0f58f90d3f67c3964f41f5734ec0da053\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "773854fa8ee60b8434e77757b35f16f18ed41567",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SkipCutBuffer.cpp",
+      "new_id": "4d15d7edb0d69f5693d080a1f5251cbca8116dd8",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SkipCutBuffer.cpp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "5b82f4f90c3d531313714df4b936f92fb0ff15cf",
+  "tree": "1a69eacfb08221ff86dbaa64699300db5710b2a8",
+  "parents": [
+    "89913d7df36dbeb458ce165856bd6505a2ec647d"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 25 10:03:42 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:33 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: vdec: Avoid processing ETBs/FTBs in invalid states\n\n(per the spec) ETB/FTB should not be handled in states other than\nExecuting, Paused and Idle. This avoids accessing invalid buffers.\nAlso add a lock to protect the private-buffers from being deleted\nwhile accessing from another thread.\n\nBug: 27890802\nSecurity Vulnerability - Heap Use-After-Free and Possible LPE in\nMediaServer (libOmxVdec problem #6)\n\nCRs-Fixed: 1008882\n\nChange-Id: Iaac2e383cd53cf9cf8042c9ed93ddc76dba3907e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ce747c4984f2164da77ae3183fa322ce0f92c41",
+      "old_mode": 33261,
+      "old_path": "mm-video-v4l2/vidc/common/inc/vidc_debug.h",
+      "new_id": "d9007f2d24a709b39763603084b9ca6dc53e61a9",
+      "new_mode": 33261,
+      "new_path": "mm-video-v4l2/vidc/common/inc/vidc_debug.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "3d8ec9edc87f2028610e53cd2a94de359dcec18f",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/inc/omx_vdec.h",
+      "new_id": "2d02a47692396c9ca87a2076524afb98bb7b5fb4",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/inc/omx_vdec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "95ffb98fdbbb283b320cc6eb5c2bd70550343c1c",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp",
+      "new_id": "f65321ead3345fc86625c890f97b828721dc2e98",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp"
+    }
+  ]
+}

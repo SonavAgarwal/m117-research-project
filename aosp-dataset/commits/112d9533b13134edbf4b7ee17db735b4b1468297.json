@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "112d9533b13134edbf4b7ee17db735b4b1468297",
+  "tree": "0d0e8e8baa47ac79dac25b0c8b6a591930333a3f",
+  "parents": [
+    "9234b77eb8a7400a1181b2058ee27ef239509276"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jun 06 14:41:13 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:48:14 2017 +0000"
+  },
+  "message": "Fix interpolator\n\nIf the phase increment was larger than the loop size, the interpolator\nwould read further and further outside the sample, eventually segfaulting.\n\nBug: 38342499\nTest: manual\nChange-Id: I0e70d037e61fdeffdbd49460caa692e9781cc511\n(cherry picked from commit d19edc9c090d64926469463991ca7e86c73368fa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9fcda7b2bdf7c155165822b54b98d9d83b0d366a",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_wtsynth.c",
+      "new_id": "8488fe25173ea164a62496ed97045bc02ad5c932",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_wtsynth.c"
+    }
+  ]
+}

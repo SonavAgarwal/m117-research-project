@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "46bdf4d4145ee022c48b71c30ba5fd45324f796a",
+  "tree": "f65d67697e83e1a1434d7ac21719c515be872e20",
+  "parents": [
+    "05243b881764136d3ca67b438d2e500d6f134f6a"
+  ],
+  "author": {
+    "name": "li-wei.cheng",
+    "email": "li-wei.cheng@mediatek.com",
+    "time": "Mon Jan 20 15:27:21 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:33 2020 +0000"
+  },
+  "message": "Return after removing sample LTK device\n\nReturn directly after calling bta_dm_remove_device to\nprevent from accessing the invalid security record (p_dev_rec).\n\nTest: Hardcode to test bond with sample key\nTag: #security\nBug: 162497143\nChange-Id: Iaa59f3c415dd8066849fd70912fdb83f890229d7\n(cherry picked from commit 7c86810c44ef2efd97c3e78bd77e36257a05f75b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "63e4f6ce10489e32a463669826b1b2d9105f38e2",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_sec.cc",
+      "new_id": "5d7d0f93b27e7941e88764696a82f7a2b59d1c44",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_sec.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "33f45caed3b60bf81790e9b76cf82c8e8d6ed902",
+  "tree": "7e9384248a31951e9d642f13ee3e1a67ddbb7aef",
+  "parents": [
+    "2025e95c677c6741d0a9879051ce20c25a09d33f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Nov 06 12:18:41 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:30:19 2018 +0000"
+  },
+  "message": "Fix memory leak\n\nBug: 68159767\nTest: build\nChange-Id: Iecbb69e59ccbe33989ad9d76f6826c22cda7724b\n(cherry picked from commit 2815be21f2f5e8f1d345f35bf9b3a008fc546efa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5b736c6eb6538392daae1bad14a7efbb16a2ac83",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "0c1c9f61ec4ecd7d93a9b10d5c8846d142e94299",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fdc6c1052bc7d89a5826904fbb4318677e8442ce",
+  "tree": "83b3c9460ea75154352e90e3577db74bba2b6899",
+  "parents": [
+    "e068734f9e7344997a61022629b92d142a985ab3"
+  ],
+  "author": {
+    "name": "Boris Ostrovsky",
+    "email": "boris.ostrovsky@oracle.com",
+    "time": "Wed Jul 09 13:18:18 2014 -0400"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86/espfix/xen: Fix allocation of pages for paravirt page tables\n\ncommit 8762e5092828c4dc0f49da5a47a644c670df77f3 upstream.\n\ninit_espfix_ap() is currently off by one level when informing hypervisor\nthat allocated pages will be used for ministacks\u0027 page tables.\n\nThe most immediate effect of this on a PV guest is that if\n\u0027stack_page \u003d __get_free_page()\u0027 returns a non-zeroed-out page the hypervisor\nwill refuse to use it for a page table (which it shouldn\u0027t be anyway). This will\nresult in warnings by both Xen and Linux.\n\nMore importantly, a subsequent write to that page (again, by a PV guest) is\nlikely to result in fatal page fault.\n\nSigned-off-by: Boris Ostrovsky \u003cboris.ostrovsky@oracle.com\u003e\nLink: http://lkml.kernel.org/r/1404926298-5565-1-git-send-email-boris.ostrovsky@oracle.com\nReviewed-by: Konrad Rzeszutek Wilk \u003ckonrad.wilk@oracle.com\u003e\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6afbb16e9b794819e23e2e284e06206f59bc92c3",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/espfix_64.c",
+      "new_id": "94d857fb103396cec7eb62981a86ce7ed43f5001",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/espfix_64.c"
+    }
+  ]
+}

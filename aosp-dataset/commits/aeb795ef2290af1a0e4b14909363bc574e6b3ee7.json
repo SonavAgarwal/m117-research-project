@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aeb795ef2290af1a0e4b14909363bc574e6b3ee7",
+  "tree": "b05f4e2bf5993a66c59af097e99b49acee22e385",
+  "parents": [
+    "5e0088de28fcf768ed3f680fb9561c7635af885c"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Mon Jan 16 10:15:34 2017 -0800"
+  },
+  "committer": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Fri Jan 27 01:33:47 2017 +0000"
+  },
+  "message": "Added permission check for setCellInfoListRate\n\nNow the caller needs to have MODIFY_PHONE_STATE to call\nthis API.\n\nTest: Manual\nbug: 33815946\nMerged-In: Ia2cf0de383572033c70b94ae71080ef35c3f443c\nChange-Id: Ia2cf0de383572033c70b94ae71080ef35c3f443c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4fc6ada7432bcedfe1a02fe4a23de662edb994bf",
+      "old_mode": 33188,
+      "old_path": "src/com/android/phone/PhoneInterfaceManager.java",
+      "new_id": "50f90c12508699026ffe596ce1f7785abacbcf67",
+      "new_mode": 33188,
+      "new_path": "src/com/android/phone/PhoneInterfaceManager.java"
+    }
+  ]
+}

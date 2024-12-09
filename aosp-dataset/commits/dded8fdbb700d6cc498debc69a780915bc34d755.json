@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dded8fdbb700d6cc498debc69a780915bc34d755",
+  "tree": "9d5d2f18aa21bb11828361ca74285f5eba8c69da",
+  "parents": [
+    "dbc9a478311e8728c8148a80abb103fca697891d"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jan 11 11:42:48 2016 -0800"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jan 11 11:47:42 2016 -0800"
+  },
+  "message": "IGraphicBufferConsumer: fix ATTACH_BUFFER info leak\n\nBug: 26338113\nChange-Id: I019c4df2c6adbc944122df96968ddd11a02ebe33\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f6d087d3b29734ab508f6d6ecb53181239c34edd",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferConsumer.cpp",
+      "new_id": "dc917a8b66fe186d1cae769eb362ca2c136f8d3f",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferConsumer.cpp"
+    }
+  ]
+}

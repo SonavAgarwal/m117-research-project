@@ -1,0 +1,147 @@
+)]}'
+{
+  "commit": "13b40c2040a17038b63a61e2b112c634da203d3b",
+  "tree": "6d03e75a1093fbcfa043a2823c7b51ee70ec00b6",
+  "parents": [
+    "e5aa0a2cb0a5f759ef31c0819dc67d9b14246a4a"
+  ],
+  "author": {
+    "name": "Paul Duffin",
+    "email": "paulduffin@google.com",
+    "time": "Wed May 04 10:42:31 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Tue Sep 27 15:55:45 2016 -0700"
+  },
+  "message": "Upgrade to expat 2.1.1\n\nModified the import_expat.sh script as the archive is now\ncompressed using bzip2 instead of gzip and uses configure.ac\ninstead of configure.in.\n\nModified README.android to make the example command up to date\nwith respect to the new archive format and also to ensure that\nit builds dependencies.\n\nAll the remaining changes are straight from upstream.\n\nBug: 27818751\n\n(cherry picked from commit cee23496d017f13eccc125e2ab7044de53dec8da)\n\nChange-Id: Ic75a6c455dbcc34aaa7c30c109dc1565c5c52b04\n(cherry picked from commit c05e032be5350e70e721727a96d5d4309f74af01)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "08897b9f9ed155d851f58b8c90b5b5f57a7463d7",
+      "old_mode": 33188,
+      "old_path": "Changes",
+      "new_id": "db5f7f32eb41a2b1d64e6f25156d2276354b3248",
+      "new_mode": 33188,
+      "new_path": "Changes"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f88467d1b0405d47093e74cd064a62bf1e4a875",
+      "old_mode": 33188,
+      "old_path": "README",
+      "new_id": "9ec8d0c6adefa0d79321c9760a3f52d9e1812ef5",
+      "new_mode": 33188,
+      "new_path": "README"
+    },
+    {
+      "type": "modify",
+      "old_id": "1112614a79fec18095696abc3ead39eed3df4578",
+      "old_mode": 33188,
+      "old_path": "README.android",
+      "new_id": "4f8abcb96bf634ee84ec91104feb6ffbcd9e76d5",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    },
+    {
+      "type": "modify",
+      "old_id": "5bc0726cfd8508d0aa53cf53486b0330780b5f21",
+      "old_mode": 33188,
+      "old_path": "doc/expat.png",
+      "new_id": "3d88eac4a1339b2453d6d7be388ae61f658da0f7",
+      "new_mode": 33188,
+      "new_path": "doc/expat.png"
+    },
+    {
+      "type": "modify",
+      "old_id": "8811a3397c73ce80acef9444d83cbf2b048d4b78",
+      "old_mode": 33188,
+      "old_path": "doc/reference.html",
+      "new_id": "a4ab40530aa47e7c943c1aa2f90e5a12381a86f8",
+      "new_mode": 33188,
+      "new_path": "doc/reference.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "4c23f48fe02a58fbb3d1088e6a7d372568830b53",
+      "old_mode": 33188,
+      "old_path": "doc/valid-xhtml10.png",
+      "new_id": "2f755c62b526e1c2ee8f14db7bf6a8c52d431ced",
+      "new_mode": 33188,
+      "new_path": "doc/valid-xhtml10.png"
+    },
+    {
+      "type": "modify",
+      "old_id": "174719a709ea8dad0c7127543f1c1d78ea33c5c8",
+      "old_mode": 33188,
+      "old_path": "doc/xmlwf.1",
+      "new_id": "f45aea9cb4d2791abd97aa79609845397d695512",
+      "new_mode": 33188,
+      "new_path": "doc/xmlwf.1"
+    },
+    {
+      "type": "modify",
+      "old_id": "313cfbcb210d573160dcf1f970bb9a55ee0a1a48",
+      "old_mode": 33188,
+      "old_path": "doc/xmlwf.sgml",
+      "new_id": "e1f779e1f3bca418559a256fed9e4f06c1f6700e",
+      "new_mode": 33188,
+      "new_path": "doc/xmlwf.sgml"
+    },
+    {
+      "type": "modify",
+      "old_id": "6b8f85501b6cdb8f00e2d2be24936bbadd44c606",
+      "old_mode": 33188,
+      "old_path": "examples/elements.c",
+      "new_id": "bc04b6b1515c59d9ed3f78d4d0459d54cbf2ac2a",
+      "new_mode": 33188,
+      "new_path": "examples/elements.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef3837bf93ddad177dbdd79096fe5a5b5bbbc7f9",
+      "old_mode": 33261,
+      "old_path": "import_expat.sh",
+      "new_id": "17eaf9e042c3ce12bcb130d8b74bb3d33d11bdd2",
+      "new_mode": 33261,
+      "new_path": "import_expat.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "9a21680be468cad28a05d2daec71102333024efa",
+      "old_mode": 33188,
+      "old_path": "lib/expat.h",
+      "new_id": "ec62f140515a18110bd0eb8697f11c7dd80dac44",
+      "new_mode": 33188,
+      "new_path": "lib/expat.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f35aa36ba8a7fce3bae90f31b20354435b15d2f2",
+      "old_mode": 33188,
+      "old_path": "lib/xmlparse.c",
+      "new_id": "e308c795dd9c11c50402e17b036a080dbb9f4a12",
+      "new_mode": 33188,
+      "new_path": "lib/xmlparse.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f9cca037ec4abcc7da229768ccbaf82920cca49",
+      "old_mode": 33188,
+      "old_path": "tests/benchmark/README.txt",
+      "new_id": "86414d5815acf9901c90dd6f851510e65f553d64",
+      "new_mode": 33188,
+      "new_path": "tests/benchmark/README.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "5fb0299d88e0f7dfed4073248be3a512b1aa250c",
+      "old_mode": 33188,
+      "old_path": "tests/chardata.c",
+      "new_id": "02243e048c72af7d59beb35c814928af7cbb559f",
+      "new_mode": 33188,
+      "new_path": "tests/chardata.c"
+    }
+  ]
+}

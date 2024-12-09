@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "84669ca8de55d38073a0dcb01074233b0a417541",
+  "tree": "c36276d412ac45626788a98b4ce2bd7ef0b02e9a",
+  "parents": [
+    "bb4da4efc320caee77f11bb316145b8e5f264e07"
+  ],
+  "author": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Fri Nov 13 21:52:18 2015 +0000"
+  },
+  "committer": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Fri Nov 13 21:52:18 2015 +0000"
+  },
+  "message": "DO NOT MERGE. Prevent recents from coming up when in SUW\n\nBug: 25229538\nChange-Id: If4f276d3f7c04fd89011068d90a3c3c60593bc05\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5adf3a5dc186bb13e02ed13a0f597fe4d9ff77f9",
+      "old_mode": 33188,
+      "old_path": "policy/src/com/android/internal/policy/impl/PhoneWindowManager.java",
+      "new_id": "b7a301db811b1ea59d342267d8a832bc4a087176",
+      "new_mode": 33188,
+      "new_path": "policy/src/com/android/internal/policy/impl/PhoneWindowManager.java"
+    }
+  ]
+}

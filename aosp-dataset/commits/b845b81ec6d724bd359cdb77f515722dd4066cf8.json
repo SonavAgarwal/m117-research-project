@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b845b81ec6d724bd359cdb77f515722dd4066cf8",
+  "tree": "3c258edf0101a87c65d56defb8af1ef175631b83",
+  "parents": [
+    "b79e09574e50e168dd5f19d540ae0b9a05bd1535"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Fri Mar 18 18:14:26 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:39 2016 -0700"
+  },
+  "message": "Guard against return value already being null\n\nIf there is no retrieved parameter, we should not de-reference null\n\nBug: 27748546\nChange-Id: I8e6ceba26ab7d73ab365b72c0bfdcdb0a36a59a7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4051ae179e6075d0e40f33299af2185375ab2415",
+      "old_mode": 33188,
+      "old_path": "wpa_supplicant/config.c",
+      "new_id": "8a34e84a640cbb63770cea239045a4adb11e4b41",
+      "new_mode": 33188,
+      "new_path": "wpa_supplicant/config.c"
+    }
+  ]
+}

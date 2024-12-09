@@ -1,0 +1,129 @@
+)]}'
+{
+  "commit": "c9ab2b0bb05a7e19fb057e79b36e232809d70122",
+  "tree": "56b7491b0926f3cee5da173483e2d49e11969237",
+  "parents": [
+    "5403587a74aee2fb57076528c3927851531c8afb"
+  ],
+  "author": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Wed Jan 13 10:07:04 2016 -0800"
+  },
+  "committer": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Wed Jan 13 16:21:49 2016 -0800"
+  },
+  "message": "Camera: Disallow dumping clients directly\n\nCamera service dumps should only be initiated through\nICameraService::dump.\n\nBug: 26265403\nChange-Id: If3ca4718ed74bf33ad8a416192689203029e2803\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06c16263ed331e93d62da306fb5bf56fa061f4c8",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/CameraService.cpp",
+      "new_id": "4e3bb19bc197987db793f23a414395bbbaea5b82",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/CameraService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad6a582ff25e12157b43f4e98a6d8d5a905180f1",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/CameraService.h",
+      "new_id": "7f3691a945574636f69335fe3e233345649ed29f",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/CameraService.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b093946e621b23aff0f92466928d007a025f4313",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api1/Camera2Client.cpp",
+      "new_id": "131048ef524670e4eb7659fc3427f8fe908fd8c3",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api1/Camera2Client.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fe0bf745f72f1d6453b0653737a5982b51f7efe5",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api1/Camera2Client.h",
+      "new_id": "dfcf8361dfd2df7525c81df5f55dbe9dc0528094",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api1/Camera2Client.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bd6805d14942df14137ff7e2ac693470c07b2153",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api1/CameraClient.cpp",
+      "new_id": "2e3a2ed03cf20f64f9ae1271b82728bc12b02d04",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api1/CameraClient.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4b89564a071291c790d23f7717a00ea50c7e01d7",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api1/CameraClient.h",
+      "new_id": "a270f90a3bd2e4500df1bab125dcbe1da9451fd2",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api1/CameraClient.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "1cdf8dcc1bc5f9b74bda1939acbd275f2b12704d",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api2/CameraDeviceClient.cpp",
+      "new_id": "ab7057f745331391890b61d0750627b886fbb252",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api2/CameraDeviceClient.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9c16aa812c2c70e185e498a039d2a6695e915aa",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api2/CameraDeviceClient.h",
+      "new_id": "99df3863542b0df1eef5671e9c615e191bea5851",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api2/CameraDeviceClient.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a7a7a78dfa190ce167f47ae1dd80bc0a3fdb896",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api_pro/ProCamera2Client.cpp",
+      "new_id": "27156b1221c48e7e731065fc06c34ca12dc3595d",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api_pro/ProCamera2Client.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a0f547d525f21b4ad2a7beee1c37161c343109b",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/api_pro/ProCamera2Client.h",
+      "new_id": "137c2721f8f1621fce2c591f77abb8b752da25b3",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/api_pro/ProCamera2Client.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2d1253f31c4d1c9a43778fa3c7c2d45a33c31778",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/common/Camera2ClientBase.cpp",
+      "new_id": "b6ad042aa4c0ba7dd57711fa52960c9a57675bd9",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/common/Camera2ClientBase.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "61e44f000f180d8a203d39eeab2d7361c01c6873",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/common/Camera2ClientBase.h",
+      "new_id": "c12793a8a9672a7e179780cfe19e6f2c14d8564b",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/common/Camera2ClientBase.h"
+    }
+  ]
+}

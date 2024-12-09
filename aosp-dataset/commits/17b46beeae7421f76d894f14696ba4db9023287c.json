@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "17b46beeae7421f76d894f14696ba4db9023287c",
+  "tree": "b7461e74ffe2770cd1370ddd29459bf45a27d09c",
+  "parents": [
+    "0e4302f0c6743a979c99cc5d50f42b7dbeb14971"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue Feb 21 16:02:23 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:08:57 2017 +0000"
+  },
+  "message": "DO NOT MERGE Fixed bug in the case of resolution change.\n\nModified the way i4_header_decoded in decoder context\nis used, to ensure that resolution change is detected\neven if PPS has not been decoded.\n\nBug: 35583675\nTest: ran POC, no longer hangs\n\nChange-Id: Ibb3f8dfbeb66a999fd81720a7d2a02dd951a55c4\n(cherry picked from commit 1d06027c69e31d450b1e837c81073362d41084d3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3807a1484e9b38472b9e0f77cecfb4d76ca59451",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "068ee5b3ab1a5d5d3b23048d7a905bdf7a3a107e",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    }
+  ]
+}

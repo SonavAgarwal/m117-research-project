@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f191963f5645f59390b640136fd928e5a492aa84",
+  "tree": "0039e37227cb90eb114817f08da26bfa9d4a5d89",
+  "parents": [
+    "7df13bfc992178008d56a01f79f8effc5b1504c9"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Mon May 04 16:22:15 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:35:49 2020 +0000"
+  },
+  "message": "Expand nuplayer mutex for mediametrics management\n\nrefactor some mutex for how nuplayer sets up mediametrics data.\nexpanded locking to eliminate a couple race conditions.\n\nBug: 151644303\nBug: 151643722\nTest: poc attached to bugs\nMerged-In: I75f29a6254c5eab5d4f524ee7a7ef59f93a0b405\nChange-Id: Ia2e68ef616e249a6e8746b9068f22bd208a0ffc8\n(cherry picked from commit e5767553f55fb30d9d58ba211ec68e64a6266e52)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "865cb2af109eb61ec2b7bb319684516bce7d4c93",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp",
+      "new_id": "3f340461557f382cb66622475767a1b1dbb5003a",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/NuPlayerDriver.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad878f8c17b2191c7542554891999e7b1eb45eb3",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/NuPlayerDriver.h",
+      "new_id": "37c53b0a3116de9772949dd069433bde71a8557d",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/NuPlayerDriver.h"
+    }
+  ]
+}

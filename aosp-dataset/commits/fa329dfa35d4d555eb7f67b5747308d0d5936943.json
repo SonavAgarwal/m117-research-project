@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fa329dfa35d4d555eb7f67b5747308d0d5936943",
+  "tree": "d77b318cbcdbc9d59212d7853b88951280c231c3",
+  "parents": [
+    "b2a767226f25634f37e6438a44562da6f62d2532"
+  ],
+  "author": {
+    "name": "Saumya Pathak",
+    "email": "saumyap@google.com",
+    "time": "Thu Jan 07 11:50:42 2021 +0000"
+  },
+  "committer": {
+    "name": "Saumya Pathak",
+    "email": "saumyap@google.com",
+    "time": "Wed Jan 27 15:31:43 2021 +0000"
+  },
+  "message": "Allow permission dialog to show more than 2 lines.\n\nTest: manually using the permission prompt in StorageTestApp\nBug: 174495520\nScreenshots:\nFor S (master at HEAD)\nBefore: https://screenshot.googleplex.com/7wDYYtdymm4tB3P\nAfter:\n[1] https://screenshot.googleplex.com/BQwPrqnHodDJaZ2\n[2] https://screenshot.googleplex.com/4RiFs2aPdmcQtnE\n\nFor R\nBefore: https://screenshot.googleplex.com/77KNDZLyYi2wsdB.png\nAfter:\n[1] https://screenshot.googleplex.com/9pby7QJqeZqigSr.png\n[2] https://screenshot.googleplex.com/7MQkrN88KaqPmno.png\n\nChange-Id: Id7d68b7733b953a6f360677808ea1a44d5dd5b95\n(cherry picked from commit 4ab4a2f52a516d125064584eb7e443e4dcfe4999)\nMerged-In: I6dac872ee35be5d410f7f7331efb740e1ae19336\n(cherry picked from commit a2663476a16177afd1240e924e90c80ceaf601ce)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "944353f5c01613cd8ba5779b2d74997279c93a25",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/media/PermissionActivity.java",
+      "new_id": "700c6331f267bee487ba38c3bcc123310c63ff0d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/media/PermissionActivity.java"
+    }
+  ]
+}

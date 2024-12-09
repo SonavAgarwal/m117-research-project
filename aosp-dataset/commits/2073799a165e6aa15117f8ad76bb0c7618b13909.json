@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2073799a165e6aa15117f8ad76bb0c7618b13909",
+  "tree": "7d8c94b565871331c0186aee410caa9821ef576d",
+  "parents": [
+    "bce9c3c2c9f8ed6492d919148044ef33adb8ddf3"
+  ],
+  "author": {
+    "name": "Ekin Oguz",
+    "email": "ekinoguz@google.com",
+    "time": "Mon Nov 28 15:34:02 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:34 2016 -0800"
+  },
+  "message": "Don\u0027t allow file attachment from /data through GET_CONTENT.\n\nA custom picker can be used to attach files to Compose activity. With\nthis change, we are disallowing files belonging to file:///data/... to\nbe attached from custom pickers, in order not to expose internal\napplication data.\n\nIf the Intent Uri is a \"file\" and the file is in\n`Environment.getDataDirectory()`, then throw a\nAttachmentFailureException\nwhich is caught immediately and shows a toast to the user.\n\nDetails b/31494146#comment13\nFix b/32615212\n\nChange-Id: I037888b01fef1cdf5053602cdf9194286d5648df\n(cherry picked from commit eace8b43e8d1512a205554715ca840324bfbe35f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2dfac99b9502b829d5c0827470238529c12b244e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/compose/ComposeActivity.java",
+      "new_id": "5f125abe6dffdc392dbbd306bf7011395d8ca7a6",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/compose/ComposeActivity.java"
+    }
+  ]
+}

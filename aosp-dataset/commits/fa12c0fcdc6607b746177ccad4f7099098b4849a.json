@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fa12c0fcdc6607b746177ccad4f7099098b4849a",
+  "tree": "d313059107b10318777a58e074cea6f28bc6e62e",
+  "parents": [
+    "d3860e51b83296ae1d2921d8109210283573862a"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed May 09 15:16:17 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:39:09 2018 +0000"
+  },
+  "message": "Speed up id3v2 unsynchronization\n\nInstead of doing many overlapping memmoves, do a single copy pass\nthat skips over the inserted unsynchronization bytes. For some\nfiles this reduces parsing time from minutes to milliseconds.\n\nSimilar to commit 72a43b68da but for v2.2 and v2.3.\n\nBug: 78029004\nTest: poc\nChange-Id: I735b7051e77a093d86fb7a3e46209875946225ed\n(cherry picked from commit f9d87cc850a589b9b0cc3658cf222187822bcc00)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "58d8b1379634ca4c002ff2ef608552d46113dfcf",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "e897b67aac0529cb17aec5b54702b643e3ddc3bf",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

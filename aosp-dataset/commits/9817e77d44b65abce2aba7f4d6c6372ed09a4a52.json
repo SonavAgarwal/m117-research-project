@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9817e77d44b65abce2aba7f4d6c6372ed09a4a52",
+  "tree": "6989c8fc3200a9bbfc8e5d12ef98c189665870ff",
+  "parents": [
+    "e3b988edf9cdfb318ba7aa1d8e3c0ddea53892de"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 05 14:38:25 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:26 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix OOB Access in libpac\n\nFrom upstream commit\n(https://chromium.googlesource.com/v8/v8.git/+/389539ca30406101971745820d3105e7f39bb772%5E%21/#F0):\n\n\"\"\"\nFix type of String#indexOf and String#lastIndexOf.\n\nThe Typer put the wrong type on String#index and String#lastIndexOf\nbuiltins, with an off by one on the upper bound.\n\"\"\"\n\nBug: 117554758\n\nTest: /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\n\nChange-Id: I6230c1b764cacf9349317ad5870d7a679600d7d5\n(cherry picked from commit 32ab7b6d784f24161d312f67a505c71f7c34df40)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed1a04aa3b42632c7486defa186fb9e140754cf5",
+      "old_mode": 33188,
+      "old_path": "src/compiler/typer.cc",
+      "new_id": "09003ca81673864ed7e52709527b5eae5fd890b9",
+      "new_mode": 33188,
+      "new_path": "src/compiler/typer.cc"
+    }
+  ]
+}

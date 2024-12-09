@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f1cf6a632da354cff3d8aed54913e1ee2909908e",
+  "tree": "aad970b43f11e04422f4abb2d6529e8cdf892ce1",
+  "parents": [
+    "109ad7156997f031717183664ac51a03110bc2b3"
+  ],
+  "author": {
+    "name": "Luke Huang",
+    "email": "huangluke@google.com",
+    "time": "Sat Jun 20 13:01:33 2020 +0800"
+  },
+  "committer": {
+    "name": "Luke Huang",
+    "email": "huangluke@google.com",
+    "time": "Mon Jun 22 04:37:14 2020 +0000"
+  },
+  "message": "Update the documentation of ANDROID_RESOLV_NO_CACHE_STORE\n\nMake it up-to-date.\n\nTest: N/A\nBug: 150371903\nChange-Id: Ia1402a18d6d466ffbb0357127d7d45cf6c722550\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "59b1deb59530b58ee967b90a7818aae6ba0ae851",
+      "old_mode": 33188,
+      "old_path": "include/android/multinetwork.h",
+      "new_id": "c6d1c94c0ab5077d67a0135b32282ebae494d15c",
+      "new_mode": 33188,
+      "new_path": "include/android/multinetwork.h"
+    }
+  ]
+}

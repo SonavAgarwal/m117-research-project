@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2e1feaad404748c5d9d02d92bb2973d8aa9dfb96",
+  "tree": "a0b0462c360fe6d6c038836ad010a82d4ba699b0",
+  "parents": [
+    "a581069b8f449f5e5d7804ac70fa4d9d57a2b94e"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Sat Oct 05 10:59:26 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:17:03 2019 +0000"
+  },
+  "message": "Prevent uncleared memory leaking in rw_i93.cc\n\nBug: 139738828\nTest: manual\nChange-Id: I4e330d4ad1380dbd1e695f81b8183ca8b182b114\nExempt-From-Owner-Approval: new owner approved\n(cherry picked from commit d8948d4a1fbb00abecc72227a1910d94633a84e8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "495ee8fe07ec30675271067c12e9ede4a4c11a39",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "132df3a2901da0a7308a2f456a92c21542c438d0",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

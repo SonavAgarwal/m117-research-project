@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "acfd93194bfcf3452c01d980f4add91118906586",
+  "tree": "533c6bb523c94a950fd2667a7df4beb457e72450",
+  "parents": [
+    "db29c32cb6f11036f30785473a815c935bf4f2c4"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Fri Feb 01 12:17:21 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:54 2019 +0000"
+  },
+  "message": "Prevent OOB error in rw_i93_sm_detect_ndef() am: 9939edeb9f am: 2ee2f756d0\nam: d4921e738b\n\nChange-Id: I4199f067eac626944f60e931183a62eb1d6946cf\n(cherry picked from commit 8909dbdece1c98e21c2190fe968013e0dc50f347)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "42a9c1ca5619e5af0ec6250b58cfc346a845ac56",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "fabfc10f7b1eeecf5d5a92a061c5c5c748fae6f3",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "76decc9e24f07f82af8953c80d2873020a771658",
+  "tree": "633c285101fb3f419ee5e8e5cb8e13f8246d131e",
+  "parents": [
+    "abd2e6056a57aba0f55b8f2b8ae6f0ce5a8ab2f3"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 15:03:36 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 22:07:11 2020 +0000"
+  },
+  "message": "Use FLAG_IMMUTABLE for InstallCarrierAppUtils\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 155094269\nChange-Id: I8ac155bf53e33474e1fcdb2466743a1e05b92399\nMerged-In: I8ac155bf53e33474e1fcdb2466743a1e05b92399\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "325b3c65dac8912179af3d3c8b9ccced06b91464",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/uicc/InstallCarrierAppUtils.java",
+      "new_id": "109f72e52ab49bc8c93f47472345061b79ba82de",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/uicc/InstallCarrierAppUtils.java"
+    }
+  ]
+}

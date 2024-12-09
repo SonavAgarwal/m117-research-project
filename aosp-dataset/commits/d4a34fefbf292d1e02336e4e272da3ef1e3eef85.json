@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d4a34fefbf292d1e02336e4e272da3ef1e3eef85",
+  "tree": "264f8632b36188f5e52f3c5e80aac362736c99bf",
+  "parents": [
+    "9fe27a9b445f7e911286ed31c1087ceac567736b"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Fri Jul 13 13:45:46 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 30 04:24:02 2018 +0000"
+  },
+  "message": "Fix a wrong check in rfc_parse_data\n\nBug: 78288018\nBug: 111436796\nTest: manual\nChange-Id: I16e6026acbaac230fe1453bbac040d1b75bcea2a\n(cherry picked from commit d1ced302cd1066087588c891027b1756be31db46)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe465b2b04dbb0b4f66ba17df5e822f166418259",
+      "old_mode": 33188,
+      "old_path": "stack/rfcomm/rfc_ts_frames.cc",
+      "new_id": "e3b4b8f1b37304c72bf39017eb75d158220cc81e",
+      "new_mode": 33188,
+      "new_path": "stack/rfcomm/rfc_ts_frames.cc"
+    }
+  ]
+}

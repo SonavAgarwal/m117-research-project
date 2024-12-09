@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e0b52c25b20685ff9d6a14603b6a30f698824a7",
+  "tree": "2e9821b790d753acad5ae7315cff5630f4f168ea",
+  "parents": [
+    "bb88d4430189b66270c66ff9167fc5bcf4356cf2"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue Jun 06 10:26:16 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:28 2017 +0000"
+  },
+  "message": "Initialize DPB structures to valid values.\n\nWhen the first frame is a B frame, the colocated picture\nwill now point to the current frame.\n\nTest: run poc with and without this patch\nBug: 38115076\nChange-Id: I48a8f128740551d6a9252931dafcf8c629ecad0d\n(cherry picked from commit b8d362561e48dde8898eb0415f298d64e76f2b7c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab9f3f632e16d600ef460a0028dd82218ad6c459",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "849b9c59962fca1791546641129b551a1ce98a85",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

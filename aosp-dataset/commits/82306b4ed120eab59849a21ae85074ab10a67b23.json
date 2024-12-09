@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "82306b4ed120eab59849a21ae85074ab10a67b23",
+  "tree": "e0f762a95c08929e3f8958da31692ec80c886a89",
+  "parents": [
+    "42e5aed1d106bef1f8913ffe87aa1f9df6aae90c"
+  ],
+  "author": {
+    "name": "Fyodor Kupolov",
+    "email": "fkupolov@google.com",
+    "time": "Fri Mar 16 12:20:40 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:07 2018 +0000"
+  },
+  "message": "Use concrete CREATOR instance for parceling lists\n\nReplaced readTypedArrayList/writeTypedArrayList with\nwriteTypedList/createTypedArrayList(CREATOR)\n\nBug: 71508348\nTest: CtsAutoFillServiceTestCases pass\nMerged-In: I2a8321023b40cc74b7026eb0fb32a9cc5f5543a9\nChange-Id: Id17d02e40a4ae567bf2d74d2ea8ba4d8a943bdb7\n(cherry picked from commit 4921986db76b1580bcb6ec8b2fd381d1364a6325)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fae9d5310f8ed81c2813bcf56755e853c28eed74",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/Parcel.java",
+      "new_id": "c6d3860c66006ae8282e47c9cde546273ebabec0",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/Parcel.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "65b0efcbe032afac22008ce65c0bf0d9aed15415",
+      "old_mode": 33188,
+      "old_path": "core/java/android/service/autofill/Dataset.java",
+      "new_id": "21a3df89e0f83d660daaede621f76dd11b0f4c77",
+      "new_mode": 33188,
+      "new_path": "core/java/android/service/autofill/Dataset.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9de931542cb91b9a6b849a4d411c3ee254216134",
+      "old_mode": 33188,
+      "old_path": "core/java/android/service/autofill/SaveRequest.java",
+      "new_id": "fc4272dd7742c5c2e38fb167eb0b39151f22a5ae",
+      "new_mode": 33188,
+      "new_path": "core/java/android/service/autofill/SaveRequest.java"
+    }
+  ]
+}

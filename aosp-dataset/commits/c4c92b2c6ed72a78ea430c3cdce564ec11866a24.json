@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c4c92b2c6ed72a78ea430c3cdce564ec11866a24",
+  "tree": "1be837458a588ce1e4cc2e227a26f7a37ec22b89",
+  "parents": [
+    "f79ebcb86f4416f8988019c6ced22f975bfc352a"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Tue Oct 02 14:52:31 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:23:56 2018 +0000"
+  },
+  "message": "libwebm: Cherrypick 5a41830 from upstream\n\nmkvparser: Avoid double free when Chromaticity parse fails.\n\nPrimaryChromaticity::Parse never owns the PrimaryChromaticity\nit allocates-- avoid freeing it because doing so results in a\ndouble free when the MasteringMetadata dtor runs.\n\nTest: CTS tests using webm files still pass.\nBug: 116615297\n\nChange-Id: I3acd76204a37e057cea4a5d2c352c68ecb49c990\n(cherry picked from commit d90a7f1d7451773122b88033013e6551ea8bb997)\n(cherry picked from commit 0f998713686da56f36a5b603a4897fe5952c0370)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ff1332726b81a4aee3d40f9edb792951ab8d4ecc",
+      "old_mode": 33188,
+      "old_path": "libwebm/mkvparser/mkvparser.cc",
+      "new_id": "70c1f043f1174f8b6190369a411f0856455955d3",
+      "new_mode": 33188,
+      "new_path": "libwebm/mkvparser/mkvparser.cc"
+    }
+  ]
+}

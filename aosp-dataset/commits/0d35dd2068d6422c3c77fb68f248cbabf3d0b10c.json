@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "0d35dd2068d6422c3c77fb68f248cbabf3d0b10c",
+  "tree": "aafe76ddf9a0e1399a1791d8fbb721e9ec89efea",
+  "parents": [
+    "4022477b7c1e809d4ea31c47ae42555255a4ea4d"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Tue Sep 08 17:32:28 2015 +0900"
+  },
+  "committer": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Mon Sep 14 13:54:51 2015 +0900"
+  },
+  "message": "DO NOT MERGE NuCachedSource2: fix possible erroneous early free\n\nBecause the constructor of NuCachedSource2 sent a message to\nAHandlerReflector object, AHandlerReflector::onMessageReceived could\nhave executed just before the object gets wrapped in a strong\npointer, resulting in erroneous early free. Fix the issue by using\nstatic Create function to ensure the message is sent after the\nobject is wrapped in a sp.\n\nBug: 23882800\nChange-Id: I38a9d7a3083f184b4c81d0b00ba1661721278855\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab8ac79b676a57604fb55ad2c9275796ad94dc40",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/AwesomePlayer.cpp",
+      "new_id": "493e5982add29023f58416fda5d68e32e3cc4edd",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/AwesomePlayer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c99db84c8221e7ea3d49d785e9ee370b8171962f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/DataSource.cpp",
+      "new_id": "65ad0f19883a46ac3b5f686dd42bf0eea926dae2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/DataSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bd0a41d58ed8efc0472dec6f3382f0322f254a2b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/NuCachedSource2.cpp",
+      "new_id": "cbc1fe311931b072c1bac9eedaa2d0bb861da5eb",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/NuCachedSource2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4252706321ee5fa26ec60549fb17fb083cdb318a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/NuCachedSource2.h",
+      "new_id": "a29bdf9e54591ecfe3ee147c798d5dacae87ae10",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/NuCachedSource2.h"
+    }
+  ]
+}

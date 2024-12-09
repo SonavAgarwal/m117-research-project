@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "59d7c52d0b3872e6a01e47a50772952140debbaa",
+  "tree": "3c429e610448dbef9fbb72221ccf4c4a8ff830b7",
+  "parents": [
+    "7c5d6c4c5c952b79238658728d7c97a1213a4cf6"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Fri Nov 20 17:00:39 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:08 2020 +0000"
+  },
+  "message": "Check if advertiserId value matches valid advertiser\n\nPassing non-existing advertiserId can result in OOB\n\nBug: 171400004\nChange-Id: I4536abc50e15cfc72489e01f8907face967df263\n(cherry picked from commit 389f39b3d331934fec7988dafc90c7b167d6aab3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "85917a471ec536817e526275043856d6d56627c7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/gatt/AdvertiseManager.java",
+      "new_id": "b76d8619d88975eb80ad78099f84720af70f3b5b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/gatt/AdvertiseManager.java"
+    }
+  ]
+}

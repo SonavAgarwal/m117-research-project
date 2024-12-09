@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a946d844a77906072f5eb7093d41db465d6514bb",
+  "tree": "5607592deedd9e9538aad3736253a37dea5d38ee",
+  "parents": [
+    "66b24004345ff8a688e8548409b0b7d5a8902232"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 02 16:46:59 2015 -0700"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 02 18:02:12 2015 -0700"
+  },
+  "message": "Zero out return values in audio binder calls\n\nMore specifically when handling GET_OUTPUT_FOR_ATTR in IAudioPolicyService.\nThis prevents leaking a uninitialized `output` across binder if\ngetOutputForAttr were to encounter errors.\n\nBug: 23756261\nChange-Id: Ibff8a1249a4e8a3c89a33a540dda428b10d6ca82\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12efa8aa22f1d3c6686f1bfb22b3e337d6e1d9f9",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioPolicyService.cpp",
+      "new_id": "d91b73b5ee18fa38acedd3197375f0abbc2bd134",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioPolicyService.cpp"
+    }
+  ]
+}

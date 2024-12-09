@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "42b2e419b48a26d2ba599d87e3a2a02c4aa625f4",
+  "tree": "730e28aa47c7d5f122f1d0645d18d08c8ada25b6",
+  "parents": [
+    "d64e9594d3d73c613010ca9fafc7af9782e9225d"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Tue Oct 03 14:00:20 2017 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:30:29 2017 +0000"
+  },
+  "message": "Throw OOME if Bitmap.nativeCreate fails\n\nBug:33846679\nTest: I6ab6cb7a3b3151641a9f9b02b0bfc484e0a4524b\n\nThis matches the old behavior, prior to switching from Java allocated\npixel memory to native allocations (b/27762775). It also better matches\nwhat has happened - we ran out of memory. (Better than the current\nbehavior - NullPointerException in the Java code, or an alternative\nsolution of returning null, which would likely result in NPEs in the\ncalling code.)\n\nMerged-In: I3958ed1106ac94fb1d3f30e044b620d984875211\nChange-Id: I3958ed1106ac94fb1d3f30e044b620d984875211\n(cherry picked from commit 5906a4869cdf5c39eba1d9a3125aff894c5e804d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ad05a5113dffadaf5ab4f421c8cf7043680ace29",
+      "old_mode": 33261,
+      "old_path": "core/jni/android/graphics/Bitmap.cpp",
+      "new_id": "108fdbce386faf746e80f7f03a05f353c50eee58",
+      "new_mode": 33261,
+      "new_path": "core/jni/android/graphics/Bitmap.cpp"
+    }
+  ]
+}

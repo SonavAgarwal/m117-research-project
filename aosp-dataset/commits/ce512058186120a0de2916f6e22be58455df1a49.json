@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ce512058186120a0de2916f6e22be58455df1a49",
+  "tree": "80b396ecd5fcafd50364515071b3019d7746ac0a",
+  "parents": [
+    "1e0b52c25b20685ff9d6a14603b6a30f698824a7"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Fri Jun 16 16:33:48 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:33 2017 +0000"
+  },
+  "message": "Decoder: Fixed overflow in refernce list creation.\n\nSince the maximum value of long term index is 255,\nthe loop control variable needs to be 32 bit.\n\nBug: 38448381\nTest: ran POC before/after applying fix\nChange-Id: Iae3ecff38d4a922bde10fde33f1cfcafd2ea2680\n(cherry picked from commit cbcd2846fa837e4be6d35f5c1211b070bc8d26da)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "77841104a611b364db8f21354d1fc362423dbd3d",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_bslice.c",
+      "new_id": "42fad03fbeb4a7aa2726a5bdd4d0f090a27caba9",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_bslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "95ac557f6cb5f54722434a13a85357d2da7e7ec9",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_pslice.c",
+      "new_id": "efda5cfc5ae6ed4d9af0f95a638a4ea8ebd77f2e",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_pslice.c"
+    }
+  ]
+}

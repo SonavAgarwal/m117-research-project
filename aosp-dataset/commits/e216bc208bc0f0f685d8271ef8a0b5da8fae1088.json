@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e216bc208bc0f0f685d8271ef8a0b5da8fae1088",
+  "tree": "cd91beca4594f1eb887e4226a23b0316bbd4bf9c",
+  "parents": [
+    "d637c816e1061d2c208cfa4b23cba501eb301ed5"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Fri Jun 02 15:01:27 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:52:11 2017 +0000"
+  },
+  "message": "Add READ_EXTERNAL_STORAGE for file based Uri while beaming.\n\nTest: PoC application\nBug: 37287958\nChange-Id: I7f5a2f32a053f0448726aec9f8b524f914c0d8df\nSigned-off-by: Ruchi Kandoi \u003ckandoiruchi@google.com\u003e\n(cherry picked from commit dc54140e12f441c9d7c1b5be5337d6b16bfa32e4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5b8acacd7be388c6820aa4b4934199ddeda82bab",
+      "old_mode": 33188,
+      "old_path": "src/com/android/nfc/BeamShareActivity.java",
+      "new_id": "f06bfdbab477e23f3ab7ce4d4615ca8aee283cf5",
+      "new_mode": 33188,
+      "new_path": "src/com/android/nfc/BeamShareActivity.java"
+    }
+  ]
+}

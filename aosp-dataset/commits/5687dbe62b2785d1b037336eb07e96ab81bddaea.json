@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5687dbe62b2785d1b037336eb07e96ab81bddaea",
+  "tree": "db837d498815df7a9468dd8e47a75c6229e5af31",
+  "parents": [
+    "6f075a03bdd66f5d026476b9bba96e3b842eef71"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Dec 28 16:57:40 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:18 2018 +0000"
+  },
+  "message": "Fixing Underflow of ps_dec-\u003eu2_num_mbs_left\n\nIn multi-thread decode, the decoder would try to decode without\ndequeueing a job in case the next slice indicated that it belongs to the\nsame row as being decoded currently. In single thread case, there was a\ncheck to ensure that the decoder does not continue when there are no MBs\nleft. Adding a similar check for multi-thread decode as well.\n\nBug: 69269702\nTest: manual\nChange-Id: Ibbe5202dbb270625e4f592b4fdb8ef0ec71a979d\n(cherry picked from commit 00a2482c8dfa3550bcbfa515a93a4cead5daf8e9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7a4d522bd6947415a2f6dd00130e3a54626230af",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "c16bfe2a5ec0762bb8424e520f0a841c4426020a",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    }
+  ]
+}

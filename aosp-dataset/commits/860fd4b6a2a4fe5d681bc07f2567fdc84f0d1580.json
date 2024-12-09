@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "860fd4b6a2a4fe5d681bc07f2567fdc84f0d1580",
+  "tree": "faed1f4f09ce6fb75fd560239f2145925f45a770",
+  "parents": [
+    "44654288c0bdb6a05ef4a9be123945900f57c761"
+  ],
+  "author": {
+    "name": "Winson Chiu",
+    "email": "chiuwinson@google.com",
+    "time": "Tue Jun 16 21:41:22 2020 +0000"
+  },
+  "committer": {
+    "name": "Winson Chiu",
+    "email": "chiuwinson@google.com",
+    "time": "Tue Jun 16 22:20:34 2020 +0000"
+  },
+  "message": "Revert \"Ignores protected broadcasts if not priv-app\"\n\nRevert of I5bd2bf3bd7c38fd9cc563a02b24bc569495d79ed\n\nFor now, allow all system apps to declare protected\nbroadcasts. This will be cleaned up in a future change.\n\nBug: 158570769\n\nMerged-In: I54d236c0a6daaa934bd64a3bd05e2654e0e868fe\nChange-Id: I54d236c0a6daaa934bd64a3bd05e2654e0e868fe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8123bef28239281569d3d0177de423d708889caf",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "ef34884a92fb502bccd6c433f396d4479e8eda05",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

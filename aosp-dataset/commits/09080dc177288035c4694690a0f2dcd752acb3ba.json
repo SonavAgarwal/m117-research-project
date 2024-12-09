@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "09080dc177288035c4694690a0f2dcd752acb3ba",
+  "tree": "8215fac7fd206f1abd3e7160951612cb97b66262",
+  "parents": [
+    "54c839515bd84df43a3054462667c69a6b23b67c"
+  ],
+  "author": {
+    "name": "Nate Myren",
+    "email": "ntmyren@google.com",
+    "time": "Mon Nov 30 12:06:26 2020 -0800"
+  },
+  "committer": {
+    "name": "Nate Myren",
+    "email": "ntmyren@google.com",
+    "time": "Tue Dec 01 18:17:33 2020 +0000"
+  },
+  "message": "Revoke storage on SDK downgrade or new full storage request\n\nWhen an app downgrades from above API 28 to below, or when an app begins\nrequesting full storage in api 29, revoke storage permissions\n\nTest: Atest StorageEscalationTest\nBug: 171430330\nMerged-In: Ia6bd5658b77a26ab15fea013ec875050457473e0\nChange-Id: Ia6bd5658b77a26ab15fea013ec875050457473e0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8b2f3c428bce703335b7a3670a14ee1e44c629b",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "bb7f17d4524a49fd94e83dd07f4ef1293a6b8034",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d864cfb75d51ac39092684de21d37b0a0abdc40d",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+      "new_id": "7f0796fc99ac0978885375cb50f138008157a224",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "31a65ba35f5eb7b2eed7c7437b30ce5d570c1c76",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceInternal.java",
+      "new_id": "df0edfa16924b431b0017305794eb4b1f6b07025",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceInternal.java"
+    }
+  ]
+}

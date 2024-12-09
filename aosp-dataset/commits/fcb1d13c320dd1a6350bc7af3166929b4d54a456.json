@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fcb1d13c320dd1a6350bc7af3166929b4d54a456",
+  "tree": "b8f04054a793284171bcea2e7777eed09240df58",
+  "parents": [
+    "bd41f74ece58ee23c60fbbc36e2b62ed5fe7c679"
+  ],
+  "author": {
+    "name": "Amit Mahajan",
+    "email": "amitmahajan@google.com",
+    "time": "Thu Jun 11 12:04:51 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:05:13 2015 -0700"
+  },
+  "message": "DO NOT MERGE Change to make STK related intents protected.\n\nBug: 21697171\nChange-Id: I7649c7341428194963ac74e9ae622dfa76ea738b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc84bf577427b6af4731aba36a40b9c55e0cce16",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "87d004d2034ed263f0fc8429a2411762823f9816",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

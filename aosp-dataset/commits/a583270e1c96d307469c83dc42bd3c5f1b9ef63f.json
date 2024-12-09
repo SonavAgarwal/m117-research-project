@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a583270e1c96d307469c83dc42bd3c5f1b9ef63f",
+  "tree": "d5808f3d9d171dfc42f07b2f2298657fb792261b",
+  "parents": [
+    "78c2c6e74258880a2370b0462bdcf7018cab5516"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Apr 20 16:06:51 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:02 2016 -0700"
+  },
+  "message": "Decoder: Fix for handling invalid intra mode\n\nBug: 28165659\nChange-Id: I2291a287c27291695f4f3d6e753b6bbd7dfd9e42\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dde2a7ea7ca64f5ada64e8784a783e8967ad9802",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_intra_mb.c",
+      "new_id": "279ff878194f687f47bdd9f6274f5fceb57d0710",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_intra_mb.c"
+    }
+  ]
+}

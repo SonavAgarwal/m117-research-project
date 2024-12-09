@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0dfb3527ba1ebbe97ad927e1f773427201aab501",
+  "tree": "7fd2dfe27fb8241ad9ef610a37ece5e1d43188c4",
+  "parents": [
+    "4ad6a8782d510f618eaeb2635a04a71ca7cb5541"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Fri Jul 07 11:39:58 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:07 2017 +0000"
+  },
+  "message": "Reject unsorted cmap entries. DO NOT MERGE\n\naddRange assumes the passing ranges are sorted in ascending order which\nis a part of OpenType spec, but bad fonts can pass arbitrary ranges.\nNow, addRange rejects invalid input and stop using such bad fonts.\n\nBug: 32178311\nTest: minikin_tests\nTest: bit CtsGraphicsTestCases:.TypefaceTest\nChange-Id: Ice845a1206e1c9da08ea20c7b56fde2e6ec8b673\n(cherry picked from commit 0c943b002dfed4c19196a4d162737057f8ed5a56)\n(cherry picked from commit dbe6bb0c2b612889c2b1a3e37a77b93683c76e03)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9659d0c05ad9a8928dcfabea1ba8bd2eb3f6edce",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "c56d07c5aa82ce7bc0e7dcf72c4e3db6bc7b43fa",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "edf1ca1c37bcfc8bae493351cfbc41f689f28a5e",
+      "old_mode": 33188,
+      "old_path": "tests/unittest/CmapCoverageTest.cpp",
+      "new_id": "fe2d7ba31a161811c8d2fc2c9f8ae270420b34d6",
+      "new_mode": 33188,
+      "new_path": "tests/unittest/CmapCoverageTest.cpp"
+    }
+  ]
+}

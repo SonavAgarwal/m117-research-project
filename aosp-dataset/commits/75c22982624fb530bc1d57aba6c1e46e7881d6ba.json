@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "75c22982624fb530bc1d57aba6c1e46e7881d6ba",
+  "tree": "b80d8303e02d7838554d322270edd72a3a9d5c77",
+  "parents": [
+    "c14502c0076a552f1cd9b0ab4ca6dd13991e96a5"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Jun 21 16:53:41 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:45:10 2018 +0000"
+  },
+  "message": "HIDD: Prevent integer underflow in bta_hd_act\n\nBug: 109757435\nBug: 109757168\nBug: 110846194\nBug: 109757986\nTest: manual\nChange-Id: I80a6f3f931ac7512f1ba801cc5d8de6ac04f3422\n(cherry picked from commit 74a6392875166698b64b624d12b6d2e404b75d72)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8819983e0abb7bad6abcdf1b5ab3b48192651db7",
+      "old_mode": 33188,
+      "old_path": "bta/hd/bta_hd_act.cc",
+      "new_id": "0d677ee2489703306f87f915325d9b6bfd1c4687",
+      "new_mode": 33188,
+      "new_path": "bta/hd/bta_hd_act.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dd7bed0670fbdf03d9097f2ba35967544467c863",
+  "tree": "bd4821b2dc97e3f2a347841e5176fd037ced49f6",
+  "parents": [
+    "0cae627f3102905c5a4304363d5bf27e4dc4d677"
+  ],
+  "author": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Thu Jun 18 19:13:22 2020 -0700"
+  },
+  "committer": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Fri Jun 19 11:20:26 2020 -0700"
+  },
+  "message": "Stop expecting WifiConfig extra from CONFIGURED_NETWORKS_CHANGED_ACTION broadcast\n\nWifiConfig is no longer sent in this broadcast\ndue to privacy concerns, so stop reading this\nextra. Instead, query WifiManager to find the\nmatching WifiConfiguration to update.\n\nBug: 158874479\nTest: make CarSettingsRoboTests -j40\nChange-Id: Ief5caf8727c9c2334a9a0610d015ec8514eb1cc9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a14a025bfa97caed892a1ccccf650e7323bbb92",
+      "old_mode": 33188,
+      "old_path": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java",
+      "new_id": "258f60e0259833366477b167b2f2a601a8ba9057",
+      "new_mode": 33188,
+      "new_path": "src/com/android/car/settings/wifi/details/WifiInfoProvider.java"
+    }
+  ]
+}

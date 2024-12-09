@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a2d1d85726aa2a3126e9c331a8e00a8c319c9e2b",
+  "tree": "aa3d06685b76e6bac9056e4c56aa8bea3c58ae2b",
+  "parents": [
+    "b04aee833c5cfb6b31b8558350feb14bb1a0f353"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri Mar 18 14:34:57 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:45 2016 -0700"
+  },
+  "message": "NuPlayerStreamListener: NULL and bounds check before memcpy\n\nBug: 27533704\nChange-Id: I992a7709b92b1cbc3114c97bec48a3fc5b22ba6e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f53afbd5d1a22e8b3a42a5a09936d33c7cd71e8d",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/NuPlayerStreamListener.cpp",
+      "new_id": "ee70306a35af0816c7442dcc1556d1cf307eef30",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/NuPlayerStreamListener.cpp"
+    }
+  ]
+}

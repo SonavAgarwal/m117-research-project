@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "20c40794eb85ea29852d7bc37c55713802a543d6",
+  "tree": "429f27645a223f926cbcf55b40e167c56bf65edc",
+  "parents": [
+    "1201d68f4781141411e734315f22457e6ea2cfcb"
+  ],
+  "author": {
+    "name": "Dmitry Baryshkov",
+    "email": "dmitry.baryshkov@linaro.org",
+    "time": "Fri Feb 12 22:26:58 2021 +0300"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Wed Mar 10 17:01:29 2021 +0100"
+  },
+  "message": "misc: fastrpc: restrict user apps from sending kernel RPC messages\n\nVerify that user applications are not using the kernel RPC message\nhandle to restrict them from directly attaching to guest OS on the\nremote subsystem. This is a port of CVE-2019-2308 fix.\n\nFixes: c68cfb718c8f (\"misc: fastrpc: Add support for context Invoke method\")\nCc: Srinivas Kandagatla \u003csrinivas.kandagatla@linaro.org\u003e\nCc: Jonathan Marek \u003cjonathan@marek.ca\u003e\nCc: stable@vger.kernel.org\nSigned-off-by: Dmitry Baryshkov \u003cdmitry.baryshkov@linaro.org\u003e\nLink: https://lore.kernel.org/r/20210212192658.3476137-1-dmitry.baryshkov@linaro.org\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f12e909034ac03fde819835d6cfc0186b57d2721",
+      "old_mode": 33188,
+      "old_path": "drivers/misc/fastrpc.c",
+      "new_id": "beda610e6b30d139d2ccf53d4fed655ee3952f4b",
+      "new_mode": 33188,
+      "new_path": "drivers/misc/fastrpc.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9f9ba255a0c59544f3555c9c45512c3a2fac5fad",
+  "tree": "25dd6dff5b4c4fd9549595d9b549ff2b4864c73a",
+  "parents": [
+    "630ed150f7201ddadb00b8b8ce0c55c4cc6e8742"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Wed Jul 13 20:27:32 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:59 2016 -0700"
+  },
+  "message": "fix build\n\nChange-Id: I9bb8c659d3fc97a8e748451d82d0f3448faa242b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "21c3291867c39a88fdf40fc275cb4a00265dd7cb",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp",
+      "new_id": "34900085ff13bae693b953cef2dd15de58296a79",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp"
+    }
+  ]
+}

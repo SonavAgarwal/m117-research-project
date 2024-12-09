@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "38cb7a7feff88d58fb4a565ba7f12cd4469af243",
+  "tree": "b8ae9770a4298455972d8e26a66966687324a351",
+  "parents": [
+    "615c0385e7ef3aae9ea8b9ba4d00e3fb3c94512f"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Mon Jun 23 21:47:01 2014 +0900"
+  },
+  "committer": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Wed Jul 16 12:32:25 2014 +0900"
+  },
+  "message": "Really disable IPv6 RA processing in dhcpcd.\n\nIPv6 RA processing in dhcpcd causes crashes, so we disabled it in\ndhcpcd.conf. Unfortunately devices sometimes don\u0027t have the\nconfig file, because one is not required for dhcpcd to work. So\ndisable IPv6 RA processing in the code too.\n\n(cherry picked from commit 69eb1982f233676775ccb8718fc62e78c137e33d)\n\nBug: 15268738\nBug: 15779617\nChange-Id: I1f8627b9e03abd6487bf6a290feb0578166eb4f0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3f52bfe045bf3c70e7f21e3270e3e5f680647f2a",
+      "old_mode": 33188,
+      "old_path": "if-options.c",
+      "new_id": "4fbdf131301c2fd2134ccd2b74a67d3fe56ea61c",
+      "new_mode": 33188,
+      "new_path": "if-options.c"
+    }
+  ]
+}

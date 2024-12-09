@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "830cb39cb2a0f1bf6704d264e2a5c5029c175dd7",
+  "tree": "d5869568b050ec091dc27dced36583351efa7fe5",
+  "parents": [
+    "30cec963095366536ca0b1306089154e09bfe1a9"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Aug 09 13:07:48 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:22 2018 +0000"
+  },
+  "message": "Add missing AVRCP message length checks inside avrc_msg_cback\n\nExplicitly check the length of the received message before\naccessing the data.\n\nBug: 111803925\nBug: 79883824\nTest: POC scripts\nChange-Id: I00b1c6bd6dd7e18ac2c469ef2032c7ff10dcaecb\nMerged-In: I00b1c6bd6dd7e18ac2c469ef2032c7ff10dcaecb\n(cherry picked from commit 282deb3e27407aaa88b8ddbdbd7bb7d56ddc635f)\n(cherry picked from commit 007868d05f4b761842c7345161aeda6fd40dd245)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "69534e9b6e3d4e264260b3a6e896640cf0527723",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_api.cc",
+      "new_id": "53c25a946134f5b81bbf03112662097ed9aa34bf",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_api.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c07e83250dcdc3be3eca434c266472be8fddec5f",
+  "tree": "12820c7acbeab7c4b0a47d31100812f54b1ea45b",
+  "parents": [
+    "2df080153464bf57084d68ba3594e199bc140eb4"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Fri Jun 09 12:12:03 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Aug 18 10:08:16 2017 -0700"
+  },
+  "message": "Propagating Error From impeg2d_pre_pic_dec_proc\n\nIn case the function impeg2d_pre_pic_dec_proc returns an error,\nthe decoder should not try to continue decode.\n\nBug: 63316832\nTest: ran POC under ASAN on patched master\nChange-Id: Ib6eed075ac879fb944ca3da70b75d4d723ab93e6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2f9db2bad348aab08576875c38be045135de1e25",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "1b6b7527f9478a47e9d8171a958b96428c315653",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "94c52029653426846c50c639e7f6b5404cedd472",
+  "tree": "129d189d061514e511de7ab27aa410c82d6268c8",
+  "parents": [
+    "b4678ce1d2fa82925221fffdbd3d60a3c92fe73b"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Fri Aug 18 18:08:12 2017 -0700"
+  },
+  "committer": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Tue Aug 29 00:57:11 2017 +0000"
+  },
+  "message": "Backport overlay security fix\n\nReplacing app opps fix with the flag that is used\nelsewhere.\n\nBug: 37442941\nTest: Verified that toast and system overlay still goes\naway on permission and a11y service capability screens.\n\nMerged-In: I7c8d8b4143a5dd1cb684c31c4503608c8d5be0e3\n\nChange-Id: I858f3585b2e7d334cddcf38bd0ac6481e778b6b6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c5961524520c7e4cf7bfdbaab9f49bbabc3eb004",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "25216db214febe02a0ab513e29cd464cfe411731",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a77fea72659b090a8164b56a8ec451d4fd9b6fd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/Utils.java",
+      "new_id": "2068909111df59bece413d14d1692b3ee755bb95",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/Utils.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e0d2c69c97e55e824f508bce005c3bc8d4886cfd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accessibility/AccessibilityServiceWarning.java",
+      "new_id": "4ad2ed51ae7b8d856d5cdb6085733dc43bc8ed47",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accessibility/AccessibilityServiceWarning.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "38e6b0f0709e3958a37ab0fddfd9710722a5a709",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accessibility/ShortcutServicePickerFragment.java",
+      "new_id": "07f4c37cab5c4adaf169a61294f4685dda789798",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accessibility/ShortcutServicePickerFragment.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "da4bdcf6fb0ce04f9650227c1c5f7dc80a5beb9a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment.java",
+      "new_id": "3b2e2f73b132f9582e0a8940b47d538dab98623e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accessibility/ToggleAccessibilityServicePreferenceFragment.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a57034dfe0afd6d7e6877520fcaa1728e6be90a1",
+  "tree": "70a727f9774f9161b66b78466b5ed6b2c8fe0051",
+  "parents": [
+    "1302073b4c9469fb088294819298f0800593780f"
+  ],
+  "author": {
+    "name": "Zongheng Wang",
+    "email": "wangzongheng@google.com",
+    "time": "Thu Sep 05 13:44:28 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:29 2019 +0000"
+  },
+  "message": "Set default phonebook access to ACCESS_REJECTED when user didn\u0027t choose\none\n\nWhen there\u0027s no users\u0027 choice to tell us whether to share their\nphonebook information to the Bluetooth device, set the phonebook access\npermission to ACCESS_REJECTED.\n\nBug: 138529441\nTest: Manual test\nChange-Id: Iefabeb731b941f09fe1272ac7b7cd2feba75c8df\nMerged-In: Iefabeb731b941f09fe1272ac7b7cd2feba75c8df\n(cherry picked from commit 810c6d2117aeec7ca749e707b2e3a297eb8a265e)\n(cherry picked from commit efdcff245255575bcdb8adc65aef7ba9f8fd1725)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9a95288a69aeb9af73bc6b34a57bc04e33768806",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java",
+      "new_id": "8f164f1592d3104d0872a14f9ce8ea319d485513",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java"
+    }
+  ]
+}

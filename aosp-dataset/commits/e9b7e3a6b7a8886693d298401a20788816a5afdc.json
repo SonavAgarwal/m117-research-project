@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e9b7e3a6b7a8886693d298401a20788816a5afdc",
+  "tree": "b4674aab555e1859b4a006551ab5c3d4adba36dd",
+  "parents": [
+    "1156cd7408bdb85711f28afa73392a5b0a912417"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Thu Dec 01 12:20:44 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:31 2016 -0800"
+  },
+  "message": "32322450 Security Vulnerability - heap buffer overflow in libgiftranscode.so\n\n* No range checking was done on the background color index. Add range\nchecking and bail if the color index is out of range.\n\n* Test\nManual\n- tested sending the gif attached in the bug.\n- tested sending a 3.5mb gif to verify the gif transcoding was taking place.\n- tested on arm64, arm, and x86 devices.\n\nChange-Id: Id16ddccf05c8472ddebc1284b2a928dafd1be551\nFixes: 32322450\n(cherry picked from commit bcc1f62715f8005684ac6b798d0d54224394e975)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1f329f7651359e13c75e92c35a2939c2f770ed94",
+      "old_mode": 33188,
+      "old_path": "jni/GifTranscoder.cpp",
+      "new_id": "a7f5c74ae53896c724ba3c0bc5cbe170bded290a",
+      "new_mode": 33188,
+      "new_path": "jni/GifTranscoder.cpp"
+    }
+  ]
+}

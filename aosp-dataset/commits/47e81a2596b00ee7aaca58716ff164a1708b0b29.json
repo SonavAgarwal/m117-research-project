@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47e81a2596b00ee7aaca58716ff164a1708b0b29",
+  "tree": "f5b4d85087d77dfecae0cfc2fee63fc065151907",
+  "parents": [
+    "b88e9f2e121a46dbb85b9aeeb221971f56632cd6"
+  ],
+  "author": {
+    "name": "Hugo Benichi",
+    "email": "hugobenichi@google.com",
+    "time": "Tue Oct 18 13:09:04 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:46:41 2016 -0800"
+  },
+  "message": "Add SafetyNet logging to DHCP packet parsing\n\nTest: unit test passes\nBug: 31850211\nChange-Id: I47f9db1f2c50ccd4fc90b80a9ffc1e9e43078f5f\n(cherry picked from commit a0289894718c230c746f7e85207d30fee431dab8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ffbea9fce279d2fa93e121eb8d635b4f78f74378",
+      "old_mode": 33188,
+      "old_path": "services/net/java/android/net/dhcp/DhcpClient.java",
+      "new_id": "8dd05b19ea7aaf1904eb2793829039da18af6be7",
+      "new_mode": 33188,
+      "new_path": "services/net/java/android/net/dhcp/DhcpClient.java"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "448e2f1bf40d566aaeac9ac269eb3394225448bf",
+  "tree": "d473396688e5f2e0b43fcbeb3e6bb1713aab2e88",
+  "parents": [
+    "5a0a69a465e8b14be8c714cfb914008967d035dd"
+  ],
+  "author": {
+    "name": "John Shao",
+    "email": "johnshao@google.com",
+    "time": "Wed Dec 23 22:21:30 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:25 2021 +0000"
+  },
+  "message": "Prevent overlays on vCard import flows\n\nBug: 172252122\nTest: manual with POC\nChange-Id: I69c46f073f324005c3dd214447792fc20fe75a2b\nMerged-In: I69c46f073f324005c3dd214447792fc20fe75a2b\n(cherry picked from commit aa189a0daadf4d4cd8e00895c9bdbb8ac0ec9bb6)\n(cherry picked from commit b423fdf941a10fc1498dcee0665e56fb1856bf4e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1fd8e8b29c8bee35f3356c627e90405f6c894a2c",
+      "old_mode": 33188,
+      "old_path": "Android.bp",
+      "new_id": "08288f83d12219da0cef3d5447d053189444bd5e",
+      "new_mode": 33188,
+      "new_path": "Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e0814c1c60d6ec1b3c6543b85d58e49412d83379",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "c9dc980c91fbfc729a857d46502ce2e70e576119",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "2c69cdfd690b982181d1c8708ed334db5fcfa309",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/vcard/ImportVCardActivity.java",
+      "new_id": "38367c40f9b55a0118c140665cb375931745b2da",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/vcard/ImportVCardActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac5b3eb71e5fa7a46224208781db070081ce6d73",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/vcard/SelectAccountActivity.java",
+      "new_id": "eb13e505cb33e0d64ffe50f2fcb60627350a0f46",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/vcard/SelectAccountActivity.java"
+    }
+  ]
+}

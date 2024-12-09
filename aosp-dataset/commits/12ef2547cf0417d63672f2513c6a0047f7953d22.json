@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "12ef2547cf0417d63672f2513c6a0047f7953d22",
+  "tree": "907d7375213382a734f1557c3f9a54d71ab62b8e",
+  "parents": [
+    "7fe20626c1d042394a80c91ccd5d124d32c900de"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackcwyu@google.com",
+    "time": "Wed Jan 30 16:21:45 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:25:05 2019 +0000"
+  },
+  "message": "Prevent OOB error in rw_i93_process_ext_sys_info()\n\nBug: 122316913\nTest: NFC tag reading\nChange-Id: I578933fedc160d08463b4541c2ef2830f79ca167\nMerged-In: I053e9f01dc921bab55b5781c83f048d2638d5b87\n(cherry picked from commit e40cbea32bd3bd68e57172c009a4c20bf6d4bf38)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dc54d783cdd99c21c401af9ce3470fa58b5a3345",
+      "old_mode": 33188,
+      "old_path": "src/nfc/include/tags_defs.h",
+      "new_id": "d7adc6037d837afdfbc8cecf5847f2608844b2e5",
+      "new_mode": 33188,
+      "new_path": "src/nfc/include/tags_defs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5d75605b8f64647415877ce453e97d3d6c0d08e1",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "a8e095c356363a1dcc622f999401f4d3cd1beef6",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

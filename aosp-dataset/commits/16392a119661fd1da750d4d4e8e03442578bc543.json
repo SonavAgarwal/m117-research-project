@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "16392a119661fd1da750d4d4e8e03442578bc543",
+  "tree": "fb5418f4470abed437b67a63b41221d1353dc330",
+  "parents": [
+    "f2b791587c15ec5028d0b266d415c631a4078916"
+  ],
+  "author": {
+    "name": "Chia-I Wu",
+    "email": "olv@google.com",
+    "time": "Thu Oct 05 14:24:41 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:32:51 2017 +0000"
+  },
+  "message": "surfaceflinger: make vsync injection more robust\n\nThere are more issues than I expected :)\n\n - no lock to synchronize enable/disable and injection\n - Every time injection is diabled and enabled, a new EventThread is\n   created\n - mCallback might be nullptr\n - ENABLE_VSYNC_INJECTIONS/INJECT_VSYNC should require special\n   permission\n - MessageQueue::setEventThread must be called from the main thread\n - MessageQueue::setEventThread does not handle EventThread switch\n   well\n\nBug: 65483324\nTest: manual\nMerged-In: I7d7b98d1f57afc64af0f2065a9bc7c8ad004ca9f\nChange-Id: I7d7b98d1f57afc64af0f2065a9bc7c8ad004ca9f\n(cherry picked from commit 6200eacdc927776483d775562db11cce284cc7e0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bca34307941c4449c1de62812b32c640b8efda5a",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/MessageQueue.cpp",
+      "new_id": "0b1199c2d04cb8bfdb19805e256e83e1a5ba41ea",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/MessageQueue.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bb0e33cb45bac5c446d5fb97e41f2d0012aa4a05",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "4055693e453944d327fd181e34a06d278eea179d",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7606e10a622ab4a36a6892d02f4f5eae4ecddae6",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.h",
+      "new_id": "99d4a1a63673932bad15c42b6a226618b63a71d3",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.h"
+    }
+  ]
+}

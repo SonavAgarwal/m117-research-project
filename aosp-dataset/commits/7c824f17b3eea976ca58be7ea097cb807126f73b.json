@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7c824f17b3eea976ca58be7ea097cb807126f73b",
+  "tree": "c031169e1c500b3d684d591e0f6c206dd2ff3b85",
+  "parents": [
+    "30ee0df2a9066ef3d2ab7039a37cbc03c96a935e"
+  ],
+  "author": {
+    "name": "Chris Craik",
+    "email": "ccraik@google.com",
+    "time": "Thu Jan 12 12:56:20 2017 -0800"
+  },
+  "committer": {
+    "name": "android-merger",
+    "email": "android-merger@vpba3.mtv.corp.google.com",
+    "time": "Thu Jan 19 16:54:06 2017 -0800"
+  },
+  "message": "resolve merge conflicts of 89cdd4cb to mnc-dev\n\nChange-Id: Ie1421dc0fed3c3a20c5c146a253b27b8678a6207\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "034847a6a28f3f89845eaf331f3b02be014ffb40",
+      "old_mode": 33188,
+      "old_path": "framesequence/jni/FrameSequence_webp.cpp",
+      "new_id": "aa99b904f28c256716df467e9a357067ddc2460d",
+      "new_mode": 33188,
+      "new_path": "framesequence/jni/FrameSequence_webp.cpp"
+    }
+  ]
+}

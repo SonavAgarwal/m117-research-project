@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1570b62c88d7c5b9c6bfe43da8cc16ea30d3e8df",
+  "tree": "812f790c5309b4e0039e30184150888c25b3f01a",
+  "parents": [
+    "30a2860ed19866159a0870c57a94ad8df0b1a683"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Fri Mar 20 15:24:00 2020 +0100"
+  },
+  "committer": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Fri Mar 20 14:28:12 2020 +0000"
+  },
+  "message": "Fix potential stack overflow caused by integer overflow\n\nBug: 151155194\nMerged-In: I0655b0b62301f78cd8705cc7b0e4fc11522f00ca\nChange-Id: I0655b0b62301f78cd8705cc7b0e4fc11522f00ca\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "876c420085e392dfcc43b217477710721fceb04e",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_cmac.cc",
+      "new_id": "23c1db1b5c2a5c9b0745b61df399c337ab3dd3e3",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_cmac.cc"
+    }
+  ]
+}

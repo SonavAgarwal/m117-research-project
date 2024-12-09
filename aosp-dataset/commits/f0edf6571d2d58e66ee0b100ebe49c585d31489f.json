@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f0edf6571d2d58e66ee0b100ebe49c585d31489f",
+  "tree": "80b5e841eb8069cc736ca6c4c66102c8d68159aa",
+  "parents": [
+    "ec16f7d8c7e359a68ffe6b76e88add2210bf2cbd"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Tue Jan 09 17:16:35 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:08:04 2018 +0000"
+  },
+  "message": "Fix unexpected behavior in SDP\n\nBug: 68776054\nBug: 68817966\nTest: Bluetooth SDP still works\nChange-Id: I4eef22679a313b88d7e8ec463b29dbb592c6b5b9\n(cherry picked from commit 5d6b1b1316afecebd939f77e3d01ab0a400e68a9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "da85cda284a4e42bc5c46d374735d33dd81d5151",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "b18f429592d3e6e2ac8ff88463f47208bf8388af",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

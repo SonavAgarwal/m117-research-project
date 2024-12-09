@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cc364611362cc5bc896b400bdc471a617d1ac628",
+  "tree": "303bfe4fca77a80804a5e95bf3130a26315e48dd",
+  "parents": [
+    "99d54d0c7dbab6c80f15bbf886ed203b2a547453"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Wed Sep 05 18:21:31 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:20:25 2018 +0000"
+  },
+  "message": "Check data length when parsing AVRCP vendor specific command responses\n\nBug: 111450531\nBug: 111896861\nTest: PoC test program\nChange-Id: I564bee8f05efabc29383659a75e695b4da76c6aa\n(cherry picked from commit 7439ea940354f65a147c4ecfce3bada49c688047)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "038efe62f2e06bdb8c1c2ec5b52b82e2619a84b7",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "a7a42a5992a44cb06d01c9ea44defc06ff47c288",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

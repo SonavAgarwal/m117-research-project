@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c90fb352cdaab0fd5adaa8957694b726045c673c",
+  "tree": "f8efb7b87770e04e7050fe9d92c2069381f45dd3",
+  "parents": [
+    "c024c5886aaf4fc98c53a761398fac5c399de789"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Tue Feb 02 18:14:42 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 18 23:59:52 2021 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Use userId instead of USER_CURRENT in shouldLockKeyguard.\n\nUSER_CURRENT is not an acceptable input to isSecure(). The test has also\nbeen updated as the use of any() for the mock hid this bug.\n\nTest: atest LockTaskControllerTest\nBug: 176801033\nChange-Id: I8aa736bb7b8b60937ad4319e6127c356be5e9b55\n(cherry picked from commit acb731f97842b95fc51cc0fc71a61b0f9156b789)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c4a42ab7e7be25dbccad0eff647642dc50f35d3c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/LockTaskController.java",
+      "new_id": "281d2c9ed99277ae4f99349e0d642738f5e69924",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/LockTaskController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e345becf0499f33d169b158f33c71a7769bcf1ad",
+      "old_mode": 33188,
+      "old_path": "services/tests/wmtests/src/com/android/server/wm/LockTaskControllerTest.java",
+      "new_id": "fdc01b48398f9b76b305f216a88aa15377551f54",
+      "new_mode": 33188,
+      "new_path": "services/tests/wmtests/src/com/android/server/wm/LockTaskControllerTest.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f357fd589e115a74aae25b1ac325af6121cdadf",
+  "tree": "deaec1501e638e6ec1790d8c6704f1662c2c3deb",
+  "parents": [
+    "856e318f93052fb934391c291c07d769663d9a1b"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Jun 02 12:16:44 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:13:09 2017 +0000"
+  },
+  "message": "Close connection before retrying\n\nOtherwise the (CTS) server might run out of connections.\nBug: 38391487\nBug: 22771132\nTest: build, run CTS, stream music\n\nChange-Id: I92c782a6799ab36eec8df3f7c3217bea667b838a\n(cherry picked from commit 46132afee7783665ae12538edd024770dbd93ecb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d6bf421ffa9f25001f7cd023a6a155a1c34665e7",
+      "old_mode": 33188,
+      "old_path": "media/java/android/media/MediaHTTPConnection.java",
+      "new_id": "dda5ce6fd0835cf88fcbdcdc2ae7b3025256550c",
+      "new_mode": 33188,
+      "new_path": "media/java/android/media/MediaHTTPConnection.java"
+    }
+  ]
+}

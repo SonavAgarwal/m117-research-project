@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "dba1bb07e04b51b1bd0a1251711781e731ce9524",
+  "tree": "60ebda3453d0a92ecb1e4b5954e2d9eb8c3645dd",
+  "parents": [
+    "995627c3ee75dce1ebf6338012cba60d68fe94f0"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Jun 12 17:33:07 2017 -0600"
+  },
+  "committer": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@google.com",
+    "time": "Tue Oct 03 20:35:10 2017 +0000"
+  },
+  "message": "DO NOT MERGE. KEY_INTENT shouldn\u0027t grant permissions.\n\nKEY_INTENT has no business granting any Uri permissions, so remove\nany grant flags that malicious apps may have tried sneaking in.\n\nAlso fix ordering bug in general-purpose security check that was\nallowing FLAG_GRANT_PERSISTABLE to bypass it.\n\nTest: builds, boots\nBug: 32990341, 32879915\nChange-Id: I657455a770c81f045ccce6abbd2291407a1cfb42\n(cherry picked from commit d722e780bac7685e8a012b5f479eba8c348c3c53)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0b1b3baee1701da04a953224228665abb476cda",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/accounts/AccountManagerService.java",
+      "new_id": "ef8a5758e8731c2916c1803c86b9bb822c318b18",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/accounts/AccountManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "031d252751915c9e162eddf4e52ae4cd9584cf79",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "106bbcdeb25ad4c42439bd868e077bb6ff201768",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

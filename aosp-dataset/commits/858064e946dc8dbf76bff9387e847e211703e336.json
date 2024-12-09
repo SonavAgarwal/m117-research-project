@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "858064e946dc8dbf76bff9387e847e211703e336",
+  "tree": "945b3cdc1d082e62cf7ba3d3e24c23085a8a4335",
+  "parents": [
+    "a014b6be3c7c6fb5cf9352a05baf84fca7a133c7"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Nov 16 17:22:48 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:10 2016 -0800"
+  },
+  "message": "DO NOT MERGE: Check provider access for content changes.\n\nFor an app to either send or receive content change notifications,\nrequire that they have some level of access to the underlying\nprovider.\n\nWithout these checks, a malicious app could sniff sensitive user data\nfrom the notifications of otherwise private providers.\n\nTest: builds, boots, PoC app now fails\nBug: 32555637\nChange-Id: If2dcd45cb0a9f1fb3b93e39fc7b8ae9c34c2fdef\n(cherry picked from commit c813f5dae231bd8f01864227c5dba10d43a89249)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ba937a3f16b2028cc38ec59b6ed4c027fb32f50",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/ActivityManagerInternal.java",
+      "new_id": "d4f80a01ea53451fe033b6575f47756fe037f556",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/ActivityManagerInternal.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "85d2981aaa9687dce2c1c178a99260a6bef43061",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "5a99d6fdddcb8438edd522f9d95aa4022b8d81a1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "07276298d66d8a607b5e8a44f0b25769138feffe",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/content/ContentService.java",
+      "new_id": "243439079031c7dac0e3d0064cc881fa21fe9b93",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/content/ContentService.java"
+    }
+  ]
+}

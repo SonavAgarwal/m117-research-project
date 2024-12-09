@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e752ae55522f2657bb26bd2351ef879a73fa6efb",
+  "tree": "daaf7292b07297c0aeed2605190940ac2a9b78b5",
+  "parents": [
+    "f5184a65fa134718444376ff8eb7944717990a3a"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Thu Aug 13 01:45:09 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:32 2020 +0000"
+  },
+  "message": "DO NOT MERGE Don\u0027t allow non-instant permissions for instant apps.\n\nBug: 140256621\nTest: atest EphemeralTest\nChange-Id: Id07342c0347c0b4d2ccb3f58a4af9fda7a20d6ef\n(cherry picked from commit d83e3a350d1a2a6fd317b19ad22ee5647781870e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "63c721a5da7b32e06fea65a305c618bdcd7256a0",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "7a38a4533572412d9f4e2d454b73676143364d64",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

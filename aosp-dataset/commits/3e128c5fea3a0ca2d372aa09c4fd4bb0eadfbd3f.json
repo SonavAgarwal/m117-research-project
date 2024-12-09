@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3e128c5fea3a0ca2d372aa09c4fd4bb0eadfbd3f",
+  "tree": "ee14d9625f03f7a9042cbd4e9e76e47d336cc223",
+  "parents": [
+    "d3dea7fcf0e206859d8df1af01523f40d8008195"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Thu Nov 12 22:10:47 2015 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Mon Nov 30 18:03:30 2015 -0800"
+  },
+  "message": "DO NOT MERGE bouncycastle: limit input length as specified by the NIST spec\n\nBug: 24106146\n\nAdapted from commit 9462245630b2913830b63310aa0d40a0901ccae5\n\nChange-Id: Ic3cb8d87ac86700cab15c553e9cc638b55d92df4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9e617ec94bfdbca72c6ef7ec3bb3f61be13472ea",
+      "old_mode": 33188,
+      "old_path": "bcprov/src/main/java/org/bouncycastle/crypto/modes/GCMBlockCipher.java",
+      "new_id": "031fe1b9171b288a31185a2b4c9eb3ad35fcea6b",
+      "new_mode": 33188,
+      "new_path": "bcprov/src/main/java/org/bouncycastle/crypto/modes/GCMBlockCipher.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a22ef4d654b36bddfc8207a71aec09da17ad1aa0",
+      "old_mode": 33188,
+      "old_path": "patches/bcprov.patch",
+      "new_id": "e1f390363fa876407e01960a6443eb3542136327",
+      "new_mode": 33188,
+      "new_path": "patches/bcprov.patch"
+    }
+  ]
+}

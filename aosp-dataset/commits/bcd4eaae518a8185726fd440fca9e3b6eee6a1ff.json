@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bcd4eaae518a8185726fd440fca9e3b6eee6a1ff",
+  "tree": "5f046524cc57102c64356af7e83fdd16c8160839",
+  "parents": [
+    "fe8b9a7cb32f739e3855c51c8803590908a1da9c"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Tue Dec 17 17:01:59 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:06:52 2020 +0000"
+  },
+  "message": "[DO NOT MERGE] Fix heap buffer overflow in clearkey CryptoPlugin::decrypt\n\nFix destPtr was not pointing to destination raw pointer.\n\nbug: 144506242\n\nTest: sts\n  ANDROID_BUILD_TOP\u003d ./android-sts/tools/sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Poc19_12#testPocBug_144506242\n\nChange-Id: Ia1b8f755daaada2f1411abeb3cb5b832a72b3c82\n(cherry picked from commit 8464bfa975afe360bb8e3dd59c036ce4a4995fa8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f164f2859b9124828d3d0f765fee075e30dbbfaa",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/CryptoPlugin.cpp",
+      "new_id": "3ecf6d5acd5b7d3dcb998dfe25aa09c3b458283e",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/CryptoPlugin.cpp"
+    }
+  ]
+}

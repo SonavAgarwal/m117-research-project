@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "227c1f829127405e21dab1664393050c652ef71e",
+  "tree": "f25780d38b30d2648d1e571f145e31f06b8ee4e2",
+  "parents": [
+    "763ffef681432ec1dbe26d5010a67aaf8f7fc17e"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Mon Feb 13 14:35:10 2017 +0530"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Feb 13 17:56:53 2017 -0800"
+  },
+  "message": "Error Check for VLD Symbols Read\n\nThe maximum number of lead zeros in a VLD symbol (17 bits long) is 11.\n\nBug: 34093073\nChange-Id: Ifd3f64a3a5199d6e4c33ca65449fc396cfb2f3fc\n(cherry picked from commit 75e0ad5127752ce37e3fc78a156652e5da435f14)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "459548bb5b11fc288b073500b7b9cf115f7e9f41",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_vld.c",
+      "new_id": "12bb617ea8dd080471c49ddc68cfc145ebff3c80",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_vld.c"
+    }
+  ]
+}

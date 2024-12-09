@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2c6c23f651abb3d215134dfba463eb72a5e9f8eb",
+  "tree": "f90c7c7c1e65b8ad4279dfe4883e46a80e0a7321",
+  "parents": [
+    "37d7d67ca216972cba9259aa5866220d6abfaf14"
+  ],
+  "author": {
+    "name": "Tianjie Xu",
+    "email": "xunchang@google.com",
+    "time": "Fri Dec 16 16:24:09 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:30:46 2017 -0800"
+  },
+  "message": "Add a checker for signature boundary in verifier\n\nThe \u0027signature_start\u0027 variable marks the location of the signature\nfrom the end of a zip archive. And a boundary check is missing where\n\u0027signature_start\u0027 should be within the EOCD comment field. This causes\nproblems when sideloading a malicious package. Also add a corresponding\ntest.\n\nBug: 31914369\nTest: Verification fails correctly when sideloading recovery_test.zip on\nangler.\n\nChange-Id: I6ea96bf04dac5d8d4d6719e678d504f957b4d5c1\n(cherry-picked from f69e6a9475983b2ad46729e44ab58d2b22cd74d0)\n\n(cherry picked from commit 54ea136fded56810bf475885eb4bd7bf1b11f09c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "16cc7cf03fb670f886e964b9d9e8c40420b49b3f",
+      "old_mode": 33188,
+      "old_path": "verifier.cpp",
+      "new_id": "2d1b0e74fe0d5a6e608b551ea23d967b78b9f9f3",
+      "new_mode": 33188,
+      "new_path": "verifier.cpp"
+    }
+  ]
+}

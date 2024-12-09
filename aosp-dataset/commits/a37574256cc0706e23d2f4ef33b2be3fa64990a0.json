@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a37574256cc0706e23d2f4ef33b2be3fa64990a0",
+  "tree": "1c0a1d6409dd95dd1309dae5ddf642277ff56d89",
+  "parents": [
+    "1924f6d94debfe88fc4c81e3554e086c779158b9"
+  ],
+  "author": {
+    "name": "Chalard Jean",
+    "email": "jchalard@google.com",
+    "time": "Mon May 20 13:11:37 2019 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:26 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Protect VPN dialogs against overlay.\n\nBug: 130568701\nTest: manual. After this, can\u0027t display on top of it\nChange-Id: Ib032f800edb0416cc15f01a34954340d0d0ffa78\n(cherry picked from commit 4e80dc2861614d25a1f957f50040a8cf04812d11)\n(cherry picked from commit 27d47340496580d66f36a734a115e47eaf550972)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8172e717850bd16ff3be5b145bb52446653287a6",
+      "old_mode": 33188,
+      "old_path": "packages/VpnDialogs/AndroidManifest.xml",
+      "new_id": "05ce96ca7cb3079d1da8cc2fecf4df384f7b818b",
+      "new_mode": 33188,
+      "new_path": "packages/VpnDialogs/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "846fcf867e328ad02c9ee20f0f11b0ce2bbadffb",
+      "old_mode": 33188,
+      "old_path": "packages/VpnDialogs/src/com/android/vpndialogs/AlwaysOnDisconnectedDialog.java",
+      "new_id": "ba4baf3419912ae069881fa6b122cc363c0aa6d6",
+      "new_mode": 33188,
+      "new_path": "packages/VpnDialogs/src/com/android/vpndialogs/AlwaysOnDisconnectedDialog.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "72ce9c4efdc0663b3f0cd2d39d931fe07d11aced",
+      "old_mode": 33188,
+      "old_path": "packages/VpnDialogs/src/com/android/vpndialogs/ConfirmDialog.java",
+      "new_id": "09339743db5c5d5dc9a35e5c6fcc41862f7b8b60",
+      "new_mode": 33188,
+      "new_path": "packages/VpnDialogs/src/com/android/vpndialogs/ConfirmDialog.java"
+    }
+  ]
+}

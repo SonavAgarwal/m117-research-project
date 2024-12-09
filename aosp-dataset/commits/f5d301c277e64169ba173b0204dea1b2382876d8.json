@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "f5d301c277e64169ba173b0204dea1b2382876d8",
+  "tree": "2805a28adbdfe4b92ca44f9e09327c0638aedc35",
+  "parents": [
+    "3d4cf3468533db2e0cbe7e01c4325d8b3f93e2a2"
+  ],
+  "author": {
+    "name": "Nate(Qiang) Jiang",
+    "email": "qiangjiang@google.com",
+    "time": "Mon Mar 02 17:09:44 2020 -0800"
+  },
+  "committer": {
+    "name": "Nate Jiang",
+    "email": "qiangjiang@google.com",
+    "time": "Wed Mar 18 03:21:29 2020 +0000"
+  },
+  "message": "Create different KeyId for saved and suggestion network\n\nBug: 150500247\nTest: atest android.net.wifi\n\nMerged-In: Ia416b2e986c86fe0a29641f6a20236802d72a233\nChange-Id: Ia416b2e986c86fe0a29641f6a20236802d72a233\n(cherry picked from commit 96a9e48520fc2359a3cdd6b3513bf158d6844365)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed416429a2792d2155ae41293f2181a08e8ffd36",
+      "old_mode": 33188,
+      "old_path": "wifi/java/android/net/wifi/WifiConfiguration.java",
+      "new_id": "88f2bb2ad6e8fe1c74131879646e6975f4da5c74",
+      "new_mode": 33188,
+      "new_path": "wifi/java/android/net/wifi/WifiConfiguration.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba9fc786afe7ccbe63f69979fa41e4a39fcfd7fd",
+      "old_mode": 33188,
+      "old_path": "wifi/tests/src/android/net/wifi/WifiConfigurationTest.java",
+      "new_id": "f56cdc30af360c70a9e950b33d74e81c7f67e7c0",
+      "new_mode": 33188,
+      "new_path": "wifi/tests/src/android/net/wifi/WifiConfigurationTest.java"
+    }
+  ]
+}

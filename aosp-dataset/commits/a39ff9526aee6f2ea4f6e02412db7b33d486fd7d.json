@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a39ff9526aee6f2ea4f6e02412db7b33d486fd7d",
+  "tree": "3c3763c910f2598589fb26e92dd530e909364aff",
+  "parents": [
+    "4c761b96c2ee36410603df8e8a4fb4e07c12ede0"
+  ],
+  "author": {
+    "name": "Ta-wei Yen",
+    "email": "twyen@google.com",
+    "time": "Mon Oct 10 14:43:27 2016 -0700"
+  },
+  "committer": {
+    "name": "Ta-wei Yen",
+    "email": "twyen@google.com",
+    "time": "Mon Oct 10 14:43:27 2016 -0700"
+  },
+  "message": "Unexport OmtpMessageReceiver\n\nIntroduced in\nhttps://partner-android-review.googlesource.com/#/c/204705/\n\nReceivers do not need to be exported to receive system broadcasts.\nOmtpMessageReceiver should also check the intent action, but least\npossible scope of change is preferred.\n\nBug: 31566390\nChange-Id: I83f3d42ba185c072357ec6f18b99c3f12f452eb9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "545aa8ba00ef131c214090612aeba120975dea20",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "ab3d028d4d5c9c7a87a061589e4d74522637367e",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

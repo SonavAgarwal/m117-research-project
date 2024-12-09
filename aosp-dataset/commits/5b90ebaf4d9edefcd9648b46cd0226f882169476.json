@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "5b90ebaf4d9edefcd9648b46cd0226f882169476",
+  "tree": "e1df61a1559aa1a5c87636863dda16b4a3df2046",
+  "parents": [
+    "55229beb747b9e7b8a0f392d855a1b3342df8646"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Mon Jan 11 22:27:57 2021 +0900"
+  },
+  "committer": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Fri Jan 29 01:23:32 2021 +0000"
+  },
+  "message": "Fix legacy APIs when VPN switches to suspended underlying network.\n\nCurrently, when the VPN underlying network changes from a\nnetwork that is not suspended to one that is suspended (or vice\nversa), some of the legacy APIs return incorrect results.\n\nThis is because the VPN\u0027s NetworkInfo can get into SUSPENDED\nstate even though the capabilities have the NOT_SUSPENDED\ncapability. This happens because the code in updateCapabilities\nthat checks for changes in NOT_SUSPENDED and NOT_ROAMING (which\nare the capabilities that can affect the NetworkInfo state) is\nonly run when the capabilities change in a certain way.\n\nFix this by always checking for changes in these capabilities,\nregardless of what else has changed.\n\nThis results in sending a lot more SUSPENDED and RESUMED\ncallbacks than the code sent previously. This should hopefully\nnot impact apps because those callback methods have never been\npublic API, though because they\u0027re just callbacks, it\u0027s possible\nthat apps found out via code inspection that the callbacks\nexisted and implemented them.\n\nBug: 172870110\nTest: changes to existing tests in ConnectivityServiceTest\nChange-Id: I6ec246a6a4e61f634956a165797fbb80296efd6a\nMerged-In: I6ec246a6a4e61f634956a165797fbb80296efd6a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cf14c6377d21089dc5c55e6417691294a49e30fc",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "a1cbd00e360f1f0a864d454e1b7d59aafb79b7ec",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3d4ff41d65fbc2647d0aa4c150487b718b0c134c",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "a5554c740e7f7f42d61e9f2f670937549d08656e",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    }
+  ]
+}

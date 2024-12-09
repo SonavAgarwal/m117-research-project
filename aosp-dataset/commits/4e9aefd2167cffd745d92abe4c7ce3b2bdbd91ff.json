@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4e9aefd2167cffd745d92abe4c7ce3b2bdbd91ff",
+  "tree": "9dd52d7da21e9497ede0f5b60d397080046e518d",
+  "parents": [
+    "91543252079be0127ebc89669bcd9fde8910ac5e"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Thu Jul 23 15:16:35 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:30 2020 +0000"
+  },
+  "message": "SAP: Ensure pending intent is immutable\n\nBug: 156021269\nTAG: #security\nTest: manual\nChange-Id: Ieea6a708ca0fd1689e4b120db12f0cd96e8db95d\n(cherry picked from commit 7b17763dad16814cb743c710efd64cc5fccd2239)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3ff1fc720c84fc080fe92c4cfcdd0af105773121",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/sap/SapServer.java",
+      "new_id": "68854222215c0c40c19c23840db7c5174fcd60d3",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/sap/SapServer.java"
+    }
+  ]
+}

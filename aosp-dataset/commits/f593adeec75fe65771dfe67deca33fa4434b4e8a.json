@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "f593adeec75fe65771dfe67deca33fa4434b4e8a",
+  "tree": "d43b3a99ec9feff195c9227868c823164eb443a8",
+  "parents": [
+    "a6d42eb437b6023afd111fbc90a748ef3ec121d2"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Mon Jun 05 14:06:57 2017 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:48:07 2017 +0000"
+  },
+  "message": "Defend against ICOs with large BMPs embedded DO NOT MERGE\n\nIf the ICO reports that it has a large BMP file embedded, do not\ncrash if we attempt to allocate too much memory.\n\nBug: 38116746\n\nMerged-In: Ie6665dc8ade3beb19c276c4d48d1fabc077a2e6c\nChange-Id: I70eb66f5e4ffc15587007b398bbe843665eae500\nReviewed-on: https://skia-review.googlesource.com/18447\nReviewed-by: Matt Sarett \u003cmsarett@google.com\u003e\nCommit-Queue: Leon Scroggins \u003cscroggo@google.com\u003e\n(cherry picked from commit 6029322ad78e0120cce18a01ae74e082c0e542fe)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "35ee5b5a288f973576b2b840a13ce0ac80651a1d",
+      "new_mode": 33188,
+      "new_path": "resources/invalid_images/b38116746.ico"
+    },
+    {
+      "type": "modify",
+      "old_id": "dc4222a43ca4e204b430d0f9a14c9628f8f3d539",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkIcoCodec.cpp",
+      "new_id": "8b3d26dd86cc0c8c0d3ffa6b5e9248623f991a99",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkIcoCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c387e157be21fdb982eb26cc2b66a09f1b065f03",
+      "old_mode": 33188,
+      "old_path": "tests/BadIcoTest.cpp",
+      "new_id": "f6b1c469cc9e51eef50f3f2ed1f7e27607aaff6c",
+      "new_mode": 33188,
+      "new_path": "tests/BadIcoTest.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "19004c751f36aa2b01d3e03d4f761d8897542bd2",
+  "tree": "33daad44ede5d2806c7b245858f67916286ddd37",
+  "parents": [
+    "bf75bdaca1c044f9806b5cb5df7415ad57d20fb9"
+  ],
+  "author": {
+    "name": "Miao Chou",
+    "email": "mcchou@google.com",
+    "time": "Mon Jul 20 12:14:25 2015 -0700"
+  },
+  "committer": {
+    "name": "Miao Chou",
+    "email": "mcchou@google.com",
+    "time": "Thu Aug 06 13:31:14 2015 -0700"
+  },
+  "message": "DO NOT MERGE Fix security vulnerabilities in permission of deleting MMS/SMS\n\nThis CL adds permission check to avoid unauthorized deletion of any MMS/SMS\nmessages in BluetoothMapContentObserver.actionMessageSentDisconnected\nfunction.\n\nBug: 22343270\nChange-Id: I30254036309733be4d54db17a8ef17a571cd1c5a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7101f220bb1a574ecb91f282db6ee2724894c437",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/map/BluetoothMapContentObserver.java",
+      "new_id": "9b47130b59b16d361ea6a91cba13e0d3ae75829f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/map/BluetoothMapContentObserver.java"
+    }
+  ]
+}

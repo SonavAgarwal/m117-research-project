@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fd9cc97d4dfe2a2fbce2c0f1704d7a27ce7cbc44",
+  "tree": "9d88a3915bdef53ee8dc94c5f9fff6b8e38c7827",
+  "parents": [
+    "20d7cfb6d9c7ef58ac0c007c0b61d39b46036781"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Fri Sep 30 00:58:32 2016 -0700"
+  },
+  "committer": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Fri Sep 30 16:37:13 2016 -0700"
+  },
+  "message": "MPEG4Extractor: Check mLastTrack before parsing btrt box.\n\nBug: 31449945\nChange-Id: I3380d494a57bb81f1a7455c64c3ab78da12c382d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6a67fcf9712c52eeb35c2d269998db99f1c9f045",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "77e79687993cccd35c3ac4b8aef62e1f66df5737",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c2639afac631f5c1ffddf70ee8a6fe943d0bedf9",
+  "tree": "c27259a026c7504057b012c923b53df5e751830e",
+  "parents": [
+    "119a012b2a9a186655da4bef3ed4ed8dd9b94c26"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jun 27 13:55:14 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:58 2016 -0700"
+  },
+  "message": "SoftMP3: memset safely\n\nBug: 29422022\nChange-Id: I70c9e33269d16bf8c163815706ac24e18e34fe97\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4cde54ee9e8095e3ba34bcc59ef672e0c4502b60",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp",
+      "new_id": "ec85ea9851749cbbacfe73f8bd3db3ebf7bdaa9b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9e7b536846369f7e1148a0f88561e4aae6862f2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mp3dec/SoftMP3.h",
+      "new_id": "3bfa6c7e18151735156286fdf7ebd0b43cb99a38",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mp3dec/SoftMP3.h"
+    }
+  ]
+}

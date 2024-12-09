@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "dc07290edccc2c3fc4062da835306f809cea1fdc",
+  "tree": "b25a47f3bba6fdde29111b8250e99142b72961ff",
+  "parents": [
+    "a57aff106d30e39c782e681f8e4aa3aa612f81c3"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Mon Mar 13 14:23:58 2017 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:27 2017 -0700"
+  },
+  "message": "Update GIFLIB to 5.1.4 DO NOT MERGE\n\nBug:34697653\n\nAlso include \u003climits.h\u003e in openbsd-reallocarray.c, which is where\nAndroid defines SIZE_MAX.\n\nPreserve Android modification in egif_lib.c, which changed\n\"S_IREAD | S_IWRITE\" to \"S_IRUSR | S_IWUSR\"\n\nChange-Id: If19d3f071fd96afa2d37fe08d196c5042856c41b\n(cherry picked from commit 7eb1d41f601998ea9be3e7c2034b262ff263b862)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "03a935526d47acf8da24f3f6a1c31e2aef45a090",
+      "old_mode": 33188,
+      "old_path": "Android.mk",
+      "new_id": "437a8f7aaa8e1e7750e53f2387418a65aa362980",
+      "new_mode": 33188,
+      "new_path": "Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "320fdb9e83e8f574d678c37dba58523b8b1a35bc",
+      "old_mode": 33188,
+      "old_path": "dgif_lib.c",
+      "new_id": "66a1d6a4149f48c749dcfc9f46e52761e69cb412",
+      "new_mode": 33188,
+      "new_path": "dgif_lib.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "754d91455dd3485370ded3562c8dd99d3323e306",
+      "old_mode": 33188,
+      "old_path": "egif_lib.c",
+      "new_id": "3917ec6cea848a9cdef3b045805e96a6c2de6a83",
+      "new_mode": 33188,
+      "new_path": "egif_lib.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba47b29e87d8a431cb5457dc47ee8840201da5d6",
+      "old_mode": 33188,
+      "old_path": "gif_font.c",
+      "new_id": "8a02b2d8df20b9d96ae0161870174daf45cb2e94",
+      "new_mode": 33188,
+      "new_path": "gif_font.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac0307d7539b94a914757a167a953e4a34241013",
+      "old_mode": 33188,
+      "old_path": "gif_lib.h",
+      "new_id": "078930c625f5d901e505d75c8ca5fceab035c814",
+      "new_mode": 33188,
+      "new_path": "gif_lib.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f4118d6c72fca148e7bf60d5c47b6eda3b0ce823",
+      "old_mode": 33188,
+      "old_path": "gifalloc.c",
+      "new_id": "3b5186807ddabed2d0b058cad5852c0c4b6de9ec",
+      "new_mode": 33188,
+      "new_path": "gifalloc.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "41a33262c766e76bc084b0f3eecd48706a5b56a4",
+      "new_mode": 33188,
+      "new_path": "openbsd-reallocarray.c"
+    }
+  ]
+}

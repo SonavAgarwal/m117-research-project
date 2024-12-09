@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "59645d5417eaf1f79edfc2b800c94638965f4e38",
+  "tree": "2377c537550a7a7c490d7adb887c79d87d2feb87",
+  "parents": [
+    "baadb5f0f3715af3709ed21ad7c21428d7ae125d"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Thu Mar 05 15:22:52 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sun May 17 21:09:46 2020 +0000"
+  },
+  "message": "Cherry-pick \"Refactor Regexp.prototype\"\n\nOriginal change: https://chromium-review.googlesource.com/c/v8/v8/+/1547660\nAdds unit test.\n\nBug: 147664838\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n      /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\nMerged-In: I6b8f8f2eff548cab5bbc69f7ba981381043227da\nChange-Id: I6b8f8f2eff548cab5bbc69f7ba981381043227da\n(cherry picked from commit 780b5e342028c8c7964145483ac73eca941ed464)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d1d8b7202b08dcbb99c88cf006784325c6c76f5a",
+      "new_mode": 33188,
+      "new_path": "test/js-unittest/b_147664838.js"
+    },
+    {
+      "type": "modify",
+      "old_id": "3f6d20f5f12faa5404816fe393edd45082eff72d",
+      "old_mode": 33188,
+      "old_path": "test/proxy_resolver_v8_unittest.cc",
+      "new_id": "8469cab415d5cd804fa956528165740c632cbfe0",
+      "new_mode": 33188,
+      "new_path": "test/proxy_resolver_v8_unittest.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "500a57ae5584dc604c18bb06472a89f602ff5843",
+      "old_mode": 33188,
+      "old_path": "test/proxy_test_script.h",
+      "new_id": "2a86491f5af0cc79b569624c0afa26ee4339ad9a",
+      "new_mode": 33188,
+      "new_path": "test/proxy_test_script.h"
+    }
+  ]
+}

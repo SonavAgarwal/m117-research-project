@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c22e479e335628ce8766cfbf06e2ba17e8f9a1bb",
+  "tree": "5f59b4b699fb2555465172167cae39ca84c66784",
+  "parents": [
+    "231e2be621c3b5823f3f8bed6c10785df1b4a476"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@linux.intel.com",
+    "time": "Wed Apr 30 14:03:25 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86-32, espfix: Remove filter for espfix32 due to race\n\ncommit 246f2d2ee1d715e1077fc47d61c394569c8ee692 upstream.\n\nIt is not safe to use LAR to filter when to go down the espfix path,\nbecause the LDT is per-process (rather than per-thread) and another\nthread might change the descriptors behind our back.  Fortunately it\nis always *safe* (if a bit slow) to go down the espfix path, and a\n32-bit LDT stack segment is extremely rare.\n\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nLink: http://lkml.kernel.org/r/1398816946-3351-1-git-send-email-hpa@linux.intel.com\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8f3e2dec1df32aa2bafa5cfbd1dbd0ce35e7cdf2",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_32.S",
+      "new_id": "41baa1f632b613587c14701b1a101b86407dc9e0",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_32.S"
+    }
+  ]
+}

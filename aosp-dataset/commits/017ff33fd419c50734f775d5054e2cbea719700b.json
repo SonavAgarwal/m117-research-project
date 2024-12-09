@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "017ff33fd419c50734f775d5054e2cbea719700b",
+  "tree": "c01413e1269d4d8df3a8937b3c8ba856d6ba598c",
+  "parents": [
+    "c9909e5a980f941a5b72477755e09fb4dc57c478"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Jun 01 10:48:25 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:17:14 2018 +0000"
+  },
+  "message": "Fix possible out of bounds read\n\nBug: 78656554\nTest: manual\nChange-Id: I677f827483dcc80afac57fd7ef6807e633542252\n(cherry picked from commit 3762e0615273f25b059556d5b5f65102e9c55c35)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e897b67aac0529cb17aec5b54702b643e3ddc3bf",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "a0bfd06bf64d977c56b1730299005b3115b78f29",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

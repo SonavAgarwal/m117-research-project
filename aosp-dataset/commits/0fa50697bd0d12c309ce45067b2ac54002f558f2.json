@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0fa50697bd0d12c309ce45067b2ac54002f558f2",
+  "tree": "a606755db13d41d3edfa458a106cdf09437fb9ff",
+  "parents": [
+    "23137c5e05cf6d87355af024e6494cf97a610beb"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Jan 08 15:20:51 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:14 2019 +0000"
+  },
+  "message": "Prevent Out of bounds write in rw_t3t_handle_get_sc_poll_rsp()\n\nTest: Read T3T Tag\nBug: 120499324\nChange-Id: I5f76f207d16ee744ec9be06e94034adf01727ac8\n(cherry picked from commit a9bf25ee60d821f301b91e21d7257315df554211)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b911f3b2f63947b4057c5ddf4e87e0ba38848007",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t3t.cc",
+      "new_id": "67526db428f927c7b6ad396ad50b30804e275abf",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t3t.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dc057e52f571ca88f037a4501bf666c9eeffde23",
+  "tree": "47dfe5ce62ad962439f2cd994e02f11ee5492639",
+  "parents": [
+    "f76b5eb5cbaa7d72c979b6c1f5009ecb4cbf49c0"
+  ],
+  "author": {
+    "name": "Chavi Weingarten",
+    "email": "chaviw@google.com",
+    "time": "Wed Dec 09 00:36:11 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:00 2020 +0000"
+  },
+  "message": "resolve merge conflicts of cae2ee036040fc0dce9fc82af9bf8d85240d566b to rvc-dev\n\nChange-Id: I906ae5bed4b340817a52f7968276dea035f2e65a\nFixes: 169256435\nMerged-In: I4d87e90793a88a646aaa1ae5806f118f1ae51e30\n(cherry picked from commit 60f3ab275ef3ddf3afcdfdce4eb09b59024fec51)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c9e595abd16734710977ad1fea666cef24bceb00",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "79f99cc5d50f95ae3f9c13030c0f7fb12abb054b",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    }
+  ]
+}

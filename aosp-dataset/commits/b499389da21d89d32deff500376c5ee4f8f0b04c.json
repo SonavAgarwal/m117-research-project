@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b499389da21d89d32deff500376c5ee4f8f0b04c",
+  "tree": "74d7734c4605ee9ecde267b12af1b7bfd24b8815",
+  "parents": [
+    "e685ca5e441867515363f6f9c1be5f609b67e975"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri Mar 11 18:33:51 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:37 2016 -0700"
+  },
+  "message": "Avoid free-before-initialize vulnerability in heap\n\nBug: 27211885\nChange-Id: Ib9c93bd9ffdde2a5f8d31a86f06e267dc9c152db\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d13b23b7e946921ceee0202c25cb42da64373344",
+      "old_mode": 33188,
+      "old_path": "libFLAC/stream_decoder.c",
+      "new_id": "7dff737daccb87ef1689a34e649b9f759608395b",
+      "new_mode": 33188,
+      "new_path": "libFLAC/stream_decoder.c"
+    }
+  ]
+}

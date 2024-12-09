@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e18b8b2dbb553caf3f8f14f40f6b8f7da50b6eff",
+  "tree": "8745dd8844896b56bbde4adcd4b7fe6789b2ebdb",
+  "parents": [
+    "f4b8e278dd500bc17587fa3be9cdda545ce7488e"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 07 11:32:31 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 02:21:53 2020 +0000"
+  },
+  "message": "Use FLAG_IMMUTABLE for InboundSmsHandler\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 155094269\nChange-Id: Idc684438d2cd622adee9a1c4d1801e308ee5ead7\nMerged-In: Idc684438d2cd622adee9a1c4d1801e308ee5ead7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "992a4543d3bcd74cc48108ecee573dbaf6ad7023",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/InboundSmsHandler.java",
+      "new_id": "f784a01358f80c2465ea349b6921ec554b00ef38",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/InboundSmsHandler.java"
+    }
+  ]
+}

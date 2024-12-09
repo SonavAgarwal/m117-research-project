@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "db04b29f0f6a96b19850fc17e23818855f800d61",
+  "tree": "ac439d3f1a6b73075edccc608129131362cf0d15",
+  "parents": [
+    "261d53622e72b53ff416ca60328feb6c120c413d"
+  ],
+  "author": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Thu Jun 18 18:12:02 2020 -0700"
+  },
+  "committer": {
+    "name": "David Su",
+    "email": "dysu@google.com",
+    "time": "Tue Jun 23 03:06:15 2020 +0000"
+  },
+  "message": "CONFIGURED_NETWORKS_CHANGED_ACTION: stop sending WifiConfiguration and require ACCESS_WIFI_STATE permission\n\nWifiConfiguration contains sensitive location\ninformation. Stop sending this information in the\nbroadcast intent. Also require receivers to have\nthe ACCESS_WIFI_STATE permission.\n\nBug: 158874479\nTest: Add logs locally in Settings to verify broadcast is received.\nTest: Verify Settings still works correctly.\nTest: atest FrameworksWifiTests\nChange-Id: I657063f68701d57cfeb3765dfbab25ba50ef7b97\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b88f71652ae6d66447a85fdb533d01b287d6452",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiConfigManager.java",
+      "new_id": "99de9277e80ca80fba2ce6b6d6c2a7c4dc1ce1b2",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiConfigManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "dcd0fa8c57e7f5b8f92a042c0cdff0606bbe3154",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java",
+      "new_id": "815b3ad0bf9a65e9cd49812d2eb50042b1a37605",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java"
+    }
+  ]
+}

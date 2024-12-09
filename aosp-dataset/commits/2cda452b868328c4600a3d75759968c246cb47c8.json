@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "2cda452b868328c4600a3d75759968c246cb47c8",
+  "tree": "292ebd3e7bee6ce56048cb05cbea9f4d66f29cf0",
+  "parents": [
+    "2348a0f768443e7a7b14fac342316c9927be66f0"
+  ],
+  "author": {
+    "name": "xshu",
+    "email": "xshu@google.com",
+    "time": "Tue Jan 14 12:12:22 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 16 01:57:50 2020 +0000"
+  },
+  "message": "fix soft reboot caused by KeyStore exception\n\nThe Mac handle obtained from AndroidKeyStore is sometimes invalidated by\nthe AndroidKeyStore based on some LRU technique.\n\nThis change make sure that we always get a valid handle.\nAnd adds exception handling to make sure a crash will not happen for the\nsame reason again.\n\nIf KeyStore continuously fails to generate MAC address, we will use\nlocally generated MAC as it is the next best option.\n\nBug: 146203882\nTest: atest FrameworksWifiTests\n\nMerged-In: I8a3b810ba95898a96d81fe57979db4787e1a46c4\nChange-Id: I8a3b810ba95898a96d81fe57979db4787e1a46c4\n(cherry-picked from e299359a6e6e9e13217862f7f66627eccbff46ce)\n(cherry picked from commit 0b3eca3c05190e5824638f3da25b8b3167dc9d60)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "effa931a57d6fbb00fd11ba6e826ebeaf0548749",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/MacAddressUtil.java",
+      "new_id": "4739b6141a9ba20418ae47cddec76409341b6ecb",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/MacAddressUtil.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "80b583febcd3aa5dd0eb886821482e1850741535",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/WifiConfigManager.java",
+      "new_id": "c617b9e1fb6e35aba40bd6a1384c83a1a5a53f95",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/WifiConfigManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "253310840236c8641c4efb7e9dfb5b786ca6a4f4",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/MacAddressUtilTest.java",
+      "new_id": "7e598db311acac9f605ff304c3cd9c15e652d0ab",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/MacAddressUtilTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "23eea328fce7ebc31ff3f994209be5926e900da0",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java",
+      "new_id": "6fa1868cb0a7726d2927ca9d50ec9f3df5530992",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/WifiConfigManagerTest.java"
+    }
+  ]
+}

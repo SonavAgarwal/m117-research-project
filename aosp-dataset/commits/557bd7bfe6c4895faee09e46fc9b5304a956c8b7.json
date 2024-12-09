@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "557bd7bfe6c4895faee09e46fc9b5304a956c8b7",
+  "tree": "42b1303f9bad1af4aaefea3986b32579b9038058",
+  "parents": [
+    "56bc26ea812d0525372b8eea9f16554ef8e861db"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue Oct 18 17:13:09 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:17 2016 -0800"
+  },
+  "message": "Visualizer: Check capture size and latency parameters\n\nBug: 31781965\nChange-Id: I1c439a0d0f6aa0057b3c651499f28426e1e1f5e4\n(cherry picked from commit 9a2732ba0a8d609ab040d2c1ddee28577ead9772)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "21fddb1db580af1ea46789dca0bf45089d75845d",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/visualizer/EffectVisualizer.cpp",
+      "new_id": "b7d27d6cc1d59038633be5306857845d1459c5ba",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/visualizer/EffectVisualizer.cpp"
+    }
+  ]
+}

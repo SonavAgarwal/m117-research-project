@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "800a66dc43292ab6acef3ec4e0cdca5d6bea532e",
+  "tree": "477758bc000b4a179c5ea32e70113f5b1facdeed",
+  "parents": [
+    "fa329dfa35d4d555eb7f67b5747308d0d5936943"
+  ],
+  "author": {
+    "name": "Ivan Chiang",
+    "email": "chiangi@google.com",
+    "time": "Tue Mar 23 16:04:23 2021 +0800"
+  },
+  "committer": {
+    "name": "Corina Grigoras",
+    "email": "corinac@google.com",
+    "time": "Tue Mar 30 14:58:12 2021 +0000"
+  },
+  "message": "Update the style to the message of PermissionDialog\n\nTest: manual, screenshot\nBug: 183006767\nBug: 174495520\nChange-Id: I6741d55d9f62f227415c3f1b96294bbd65600bf6\nMerged-In: I6741d55d9f62f227415c3f1b96294bbd65600bf6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d9105779ee5097149e2c472e0486a8b36b9e1a55",
+      "old_mode": 33188,
+      "old_path": "res/values/styles.xml",
+      "new_id": "322ba6669a07965727d1402989ab1159d36f15c8",
+      "new_mode": 33188,
+      "new_path": "res/values/styles.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "700c6331f267bee487ba38c3bcc123310c63ff0d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/media/PermissionActivity.java",
+      "new_id": "1b2d0ad5a94a6245b9807bfe20aae2abae2d5b9a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/media/PermissionActivity.java"
+    }
+  ]
+}

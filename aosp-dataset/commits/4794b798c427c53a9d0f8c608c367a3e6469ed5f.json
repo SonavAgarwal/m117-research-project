@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "4794b798c427c53a9d0f8c608c367a3e6469ed5f",
+  "tree": "2cf14b2381a4de792a6223f437ddcbdcfe679dc6",
+  "parents": [
+    "ce1c1d37678283b198965a65b4f22e69bda04259"
+  ],
+  "author": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Fri Jul 10 10:36:15 2020 +0800"
+  },
+  "committer": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Fri Jul 10 06:11:24 2020 +0000"
+  },
+  "message": "Fix toggle widget can be switched under overlapped view\n\n- ag/11612781 added filterTouchesWhenObscured to toggle widget\n  can\u0027t prevent the click behavior pass through the overlapped view.\n- Due to click events was handled by SwitchPreference instead of the\n  toggle widget.\n- Enable the filterTouchesWhenObscured attribute on all\n  SwitchPreferences in all pages of the special app access.\n\n\nBug: 155288585\nTest: manual test\nHere is the test steps\n  1.Create an overlapped view\u0027s app and launch it to overlap the\n    other apps.\n  2.Launch Settings\n  3.Goto Apps \u0026 notification \u003e Advanced \u003e Special app access\n  4.Click any toggle under Special app access to monitor it can be\n    switched or not. It must be not switched.\nChange-Id: I9c9cf4719153292ed03f55a6eb9d3a308677aee3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "90f1dbd07827d318a86808b884956e67f36cd0ff",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/widget/AppSwitchPreference.java",
+      "new_id": "aeb779f69687b36d39a365b3b7a59fc8008c81a1",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/AppSwitchPreference.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c5e0217dd0f844fe832a05b14332d2fb01c5ffa1",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/widget/FilterTouchesRestrictedSwitchPreference.java",
+      "new_id": "f4c3a14389acbf71f719972d01e68c3fa7a78b41",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesRestrictedSwitchPreference.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a4e3c6e76daeacaf8f0cd0cdfb01035072bb9e8e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/widget/FilterTouchesSwitchPreference.java",
+      "new_id": "1b4d6817bfba8a4cdc61c988037b748cba9844f4",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesSwitchPreference.java"
+    }
+  ]
+}

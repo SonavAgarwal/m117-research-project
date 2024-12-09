@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c48ef757cc50906e8726a3bebc3b60716292cdba",
+  "tree": "2b2c7589065bf2dc4bd9a4efe765f8ea91e455a9",
+  "parents": [
+    "c894aa36be535886a8e5ff02cdbcd07dd24618f6"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Fri Aug 19 02:07:33 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:25 2016 -0700"
+  },
+  "message": "Fix build breakage caused by commit\n940829f69b52d6038db66a9c727534636ecc456d.\n\nChange-Id: I4776db4a26fb3c31bb994d48788373fe569c812a\n(cherry picked from commit baa9146401e28c5acf54dea21ddd197f0d3a8fcd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e1cfc06e62f60ce9e7a8d495438a80fa44bf5912",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp",
+      "new_id": "1dd631ad31f6a32d7ab3693e25d7acd8db041214",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp"
+    }
+  ]
+}

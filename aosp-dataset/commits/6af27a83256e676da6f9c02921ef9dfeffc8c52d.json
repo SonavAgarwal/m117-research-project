@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6af27a83256e676da6f9c02921ef9dfeffc8c52d",
+  "tree": "e7b98fdf5cbc82ca12aab290960d1f8a700f417e",
+  "parents": [
+    "0683fe791e810d576584fab816f99eac51f9cff7"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Mon Jun 03 17:24:51 2019 -0700"
+  },
+  "committer": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Mon Jun 03 17:26:20 2019 -0700"
+  },
+  "message": "Free mObjects if no objects left to realloc on resize\n\nFixes: 134168436\nTest: atest CtsOsTestCases:ParcelTest#testObjectDoubleFree\nChange-Id: I82e7e8c7b4206fb45b832a71d174df45edb62710\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5427ff8e4c852d088c7e8c5905c5021893e21d4e",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "d5cdf07444e8a573cd988f549ffcb4831e2f9dc9",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

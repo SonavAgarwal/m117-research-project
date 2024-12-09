@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "13179a8e75fee98740b5ce728752aa7294b3e32d",
+  "tree": "c54e08e27c8479d14df8296dd34f8e3a6d064307",
+  "parents": [
+    "a4c04512a587375d73713434d43b8096f0d04bd4"
+  ],
+  "author": {
+    "name": "David Benjamin",
+    "email": "davidben@google.com",
+    "time": "Thu Jun 16 14:58:36 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:26 2017 -0700"
+  },
+  "message": "Always use Fermat\u0027s Little Theorem in ecdsa_sign_setup.\n\nThe case where ec_group_get_mont_data is NULL is only for arbitrary groups\nwhich we now require to be prime order. BN_mod_exp_mont is fine with a NULL\nBN_MONT_CTX. It will just compute it. Saves a bit of special-casing.\n\nAlso don\u0027t mark p-2 as BN_FLG_CONSTTIME as the exponent is public anyway.\n\n(cherry picked from commit 8cf79af7d1497c07bd684764b96c9659e7b32ae1)\n\nBug: 33752052\nChange-Id: Iedaf2f40028ef703078262ae5e971cc715d49866\n(cherry picked from commit 5e7ef724aead3c33184f34ac7c684e9c2a859b87)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "827cc570390c131f7f16fd083f51dd78d77925a9",
+      "old_mode": 33188,
+      "old_path": "src/crypto/ec/ec.c",
+      "new_id": "a7097f212441b881522865852aac25fe61269ab9",
+      "new_mode": 33188,
+      "new_path": "src/crypto/ec/ec.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "16760ed6bee3e298a7c78b031adb663c1edb4d36",
+      "old_mode": 33188,
+      "old_path": "src/crypto/ecdsa/ecdsa.c",
+      "new_id": "2a655b67db72eee5f6648fb77b488b8d3d3d60fb",
+      "new_mode": 33188,
+      "new_path": "src/crypto/ecdsa/ecdsa.c"
+    }
+  ]
+}

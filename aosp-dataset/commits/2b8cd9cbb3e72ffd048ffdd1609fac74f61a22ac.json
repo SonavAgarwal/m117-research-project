@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2b8cd9cbb3e72ffd048ffdd1609fac74f61a22ac",
+  "tree": "9bc6b5e507d74c5a7fc6ea588520b209935aa22e",
+  "parents": [
+    "a8f90d57f5b3ad4ef7194501aa20f0a0bd903e8f"
+  ],
+  "author": {
+    "name": "Flanker",
+    "email": "i@flanker017.me",
+    "time": "Fri Sep 11 19:05:47 2015 +0800"
+  },
+  "committer": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Fri Sep 25 01:47:10 2015 +0000"
+  },
+  "message": "stagefright: fix AMessage::FromParcel\n\nAdd check for incoming mNumItems. Also add check readCString return\nvalue.\n\nFix style \u0026 add log.\n\nBug: 24123723\n\nChange-Id: If41a5312c27d868f481893eef56019b6807c39b7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "795e8a69cc4af928d0e3345d7ca1a3250b536295",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/foundation/AMessage.cpp",
+      "new_id": "26bea2c95e862baeba8abb5a26e8ae3110e91484",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/foundation/AMessage.cpp"
+    }
+  ]
+}

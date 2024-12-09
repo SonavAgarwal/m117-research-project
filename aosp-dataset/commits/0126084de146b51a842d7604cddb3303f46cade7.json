@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0126084de146b51a842d7604cddb3303f46cade7",
+  "tree": "706e9e6239a072b3387b2cb565f5b3785629d9a2",
+  "parents": [
+    "3555e5d07d0ec1d7fc1ed58b0fc729283884d6fe"
+  ],
+  "author": {
+    "name": "Peter Wang",
+    "email": "tpwang@google.com",
+    "time": "Sun May 10 01:10:13 2020 -0700"
+  },
+  "committer": {
+    "name": "Peter Wang",
+    "email": "tpwang@google.com",
+    "time": "Wed May 13 21:27:56 2020 +0000"
+  },
+  "message": "Restrict access to the resolution PendingIntent created by\nEuiccController to EuiccResolutionUiDispatcherActivity\n\nBug: 156097472\nBug: 155094269\nFix: 156097472\nTest: Local, with jpd@\u0027s PoC app\nChange-Id: I76a9eb55d8321ea695594693580be468522e4de8\nMerged-In: I76a9eb55d8321ea695594693580be468522e4de8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0d58d802b9ad52b7c30653a246ca73a0141a3dd6",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/euicc/EuiccController.java",
+      "new_id": "cf16bfb9f47129858ec4219bf2f8f137ac4dd217",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/euicc/EuiccController.java"
+    }
+  ]
+}

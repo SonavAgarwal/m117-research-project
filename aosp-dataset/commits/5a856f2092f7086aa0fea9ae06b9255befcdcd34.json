@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a856f2092f7086aa0fea9ae06b9255befcdcd34",
+  "tree": "c4451c5fba8bfae83cacb2f8d34932ffe25543f8",
+  "parents": [
+    "79b73470e265c2c1cf9eafc935fadaf5eaa7c716"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Feb 08 17:52:25 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 15:07:03 2016 -0800"
+  },
+  "message": "Fix info leak vulnerability of IDrm\n\nbug: 26323455\nChange-Id: I25bb30d3666ab38d5150496375ed2f55ecb23ba8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b1ad0c5ad6fa2ec4e9670e72427850adc4bf95ef",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IDrm.cpp",
+      "new_id": "7c709cdf351cb06963a9d705b9a7fd221cf29b53",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IDrm.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "931418b16c7197ca2df34c2a5609e49791125abe",
+  "tree": "ac224f88b4e396cf812f77201b51af32623b14aa",
+  "parents": [
+    "412a7e50a9e9b88bee3f4154e49df7d975377194"
+  ],
+  "author": {
+    "name": "Bjoern Johansson",
+    "email": "bjoernj@google.com",
+    "time": "Thu Jul 19 12:30:55 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:39 2018 +0000"
+  },
+  "message": "Set optlen for UDP-encap check in XfrmController\n\nWhen setting the socket owner for an encap socket XfrmController will\nfirst attempt to verify that the socket has the UDP-encap socket option\nset. When doing so it would pass in an uninitialized optlen parameter\nwhich could cause the call to not modify the option value if the optlen\nhappened to be too short. So for example if the stack happened to\ncontain a zero where optlen was located the check would fail and the\nsocket owner would not be changed.\n\nFix this by setting optlen to the size of the option value parameter.\n\nTest: run cts -m CtsNetTestCases\nBUG: 111650288\nChange-Id: I57b6e9dba09c1acda71e3ec2084652e961667bd9\n(cherry picked from commit fc42a105147310bd680952d4b71fe32974bd8506)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b9a5a415df3586d454072b4ffce8d3bcbc67630a",
+      "old_mode": 33188,
+      "old_path": "server/XfrmController.cpp",
+      "new_id": "6f7bf2f2868870b4d3ce5f556c9a010e2bd51c9e",
+      "new_mode": 33188,
+      "new_path": "server/XfrmController.cpp"
+    }
+  ]
+}

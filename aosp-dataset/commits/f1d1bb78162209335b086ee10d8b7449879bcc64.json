@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "f1d1bb78162209335b086ee10d8b7449879bcc64",
+  "tree": "4f1a4b40d76233b2b114da20ba053fbef365df28",
+  "parents": [
+    "42be5cfa1029ff3e3f451289b3368631ed77f4fb"
+  ],
+  "author": {
+    "name": "Hugh Chen",
+    "email": "hughchen@google.com",
+    "time": "Fri Mar 12 10:40:20 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:37 2021 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Fix bluetooth settings will broadcast to anywhere when some cases\n\nBluetoothPermissionActivity and DevicePickerFragment will send\nbroadcast to return the result to calling apps. As this broadcast\nintent is from Settings with uid 1000, it will be sent to any\nprotected BroadcastReceivers in the device. It can make an attacker\nsend broadcast to protected BroadcastReceivers like factory reset intent\n(android/com.android.server.MasterClearReceiver) via\nBluetoothPermissionActivity or DevicePickerFragment.\n\nThis CL will not allow to set package name and class name to avoid\nthe attacker.\n\nBug: 179386960\nBug: 179386068\nTest: make -j42 RunSettingsRoboTests and use test apk to manually test\nto verify factory reset not started and no system UI notification.\n\nChange-Id: Id27a78091ab578077853b8fbb97a4422cff0a158\n(cherry picked from commit 8adedc62496cf8cf6ecfc6ccf23b0b248081d7d4)\n(cherry picked from commit e21d06f6eeb20cdd0c6e2a995f27e942225fb807)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e40e30dd0a0230f1bc73804a8775ec6c68c242ca",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPermissionActivity.java",
+      "new_id": "0cca4a4ec5187bfd0b1d5c947e75507c3bb0e1a0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPermissionActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "177bd8935582c7ade2fcf5fa9dbf5e377108f70c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPermissionRequest.java",
+      "new_id": "de957a7eb91117e52892505bc192341d2966accd",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPermissionRequest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ab8eea5db6856247b17fecaab6dcfd306be8a166",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/DevicePickerFragment.java",
+      "new_id": "f60183b1c4f990d42abb1c1bf37ef332e49408bd",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/DevicePickerFragment.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "35b8f1f00a11a07bdce7852c8795edd49eab2904",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/bluetooth/BluetoothPermissionActivityTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "feaf68314205bc556466a6d2e0b48aba07f14cc8",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java",
+      "new_id": "d9e054d86a6f9f3e54c67b57bb3b71fe28337153",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java"
+    }
+  ]
+}

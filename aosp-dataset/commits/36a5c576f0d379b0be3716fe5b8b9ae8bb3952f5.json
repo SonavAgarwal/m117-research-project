@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "36a5c576f0d379b0be3716fe5b8b9ae8bb3952f5",
+  "tree": "28559b9e2239165135dc9c66d7ef748f91a3c646",
+  "parents": [
+    "07d6f1fe094b6dbde854fb82ada06e85d7a97ecd"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Tue Jul 16 16:50:42 2019 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:39 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Strict SQLiteQueryBuilder needs to be stricter.\n\nMalicious callers can leak side-channel information by using\nsubqueries in any untrusted inputs where SQLite allows \"expr\" values.\n\nThis change offers setStrictGrammar() to prevent this by outright\nblocking subqueries in WHERE and HAVING clauses, and by requiring\nthat GROUP BY and ORDER BY clauses be composed only of valid columns.\n\nThis change also offers setStrictColumns() to require that all\nuntrusted column names are valid, such as those in ContentValues.\n\nRelaxes to always allow aggregation operators on returned columns,\nsince untrusted callers can always calculate these manually.\n\nBug: 135270103, 135269143\nTest: atest android.database.sqlite.cts.SQLiteQueryBuilderTest\nTest: atest FrameworksCoreTests:android.database.sqlite.SQLiteTokenizerTest\nChange-Id: I0dacb53170ce573a2fe103cbff455782bfdb5d41\n(cherry picked from commit 0e66ea6f3221aa8ccbb78ce38fbcaa67d8ea94f9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3523e956656ac65eba458e92a4446a44614e3796",
+      "old_mode": 33188,
+      "old_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java",
+      "new_id": "58901798b5f79928298c83f9f884cd1088681ad5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/database/sqlite/SQLiteQueryBuilder.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7e7c3fb976c703804f953e9b5fea409e7a7aa4b1",
+      "new_mode": 33188,
+      "new_path": "core/java/android/database/sqlite/SQLiteTokenizer.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a9d148289262bb47680491a3b2426719d5bbe023",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/database/sqlite/SQLiteTokenizerTest.java"
+    }
+  ]
+}

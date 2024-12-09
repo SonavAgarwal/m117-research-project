@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bf7a67c33c0f044abeef3b9746f434b7f3295bb1",
+  "tree": "4b998ed0cdccfdaa4c12708047936482da21aaea",
+  "parents": [
+    "2b4667baa5a2badbdfec1794156ee17d4afef37c"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Tue Jul 24 14:13:13 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:26 2018 +0000"
+  },
+  "message": "Fix information disclosure in mediadrmserver\n\nTest:POC provided in bug\nBug:79218474\nChange-Id: Iba12c07a5e615f8ed234b01ac53e3559ba9ac12e\n(cherry picked from commit c1bf68a8d1321d7cdf7da6933f0b89b171d251c6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "73ecda15a74095d4ad20d25b346f6cbcc20e9118",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/ICrypto.cpp",
+      "new_id": "a2594aa2d817465a27e2ae54d33c9439c797e913",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/ICrypto.cpp"
+    }
+  ]
+}

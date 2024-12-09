@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "45a53e6cb8d3276126cfe0e717ad7ed486d39b24",
+  "tree": "9e9ab51b0bc9122ad3b13c155eabf4eb9b20ee6b",
+  "parents": [
+    "b308e9eca4eb1bb6e6ad40e4180b106f03c6bb44"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Mon Aug 19 16:16:20 2019 -0700"
+  },
+  "committer": {
+    "name": "Chris Tate",
+    "email": "ctate@android.com",
+    "time": "Tue Mar 10 22:32:13 2020 +0000"
+  },
+  "message": "DO NOT MERGE - Kill apps outright for API contract violations\n\n...rather than relying on in-app code to perform the shutdown.\n\nBug: 128649910\nBug: 140108616\nTest: manual\nTest: atest OsHostTests#testForegroundServiceBadNotification\nChange-Id: I94d9de50bb03c33666471e3dbd9c721e9278f7cb\nMerged-In: I94d9de50bb03c33666471e3dbd9c721e9278f7cb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "48ca71690a1b077bdc5869084abfe028f00faded",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/IActivityManager.aidl",
+      "new_id": "c0c63555b10a95e3452173c648bf2728821bccc4",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/IActivityManager.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "7bc2e6d647be79c568faead4d19ab0927e6682de",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActiveServices.java",
+      "new_id": "5d72828964c7344a588deb59ada2bb00455f954e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActiveServices.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9d13c2860932dba5f6643662cf702b43cd572e7",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "67bb1c0268d49958f74cee47e73e125467a22080",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "26b3f435dea1f86293ceca97446520663851c0c6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerShellCommand.java",
+      "new_id": "9f3a7e93a4333550c88601445ed6e84efec61357",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerShellCommand.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a4c695067139f128f3f4918574fe0258019132ea",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/AppErrors.java",
+      "new_id": "bbd2d34e92a651159561ab1f4aaab3cf8e9191d6",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/AppErrors.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "dee8e3b285a77a2c1d7947939c4508e0c15c60ae",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ServiceRecord.java",
+      "new_id": "c408695bcb66bcd68df7e8e831d9a50f6c61d23d",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ServiceRecord.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "09a79433cb5c7d920ecd5dd6d4fdb65957a0864f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "47ed7f54e1b02ad2f4ada1586d0d26b5860e38c9",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    }
+  ]
+}

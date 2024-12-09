@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "63889889c06e95529432177c457d6cdb4fcecac8",
+  "tree": "a496819d1bac879e84302a73b8e91a35414fd6fc",
+  "parents": [
+    "64212a424b4819efb3b6c66e14f6b2b1b1023d4f"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Feb 04 17:23:58 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:51:34 2020 +0000"
+  },
+  "message": "BnCrypto: fix use-before-init in CREATE_PLUGIN\n\nBug: 144767096\nTest: poc_ICrypto_283\nMerged-In: Id67dc9e793ee886e4cc49370d800c7f3580df313\nMerged-In: I81ff7cde5e1693f05c90380e879f74d0c4bce5f1\nChange-Id: If268553440b8a0cbbe011b5396974fd864a7d083\n(cherry picked from commit 4bbfb6d8815002fc79b26aebba5f3ad2226c468e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a2594aa2d817465a27e2ae54d33c9439c797e913",
+      "old_mode": 33188,
+      "old_path": "drm/libmediadrm/ICrypto.cpp",
+      "new_id": "8d8d0880b21c500ae6c88872f211978c2f1f256c",
+      "new_mode": 33188,
+      "new_path": "drm/libmediadrm/ICrypto.cpp"
+    }
+  ]
+}

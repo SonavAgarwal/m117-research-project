@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cc5683451dd9be1491b54f215e9934d49f11cf70",
+  "tree": "f5c0f9381ae9b03908798a66a2d0bb060650bf7c",
+  "parents": [
+    "2210ff5600d3f965352a3074adff8fedddcf347e"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon May 15 18:51:18 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:07:19 2017 +0000"
+  },
+  "message": "Fix heap buffer overflow while searching for valid PPS\n\nBug: 37094889\nTest: Tested POC on ASAN build\nChange-Id: Id4e52cd10a4d5eac015efe4b752162dc39cc30b8\n(cherry picked from commit 520465122804c4022edd0c8c3c54a93fb4cba613)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a68db255c1433a35424149ca12510c9b0ff54413",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice_header.c",
+      "new_id": "e1b50b78e17aa466b2254a0338cdbd6fa61f8541",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice_header.c"
+    }
+  ]
+}

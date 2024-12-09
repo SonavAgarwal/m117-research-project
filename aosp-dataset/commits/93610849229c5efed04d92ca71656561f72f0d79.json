@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "93610849229c5efed04d92ca71656561f72f0d79",
+  "tree": "26fcc10825d32b84287dff4c0ff0bff1765c5cb7",
+  "parents": [
+    "fee06d31284d9d6e1ecb7f1a672e76757131892c"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Mon Jan 07 17:36:52 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:07 2019 +0000"
+  },
+  "message": "Prevent OOB read in rw_t3t_update_block()\n\nTest: NFC enable/disable\nBug: 120506143\nBug: 120497437\nBug: 120497583\nChange-Id: I839333505a253788e43a48a61eb7a646328c7fec\n(cherry picked from commit 3652c138153fe5ceba3520495b384c6ae14a9286)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e27890030eba273a44e28f029678c389b2ae4754",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t3t.cc",
+      "new_id": "45321e503ef5db960f6e46306c061a6e9a68bad7",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t3t.cc"
+    }
+  ]
+}

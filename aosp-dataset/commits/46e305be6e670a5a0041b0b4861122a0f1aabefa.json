@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "46e305be6e670a5a0041b0b4861122a0f1aabefa",
+  "tree": "969c722ec35c61ae27f4f5c9554a3d3b702688b6",
+  "parents": [
+    "f22c2a0f0f9e030c240468d9d18b9297f001bcf0"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 11 17:32:45 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:20 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: vdec: add safety checks for freeing buffers\n\nAllow only up to 64 buffers on input/output port (since the\nallocation bitmap is only 64-wide).\n\nDo not allow changing theactual buffer count while still\nholding allocation (Client can technically negotiate\nbuffer count on a free/disabled port)\nAdd safety checks to free only as many buffers were allocated.\n\nFixes: Security Vulnerability - Heap Overflow and Possible Local\nPrivilege Escalation in MediaServer (libOmxVdec problem #3)\nBug: 27532282 27661749\n\nChange-Id: I06dd680d43feaef3efdc87311e8a6703e234b523\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "120a11dddb900f3a1b84b070f2b3397577f663a7",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/inc/omx_vdec.h",
+      "new_id": "3d8ec9edc87f2028610e53cd2a94de359dcec18f",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/inc/omx_vdec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "977aef2b27f2be7cd3bcfe42cbb024e68955164f",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp",
+      "new_id": "95ffb98fdbbb283b320cc6eb5c2bd70550343c1c",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "289a49814aef7f0f0bb98aac8246080abdfeac01",
+  "tree": "56cf706e7b87f96e920615d391d756cfe95d9b47",
+  "parents": [
+    "c3c69bed0f76178c640dd8e726967b9cdea5dece"
+  ],
+  "author": {
+    "name": "Jack He",
+    "email": "siyuanh@google.com",
+    "time": "Fri Jun 01 14:00:42 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:29 2018 +0000"
+  },
+  "message": "BNEP: Fix OOB access in bnep_data_ind\n\n* Stop reading the L2CAP packet if packet length is 0\n* Process the buffer for BNEP_EXTENSION_CONTROL packet before advancing\n  the buffer pointer by length of payload\n* Reject BNEP_EXTENSION_CONTROL packet when the payload size is zero\n* Move error logging to more appropriate locations at where the OOB access\n  is most likely triggered\n\nBug: 78286118\nBug: 79164722\nTest: Send zero length L2CAP packet to BNEP, send invalid\n      BNEP_EXTENSION_CONTROL packet\nMerged-In: I7e18632b8faab1b6aaca1bff1b7f55d69962729e\nChange-Id: I7e18632b8faab1b6aaca1bff1b7f55d69962729e\n(cherry picked from commit 3c799a6e25abdf6bacb660ff7a06338836cc7356)\n(cherry picked from commit 0416340ffa61337dbaa2f6602ef85a1c32563ec2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "463fca33b7bacc5874b654a9d9bf8e8479e36941",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "d60fb55fabd293b22a25bd4374311302171b9cd1",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    }
+  ]
+}

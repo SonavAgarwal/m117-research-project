@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "37c88107679d36c419572732b4af6e18bb2f7dce",
+  "tree": "dcb02a04f755b49d2e86f1a8f0185af16c2ced9d",
+  "parents": [
+    "158910b4aaf2a72babdb4bf4176377c3de50b017"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Thu Mar 17 17:09:24 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:41 2016 -0700"
+  },
+  "message": "Add guest mode functionality (2/3)\n\nAdd a flag to enable() to start Bluetooth in restricted\nmode. In restricted mode, all devices that are paired during\nrestricted mode are deleted upon leaving restricted mode.\nRight now restricted mode is only entered while a guest\nuser is active.\n\nBug: 27410683\nChange-Id: I8f23d28ef0aa3a8df13d469c73005c8e1b894d19\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "62687d38d6162486e975adebd8b4951296e5e923",
+      "old_mode": 33188,
+      "old_path": "btif/include/btif_api.h",
+      "new_id": "6bb1d39784f04ce66416b6252d71418c9324234c",
+      "new_mode": 33188,
+      "new_path": "btif/include/btif_api.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7763d3a3d83ad1ca212187b0f6c41fea67cc70e4",
+      "old_mode": 33188,
+      "old_path": "btif/include/btif_storage.h",
+      "new_id": "26384e1363516fc1c46709ee4f65f0668b407280",
+      "new_mode": 33188,
+      "new_path": "btif/include/btif_storage.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8863f755346887f10c85a3b88feaab0acb6ab281",
+      "old_mode": 33188,
+      "old_path": "btif/src/bluetooth.c",
+      "new_id": "b4d5a62d424617c0dee6010206c732365eed64b9",
+      "new_mode": 33188,
+      "new_path": "btif/src/bluetooth.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad5b60728e8bdb37ae4798d41cb57a381e39dc2b",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_config.c",
+      "new_id": "bae39d20d48edde2c40a364b1c164d9c6684d7ad",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_config.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "687af94d90fa24af3c1a34d8c8ba47cd19494e3d",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_storage.c",
+      "new_id": "83a5c2ea6fb108f5d42e4dfb117f9a1a0220504f",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_storage.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac727d8720b89403467037ca89c4542e9f268056",
+      "old_mode": 33188,
+      "old_path": "test/bluedroidtest/bluedroidtest.c",
+      "new_id": "022738af6917949bfa26108aa7bd425ca618a225",
+      "new_mode": 33188,
+      "new_path": "test/bluedroidtest/bluedroidtest.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "280cfc6768de0b35caf6a3d4ca6ffa9365c95d21",
+      "old_mode": 33188,
+      "old_path": "test/suite/cases/adapter.c",
+      "new_id": "4fcf6b9ad75fdd5b4f97365ab02bd637468d7bc3",
+      "new_mode": 33188,
+      "new_path": "test/suite/cases/adapter.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "24cb862fd2372d0588a02c6e0e7500cc54dbcf7f",
+      "old_mode": 33188,
+      "old_path": "test/suite/main.c",
+      "new_id": "4f4ad1e84fa44c9ee0db5c6a511582512a2a8b32",
+      "new_mode": 33188,
+      "new_path": "test/suite/main.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d0d0cc73919e541b2f95f26cbcc94b80cce86e87",
+      "old_mode": 33188,
+      "old_path": "tools/bdtool/bdtool.c",
+      "new_id": "81c05c4996525392ece0c3d8a096571bfca91ad4",
+      "new_mode": 33188,
+      "new_path": "tools/bdtool/bdtool.c"
+    }
+  ]
+}

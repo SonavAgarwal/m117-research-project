@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4262d8eeee23d169ab0a141f103592f7172d95bc",
+  "tree": "e6d889067e39b9d1ff849f71811b05c6d856054a",
+  "parents": [
+    "604f227d4e2b686609049e00b440754639faab4e"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Wed Jul 12 17:35:09 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Oct 03 10:38:12 2017 -0700"
+  },
+  "message": "Update num_mbs_left When mb_x is Reset.\n\nWhen we reset the mb_x values, the num_mbs_left should also be\nreset accordingly. Added the code for the same in\nimpeg2d_dec_pnb_mb_params. Also, there was nothing to do in p\nframes when the first_mb was set to 1. Added code for setting\nmb_x value and updating the num_mbs left similar to\n\"impeg2d_dec_pnb_mb_params\" function.\n\nBug: 63874456\nTest: run PoC through before/after ASAN build\nChange-Id: I7a0bfc33e22c0e8cb93ff29198f30052f7f96546\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "570f0d2261b7fa76c5600993214f241ce31f0e66",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_pnb_pic.c",
+      "new_id": "a3ae436cd9d6991f66393c9ffbaa3e9ab52ac99b",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_pnb_pic.c"
+    }
+  ]
+}

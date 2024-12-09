@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "25be9ac20db51044e1b09ca67906355e4f328d48",
+  "tree": "d65e01ea915c2f3d008aba395182979a3dc55dec",
+  "parents": [
+    "6ad0c98cb9ae119156b264a7532b1e0cc701e0d8"
+  ],
+  "author": {
+    "name": "mspector@google.com",
+    "email": "mspector@google.com",
+    "time": "Mon Feb 08 10:56:13 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:30 2016 -0800"
+  },
+  "message": "IOMX.cpp uninitialized pointer in BnOMX::onTransact\n\nThis can lead to local code execution in media server.\nFix initializes the pointer and checks the error conditions before\nreturning\n\nBug: 26403627\nChange-Id: I7fa90682060148448dba01d6acbe3471d1ddb500\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ff47de45fc6b143e7ee0dd52828ebf9810a8754",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "5214a9d0ec842c845a3672c34d2c496c4a721fb9",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    }
+  ]
+}

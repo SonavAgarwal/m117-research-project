@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d48f0f145f8f0f4472bc0af668ac9a8bce44ba9b",
+  "tree": "a442399cc72a6f1ba6fe8551daa0cf232d6d4479",
+  "parents": [
+    "51504928746edff6c94a1c498cf99c0a83bedaed"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Wed Apr 01 19:32:25 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:59 2015 -0700"
+  },
+  "message": "Add AUtils::isInRange, and use it to detect malformed MPEG4 nal sizes\n\nBug: 19641538\nChange-Id: I5aae3f100846c125decc61eec7cd6563e3f33777\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d7ecf501a0f553070e789594f86a8bc417e0aab8",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/foundation/AUtils.h",
+      "new_id": "47444c1e96c5f7c07568eb805c62993c0e0cda28",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/foundation/AUtils.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "be3bc4a1e7d2363f19f6a77bbc13f174d62e9d52",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "9689ce425929eda4b1a2cb240cf7a8c20d6b2601",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5c323c1c83e9c05cc6e9729826a2326d6c6f1ee0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/tests/Utils_test.cpp",
+      "new_id": "c1e663c4701696a9a1f15ae2fcbea26dda05f16b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/tests/Utils_test.cpp"
+    }
+  ]
+}

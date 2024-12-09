@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "962fb40991f15be4f688d960aa00073683ebdd20",
+  "tree": "aa08ba29f7df01ceb11b341ae091c59a085fe0ca",
+  "parents": [
+    "4bfc7a5dbba1515975f202d7a545cf7fe42bc021"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Tue Aug 07 15:02:17 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:38 2018 +0000"
+  },
+  "message": "DO NOT MERGE. Persistable Uri grants still require permissions.\n\nWhen FLAG_GRANT_PERSISTABLE_URI_PERMISSION is requested, we still\nneed to check permissions between the source and target packages,\ninstead of shortcutting past them.\n\nThe spirit of the original change is remains intact: if the caller\nrequested FLAG_GRANT_PERSISTABLE_URI_PERMISSION, then we avoid\nreturning \"-1\", which would prevent the grant data structure from\nbeing allocated.\n\nBug: 111934948\nTest: atest android.appsecurity.cts.AppSecurityTests\nChange-Id: Ief0fc922aa09fc3d9bb6a126c2ff5855347cd030\nMerged-In: Ief0fc922aa09fc3d9bb6a126c2ff5855347cd030\n(cherry picked from commit d6a6e7127cc341ca875d9d13cf7a864d9f20b479)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "19b25f0590a1fadd59200e19ea594ebadb9d4395",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "bbd2ca4cb394dc1fe546bf021d719e6c97f6aab0",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

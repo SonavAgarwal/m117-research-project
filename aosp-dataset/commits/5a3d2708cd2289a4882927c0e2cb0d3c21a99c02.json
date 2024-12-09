@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a3d2708cd2289a4882927c0e2cb0d3c21a99c02",
+  "tree": "00aca94d5e2e0fc9e68534261955ac86f2712f85",
+  "parents": [
+    "09ba8fdffd9c8d74fdc6bfb51bcebc27fc43884a"
+  ],
+  "author": {
+    "name": "Etan Cohen",
+    "email": "etancohen@google.com",
+    "time": "Fri Feb 02 08:07:20 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:11:48 2018 +0000"
+  },
+  "message": "[RTT] ParcelableRttResults parcel code fix\n\nParcelableRttResults was unparceled incorrectly.\n\nBug: 70398564\nTest: exploit provided in bug no longer works\nChange-Id: Ifd6de547e9861bbebc399b43d0cc2899a8160813\n(cherry picked from commit e1e5a2409c8bef2481e68d9329f87bb8037afa45)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dc5ba0cc83b5fd72fa01c8af2a736306af5f10d7",
+      "old_mode": 33188,
+      "old_path": "wifi/java/android/net/wifi/RttManager.java",
+      "new_id": "12a8ddf9fcdc8161a81efe48d677393c1749d9c8",
+      "new_mode": 33188,
+      "new_path": "wifi/java/android/net/wifi/RttManager.java"
+    }
+  ]
+}

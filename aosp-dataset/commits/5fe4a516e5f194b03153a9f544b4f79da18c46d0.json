@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5fe4a516e5f194b03153a9f544b4f79da18c46d0",
+  "tree": "602a3b55162496402af9ff52f04bda67c24b02e5",
+  "parents": [
+    "25710af9c3534906c5dac0f0f4cc092e02e16944"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Thu Oct 01 14:50:32 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:41 2020 +0000"
+  },
+  "message": "MediaCodec: propagate usage from original surface to release surface\n\nBug: 169968946\nBug: 160346309\nTest: atest CtsSecurityTestCases:StagefrightTest#testStagefright_bug_65483665\nTest: atest CtsMediaTestCases -- --module-arg CtsMediaTestCases:size:small\nMerged-In: If87053e85a3692ed4b5fbc61d45612d5dbf56eb5\nChange-Id: If87053e85a3692ed4b5fbc61d45612d5dbf56eb5\n(cherry picked from commit 8965b09815d5db24f8e45e492c8a36e3058e6aa5)\n(cherry picked from commit cf1736e2f2f3eab5c1d1d8351cd07ba0d3de5496)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "31c800e88c45916f2f5608852ffeb41636403ae7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MediaCodec.cpp",
+      "new_id": "1d97ce6d8b5ee881a57373578e0c757ed5d5172b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MediaCodec.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b8fee6a6d0a91fb5ddca8f54b0c891e25c1b65ae",
+  "tree": "a7dbd931982b92de4528a85fe03031882a402366",
+  "parents": [
+    "381ccb2b7f2ba42490bafab6aa7a63a8212b396f"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Mon Mar 20 17:00:11 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:57 2017 +0000"
+  },
+  "message": "Decoder: Fix in reference list initialization.\n\nIn the case of error, initialize the new reference list1 with the first\npicture in default list0 instead of default list1, as first picture in\nlist1 could still be invalid.\n\nBug: 36035074\n\nChange-Id: I7ab493ee7a157cbefcd4da8389ff1ff899c16b7f\n(cherry picked from commit 93954f5e9a5d727e402921ac6fa100e6dcc1d4e8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4c5ee056acd3558e07384e2092f96861887e9d15",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_process_bslice.c",
+      "new_id": "77841104a611b364db8f21354d1fc362423dbd3d",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_process_bslice.c"
+    }
+  ]
+}

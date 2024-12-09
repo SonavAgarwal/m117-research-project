@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "918b24d5a7c11fb8cafc25b43ff05696250f89ae",
+  "tree": "4b2e0e7e05b8d73f2fcf2725a3f734c28bdc82f0",
+  "parents": [
+    "aa22afd88b4ff0fc467fa57d88ebc87de3021319"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri May 17 13:11:30 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:56:09 2019 +0000"
+  },
+  "message": "readCString: no ubsan sub-overflow\n\nBug: 132650049\nTest: fuzzer\nChange-Id: I1f6dcad6906951ab505a7500573b74b210a68705\nMerged-In: I1f6dcad6906951ab505a7500573b74b210a68705\n(cherry picked from commit 1086548c6ceb141e2852d2690db8386911a014dd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e9bd1eae3256ce31ecd82927fdbde99b223c0a7",
+      "old_mode": 33188,
+      "old_path": "Parcel.cpp",
+      "new_id": "096913f6827bcfbfd5be8de9ff0718e0d127d5be",
+      "new_mode": 33188,
+      "new_path": "Parcel.cpp"
+    }
+  ]
+}

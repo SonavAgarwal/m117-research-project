@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4a88c8ed4f8186b3d6e2852993e063fc33ff231",
+  "tree": "cc62d67d586327578eae760574d93ccab2377a46",
+  "parents": [
+    "3cb1b6944e776863aea316e25fdc16d7f9962902"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Mon May 04 17:14:11 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:03:00 2015 -0700"
+  },
+  "message": "Fix integer underflow in covr MPEG4 processing\n\nWhen the \u0027chunk_data_size\u0027 variable is less than \u0027kSkipBytesOfDataBox\u0027, an\ninteger underflow can occur. This causes an extraordinarily large value to\nbe passed to MetaData::setData, leading to a buffer overflow.\n\nBug: 20923261\nChange-Id: Icd28f63594ad941eabb3a12c750a4a2d5d2bf94b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9689ce425929eda4b1a2cb240cf7a8c20d6b2601",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "522184372194c420a3f6dcdfac6b8752a366ad9c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

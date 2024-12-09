@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "5acf81a1f4df34451b76e76a416b8a262ba7f485",
+  "tree": "b0385bcf541b40d349e18bf6676aa5c07a466520",
+  "parents": [
+    "e385b32862e7022453415dd543d871908d2eafa1"
+  ],
+  "author": {
+    "name": "Abodunrinwa Toki",
+    "email": "toki@google.com",
+    "time": "Thu Nov 29 13:51:56 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:14 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Do not linkify text with RLO/LRO characters.\n\nAlso don\u0027t show smart actions for selections in text with unsupported\ncharacters.\n\nBug: 116321860\nTest: atest android.view.textclassifier.TextClassificationManagerTest \\\n            android.text.util.cts.LinkifyTest \\\n\t    android.text.util.LinkifyTest \\\n\t    android.widget.TextViewActivityTest\n\nChange-Id: I01b5e936aa4dfc937a98f50e9fc8171666861a61\n(cherry picked from commit a69950ce18f85ea8514083a5e175450e17e93565)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c905f49569d7f98a458e82fbe4a1019109aa6b0d",
+      "old_mode": 33188,
+      "old_path": "core/java/android/text/util/Linkify.java",
+      "new_id": "dc68da0310b694975b6f7d2fc215c65b87927bd0",
+      "new_mode": 33188,
+      "new_path": "core/java/android/text/util/Linkify.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9511a9efb3d5dad948c8e6151fdb20163814582e",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextClassification.java",
+      "new_id": "49ca969fa7afb58df2378e8cec7b96f35c83a556",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextClassification.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "be4c3bcdff6762eb1e94ccea8ecafc429aedaf9b",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/textclassifier/TextLinksParams.java",
+      "new_id": "c21206ca0258fc9514b8b3189eea649fde3f01fe",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/textclassifier/TextLinksParams.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6cb0eaa7f47d777ed7068c7651b5f3c141253753",
+      "old_mode": 33188,
+      "old_path": "core/java/android/widget/SelectionActionModeHelper.java",
+      "new_id": "0d88e6986f1106af51bb508eae98cd50fc5de833",
+      "new_mode": 33188,
+      "new_path": "core/java/android/widget/SelectionActionModeHelper.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c8a53cc86347c266768b282d7e18f944e6ae80df",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/view/textclassifier/TextClassificationManagerTest.java",
+      "new_id": "9015e92a4f08e1ea58bfbc5abcf9f49e93e17d29",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/view/textclassifier/TextClassificationManagerTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "70dc6189c6c2ce3cff454ebc9b891b5888ebe3cf",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/widget/TextViewActivityTest.java",
+      "new_id": "90758ba7c4188b66b53ed4aec33271808ba46ff9",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/widget/TextViewActivityTest.java"
+    }
+  ]
+}

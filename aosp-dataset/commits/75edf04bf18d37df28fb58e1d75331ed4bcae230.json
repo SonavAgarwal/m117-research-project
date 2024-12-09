@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "75edf04bf18d37df28fb58e1d75331ed4bcae230",
+  "tree": "cd374830d10cf118569f4df2e9f522e4f8a8521a",
+  "parents": [
+    "5fc2df253c089b53b3e235a3f237f96a98b53977"
+  ],
+  "author": {
+    "name": "Dan Stoza",
+    "email": "stoza@google.com",
+    "time": "Mon May 01 16:31:53 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:06:08 2017 +0000"
+  },
+  "message": "libgui: Check slot received from IGBP in Surface\n\nChecks that the slot number received from mGraphicBufferProducer in\nSurface::dequeueBuffer is on the interval [0, NUM_BUFFER_SLOTS) to\nprotect against a malicious BnGraphicBufferProducer.\n\nBug: 36991414\nChange-Id: I1a76fd1bcce1c558f1c0c30f03638278288ed4fa\n(cherry picked from commit 90ce2a9c1d3af422c66b4061805831cb208263d8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "08382908ba24f8e7e97e0efce7a8c415abbe0fbe",
+      "old_mode": 33188,
+      "old_path": "libs/gui/Surface.cpp",
+      "new_id": "5a2ca8d7acd50a8abbd73c488f7fa95f43ce75b7",
+      "new_mode": 33188,
+      "new_path": "libs/gui/Surface.cpp"
+    }
+  ]
+}

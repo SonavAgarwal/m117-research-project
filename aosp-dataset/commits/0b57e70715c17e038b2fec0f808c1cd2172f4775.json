@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0b57e70715c17e038b2fec0f808c1cd2172f4775",
+  "tree": "3015311827717876b16376f5be5fb00e8716b47c",
+  "parents": [
+    "4a534a34b14944f3513b7c101fc74ab0ec9eac0d"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Thu Jun 22 16:13:18 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:51 2017 +0000"
+  },
+  "message": "Fix array size for hrd parameters\n\nchange hard-coded array sizes to use appropriate defined constant\n\nBug: 62534693\nBug: 62534786\nBug: 62534806\nBug: 62533909\nTest: run POC before/after on master\nChange-Id: I999545c42d3321570e931991076a942a9134a17d\n(cherry picked from commit 4146e81c6dd50634b28b566adda5ac797f47c374)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "93d2ad434b792669d2a4a047d5a2c09fa7b8678d",
+      "old_mode": 33188,
+      "old_path": "common/ihevc_structs.h",
+      "new_id": "baa63755df02538649f63eca1051a2ccf20a4301",
+      "new_mode": 33188,
+      "new_path": "common/ihevc_structs.h"
+    }
+  ]
+}

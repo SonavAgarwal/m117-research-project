@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9a2d95e4ed9ec5ab76998654b1c2fba9cc139e50",
+  "tree": "578be910dcb91b05d216f40f16b747cc4d51bb21",
+  "parents": [
+    "f64f122d7bf36427728731dffff8c77024a63c46"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Fri Jun 01 10:49:40 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:16:19 2018 +0000"
+  },
+  "message": "Ignore quotes in safe_print().\n\nIf the value being printed has embedded quotes (\"), then printing\nthose quotes could confuse other tools when parsing the value.\n\nThis is the simplest CL to fix the security issue, and we can circle\nback to think about more robust escaping in a future CL.\n\nBug: 80436257\nTest: manual\nChange-Id: Ica17f2c5701573bceafe34f20110d230a3925483\n(cherry picked from commit efe90c297a8df591c051fdbfacb92b5283390bba)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "96fffae491c49418af7feb634a6b3489afe2e1f8",
+      "old_mode": 33188,
+      "old_path": "misc/blkid.c",
+      "new_id": "472f0179ee99ba28c51c2ce48561394482da753b",
+      "new_mode": 33188,
+      "new_path": "misc/blkid.c"
+    }
+  ]
+}

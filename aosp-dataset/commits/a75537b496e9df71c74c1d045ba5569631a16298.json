@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a75537b496e9df71c74c1d045ba5569631a16298",
+  "tree": "f21b4b6a2189183fe8ccdd280bdc79efc049def2",
+  "parents": [
+    "e7cf91a198de995c7440b3b64352effd2e309906"
+  ],
+  "author": {
+    "name": "Todd Kennedy",
+    "email": "toddke@google.com",
+    "time": "Mon Apr 04 12:29:59 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:52:38 2016 -0700"
+  },
+  "message": "DO NOT MERGE Fix intent filter priorities\n\nSince this is a backport, there is only one rule that guards intent\nfilter priorities:\n1) Updates will NOT be granted a priority greater than the priority\n   defined on the system image.\n\nBug: 27450489\nChange-Id: Ifcec4d7a59e684331399abc41eea1bd6876155a4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3a17e23b0547a00bfba20403357b7f8d9d90ee0f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/IntentFilter.java",
+      "new_id": "ed5dfa5393ecb5d10e4e8c7f0dfbc2c4e41721df",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/IntentFilter.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1d091b04c1b735d9f9d9585a74db1d544115478",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "7654cc9994a94c52a44722d08d6192f0cd3c03fa",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

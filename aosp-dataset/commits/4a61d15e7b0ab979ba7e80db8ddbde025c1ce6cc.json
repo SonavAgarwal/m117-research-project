@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4a61d15e7b0ab979ba7e80db8ddbde025c1ce6cc",
+  "tree": "a09452aa52b7d8ed73d1427bcef958ea0582a312",
+  "parents": [
+    "19814b7ad4ea6f0cc4cab34e50ebab2e180fc269"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Jan 13 11:26:23 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Increase memory allocation for weights \u0026 offsets for interlaced clips\n\nBug: 33816782\nChange-Id: I65a5376f46902139f9fc49a2fff54b53b518d703\n(cherry picked from commit bee9b9a54b5f7a30991b630a13659e573f0cb52d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f1a0ea09a99e8df720bb534ecf0615f61313e5e9",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "9d0f348c2bea101e84c2f8192acbc97edb5f819c",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

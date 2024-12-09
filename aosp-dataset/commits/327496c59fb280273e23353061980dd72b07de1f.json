@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "327496c59fb280273e23353061980dd72b07de1f",
+  "tree": "d3681b9c9f46778c5e13cf40360fe5cae00253a0",
+  "parents": [
+    "08a0d1ab6277770babbedab6ce7e7e2481869ad0"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Tue May 30 09:18:44 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:14 2017 +0000"
+  },
+  "message": "Update mbs_left In Case Of Missing Slice\n\nIf a vertical slice position is read different from the current decode\nposition, the u2_mb_y and u2_mb_x values were updated but the number of\nMBs left to decode was not. Adding code to do the same.\n\nBug: 37273547\nChange-Id: I8e4df576525eb0536446532967eb1fdbd4f5af4a\n(cherry picked from commit f013a814f7765f3da1f26acfe003d3f16402735c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "68bf0b0dc5593779e12d610522a3c08dccc20c46",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "770f4f2c3603a682eb79af79584b1eeae32149d4",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b26c7160cd1dfba9224ba12dc075ac3c658b18c3",
+  "tree": "b9151cb443b2129442a6d51fb74dd2fe46780731",
+  "parents": [
+    "d1126e7160b87313de91be5dbf7d0d9b08900f70"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Tue Jun 02 09:45:52 2020 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:17 2020 +0000"
+  },
+  "message": "Drop supplementary groups for child zygotes.\n\nChild zygotes like Webview zygote and App zygote are created with an\nempty supplementary group list; this was intended to drop all groups,\nbut instead we don\u0027t call setgroups() at all, which means that these\nchild zygotes are run with the same groups as the parent zygotes.\n\nCurrently those groups are AID_READPROC and AID_RESERVED_DISK, and the\nchild zygotes should need neither: AID_READPROC is only used for\nwrapping with the wrap.com.packagename sysprop, which doesn\u0027t really\nmake sense for child zygotes.  AID_RESERVED_DISK shouldn\u0027t be needed\nbecause child zygotes and their children are not critical, and therefore\nshouldn\u0027t be able to use reserved disk space.\n\nRemove the groups by explicitly call setgroups(0, NULL); for child\nzygotes.\n\nBug: 156741968\nTest: observe /proc/zygote_pid/status, notice groups are empty\nTest: atest CtsExternalServiceTestCases\nChange-Id: I4ee43a8bb9d86ff6f620437fb290481365a9e988\n(cherry picked from commit 5a45262741f6410a61bec59a41b4229e349a00b7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "82c27f02ba87230f8aa3a170863c3238a9b895db",
+      "old_mode": 33188,
+      "old_path": "core/jni/com_android_internal_os_Zygote.cpp",
+      "new_id": "d03ef8a557198233dfa1f082d43391b281dfd8f0",
+      "new_mode": 33188,
+      "new_path": "core/jni/com_android_internal_os_Zygote.cpp"
+    }
+  ]
+}

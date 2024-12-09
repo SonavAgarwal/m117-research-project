@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a1d8ac0ac0af44d74fc082838936ec265216ab60",
+  "tree": "acfc0c18494ecaf6e992891a794dc188adb22435",
+  "parents": [
+    "17e38ec9b8698d73539095c52ded2c89651436a2"
+  ],
+  "author": {
+    "name": "mtklein",
+    "email": "mtklein@chromium.org",
+    "time": "Thu Aug 06 11:18:50 2015 -0700"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Fri Oct 09 14:03:39 2015 +0000"
+  },
+  "message": "Purge non-NEON ARM code. DO NOT MERGE\n\nAs I begin to wade in here, it\u0027s nice to remove as much code as possible.\n\nBUG\u003dskia:4117\n\nReview URL: https://codereview.chromium.org/1277953002\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nCherry-pick of https://skia.googlesource.com/skia/+/e683e810\n\nSpeculative fix for b/23648740. Remove the function that crashes.\n\nBUG:23648740\nChange-Id: Ie4d681976bc1e39ed4f78d63d30259c9e35aea07\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ffa0ccfa8aabe612d2dbc74f7892e3a6174c9c0b",
+      "old_mode": 33188,
+      "old_path": "src/opts/SkBitmapProcState_opts_arm.cpp",
+      "new_id": "5fb61dc7ed8a33486ee7c9ea7ca791c20ceb1e5a",
+      "new_mode": 33188,
+      "new_path": "src/opts/SkBitmapProcState_opts_arm.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "473a3e91b189ba1d6c9f738f4048b50644e47a5e",
+      "old_mode": 33188,
+      "old_path": "src/opts/SkBlitRow_opts_arm.cpp",
+      "new_id": "0bf37dbc2a6b0866b6e0d4e8a8eb26fc433a4ecc",
+      "new_mode": 33188,
+      "new_path": "src/opts/SkBlitRow_opts_arm.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "01a6a2aa74593e0b25c7b90367bb9c3041790b60",
+      "old_mode": 33188,
+      "old_path": "src/opts/SkBlitRow_opts_arm_neon.cpp",
+      "new_id": "36fb7ea064911cacc117858a5f8149553d5a87e1",
+      "new_mode": 33188,
+      "new_path": "src/opts/SkBlitRow_opts_arm_neon.cpp"
+    }
+  ]
+}

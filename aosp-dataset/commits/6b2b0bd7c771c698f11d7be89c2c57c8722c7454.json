@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6b2b0bd7c771c698f11d7be89c2c57c8722c7454",
+  "tree": "ca0ddef78980f66a5266276dd8fbfbf9ff75ce2d",
+  "parents": [
+    "05ddb0c52e9080c7e2b77bfd94c155701544af71"
+  ],
+  "author": {
+    "name": "Rohan Shah",
+    "email": "shahrk@google.com",
+    "time": "Wed Aug 17 11:23:26 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:41:00 2016 -0700"
+  },
+  "message": "Limit account id and id to longs\n\nThe security issue occurs because id is allowed to be an arbitrary\npath instead of being limited to what it is -- a long. Both id\nand account id are now parsed into longs (and if either fails, an\nerror will be logged and null will be returned).\n\nTested/verified error is logged using the reported attack.\n\nBUG\u003d30745403\n\nChange-Id: Ia21418545bbaeb96fb5ab6c3f4e71858e57b8684\n(cherry picked from commit 9794d7e8216138adf143a3b6faf3d5683316a662)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c64fb4e4c4ef2016c418b4dfd92923ccd37b06c4",
+      "old_mode": 33188,
+      "old_path": "provider_src/com/android/email/provider/AttachmentProvider.java",
+      "new_id": "0abed97129f452aa4fa24a16d929c08ad60f7eb0",
+      "new_mode": 33188,
+      "new_path": "provider_src/com/android/email/provider/AttachmentProvider.java"
+    }
+  ]
+}

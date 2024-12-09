@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a4567c66f4764442c6cb7b5c1858810194480fb5",
+  "tree": "5b8c7a88aaf36f6f4c94ce1f801ff76ddea0f0d8",
+  "parents": [
+    "42a25c46b844518ff0d0b920c20c519e1417be69"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Oct 12 19:24:18 2015 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:17 2016 -0700"
+  },
+  "message": "SoftHEVC: Exit gracefully in case of decoder errors\n\nExit for error in allocation and unsupported resolutions\n\nBug: 28816956\n\nChange-Id: Ieb830bedeb3a7431d1d21a024927df630f7eda1e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a70755c4d4d32954fef760028a92b04523f7b594",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp",
+      "new_id": "1dac86804b4de9df49ff740c279be42c01814e12",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/hevcdec/SoftHEVC.cpp"
+    }
+  ]
+}

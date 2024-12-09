@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "04839626ed859623901ebd3a5fd483982186b59d",
+  "tree": "179becc2caf45fd44b24fdca89b4108e6fdc8183",
+  "parents": [
+    "a4737e7228b646238f140ce0f9e3dbc9a9038224"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Mon Jun 23 12:12:58 2014 -0700"
+  },
+  "committer": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Mon Jun 23 22:14:27 2014 +0000"
+  },
+  "message": "libwebm: Pull from upstream\n\nRolling mkvparser from upstream. Primarily for fixing a bug on parsing\nfailures with certain Opus WebM files.\n\nUpstream commit hash of this pull: 574045edd4ecbeb802ee3f1d214b5510269852ae\n\nThe diff is so huge because there were some style clean ups upstream.\nBut it was ensured that there were no breaking changes when the style\nclean ups was done upstream.\n\nChange-Id: Ib6e907175484b4b0ae1b55ab39522ea3188ad039",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "594f30273209b1e4933a92a15ab0f6bc3c367527",
+      "old_mode": 33188,
+      "old_path": "libwebm/mkvparser.cpp",
+      "new_id": "1f9c74057278f9f80e282e5968812fad254b79e0",
+      "new_mode": 33188,
+      "new_path": "libwebm/mkvparser.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7184d267a29181a0ee31724eeb51b5e12c93d102",
+      "old_mode": 33188,
+      "old_path": "libwebm/mkvparser.hpp",
+      "new_id": "3e17d07cc2965c1cb8e560d052a13da5e5143dc6",
+      "new_mode": 33188,
+      "new_path": "libwebm/mkvparser.hpp"
+    }
+  ]
+}

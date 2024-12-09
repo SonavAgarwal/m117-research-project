@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "d96f50a85f7762f50f672981c194ebb9e6ce4ff6",
+  "tree": "9c99699f8bbcf4b3a0d1e377b01129727b7f6d7c",
+  "parents": [
+    "9649d433d0140ae2ded430aa1d52132385aa07cd"
+  ],
+  "author": {
+    "name": "Evan Laird",
+    "email": "evanlaird@google.com",
+    "time": "Tue Sep 29 01:09:12 2020 -0400"
+  },
+  "committer": {
+    "name": "Evan Laird",
+    "email": "evanlaird@google.com",
+    "time": "Wed Nov 18 16:53:35 2020 +0000"
+  },
+  "message": "DO NOT MERGE: Associate notif cancels with notif posts\n\nCancelNotificationRunnables just spin on the work handler of\nNotificationManagerService, hoping that they get executed at the correct\nmoment after a PostNotificationRunnable and before the next\nEnqueueNotificationRunnable completes. Otherwise, you end up in a bad\nstate where the cancel either is canceling notifications before they get\na chance to post, or missing its only chance to cancel the notification\n(for instance, ActivityManagerService is the only caller that can cancel\nFGS notifications).\n\nThis change attempts to execute a CancelNotificationRunnable at the\nmoment its run() method is called, otherwise it associates the runnable\nwith the latest enqueued notificaiton record which has yet to post.\n\nIt then associates PostNotificationRunnable with the delayed cancel\nlist, executing any missed cancel operations immediately upon finishing\nthe PostNotificationRunnable.\n\nTest: atest SystemUITests; manual\nBug: 162652224\nChange-Id: I88d3c5f4fd910a83974c2f84ae3e8a9498d18133\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4d993d19e57bcd08e233a7f3fc449bb77a1752fb",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/InjectableSystemClock.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "43d756f46176a2a2079e06d9eb81116fa83e1c42",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/notification/InjectableSystemClockImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "14635ccc7bc7663ac5fbf3eb32fbe7ab542bafa6",
+      "old_mode": 33261,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "1472fbd67d1dc5668f6c848afd5782e760049f8b",
+      "new_mode": 33261,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "afd10ddb8ec26ca45b230a1b7ff7e105e0740420",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java",
+      "new_id": "2e0f1992478d003d9997f6895c909ef8ffaf3906",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/BuzzBeepBlinkTest.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c960f1766612a713b5f595f01e3045df4adf26d0",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/FakeSystemClock.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "52e08187b2ca6bb3baca84a302a31fe4af316a26",
+      "old_mode": 33261,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java",
+      "new_id": "7f0b4dbabc3a69bf2fbf7bdbe745fa8c39a7f7a5",
+      "new_mode": 33261,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3281c3f4cfb95c8eeaaf09b2f7e8275ee9aa5505",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/RoleObserverTest.java",
+      "new_id": "ac2c6193c6774b5d9ed737e7b7204b15e6c7e6a6",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/RoleObserverTest.java"
+    }
+  ]
+}

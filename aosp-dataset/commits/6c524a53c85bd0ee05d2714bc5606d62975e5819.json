@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6c524a53c85bd0ee05d2714bc5606d62975e5819",
+  "tree": "cdda9ad7b5492ca376aff96f536796ad7a442f27",
+  "parents": [
+    "77e84a09ead77fdf0dd4b08704ab00970a4d3da6"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon Oct 07 17:30:23 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:16:38 2019 +0000"
+  },
+  "message": "Sensor: use FlattenableUtils::align\n\nSince it memsets skipped over memory now.\n\nBug: 141890807\nTest: boot, check buffer is zero\u0027d here\nChange-Id: Ieb3cd90215a3ccc1dc43365ecde251a50db08553\n(cherry picked from commit d58cf5acb863eddbbeb9982439965e259045940e)\n(cherry picked from commit dbd0eecfc7570231d5cbb76678b0358c43ee6d3c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "139987e6a9a68f4d42cf31907fa926264e5617ab",
+      "old_mode": 33188,
+      "old_path": "libs/sensor/Sensor.cpp",
+      "new_id": "abc910302cfe0c96f06853b4b058cdac24ecdded",
+      "new_mode": 33188,
+      "new_path": "libs/sensor/Sensor.cpp"
+    }
+  ]
+}

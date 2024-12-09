@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb4844800cb05df1279e2c2934d852aa28e71aec",
+  "tree": "6c47f49870272bf7ddd1d2cba8c64ec7d430461f",
+  "parents": [
+    "acfd93194bfcf3452c01d980f4add91118906586"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackcwyu@google.com",
+    "time": "Fri Feb 01 15:48:03 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:57 2019 +0000"
+  },
+  "message": "Prevent OOB error in rw_i93_sm_update_ndef() am: 8617cbb1a8 am: 8081839dc8\nam: c80b838093\n\nChange-Id: I8a102085d7ecfeb977d742ebc742e364752cc1b8\n(cherry picked from commit c23e375317d638701d1f0c289c85b153ec461082)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fabfc10f7b1eeecf5d5a92a061c5c5c748fae6f3",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "bcc6421370a5cb5a54dd6a2f258b91dbd051bfeb",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

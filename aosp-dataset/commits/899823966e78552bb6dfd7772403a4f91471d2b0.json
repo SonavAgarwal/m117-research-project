@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "899823966e78552bb6dfd7772403a4f91471d2b0",
+  "tree": "a3ee356874a5200535b4f7debe395fb642ee8098",
+  "parents": [
+    "e6bd186c7e2a3b948fdd27a4b71048ee85229e7c",
+    "88b736a198fb29ffa946b10d0ed993bf15e77a98"
+  ],
+  "author": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Thu Jan 14 14:55:37 2016 -0800"
+  },
+  "committer": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Thu Jan 14 14:55:37 2016 -0800"
+  },
+  "message": "resolve merge conflicts of 88b736a198 to lmp-dev.\n\nChange-Id: Iec3cf4fb4bf75be853a1249ee1439eb4c5b38b50\n",
+  "tree_diff": []
+}

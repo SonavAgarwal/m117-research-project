@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5af096cb013b392ee594dc61140a61513fca97da",
+  "tree": "70d3470aef91faafbc53b1ba0487812705a19a07",
+  "parents": [
+    "cee606de904204e96447ae9010ab40bb151bf3bf"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jul 23 08:27:46 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 14 23:24:50 2019 +0000"
+  },
+  "message": "Fix OOB access in mpeg4/h263 decoder\n\nThe decoder does not support an increase in frame width, and\nwould exceed its buffer if the width increased mid-stream.\nThere was an existing check to prevent the total frame size\n(width*height) from increasing, but in fact the decoder also\ndoes not even support a width increase, even if the height\ndecreases correspondingly.\n\nBug: 136175447\nBug: 136173699\nTest: manual\nChange-Id: Ic2d28bb0503635dadeb69ba3be9412d58684e910\n(cherry picked from commit ef4ce157000b2b5bcbf2bcb36a228ec604803547)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f18f789b99750bf053bd22419c7434b53719f2f5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp",
+      "new_id": "679b0911dfa165fe1b7519ed0a851f3197075e58",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ffb33bcf2520208166cb29f47c60add9c0e37349",
+  "tree": "cc760592822d295652a6f09cc869fbcd02b0a04e",
+  "parents": [
+    "5934f825096394c12d13c39e44c789d31188240b"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Tue Oct 20 21:11:15 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:35 2020 +0000"
+  },
+  "message": "Break layout context before and after bidi control character\n\nBug: 170968514\nTest: minikin_test\nChange-Id: Ibcff6f3b7fcb7fefa2acb7f52446cf4b4547a4a2\nMerged-In: Ibcff6f3b7fcb7fefa2acb7f52446cf4b4547a4a2\n(cherry picked from commit b0473792a5a0d9d287f6995f27e867c074835a28)\n(cherry picked from commit fcd1240acd2e9a14d7e6bf755f4bbdfda0928e06)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3c258cfccf15102382ca156d0f37f2d8005ce8b8",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/LayoutUtils.cpp",
+      "new_id": "acf07e293c3f709e6a587b13431c5fe572008c13",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/LayoutUtils.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4b75d9cd8169f5d504e35a9be515ee8a113003cb",
+      "old_mode": 33188,
+      "old_path": "tests/unittest/LayoutSplitterTest.cpp",
+      "new_id": "9b88de04012dd34b99eeb34550f4d4c4a38dfbf5",
+      "new_mode": 33188,
+      "new_path": "tests/unittest/LayoutSplitterTest.cpp"
+    }
+  ]
+}

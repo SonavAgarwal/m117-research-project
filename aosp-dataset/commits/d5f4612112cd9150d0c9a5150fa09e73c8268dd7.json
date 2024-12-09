@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d5f4612112cd9150d0c9a5150fa09e73c8268dd7",
+  "tree": "824177bed0440865c02f82b6071aff96df1ad12f",
+  "parents": [
+    "992389668ef2a626c8eaf729bcd5edd3d66cc7e0"
+  ],
+  "author": {
+    "name": "Weiyin Jiang",
+    "email": "wjiang@codeaurora.org",
+    "time": "Fri Apr 27 00:39:29 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:41 2019 +0000"
+  },
+  "message": "audio: ensure effect chain with specific session id is unique\n\nIt\u0027s possible that tracks with the same session id running on various\nplayback outputs, which causes effect chain being created on the same\nsession twice. As a result, the same effect engine will be released\ntwice as the same context is reused.\n\nOutput that has effect chain with same session id is more preferable.\n\nTest: No regression with Play Music and Effects\nBug: 123082420\nBug: 123237974\nMerged-In: I690ea3cb942d1fdc96b46048e271557d48000f43\nChange-Id: I690ea3cb942d1fdc96b46048e271557d48000f43\n(cherry picked from commit 9aeb1770d49bab13ea5c6454c969a713641fe686)\n(cherry picked from commit 5945746bcabff8d833229a6c230cbe873474087f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "687b5a65f539c35168108de5f67d5cfa6dcb0dc7",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "bc1654e6746c675ca5f1e9cdeeaafee09ef46098",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b413f1b1365af4273647727e497848f95312d0ec",
+  "tree": "7cd91d500eefaad7aa1605cf9c30cc3376ce4a27",
+  "parents": [
+    "0e379aaef1c9bcb8a9ff65e98e20635a00813dbb"
+  ],
+  "author": {
+    "name": "Andre Eisenbach",
+    "email": "eisenbach@google.com",
+    "time": "Tue Aug 08 15:41:21 2017 -0700"
+  },
+  "committer": {
+    "name": "Andre Eisenbach",
+    "email": "eisenbach@google.com",
+    "time": "Tue Aug 08 15:42:15 2017 -0700"
+  },
+  "message": "SDP: Bounds check \u0027id\u0027 parameter for free_sdp_slot()\n\nTest: manual\nFixes: 37502513\nChange-Id: I34e8296ec7ec6b4ffbe1fa0452754f2a421e6ec7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "43d489b340bc099bea3b87d695e8ba6179f72437",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sdp_server.cc",
+      "new_id": "b84d694d5c0f31732ab8e4fe96320ed6cf2c85a2",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sdp_server.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "85b5df1d0dcc782ed5afc1dcf9247880416d5fbd",
+  "tree": "1f88cd5fcc56f86b039e7f4dfac37627bf3dea0f",
+  "parents": [
+    "1570b62c88d7c5b9c6bfe43da8cc16ea30d3e8df"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Jun 18 14:35:53 2020 -0700"
+  },
+  "committer": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Fri Jun 19 23:05:36 2020 +0000"
+  },
+  "message": "DO NOT MERGE: Remove pairing on incoming bond request\n\nBug: 150156492\nTag: #security\nTest: Bond two devices, forget from one device and reconnect\nChange-Id: I048b7b142e3fe2096cf1a9aa2931c175fa52cd45\n(cherry picked from commit 13f409ad3a2423b06af7a7f1a9b06fb06c8820a7)\nMerged-In: I048b7b142e3fe2096cf1a9aa2931c175fa52cd45\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bcefa2a649d5d90505e1d04ab9c7f9c85b67494d",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_sec.cc",
+      "new_id": "b7c2bd240baffb5a4677405b7be6ce6052804f1f",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_sec.cc"
+    }
+  ]
+}

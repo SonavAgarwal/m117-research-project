@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "b0bcddb44d992e74140a3f5eedc7177977ea8e34",
+  "tree": "b6d1cab10aa9afae5691b9a0fef09a3349150083",
+  "parents": [
+    "a155de4d70e0b9ac8fc02b2bdcbb2e8e6cca46ff"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Tue Nov 22 18:02:48 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:58 2016 -0800"
+  },
+  "message": "Fix security vulnerability: potential OOB write in audioserver\n\nBug: 32705438\nBug: 32703959\nTest: cts security test\nChange-Id: I8900c92fa55b56c4c2c9d721efdbabe6bfc8a4a4\n(cherry picked from commit e275907e576601a3579747c3a842790bacf111e2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed38584d97132165bc0f4b2ed0384ec8bf2bda0a",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "c0d7c6c1b0feea9235613fb485d23448deabccae",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "faf57950984f5d17bb9cf56d2e5915c2b94ff8ea",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IEffect.cpp",
+      "new_id": "af6d8de857479c8914bf8d3f4867076353f5efce",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IEffect.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f3c1837990535ff3a4b8fe702aa560045e9c6e5",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "0d245cb0498b54ad7815cd4d258ad2d1d8ea316c",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

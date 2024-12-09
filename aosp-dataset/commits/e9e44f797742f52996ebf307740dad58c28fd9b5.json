@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e9e44f797742f52996ebf307740dad58c28fd9b5",
+  "tree": "f8177c2655205ed9aa9bb6041652725ed91b460d",
+  "parents": [
+    "8e7a2b4d13bff03973dbad2bfb88a04296140433"
+  ],
+  "author": {
+    "name": "Eino-Ville Talvala",
+    "email": "etalvala@google.com",
+    "time": "Tue Aug 16 15:48:05 2016 -0700"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Wed Aug 24 23:17:03 2016 +0000"
+  },
+  "message": "Camera metadata: Check for inconsistent data count\n\nResolve merge conflict for nyc-release\nAlso check for overflow of data/entry count on append.\n\nBug: 30591838\nChange-Id: Ibf4c3c6e236cdb28234f3125055d95ef0a2416a2\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "92926872e9e4a40073343769e22ae5b08ad9bda8",
+      "old_mode": 33188,
+      "old_path": "camera/src/camera_metadata.c",
+      "new_id": "a6b6904221caface0091f9fef9af6b00ebf74556",
+      "new_mode": 33188,
+      "new_path": "camera/src/camera_metadata.c"
+    }
+  ]
+}

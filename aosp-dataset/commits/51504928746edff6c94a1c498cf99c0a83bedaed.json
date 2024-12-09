@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "51504928746edff6c94a1c498cf99c0a83bedaed",
+  "tree": "8dbbd8d07f670ca1c56a6519d80b38fb5f61b5eb",
+  "parents": [
+    "5e751957ba692658b7f67eb03ae5ddb2cd3d970c"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Apr 20 11:08:59 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:59 2015 -0700"
+  },
+  "message": "Add some sanity checks\n\nBug: 19400722\nChange-Id: Ib3afdf73fd4647eeea5721c61c8b72dbba0647f6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7e26ee6bccbfbfa1007073dc9d4d745df12676ec",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaHTTPConnection.cpp",
+      "new_id": "a5a3714400eb20df7771c9f9cb51c4b0811cb3d8",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaHTTPConnection.cpp"
+    }
+  ]
+}

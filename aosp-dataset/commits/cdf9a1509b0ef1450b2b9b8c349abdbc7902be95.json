@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "cdf9a1509b0ef1450b2b9b8c349abdbc7902be95",
+  "tree": "7096c33d822ff8fb561469c4668e2ef3efc175ef",
+  "parents": [
+    "f1d1bb78162209335b086ee10d8b7449879bcc64"
+  ],
+  "author": {
+    "name": "Hugh Chen",
+    "email": "hughchen@google.com",
+    "time": "Fri Mar 12 10:40:20 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:42 2021 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Fix unable to send file via OPP\n\nBluetooth app will indicate BluetoothOppReceiver to receive\ndevice picker intent. But for fix the security issue we\nremoved the setClassName() method in ag/14111132 to avoid attack.\nIt causes BluetoothOppReceiver cannot receive the intent.\n\nThis CL will compare to calling package name with launch package name.\nIf they are not equal, the setClassName() will not invoke.\n\nBug: 186490534\nBug: 179386960\nBug: 179386068\n\nTest: make RunSettingsRoboTests -j56\nChange-Id: Ia51528f2a44ab73edbc86899ca0846d3262fe1f0\n(cherry picked from commit bb5be240c0982f2e098978fec187fc735c0e7ad9)\n(cherry picked from commit c556938807b440c54ce3c4e949460a8ac9e67753)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f60183b1c4f990d42abb1c1bf37ef332e49408bd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/DevicePickerFragment.java",
+      "new_id": "02b5d5c90f0f20b634d790a3e9889d0a27d1d59a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/DevicePickerFragment.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d9e054d86a6f9f3e54c67b57bb3b71fe28337153",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java",
+      "new_id": "a05ec87b71b2d60be0ccde8e80609a5cee5fd5a7",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/bluetooth/DevicePickerFragmentTest.java"
+    }
+  ]
+}

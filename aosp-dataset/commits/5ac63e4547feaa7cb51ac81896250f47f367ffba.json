@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5ac63e4547feaa7cb51ac81896250f47f367ffba",
+  "tree": "6aeba39010d1cb799bb4476509542433fc51d5d5",
+  "parents": [
+    "75edf04bf18d37df28fb58e1d75331ed4bcae230"
+  ],
+  "author": {
+    "name": "Chia-I Wu",
+    "email": "olv@google.com",
+    "time": "Mon May 15 10:32:27 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:06:21 2017 +0000"
+  },
+  "message": "libgui: check for invalid slot in attachBuffer\n\nBug: 37478824\nTest: manual\nChange-Id: I369337d53539bf7f7e3d925bccdae4045da1b404\n(cherry picked from commit c79a29689c1046f1f0301c75df9b9a67cba8bf04)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f4ba3bf15fb7f19d7d1106c71bd2c314048eb639",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferProducer.cpp",
+      "new_id": "1a08130c447b97df513ee66c3ab9807cb6ae1d4f",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferProducer.cpp"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "2a81aed66366c2d38feb7be05d355ff819e60355",
+  "tree": "d50d8d5350aa1b63ba415bfa2d63abcc80beb1c3",
+  "parents": [
+    "af3eb61fede0e605e95ba50abdb09bec60bccf48"
+  ],
+  "author": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Wed Jan 29 18:15:05 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:20 2020 +0000"
+  },
+  "message": "Update redaction upon profile changes\n\nWe can\u0027t rely on status bar state changes to update the notification\nlist. The current user might not be set yet, causing wrong notifications\nto become visible.\n\nFixes: 145135488\nTest: manual\nTest: atest NotificationStackScrollLayoutTest\nChange-Id: I34d1d5f9a751c1d7680a5a5941c39b9fe33a473b\nMerged-In: I34d1d5f9a751c1d7680a5a5941c39b9fe33a473b\n(cherry picked from commit 44d1c652ce124eb40101effe300d8655a7869f7b)\n(cherry picked from commit 5ed9312143706a4b4c1d88959d73762ecc7e227b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "688e8eb8f2e3e209af0d68ba7d15f61cb9c6ae2b",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java",
+      "new_id": "7c49c3f961c94cf95c7c84f8403a3c8170817883",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayout.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "31054260eb157d654b22fc1e5061a832b6cca9e0",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/tests/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutTest.java",
+      "new_id": "f2ed3e64822037054ebba7829c3b6e973978cf21",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/tests/src/com/android/systemui/statusbar/notification/stack/NotificationStackScrollLayoutTest.java"
+    }
+  ]
+}

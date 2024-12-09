@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "525bdbd6e1295ed8a081d2ae87105c64d6f1ac4f",
+  "tree": "4cfb96487c0087007aaa3e633fd40ba02573653f",
+  "parents": [
+    "2d21e75aa8c1e0c4adf178a1330f9f5c573ca045"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Tue Nov 13 20:03:28 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:32 2018 +0000"
+  },
+  "message": "Add OOB check in avrc_pars_browse_rsp\n\nBug: 111451066\nTest: Manully\nChange-Id: I068d218b8957bb8f053148d252a9119a8def28cc\n(cherry picked from commit f44cbb20e7658116472981bac0ffb0305f4a2c04)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a7a42a5992a44cb06d01c9ea44defc06ff47c288",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "2b7761810d6effc6542d832cf14c70bad0decc43",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

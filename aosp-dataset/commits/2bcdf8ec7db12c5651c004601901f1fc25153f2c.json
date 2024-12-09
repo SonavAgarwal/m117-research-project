@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2bcdf8ec7db12c5651c004601901f1fc25153f2c",
+  "tree": "b9848c489af140573bbf222688ea6c7da21e7d8e",
+  "parents": [
+    "a4875a49404c544134df37022ae587a4a3321647"
+  ],
+  "author": {
+    "name": "Jack He",
+    "email": "siyuanh@google.com",
+    "time": "Wed Apr 05 17:59:58 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:27 2017 -0700"
+  },
+  "message": "Check LE advertising data length before caching advertising records\n\nBug: 33899337\nTest: make, receive LE advertising\nChange-Id: I06b249ac5cabdef64528deda07b8bae749e1d2fd\n(cherry picked from commit d57adbc350fdee4f27b82c9e39a14bd745d92320)\n(cherry picked from commit 1bef3546a6cb6f05739c10825dab9eb3362892f6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "286787ea2b3913fe3ec9c1502af64554d9054c09",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_ble_gap.c",
+      "new_id": "7fe3c99bd754139a1224f66f3b6e35285adbe0a2",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_ble_gap.c"
+    }
+  ]
+}

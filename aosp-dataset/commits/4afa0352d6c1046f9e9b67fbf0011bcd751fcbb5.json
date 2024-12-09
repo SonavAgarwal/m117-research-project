@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4afa0352d6c1046f9e9b67fbf0011bcd751fcbb5",
+  "tree": "021e29f32481b85722c8e6128a3c7b4cbaea6b83",
+  "parents": [
+    "42b2e419b48a26d2ba599d87e3a2a02c4aa625f4"
+  ],
+  "author": {
+    "name": "Adam Vartanian",
+    "email": "flooey@google.com",
+    "time": "Tue Nov 07 12:22:23 2017 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:31:14 2017 +0000"
+  },
+  "message": "Adjust Uri host parsing to use last instead of first @.\n\nMalformed authority segments can currently cause the parser to produce\na hostname that doesn\u0027t match the hostname produced by the WHATWG URL\nparsing algorithm* used by browsers, which means that a URL could be seen\nas having a \"safe\" host when checked by an Android app but actually visit\na different host when passed to a browser.  The WHATWG URL parsing\nalgorithm always produces a hostname based on the last @ in the authority\nsegment, so we do the same.\n\n* https://url.spec.whatwg.org/#authority-state resets the \"buffer\", which\n  is being used to build up the host name, each time an @ is found, so it\n  has the effect of using the content between the final @ and the end\n  of the authority section as the hostname.\n\nBug: 68341964\nTest: vogar android.net.UriTest (on NYC branch)\nTest: cts -m CtsNetTestCases (on NYC branch)\nChange-Id: Idca79f35a886de042c94d6ab66787c2e98ac8376\n(cherry picked from commit cd6228dd377b2a0caa02a1e6df92f3d9ae702a95)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d5377c71736649a90c0ac4a4b6901ec2c13f4fd3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/Uri.java",
+      "new_id": "9edcc0e9b8d4cfe6a82a9d640f2cfd7e10fde937",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/Uri.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6fa28b1ccdaa803d917d27ed025892b698ef964c",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/net/UriTest.java",
+      "new_id": "27b7f9e185bb60290d2caca11a73e445d60d1be5",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/net/UriTest.java"
+    }
+  ]
+}

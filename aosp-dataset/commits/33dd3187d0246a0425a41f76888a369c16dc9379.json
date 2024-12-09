@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "33dd3187d0246a0425a41f76888a369c16dc9379",
+  "tree": "ce555baa158f4d23c4b5f19b893c980dbcaa6d04",
+  "parents": [
+    "433e99022e627872dd060b50e90dcca7a3b1d80b"
+  ],
+  "author": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Mon May 11 22:55:05 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:59 2020 +0000"
+  },
+  "message": "Allows to launch only authenticator owned activities\n\n- 3rd party developers can define himself-authenticator\n  and use the accountPreferences attribute to load the\n  predefined preference UI.\n- If a developer defines an action intent to launch the\n  other activity in xml and it would return true due\n  to the true exported attribute and no permission.\n- To avoid launching arbitrary activity. Here allows\n  to launch only authenticator owned activities.\n\nBug: 150946634\nTest: make RunSettingsRoboTests -j ROBOTEST_FILTER\u003dcom.android.settings.accounts\nTest: PoC app\nChange-Id: I5ce1a0b3838db7b3fbe48c6ea23d5f093d625cdb\nMerged-In: I5ce1a0b3838db7b3fbe48c6ea23d5f093d625cdb\n(cherry picked from commit d6d8f988449617d757a5d7439314198d10d6ee78)\n(cherry picked from commit 4b6e82fd5d2204cd37eae0d7c7b08f19b96baffe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d32b63013fcf69f7660f73d95797e7e112659ce3",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/accounts/AccountTypePreferenceLoader.java",
+      "new_id": "c639d1df2eb95d86af2c4ff706b5748041b85869",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/accounts/AccountTypePreferenceLoader.java"
+    }
+  ]
+}

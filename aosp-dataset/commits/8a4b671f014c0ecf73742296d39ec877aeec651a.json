@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8a4b671f014c0ecf73742296d39ec877aeec651a",
+  "tree": "8891f72d450df8fd7cb52908a448926d73b20f03",
+  "parents": [
+    "236b44274ebd1d7e3c706a24fd2a83d534d68ab0"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Mon May 13 13:14:19 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:13 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix NullPointerException when mLockPatternUtils is not set.\n\nTest: atest LockTaskControllerTest\nBug: 132593073\nChange-Id: I1bfacd5992569d67cdaa526b18d1c426a366babb\n(cherry picked from commit fa1b986746ad7d9ebab6a34a0bfafd0a93267d5b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab67b8a3f534dafa33ac9907694b6245f27f4f7b",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/LockTaskController.java",
+      "new_id": "bd0506b4b91e78e12b2ac6709e2d011ca112ccbe",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/LockTaskController.java"
+    }
+  ]
+}

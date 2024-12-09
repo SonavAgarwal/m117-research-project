@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c4d6e387984e09e86a58e6485555a2d651f0481f",
+  "tree": "15ba4073f3ff0dc351f835d5aa95f15935f0c532",
+  "parents": [
+    "e183ab7e5a865ff1051505085b617f4f3ad4c049"
+  ],
+  "author": {
+    "name": "Jeff DeCew",
+    "email": "jeffdq@google.com",
+    "time": "Wed May 06 16:16:42 2020 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:04 2020 +0000"
+  },
+  "message": "Make implicit intent immutable.\n\n(cherry picked from commit e42611f83cc72d22ed99fe3a8b79386d76ae5fa6)\n\nTest: make\nFix: 154627439\nChange-Id: Ifee830595bb145aede4dad1d9e42a20e54b6be66\nMerged-In: Ifee830595bb145aede4dad1d9e42a20e54b6be66\n(cherry picked from commit 7aae8cce330cb9b8ebca7b68da3abcd8e2d5a272)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3886f6264b16f27afbcec8bb8666e035804f5183",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java",
+      "new_id": "ffe51ca44c4f6e6f6334084720e2b3de9064aed8",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java"
+    }
+  ]
+}

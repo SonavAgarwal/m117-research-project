@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cbcf477e8b05f092bf6519e3ba4db363247ff4f6",
+  "tree": "1e078c4ddfe3df2f012f325afe23c15520aafa87",
+  "parents": [
+    "34a1b9c951c38537ab96b69bc308f6e0884823f5"
+  ],
+  "author": {
+    "name": "John Reck",
+    "email": "jreck@google.com",
+    "time": "Mon Jul 06 16:10:49 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:05 2020 +0000"
+  },
+  "message": "Add missing isShellUser check\n\nBug: 160390416\nTest: verified command still works from shell\nChange-Id: I23bb06e00f1623e4f27c02d7eb2c0d273b40771b\nMerged-In: I23bb06e00f1623e4f27c02d7eb2c0d273b40771b\n(cherry picked from commit bfdb7121ef7ae85520abbdcb4b9d05923d91999c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ec24014f77d7eeaaea198712bffe3ce7809a8dcf",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "82abb988cb2c90eea9fee0b53985b807b4c7bee9",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

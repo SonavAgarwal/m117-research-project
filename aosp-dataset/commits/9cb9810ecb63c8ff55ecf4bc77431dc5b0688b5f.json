@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9cb9810ecb63c8ff55ecf4bc77431dc5b0688b5f",
+  "tree": "4527abd34eb4a4cecb42f416baa33473eff06106",
+  "parents": [
+    "d67ba7f04e1c77245e033f3be28fa953652d3aea"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Mon Aug 22 17:59:38 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:28 2016 -0700"
+  },
+  "message": "Fix potential overflow in Visualizer effect\n\nBug: 30229821\nChange-Id: Iea1c4a21735e893aeded95b980044ec0861a7ea8\n(cherry picked from commit 2fa52194ef64843c2908c69527384c6c2fcdbafa)\n(cherry picked from commit 57ac66340ad488a17fc285b6fc2635cb7375d72b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9b25e5e5a1a54de98f0a502fccd5a979de609605",
+      "old_mode": 33188,
+      "old_path": "visualizer/offload_visualizer.c",
+      "new_id": "69cea576c5d16d174c9b107e2d8feb96739617c3",
+      "new_mode": 33188,
+      "new_path": "visualizer/offload_visualizer.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "06ca06ac6107f88530cc67225c47537621bb41a5",
+  "tree": "8beedc4768c82bf983820f652a4a5e25f0c44ad0",
+  "parents": [
+    "2e941e40ce76eb13b273479a4ee8fb6e40d33795"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu May 14 10:22:40 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sat Aug 15 05:18:13 2015 +0000"
+  },
+  "message": "Add sanity checks to fix crash\n\nCopy Huffman tree sanity check from libvorbis to avoid out of bounds memory\naccess later on.\n\nBug: 21048776\nChange-Id: I3c508572501af188af4224e2a295e9f2554ec9c0\n(cherry picked from commit 52193fa3472b79873e73044ce02e1c0a67c85043)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ff3529b81c09af0702dc65c6b6bc88480ba316b",
+      "old_mode": 33188,
+      "old_path": "Tremolo/codebook.c",
+      "new_id": "66979dcf2df4cbb8011ea04a82cea181ef10842d",
+      "new_mode": 33188,
+      "new_path": "Tremolo/codebook.c"
+    }
+  ]
+}

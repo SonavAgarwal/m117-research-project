@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2c61c57ac53cbb270b4e76b9d04465f8a3f6eadc",
+  "tree": "c0cb5c860f07abf2e19d78611c7aa2486f6b8e36",
+  "parents": [
+    "4fa4b29890a85da661403ac85fad56d21acc093f"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Tue Aug 16 16:03:44 2016 -0700"
+  },
+  "committer": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Thu Aug 18 10:15:59 2016 -0700"
+  },
+  "message": "Isolated processes don\u0027t get precached system service binders\n\nMore specifically, they get a PackageManager binder -- necessary for\nAndroid process startup and configuration -- but none of the other\nusual preloaded service binders.\n\nBug 30202228\n\nChange-Id: I3810649f504cd631665ece338a83d2e54d41ad05\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9e601eb7e07c80ee042196df7d9d678719142f14",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "ff3f159b1d08f183b22c51aa2d5ecad8610a2e37",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "b4378a5e6f656269bf0ecdf9ef0c3c483fcc3aa1",
+  "tree": "312c446e4ce760592f59de6c4c370c3fc67ddd64",
+  "parents": [
+    "3c12d05c8007523ed0d174814ea8294df8f490ad"
+  ],
+  "author": {
+    "name": "Ben Schwartz",
+    "email": "bemasc@google.com",
+    "time": "Tue Jan 22 17:32:17 2019 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:42 2019 +0000"
+  },
+  "message": "Fix DnsTlsSocket fast shutdown path\n\nPreviously, DnsTlsSocket\u0027s destructor told the loop thread to\nperform a clean shutdown by closing an IPC file descriptor.\nHowever, the IPC file descriptor is now an eventfd, which does\nnot alert the listening thread when it is closed.\n\nThis change uses the eventfd counter\u0027s sign bit as an indication\nthat the destructor is requesting an immediate close.\n\nTest: Includes regression test.\nBug: 123212403\nBug: 124058672\nBug: 122856181\nChange-Id: I6edc26bf504cbfbba7d055b1f8e52ac70e02c6e0\nMerged-In: I6edc26bf504cbfbba7d055b1f8e52ac70e02c6e0\n(cherry picked from commit 83eccadc7e9d0ee0f75aab980cfdc2159c4c98a2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8b2d200106b0036bfc65904057fc7f5bff66bb99",
+      "old_mode": 33188,
+      "old_path": "server/dns/DnsTlsSocket.cpp",
+      "new_id": "237d6bf24020f480f354234ae6b19156610a3ce8",
+      "new_mode": 33188,
+      "new_path": "server/dns/DnsTlsSocket.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2593bcf28b7595b5e6c2e7ce1e157e0af9f292e6",
+      "old_mode": 33188,
+      "old_path": "server/dns/DnsTlsSocket.h",
+      "new_id": "57e1acc724d2b1957c52d8032b35df886415f41e",
+      "new_mode": 33188,
+      "new_path": "server/dns/DnsTlsSocket.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bb5bfe5680cab4224a913bb809c8a752c7fb296f",
+      "old_mode": 33188,
+      "old_path": "tests/dns_tls_test.cpp",
+      "new_id": "b7fb3a45920d947f228570d7fc06bb6e7c7f854a",
+      "new_mode": 33188,
+      "new_path": "tests/dns_tls_test.cpp"
+    }
+  ]
+}

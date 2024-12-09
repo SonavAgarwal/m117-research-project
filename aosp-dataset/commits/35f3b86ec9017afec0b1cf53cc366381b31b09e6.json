@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "35f3b86ec9017afec0b1cf53cc366381b31b09e6",
+  "tree": "e5c2f7adb8676e88452077f99a50c9f6612b9355",
+  "parents": [
+    "b0c87f0dc750ce59edc180a2f21a87646123c0f3"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Fri May 24 11:30:17 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:58 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Set MANAGED_PROVISIONING_DPC_DOWNLOADED when downloading DPC.\n\nTest: atest DownloadPackageTaskRoboTest\nBug: 132261064\nChange-Id: Iac574dcc0acd7594bd11d1b0001df3975685c78f\n(cherry picked from commit f76e6b13d442b6a711d9e2ab212edfcba2724eaf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9783de1f6e4218744d71c2a3e0acc9389e876be5",
+      "old_mode": 33188,
+      "old_path": "src/com/android/managedprovisioning/task/DownloadPackageTask.java",
+      "new_id": "c18811a4e48fa2a26fbee4ff20bf4c0d7a0ca725",
+      "new_mode": 33188,
+      "new_path": "src/com/android/managedprovisioning/task/DownloadPackageTask.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "73a9c16a42637d897028fd1187d04a5d3caa2899",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/managedprovisioning/task/DownloadPackageTaskRoboTest.java"
+    }
+  ]
+}

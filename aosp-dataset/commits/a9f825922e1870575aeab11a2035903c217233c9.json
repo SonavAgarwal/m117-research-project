@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a9f825922e1870575aeab11a2035903c217233c9",
+  "tree": "0bef0262726684f6dd81e3a5b4a4b7285c6928da",
+  "parents": [
+    "77c24ecc36508c6bbf1bb90e7c2d5dc7ccd50fe7"
+  ],
+  "author": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Mon Jun 15 18:18:33 2020 -0700"
+  },
+  "committer": {
+    "name": "Hai Zhang",
+    "email": "zhanghai@google.com",
+    "time": "Tue Jun 16 20:48:59 2020 +0000"
+  },
+  "message": "Revoke install permissions when the permission defining app is uninstalled.\n\nBug: 155648771\nTest: atest RemovePermissionTest\nChange-Id: I4a5ecd9bede6f11d5023b3e8345b61d5b04e566f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d3f3ba1dc6bbcec7b10369681ba04b941665c9cc",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+      "new_id": "78199fa242322773080bad370536625e3b997be3",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+    }
+  ]
+}

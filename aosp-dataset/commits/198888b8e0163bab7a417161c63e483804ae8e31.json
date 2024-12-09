@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "198888b8e0163bab7a417161c63e483804ae8e31",
+  "tree": "ad40027582a91390d8adc7e4aebcc37f5b7aa75e",
+  "parents": [
+    "830cb39cb2a0f1bf6704d264e2a5c5029c175dd7"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Wed Aug 08 16:09:58 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:25 2018 +0000"
+  },
+  "message": "Add packet length check in smp_proc_master_id\n\nBug: 111937027\nTest: manual\n\nChange-Id: I1144c9879e84fa79d68ad9d5fece4f58e2a3b075\n(cherry picked from commit c8294662d07a98e9b8b1cab1ab681ec0805ce4e8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be340ec0cf512a2cda2799681efb3a090ebdbeed",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "fe21398a7857faa8bd1363da381395a6a04fcb51",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

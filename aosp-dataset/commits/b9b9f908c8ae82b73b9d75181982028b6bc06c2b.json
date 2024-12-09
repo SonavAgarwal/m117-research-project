@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "b9b9f908c8ae82b73b9d75181982028b6bc06c2b",
+  "tree": "5182437c528db6c772d60215715015ac8eaf8187",
+  "parents": [
+    "44d057a37868a60bc2eb6e7d1dcea701f234d56a"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@zytor.com",
+    "time": "Sun May 04 10:36:22 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86, espfix: Make it possible to disable 16-bit support\n\ncommit 34273f41d57ee8d854dcd2a1d754cbb546cb548f upstream.\n\nEmbedded systems, which may be very memory-size-sensitive, are\nextremely unlikely to ever encounter any 16-bit software, so make it\na CONFIG_EXPERT option to turn off support for any 16-bit software\nwhatsoever.\n\nSigned-off-by: H. Peter Anvin \u003chpa@zytor.com\u003e\nLink: http://lkml.kernel.org/r/1398816946-3351-1-git-send-email-hpa@linux.intel.com\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "520cde8d680f9636e856ff6f2e5d130593ff7c72",
+      "old_mode": 33188,
+      "old_path": "arch/x86/Kconfig",
+      "new_id": "2b6c572660fe5fbd42deef27031d1643ec2dda76",
+      "new_mode": 33188,
+      "new_path": "arch/x86/Kconfig"
+    },
+    {
+      "type": "modify",
+      "old_id": "41baa1f632b613587c14701b1a101b86407dc9e0",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_32.S",
+      "new_id": "e758e2fbd64d8a5404ac20d3ac9b39d471007a8d",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_32.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "75ccdc18216b0eef47daac9715ee797450a0f941",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_64.S",
+      "new_id": "f9315d9339ff0aaa4046bb83408e569dee662a52",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_64.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "ebc9873989233dcba13d1fa1af14e3e921959a85",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/ldt.c",
+      "new_id": "c37886d759ccac2736c36b357cc0f399786f2fb3",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/ldt.c"
+    }
+  ]
+}

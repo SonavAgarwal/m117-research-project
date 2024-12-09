@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a4e76aab230a565dd0cef11e2e6e2d782b685327",
+  "tree": "93febd7f7062bb301ce579f2db939328b88caab9",
+  "parents": [
+    "e289b4aa839a1bdfd2c9a25a0e8e11b76f81da4b"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Mon Mar 08 18:46:42 2021 -0800"
+  },
+  "committer": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Fri Apr 02 21:50:49 2021 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix CryptoPlugin use after free vulnerability.\n\nThe shared memory buffer used by srcPtr can be freed by another\nthread because it is not protected by a mutex. Subsequently,\na use after free AIGABRT can occur in a race condition.\n\nSafetyNet logging is not added to avoid log spamming. The\nmutex lock is called to setup for decryption, which is\ncalled frequently.\n\nThe crash was reproduced on the device before the fix.\nVerified the test passes after the fix.\n\nTest: sts\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176495665#testPocBug_176495665\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-176495665_sts64\n\nBug: 176495665\nBug: 176444161\nChange-Id: I4c83c44873eef960b654f387a3574fcad49c41a9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed6bcdeee62aa27bef83cc3c4dfbbf213c0e8803",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/Android.bp",
+      "new_id": "1122e46a053272dc5bf24c19a3c6d2eedcd35e2f",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6d4e8447b2737cce057753b50d2201c13c04563",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.cpp",
+      "new_id": "de8bbd599c0bb86993ae095f09fa0d49b3b0b9ef",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "11cc2aae47a65b51f6de6185f0e750a87d33f382",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.h",
+      "new_id": "0d091fae65d3c64f7d126a31d2b6843e5b85f3e5",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.h"
+    }
+  ]
+}

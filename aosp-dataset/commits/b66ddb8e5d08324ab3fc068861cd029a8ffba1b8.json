@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b66ddb8e5d08324ab3fc068861cd029a8ffba1b8",
+  "tree": "38f1543372cd977371e37ab0f25e7c9831762d45",
+  "parents": [
+    "86fbde617077681ba03fd906871213d7b57c3e96"
+  ],
+  "author": {
+    "name": "Lorenzo Colitti",
+    "email": "lorenzo@google.com",
+    "time": "Sat Oct 26 01:20:57 2019 +0900"
+  },
+  "committer": {
+    "name": "Manjae Park",
+    "email": "manjaepark@google.com",
+    "time": "Mon Dec 16 13:09:23 2019 -0800"
+  },
+  "message": "Add test coverage for strict mode private DNS.\n\nSupport faking out the DNS lookups used by NetworkMonitor to\nresolve strict mode DNS, and add more test coverage.\n\nThese tests were partly adapted from tests we have in Q but\nalso contain new coverage. This is because in Q the interface\nbetween ConnectivityService and NetworkMonitor changed\nsubstantially, and it is impractical to backport\nNetworkMonitorTest.\n\nBug: 122652057\nTest: atest FrameworksNetTests\nChange-Id: I6497b7efa539267576d38d3036eef0af0df4e9cb\nMerged-In: Iaa78a7edcf23755c89d7b354edbc28d37d74d891\n(cherry picked from commit 60cd85533d3a9ad4e3758de4804d1716e7fe0371)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9b9a3801aea14dce6d86e309132e3b5ecbcf5256",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/NetworkMonitor.java",
+      "new_id": "d3dad1d6f4949c394d7a9c6659187aff8f9bff90",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/NetworkMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "220858081e934b14a8b829e38d4f1627f6988499",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "64e82eab10f28fd3d02beb5d93c4f5698b916f20",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    }
+  ]
+}

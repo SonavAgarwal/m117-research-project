@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "04b68a0a51729b655bcd0f5ae5ec20645eeda946",
+  "tree": "b1c4c17580d50318b67c965d934577d2b3badfd5",
+  "parents": [
+    "8d8e1eb75c13caa3c2c3ae3f032f5d0305ed302e"
+  ],
+  "author": {
+    "name": "Ritu Baldwa",
+    "email": "ritu.baldwa@ittiam.com",
+    "time": "Tue Nov 28 18:38:18 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:30:09 2018 +0000"
+  },
+  "message": "Decoder: Modified loop condition while parsing ref_list_reordering.\n\nWhen ref_pic_list_reordering_flag_l1 is equal to 1, the number of times\nthat reordering_of_pic_nums_idc is not equal to 3 following\nref_pic_list_reordering_flag_l1 should not exceed\nnum_ref_idx_l1_active_minus1 + 1.\n\nBug: 69478425\nChange-Id: I031bb744869ac8a57f85bb97574832efd0eefc25\n(cherry picked from commit 7ea47d575d26d4d5356670092af26fb6915e75bf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f6417c7333e7035b470d6973d471e679ca7c7f7f",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_dpb_mgr.c",
+      "new_id": "525adef6b0b0386902b42fc2efc54b1afc417892",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_dpb_mgr.c"
+    }
+  ]
+}

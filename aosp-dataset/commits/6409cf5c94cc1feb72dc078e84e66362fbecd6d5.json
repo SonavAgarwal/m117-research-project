@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "6409cf5c94cc1feb72dc078e84e66362fbecd6d5",
+  "tree": "584976aa64f22b93ad3c98ca18703ce3cf57b236",
+  "parents": [
+    "f32310a7e6589a26c4b7fbb45d935a80f13f27d9"
+  ],
+  "author": {
+    "name": "Matthew Fritze",
+    "email": "mfritze@google.com",
+    "time": "Mon Jul 30 14:12:50 2018 -0700"
+  },
+  "committer": {
+    "name": "Matt Fritze",
+    "email": "mfritze@google.com",
+    "time": "Wed Aug 15 15:09:34 2018 -0700"
+  },
+  "message": "Hide SettingsSlice provider\n\nExplicitly set the Settings SliceBroadcastReceiver to\nbe non-exported and remove the intent-filter.\n\nAdd a second provider: SliceRelayReceiver to receive\nbroadcasts from SysUI to alert Settings to potential\nchanges to bound Settings Slices. The new receiver is\nexported, but only notifies changes to Settings, and\ndoesn\u0027t make any changes itself.\n\nChange-Id: I422c0b07a61efa8996e9fdfa398eee84bbc1796f\nMerged-In: I80d070f7636614135ebe4f57a16f12a3eb6dee81\nFixes: 111330641\nTest: boot, robolectric, Slicebrowser\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fb74bf96f09f48bd443516db60c1b82f8110c829",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "2c5f8465114da3c940237e394dd00af5016dc557",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "841247b1d64d0675dc3cf60f4c66c4be8700df56",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/slices/SettingsSliceProvider.java",
+      "new_id": "3b5e72e8ee390a2f35ced3d0990d2314d3df26ff",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/slices/SettingsSliceProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d81734a974d18690a7095f8b8f3c4d9c00fb9e16",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/slices/SliceBroadcastReceiver.java",
+      "new_id": "53fa4be8e3879f2e0ed4446068f70035c4d21802",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/slices/SliceBroadcastReceiver.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c8ec12eae855a2712f80784ccd7cbf490ac86da9",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/slices/SliceRelayReceiver.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "25f0d0cb1630dba81b396ffbe9e58056d8020a11",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/slices/SliceBroadcastReceiverTest.java",
+      "new_id": "f8172e88f0c4e85b78a4002b42164e8d92c84108",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/slices/SliceBroadcastReceiverTest.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3388a16f33fee6b0e6d7370267e9de4ccf37ea8e",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/slices/SliceRelayReceiverTest.java"
+    }
+  ]
+}

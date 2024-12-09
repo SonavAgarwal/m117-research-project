@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e07417a9b7829cfb32505947f700fd8dad9e12e6",
+  "tree": "a9266ade5438f4da5156e60b23498946d41d51b2",
+  "parents": [
+    "23a3c612893597b2c1d6507ef9c94ae25f8cdcbe"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Thu Feb 04 00:03:08 2021 -0800"
+  },
+  "committer": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Mon Mar 08 17:57:34 2021 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix possible uaf of play policy state\n\nAccess to the play policy state may happen after\nthe state is freed in a race condition, which will\nresult in a SIGARBT.\n\nSafetyNet logging is not added to avoid log spamming.\nqueryKeyStatus can be called often.\n\nThe crash was reproduced on the device before the fix.\nVerified the test passes after the fix.\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176486806#testPocBug_176486806\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-176486806_sts64\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176444154#testPocBug_176444154\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-176444154_sts64\n\nBug: 176444154\nBug: 176486806\nChange-Id: I07cc93c255942d56e866d0b08fb786f154f6e0d3\nMerged-In: I07cc93c255942d56e866d0b08fb786f154f6e0d3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6ac3510c7ce2fa0bd45179d2141fef5a5b70d03c",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp",
+      "new_id": "089eb1cdc98a3c6e0590803bbfd3ae5a0f8dfd44",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/default/DrmPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa9b59ddbb58a97285b36be05f76fc46cfabdb1e",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/default/include/DrmPlugin.h",
+      "new_id": "95f15caffea78d4da8d5fd791b47fb28a2d27fc3",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/default/include/DrmPlugin.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a77759eaef291975048e6dca0c702512378681ea",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp",
+      "new_id": "97a62be7f10f1f79a376c9741147b4d5d6bc6c77",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp"
+    }
+  ]
+}

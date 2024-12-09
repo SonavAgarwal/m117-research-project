@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7cea5cb64b83d690fe02bc210bbdf08f5a87636f",
+  "tree": "61ebdd19219a289173b2dee7c27f683fe28f9ee9",
+  "parents": [
+    "dd3546765710ce8dd49eb23901d90345dec8282f"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Thu Apr 07 17:45:02 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:56 2016 -0700"
+  },
+  "message": "codecs: check OMX buffer size before use in (gsm|g711)dec\n\nBug: 27793163\nBug: 27793367\nChange-Id: Iec3de8a237ee2379d87a8371c13e543878c6652c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3de95a50e55f2d40c80ff7ebca22ea4d518f52dc",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/g711/dec/SoftG711.cpp",
+      "new_id": "c8277de116261dd91832aea8a769ad2147a6b460",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/g711/dec/SoftG711.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7916c45b23fe82182d00d8bb9c70f5c0cac5ffdd",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/gsm/dec/SoftGSM.cpp",
+      "new_id": "04d5a33191aa9c820206d254366dec8b0a28c4de",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/gsm/dec/SoftGSM.cpp"
+    }
+  ]
+}

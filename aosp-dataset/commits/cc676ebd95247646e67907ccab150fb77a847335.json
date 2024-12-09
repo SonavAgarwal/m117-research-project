@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "cc676ebd95247646e67907ccab150fb77a847335",
+  "tree": "960ea8167672017f1724c2f97a15ab56c1771ecd",
+  "parents": [
+    "d4841f1161bdb5e13cb19e81af42437a634dd6ef"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue May 24 13:11:51 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:02 2016 -0700"
+  },
+  "message": "Fix slice params for interlaced video\n\nBug: 28165661\nChange-Id: I912a86bd78ebf0617fd2bc6eb2b5a61afc17bf53\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "82226f39467575ead037dbf64869a2738e765761",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "e2fa32258a3645774ec5dc63a01141888e56f920",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f6f63f701156e9c663f52310d1b9083a6fb6438",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "a589d8441756b5c52d6184fd643ed542030ac783",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

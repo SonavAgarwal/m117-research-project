@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "3fffc78f70dc101add8b82af878d53457713d005",
+  "tree": "430bb1944bb85dbf457a3a5df2702a9322b8e280",
+  "parents": [
+    "68cdc8df1cb6622980b791ce03e99c255c9888af"
+  ],
+  "author": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Wed Dec 09 15:24:05 2015 -0800"
+  },
+  "committer": {
+    "name": "Pat Tjin",
+    "email": "pattjin@google.com",
+    "time": "Wed Dec 09 23:34:14 2015 +0000"
+  },
+  "message": "net: wireless: bcmdhd: check packet length for event messages\n\nCheck the datalen field is less than the size of\npacket received from the network.\n\nBug: 25306181\n\nSigned-off-by: Patrick Tjin \u003cpattjin@google.com\u003e\nChange-Id: I3b021d88a95bd7d4e6e0d745d2527d73487bcadc\n(cherry picked from commit 10b850b7e82873a14068d24dac4fc2080d46ff76)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8c3f0f6dc8009ecf586ed20159aecc6ff14a16a5",
+      "old_mode": 33188,
+      "old_path": "drivers/net/wireless/bcmdhd/dhd.h",
+      "new_id": "5e33262eedcb49a4283f2b5579756e580929e72f",
+      "new_mode": 33188,
+      "new_path": "drivers/net/wireless/bcmdhd/dhd.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a6882f3ea4d040b803e63aa1579df038cc8d392",
+      "old_mode": 33188,
+      "old_path": "drivers/net/wireless/bcmdhd/dhd_common.c",
+      "new_id": "201a0ac13fd109027f43a5209d57f673d8fe4315",
+      "new_mode": 33188,
+      "new_path": "drivers/net/wireless/bcmdhd/dhd_common.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "399840213028284e0cf95d8ef39cc7cadaa5971a",
+      "old_mode": 33188,
+      "old_path": "drivers/net/wireless/bcmdhd/dhd_linux.c",
+      "new_id": "7c0563ada85ba89567d075bd08ac91d15ee4037c",
+      "new_mode": 33188,
+      "new_path": "drivers/net/wireless/bcmdhd/dhd_linux.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9a03f9511559f82d034603e1df1425a4e0650f92",
+  "tree": "197dcb0720b61a444c66d2d66d8c14de1cd32773",
+  "parents": [
+    "0b57e70715c17e038b2fec0f808c1cd2172f4775"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Mon Apr 24 12:04:22 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:47:55 2017 +0000"
+  },
+  "message": "Limit boundary PU sizes in case of errors\n\nIn case of error clips, some PUs are marked as skip.\nEnsure such PUs stay within the picture\n\nBug: 37615911\nTest: ran POC included with the bug.\nChange-Id: Ie0aeccc752cf556f9dea84de61c15a7906e1060b\n(cherry picked from commit 62830d130b33ab196245e8fbda63639fe9420c18)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "126b14c4da7e72ef034739365c4d0b49025c9a4f",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice.c",
+      "new_id": "9f92a0d322d66cb9c5b04a9584afb7ad56a41c46",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice.c"
+    }
+  ]
+}

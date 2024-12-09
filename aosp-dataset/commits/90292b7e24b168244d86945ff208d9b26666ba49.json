@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "90292b7e24b168244d86945ff208d9b26666ba49",
+  "tree": "d750e00d6268197aa6f3438f87f5968bab86884b",
+  "parents": [
+    "af597ae487c36ff713db887089797dbafe816a5f"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Fri May 17 07:29:07 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:04 2019 +0000"
+  },
+  "message": "AMR WB encoder: prevent OOB write in ACELP_4t64_fx\n\nIn ACELP_4t64_fx, when iterating over ind array, check index against\n  array size to prevent OOB write, log an error if such an access\n  was about to happen.\n\nBug: 132647222\nTest: atest EncoderTest#testAMRWBEncoders\nChange-Id: I33f476d94baec2feffc7bcccd0ad0481b8452518\n(cherry picked from commit 82cb46d0d55a407f468023977204eb7133b7fd77)\nMerged-in: I33f476d94baec2feffc7bcccd0ad0481b8452518\n(cherry picked from commit 9a44849c88b306e1b4fb37bd9aa34d6ba0607b7a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ebe08c6bfe1f9b332bb91cefb1550e9075a16358",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrwbenc/Android.bp",
+      "new_id": "5d479b3a8a602323f54faa159d699764f0247777",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrwbenc/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "81b3f6900966ee56acef4ac05aef0c198e220b45",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrwbenc/SampleCode/Android.bp",
+      "new_id": "79b37ff280af530aa587e7f0b9e2db9241ca8e94",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrwbenc/SampleCode/Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8cebb097bdfc7c95533f242b13babd70154d278a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrwbenc/src/c4t64fx.c",
+      "new_id": "f2e28c42dd97411063fcf1afcc3ea0d655276f02",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrwbenc/src/c4t64fx.c"
+    }
+  ]
+}

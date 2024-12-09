@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "33ef7de9ddc8ea7eb9cbc440d1cf89957a0c267b",
+  "tree": "6f5c7f79c82cd70f3d40dff036377bd08d2aaef5",
+  "parents": [
+    "ab0e4254066f1f7de1433f7402cafc748cc73374"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Dec 23 15:29:14 2016 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Jan 19 09:17:00 2017 -0800"
+  },
+  "message": "Decoder: Fixes an out of bound write in bitstream buffer\n\n[for mnc-dr-dev and later;  mnc-dev gets a different patch]\n\nAfter emulation prevention, data is written as an int,\nso at least 3 additional bytes should be available.\nAnd since bitstream functions read 8 bytes ahead, 8 extra bytes\nshould be available in the bitstream buffer.\n\nBug: 33934721\n\nChange-Id: I444ec6f85d01b0bade9f827e15c4b476779d6c69\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5b6c7c17ac59f0737d30537a8b1bddc451f88bfd",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "dbf7030c90b590e5f5d6d7c56b5408882ca1232d",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

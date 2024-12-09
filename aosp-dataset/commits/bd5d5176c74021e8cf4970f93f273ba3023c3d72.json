@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bd5d5176c74021e8cf4970f93f273ba3023c3d72",
+  "tree": "a4832eecbc1f7b84424defd30754c1ce0f2dad2d",
+  "parents": [
+    "961f0aea3d6b8b9c480d4e209fae76957299943d"
+  ],
+  "author": {
+    "name": "Jason Monk",
+    "email": "jmonk@google.com",
+    "time": "Thu Jun 30 11:26:08 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:37 2016 -0700"
+  },
+  "message": "Pre-setup restrictions\n\n - Don\u0027t let user settings run\n\nBug: 29194585\nChange-Id: Ia9c46c7ba04ce2809304bebe8a4c5cdac2108611\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d6b189b08fea7b9cc7aafc720f72d31ff4b99180",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/users/UserSettings.java",
+      "new_id": "02fd677710fbe9c9e28970238ead1ea469a9a7dd",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/users/UserSettings.java"
+    }
+  ]
+}

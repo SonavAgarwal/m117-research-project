@@ -1,0 +1,1800 @@
+)]}'
+{
+  "commit": "f720f0dbcf012d6c984dbbefa0875ef9840458c6",
+  "tree": "bdb1068e64623c623100071dc586117aba4a2417",
+  "parents": [
+    "ec62c527eb34ee4481a0153ceb42dfd35d7e1d26"
+  ],
+  "author": {
+    "name": "Jungshik Shin",
+    "email": "jungshik@google.com",
+    "time": "Fri Jan 15 16:18:25 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Wed Feb 24 13:20:13 2016 -0800"
+  },
+  "message": "[DO NOT MERGE] Update FreeType to 2.6.2 + update from 2.6.0\n\n1. Update to a512b0fe7a (several patches past 2.6.2). \n   Major changes include\n   - stem-darkening is OFF for CFF fonts by default\n   - general code tightening\n   - header file location is back to include/freetype (used be include/)\n2. A bit more details are added to README.android for the reference.\n\nThis CL requires a pdfium change (the way it includes FT header\nfiles : https://googleplex-android-review.git.corp.google.com/#/c/846889\n\nAn AOSP master CL \n(https://android-review.googlesource.com/#/c/196504/) is ported\nto mnc-dev.\n\nBug: 24296662\n\nChange-Id: Iec6784838d89098f332e6d1ed79663efd91a8441\nSigned-off-by: Jungshik Shin \u003cjungshik@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed61907b056cc3c34023a95c91b8e538c12eab1a",
+      "old_mode": 33188,
+      "old_path": "README.android",
+      "new_id": "c3139d5786262d92297ecff8d867a0caeff57cdb",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    },
+    {
+      "type": "rename",
+      "old_id": "086db76ab5b87c6c0a60dde33d261e3d42fce9b0",
+      "old_mode": 33188,
+      "old_path": "include/config/ftconfig.h",
+      "new_id": "d4d79936df1653891c953a1337394678583719ed",
+      "new_mode": 33188,
+      "new_path": "include/freetype/config/ftconfig.h",
+      "score": 99
+    },
+    {
+      "type": "rename",
+      "old_id": "4906bc1f28b1a7a22d9f9b133b400b3a76fb2350",
+      "old_mode": 33188,
+      "old_path": "include/config/ftheader.h",
+      "new_id": "55f833db0fb52bee8ee9df8c498f16c05f98397c",
+      "new_mode": 33188,
+      "new_path": "include/freetype/config/ftheader.h",
+      "score": 89
+    },
+    {
+      "type": "rename",
+      "old_id": "e145790da87ffa41c1c2e2b6588ed73edb5b43b4",
+      "old_mode": 33188,
+      "old_path": "include/config/ftmodule.h",
+      "new_id": "e145790da87ffa41c1c2e2b6588ed73edb5b43b4",
+      "new_mode": 33188,
+      "new_path": "include/freetype/config/ftmodule.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "6e8a528c35e95c7e264cb31493b3f6da0480f8c5",
+      "old_mode": 33188,
+      "old_path": "include/config/ftoption.h",
+      "new_id": "381958685aa67ecfff1e07f6a911bc05174035f2",
+      "new_mode": 33188,
+      "new_path": "include/freetype/config/ftoption.h",
+      "score": 97
+    },
+    {
+      "type": "rename",
+      "old_id": "8ef43c04b92ec501a56adfda53bcc27b9b34d37e",
+      "old_mode": 33188,
+      "old_path": "include/config/ftstdlib.h",
+      "new_id": "4b471d4d15d2b8c8a5247e5918e37500aca9e4d1",
+      "new_mode": 33188,
+      "new_path": "include/freetype/config/ftstdlib.h",
+      "score": 99
+    },
+    {
+      "type": "rename",
+      "old_id": "bca93e5b8fd7ae672070dbc52566da68d7ad7507",
+      "old_mode": 33188,
+      "old_path": "include/freetype.h",
+      "new_id": "f68718d1cd7a95bbca77fe522ab3cf2415582469",
+      "new_mode": 33188,
+      "new_path": "include/freetype/freetype.h",
+      "score": 92
+    },
+    {
+      "type": "rename",
+      "old_id": "b4d2aed567730a8b103ca7ad593bedc5b26bc5a3",
+      "old_mode": 33188,
+      "old_path": "include/ftadvanc.h",
+      "new_id": "b4d2aed567730a8b103ca7ad593bedc5b26bc5a3",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftadvanc.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "cf7b76f492061e775def00e042f4d21997f9c7f1",
+      "old_mode": 33188,
+      "old_path": "include/ftautoh.h",
+      "new_id": "d0f6445ed1faa866bf1c91ef29366d3763a3b2ba",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftautoh.h",
+      "score": 87
+    },
+    {
+      "type": "rename",
+      "old_id": "9d9d04076764970bd818e265820a8fd9376a4431",
+      "old_mode": 33188,
+      "old_path": "include/ftbbox.h",
+      "new_id": "9d9d04076764970bd818e265820a8fd9376a4431",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftbbox.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "0bdabf481cb3252cd289c72a8aab66435d231378",
+      "old_mode": 33188,
+      "old_path": "include/ftbdf.h",
+      "new_id": "0bdabf481cb3252cd289c72a8aab66435d231378",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftbdf.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "46cc47b7d1ed9f9ea6522def7fa2bae81a66db30",
+      "old_mode": 33188,
+      "old_path": "include/ftbitmap.h",
+      "new_id": "46cc47b7d1ed9f9ea6522def7fa2bae81a66db30",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftbitmap.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "c25f9469dff3c78a23e18862d295d55555cd9aa6",
+      "old_mode": 33188,
+      "old_path": "include/ftbzip2.h",
+      "new_id": "c25f9469dff3c78a23e18862d295d55555cd9aa6",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftbzip2.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "68525bb8294baf1f4ebd55ec6067fb19c4530622",
+      "old_mode": 33188,
+      "old_path": "include/ftcache.h",
+      "new_id": "68525bb8294baf1f4ebd55ec6067fb19c4530622",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftcache.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "6c8e416cee332dcff8f405c665b5c7ecee217bad",
+      "old_mode": 33188,
+      "old_path": "include/ftcffdrv.h",
+      "new_id": "8500346c8776ee582c296de8ed61cdd0cf5e67d0",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftcffdrv.h",
+      "score": 98
+    },
+    {
+      "type": "rename",
+      "old_id": "d333761c81b15bdcd883c337adc8937698dabe1a",
+      "old_mode": 33188,
+      "old_path": "include/ftchapters.h",
+      "new_id": "ab4389530ef6b8831f07215e4deb38b0538b1fae",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftchapters.h",
+      "score": 89
+    },
+    {
+      "type": "rename",
+      "old_id": "05741c85b7ac633b206967dd3145df79c2ccaea9",
+      "old_mode": 33188,
+      "old_path": "include/ftcid.h",
+      "new_id": "05741c85b7ac633b206967dd3145df79c2ccaea9",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftcid.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "1bf0751b173dda8cf50b270a49522b668d1635ca",
+      "old_mode": 33188,
+      "old_path": "include/fterrdef.h",
+      "new_id": "3bf4e63b56911a8c2712059d66c3775b666bd4c2",
+      "new_mode": 33188,
+      "new_path": "include/freetype/fterrdef.h",
+      "score": 82
+    },
+    {
+      "type": "rename",
+      "old_id": "376bee6f86a69a1b855aee9b5cca734a4f623167",
+      "old_mode": 33188,
+      "old_path": "include/fterrors.h",
+      "new_id": "0507b9ad7dcf318a7ecc3bdc3a179db1b4b31cdb",
+      "new_mode": 33188,
+      "new_path": "include/freetype/fterrors.h",
+      "score": 61
+    },
+    {
+      "type": "rename",
+      "old_id": "1f8ff28f104ddf13013a68f6d75d4c9b0f5cea16",
+      "old_mode": 33188,
+      "old_path": "include/ftfntfmt.h",
+      "new_id": "1f8ff28f104ddf13013a68f6d75d4c9b0f5cea16",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftfntfmt.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "9a9b6321b32e72dc627c631c1cb97b730831c109",
+      "old_mode": 33188,
+      "old_path": "include/ftgasp.h",
+      "new_id": "9a9b6321b32e72dc627c631c1cb97b730831c109",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftgasp.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "803ad396219f138806cdc296a04bce7dd3d65cae",
+      "old_mode": 33188,
+      "old_path": "include/ftglyph.h",
+      "new_id": "803ad396219f138806cdc296a04bce7dd3d65cae",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftglyph.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "0e9ac1dad31681fa7ce457372b772d0e68e39c77",
+      "old_mode": 33188,
+      "old_path": "include/ftgxval.h",
+      "new_id": "0e9ac1dad31681fa7ce457372b772d0e68e39c77",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftgxval.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "b3a532d5e15f3f60d523a58c2474740853ff6127",
+      "old_mode": 33188,
+      "old_path": "include/ftgzip.h",
+      "new_id": "b3a532d5e15f3f60d523a58c2474740853ff6127",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftgzip.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "82f284c4f9879fcaa06d93e7569ad35e63ee4e86",
+      "old_mode": 33188,
+      "old_path": "include/ftimage.h",
+      "new_id": "82f284c4f9879fcaa06d93e7569ad35e63ee4e86",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftimage.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "840af25b05981b90a6c9f3d40c58f094a34c7a9a",
+      "old_mode": 33188,
+      "old_path": "include/ftincrem.h",
+      "new_id": "840af25b05981b90a6c9f3d40c58f094a34c7a9a",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftincrem.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "4cd999a4b34146cde345db9edfc51fcf44252f17",
+      "old_mode": 33188,
+      "old_path": "include/ftlcdfil.h",
+      "new_id": "a9dd3eab1b6f232b6ce00343c57f00f671e94da9",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftlcdfil.h",
+      "score": 60
+    },
+    {
+      "type": "rename",
+      "old_id": "12b48c78f7059b500d097b4426e22232aaead5e1",
+      "old_mode": 33188,
+      "old_path": "include/ftlist.h",
+      "new_id": "12b48c78f7059b500d097b4426e22232aaead5e1",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftlist.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "d3ec28e554f9c8864726734d3b8bc6288a5d2d43",
+      "old_mode": 33188,
+      "old_path": "include/ftlzw.h",
+      "new_id": "d3ec28e554f9c8864726734d3b8bc6288a5d2d43",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftlzw.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "14c55cfe2b7b14703f12ef39087597b2d075767c",
+      "old_mode": 33188,
+      "old_path": "include/ftmac.h",
+      "new_id": "14c55cfe2b7b14703f12ef39087597b2d075767c",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftmac.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "6ef47987e6d00da218ec8e88ae0f7bc56a038c3a",
+      "old_mode": 33188,
+      "old_path": "include/ftmm.h",
+      "new_id": "96dd66e145214d7c043f0349ac118ebd061cbd9e",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftmm.h",
+      "score": 97
+    },
+    {
+      "type": "rename",
+      "old_id": "2ef3f46749238747f2820ce5ab659d5db0fb85fc",
+      "old_mode": 33188,
+      "old_path": "include/ftmodapi.h",
+      "new_id": "89d9347e5b7f62489a83155741948f813373f1bb",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftmodapi.h",
+      "score": 97
+    },
+    {
+      "type": "rename",
+      "old_id": "9d7f9814091faecb7dfff470c04cc7af98b512ca",
+      "old_mode": 33188,
+      "old_path": "include/ftmoderr.h",
+      "new_id": "9d7f9814091faecb7dfff470c04cc7af98b512ca",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftmoderr.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "e744b713fbec06c2e461071c406d6f292d990eb2",
+      "old_mode": 33188,
+      "old_path": "include/ftotval.h",
+      "new_id": "e744b713fbec06c2e461071c406d6f292d990eb2",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftotval.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "106cfde06d334d21981967fcc2422fcf87201294",
+      "old_mode": 33188,
+      "old_path": "include/ftoutln.h",
+      "new_id": "b6ec70de8cf95cae3b31146b5c1b17c881d46292",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftoutln.h",
+      "score": 99
+    },
+    {
+      "type": "rename",
+      "old_id": "a1c02a2f5ee03681c7ac390b6cfb68528019b2f7",
+      "old_mode": 33188,
+      "old_path": "include/ftpfr.h",
+      "new_id": "a1c02a2f5ee03681c7ac390b6cfb68528019b2f7",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftpfr.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "ec8da700b144ed413c84d5f740b99164aea3a6d2",
+      "old_mode": 33188,
+      "old_path": "include/ftrender.h",
+      "new_id": "ec8da700b144ed413c84d5f740b99164aea3a6d2",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftrender.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "bef8424715f1960eb11b4c5ffa0d974c1d276e50",
+      "old_mode": 33188,
+      "old_path": "include/ftsizes.h",
+      "new_id": "bef8424715f1960eb11b4c5ffa0d974c1d276e50",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftsizes.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "0f7fbe1744536991ea6edcb0eea72dade53b2285",
+      "old_mode": 33188,
+      "old_path": "include/ftsnames.h",
+      "new_id": "0f7fbe1744536991ea6edcb0eea72dade53b2285",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftsnames.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "7ebb1e7404e94519fc1b65f6c25e54b22b08eef8",
+      "old_mode": 33188,
+      "old_path": "include/ftstroke.h",
+      "new_id": "7ebb1e7404e94519fc1b65f6c25e54b22b08eef8",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftstroke.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "fbcbad871a92496f520fb8e0927eac9d3e329118",
+      "old_mode": 33188,
+      "old_path": "include/ftsynth.h",
+      "new_id": "fbcbad871a92496f520fb8e0927eac9d3e329118",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftsynth.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "2bc999910b47c473c7422c944dc2bcdb62094c5c",
+      "old_mode": 33188,
+      "old_path": "include/ftsystem.h",
+      "new_id": "2bc999910b47c473c7422c944dc2bcdb62094c5c",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftsystem.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "3d821ba16ad980d31b519bcf2902afe89ae66bfe",
+      "old_mode": 33188,
+      "old_path": "include/fttrigon.h",
+      "new_id": "485ec5158744d449b05a9b21ca4b5fe7efcf47f5",
+      "new_mode": 33188,
+      "new_path": "include/freetype/fttrigon.h",
+      "score": 98
+    },
+    {
+      "type": "rename",
+      "old_id": "f56040b82882973bee31f39a157391098dc15605",
+      "old_mode": 33188,
+      "old_path": "include/ftttdrv.h",
+      "new_id": "dc0081a0b9620c84e2cb6252b48daa07f668a21b",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftttdrv.h",
+      "score": 71
+    },
+    {
+      "type": "rename",
+      "old_id": "706a1be4ef9fdbd0a494e987cdedefb0dd626c9d",
+      "old_mode": 33188,
+      "old_path": "include/fttypes.h",
+      "new_id": "706a1be4ef9fdbd0a494e987cdedefb0dd626c9d",
+      "new_mode": 33188,
+      "new_path": "include/freetype/fttypes.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "caedaa1cc76649486d8bca7144df2571d0fbd9b4",
+      "old_mode": 33188,
+      "old_path": "include/ftwinfnt.h",
+      "new_id": "caedaa1cc76649486d8bca7144df2571d0fbd9b4",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ftwinfnt.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "8d5a9773cb54a49bb96089b52e17a4aa58575815",
+      "old_mode": 33188,
+      "old_path": "include/internal/autohint.h",
+      "new_id": "8d5a9773cb54a49bb96089b52e17a4aa58575815",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/autohint.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "75752c3d99ab8e2e5347e158dffabc94532c9528",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftcalc.h",
+      "new_id": "a76682b0c046cf46c530d3cd55bf6bdce0bdedc3",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftcalc.h",
+      "score": 95
+    },
+    {
+      "type": "rename",
+      "old_id": "216c73031ebf0896174cc46a6049f06acfd73e66",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftdebug.h",
+      "new_id": "216c73031ebf0896174cc46a6049f06acfd73e66",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftdebug.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "16856d3df831f0623a7690d3f163999383027c94",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftdriver.h",
+      "new_id": "16856d3df831f0623a7690d3f163999383027c94",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftdriver.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "970dd70cc3ec9d6ccf1c74cf41361f6d6aa6556b",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftgloadr.h",
+      "new_id": "970dd70cc3ec9d6ccf1c74cf41361f6d6aa6556b",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftgloadr.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "c0c553b4fc92a99c4e7c3ecc22dabc4db5c8cd6f",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftmemory.h",
+      "new_id": "c0c553b4fc92a99c4e7c3ecc22dabc4db5c8cd6f",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftmemory.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "37317a43c97dac726162977c84519f77c26a9364",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftobjs.h",
+      "new_id": "9a333fc1dee5bc85844e36f69df2d7e9bf921cd3",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftobjs.h",
+      "score": 99
+    },
+    {
+      "type": "rename",
+      "old_id": "7f9154f419ea03f164755a225058eb3e2fa1d4e3",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftpic.h",
+      "new_id": "7f9154f419ea03f164755a225058eb3e2fa1d4e3",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftpic.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "da61ca75b53339d849accd97bcc35d6196026c1c",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftrfork.h",
+      "new_id": "da61ca75b53339d849accd97bcc35d6196026c1c",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftrfork.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "8f837e47568c2c9a253fec2489017bcad06a6c5b",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftserv.h",
+      "new_id": "11a0c7f3de52e47c04da659f5553ccec2fcbaf80",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftserv.h",
+      "score": 96
+    },
+    {
+      "type": "rename",
+      "old_id": "384e5df305cdacb59e3cf0d19cc735fffc3df502",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftstream.h",
+      "new_id": "384e5df305cdacb59e3cf0d19cc735fffc3df502",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftstream.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "9d28d214d62e312be15e437629da1f76719bd0a7",
+      "old_mode": 33188,
+      "old_path": "include/internal/fttrace.h",
+      "new_id": "2b0bf9d53014e48caeb9a04673da59b7cd2fdb3d",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/fttrace.h",
+      "score": 99
+    },
+    {
+      "type": "rename",
+      "old_id": "9cda6eef5f6747e2b31b101ba2fc0b1df947d188",
+      "old_mode": 33188,
+      "old_path": "include/internal/ftvalid.h",
+      "new_id": "9cda6eef5f6747e2b31b101ba2fc0b1df947d188",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/ftvalid.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "1c1fd0ee15d48081c65d6309c72d2f89fa32354e",
+      "old_mode": 33188,
+      "old_path": "include/internal/internal.h",
+      "new_id": "809ce59c92fb3cbe8e82e88f72cdd168c7ca4f11",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/internal.h",
+      "score": 62
+    },
+    {
+      "type": "rename",
+      "old_id": "1c5f784f52c1725bbf6edf91ee0e5fbea9022f25",
+      "old_mode": 33188,
+      "old_path": "include/internal/psaux.h",
+      "new_id": "1c5f784f52c1725bbf6edf91ee0e5fbea9022f25",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/psaux.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "12aaabacd4363cb95081c66cd712b7e520a9f69a",
+      "old_mode": 33188,
+      "old_path": "include/internal/pshints.h",
+      "new_id": "12aaabacd4363cb95081c66cd712b7e520a9f69a",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/pshints.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "865b53687d034c6260911f0e859fcec734cf4487",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svbdf.h",
+      "new_id": "865b53687d034c6260911f0e859fcec734cf4487",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svbdf.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "4a535a6f424d6ba80d419015b27ad502edbb16e1",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svcid.h",
+      "new_id": "4a535a6f424d6ba80d419015b27ad502edbb16e1",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svcid.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "f8b3617364cbb718e9f097522210c53d9e2c3f26",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svfntfmt.h",
+      "new_id": "f8b3617364cbb718e9f097522210c53d9e2c3f26",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svfntfmt.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "f78bca5d77614bedb6657fece18df68e7536fc9f",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svgldict.h",
+      "new_id": "f78bca5d77614bedb6657fece18df68e7536fc9f",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svgldict.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "59cc3b7048949291684186365a7f900d31012470",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svgxval.h",
+      "new_id": "59cc3b7048949291684186365a7f900d31012470",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svgxval.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "bc26f15941c2fa0138e3334732857a4431ebbd8e",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svkern.h",
+      "new_id": "bc26f15941c2fa0138e3334732857a4431ebbd8e",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svkern.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "f2cecfbb3bc6e837af68e9f9896e4fffec1406bc",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svmm.h",
+      "new_id": "f2cecfbb3bc6e837af68e9f9896e4fffec1406bc",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svmm.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "a82a6420fd7faa57647c6ec806323582ae01b9be",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svotval.h",
+      "new_id": "a82a6420fd7faa57647c6ec806323582ae01b9be",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svotval.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "d4eb1693d0c1f9d3d2c9e112d7a8227edbfcf026",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svpfr.h",
+      "new_id": "d4eb1693d0c1f9d3d2c9e112d7a8227edbfcf026",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svpfr.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "a89f79e4796bd8695fbc3b2ef18d4d877a024cef",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svpostnm.h",
+      "new_id": "a89f79e4796bd8695fbc3b2ef18d4d877a024cef",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svpostnm.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "c9f07ce33ace9f63439d608afb528b6c075011c0",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svprop.h",
+      "new_id": "c9f07ce33ace9f63439d608afb528b6c075011c0",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svprop.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "66da6e10438219bf572ffe704d05a2e4cd4670b5",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svpscmap.h",
+      "new_id": "66da6e10438219bf572ffe704d05a2e4cd4670b5",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svpscmap.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "752a2660258c7342345b29d7aa9e7c6c07770211",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svpsinfo.h",
+      "new_id": "752a2660258c7342345b29d7aa9e7c6c07770211",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svpsinfo.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "252ae1cf5eb096e83e4a0ff93ed338124060bfd9",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svsfnt.h",
+      "new_id": "252ae1cf5eb096e83e4a0ff93ed338124060bfd9",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svsfnt.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "4351a9ae05b2709d678826995b107dbb8dbf2759",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svttcmap.h",
+      "new_id": "cd95b9ab81f6e43fa53c6e6223141b8b72497995",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svttcmap.h",
+      "score": 95
+    },
+    {
+      "type": "rename",
+      "old_id": "272ee8c055301e6ef489dfdcf06671ca8b1d85a2",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svtteng.h",
+      "new_id": "272ee8c055301e6ef489dfdcf06671ca8b1d85a2",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svtteng.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "f5cb76a9f85c7d80d3ef205220f8cd9cb8258797",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svttglyf.h",
+      "new_id": "f5cb76a9f85c7d80d3ef205220f8cd9cb8258797",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svttglyf.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "0036929b2f80504b36e220e4d5b05d4995ca4ecf",
+      "old_mode": 33188,
+      "old_path": "include/internal/services/svwinfnt.h",
+      "new_id": "0036929b2f80504b36e220e4d5b05d4995ca4ecf",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/services/svwinfnt.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "97ce390c3567a766da1b94b0f99a07480901ac40",
+      "old_mode": 33188,
+      "old_path": "include/internal/sfnt.h",
+      "new_id": "30f53bf09ce0a838eb45ddad6492c65f9f5eb719",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/sfnt.h",
+      "score": 93
+    },
+    {
+      "type": "rename",
+      "old_id": "029acc400934f0effc5c9617aaa0ed5814769c72",
+      "old_mode": 33188,
+      "old_path": "include/internal/t1types.h",
+      "new_id": "029acc400934f0effc5c9617aaa0ed5814769c72",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/t1types.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "31dd0aac699fea453bd32e74fb7f031a6cbb12a4",
+      "old_mode": 33188,
+      "old_path": "include/internal/tttypes.h",
+      "new_id": "000c5a85977c3ac6c1a2d11c6e1582b0a59583a7",
+      "new_mode": 33188,
+      "new_path": "include/freetype/internal/tttypes.h",
+      "score": 98
+    },
+    {
+      "type": "rename",
+      "old_id": "a6ea415af58590d63a6cfd096b01bf7734e68e88",
+      "old_mode": 33188,
+      "old_path": "include/t1tables.h",
+      "new_id": "a6ea415af58590d63a6cfd096b01bf7734e68e88",
+      "new_mode": 33188,
+      "new_path": "include/freetype/t1tables.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "c9585f2413788c590587a5f3ced22af44c2c4d62",
+      "old_mode": 33188,
+      "old_path": "include/ttnameid.h",
+      "new_id": "c9585f2413788c590587a5f3ced22af44c2c4d62",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ttnameid.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "1568f4036473e8815384d10fb0706b44069c42d7",
+      "old_mode": 33188,
+      "old_path": "include/tttables.h",
+      "new_id": "1568f4036473e8815384d10fb0706b44069c42d7",
+      "new_mode": 33188,
+      "new_path": "include/freetype/tttables.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "3836c7bbfd5b9d1a86a917cc23aaa1fe696e46f1",
+      "old_mode": 33188,
+      "old_path": "include/tttags.h",
+      "new_id": "3836c7bbfd5b9d1a86a917cc23aaa1fe696e46f1",
+      "new_mode": 33188,
+      "new_path": "include/freetype/tttags.h",
+      "score": 100
+    },
+    {
+      "type": "rename",
+      "old_id": "8ea556895c1856904f87d69a3df016ddf0a2be5c",
+      "old_mode": 33188,
+      "old_path": "include/ttunpat.h",
+      "new_id": "8ea556895c1856904f87d69a3df016ddf0a2be5c",
+      "new_mode": 33188,
+      "new_path": "include/freetype/ttunpat.h",
+      "score": 100
+    },
+    {
+      "type": "modify",
+      "old_id": "09c19d42a76b9d03b1ebf148fcedd977444f6e73",
+      "old_mode": 33188,
+      "old_path": "include/ft2build.h",
+      "new_id": "419b80ae44d20125fca2538840508b6f538af931",
+      "new_mode": 33188,
+      "new_path": "include/ft2build.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "75079cefded682be3b1e4c2dd80262cb03a25048",
+      "new_mode": 33188,
+      "new_path": "module_option.diff"
+    },
+    {
+      "type": "modify",
+      "old_id": "e2b24519a53bb0ed4ee23e82b839695461c1a57d",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afblue.c",
+      "new_id": "104ee17cb7f524b22aa4e67c9e6941e3b61e8bc9",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afblue.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "fd5684e4a50ebe58c3d7bffccfd8db025f36317f",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afblue.dat",
+      "new_id": "5ffb852aa6a49aeb5396e383cd4a02fcef628ba5",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afblue.dat"
+    },
+    {
+      "type": "modify",
+      "old_id": "94e33a9a24bd4061afbc2ae37ca033f9d6ead5f7",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afblue.h",
+      "new_id": "34f90e9e9650469824cd52d888b077e2fe6cec3e",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afblue.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad43fe6cef000f323b3986391fe2727019178d78",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afblue.hin",
+      "new_id": "1eb917218f8406b156fa01bd794365602cc2bc08",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afblue.hin"
+    },
+    {
+      "type": "modify",
+      "old_id": "905408bb26634ac1aa82f1c30d04d18dcde78109",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afcjk.c",
+      "new_id": "73d75ae920e13d9dd6dff1d282a7bfe4e922a2b6",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afcjk.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bfd11f2d3d802408e07ae6b6f9b1b1ac25bca200",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afcjk.h",
+      "new_id": "e395e74a012620023e461d6575d70af775880f12",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afcjk.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "03ca25f33f381c14067cbee4c8c7325b6f5643fc",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afdummy.c",
+      "new_id": "9142c78c21c5e4b927a97599674f281ea0c93135",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afdummy.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "64b929313497aa90e287b737b8be0f230b1d82fb",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afglobal.c",
+      "new_id": "322335811fc9348d42aa570147ed1cfe183b77af",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afglobal.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9bbb687e2d962e5ad94226949ff7633f84490b9c",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afglobal.h",
+      "new_id": "5b4e4393ca41657dbf9fde58f949db6fb4036cca",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afglobal.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "37482ebd1f25d7ae1a8fb15aadc100fdd5214850",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afhints.c",
+      "new_id": "56c82200051e1a34eead2eaa773e6252885927be",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afhints.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7412cd1e3dec73e07f34c018626f6525686604eb",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afindic.c",
+      "new_id": "59b14d7e098b8191cc10373b4e87f2c8ddd3ab43",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afindic.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "893e9867319e6eef398516823b193d5eb4114b2b",
+      "old_mode": 33188,
+      "old_path": "src/autofit/aflatin.c",
+      "new_id": "9c9f37071e1934c94ed8a2ffbe94fe4e797beff5",
+      "new_mode": 33188,
+      "new_path": "src/autofit/aflatin.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6855492ca3b4c9267b544e5a20b0e4ca98ac6d1b",
+      "old_mode": 33188,
+      "old_path": "src/autofit/aflatin.h",
+      "new_id": "414060f4f06e563dd52e099bfb97ac4d262292d2",
+      "new_mode": 33188,
+      "new_path": "src/autofit/aflatin.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac9f9332588c6c111856c03a38962859114af6e4",
+      "old_mode": 33188,
+      "old_path": "src/autofit/aflatin2.c",
+      "new_id": "2fb7d1d35880384a85d412daebeb824c8d3fa30b",
+      "new_mode": 33188,
+      "new_path": "src/autofit/aflatin2.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c2fa7cffd7003d3788458ededa6694bd12d2e3e",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afloader.c",
+      "new_id": "aa5b8fdcbc4de129fd621476169e335eb9d65ecd",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afloader.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "37cfd14239353e65af09883945bce51472929b47",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afloader.h",
+      "new_id": "4c4affcd2ce74d8c2c60778c89f223cb2eb7b9c8",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afloader.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8ae425c006bf71a414eb450a8400492744465bc3",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afmodule.c",
+      "new_id": "45fd3602c8d2ba94297ffd17ca9b75cff6fa4659",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afmodule.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9c2fd8a2d06512ea7ae61b653e0ae534a477e8e",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afmodule.h",
+      "new_id": "3c61d8956742152785f11e2c24920b27bc1510b8",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afmodule.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5589e612cfee2484e798260cd840e881d62678a7",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afpic.c",
+      "new_id": "37254a2ff33491546a0623b27139bc56b2d62aab",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afpic.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "25071e3bc9afc2282590f6b3318ee309cc99808c",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afpic.h",
+      "new_id": "9b45069f5d0260b16ae482cf9b0f1d45bd2468d2",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1e0afb7ea0e50c37bd968e4351104064c557ee6",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afranges.c",
+      "new_id": "cf8bb7c922fe6628651e7f971d01e6b74054a4fc",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afranges.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c78ab089e99903a632e1ae4e9244f9dda238720",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afranges.h",
+      "new_id": "bca5084a780d7c57d84984f1065452861694023f",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afranges.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "dfcc8302aac283778a053d1543a80a51e91a12cf",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afscript.h",
+      "new_id": "39ec652ac2f9f8c45bb64ed39316d5fd9ec72c8e",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afscript.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6ba9190065b0ac32eba1a440718deeb5a7562d1e",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afshaper.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "db1b4e03e4f310e98a58197df3bb3a93da437f2d",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afshaper.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bfd5bb910f0e15cfa1af47ce4ec6654132d0e03d",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afstyles.h",
+      "new_id": "e21444260f435c5be02ec96eee6e2e903754fbec",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afstyles.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "78e3fd7ec96c1eb894daf67f1415389c843d7b92",
+      "old_mode": 33188,
+      "old_path": "src/autofit/aftypes.h",
+      "new_id": "b483619500c8ed5f5cb86bf0388326a7ae129910",
+      "new_mode": 33188,
+      "new_path": "src/autofit/aftypes.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "59af4f02bda7f016b46218708151c4fe3059f692",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afwarp.c",
+      "new_id": "ae92db1de977662b0cdc721e82a9616a74b2ad20",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afwarp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5a6208a15fdc6c044658b0c05c91064e6d8433b8",
+      "old_mode": 33188,
+      "old_path": "src/autofit/afwarp.h",
+      "new_id": "6069b6b277b453871fa27ec7108e4aafeeba3246",
+      "new_mode": 33188,
+      "new_path": "src/autofit/afwarp.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b6ed4a0ff1c6df0d9a085db4e7d66b3f4c089ac4",
+      "old_mode": 33188,
+      "old_path": "src/autofit/autofit.c",
+      "new_id": "a971a24767512ede39ad904f44665a03d89c832f",
+      "new_mode": 33188,
+      "new_path": "src/autofit/autofit.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "51ecf9e01e5785033fb1b7add44402355c66f0a5",
+      "old_mode": 33188,
+      "old_path": "src/base/basepic.h",
+      "new_id": "c5d7cbf5ab77aa781d9d6bbe51ccd4dbb7ffc69d",
+      "new_mode": 33188,
+      "new_path": "src/base/basepic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb57f96864fa7638646f9b7298b45faae5b72a9a",
+      "old_mode": 33188,
+      "old_path": "src/base/ftbase.h",
+      "new_id": "e37fefa411f9cbb8ef20de14790f1e07670f2202",
+      "new_mode": 33188,
+      "new_path": "src/base/ftbase.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "aa72ddcdf9ddc964fe6168cb213e90923e8b8b15",
+      "new_mode": 33188,
+      "new_path": "src/base/ftbdf.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "dca0e1dc5330f0e8b1eacb6a42bf542811529285",
+      "old_mode": 33188,
+      "old_path": "src/base/ftcalc.c",
+      "new_id": "619a08b3a0c3e2a2a60399b4579605b46ef37388",
+      "new_mode": 33188,
+      "new_path": "src/base/ftcalc.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0734881b7190b1d8b2a8259fc554d5177604ff85",
+      "new_mode": 33188,
+      "new_path": "src/base/ftcid.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6f20313b345c89ad6fff6c6e851709b2dccae707",
+      "old_mode": 33188,
+      "old_path": "src/base/ftdbgmem.c",
+      "new_id": "02eeb01d669095aaa0a67e5533065c885a4f75ef",
+      "new_mode": 33188,
+      "new_path": "src/base/ftdbgmem.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "2cdb7c24247abc9ba70566407588c35797650b50",
+      "old_mode": 33188,
+      "old_path": "src/base/ftdebug.c",
+      "new_id": "03e18a86999c8034bc3a880fc1ae55c5fdd7af56",
+      "new_mode": 33188,
+      "new_path": "src/base/ftdebug.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb7fc37787ea97720bcdff6c9d7dcecc2b0901dc",
+      "old_mode": 33188,
+      "old_path": "src/base/ftglyph.c",
+      "new_id": "2778743aeffbf91387fb8467e1a2e4c7a342918d",
+      "new_mode": 33188,
+      "new_path": "src/base/ftglyph.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "58868f2e86bc0bfc3c2021055bda0f3493897029",
+      "new_mode": 33188,
+      "new_path": "src/base/ftgxval.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cc95e6a6ae4c2737929655d92c5e1723720708cc",
+      "old_mode": 33188,
+      "old_path": "src/base/ftinit.c",
+      "new_id": "b65a91d06c6819217e54689d6fba1a5c075c1ad1",
+      "new_mode": 33188,
+      "new_path": "src/base/ftinit.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ff6f7e98ceb5398ce491c2bc112f160f9ea77bdc",
+      "old_mode": 33188,
+      "old_path": "src/base/ftlcdfil.c",
+      "new_id": "5ee7e0aa2bbb2ca213cc3adb360921fc0f60e0c6",
+      "new_mode": 33188,
+      "new_path": "src/base/ftlcdfil.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "114bbb63919c4217afd05c2b5e81c2827cfae3be",
+      "new_mode": 33188,
+      "new_path": "src/base/ftmac.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9c3332cf3c82c944c85551b70037108d2fd5e8fb",
+      "old_mode": 33188,
+      "old_path": "src/base/ftobjs.c",
+      "new_id": "96572bdf0adad786836f486780f3c368a884e72e",
+      "new_mode": 33188,
+      "new_path": "src/base/ftobjs.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "786457ba2afd9abf94746028bfd58a4757bee652",
+      "new_mode": 33188,
+      "new_path": "src/base/ftotval.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d821c4957193ab11a25acce79589edfd7ce275be",
+      "old_mode": 33188,
+      "old_path": "src/base/ftoutln.c",
+      "new_id": "201ceabc68102b588fbaaa238772adc11802ab49",
+      "new_mode": 33188,
+      "new_path": "src/base/ftoutln.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "39f089e3e9dd4b0d76d118c52b334e6f54bb1db2",
+      "new_mode": 33188,
+      "new_path": "src/base/ftpfr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "82d54f830453f819a37579641368e8e0cb7885cc",
+      "old_mode": 33188,
+      "old_path": "src/base/ftrfork.c",
+      "new_id": "c30c76678e64fe7b89accb0070266bebb4d4a988",
+      "new_mode": 33188,
+      "new_path": "src/base/ftrfork.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "842ee30b3722ace58dae5380146085f2e341349b",
+      "old_mode": 33188,
+      "old_path": "src/base/ftstroke.c",
+      "new_id": "fecb3cc25c0e14f25db68c41737aea47420a0f20",
+      "new_mode": 33188,
+      "new_path": "src/base/ftstroke.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8de527acab829d6c80b6e4e5f70ba83d310765d3",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcache.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8c5b996819755d12377c41f38c1621cf47dc56c",
+      "old_mode": 33188,
+      "old_path": "src/cache/ftccache.c",
+      "new_id": "b82a789027721d40dfb493f2a47d1b4dbec4d23e",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftccache.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "15adec58dec8f5679815684c670eb0a888a04007",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcerror.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f519a6179cd6b9d08c75715891783a8b0e79517a",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcimage.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b312eaa3d92ef9ba4ab86a22af914cb9f78ae2d7",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcimage.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "658614c8db80c1e4845cf49e8b0c8083def6fe4e",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcmanag.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c0c35f934b1b4ac2bb564e848acfa2d50b991207",
+      "new_mode": 33188,
+      "new_path": "src/cache/ftcmru.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "528b1fa867f01a2acaa38ae6e2feae741f7414dd",
+      "old_mode": 33188,
+      "old_path": "src/cff/cf2arrst.c",
+      "new_id": "89f3e9f1d741964fc0711e22746cd11799781fe5",
+      "new_mode": 33188,
+      "new_path": "src/cff/cf2arrst.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d2544a234516e6355f339dc2ed7cb99efd2defa5",
+      "old_mode": 33188,
+      "old_path": "src/cff/cf2ft.c",
+      "new_id": "55f3206ac250abea48af143f2bc54a05e465b7a0",
+      "new_mode": 33188,
+      "new_path": "src/cff/cf2ft.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3073df382f7d10ff0144de91edc27479b9148584",
+      "old_mode": 33188,
+      "old_path": "src/cff/cf2ft.h",
+      "new_id": "98105111b86ffb34e25f6dee5aa0adf83c1d96a8",
+      "new_mode": 33188,
+      "new_path": "src/cff/cf2ft.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0e27000210d468953c4bc3127756d5f6059ce3cd",
+      "old_mode": 33188,
+      "old_path": "src/cff/cf2hints.c",
+      "new_id": "bbbe8e3c32aa2bd437167c0ec6cf1d36b3e0153c",
+      "new_mode": 33188,
+      "new_path": "src/cff/cf2hints.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "537e0609dfc31a5a391c828fbadcdcea8c5cd2bf",
+      "old_mode": 33188,
+      "old_path": "src/cff/cf2intrp.c",
+      "new_id": "1910f1b87e1d1c1bdb547d6ac191c621b46af724",
+      "new_mode": 33188,
+      "new_path": "src/cff/cf2intrp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a718b7a002484a300e571bcd49dfd5b041e015bc",
+      "old_mode": 33188,
+      "old_path": "src/cff/cffdrivr.c",
+      "new_id": "9a06b7c83220980608ea99c9cddba2234cf7453a",
+      "new_mode": 33188,
+      "new_path": "src/cff/cffdrivr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "43054f8c353e9e771b45cd653022bd274e9766e5",
+      "old_mode": 33188,
+      "old_path": "src/cff/cffgload.c",
+      "new_id": "5f57403e22a4e49c22fa2cab4c9b574e297ffa7e",
+      "new_mode": 33188,
+      "new_path": "src/cff/cffgload.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "fcb7348e86850cc9c39fe090e6893cd87f0ca19a",
+      "old_mode": 33188,
+      "old_path": "src/cff/cffload.c",
+      "new_id": "c61222d6519fd94776d5e08f34ff4527b320741a",
+      "new_mode": 33188,
+      "new_path": "src/cff/cffload.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a1ef115fadfbd750a1e25822b0579c0932e1f8c",
+      "old_mode": 33188,
+      "old_path": "src/cff/cffobjs.c",
+      "new_id": "d628b68db7c7ad84ee1ff9243ebdf74e4f5c6543",
+      "new_mode": 33188,
+      "new_path": "src/cff/cffobjs.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a29620e07f6d1a2134644ce5e4963ca3da6bfb38",
+      "old_mode": 33188,
+      "old_path": "src/cff/cffpic.h",
+      "new_id": "9a221a7b7eedc94bf673bdb600b8d158dc6f8838",
+      "new_mode": 33188,
+      "new_path": "src/cff/cffpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "879eb88a705ccc3cafe8803b18876d751f147e54",
+      "old_mode": 33188,
+      "old_path": "src/gzip/ftgzip.c",
+      "new_id": "27c625420a7a728cd571d1c9576559cad838c4fb",
+      "new_mode": 33188,
+      "new_path": "src/gzip/ftgzip.c"
+    },
+    {
+      "type": "delete",
+      "old_id": "ec7311df56effb2b370878c33a4e1c86475cc3cf",
+      "old_mode": 33188,
+      "old_path": "src/pfr/pfrload.c",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "c7cbc67c67a961c5d25e679b0764004286be82f7",
+      "old_mode": 33188,
+      "old_path": "src/psaux/psobjs.c",
+      "new_id": "1d3c7e662cefdb2286024b91efb478ed90722c4e",
+      "new_mode": 33188,
+      "new_path": "src/psaux/psobjs.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e199286f6e93732cfc295532e160ffb3878b946",
+      "old_mode": 33188,
+      "old_path": "src/psaux/t1decode.c",
+      "new_id": "5811fcb49cb0b2c2909962bc0c4c257fbd6c529b",
+      "new_mode": 33188,
+      "new_path": "src/psaux/t1decode.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bfdb3ed02acf209c441e1db72635f911ef284653",
+      "old_mode": 33188,
+      "old_path": "src/pshinter/pshalgo.c",
+      "new_id": "6e654cb1ef886ae9fce21066f34bb8699518c4c6",
+      "new_mode": 33188,
+      "new_path": "src/pshinter/pshalgo.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6723b717e8ce3ee23dd88ef2eb5f3a5185a1827c",
+      "old_mode": 33188,
+      "old_path": "src/pshinter/pshglob.c",
+      "new_id": "4616bdc6cf35abc7b6a4b130e8b86dec284ab8ad",
+      "new_mode": 33188,
+      "new_path": "src/pshinter/pshglob.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "62de4574f9dfe4f3bf24af8ddd618eeefad24076",
+      "old_mode": 33188,
+      "old_path": "src/pshinter/pshpic.h",
+      "new_id": "ca35cd6fa9f1a949167d715260c0dd1c6b5f33eb",
+      "new_mode": 33188,
+      "new_path": "src/pshinter/pshpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0f04c2fa7d25ca93602bc631f17cd0343c972306",
+      "old_mode": 33188,
+      "old_path": "src/psnames/psmodule.c",
+      "new_id": "5406098db330a325d3a5db67bb477e30e01f1caa",
+      "new_mode": 33188,
+      "new_path": "src/psnames/psmodule.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "88ccda3a5c25bd01fc8831559727365d5a9f49be",
+      "old_mode": 33188,
+      "old_path": "src/psnames/pspic.h",
+      "new_id": "443225af61527e9bdd97b6cd8186fc6818cc29ad",
+      "new_mode": 33188,
+      "new_path": "src/psnames/pspic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "19be4cadcc8c9561a54d290aa0518565b297b14d",
+      "old_mode": 33188,
+      "old_path": "src/raster/ftmisc.h",
+      "new_id": "b87e0b62b727e3580cd04e56d7167f43fda39c5d",
+      "new_mode": 33188,
+      "new_path": "src/raster/ftmisc.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "eeab14352869ff2e5928ae07340e10d055ed6592",
+      "old_mode": 33188,
+      "old_path": "src/raster/ftraster.c",
+      "new_id": "e4bab987285993858cad2f99c31e8bba066cc173",
+      "new_mode": 33188,
+      "new_path": "src/raster/ftraster.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c367260b1b35f10e6f63bccb71da553941a78cde",
+      "old_mode": 33188,
+      "old_path": "src/raster/ftrend1.h",
+      "new_id": "edc5d13f4cd3f89b65fc74170c299e453c3bd860",
+      "new_mode": 33188,
+      "new_path": "src/raster/ftrend1.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fe58c99376cb7de896cb1574a8967cbd703a2a28",
+      "old_mode": 33188,
+      "old_path": "src/raster/rastpic.c",
+      "new_id": "77e7ec3f9035797c86c28124bb33d4c41d87e3ce",
+      "new_mode": 33188,
+      "new_path": "src/raster/rastpic.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a875884d9865f7108a153cf10d256808cb36981c",
+      "old_mode": 33188,
+      "old_path": "src/raster/rastpic.h",
+      "new_id": "408996a908989f6871bf501f423a45d887434ff1",
+      "new_mode": 33188,
+      "new_path": "src/raster/rastpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0948ad4e7eda1c53c15f78ad063b4a8e1eabb16c",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/sfdriver.c",
+      "new_id": "5dd84492deeb9e0b55c63544b627bb861de71f9a",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/sfdriver.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "563d6344d65878287cc9dd049dd8bbe21679a017",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/sfntpic.h",
+      "new_id": "d99be6a8248572dc1994bd66601a03f3d1f0d2a9",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/sfntpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "40c27fa9ad681c0f15a344aee3381bee25d17f40",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/sfobjs.c",
+      "new_id": "de030eafe16f1d9d5bcad26229f3925eb786376b",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/sfobjs.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "77c7d92c3ea0bb013602a819d8beec89e88f8f10",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/sfobjs.h",
+      "new_id": "455f86772f8990159ef21d9a3bbfa8c6023a7589",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/sfobjs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "815ee7c4e25e84676029cb2986547a8405aeb571",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/ttcmap.c",
+      "new_id": "2b1337f11beccaae188389091866483f5ea28be1",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/ttcmap.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad2975de092496ef2f5111ae9f18af64e9fcdc73",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/ttload.c",
+      "new_id": "c1bd7f0c82eb8686e5eb31a0bbb2b579954e2f60",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/ttload.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "143f276d3181fe3f0d3fef688e3f21278d7eb0e6",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/ttsbit.c",
+      "new_id": "09260b8e33eb182efa6a402b1ad62e92a7a8f269",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/ttsbit.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "77b58f25f7b9cfcc2822922cf04b212db95f2a5d",
+      "old_mode": 33188,
+      "old_path": "src/smooth/ftgrays.c",
+      "new_id": "9a43c0749c035dbf72a8f6c229af2bacdba8fcb1",
+      "new_mode": 33188,
+      "new_path": "src/smooth/ftgrays.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "99b9f0ed30318f0024af90692baada2d13d12800",
+      "old_mode": 33188,
+      "old_path": "src/smooth/ftspic.h",
+      "new_id": "071afcff20313a17fc841f6ee37be55872f94383",
+      "new_mode": 33188,
+      "new_path": "src/smooth/ftspic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "08b30c95ad06014d1726a2972dbe148b6560f5f7",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttdriver.c",
+      "new_id": "1ba71f0ebd47c1f19f4094462d7922a7a601ec51",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttdriver.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e1acd6912c9b9966397b95dd965b95e9c791bd79",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttgload.c",
+      "new_id": "d94fc92a5b9ca7f7c8f63a1c1d9793589e1708a2",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttgload.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "2b12483bafc143624871f8627e4bc1fd9178c76a",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttgxvar.c",
+      "new_id": "5d4384eabb293dcc6869b1ed2e70da6eca768487",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttgxvar.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "060d4d60eaf68a854b0a31a9116a20c73d597260",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttgxvar.h",
+      "new_id": "dd1411f0d88e043aa5bbd6a348005719971ef67c",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttgxvar.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "089f604b50faa17da4749e5ac706aa1cec54069f",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttinterp.c",
+      "new_id": "1c1d7de64831bbeeae5ec337a579d94752887962",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttinterp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "202aa046f422cd2ea63b0668452d399a089dc92f",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttobjs.c",
+      "new_id": "b0d9f2843e2f8266fba31c5cdb712542b62f8446",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttobjs.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7ac4123cac118d7f09546754275ace155979d144",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttobjs.h",
+      "new_id": "9396089a991168a61dfc3663e18d7648cb64e9e7",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttobjs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "48ba4aaf06c381de03e0cf08504aed1150754053",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttpic.h",
+      "new_id": "076ae56efa8d3fa7fc41899223264867a7f21b31",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttpic.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fb338bde3c6960f27220fd8124b5a8171fcde894",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttpload.c",
+      "new_id": "9bf67f9632dde9608f98fd44ce12edb600583a80",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttpload.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "dbda4d968f6c65e758073b1f9dd1b27f0a4540bf",
+      "old_mode": 33188,
+      "old_path": "src/truetype/ttsubpix.c",
+      "new_id": "0d391e95a0725f2e1f327f1d07f393b503a2f6d6",
+      "new_mode": 33188,
+      "new_path": "src/truetype/ttsubpix.c"
+    }
+  ]
+}

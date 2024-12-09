@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d49dbebe1acc5788a300cf6772f25c8ab88a1df3",
+  "tree": "2d469262bf5f3f924ae76a63da032da0c54b6b7a",
+  "parents": [
+    "250dc58dbd33b2c2f67bd42ff54691ce2af617c1"
+  ],
+  "author": {
+    "name": "Robert Carr",
+    "email": "racarr@google.com",
+    "time": "Fri Dec 11 12:59:08 2020 -0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Fri Feb 05 10:37:35 2021 -0800"
+  },
+  "message": "DO NOT MERGE: WM: Only allow system to use NO_INPUT_CHANNEL.\n\nNO_INPUT_CHANNEL is a hidden WM flag that allows creation of a window\nwithout an input channel. Unfortunately in releases prior to Android R\nthis would allow creation of a Window which will not be known to the\nInputDispatcher at all. This means that the logic generating\nFLAG_OBSCURED will work and a window will be able to overlay another\nwindow without the overlayed window being notified. In Android R and\nlater this isn\u0027t a problem as the InputDispatcher is informed of all\nwindows, input channel or not. For past Android releases, this patch\ndisables NO_INPUT_CHANNEL for use outside of the WM.\n\nBug: 152064592\nTest: Existing tests pass\nChange-Id: I7e1f45cba139eab92e7df88d1e052baba0ae2cc6\n(cherry picked from commit 514b3297768f4a7469117a7005556663124040f9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ecb727c790160f4d4c111301ebea124e4853329c",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/InputChannel.java",
+      "new_id": "346628bbdabda3a32afdb6c5d65181da856ad26b",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/InputChannel.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "aceb276e9fc048ccd83e081b210440fbbcc721f3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/ViewRootImpl.java",
+      "new_id": "735678cd096d687e1608af23a71e06ab8ade1eb6",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/ViewRootImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "2de8ae155f817c556f9ba8df86c4edbdd8546111",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "11e89fbe5b6a11d1cb257444b00f86eb0918d9a7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    }
+  ]
+}

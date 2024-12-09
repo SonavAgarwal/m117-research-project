@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c97efaa05124e020d7cc8c6e08be9c3b55ac4ea7",
+  "tree": "0a24a1a8d45e06a676aad80c882818c9e0cdbd64",
+  "parents": [
+    "370eefff08076ecc2d210017e2e1f64c77e753db"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Sep 24 13:23:57 2018 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:24:09 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Recover shady content:// paths.\n\nThe path-permission element offers prefix or regex style matching of\npaths, but most providers internally use UriMatcher to decide what\nto do with an incoming Uri.\n\nThis causes trouble because UriMatcher uses Uri.getPathSegments(),\nwhich quietly ignores \"empty\" paths.  Consider this example:\n\n    \u003cpath-permission android:pathPrefix\u003d\"/private\" ... /\u003e\n\n    uriMatcher.addURI(\"com.example\", \"/private\", CODE_PRIVATE);\n\n    content://com.example//private\n\nThe Uri above will pass the security check, since it\u0027s not\ntechnically a prefix match.  But the UriMatcher will then match it\nas CODE_PRIVATE, since it ignores the \"//\" zero-length path.\n\nSince we can\u0027t safely change the behavior of either path-permission\nor UriMatcher, we\u0027re left with recovering these shady paths by\ntrimming away zero-length paths.\n\nBug: 112555574\nTest: cts-tradefed run cts -m CtsAppSecurityHostTestCases -t android.appsecurity.cts.AppSecurityTests\nChange-Id: Ibadbfa4fc904ec54780c8102958735b03293fb9a\n(cherry picked from commit a1ec7b115cc378f0547f10cf1074a5248d42d94f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cdeaea3ebcae17b88eccf35bcf15f96d3c2b05df",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/ContentProvider.java",
+      "new_id": "e2c898d153ee5f40bc8351390f00cc666da1bea5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/ContentProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f3a31746266ab33d0d71a0a83521e88c2c08e96",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/ContentProviderOperation.java",
+      "new_id": "f3914f2a4e7656bb4d313e4895f927781068642b",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/ContentProviderOperation.java"
+    }
+  ]
+}

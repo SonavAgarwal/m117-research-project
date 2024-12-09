@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9e29523b9537983b4c4b205ff868d0b3bca0383b",
+  "tree": "e26b62c7419fe2a7f521d704e64e687a119441a2",
+  "parents": [
+    "3d6a7149802928ecf3f58b7218b0e82699b492df"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri Jan 08 10:52:38 2016 -0800"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Mon Jan 11 18:08:30 2016 +0000"
+  },
+  "message": "fix possible overflow in effect wrappers.\n\nAdd checks on parameter size field in effect command handlers\nto avoid overflow leading to invalid comparison with min allowed\nsize for command and reply buffers.\n\nBug: 26347509.\nChange-Id: I20e6a9b6de8e5172b957caa1ac9410b9752efa4d\n(cherry picked from commit ad1bd92a49d78df6bc6e75bee68c517c1326f3cf)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9fcfba3b00474cabec2c0c1e4931828ea366d887",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "5befff86009ffc29a7d9d7ad87d468020b5f5dbf",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e225326c315a9922b362c8e220f75373e4374cd",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp",
+      "new_id": "7ab16a19a0b29439b37ecdd10edc399e1a39acfe",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Reverb/EffectReverb.cpp"
+    }
+  ]
+}

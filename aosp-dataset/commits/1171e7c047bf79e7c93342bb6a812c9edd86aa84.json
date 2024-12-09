@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1171e7c047bf79e7c93342bb6a812c9edd86aa84",
+  "tree": "9144f9fb6a5f276161c83e367a4fbc0a2a8217c4",
+  "parents": [
+    "25be9ac20db51044e1b09ca67906355e4f328d48"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Feb 22 13:05:15 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:30 2016 -0800"
+  },
+  "message": "Clear allocation to avoid info leak\n\nBug: 26914474\nChange-Id: Ie1a86e86d78058d041149fe599a4996e7f8185cf\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5214a9d0ec842c845a3672c34d2c496c4a721fb9",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "153414494b966e86bf3a855af5e122970008d410",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    }
+  ]
+}

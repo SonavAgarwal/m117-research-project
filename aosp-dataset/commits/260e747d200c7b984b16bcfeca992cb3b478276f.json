@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "260e747d200c7b984b16bcfeca992cb3b478276f",
+  "tree": "99fc817dae98050958d48420a57efd993b121656",
+  "parents": [
+    "b17db7a3dd48bbbfd4ad7e914aefeabbf82df7d6"
+  ],
+  "author": {
+    "name": "Lais Andrade",
+    "email": "lsandrade@google.com",
+    "time": "Thu Dec 03 21:07:27 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:00 2021 +0000"
+  },
+  "message": "Check mode/boost index before accessing cached support value\n\nBug: 174243830\nTest: manual\nChange-Id: I2f81bcd57181791fa95d35ad52e6af2d7d9c8dcf\nMerged-In: If305a4b694a9d6fcc27da8279f1f53f9fd9cb685\nMerged-In: I345d9ff828021da35556f2d51da512840dda8026\n(cherry picked from commit 557838f5506760076e5c523081590b2992b619ff)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "469838357f3061023f7efb9dcc3235beb51478f9",
+      "old_mode": 33188,
+      "old_path": "services/core/jni/com_android_server_power_PowerManagerService.cpp",
+      "new_id": "85d5c1f256930246947f1477cf8a7b5bbddf559d",
+      "new_mode": 33188,
+      "new_path": "services/core/jni/com_android_server_power_PowerManagerService.cpp"
+    }
+  ]
+}

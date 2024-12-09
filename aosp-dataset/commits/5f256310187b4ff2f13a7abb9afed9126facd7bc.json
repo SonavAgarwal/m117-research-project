@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "5f256310187b4ff2f13a7abb9afed9126facd7bc",
+  "tree": "0ed70311a461913e6f787b8fe4ca22079b187565",
+  "parents": [
+    "2c7008421cb67f5d89f16911bdbe36f6c35311ad"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Fri Aug 05 11:23:50 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:50 2016 -0700"
+  },
+  "message": "Limit capabilities of a11y gesture dispatch.\n\nChanging the service side to accept descriptions of\nmotion events, not motion events themselves, so we can\ncontrol their creation.\n\nBug: 30647115\nChange-Id: Ia6772a1fc05df91818e3f88959d1e2b4a35fe0cc\n(cherry picked from commit a8918f23c712e97fa1dc4911f64827d64fc906e5)\n(cherry picked from commit 157f416a3549420bd109dbc4931b437089e22d04)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae78e21807e84c66cc2c85f210e68a1e8a8e1638",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accessibilityservice/AccessibilityService.java",
+      "new_id": "c4eaccc1b4067f86ebbb6ea9ab0f445300a63af3",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accessibilityservice/AccessibilityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc9581e7367c589be5536c04617ffbd6541b18db",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accessibilityservice/GestureDescription.java",
+      "new_id": "d9b03faa42faab73716fb32f6b48aff699633258",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accessibilityservice/GestureDescription.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a55079d3ecf2eb50b9db5d947c040074e27ef06",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accessibilityservice/IAccessibilityServiceConnection.aidl",
+      "new_id": "81cddbac3f53b2f69280584f9357344882db1ded",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accessibilityservice/IAccessibilityServiceConnection.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "60d33397368dccd2f3e54e3c8c6ae6d2dfe34e61",
+      "old_mode": 33188,
+      "old_path": "services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java",
+      "new_id": "f039e1e4a404427926c03451d144d4a4eaec2c71",
+      "new_mode": 33188,
+      "new_path": "services/accessibility/java/com/android/server/accessibility/AccessibilityManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7737780815fe523ad7b0e49456eb75d27a30818a",
+  "tree": "bf9a80782fd8bcbcd6f46538e57f64f5674af7f3",
+  "parents": [
+    "bb5ba08b8e401f6ead650f810faf6ff1df0daa48"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Fri Jun 09 12:03:34 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:12:59 2017 +0000"
+  },
+  "message": "Fixed Memory Overflow Errors\n\nIn function impeg2d_dec_p_b_slice, there was no check for num_mbs_left \u003d\u003d\n0 after skip_mbs function call. Hence, even though it should have returned\nas an error, it goes ahead to decode the frame and writes beyond the\nbuffer allocated for output. Put a check for the same.\n\nBug: 38207066\nTest: before/after execution of PoC on angler/nyc-mr2-dev\nChange-Id: If4b7bea51032bf2fe2edd03f64a68847aa4f6a00\n(cherry picked from commit 2df080153464bf57084d68ba3594e199bc140eb4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5540044464f4ad0431e16e3b895642c80a394bb7",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_pnb_pic.c",
+      "new_id": "69277e5473d4746159bc71d0cad3dbd488bb94cc",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_pnb_pic.c"
+    }
+  ]
+}

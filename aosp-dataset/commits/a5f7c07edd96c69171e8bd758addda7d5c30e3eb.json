@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a5f7c07edd96c69171e8bd758addda7d5c30e3eb",
+  "tree": "a5cd264021958215e3d42ea34f4eeb79ec005d0b",
+  "parents": [
+    "a75375cdf4393ddebc1642dd44840af7426ade19"
+  ],
+  "author": {
+    "name": "Wayne Lin",
+    "email": "waynewhlin@google.com",
+    "time": "Mon Aug 27 15:50:23 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:20:10 2018 +0000"
+  },
+  "message": "GNSS_NI_RESPONSE_IGNORE handling\n\nGNSS_NI_RESPONSE_IGNORE inaverdently mapped to NO_RESPONSE,\nwhich is a different reponse code. The two should be handled\ndifferently.\n\nBug: 111770241\nBug: 112527804\nBug: 112159033\n\nChange-Id: I5e6df67bc1ab61cff466d1ef3bffec7de3377aaf\nCRs-Fixed: 2296845\nTest: Verify below emergency SUPL INIT test cases\nSUPL-2.0-con-033 case 1 (no emergency call, SUPL_ES\u003d1)\nResult: FAIL\nSUPL-2.0-con-033 case 1 (no emergency call, SUPL_ES\u003d0)\nResult: PASS\nVZW E911-03.03 (with emergency call, SUPL_ES\u003d1)\nResult: PASS\nVZW E911-03.03 (with emergency call, SUPL_ES\u003d0)\nResult: PASS\n(cherry picked from commit ae886062fe9e2334904875393a7c962b8b6117d9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "076880e6e5c5b9ef5d149f4839ab1f557608c72e",
+      "old_mode": 33188,
+      "old_path": "sdm845/android/location_api/GnssAPIClient.cpp",
+      "new_id": "f0b6f7612179b4959e1f9c83b56597ea68cbdc41",
+      "new_mode": 33188,
+      "new_path": "sdm845/android/location_api/GnssAPIClient.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3d6a43155c702bce0e7e2a93a67247b5ce3946a5",
+  "tree": "7c642aa2a6a08db562e17d5ebe07fd67e862f93c",
+  "parents": [
+    "658fbc17a2a2fcd7125f7ea23b1390ad5b2851f8"
+  ],
+  "author": {
+    "name": "Tianjie Xu",
+    "email": "xunchang@google.com",
+    "time": "Wed Apr 05 14:46:27 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:34 2017 -0700"
+  },
+  "message": "Fix out of bound read in libziparchive\n\nWe should check the boundary of central directory before checking its\nsignature. Swap the order of these two checks.\n\nBug: 36392138\nTest: libziparchive doesn\u0027t read the signature after boundary check fails.\nChange-Id: Ie89f709bb2d1ccb647116fb7ccb1e23c943e5ab8\n(cherry picked from commit 74464a1361562d4042a67c5d66bfcf396ee7e59c)\n(cherry picked from commit d9fd1863f46d5185eaaebc0803ee9c5da3ef110b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "986ee7208fdb8a173eaf2946983cf0cd8f8cca61",
+      "old_mode": 33188,
+      "old_path": "libziparchive/zip_archive.cc",
+      "new_id": "49097ce9b00415e045b5b4b78b53fac1564f04f6",
+      "new_mode": 33188,
+      "new_path": "libziparchive/zip_archive.cc"
+    }
+  ]
+}

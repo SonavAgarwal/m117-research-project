@@ -1,0 +1,498 @@
+)]}'
+{
+  "commit": "fe03f73d86bb415f5d5145f0de091834d89ae3a9",
+  "tree": "fa607172a51170011043a907c3a475da4c60c24a",
+  "parents": [
+    "e4ad9757d5c98dea026da1697466293ac96268be"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jan 05 17:35:54 2015 -0800"
+  },
+  "committer": {
+    "name": "Zach Riggle",
+    "email": "riggle@google.com",
+    "time": "Wed Feb 25 17:31:57 2015 +0000"
+  },
+  "message": "libFLAC: merge master from Xiph\n\nremote: https://git.xiph.org/flac.git\ncommit: 775eb93\n\nBug: 18872897\nBug: 18910747\nChange-Id: I6e450e44c96b97c3323e428b9e6d420422f24a4e\n(cherry picked from commit 31e4f3166a91a2ebb34f643787122a638d9f1471)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "68271259adc54030d0403087238f1c08949300c1",
+      "old_mode": 33188,
+      "old_path": "config.h",
+      "new_id": "793995f599c6393fede237b15c7c22e7548ff7ee",
+      "new_mode": 33188,
+      "new_path": "config.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c542c0d5def797fbebd64fce6a0cf24201302fcf",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/all.h",
+      "new_id": "6f4d3363ce3a16e82da76b3574d2c4df7eb119fa",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/all.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "3fc03f316a5f169f69e49a92fdd7910e2f35c40d",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/assert.h",
+      "new_id": "dc9bcef4d098190d20ac0c4edae274d03bff3117",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/assert.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c9541210b4f47a723d7c2ccbf904576c43242e87",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/callback.h",
+      "new_id": "ce8787ff4012c72510889e360203a56c12b9af8c",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/callback.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a525f29c1e50e24192814a667125c989ba81b4b6",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/export.h",
+      "new_id": "9cc9e137fbfd7e04f92d6c4972935db8a5530c5e",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/export.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "77e2d0130e5d66d10d453937ae0b63df87bdba4e",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/format.h",
+      "new_id": "7424565b3b395d6a9c1a8ab94652a3c2c129aedc",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/format.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fff90b0bafd09f62f36f3330adf44dee7897554b",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/metadata.h",
+      "new_id": "b8ad8b4d5aa1badad51748ffbe71f79759bd4966",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/metadata.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a7a5cd96135929ad078755f16d8f4d16a9d3f386",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/ordinals.h",
+      "new_id": "b1e1acfce1a9d681c6dec22263852e11de83a673",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/ordinals.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9ac159474afd9404ed1e896352976e1a15b1aee7",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/stream_decoder.h",
+      "new_id": "9bfdd1f5f455bad01cb022f665d5ee1382ec9111",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/stream_decoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "dbbbb23ee113031452f1f515bdb8db54c245dba8",
+      "old_mode": 33188,
+      "old_path": "include/FLAC/stream_encoder.h",
+      "new_id": "efc213aee5d134066b3ccd3bbb94dde76c12b203",
+      "new_mode": 33188,
+      "new_path": "include/FLAC/stream_encoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e92dd893ae684cc0996284c5a6ddc280da4a229",
+      "old_mode": 33188,
+      "old_path": "include/share/alloc.h",
+      "new_id": "5e1f1e26f15cec50ada71af7aaf8be57c0981184",
+      "new_mode": 33188,
+      "new_path": "include/share/alloc.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1ee5cc4af69bf538e97d8c07b7042ac2a5c4405f",
+      "new_mode": 33188,
+      "new_path": "include/share/compat.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4fde4c15684f1bb6306426ba00a9b2a9bbd2097e",
+      "new_mode": 33188,
+      "new_path": "include/share/endswap.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3a500d3ca4a1cb359702d8231383c23a27d778fd",
+      "new_mode": 33188,
+      "new_path": "include/share/private.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "27e25f0f7ace7e5b84d525d3ddca4c5cd29e5717",
+      "old_mode": 33188,
+      "old_path": "libFLAC/bitmath.c",
+      "new_id": "5b58ca999ae39f02610dbdb68cd88e86b0c67c31",
+      "new_mode": 33188,
+      "new_path": "libFLAC/bitmath.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7d63e526e0a3c0c3052148c27cc7aaa6e719dd92",
+      "old_mode": 33188,
+      "old_path": "libFLAC/bitreader.c",
+      "new_id": "f61229bd45c67be9abd939239b6c93a91451d209",
+      "new_mode": 33188,
+      "new_path": "libFLAC/bitreader.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e3e7ad164ef65cc2dffcd9fe6064d00a79ff718d",
+      "old_mode": 33261,
+      "old_path": "libFLAC/bitwriter.c",
+      "new_id": "76be1bc7b68157b21f1f657032ef53965e484130",
+      "new_mode": 33188,
+      "new_path": "libFLAC/bitwriter.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "60b73bff143da693f9948d5e588ce340e6a13215",
+      "old_mode": 33188,
+      "old_path": "libFLAC/cpu.c",
+      "new_id": "40c795096f0cb5cb22510feb225c31f022e77e94",
+      "new_mode": 33188,
+      "new_path": "libFLAC/cpu.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "463ab65ef83f3263415e6b8f5722dab32337b95c",
+      "old_mode": 33188,
+      "old_path": "libFLAC/crc.c",
+      "new_id": "de2cb18848f14203e94781832125d5482b965068",
+      "new_mode": 33188,
+      "new_path": "libFLAC/crc.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a3aac090f65ce7b28025621a0ea5b710c708383",
+      "old_mode": 33188,
+      "old_path": "libFLAC/fixed.c",
+      "new_id": "74b31b328b086054066adb1c71a148771d491013",
+      "new_mode": 33188,
+      "new_path": "libFLAC/fixed.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "8e19280207bced78c9b3afe37ca8d076295d218d",
+      "old_mode": 33188,
+      "old_path": "libFLAC/float.c",
+      "new_id": "068069f36026aa74b0947b403539c9b9900ab433",
+      "new_mode": 33188,
+      "new_path": "libFLAC/float.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "749461d86202abbef1539aad7094527270239338",
+      "old_mode": 33188,
+      "old_path": "libFLAC/format.c",
+      "new_id": "4d0d8329b53784f7a5a4e22f2349099d1595b9cc",
+      "new_mode": 33188,
+      "new_path": "libFLAC/format.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "304c471a52a4dfcb997b38945ae0f700b5d9390f",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/all.h",
+      "new_id": "a4463d26d31477f6480ca15b02469865001a7fcc",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/all.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "87fa0facd6b9b06e4884da46ebec77b1555b1062",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/bitmath.h",
+      "new_id": "22d894f831ab10c262b7de1d03e2b14cf9a5f063",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/bitmath.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fd0f6aac6ce3ae3a79e451e5d51a5ca65a07d459",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/bitreader.h",
+      "new_id": "4dea8d03b930618e83ae4994413d73c38f7569d1",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/bitreader.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa5c4f74fcbc6336a0712cc2ccb2f45e33d0e19e",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/bitwriter.h",
+      "new_id": "3b1362d860a75cab1e32be78561db800e9fcfdb1",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/bitwriter.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "651bb224f2a61f04adfbbdb8fe5601b225c33145",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/cpu.h",
+      "new_id": "380f4f070c2c1a3580c5c233dae91bb78699706e",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/cpu.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0b67fb4be5d7850b68038727d1cdcfb8faea9b87",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/crc.h",
+      "new_id": "29c512cedec680f1e5da92d57e475adcd94f4773",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/crc.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6656b796bec8aef179d8491b1e0d28c4b4c43584",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/fixed.h",
+      "new_id": "dcc4715109af2979c90a4792febb0a7c7de56787",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/fixed.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "73313f6dbf80ffa8f6c608f7fcf504f6e509e551",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/float.h",
+      "new_id": "ab2643246212cdd9d87ee6150ce1ada4e7ac676e",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/float.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f5cc9360dca2de4090ad7a0267e30035aa8a056",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/format.h",
+      "new_id": "2fd346087a3354a6865b0eabd8976908658238db",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/format.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2cb139b4bfde3425e8b953e5501afce1bcf2a18a",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/lpc.h",
+      "new_id": "c4ed085c605b308a21d84f103194543eb55e3ae6",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/lpc.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b72b69bcc18e13a330f9b21ae1b37c45e25f8084",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/macros.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e5f675a830afebf4f9823e1b278a13e25ef6f277",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/md5.h",
+      "new_id": "c665ab313f6b91588d31659a9f4e0df7db437e34",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/md5.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7852c815085e39ae9beffcbda0664cfc862784f2",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/memory.h",
+      "new_id": "c9f27129e7a666975c1e0aed78b0dd1b2102b673",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/memory.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b5268c9552eedec0f65565cc33509f49375c1803",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/metadata.h",
+      "new_id": "092764c26d5cf7e5f00afcbddb681a562cd866ad",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/metadata.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "df2b6b55bdfd8ea0a69d377a7fba4f78df8e44b0",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/ogg_decoder_aspect.h",
+      "new_id": "439bf8e4d83b50c601c4b728bc5d26939e2b8a3b",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/ogg_decoder_aspect.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "290da071c6bc4f32bd81b265ffc7bc5697d3397f",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/ogg_encoder_aspect.h",
+      "new_id": "709597d44a52a9ae9186684ee8d98d5e6fe62297",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/ogg_encoder_aspect.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "389be18aba146201ecf92b15226b7e44907f3e16",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/ogg_helper.h",
+      "new_id": "87b96ef892ce3e50fe01600e276dda33e1ca4b23",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/ogg_helper.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "07dd8b273fb4cede1faabeb7751178fcc7186272",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/ogg_mapping.h",
+      "new_id": "d35a46cd83da678ae01a83e034387f2f8c06b4f4",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/ogg_mapping.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "96d31358625bc38eb1201a14e8f8bb6f2f9acbf5",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/stream_encoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4865c16c8a9c0296d2c0b7725ffa0216b5691d53",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/stream_encoder_framing.h",
+      "new_id": "2b7387a7664288a7f8604c6bc0378784d893123a",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/stream_encoder_framing.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "01e0fc46c94bf3ff1dbda3e3cc79af25fefbbb27",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/private/window.h",
+      "new_id": "52c92621d97332263f750b20b4eb274f779ac693",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/private/window.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2921092b380db51f03fb7073a915b30c060a439c",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/protected/all.h",
+      "new_id": "90912af5c7df4a3d4ac2ec949e3217551d6c7a23",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/protected/all.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9108ca78f225c062965a599f661d8b0199cc9e9f",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/protected/stream_decoder.h",
+      "new_id": "7be95afdafea1b9618cae4a409cb6d51996327ae",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/protected/stream_decoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4101ee5528890b266a6205f64ba7f969d891da99",
+      "old_mode": 33188,
+      "old_path": "libFLAC/include/protected/stream_encoder.h",
+      "new_id": "6917f5d4899a382ea2dab192d2db53616c2060c5",
+      "new_mode": 33188,
+      "new_path": "libFLAC/include/protected/stream_encoder.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0356867147ca0d7cd606170e93c20e70ceaa2f2f",
+      "old_mode": 33188,
+      "old_path": "libFLAC/lpc.c",
+      "new_id": "f7c643a80fbc767e6b80faa2c9ac5fd0fb7b8884",
+      "new_mode": 33188,
+      "new_path": "libFLAC/lpc.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "37cef67bdc899fe957f3047f5e12ddd89cd1c149",
+      "old_mode": 33188,
+      "old_path": "libFLAC/md5.c",
+      "new_id": "e5adc3e357484b60d507c82de00d012c41ecaeb2",
+      "new_mode": 33188,
+      "new_path": "libFLAC/md5.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4d100975087d2ab59f3708aad9671e14e472f7d0",
+      "old_mode": 33188,
+      "old_path": "libFLAC/memory.c",
+      "new_id": "d22df70eb8afb61a7f68c26047197ab7c3716045",
+      "new_mode": 33188,
+      "new_path": "libFLAC/memory.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "916fde6c841ad0534d275de422ff612516d9dbdd",
+      "old_mode": 33188,
+      "old_path": "libFLAC/stream_decoder.c",
+      "new_id": "d13b23b7e946921ceee0202c25cb42da64373344",
+      "new_mode": 33188,
+      "new_path": "libFLAC/stream_decoder.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6d9859c9e2bdf519d20fc8446d6f3707721022ed",
+      "old_mode": 33188,
+      "old_path": "libFLAC/stream_encoder.c",
+      "new_id": "3aa90fb565b75117f182940ff1441e236371dd44",
+      "new_mode": 33188,
+      "new_path": "libFLAC/stream_encoder.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "939955bf2d6c04ab4b130f30b5e0d813913d279f",
+      "old_mode": 33188,
+      "old_path": "libFLAC/stream_encoder_framing.c",
+      "new_id": "959eca0a72be2b550010b908bfdf2e9e2c9aff6d",
+      "new_mode": 33188,
+      "new_path": "libFLAC/stream_encoder_framing.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cd689c573d44f6f21b6414a61419a38f72efad1e",
+      "old_mode": 33188,
+      "old_path": "libFLAC/window.c",
+      "new_id": "4387ef727d37afd9052dcecaf6da310654220207",
+      "new_mode": 33188,
+      "new_path": "libFLAC/window.c"
+    }
+  ]
+}

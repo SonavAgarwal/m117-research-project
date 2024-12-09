@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "5afa7645579a01b77005b8a60f3713ca3e653fba",
+  "tree": "b31bc10bf9be74f530525cb9a413b5f6e5671887",
+  "parents": [
+    "f1677fcee5cfd316ae7043992bfbaf434ba13b3a"
+  ],
+  "author": {
+    "name": "Ivan Chiang",
+    "email": "chiangi@google.com",
+    "time": "Mon Aug 10 16:43:33 2020 +0800"
+  },
+  "committer": {
+    "name": "Ivan Chiang",
+    "email": "chiangi@google.com",
+    "time": "Wed Aug 26 06:29:00 2020 +0000"
+  },
+  "message": "Revoke the uri permission when the file is deleted\n\nWhen the file is deleted, renamed or moved, revoke all uri\npermissions with the file\n\nBug: 157474195\nTest: manual test with DocumentsUI\nTest: atest DocumentsTest#testAfterMoveDocumentInStorage_revokeUriPermission\nChange-Id: I4ffb183630aadb2d87b0965e8cecf88af15f4534\nMerged-In: I4ffb183630aadb2d87b0965e8cecf88af15f4534\n(cherry picked from commit 9efd606f43abe36f9fcf7f0d1ab0d059c51be514)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a50a52219c742a8850411817b11431e94f05465f",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/content/FileSystemProvider.java",
+      "new_id": "3b5fecfc600aeb7946613bee63d60bb36c5c0c84",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/content/FileSystemProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f42bf1982b36807a8e531b328d6a94d53d61bc12",
+      "old_mode": 33188,
+      "old_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+      "new_id": "11d1b0a9ef2a26974172d28e07bc5b021cbfcae4",
+      "new_mode": 33188,
+      "new_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+    }
+  ]
+}

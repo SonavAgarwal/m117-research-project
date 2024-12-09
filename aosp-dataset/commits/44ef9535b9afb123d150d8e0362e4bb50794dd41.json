@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "44ef9535b9afb123d150d8e0362e4bb50794dd41",
+  "tree": "e842361a7e46e239ed82593793f0d1718025af02",
+  "parents": [
+    "de4ef934baa87d3d684e701952e2d77cf05b28c6"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Thu Aug 25 12:08:18 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:21:50 2016 -0700"
+  },
+  "message": "Fix typo in name of des-ede mapping\n\nThis was mapping 2-key 3DES to regular DES thus resulting in all\nencryption using 2-key 3DES having the wrong answers.\n\n(cherry picked from commit 55caed999846897bcf949828e6e367bf8d7d9909)\n\nBug: 31081987\nChange-Id: I44ba12dcf51d57952cf3ba501381d144d271a2a6\n(cherry picked from commit 3209baf397afb1481aa19d398f34c48facc19903)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5c663735be9534f37324498decd13a6b1b72cc3d",
+      "old_mode": 33188,
+      "old_path": "src/main/native/org_conscrypt_NativeCrypto.cpp",
+      "new_id": "9af0cda73299f800acfc25e0594d831b35284e0c",
+      "new_mode": 33188,
+      "new_path": "src/main/native/org_conscrypt_NativeCrypto.cpp"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "d3db2a2634c422286f75c4b38af98837f3d2f0ff",
+  "tree": "74ff998f72c18bdf7efba586b9b4a7a2f4075df9",
+  "parents": [
+    "7478c4c675f3bfdbf0f06730f432230a59abeb39"
+  ],
+  "author": {
+    "name": "DRC",
+    "email": "information@libjpeg-turbo.org",
+    "time": "Fri Apr 12 07:49:35 2019 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:02 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] TurboJPEG: Properly handle gigapixel images\n\nBug: 120551338\nTest: tj64 /data/local/tmp/crash-46.jpg\nSee b/120551338#comment1 to get crash-46.jpg\n\nSubmitted upstream as 2a9e3b. Original commit message:\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nPrevent several integer overflow issues and subsequent segfaults that\noccurred when attempting to compress or decompress gigapixel images with\nthe TurboJPEG API:\n\n- Modify tjBufSize(), tjBufSizeYUV2(), and tjPlaneSizeYUV() to avoid\n  integer overflow when computing the return values and to return an\n  error if such an overflow is unavoidable.\n- Modify tjunittest to validate the above.\n- Modify tjCompress2(), tjEncodeYUVPlanes(), tjDecompress2(), and\n  tjDecodeYUVPlanes() to avoid integer overflow when computing the row\n  pointers in the 64-bit TurboJPEG C API.\n- Modify TJBench (both C and Java versions) to avoid overflowing the\n  size argument to malloc()/new and to fail gracefully if such an\n  overflow is unavoidable.\n\nIn general, this allows gigapixel images to be accommodated by the\n64-bit TurboJPEG C API when using automatic JPEG buffer (re)allocation.\nSuch images cannot currently be accommodated without automatic JPEG\nbuffer (re)allocation, due to the fact that tjAlloc() accepts a 32-bit\ninteger argument (oops.)  Such images cannot be accommodated in the\nTurboJPEG Java API due to the fact that Java always uses a signed 32-bit\ninteger as an array index.\n\nFixes #361\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nIn addition, this cherry-pick includes commit bce58f from upstream,\nwhich defines the macro THROWG (used in the above commit) and simplifies\nthe merge. Original commit message:\n\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nConsistify formatting of macros in TurboJPEG code\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nConflicts:\n    ChangeLog.md\n    tjunittest.c\n\nUpdate README.android noting the cherry-picks.\n\nChange-Id: I472f52c15eaaaf7995249d1fb488079955cd7c61\nMerged-In: I472f52c15eaaaf7995249d1fb488079955cd7c61\n(cherry picked from commit d8b95103b98610ed5896aabd2477b520ab9742f1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12f476d18814fe82b8f334f6ab042ece83bacb82",
+      "old_mode": 33188,
+      "old_path": "README.android",
+      "new_id": "2ec473edd12d5e16dddb11e788a034193f3558c5",
+      "new_mode": 33188,
+      "new_path": "README.android"
+    },
+    {
+      "type": "modify",
+      "old_id": "7829e53cd419f3ae3b2f9578eb298d48ab9ea500",
+      "old_mode": 33188,
+      "old_path": "java/TJBench.java",
+      "new_id": "cc3178eaf8d48346e9b120165b984559c531bb18",
+      "new_mode": 33188,
+      "new_path": "java/TJBench.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0ddcd7b23a85e14159ca72920f06864245faa1db",
+      "old_mode": 33188,
+      "old_path": "tjbench.c",
+      "new_id": "3a7da6c110114d76128389975a207dcc68c7d2f1",
+      "new_mode": 33188,
+      "new_path": "tjbench.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "61200e60307289b916f6d7dbb2a6ea5dc6b2e8f3",
+      "old_mode": 33188,
+      "old_path": "tjexample.c",
+      "new_id": "0db2269d2cf2e33e5c9ed306a966269e2069d2c4",
+      "new_mode": 33188,
+      "new_path": "tjexample.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ae72e836d41f9a2ef6f788200f2229c3fe7f7026",
+      "old_mode": 33188,
+      "old_path": "tjunittest.c",
+      "new_id": "c92fea79a1d9577736e7fc4b02f63e3dff23990a",
+      "new_mode": 33188,
+      "new_path": "tjunittest.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d0a0935b941cd22246ebca1dc9a35357fcdd5baf",
+      "old_mode": 33188,
+      "old_path": "turbojpeg-jni.c",
+      "new_id": "13f18f780de7997b81bef8c7861bdc7a38a4b984",
+      "new_mode": 33188,
+      "new_path": "turbojpeg-jni.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b3caa0d450bef4364326674659a620f60116ccdf",
+      "old_mode": 33188,
+      "old_path": "turbojpeg.c",
+      "new_id": "1f99786fd6e972ea447a68153e935f9608ed06e0",
+      "new_mode": 33188,
+      "new_path": "turbojpeg.c"
+    }
+  ]
+}

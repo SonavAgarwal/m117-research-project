@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f5911687e9b9b9a9c26e1cb58f31c941fb199195",
+  "tree": "7d988973462b84a0166738db498e223617cbe867",
+  "parents": [
+    "ca91ceeb13e1cb6981bdeaedb1c21c3a7b1a58f1"
+  ],
+  "author": {
+    "name": "Jing Ji",
+    "email": "jji@google.com",
+    "time": "Mon Nov 04 11:35:49 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:16:25 2019 +0000"
+  },
+  "message": "Prevent system uid component from running in an isolated app process\n\nBug: 140055304\nTest: Manual\nChange-Id: I5a1618fab529cb0300d4a8e9c7762ee218ca09eb\nMerged-In: I5a1618fab529cb0300d4a8e9c7762ee218ca09eb\n(cherry picked from commit 84f2b227b0a0e74157508f143c1ef44ef0f0be50)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "838e7d3c020868e4fedceae289521b53414cdff2",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ProcessList.java",
+      "new_id": "fe29a36ec45f3e316d5658ac6de6c81a64cfb58e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ProcessList.java"
+    }
+  ]
+}

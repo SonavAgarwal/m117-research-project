@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "6f1aafe2d4b979cf64ab7a5150a021f977cfed37",
+  "tree": "2d7bcaec23049305e434454d7f24694aac3df5d3",
+  "parents": [
+    "f7f52f8ced193995381e6d3be4cbde85b5021aa5"
+  ],
+  "author": {
+    "name": "Hai Shalom",
+    "email": "haishalom@google.com",
+    "time": "Fri Jun 19 16:34:17 2020 -0700"
+  },
+  "committer": {
+    "name": "Hai Shalom",
+    "email": "haishalom@google.com",
+    "time": "Fri Jun 19 16:58:23 2020 -0700"
+  },
+  "message": "[Passpoint] Remove R2 broadcasts\n\nRemove R2 broadcasts for Icon, deauth imminent and subscription\nremediation. These broadcasts are not used and not necessary,\nand also leaked the Passpoint AP BSSID without location\npermission.\n\nBug: 157748906\nTest: atest PasspointManagerTest\nChange-Id: I25aba4c7a39150e9df483890f575d3e3767723be\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "329c330e6f3d588b0b91bf4315fde57565f49967",
+      "old_mode": 33188,
+      "old_path": "service/java/com/android/server/wifi/hotspot2/PasspointManager.java",
+      "new_id": "25553b8fed74071a9ac35d162bcc5337ab2b5e62",
+      "new_mode": 33188,
+      "new_path": "service/java/com/android/server/wifi/hotspot2/PasspointManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "94fe673c3a29a2c1d01f98bdec9e6711175aa2f3",
+      "old_mode": 33188,
+      "old_path": "tests/wifitests/src/com/android/server/wifi/hotspot2/PasspointManagerTest.java",
+      "new_id": "dbc38d4931cd7064a2cefdacef75d44faf869a2b",
+      "new_mode": 33188,
+      "new_path": "tests/wifitests/src/com/android/server/wifi/hotspot2/PasspointManagerTest.java"
+    }
+  ]
+}

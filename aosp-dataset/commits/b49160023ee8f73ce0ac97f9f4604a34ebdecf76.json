@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b49160023ee8f73ce0ac97f9f4604a34ebdecf76",
+  "tree": "3900cb904f3230c37f4c41e2a7de8e4fcfcc003f",
+  "parents": [
+    "80592e62a6ae095041e95b811ad7066dd44d37f6"
+  ],
+  "author": {
+    "name": "Max Bires",
+    "email": "jbires@google.com",
+    "time": "Tue Dec 12 11:16:43 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:31:59 2018 +0000"
+  },
+  "message": "Fixing bug in security vulnerability patch\n\nThe incorrect logical operator being used was causing unconditional\npermission to be granted, which is the exact opposite of intended\nbehavior.\n\nBug: 70280642\nTest: testEcAttestation_KeyStoreExceptionWhenRequestingUniqueId passes\nChange-Id: I2f1ed9768f136003126fb59a7a4517a159ff978c\nMerged-In: I2f1ed9768f136003126fb59a7a4517a159ff978c\n(cherry picked from commit 670467d9a4be539ac1cb2a7eb1a41ce2524a24b2)\n(cherry picked from commit fd8d014e0d0d35be1f6dfea4d8e3ad07468fc683)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "be13a7b28f3cca4c072402be21c710bd89182a04",
+      "old_mode": 33188,
+      "old_path": "keystore/key_store_service.cpp",
+      "new_id": "f6786b880bc80bf9bfbca6447215f470ccb30e83",
+      "new_mode": 33188,
+      "new_path": "keystore/key_store_service.cpp"
+    }
+  ]
+}

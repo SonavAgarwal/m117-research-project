@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1bb14c41a72978c6075c5753a8301ddcbb10d409",
+  "tree": "4e811ac1a2af0cb5cff2a00fa920042736b0315f",
+  "parents": [
+    "82ef3ceb978fd5d95a310ff555d42b271dae530a"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Sep 06 10:57:47 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Oct 20 00:18:14 2018 +0000"
+  },
+  "message": "bta: Pass the correct UUID array size in bta_ag_do_disc\n\nBug: 113164621\nTest: Connect HSP from a device to the phone\nChange-Id: Iec875cd165ad1cea64c307602bb00b623967c7c7\n(cherry picked from commit 9645b5dd62c8166f10798335768aa2a6c3e05e4c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ff39fd78f54148a6adb8feaf26a53592afb134d",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_sdp.cc",
+      "new_id": "5ab1215fe45ad5c901b0a914875e959470d7b1f9",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_sdp.cc"
+    }
+  ]
+}

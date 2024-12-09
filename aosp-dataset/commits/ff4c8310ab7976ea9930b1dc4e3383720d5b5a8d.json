@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ff4c8310ab7976ea9930b1dc4e3383720d5b5a8d",
+  "tree": "10a7b6d04d86c090c1c2c02e01d4d9fcadf8bf39",
+  "parents": [
+    "6c91acf543ea20281f7e3d83414fab3cc64f1938"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Mon Feb 13 18:50:48 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:10 2017 +0000"
+  },
+  "message": "AudioFlinger: Fix memory allocation for client-less tracks\n\nTest: Ringtone with BT\nBug: 35350587\nBug: 38340117\nChange-Id: If247d319d58f8f4d18b49f58ec950491871ebb2d\n(cherry picked from commit afb31487f3156a7284d2f0d06646c7bc00d99537)\n(cherry picked from commit 1159ffd5e3f832206982d45a7b030b943cc4775e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f18b88d7247abc5f16339b8c3e7fdb1c6733f205",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Tracks.cpp",
+      "new_id": "aab4ba9dbd1abf89b634113627b90f95c9c14ee9",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Tracks.cpp"
+    }
+  ]
+}

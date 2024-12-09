@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "320d22948ad7ad74da79ae6b839accc7b5b9e8f8",
+  "tree": "ab84a860015cce488ab8fcd466729beed1960911",
+  "parents": [
+    "4979d2270d6de469609345ed63b3737524f20286"
+  ],
+  "author": {
+    "name": "shubang",
+    "email": "shubang@google.com",
+    "time": "Mon Aug 19 16:59:13 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:32 2019 +0000"
+  },
+  "message": "Add SQL tokenizer and disallow subqueries in selection\n\nBUG: 135269669\nTest: atest com.android.providers.tv\nChange-Id: I3d25660c6fc8d165a4de5f3de95440cf52c30255\n(cherry picked from commit f7ff08e2cbe9a4d20196b77ccf87b37258926050)\n(cherry picked from commit cb13db760e903c0490e2fa576391b2ce6beaed80)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d57eb8b8fff1a439105353f6510af0782202d344",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/tv/TvProvider.java",
+      "new_id": "78dd724fc4c90cc56cfc1b9c535957edec6f0da4",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/tv/TvProvider.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "bb0bac257b886b5e38e0fdcb0786c7db8a28ad62",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/tv/util/SqliteTokenFinder.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f22808072c546165a941186fdf1d6e94645f134d",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/providers/tv/util/SqliteTokenFinderTest.java"
+    }
+  ]
+}

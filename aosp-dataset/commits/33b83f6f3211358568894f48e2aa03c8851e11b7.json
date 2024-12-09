@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "33b83f6f3211358568894f48e2aa03c8851e11b7",
+  "tree": "e1a8764765d10936a2a733cb42eb03e2aaa9c910",
+  "parents": [
+    "5036c372db1e8a2564e991d1c65ff1e8e99aac17"
+  ],
+  "author": {
+    "name": "Hasini Gunasinghe",
+    "email": "hasinitg@google.com",
+    "time": "Wed Oct 14 14:49:58 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:56 2020 +0000"
+  },
+  "message": "Make mIsDeviceLockedForUser synchronized.\n\nBug: 169933423\nTest: TBD/Treehugger passes\nChange-Id: I8e1f57dd5ab8314801bdd62058c9ed5f761b7c55\n(cherry picked from commit 106f46eaa677858ec633e7289af30874853d5cc6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7515a1f34db3e87b22e233fc043f1fcefb61070",
+      "old_mode": 33188,
+      "old_path": "keystore/keystore_keymaster_enforcement.h",
+      "new_id": "b0dae48e9d63b8322bb7173f21a2f1ac5641edb3",
+      "new_mode": 33188,
+      "new_path": "keystore/keystore_keymaster_enforcement.h"
+    }
+  ]
+}

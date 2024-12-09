@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d575ecf607056d8e3328ef2eb56c52e98f81e87d",
+  "tree": "08b9dd6d4043e64f680d8e97ae4a15fa34ab1b47",
+  "parents": [
+    "4ed06d14080d8667d5be14eed200e378cba78345"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Thu May 26 19:20:40 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:06:38 2016 -0700"
+  },
+  "message": "DO NOT MERGE Fix wrong nAllocLen\n\nSet nAllocLen to the size of the opaque handle itself.\n\nBug: 28816964\nBug: 28816827\nChange-Id: Id410e324bee291d4a0018dddb97eda9bbcded099\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "21573e7a275bffcfd9f6fbc25c7b202bce4a46ed",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp",
+      "new_id": "815ab28bb8f974f96d1f4a24359f8e477313946f",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp"
+    }
+  ]
+}

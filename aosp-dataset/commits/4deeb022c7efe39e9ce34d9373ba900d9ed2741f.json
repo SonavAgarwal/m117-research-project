@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4deeb022c7efe39e9ce34d9373ba900d9ed2741f",
+  "tree": "389be725de1c59c1e29ddd5dc4696a8c85f30a7c",
+  "parents": [
+    "05401e8739c9450e60cbe90811b14456162ff26b"
+  ],
+  "author": {
+    "name": "Chris Manton",
+    "email": "cmanton@google.com",
+    "time": "Sun Mar 21 15:51:18 2021 -0700"
+  },
+  "committer": {
+    "name": "Chris Manton",
+    "email": "cmanton@google.com",
+    "time": "Tue Apr 06 19:58:44 2021 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Contain avrc_ctrl_pars_vendor_cmd OOB write\n\nBug: 181860042\nTest: net_test_stack\nTag: #security\nIgnore-AOSP-First: Security\n\nChange-Id: I5d8d4051a1439ee9f1f04af3dfe6da6d8016e546\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5a81d0d8aa998fd141b52a84080ad32f525049c6",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_tg.cc",
+      "new_id": "190a88d75f18b7e6ee1efe533e7f8e21366513e3",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_tg.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad1cc9e725d76099b92312c818be0e8c71d9d6ff",
+      "old_mode": 33188,
+      "old_path": "stack/test/stack_avrcp_test.cc",
+      "new_id": "72ec45f290d082eeacaeea37f546b3898c883eaa",
+      "new_mode": 33188,
+      "new_path": "stack/test/stack_avrcp_test.cc"
+    }
+  ]
+}

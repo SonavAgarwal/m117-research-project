@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fc3cacf7252a0e578725148c25863a9d9eda297e",
+  "tree": "ddb1c47308d1e7fc379da86e93922b2d286440c8",
+  "parents": [
+    "748ce1d7c694562f0f0e9682643c67c0925fbf63"
+  ],
+  "author": {
+    "name": "Rakesh Kumar",
+    "email": "rakesh.kumar@ittiam.com",
+    "time": "Mon Nov 12 18:00:27 2018 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:55:42 2019 +0000"
+  },
+  "message": "Decoder: Signal IVD_RES_CHANGED error for change in crop params\n\nIVD_RES_CHANGED was not signaled when crop parameters changed, i.e.\ndisplay dimensions changed without change in decode dimensions.\n\nIn such cases, if output buffer was allocated as per the current\ndimension being decoded, without IVD_RES_CHANGED signalled, there can be\nan OOB write if the new buffer is smaller than the frame being returned\nas output\n\nBug: 118453553\nTest: vendor\nChange-Id: Ic74c6fb9612403f75a8f9ddb3a93861bca82cf16\n(cherry picked from commit fdbbd60bfebe48c0539897d7eeeeb5816e59ce1b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "58b2cfe7dacafa7f39d61cc3b6dbf03942c336dc",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "3f67998187766ff0666546ff8fa125ab295d8022",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

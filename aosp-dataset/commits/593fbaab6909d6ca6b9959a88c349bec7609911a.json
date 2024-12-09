@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "593fbaab6909d6ca6b9959a88c349bec7609911a",
+  "tree": "7c682e31862580a62c02028af5caff2ea73f7d74",
+  "parents": [
+    "30bff89770bfb1efbccd5cc278b941790fb4899b"
+  ],
+  "author": {
+    "name": "Robert Sesek",
+    "email": "rsesek@google.com",
+    "time": "Mon Apr 22 17:54:20 2019 -0400"
+  },
+  "committer": {
+    "name": "Robert Sesek",
+    "email": "rsesek@google.com",
+    "time": "Wed Apr 24 16:34:09 2019 -0400"
+  },
+  "message": "Add a test for bindIsolatedService with unusual characters in instanceName.\n\nTest: atest CtsAppTestCases:android.app.cts.ServiceTest\nBug: 130164289\nChange-Id: I1abb1eb02f5c2502388156c607c7825d76709c25\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6bea94498f5f8eff3c0c3b6d0468f99284550bb8",
+      "old_mode": 33188,
+      "old_path": "tests/app/src/android/app/cts/ServiceTest.java",
+      "new_id": "0809d38f038527c0e61954102925e2aa2d4cb2e6",
+      "new_mode": 33188,
+      "new_path": "tests/app/src/android/app/cts/ServiceTest.java"
+    }
+  ]
+}

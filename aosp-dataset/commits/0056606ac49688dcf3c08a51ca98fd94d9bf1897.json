@@ -1,0 +1,120 @@
+)]}'
+{
+  "commit": "0056606ac49688dcf3c08a51ca98fd94d9bf1897",
+  "tree": "504a418718ea4cd7f1fa2c7fd993419381b11863",
+  "parents": [
+    "8157d73fb620bc463eb26e974fe92d3259e7545a"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Wed Oct 24 12:17:22 2018 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:13:42 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Fix bug decoding JCS_RGB jpeg files\n\nBug: 118372692\nTest: I6364b836db6bee98572ed0864e3dde6d2ca2d1b2\n\nRemove conflicting changes in infra. Resolved conflicts in:\n- src/codec/SkHeifCodec.cpp\n- src/codec/SkJpegCodec.cpp\n- src/codec/SkSwizzler.cpp\n\nUse old version of SkEncodedInfo::Make\nRemove references to SkEncodedInfo::kXAlpha_Color and ::k565_Color\nwhich are unused by Android.\n\nAlso include SafetyNet logging from\nhttps://skia-review.googlesource.com/c/skia/+/171222.\n\nOriginal message follows:\n\nBug: chromium:897031\nBug: chromium:896776\n\nPrior to this fix, we would treat the output from such a JPEG\nas if it were a 16 bit per component RGB PNG. We hit an assert\nin debug, but in release mode we do the wrong thing.\n\nSplit up SkSwizzler::CreateSwizzler into two public factories\n(and a private one) based on whether format conversion is desired.\nWithout format conversion, we may have already converted (as is\nthe case with this JPEG), so the SkEncodedInfo::Color is not relevant.\nThat flavor of the factory just needs to know the bytes per pixel,\nso provide that info instead.\n\nAdd a test file to Google Storage: apron.jpg, from Chromium\u0027s\nbenchmark files.\n\nChange-Id: Idd8a11a8da5c0a77a4348a6ee37a984137b39f19\n(cherry picked from commit c880585df188439eb0d4dd4ad2cdeb1ac48719fc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ddcbb529a8ca3dc96b8892bc3498bf8ca084ca2",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpStandardCodec.cpp",
+      "new_id": "100dc784f0a595b54e20f57e996fb353a9a9ea32",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpStandardCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "dbff9287ebfe72cf994cc459a827ed2b345a9dc2",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkGifCodec.cpp",
+      "new_id": "6afb670f76c7b6fe08306882f957a2938446e2e2",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkGifCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e82904115ea4772fedecedeb30eef3483b63413",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkHeifCodec.cpp",
+      "new_id": "c7b5f307ad0b36db4a1f98da9f12ac363f865ee0",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkHeifCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4f48886be2fe20039b7dd261707b9981a8026f30",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkJpegCodec.cpp",
+      "new_id": "0719472405196144fc1bb113a89329d119a980aa",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkJpegCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "e8a31f94e620e7289340334732a10f34ea9a0813",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkJpegDecoderMgr.cpp",
+      "new_id": "0c2db528f10c50cba943602de8f3d920991526c6",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkJpegDecoderMgr.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa621380c43dcb565ab5a3a1402eea7978d610b4",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkPngCodec.cpp",
+      "new_id": "ebfe745f21bcbe2f02831b78ace49a1243f9c88e",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkPngCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9eea78cf4ba2dd12bd00030c41a423eb609d36e4",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkRawCodec.cpp",
+      "new_id": "e3f3557ae4ba9aedae25356210b04fee4c24eafd",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkRawCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4b350c4ec4b4789cb007ad3b3daa5561ba5726e1",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkSwizzler.cpp",
+      "new_id": "f88817f5d323b5fda7c5dd04d8f956b4a96d77af",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkSwizzler.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ebaed7ea33fe77e3e316159ed8d4d0acc5466349",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkSwizzler.h",
+      "new_id": "6eceddaa5a0faa12ca34138b3e16de5cf5e0bdec",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkSwizzler.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8b10287f624c220e23d6d38cd66f67c50b02b4d",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkWbmpCodec.cpp",
+      "new_id": "171ae5271e0ea76a44a2721a55a7809ab16c406e",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkWbmpCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "192189d1ec0f102d6bf976fc56d801cf7860d57f",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkWbmpCodec.h",
+      "new_id": "7a14c5562f6d0da888c66ab07933462ff215ace8",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkWbmpCodec.h"
+    }
+  ]
+}

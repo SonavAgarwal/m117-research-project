@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a95061ca2d4676bd8083baa7252785566fc3358f",
+  "tree": "e1882ce70a28174dd49581e292d7d2b6575fd808",
+  "parents": [
+    "cbcf477e8b05f092bf6519e3ba4db363247ff4f6"
+  ],
+  "author": {
+    "name": "Steve Elliott",
+    "email": "steell@google.com",
+    "time": "Mon Aug 03 13:45:44 2020 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 12 21:44:14 2020 +0000"
+  },
+  "message": "Mark implicit PendingIntents as immutable\n\nBug: 156020795\nTest: manual, atest\nChange-Id: I72206c7a52b067b77d6542d170a6483713dfeee7\n(cherry picked from commit 84e08280d3882cfe4bad12ab426016c6d0efc7fb)\n(cherry picked from commit 02bdeeffb3135de0f3e18c3a85e6730b021fd191)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbcd6ba0ff47076313f00e4da365b05369cbe046",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/screenshot/ScreenshotNotificationsController.java",
+      "new_id": "42dde4064a971806358255363c37799594bb5988",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/screenshot/ScreenshotNotificationsController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b25df5f9c07f7329aca2fc7b56b7864265e48580",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/util/leak/LeakReporter.java",
+      "new_id": "5e7280840bb9051882c01d25dd0b9cbf369ae7ee",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/util/leak/LeakReporter.java"
+    }
+  ]
+}

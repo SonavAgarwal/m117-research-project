@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "58e26b2e6dab1bca233b00afaebab958f26b7c87",
+  "tree": "80bc9362536c485ccdd569021f45b4c707b28b87",
+  "parents": [
+    "af17238b90c34bd466f01e7f9b999d3a28844cbe"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Mar 29 13:48:28 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:56:50 2019 +0000"
+  },
+  "message": "Add few more checks for invalid parameters in sps\n\nFollowing elements didn\u0027t have a bound check in SPS as spec doesn\u0027t list\nthe bounds on these explicitly.\n\nlog2_min_coding_block_size_minus3, log2_diff_max_min_coding_block_size,\nlog2_min_transform_block_size_minus2 and log2_diff_max_min_transform_block_size\n\nAdded appopriate error checks on these fields\n\nBug: 129366952\nBug: 130023983\nTest: vendor\nMerged-In: I59d95f43c2ef98300132d664095e88df8e87a164\nChange-Id: I59d95f43c2ef98300132d664095e88df8e87a164\n(cherry picked from commit 2f30da4ca25fc764a1e0a3fe1ea964a112df6e27)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1878f3047baa2264c1db1f84bb9ee36cfbd654b5",
+      "old_mode": 33188,
+      "old_path": "common/ihevc_defs.h",
+      "new_id": "58761eb12a80b7ad98889e413de684dc17a08f53",
+      "new_mode": 33188,
+      "new_path": "common/ihevc_defs.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7028d575a2528304d28c0efa3fd0aec6ac343da5",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "73142f66b7113c24abba94d949926ed7b23eb779",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

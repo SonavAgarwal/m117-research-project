@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "181dc252ddec574464882970d3fab290e8b625b5",
+  "tree": "176a89d77e3a33b2e5d125b82a3122f401dc5b89",
+  "parents": [
+    "706f708d34d6aaa6f954b4eeffc126da61d0eae3"
+  ],
+  "author": {
+    "name": "dwchen",
+    "email": "dwchen@google.com",
+    "time": "Mon Aug 20 10:17:48 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:49 2018 +0000"
+  },
+  "message": "Fixes possible issue with no-op creator.\n\nLeaving a no-op CREATOR can lead to issues. We throw a run-time\nexception to prevent anyone from using this. The StatsLogEventWrapper is\nmeant to be write-only since it\u0027s only used to send data to statsd.\n\nBug: 112550251\nTest: Tested with provided POC app by external researcher.\nChange-Id: I001d84e2a61a1cd8a4f59aa156ca52f73ad0f6e1\n(cherry picked from commit 78622d57ad102c054306b01321b6b2dbec3f9d1d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d4d3dc838d91d9359d47aac2e52b749d64c52d64",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/StatsLogEventWrapper.java",
+      "new_id": "7b3ea57ba0e9006f95f4a55bc48d01187c2b30b7",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/StatsLogEventWrapper.java"
+    }
+  ]
+}

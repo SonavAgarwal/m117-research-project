@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1d919d737b374b98b900c08c9d0c82fe250feb08",
+  "tree": "be35d15fad92ebfaf8e0e7abe9b9ee5b21312786",
+  "parents": [
+    "77e075ddd6d8cae33832add5225ee8f8c77908f0"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Mon Jun 05 12:15:05 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:12:54 2017 +0000"
+  },
+  "message": "Fix security vulnerability: Equalizer setParameter memory overflow\n\nBug: 37563371\n\nTest: use POC on bug or cts security test\nChange-Id: I9c9453a222b53fd5ef821330a34cb9e938e4d9c5\n(cherry picked from commit 68b9e0f5d69d3b1e7b7628037696ce32f032e819)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "592ec130ae13b7f8e7d993de38b382f8f90bc15a",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "dcf3fa0a5ec3b8b1588a98a727b754a0a1e3f67f",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ebbb82365172337c6c250c6cac4e326970a9e351",
+  "tree": "ce4c14da5f30a70caf006c25fdcdccb3fa9e82db",
+  "parents": [
+    "7106b08ee43b84978e370b9c25e89f1ed7bfbf0d"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Dec 03 18:52:10 2015 -0800"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Wed Dec 09 19:03:53 2015 +0000"
+  },
+  "message": "post proc : volume listener : fix effect release crash\n\nFix access to deleted effect context in vol_prc_lib_release()\n\nBug: 25753245.\nChange-Id: I64ca99e4d5d09667be4c8c605f66700b9ae67949\n(cherry picked from commit 93ab6fdda7b7557ccb34372670c30fa6178f8426)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cf15f1cada43bbe89861ce9cf69cab71fa8094d2",
+      "old_mode": 33188,
+      "old_path": "post_proc/volume_listener.c",
+      "new_id": "280bfe38da12305759d7a392b752dfa4a8df073b",
+      "new_mode": 33188,
+      "new_path": "post_proc/volume_listener.c"
+    }
+  ]
+}

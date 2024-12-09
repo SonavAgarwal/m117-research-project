@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6e3c984806aa0ba9e8a836ef9fed12c1207a161e",
+  "tree": "75690ed57f354af95c987de2612f2a44be5e621b",
+  "parents": [
+    "3e928d15e1090f3029b98f5c156a470b58250cae"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Feb 10 14:39:33 2021 -0800"
+  },
+  "committer": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Fri Feb 12 22:52:19 2021 +0000"
+  },
+  "message": "Check packet size in avrc_pars_browse_rsp\n\nTest: manual\nBug: 179162665\nChange-Id: If4d15b3fe907055f3691d03467a3a64dc315fa71\nTag: #security\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7b64b86e3777c5d0da1525303d0f56a35384b12a",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "619aace9a60e646d6285a731fe0929a54ced81f5",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

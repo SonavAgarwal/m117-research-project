@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "57bed83a539535bb64a33722fb67231119cb0618",
+  "tree": "d27a064540c9761fd8c2c5f804232596f07e8bae",
+  "parents": [
+    "9a2be5d49d57b239bf6345f033eab01ba98f3889"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Wed Aug 26 16:34:33 2015 -0700"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Aug 27 00:06:18 2015 +0000"
+  },
+  "message": "libmedia: clear reply data for IEffect command\n\nBug: 23540907\nChange-Id: Ib89afc6b273b0eb310bbc5a1bd92b1e3d407c249\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a303a8fcd820d105c44efcf13106a095ac2b0ef6",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IEffect.cpp",
+      "new_id": "86c706a6384cc4bf4e7f707e51c1fa5d494b0683",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IEffect.cpp"
+    }
+  ]
+}

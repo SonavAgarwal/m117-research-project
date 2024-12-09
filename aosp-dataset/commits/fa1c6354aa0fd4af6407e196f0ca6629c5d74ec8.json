@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fa1c6354aa0fd4af6407e196f0ca6629c5d74ec8",
+  "tree": "ed313c98163f15830ceebfaca6adc35b37888f1c",
+  "parents": [
+    "e7d575f4979038238a3eb2a0aad124f941797958"
+  ],
+  "author": {
+    "name": "Richard Smith",
+    "email": "happyercat@gmail.com",
+    "time": "Mon Feb 22 14:25:43 2021 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:56 2021 +0000"
+  },
+  "message": "Fix memory overflow.\n\nBug: 180939982\nMerged-In: I1be3b836e09901c9cc614b02e21ae41b9a1ebfac\nChange-Id: I1be3b836e09901c9cc614b02e21ae41b9a1ebfac\n(cherry picked from commit 0d93359dbbe99da62528b236ba4a9ab92f06c6af)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "72239d9def5e9510be8e445230a768c2ef6d4169",
+      "old_mode": 33188,
+      "old_path": "stack/btm/btm_acl.cc",
+      "new_id": "2c7bebd6310f62efb1d09bf2383ddc5048757e73",
+      "new_mode": 33188,
+      "new_path": "stack/btm/btm_acl.cc"
+    }
+  ]
+}

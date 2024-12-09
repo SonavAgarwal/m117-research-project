@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6ae2bd0e59636254c32896f7f01379d1d704f42d",
+  "tree": "cc1d016124e9b025ebfc5b7cf42664d3e8957192",
+  "parents": [
+    "44654288c0bdb6a05ef4a9be123945900f57c761"
+  ],
+  "author": {
+    "name": "Beth Thibodeau",
+    "email": "ethibodeau@google.com",
+    "time": "Mon Jun 15 13:24:18 2020 -0400"
+  },
+  "committer": {
+    "name": "Beth Thibodeau",
+    "email": "ethibodeau@google.com",
+    "time": "Tue Jun 16 21:03:39 2020 +0000"
+  },
+  "message": "Make view intent immutable\n\nBug: 156959408\nTest: manual, atest\nChange-Id: I80de1ea9c4535559f4ca2838a66da9e19eacf49d\n(cherry picked from commit 4cecd359ab06ab8653c9381e660c3f1b1b19c94a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0383dee4f9c358398561153072baeb8c05f456a4",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/screenrecord/RecordingService.java",
+      "new_id": "dfe46044976c570c6c2393730dd07f08227c530b",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/screenrecord/RecordingService.java"
+    }
+  ]
+}

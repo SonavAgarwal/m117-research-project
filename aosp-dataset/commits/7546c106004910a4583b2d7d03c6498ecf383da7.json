@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7546c106004910a4583b2d7d03c6498ecf383da7",
+  "tree": "3ae580eb33fb716836767417caf3845239c8a3a2",
+  "parents": [
+    "a33f6725d7e9f92330f995ce2dcf4faa33f6433f"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Nov 25 17:02:47 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:49 2016 -0800"
+  },
+  "message": "Fix in Chroma SAO for non-multiple of 8 height\n\nA register was not loaded correctly which was resulting in a crash\nfor a certain combination of availability flags and block height\n\nBug: 32873375\nTest: Tested manually for the clip associated with the bug\nChange-Id: I6e0969a1e51c8149853bae226b527411b45ec370\n(cherry picked from commit 68215fd9ed309d1f1cc204e96bd788f5c865525c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6561a8a605e06eb3df50bed7a238a59858ea4bed",
+      "old_mode": 33188,
+      "old_path": "common/arm/ihevc_sao_edge_offset_class3_chroma.s",
+      "new_id": "62f40d1e25a2c920c3129807d025037e9b5b663e",
+      "new_mode": 33188,
+      "new_path": "common/arm/ihevc_sao_edge_offset_class3_chroma.s"
+    },
+    {
+      "type": "modify",
+      "old_id": "8e93110405b1c98ae31e558476b5c72b7f1fc2d8",
+      "old_mode": 33188,
+      "old_path": "common/arm64/ihevc_sao_edge_offset_class3_chroma.s",
+      "new_id": "7c9dfd82cebf1218873df2d3cb953db3d8428d5a",
+      "new_mode": 33188,
+      "new_path": "common/arm64/ihevc_sao_edge_offset_class3_chroma.s"
+    }
+  ]
+}

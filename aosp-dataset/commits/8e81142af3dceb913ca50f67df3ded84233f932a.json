@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "8e81142af3dceb913ca50f67df3ded84233f932a",
+  "tree": "2d7ca8b0337ba11da1b62d5c4a6847ce9f202c7b",
+  "parents": [
+    "25060bbde58faf298a7ed5cd9b0bf48acf0c2405"
+  ],
+  "author": {
+    "name": "Wayne Lin",
+    "email": "waynewhlin@google.com",
+    "time": "Thu Aug 30 17:25:56 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:58 2018 +0000"
+  },
+  "message": "Changing SUPL_ES\u003d1 for SUPL end point control\n\nSUPL_ES\u003d1 ensures the GnssLocationProvider and related framework code\naccepts incoming SMS SUPL_INIT messages with ES-bit\u003d1\n(which allow redirection of the ESLP\nend-point e.g. to the current local emergency services provider when\nyou are travelling) only during an emergency call\n\nBug: 111899241\nBug: 112159033\nTest: Build pass\nChange-Id: I7dcd9c173a1d56fcf0da15257db5b8d1322b39d6\n(cherry picked from commit 5b63dcc6a617cbab74dbda1f4cd759c75efa3aa5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8774334f11beea2005b96442fe89696b4652859e",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc220/config.xml",
+      "new_id": "5343e7cea8477b910944ecdf43612bf00bf93fa5",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc220/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "05896b18cfb8df93b17d111f0697a47c4d33bae5",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc221/config.xml",
+      "new_id": "cb9466be77b645bb9a06774390b2f2bcc77e82cf",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc221/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "1241a9d029d6b2fce67b85edcc6d7e3553e27953",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc370/config.xml",
+      "new_id": "b520d5d95a3418fc40bcf37ab309c4180af71d82",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc370/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "232f14969ad1b7cf2a5067730492a5c77efb3730",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc610/config.xml",
+      "new_id": "650aa62b4a4e1b03af6d3c01b5b324545381930b",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc610/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "1d2e625952f8dad692779e39c376f06929aea2f1",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc640/config.xml",
+      "new_id": "4bb68dcf04be703aaa5849e4178ef94dbfb4fef2",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc640/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef1ecd29845cc47c60e2e20a86f67636666a2c92",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values-mcc302-mnc720/config.xml",
+      "new_id": "11bfa056d29549b5aa966d33fc772b8f2cc91c30",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values-mcc302-mnc720/config.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "b372d7b767d55f5395a753abe6e7904a96d3559b",
+      "old_mode": 33188,
+      "old_path": "core/res/res/values/config.xml",
+      "new_id": "a9d69c1bcbbe78bc0409244631d0560a09fc5383",
+      "new_mode": 33188,
+      "new_path": "core/res/res/values/config.xml"
+    }
+  ]
+}

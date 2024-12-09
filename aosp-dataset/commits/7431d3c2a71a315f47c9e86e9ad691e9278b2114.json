@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7431d3c2a71a315f47c9e86e9ad691e9278b2114",
+  "tree": "4a1e275c60ecb8f5ed0bedb49be38e65ab872472",
+  "parents": [
+    "ae82e79b010e02b96e6a1306ce7308f1c953d4c2"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Jan 23 16:10:48 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 19 22:39:16 2019 +0000"
+  },
+  "message": "Add some error/overflow checks in codebook handling\n\nBug: 119120561\nTest: manual\nChange-Id: I2476ef29d81a8335fdcbdbbaa175a575138d4039\n(cherry picked from commit b5e041da6bfe79b5ee5fb48374cd753df6d18015)\n(cherry picked from commit 6eb63e119294ba92f93f03bbda6c4b203f0f87bb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "467640d6fbd3cdc33ae1989f474344c93357daff",
+      "old_mode": 33188,
+      "old_path": "Tremolo/codebook.c",
+      "new_id": "a06302d626bba667a1379fa42de7379c6e42e468",
+      "new_mode": 33188,
+      "new_path": "Tremolo/codebook.c"
+    }
+  ]
+}

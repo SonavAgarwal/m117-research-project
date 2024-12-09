@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9f42cf00e94afc61eee1edbf5ecde11f6c38e37f",
+  "tree": "6bb3d327a971342a328b25dcbd85aa197af96f2a",
+  "parents": [
+    "29de69131fa7eb136552b878c9df7b65edc9a8cc"
+  ],
+  "author": {
+    "name": "Miranda Kephart",
+    "email": "mkephart@google.com",
+    "time": "Tue Oct 06 09:17:39 2020 -0400"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Nov 12 11:45:48 2020 -0800"
+  },
+  "message": "[DO NOT MERGE] Make GlobalScreenshot PendingIntents immutable\n\nMutable pending intents are a security risk. This change adds the\nIMMUTABLE flag to all PendingIntents created in GlobalScreenshot.\n\nBug: 162738636\nTest: manual\nChange-Id: I1044b6aaf2b1650ff91d9a72181684d2aaea9a62\n(cherry picked from commit ed450d77edc632bbdf74f86fa76dae1f9475a5c9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a0d7e38f875799c2a024bff6cb1f28409c2ae0b",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/screenshot/GlobalScreenshot.java",
+      "new_id": "0488201a7f560fcff5937e6501ade8e020d258f6",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/screenshot/GlobalScreenshot.java"
+    }
+  ]
+}

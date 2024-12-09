@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "202515fbdb1281947323f45d3f1eb1ff3f501dda",
+  "tree": "f345be860c0d16ad43ad67a8721ced87f33e0395",
+  "parents": [
+    "b55734b8854d864d0feeeb1a5b12fa92dd0a7aef"
+  ],
+  "author": {
+    "name": "Vishnu Nair",
+    "email": "vishnun@google.com",
+    "time": "Tue Apr 28 10:57:38 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sun May 17 21:10:09 2020 +0000"
+  },
+  "message": "Remove unsafe cast in Client::createWithSurfaceParent\n\nLogs were initially added to debug an issue which has since been fixed.\n\nBug: b/150226994, b/134888387\nTest: POC from file does not crash on device with AddressSanitizer\nChange-Id: I582b1737026bd1dae62539a88e86dd2fd8edb539\n(cherry picked from commit a03e1302db3c51be1e453af179e5549468b501ab)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6bfd302b5ceed0d84cdf362f01ae130eace66d7d",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/Client.cpp",
+      "new_id": "c526f7f18ff728da21cd1a55ab2d8a2faa7d1a76",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/Client.cpp"
+    }
+  ]
+}

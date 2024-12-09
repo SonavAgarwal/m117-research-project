@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fd9a12f9fdd9dd3e66c59dd7037e864b948085f7",
+  "tree": "67fb0382b0e5304a20962b77510be8de5e725c73",
+  "parents": [
+    "a467b1fb2956fdcee5636ab63573a4bca8150dbe"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Dec 15 10:55:28 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fixed cur_mb_info initialization in error cases\n\nWhen number of MBs decoded in the current frame is zero and an error is\ndetected, MB info was unnecessarily decremented in multi-core case.\n\nBug: 33351708\nBug: 33298089\nBug: 33250932\nChange-Id: I150c48c6fb382736f1de855ba5384c12bf84710d\n(cherry picked from commit 902c15251fe53f103f910b9f6a133e4cc7ca7416)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e2acd4abc164376729f23178693d9f87dd01a616",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "63fa17928f4cf4259914a2d9818c28edac1328a8",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

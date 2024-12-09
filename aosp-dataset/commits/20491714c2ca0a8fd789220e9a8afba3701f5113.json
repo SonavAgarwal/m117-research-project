@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "20491714c2ca0a8fd789220e9a8afba3701f5113",
+  "tree": "aeaed95d43f7c1ff4d0f58d5e466508a9ff3a5a1",
+  "parents": [
+    "b648e7ff37298613fe609618ce59f5c01f73e4e6"
+  ],
+  "author": {
+    "name": "Etan Cohen",
+    "email": "etancohen@google.com",
+    "time": "Sun Dec 30 17:59:59 2018 -0800"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Sep 10 13:51:16 2020 -0700"
+  },
+  "message": "[CS] Add an option to block sensitive network specifier\n\nNetwork specifiers are used for 2 purposes:\n\n- As part of network requests to specify more information on the type\n  of requested networks.\n- On network agents to specify information about their networks.\n\nThe network specifiers of the requests and agents are matched to each\nother. However, the agent network specifier may contain sensitive\ninformation which we do not want forwarded to any app.\n\nThis CL adds an option to strip out this agent network specifier before\nthe network capabilities are forwarded to the app.\n\nBug: 161853197\nBug: 161370134\nTest: atest ConnectivityServiceTest (frameworks/base/tests/net)\nTest: atest frameworks/base/tests/net\nTest: atest frameworks/opt/net/wifi/tests/wifitests\nTest: atest frameworks/opt/telephony/tests/telephonytests\nTest: atest frameworks/opt/net/ethernet/tests\nTest: atest android.net.cts - some flakiness!\nTest: act.py ThroughputTest\nTest: act.py DataPathTest\nTest: atest SingleDeviceTest (cts)\nChange-Id: I38ed3ff88532ef522ab167c88d87e6e82295ffc5\nMerged-In: If08d312ff814bdde1147518f923199e6349503d5\n(cherry picked from commit 9b1d701af461899a03b046dbf97316abc1465ac3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9ce2a5bd1b5418b2b080088e573e6e1d0ff23b26",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/NetworkSpecifier.java",
+      "new_id": "12cdc342e28e51795f27549f574882016d8f08d7",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/NetworkSpecifier.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "bdb6d08b9d5aa4d45de996f4c37008eb12503f8a",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/ConnectivityService.java",
+      "new_id": "6eec3bcceaa63bc153c97b6ad6a36fee432ad5f4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/ConnectivityService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "4826120ef52b1fb479a2651ca57949a3bc1f4ad9",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "34ced30766f835d656e020fa04c7a513b6e451ba",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    }
+  ]
+}

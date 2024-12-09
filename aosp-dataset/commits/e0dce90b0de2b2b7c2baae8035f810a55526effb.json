@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e0dce90b0de2b2b7c2baae8035f810a55526effb",
+  "tree": "d26c2ec6eedc516710d75ec3304d54b3df3a00ed",
+  "parents": [
+    "5b85b1d40d619c2064d321364f212ebfeb6ba185"
+  ],
+  "author": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Thu Aug 20 17:38:16 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Thu Aug 20 21:55:55 2015 -0700"
+  },
+  "message": "Fix compile failure after rIfe1dc0791040150132bea6884f1e6c8d31972d1b\n\nBug: 23290056\nChange-Id: If6e22b0159de6635a8ca5305895b7718f15becc7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e5a48e55a6890136a1e274ad3d544b01c886a1ca",
+      "old_mode": 33188,
+      "old_path": "libutils/String8.cpp",
+      "new_id": "bb068256b0526c11b4b0a416b93f0520abf5bbb6",
+      "new_mode": 33188,
+      "new_path": "libutils/String8.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "73b4e5c4ba4c0c96a26ec84564cd9653da50a26c",
+  "tree": "b8dc0f7bb84b81442330fca7789b5ef301e4854e",
+  "parents": [
+    "46bdf4d4145ee022c48b71c30ba5fd45324f796a"
+  ],
+  "author": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Mon Aug 24 16:36:36 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:36 2020 +0000"
+  },
+  "message": "Send a response to an smp security request depending on the callback event\n\nTag: #feature\nBug: 157038281\nTest: Manual\nMerged-In: Iadeb25a43b46f615b55a0dfb6e7723e5d1204351\nChange-Id: Iadeb25a43b46f615b55a0dfb6e7723e5d1204351\n(cherry picked from commit 3601e50959cfdd324192ba7e12a04c8d256d0b8a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ff8cdf5017a0127c6594aba903b5b702a46df2a9",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_api.cc",
+      "new_id": "f2c7ed816a0840fc5430e153a4c46e716d782403",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_api.cc"
+    }
+  ]
+}

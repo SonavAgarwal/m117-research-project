@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e81f6f92bbdd43f34aa25fc2b7605aeb887af2cc",
+  "tree": "72469ff5e2cc4803f97b54f07a10e54b52973228",
+  "parents": [
+    "c87d04b8c190f52c4f7e8a22dfaa2b5e065415fe"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Mon May 13 13:29:40 2019 -0700"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Wed May 22 21:37:56 2019 +0000"
+  },
+  "message": "AOSP/Email - bug fix: do not allow composing message with hidden private data attachments.\n\nPorted/merged thefollowing from CL\n  https://critique.corp.google.com/#review/247540041\n\noriginal file:\n  java/com/google/android/apps/gmail/unifiedgmail/src/com/google/android/gm/ComposeActivityGmailExternal.java\n\naosp\u0027s version:\n  src/com/android/email/activity/ComposeActivityEmailExternal.java\n\nChange description from the above CL:\n  \"Switch intent filtering to be whitelist based rather than blacklist based.\n\n   ComposeActivityGmailExternal should whitelist what extras we allow in.\n   This is a very belated follow up to cl/235253805 where I wrote a quick fix\n   as a blacklist based solution.\"\n\nBug: 127320867\n\nTest: manual - Ran the following tests on Pixel phone. Tested the email UI.\n\n$ make -j 40\n  -rw-r--r-- 1 rtenneti primarygroup 6375626 May  5 19:49 out/target/product/marlin/system/product/app/Email/Email.apk\n\n$ make UnifiedEmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 311703 May  5 20:04 out/target/product/marlin/testcases/UnifiedEmailTests/arm64/UnifiedEmailTests.apk\n\n$ make EmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 365023 May 13 14:39 out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb install -r out/target/product/marlin/system/product/app/Email/Email.apk\n$ adb install -r out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n$ adb install -r out/target/product/marlin/testcases/UnifiedEmailTests/arm64/UnifiedEmailTests.apk\n\n$ adb shell am instrument -w com.android.mail.emailtests\n  Time: 3.519\n  OK (157 tests)\n\nChange-Id: I5f6541ceb79a1a1c598d0c8207e3cab98d1a8ac5\nMerged-In: I5f6541ceb79a1a1c598d0c8207e3cab98d1a8ac5\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "455193beac387d0c313e6218d86b2ac24933f25a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/email/activity/ComposeActivityEmailExternal.java",
+      "new_id": "a5cbe9d3a2438c1d9680d338e245ae2592f4c69d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/email/activity/ComposeActivityEmailExternal.java"
+    }
+  ]
+}

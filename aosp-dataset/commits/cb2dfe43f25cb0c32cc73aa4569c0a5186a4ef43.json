@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cb2dfe43f25cb0c32cc73aa4569c0a5186a4ef43",
+  "tree": "78c2a58c0688149bf4f3b1a949146320fa9f9669",
+  "parents": [
+    "2791f0b33b610247ef87278862e66c6045f89693"
+  ],
+  "author": {
+    "name": "Andy Huang",
+    "email": "ath@google.com",
+    "time": "Fri Jul 01 16:56:19 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:35:18 2016 -0700"
+  },
+  "message": "stop exporting EmailAccountCacheProvider\n\nBug: 29767043\nChange-Id: Ib9f16385a5e63557b6f293d148e49c9ad044c9b4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c3e33ab3711b1423e5f72bbd179ac2ddf751c749",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "bbe02d4ae6eed36181384d0e71fc9584b2788f70",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

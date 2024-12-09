@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e739d9ca5469ed30129d0fa228e3d0f2878671ac",
+  "tree": "f327bb523f55f0fd6bdedbe36c261ac3c6975303",
+  "parents": [
+    "69729fa8b13cadbf3173fe1f389fe4f3b7bd0f9c"
+  ],
+  "author": {
+    "name": "Sungsoo Lim",
+    "email": "sungsoo@google.com",
+    "time": "Wed Jul 13 09:31:16 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:34:54 2016 -0700"
+  },
+  "message": "DO NOT MERGE: Remove the use of JHEAD in ExifInterface\n\nBug: 29270469\nChange-Id: I6a6c8aeab2a842ff1646316363d614851625e78f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6bf5721d55c305f341ecdcf9ec05c27a83549a3e",
+      "old_mode": 33188,
+      "old_path": "media/java/android/media/ExifInterface.java",
+      "new_id": "c5e978f8703c79e99b69d2bc097ffe145d514c57",
+      "new_mode": 33188,
+      "new_path": "media/java/android/media/ExifInterface.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "79557bc928385ac2a399cb71c89ef8b8361e82d5",
+      "old_mode": 33188,
+      "old_path": "media/jni/Android.mk",
+      "new_id": "241df15e255fbadcb9907812df96661dd7a0c86e",
+      "new_mode": 33188,
+      "new_path": "media/jni/Android.mk"
+    }
+  ]
+}

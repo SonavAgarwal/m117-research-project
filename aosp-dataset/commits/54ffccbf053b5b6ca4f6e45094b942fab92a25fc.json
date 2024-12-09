@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "54ffccbf053b5b6ca4f6e45094b942fab92a25fc",
+  "tree": "b30e76730582ec6960a35741dea3023040afbaf0",
+  "parents": [
+    "418baf2c28f3473039f2f7377760bd8f6897ae18"
+  ],
+  "author": {
+    "name": "Jann Horn",
+    "email": "jannh@google.com",
+    "time": "Thu Dec 03 02:25:04 2020 +0100"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Fri Dec 04 17:38:48 2020 +0100"
+  },
+  "message": "tty: Fix -\u003epgrp locking in tiocspgrp()\n\ntiocspgrp() takes two tty_struct pointers: One to the tty that userspace\npassed to ioctl() (`tty`) and one to the TTY being changed (`real_tty`).\nThese pointers are different when ioctl() is called with a master fd.\n\nTo properly lock real_tty-\u003epgrp, we must take real_tty-\u003ectrl_lock.\n\nThis bug makes it possible for racing ioctl(TIOCSPGRP, ...) calls on\nboth sides of a PTY pair to corrupt the refcount of `struct pid`,\nleading to use-after-free errors.\n\nFixes: 47f86834bbd4 (\"redo locking of tty-\u003epgrp\")\nCC: stable@kernel.org\nSigned-off-by: Jann Horn \u003cjannh@google.com\u003e\nReviewed-by: Jiri Slaby \u003cjirislaby@kernel.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "28a23a0fef21c3bf5f5737175d61fd6b77155b2f",
+      "old_mode": 33188,
+      "old_path": "drivers/tty/tty_jobctrl.c",
+      "new_id": "baadeea4a289bf4050c3e9396dc735bec63e690c",
+      "new_mode": 33188,
+      "new_path": "drivers/tty/tty_jobctrl.c"
+    }
+  ]
+}

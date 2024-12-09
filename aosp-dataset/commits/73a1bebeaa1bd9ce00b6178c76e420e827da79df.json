@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "73a1bebeaa1bd9ce00b6178c76e420e827da79df",
+  "tree": "3009c6e673e423dcc11109897f7f26c11ce8c966",
+  "parents": [
+    "f0db8d044bbd06e824450e6673bacd8131a3c1f8"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon Oct 07 17:31:17 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:16:57 2019 +0000"
+  },
+  "message": "FlattenableUtils::align memsets\n\nBug: 141890807\nTest: boot, check data is zero\u0027d\nChange-Id: I45aaeac369f4c5cf3eb44f61c233e00f870a5c79\n(cherry picked from commit bf824f8fa50d9f7390057278fefb58e83323a644)\n(cherry picked from commit e62a9d7669ac85844d4424474f5c88c096f7160b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d006023d54ef4182511b22832771e532fa7dcf6",
+      "old_mode": 33188,
+      "old_path": "libutils/include/utils/Flattenable.h",
+      "new_id": "2c4b8075d25e8c6c18b183394079c590dfec3a6a",
+      "new_mode": 33188,
+      "new_path": "libutils/include/utils/Flattenable.h"
+    }
+  ]
+}

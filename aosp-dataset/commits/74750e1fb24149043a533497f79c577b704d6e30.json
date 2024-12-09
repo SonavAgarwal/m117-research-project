@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "74750e1fb24149043a533497f79c577b704d6e30",
+  "tree": "2f563fe617a1af6a4cc77be3d62ae7465ed54e62",
+  "parents": [
+    "591be84e89682622957c8f103ca4be3a5ed0f800"
+  ],
+  "author": {
+    "name": "Adam Langley",
+    "email": "agl@google.com",
+    "time": "Mon Feb 29 08:01:05 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:00 2016 -0700"
+  },
+  "message": "Fix encoding bug in i2c_ASN1_INTEGER\n\n(Imported from upstream\u0027s 3661bb4e7934668bd99ca777ea8b30eedfafa871.)\n\nFix bug where i2c_ASN1_INTEGER mishandles zero if it is marked as\nnegative.\n\nThanks to Huzaifa Sidhpurwala \u003chuzaifas@redhat.com\u003e and Hanno Böck\n\u003channo@hboeck.de\u003e for reporting this issue.\n\nBUG\u003d590615\n\n(cherry-picked from c4eec0c16b02c97a62a95b6a08656c3a9ddb6baa)\n\nBug: 28175332\nChange-Id: I8959e8ae01510a5924862a3f353be23130eee554\nReviewed-on: https://boringssl-review.googlesource.com/7199\nReviewed-by: David Benjamin \u003cdavidben@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2ecccc53617e3f569495dc8dab5d616e03cb2b7c",
+      "old_mode": 33188,
+      "old_path": "src/crypto/asn1/a_int.c",
+      "new_id": "16b89507dada9f12d7aa92773534a0572e8535ec",
+      "new_mode": 33188,
+      "new_path": "src/crypto/asn1/a_int.c"
+    }
+  ]
+}

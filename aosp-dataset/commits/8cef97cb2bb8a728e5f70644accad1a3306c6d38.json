@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8cef97cb2bb8a728e5f70644accad1a3306c6d38",
+  "tree": "e63094ea38a4234bbae7cb7138280d4f4473f2f9",
+  "parents": [
+    "afca31b5dd038fc400a3c582e7a824ad8cb4e3bf"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Tue Nov 03 14:22:42 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:16 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nPrevent non-system overlays from showing over notification listener consent dialog\n\nBug: 170731783\nTest: use a visible overlay, ensure it\u0027s gone when notification consent is open\nChange-Id: I58e017982f385ffc0d0ba2174512490b1d83dd36\n(cherry picked from commit bfa7a755450776f26300a494a71aa6e244749f16)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8677c0226dac059760832cb5c99e4fbe532bd48e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java",
+      "new_id": "a7d9f6889cd6ca9d0154657c51f869eac38a4dde",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/notification/NotificationAccessConfirmationActivity.java"
+    }
+  ]
+}

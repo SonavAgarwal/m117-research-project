@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68a1cf1a9de115b66bececf892588075595b263f",
+  "tree": "7cd3d1f1c856625580db6cd62bbfb0ad13015426",
+  "parents": [
+    "544f7e1be9a1f17da36955539f084b72130d1962"
+  ],
+  "author": {
+    "name": "Scott Bauer",
+    "email": "sbauer@plzdonthack.me",
+    "time": "Thu Apr 06 18:35:40 2017 -0600"
+  },
+  "committer": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu Sep 28 18:30:21 2017 +0000"
+  },
+  "message": "Read the correct amount of attributes\n\nbta_gattc_cache_load currently attempts to read 0xFF attributes into an\nallocation sized to num_attr attributes, which can be smaller than 0xFF.\n\nThere aren\u0027t more than num_attr bytes in correct data, but this breaks\nwith dynamic buffer overflow checking in CopperheadOS for the read\nsystem call since fread ends up calling read, which obtains the size of\nthe allocation from the malloc implementation and then aborts due to the\n(potential) overflow.\n\nThis would also fail with the default enabled _FORTIFY_SOURCE\u003d2 feature\nin the Android Open Source Project if osi_malloc was marked with the\nalloc_size attribute. The way it wraps malloc loses that information so\nfortify checks aren\u0027t done for calls like this.\n\nBug: 37160362\nChange-Id: I68bd170d5378c9d9d21cbda376083bc0b857e15c\nSigned-off-by: Scott Bauer \u003csbauer@plzdonthack.me\u003e\n[migrated to C++ file, added 0xFFFF limit and wrote commit message]\nSigned-off-by: Daniel Micay \u003cdanielmicay@gmail.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "97e384da2986f6ae8d5b8f0199fcf5e3994bb716",
+      "old_mode": 33188,
+      "old_path": "bta/gatt/bta_gattc_cache.cc",
+      "new_id": "07bae93b08c7e2d3e82e40fab8d2a4e146252667",
+      "new_mode": 33188,
+      "new_path": "bta/gatt/bta_gattc_cache.cc"
+    }
+  ]
+}

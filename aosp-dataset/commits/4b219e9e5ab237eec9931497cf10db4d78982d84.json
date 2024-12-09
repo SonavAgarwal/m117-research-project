@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4b219e9e5ab237eec9931497cf10db4d78982d84",
+  "tree": "062e4c9ffb383786c57f29fba05fea148cd0cf9b",
+  "parents": [
+    "f3eb82683a80341f5ac23057aab733a57963cab2"
+  ],
+  "author": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Sep 14 11:55:43 2015 -0700"
+  },
+  "committer": {
+    "name": "Jeff Tinker",
+    "email": "jtinker@google.com",
+    "time": "Mon Sep 14 18:59:06 2015 +0000"
+  },
+  "message": "Fix for security vulnerability in media server DO NOT MERGE\n\nbug: 23540426\nChange-Id: I7ca419e4008967a0387649e5293ac9d4be71d3c4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7bd120e2a3d192e91f35825110e7f52363133669",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/ICrypto.cpp",
+      "new_id": "0d68ee777e34c7de4634648a99b932f22c3b39ac",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/ICrypto.cpp"
+    }
+  ]
+}

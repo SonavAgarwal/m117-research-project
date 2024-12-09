@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3b6f84b77c30ec0bab5147b0cffc192c86ba2634",
+  "tree": "a92e70e875a6e4c972570be0f94d6ceb3d68a6a8",
+  "parents": [
+    "857326e3731939f6ec7979e1d86585bf0ea484f4"
+  ],
+  "author": {
+    "name": "Mihai Popa",
+    "email": "popam@google.com",
+    "time": "Wed May 09 17:31:48 2018 +0100"
+  },
+  "committer": {
+    "name": "Mihai Popa",
+    "email": "popam@google.com",
+    "time": "Mon Jun 04 16:22:05 2018 +0100"
+  },
+  "message": "Optimise the hit test algorithm\n\nLayout#getOffsetForHorizontal was running in O(n^2) time, where n is the\nlength of the current line. The method is used when a touch event\nhappens on a text line, to compute the cursor offset (and the character)\nwhere it happened. Although this is not an issue in common usecases,\nwhere the number of characters on a line is relatively small, this can\nbe very inefficient as a consequence of Unicode containing 0-width\n(invisible) characters. Specifically, there are characters defining the\ntext direction (LTR or RTL), which cause our algorithm to touch the\nworst case quadratic runtime. For example, a person is able to send a\nmessage containing a few visible characters, and also a lot of these\ndirection changing invisible ones. When the receiver touches the message\n(causing the Layout#getOffsetForHorizontal method to be called), the\nreceiver\u0027s application would become not responsive.\n\nThis CL optimizes the method to run in O(n) worst case. This is achieved\nby computing the measurements of all line prefixes at first, which can\nbe done in a single pass. Then, all the prefix measurement queries will\nbe answered in O(1), rather than O(n) as it was happening before.\n\nBug: 79215201\nTest: manual testing\nChange-Id: Ib66ef392c19c937718e7101f6d48fac3abe51ad0\nMerged-In: Ib66ef392c19c937718e7101f6d48fac3abe51ad0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fa347b9dece862662b51c6f1cf06cfe6be694e9f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/text/Layout.java",
+      "new_id": "31147cfc8722e980e67d5bc15b27b9ecca85716f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/text/Layout.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "39e86948d187f9a03ef33f485a6869709ad7f66f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/text/TextLine.java",
+      "new_id": "bf601bd34c9863d23da6bce5f54372b9d0d197ab",
+      "new_mode": 33188,
+      "new_path": "core/java/android/text/TextLine.java"
+    }
+  ]
+}

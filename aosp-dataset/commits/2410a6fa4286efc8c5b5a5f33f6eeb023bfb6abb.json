@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2410a6fa4286efc8c5b5a5f33f6eeb023bfb6abb",
+  "tree": "1966857b7956ec3d11efdbd1b4e33ed2054506b9",
+  "parents": [
+    "9aa026d0b867b270149dd7323ce36f4f9bfea980"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Tue May 16 12:04:50 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:48:49 2017 +0000"
+  },
+  "message": "EffectBundle: Check value size for get preset name\n\nTest: CTS testAllEffectsEqualizer_CVE_2017_0401\nBug: 37536407\nChange-Id: I347af04677fc49a01efb549f06ff81d1a00dc4d0\n(cherry picked from commit fa5c6c97ee86ff038979cedea5c449be4e2b9899)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dcf3fa0a5ec3b8b1588a98a727b754a0a1e3f67f",
+      "old_mode": 33188,
+      "old_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp",
+      "new_id": "07ea8187c52b83207abbdfdf150c596b4f31b2d0",
+      "new_mode": 33188,
+      "new_path": "media/libeffects/lvm/wrapper/Bundle/EffectBundle.cpp"
+    }
+  ]
+}

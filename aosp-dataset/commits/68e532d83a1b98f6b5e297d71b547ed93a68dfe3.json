@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "68e532d83a1b98f6b5e297d71b547ed93a68dfe3",
+  "tree": "db4e5ce779061ace3677f50dc289a1ac42958ec0",
+  "parents": [
+    "a22314db4e0cfe11ef3e50dac6a13d52f7a595b3"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Thu Jul 06 16:11:17 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 04 19:30:16 2018 +0000"
+  },
+  "message": "Check if luma wd and ht are multiple of min cb size\n\nBug: 65483665\n\nInstead of aligning width and height to 8, it is now\nchecked for being a multiple of min CB size\n\nChange-Id: I99bf60e19d490fd06933aa01fa6a34f47fe58bb4\n(cherry picked from commit ccfd1ea5c4cf9cf0a55088506ae5f312663f8792)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "578a429776c73a3380312f87b2bf3a3d683d5437",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "a8daa3c48419aeea9d7f6785e9ca02f8056fa146",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

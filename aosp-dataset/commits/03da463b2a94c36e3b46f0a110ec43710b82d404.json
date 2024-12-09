@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "03da463b2a94c36e3b46f0a110ec43710b82d404",
+  "tree": "2e952f802b788e0bb995f6f4957132d97dda07b7",
+  "parents": [
+    "0c17049d39b5a8867f030f6f36433564140e124a"
+  ],
+  "author": {
+    "name": "Nate Myren",
+    "email": "ntmyren@google.com",
+    "time": "Wed Oct 14 15:14:04 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:04 2020 +0000"
+  },
+  "message": "Ensure permissions are revoked on state changes\n\nIf a permission owner changes, or a permission level is upgraded, revoke\nthe permission from all packages\n\nTest: Manual\nBug: 154505240\nMerged-In: I0dec9eb7c2fecd3147e33e04d3f79f6dffcf7721\nChange-Id: I0dec9eb7c2fecd3147e33e04d3f79f6dffcf7721\n(cherry picked from commit a28931a09814a89e1c55816c794c1e1f20dc0c91)\n(cherry picked from commit 84c1247a7e6d446822e5c72c9718db8373011313)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c20a912152cd949ac4904fb88fdfe2da7006150f",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "99e1388dcd52e1fb8552ae0b580718dbdc76c062",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "cfa0449aaf33637aabed76366b9367d1395dbba2",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/BasePermission.java",
+      "new_id": "2d4b5012bf15f83a9b9a26811c143debdf63caad",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/BasePermission.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "66d8b5974261fcbc2ac0898099a08f2995b6060b",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+      "new_id": "3ffca028b1c00b4a49492cd19c0743444c1a2086",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e83b23f57d88a00b78586ea843674a3405d4a47",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceInternal.java",
+      "new_id": "31a65ba35f5eb7b2eed7c7437b30ce5d570c1c76",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerServiceInternal.java"
+    }
+  ]
+}

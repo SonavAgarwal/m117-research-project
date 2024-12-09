@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5fb3126bb50ba958b473f09201bf70eee8659ada",
+  "tree": "2c0f659da106542001a049881c5e4c9e4d45c388",
+  "parents": [
+    "21b0141dbed84b25c41ca75bc152122f366fbdc7"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Mon Jul 01 15:08:59 2019 -0700"
+  },
+  "committer": {
+    "name": "Christopher Dombroski",
+    "email": "cdombroski@google.com",
+    "time": "Wed Aug 07 21:24:17 2019 +0000"
+  },
+  "message": "Allow deprecated declarations RESTRICT AUTOMERGE\n\nIn order to address the security vulnerability at b/111210196 we are\nupgrading the libcups library. There are some calls to functions that\nare deprecated between the versions; in order to minimize churn in\nlegacy branches we are allowing deprecated functions to be called rather\nthan modifying the code to use the new functions.\n\nBug: 111210196\nTest: adb shell am instrument -w android.print.cts/android.support.test.runner.AndroidJUnitRunner\n\nChange-Id: I2b7d568c9f8878d27d9e53f96930d62d07b7d84a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d57c115dfcd517def4fce004c62fcae8ffdff205",
+      "old_mode": 33188,
+      "old_path": "jni/Android.mk",
+      "new_id": "5dbe40065d1057c5577986aa8754a3ae1e13d301",
+      "new_mode": 33188,
+      "new_path": "jni/Android.mk"
+    }
+  ]
+}

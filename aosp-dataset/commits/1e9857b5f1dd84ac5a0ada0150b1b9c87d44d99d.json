@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e9857b5f1dd84ac5a0ada0150b1b9c87d44d99d",
+  "tree": "d717e1cdfc608bf794e1bfc438cea50cb41592ac",
+  "parents": [
+    "fdb708a37d8f7f1483e3cd4e8ded974f53fedace"
+  ],
+  "author": {
+    "name": "Jouni Malinen",
+    "email": "j@w1.fi",
+    "time": "Sun Oct 25 15:45:50 2015 +0200"
+  },
+  "committer": {
+    "name": "Dmitry Shmidt",
+    "email": "dimitrysh@google.com",
+    "time": "Fri Nov 06 23:26:36 2015 +0000"
+  },
+  "message": "WNM: Ignore Key Data in WNM Sleep Mode Response frame if no PMF in use\n\nWNM Sleep Mode Response frame is used to update GTK/IGTK only if PMF is\nenabled. Verify that PMF is in use before using this field on station\nside to avoid accepting unauthenticated key updates.\n\nBug: 25266660\n\nChange-Id: Ib4b80f9c9e4aa5ea0b827c5202809c9660ad9b39\nSigned-off-by: Jouni Malinen \u003cj@w1.fi\u003e\nSigned-off-by: Dmitry Shmidt \u003cdimitrysh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4f8d895ae8a1c6e70e55717660876e5180cf4182",
+      "old_mode": 33188,
+      "old_path": "wpa_supplicant/wnm_sta.c",
+      "new_id": "fd033b59d22b5cabbde996c083a1afa75431b322",
+      "new_mode": 33188,
+      "new_path": "wpa_supplicant/wnm_sta.c"
+    }
+  ]
+}

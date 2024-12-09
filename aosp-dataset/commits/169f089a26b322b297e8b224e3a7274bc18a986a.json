@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "169f089a26b322b297e8b224e3a7274bc18a986a",
+  "tree": "b20f9d9162bc5ffe7b68a3bfd819350d190a9bc6",
+  "parents": [
+    "e57fac5e8f1fd1d4a817482076b3a7aaabea9920"
+  ],
+  "author": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Wed Dec 09 07:24:43 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:53:53 2021 +0000"
+  },
+  "message": "Protect account chooser activities against overlay.\n\nBug: 172841550\nTest: manual\nChange-Id: I1a16808426934f4a8d12410576d769443e4c2a04\nMerged-In: I3cd5a94386f15cf60a7fe3095b00815e4a6485ae\n(cherry picked from commit 6ff42dd2d264cd89acdf45cf403147a870a14086)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4af22bfac92de537422ca12e04c7fa2868fbe3e0",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/ChooseAccountActivity.java",
+      "new_id": "b826def55e92c8b55193dfff0cef7e0329849656",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/ChooseAccountActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e3352bc85668576532f6593c8b33ba688ed5d265",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/ChooseAccountTypeActivity.java",
+      "new_id": "300fdd4ee41925e80aafa055eca8436cacb4753f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/ChooseAccountTypeActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "57c10832670642b301c4c47350e5a08cec0a6c9c",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/ChooseTypeAndAccountActivity.java",
+      "new_id": "8cdc6a71caf846a48b37418f60bae77dc65a63f2",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/ChooseTypeAndAccountActivity.java"
+    }
+  ]
+}

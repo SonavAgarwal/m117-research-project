@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a40b30f5c43726120bfe69d41ff5aeb31fe1d02a",
+  "tree": "e7a65c5e664372e198cb9d77e07cf73dcc3a491f",
+  "parents": [
+    "f3199c228aced7858b75a8070b8358c155ae0149"
+  ],
+  "author": {
+    "name": "Pablo Ceballos",
+    "email": "pceballos@google.com",
+    "time": "Sat Feb 20 11:26:13 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:00 2016 -0800"
+  },
+  "message": "Add SN logging\n\nBug 27046057\n\nChange-Id: Iede7c92e59e60795df1ec7768ebafd6b090f1c27\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1f84750c508a88c0bef93236594c3f430cbb99c0",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueConsumer.cpp",
+      "new_id": "d62eaf716f0fe7c9fe298ad0835b74042853bc11",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueConsumer.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "35bb911d4493ea94d4896cc42690cab0d4dbb78f",
+  "tree": "0143f2ef9871442d14e3ed0e702383a628a5c9df",
+  "parents": [
+    "57bc6ca6dda12ef7925c69a75cbcdf3df05067fc"
+  ],
+  "author": {
+    "name": "Pengquan Meng",
+    "email": "mpq@google.com",
+    "time": "Thu Mar 08 20:08:25 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:58:20 2018 +0000"
+  },
+  "message": "Fixed Security Vulnerability of DcParamObject\n\nThe writeToParcel and readFromParcel is not symmetry, fixed it.\n\nTest: no test\nBug: 70721937\nChange-Id: I01f6f6b2ab778ee8b638d9b69fe0a6b9aa7ee395\n(cherry picked from commit 8c55a70728fdb0a7b0585fac08629b0137dca51e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "139939cbd0c150067c1ead245b4f5273ec93ccd8",
+      "old_mode": 33188,
+      "old_path": "telephony/java/com/android/internal/telephony/DcParamObject.java",
+      "new_id": "fc6b61061134806cf27155243454338edcd34815",
+      "new_mode": 33188,
+      "new_path": "telephony/java/com/android/internal/telephony/DcParamObject.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "efc7bda97917f1afb7ab1fc6b3fe67a20cee6693",
+  "tree": "90cf2936cf7e4585692a939a3887dcf7bee8ab54",
+  "parents": [
+    "3e19ae49b0eb90a6a65677a209af35d83ac2f108"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Fri Jan 11 17:46:45 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 19 22:39:50 2019 +0000"
+  },
+  "message": "Prevent integer underflow in rw_t3t_act_handle_check_ndef_rsp()\n\nBug: 120502559\nTest: NFC Enable/Disable, Read T3T Tag\nMerged-In: I25389b85b14e74b0a20eb2e41373b5708ea057b1\nChange-Id: I25389b85b14e74b0a20eb2e41373b5708ea057b1\n(cherry picked from commit 9c1db58dc4d7174c5037650c1d7a22806a3bb070)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d65bec891951e7b0f6edc7d4fdd4e3fad305c6fd",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t3t.c",
+      "new_id": "c5df1b7b920bcae6f88af990fa0eeb82aa3ab52d",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t3t.c"
+    }
+  ]
+}

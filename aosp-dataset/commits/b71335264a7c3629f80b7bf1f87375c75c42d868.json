@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b71335264a7c3629f80b7bf1f87375c75c42d868",
+  "tree": "f0b9026cb10d9d270231e647c78988abfe516537",
+  "parents": [
+    "f469ebae8604bc756259c7305f8cb7617ca18ddc"
+  ],
+  "author": {
+    "name": "tintin",
+    "email": "tintinweb@oststrom.com",
+    "time": "Fri Oct 13 11:11:48 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:33:09 2017 +0000"
+  },
+  "message": "libnetutil: Check dhcp respose packet length\n\nBug: 67474440\nTest: Manual\n\nChange-Id: I84b533f0101a56ec01e64c7591f3c7e82f513b2e\nSigned-off-by: Dmitry Shmidt \u003cdimitrysh@google.com\u003e\n(cherry picked from commit 61f25d4a3657e79659963d12005afa8c30883015)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e53a4c84fafb98ccc3b3bd30d7d7e25ccf19bca0",
+      "old_mode": 33188,
+      "old_path": "libnetutils/packet.c",
+      "new_id": "9ecdd4f4e66b0b8a35c59454d768239e567ca6b4",
+      "new_mode": 33188,
+      "new_path": "libnetutils/packet.c"
+    }
+  ]
+}

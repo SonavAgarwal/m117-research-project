@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d4271b792bdad85a80e2b83ab34c4b30b74f53ec",
+  "tree": "66464542ba4b2e8ed8477daa5498f5b4b029f2e1",
+  "parents": [
+    "1e9801783770917728b7edbdeff3d0ec09c621ac"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Mon Jul 18 20:12:02 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:23 2016 -0700"
+  },
+  "message": "SoftMPEG4: Check the buffer size before writing the reference frame.\n\nAlso prevent overflow in SoftMPEG4 and division by zero in SoftMPEG4Encoder.\n\nBug: 30033990\nChange-Id: I7701f5fc54c2670587d122330e5dc851f64ed3c2\n(cherry picked from commit 695123195034402ca76169b195069c28c30342d3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bb59ae4c6ca83ec377f32f3b20b97f8363791563",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp",
+      "new_id": "e1cfc06e62f60ce9e7a8d495438a80fa44bf5912",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/SoftMPEG4.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7638bb7eb2f197729169a02295db474208ca84d0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp",
+      "new_id": "2eb51c998b6ae2e79e8ae114c5fe7c40158626cb",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp"
+    }
+  ]
+}

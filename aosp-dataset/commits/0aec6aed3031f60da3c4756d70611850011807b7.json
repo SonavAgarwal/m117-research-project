@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0aec6aed3031f60da3c4756d70611850011807b7",
+  "tree": "6dc8bee4857af58b9168d14788d147bf4431cee8",
+  "parents": [
+    "c67bf186efc538995740dcf667eaa39ab801157f"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Wed Jan 29 20:34:26 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:07:30 2020 +0000"
+  },
+  "message": "OOB write in rw_t2t_ndef.cc\n\nBug: 147310721\nBug: 148159613\nBug: 147310271\nTest: R/W T2 tags\nChange-Id: Ib22c24a2098e79b8519d3984a752e4b661fb1e59\nExempt-From-Owner-Approval: get +2 from new owner\n(cherry picked from commit 077c8cad3ecaf5a2a3d1e10eedbc8185895439e2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d0edf396efe1da925190f445dc5aeef1d6974e18",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t2t_ndef.cc",
+      "new_id": "ad9822812a02b6a9e2c8a506f94e1f48ce53a091",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t2t_ndef.cc"
+    }
+  ]
+}

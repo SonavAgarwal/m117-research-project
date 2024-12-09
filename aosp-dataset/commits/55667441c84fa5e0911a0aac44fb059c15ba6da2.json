@@ -1,0 +1,93 @@
+)]}'
+{
+  "commit": "55667441c84fa5e0911a0aac44fb059c15ba6da2",
+  "tree": "83d3fb8a5acbfbb3f9766f30a1e2343f0f19a90b",
+  "parents": [
+    "6c5d9c2a6bedbb3c3c14253776320c0ee564f064"
+  ],
+  "author": {
+    "name": "Eric Dumazet",
+    "email": "edumazet@google.com",
+    "time": "Tue Oct 22 07:57:46 2019 -0700"
+  },
+  "committer": {
+    "name": "David S. Miller",
+    "email": "davem@davemloft.net",
+    "time": "Wed Oct 23 20:13:22 2019 -0700"
+  },
+  "message": "net/flow_dissector: switch to siphash\n\nUDP IPv6 packets auto flowlabels are using a 32bit secret\n(static u32 hashrnd in net/core/flow_dissector.c) and\napply jhash() over fields known by the receivers.\n\nAttackers can easily infer the 32bit secret and use this information\nto identify a device and/or user, since this 32bit secret is only\nset at boot time.\n\nReally, using jhash() to generate cookies sent on the wire\nis a serious security concern.\n\nTrying to change the rol32(hash, 16) in ip6_make_flowlabel() would be\na dead end. Trying to periodically change the secret (like in sch_sfq.c)\ncould change paths taken in the network for long lived flows.\n\nLet\u0027s switch to siphash, as we did in commit df453700e8d8\n(\"inet: switch IP ID generator to siphash\")\n\nUsing a cryptographically strong pseudo random function will solve this\nprivacy issue and more generally remove other weak points in the stack.\n\nPacket schedulers using skb_get_hash_perturb() benefit from this change.\n\nFixes: b56774163f99 (\"ipv6: Enable auto flow labels by default\")\nFixes: 42240901f7c4 (\"ipv6: Implement different admin modes for automatic flow labels\")\nFixes: 67800f9b1f4e (\"ipv6: Call skb_get_hash_flowi6 to get skb-\u003ehash in ip6_make_flowlabel\")\nFixes: cb1ce2ef387b (\"ipv6: Implement automatic flow label generation on transmit\")\nSigned-off-by: Eric Dumazet \u003cedumazet@google.com\u003e\nReported-by: Jonathan Berger \u003cjonathann1@walla.com\u003e\nReported-by: Amit Klein \u003caksecurity@gmail.com\u003e\nReported-by: Benny Pinkas \u003cbenny@pinkas.net\u003e\nCc: Tom Herbert \u003ctom@herbertland.com\u003e\nSigned-off-by: David S. Miller \u003cdavem@davemloft.net\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7914fdaf4226694652da46becdac5747dca97687",
+      "old_mode": 33188,
+      "old_path": "include/linux/skbuff.h",
+      "new_id": "a391147c03d4090252117e106a0df8f612955634",
+      "new_mode": 33188,
+      "new_path": "include/linux/skbuff.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "90bd210be06075818a8ba3213006e16eb610c602",
+      "old_mode": 33188,
+      "old_path": "include/net/flow_dissector.h",
+      "new_id": "5cd12276ae21a52006debcd846c85be1b04bf596",
+      "new_mode": 33188,
+      "new_path": "include/net/flow_dissector.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d126b5d2026155aa7311ea82ce609122c6da45e0",
+      "old_mode": 33188,
+      "old_path": "include/net/fq.h",
+      "new_id": "2ad85e68304142fc3193e8a2c4dc1cfb4cca821a",
+      "new_mode": 33188,
+      "new_path": "include/net/fq.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "be40a4b327e3d1d51f15f29b45216b39e7d1f42e",
+      "old_mode": 33188,
+      "old_path": "include/net/fq_impl.h",
+      "new_id": "107c0d700ed6ffd03cd1dc835f086eb989adbed3",
+      "new_mode": 33188,
+      "new_path": "include/net/fq_impl.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c09d87d3269e4d01fd895c595a3a6e67d350685",
+      "old_mode": 33188,
+      "old_path": "net/core/flow_dissector.c",
+      "new_id": "68eda10d0680749ef07372951debab913449e661",
+      "new_mode": 33188,
+      "new_path": "net/core/flow_dissector.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "23cd1c873a2cfc24b907a8177e71dd68b0939701",
+      "old_mode": 33188,
+      "old_path": "net/sched/sch_hhf.c",
+      "new_id": "be35f03b657b1eb10d224594981aa44e1776801c",
+      "new_mode": 33188,
+      "new_path": "net/sched/sch_hhf.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d448fe3068e5b9f0b35a37d921ab5a74350dc155",
+      "old_mode": 33188,
+      "old_path": "net/sched/sch_sfb.c",
+      "new_id": "4074c50ac3d73100dd82bd631c127326ff49f355",
+      "new_mode": 33188,
+      "new_path": "net/sched/sch_sfb.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "68404a9d2ce426f7027d83f0adde634cb031ef4a",
+      "old_mode": 33188,
+      "old_path": "net/sched/sch_sfq.c",
+      "new_id": "c787d4d46017b4b41b8eb6d41f2b0a44560ff5bf",
+      "new_mode": 33188,
+      "new_path": "net/sched/sch_sfq.c"
+    }
+  ]
+}

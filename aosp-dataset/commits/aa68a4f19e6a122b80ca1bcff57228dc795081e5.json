@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aa68a4f19e6a122b80ca1bcff57228dc795081e5",
+  "tree": "4d5b7224d6ddcd9faefa3d3611a4f237b32c11c2",
+  "parents": [
+    "df54705a9fc62c788b6ee2cbd70380c7ea1d4dc6"
+  ],
+  "author": {
+    "name": "Jin Seok Park",
+    "email": "jinpark@google.com",
+    "time": "Tue Nov 19 19:40:35 2019 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:07 2019 +0000"
+  },
+  "message": "[DO NOT MERGE] Return correct offsets for getAttributeRange()\n\nCherry-picked from ag/9745767\n\nCurrently, the offset value returned from getAttributeRange() does\nnot take into account the offset to the EXIF data within the image\nfile. This CL fixes the code to return the correct offsets.\n\nThe existing test code could not detect this issue because it does\nnot explicitly seek to the given offset and retrieve/compare the\ndata. This CL also adds test code to do this. Make tag information\nis also added because all test files have this information, while only\na select few have thumbnail/GPS tag information.\n\nThis CL also fixes a bug where the thumbnail offset was not being\nupdated if the data was passed with StripOffsets tag.\n\nBug: 143118731, Bug: 143663411\nTest: atest ExifInterfaceTest\nChange-Id: I94c3438020d1091a8829a96e1b0a5ef4193d9dc9\n(cherry picked from commit e6e97865f3f3965915c5fd45554e207ffad6111f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5645ba5d7dacd280e62dd819fc5dd77a8cebb67e",
+      "old_mode": 33188,
+      "old_path": "media/java/android/media/ExifInterface.java",
+      "new_id": "6c723b3a70060aad7f3c819e6ae2f4b9ff8e3451",
+      "new_mode": 33188,
+      "new_path": "media/java/android/media/ExifInterface.java"
+    }
+  ]
+}

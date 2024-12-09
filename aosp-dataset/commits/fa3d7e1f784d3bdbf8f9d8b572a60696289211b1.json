@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "fa3d7e1f784d3bdbf8f9d8b572a60696289211b1",
+  "tree": "c9b2cd16fd13635f6901aaee458db7987b13542c",
+  "parents": [
+    "a4424d6c82e0b048805d3848099f26fd9797b005"
+  ],
+  "author": {
+    "name": "Andre Eisenbach",
+    "email": "eisenbach@google.com",
+    "time": "Thu Mar 01 13:27:01 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Jun 11 22:22:59 2018 +0000"
+  },
+  "message": "DO NOT MERGE SMP: Validate remote elliptic curve points\n\nFixes: 72377774\nTest: net_test_stack_smp (where applicable)\nChange-Id: Iefcf97364493467075fadefd77d12716f71cd4f6\n(cherry picked from commit 9181ec28da94705a763edbe60bd2a87e5f882beb)\n(cherry picked from commit e11ebfc21963ae905d58c034310efeca0e7cd2ee)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b416e1d3fc2d61a8cb435a5fa1bc09b3c576dc70",
+      "old_mode": 33188,
+      "old_path": "stack/smp/p_256_ecc_pp.cc",
+      "new_id": "911dc5498d901790051d1abb4ae2e6e68de22975",
+      "new_mode": 33188,
+      "new_path": "stack/smp/p_256_ecc_pp.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "dcc4211dcd11661b33c152d4ecd22964dcf82b71",
+      "old_mode": 33188,
+      "old_path": "stack/smp/p_256_ecc_pp.h",
+      "new_id": "b7a8e0066c49277e7d8117dd109f3c8f00fd4861",
+      "new_mode": 33188,
+      "new_path": "stack/smp/p_256_ecc_pp.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "df9fab9f1c4633f2e28178d3f60009b9fd3339ae",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "2103776dfd4d8e9d9930477487cb0726acc2db84",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

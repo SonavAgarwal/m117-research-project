@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9393ade3a1dadbbff1293d8dca420a6d155695ec",
+  "tree": "0fc725e604dbb32e0d9550b2e058c0092f32fb2c",
+  "parents": [
+    "321c5fc0e22706a109aa505735cbb3397ce2c7a6"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Mon Jan 07 14:12:14 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:23 2019 +0000"
+  },
+  "message": "Fillout requesting SID.\n\nBug: 121035042\nTest: boot and check for SIDs coming into hwservicemanager instances\n    which were retrieved w/ IServiceManager::getService\n\nChange-Id: I3a7f6c0b3cc8bab24e0639a3e7121ef536b2603b\nMerged-In: I3a7f6c0b3cc8bab24e0639a3e7121ef536b2603b\n(cherry picked from commit ca8cf63c53b242e4dda5b1da6deaa370470fca1c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4fd395685cde9fb600b93e07637d22d74018a604",
+      "old_mode": 33188,
+      "old_path": "generateCpp.cpp",
+      "new_id": "fa2a3ca5d87f3cf98c4f4aec32b61de84579714c",
+      "new_mode": 33188,
+      "new_path": "generateCpp.cpp"
+    }
+  ]
+}

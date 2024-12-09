@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ecf6c7ce6d5a22d52160698aab44fc234c63291a",
+  "tree": "4e2101d10976161aae3cfade90e1562028a55f3f",
+  "parents": [
+    "a583270e1c96d307469c83dc42bd3c5f1b9ef63f"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Apr 21 09:04:37 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:02 2016 -0700"
+  },
+  "message": "Decoder: Memset few structures to zero to handle error clips\n\nBug: 27907656\nChange-Id: I671d135dd5c324c39b4ede990b7225d52ba882cd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c264d9a9a45077453b0090e074d3e5e9896a70e5",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "b6d4e3580d1275ab223bb3b42ffa21a6447a7f6c",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cbbd7e06ac322f5f5e373be23379d06c10082864",
+  "tree": "8edbc85b977a3b36a36adae7e882a7088e7d8fc3",
+  "parents": [
+    "687d14d2fe23b87c584b41b01f24e3f2596baf18"
+  ],
+  "author": {
+    "name": "Yin-Chia Yeh",
+    "email": "yinchiayeh@google.com",
+    "time": "Mon Mar 16 11:35:25 2020 -0700"
+  },
+  "committer": {
+    "name": "Yin-Chia Yeh",
+    "email": "yinchiayeh@google.com",
+    "time": "Mon Apr 06 17:10:31 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Camera: fix use after free in sensor timestamp\n\nThe metadata object might be overriden later and has it memory\nre-allocated; hence snaping the sensor timestamp value before\nwe call into any method that might change the metadata.\n\nTest: build\nBug: 150944913\nMerged-In: I0f944fc9133d3ab279859f20236d956d7ca338f8\nChange-Id: I5b10b680e0cce96ca49e1772770adb4835545472\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4227a3b9de263aeb16ab13e6d6dffa20f4515c18",
+      "old_mode": 33188,
+      "old_path": "services/camera/libcameraservice/device3/Camera3Device.cpp",
+      "new_id": "93e18cfee36151a61ba88b6b44462158bec1ec6d",
+      "new_mode": 33188,
+      "new_path": "services/camera/libcameraservice/device3/Camera3Device.cpp"
+    }
+  ]
+}

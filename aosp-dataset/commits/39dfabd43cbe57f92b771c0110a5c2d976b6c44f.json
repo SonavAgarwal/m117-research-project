@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "39dfabd43cbe57f92b771c0110a5c2d976b6c44f",
+  "tree": "3fde11238ef0aea291136f297a639db5c15eb02c",
+  "parents": [
+    "e8dbc1a3fa08d18cd327df2a5ceeb42d1923b1af"
+  ],
+  "author": {
+    "name": "Mathias Agopian",
+    "email": "mathias@google.com",
+    "time": "Mon Apr 03 17:14:31 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:14:46 2017 +0000"
+  },
+  "message": "fix race condition that can cause a use after free\n\nBackported from 12a0ccd6f7201bac706d903ac3f436c4358fe203.\n\nBug: 33004354\nTest: manual\nChange-Id: I9b38ee644b02268c9b995a330db758aa2e568399\n(cherry picked from commit 59485525a6047453e6ba16c03989381e2a0d56ec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b2169c84c73c9ad588ded4739a0c6dc1568aef3c",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueProducer.cpp",
+      "new_id": "ff85eb5ce8ed2689cf3cc7432cc58b4d57b5aefc",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueProducer.cpp"
+    }
+  ]
+}

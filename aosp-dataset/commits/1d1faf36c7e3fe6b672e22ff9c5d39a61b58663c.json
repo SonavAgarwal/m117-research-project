@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1d1faf36c7e3fe6b672e22ff9c5d39a61b58663c",
+  "tree": "9dfb0a27b48e68736edac4ef69f2261e1cf1fa4f",
+  "parents": [
+    "f783a68c02f6795820c97d86cfba2dcac277ab0c"
+  ],
+  "author": {
+    "name": "Varun Shah",
+    "email": "varunshah@google.com",
+    "time": "Wed Mar 20 11:10:33 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 10:34:51 2019 +0000"
+  },
+  "message": "Added missing permission check to isPackageDeviceAdminOnAnyUser.\n\nAdded a check for the MANAGE_USERS permission to\nPackageManagerService#isPackageDeviceAdminOnAnyUser.\n\nTo test that the method is still usable:\n1) Enable virtual storage via: adb shell sm set-virtual-disk true\n2) Follow instructions by clicking on notification to set up virtual storage\n3) Go to Settings -\u003e Apps \u0026 notifications -\u003e See all X apps\n4) Click on any non-system app (example Instagram)\n5) Tap Storage and you should see a \"Change\" button (if not, choose another app)\n6) Tap Change and you should see Internal and Virtual storage options listed\n7) The above step confirms the method is still usable by Settings\n\nBug: 128599183\nTest: SafetyNet logging (steps listed above)\nChange-Id: I989f1daf52a71f6c778ebd81baa6f1bf83e9a718\nMerged-In: I36521fa43daab399e08869647326a7ac32d1e512\n(cherry picked from commit 18e7dedf6c35f07daf8b7239d501737745ac7f43)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "82ad46f08aed04fe0d350ea14e6f7447e2fd5a69",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "3cde709bfeb2abe4531c414218c443dc209aade4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1cdced590675ce526c91c6f8983ceabb8038f58d",
+  "tree": "549a7b7ad3b489f3ac6cb66cf7de986650ebf903",
+  "parents": [
+    "c8f5e04f8c3d8ce54e5094a0281d57ba8bfaa782"
+  ],
+  "author": {
+    "name": "Tyler Gunn",
+    "email": "tgunn@google.com",
+    "time": "Wed Nov 02 14:46:34 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:47:15 2016 -0800"
+  },
+  "message": "Catch SIP exceptions which can crash Phone process on answer.\n\nThere are two exceptions which can be raised when answering a call which\ncan cause the Phone process to crash on answer.\n1. IllegalStateException due to answering a call with an incompatible\ncodec.\n2. IllegalArgumentException due to answering a call with a malformed\nSDP.\nIn both of these cases we catch the exception and reject the call to stop\nit from ringing (otherwise it will keep ringing and the user will not be\nable to stop it).\n\nThe existing CallStateException does not require onReject to be called as\nit is thrown when the call has already been disconnected before it can be\nanswered.\nTest: Manual (see bug)\nBug: 31752213\nChange-Id: I5254fd3a27b86fdc70889ea0a2b5be3b699fd9f5\n(cherry picked from commit 06a98183cc79dd112d9d33cf027977a9d5d3418a)\n\n(cherry picked from commit eb72c560946a61853b15cb96bba83957d948b6d4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b10ae568faf10233a8596866886b9f5a8f9abfed",
+      "old_mode": 33188,
+      "old_path": "sip/src/com/android/services/telephony/sip/SipConnection.java",
+      "new_id": "2dde5b56f6703ff5f0171036cbaa9f03ef193a47",
+      "new_mode": 33188,
+      "new_path": "sip/src/com/android/services/telephony/sip/SipConnection.java"
+    }
+  ]
+}

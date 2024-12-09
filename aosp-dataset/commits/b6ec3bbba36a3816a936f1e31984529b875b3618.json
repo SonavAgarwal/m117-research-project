@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b6ec3bbba36a3816a936f1e31984529b875b3618",
+  "tree": "6826fa7a72acdaa68573fea8646bbb5e3712e4a2",
+  "parents": [
+    "26557d832fde349721500b47d51467c046794ae9"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu May 18 12:43:12 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:12:06 2017 +0000"
+  },
+  "message": "m4v_h263: update width/height only when they are valid.\n\nTest: the file in the bug doesn\u0027t crash\nBug: 37079296\nChange-Id: Ie092971dda568119ca38ec67d65ccfc00df93185\n(cherry picked from commit 0b5726782d5f9764325057870cef2750853f286a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "60c79a662ed8af08a3cbf9e33ed5548b26faf040",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp",
+      "new_id": "f18f789b99750bf053bd22419c7434b53719f2f5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/vop.cpp"
+    }
+  ]
+}

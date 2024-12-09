@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dd3546765710ce8dd49eb23901d90345dec8282f",
+  "tree": "126330cf58b84892d4d4690b9d82fd49d5a43744",
+  "parents": [
+    "ad40e57890f81a3cf436c5f06da66396010bd9e5"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Apr 05 14:20:11 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:56 2016 -0700"
+  },
+  "message": "AudioSource: initialize variables\n\nto prevent info leak\n\nBug: 27855172\nChange-Id: I3d33e0a9cc5cf8a758d7b0794590b09c43a24561\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e4a1dd77567c87746132c29a56e08f53f56dde9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/AudioSource.cpp",
+      "new_id": "55f4361ab8a8b9aa7505153642e82d00a2b7ca63",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/AudioSource.cpp"
+    }
+  ]
+}

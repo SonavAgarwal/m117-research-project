@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a467b1fb2956fdcee5636ab63573a4bca8150dbe",
+  "tree": "6d6769dbe7b3f1e358937d51f8748492458de2e1",
+  "parents": [
+    "0e8b1dff88e08b9d738d2360f05b96108e190995"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Tue Dec 20 11:13:55 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fix in error concealment in the case of Mbaff clips\n\nIn case of MBAff clips, if error is detected after parsing odd MB,\nthen treat that odd MB also as error. All MBAff processing is done\nas an MB-Pair.\n\nBug: 33298089\n(cherry picked from commit 3ebff7dc62f6fb93d9635dd052c1140ddcc63dc7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ae7e9e63d6770d030fe694fc90daa524d434a09",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "e2acd4abc164376729f23178693d9f87dd01a616",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

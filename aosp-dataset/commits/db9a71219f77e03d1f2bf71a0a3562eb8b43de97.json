@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "db9a71219f77e03d1f2bf71a0a3562eb8b43de97",
+  "tree": "75f2fcfc0110d0f4347fc848a11467d978e0eda4",
+  "parents": [
+    "2062c5a408eb44ead19b7e2e797e93b5781ae931"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri May 17 13:14:06 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:29 2019 +0000"
+  },
+  "message": "libbinder: readCString: no ubsan sub-overflow\n\nBug: 131859347\nTest: fuzzer\nChange-Id: I95a0f59684a172925f1eab97ff21e5d14bc79cc8\nMerged-In: I95a0f59684a172925f1eab97ff21e5d14bc79cc8\n(cherry picked from commit d0d4b584fc294d2c124385644099852918416344)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2e7edd7a2872378650a03510bd1e57d0c3c90f25",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "8e206f501f6c3a9b881066220bd65afd54e78504",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

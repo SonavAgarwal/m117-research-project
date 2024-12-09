@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "828fe0b915f30e22fec03dc1ed2e66220ceebd3e",
+  "tree": "240b3ce0f7a9359b736d0d8533f41eedd0aa6e60",
+  "parents": [
+    "90cfe17643aa4ecbe7cbfb1c787217456f764e08"
+  ],
+  "author": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Mon Nov 09 16:44:08 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:28 2020 +0000"
+  },
+  "message": "Protect GrantCredentialsPermissionActivity against overlay.\n\nBug: 169763814\nTest: manual\nChange-Id: I15dd22791fcc61ef02b06ad51d9e4409d11c0181\n(cherry picked from commit f45dcfe1f5ed74dcec15799f2abd9e5ecbbed4b7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "af74b036a796d30171e4e57dd01c462ba76e7c8a",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/GrantCredentialsPermissionActivity.java",
+      "new_id": "32b61b5ed8ccf60216de9c6ce36e89d664dad2ab",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/GrantCredentialsPermissionActivity.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "9352cb24b1afaec657faeffdb0d40ed96d4d912b",
+  "tree": "af60cb119494d8abe71f255805684ba1d2df36c7",
+  "parents": [
+    "3e4f4f9933f81cdf13b0cb1836fd0b3ea0c36ea1"
+  ],
+  "author": {
+    "name": "Paul Hu",
+    "email": "paulhu@google.com",
+    "time": "Mon Nov 25 10:35:55 2019 -0800"
+  },
+  "committer": {
+    "name": "paulhu",
+    "email": "paulhu@google.com",
+    "time": "Thu Dec 19 13:43:40 2019 +0800"
+  },
+  "message": "Fix PermissionMonitor issues\n\nPermissionMonitor#hasPermission only checks permssions that app\nrequested but it doesn\u0027t check whether the permission can be\ngranted to this app. If requested permission doens\u0027t be granted\nto app, this method still returns that app has this permission.\nThen PermissionMonitor will pass this info to netd that means\nthis app still can use network even restricted network without\ngranted privileged permission like CONNECTIVITY_INTERNAL or\nCONNECTIVITY_USE_RESTRICTED_NETWORKS.\n\nPermissionMonitor#hasUseBackgroundNetworksPermission only uses\nthe first package name of the uid for checking permission.\nThis is incorrect since each package declared different\npermissions. So using the mApps which already checked both\nnetwork and using restricted network permissions. If uid is in\nthe mApps list that means uid has one of permission at least.\n\nBug: 144679405\nTest: Build, flash, manual test\n      atest FrameworksNetTests\n\nChange-Id: I2da730feda4d7ebed1f158b073167bb3964b3e7d\nMerged-In: I8b03c9e23ffc9ff46264d6307fb841a7eda76a76\nMerged-In: Ib08a940a6e5d3365c392ab7174d8484c197e0947\n(cherry picked from commit 2e1da35b3b903f4aa01435c46b7014b88a41328d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fbe2589bea2a6d6ccaa4726a6ab5f444c36856c4",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/PermissionMonitor.java",
+      "new_id": "c70012b5e7edbcf926ee3a99cb2db0fb5691bf17",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/PermissionMonitor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "73ee7f544b5f5b6b9c4ccdbedf234d72f15e5d33",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java",
+      "new_id": "e313e28fbf9130db13005b7585b635fa024849f7",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/ConnectivityServiceTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "cd2bd26ef4bb48634b6c9c212aa1c57a080fa347",
+      "old_mode": 33188,
+      "old_path": "tests/net/java/com/android/server/connectivity/PermissionMonitorTest.java",
+      "new_id": "2e892e53fa6a9f7e196fdc078c7defcdad418acf",
+      "new_mode": 33188,
+      "new_path": "tests/net/java/com/android/server/connectivity/PermissionMonitorTest.java"
+    }
+  ]
+}

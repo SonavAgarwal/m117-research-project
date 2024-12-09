@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e068734f9e7344997a61022629b92d142a985ab3",
+  "tree": "093d1f9b4a99eff55c77c42be3e14da036aadd45",
+  "parents": [
+    "b9b9f908c8ae82b73b9d75181982028b6bc06c2b"
+  ],
+  "author": {
+    "name": "Andy Lutomirski",
+    "email": "luto@amacapital.net",
+    "time": "Wed Jul 23 08:34:11 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86_64/entry/xen: Do not invoke espfix64 on Xen\n\ncommit 7209a75d2009dbf7745e2fd354abf25c3deb3ca3 upstream.\n\nThis moves the espfix64 logic into native_iret.  To make this work,\nit gets rid of the native patch for INTERRUPT_RETURN:\nINTERRUPT_RETURN on native kernels is now \u0027jmp native_iret\u0027.\n\nThis changes the 16-bit SS behavior on Xen from OOPSing to leaking\nsome bits of the Xen hypervisor\u0027s RSP (I think).\n\n[ hpa: this is a nonzero cost on native, but probably not enough to\n  measure. Xen needs to fix this in their own code, probably doing\n  something equivalent to espfix64. ]\n\nSigned-off-by: Andy Lutomirski \u003cluto@amacapital.net\u003e\nLink: http://lkml.kernel.org/r/7b8f1d8ef6597cb16ae004a43c56980a7de3cf94.1406129132.git.luto@amacapital.net\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bba3cf88e6249187a00fba403ed533648a728673",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/irqflags.h",
+      "new_id": "0a8b519226b8feb37368ffbc4ca81011bc031fde",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/irqflags.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9315d9339ff0aaa4046bb83408e569dee662a52",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/entry_64.S",
+      "new_id": "db230f8e440dbb0a847d9a2c0e6b8a6fb9c9d314",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/entry_64.S"
+    },
+    {
+      "type": "modify",
+      "old_id": "3f08f34f93ebc480041d0b448e3b12869450a91d",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/paravirt_patch_64.c",
+      "new_id": "a1da6737ba5b80c4ee636204d49d4813348ef903",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/paravirt_patch_64.c"
+    }
+  ]
+}

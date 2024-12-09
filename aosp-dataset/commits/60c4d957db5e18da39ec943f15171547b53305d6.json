@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "60c4d957db5e18da39ec943f15171547b53305d6",
+  "tree": "07ebbc7f9dffbd24663313f803704a6b2af785f6",
+  "parents": [
+    "604f227d4e2b686609049e00b440754639faab4e"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Aug 31 15:30:27 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Oct 05 14:52:34 2017 -0700"
+  },
+  "message": "Reject Multiple seq_hdr With Different Dimensions\n\nIf the decoder gets multiple sequence headers and there is a change in\nresolution in the second header (after a reset call), the decoder will now\nreturn an error.\n\nBug: 65717533\nTest: poc before/after on mnc-dev/hammerhead\nChange-Id: I4cb9a5f945fc1150f8ae0714bae4a87b07f0945f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b39881bfcbeeaf18199e9c824c6ea6384c94b712",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_api_main.c",
+      "new_id": "d5fb4e8896df7a52fdebacaa8c9991928c309328",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_api_main.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "59110ce85d1890bf467ce13ed974e74ec554e48a",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "7d677d322cb7af645d9ad7b904783df49176b1f5",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "63a0b03062e690ac246b56940a0f21a7d006cb7a",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_structs.h",
+      "new_id": "1b09100935ea7d0b005460105b726e0c4ca76a22",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_structs.h"
+    }
+  ]
+}

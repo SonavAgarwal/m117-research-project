@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "21e03356b28be08e2d5aeac15a446f820f95fb70",
+  "tree": "2ef1b054ea3cecd1e6eedfe20adffd595699a55d",
+  "parents": [
+    "2c39575764f5aa4718b5e68be0441e84d3aa9ce7"
+  ],
+  "author": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Sat May 09 18:24:19 2020 -0700"
+  },
+  "committer": {
+    "name": "Jack Yu",
+    "email": "jackyu@google.com",
+    "time": "Sat May 09 18:24:19 2020 -0700"
+  },
+  "message": "Added FLAG_IMMUTABLE flag for security purposes\n\nPrevent the intent to be altered by the maleware.\n\nBug: 155094269\nTest: Telephony sanity tests\n\nMerged-In: Ice6e438eb437d377f8c5f26891938302fcb0c8d4\nChange-Id: Ice6e438eb437d377f8c5f26891938302fcb0c8d4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "46572f846bba8eeaa927aa2beeccf27448b8aef8",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/dataconnection/DcTracker.java",
+      "new_id": "2718aee0116f95ae7bd81eab7f9852a5ca5703d5",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/dataconnection/DcTracker.java"
+    }
+  ]
+}

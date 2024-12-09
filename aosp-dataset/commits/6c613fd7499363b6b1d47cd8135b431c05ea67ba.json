@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6c613fd7499363b6b1d47cd8135b431c05ea67ba",
+  "tree": "0a83fcc370553bad6370c50c4990c8f91117900b",
+  "parents": [
+    "ded9a473ea2f7691b7e65296ec7d19c06d6dee99"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Wed Jan 02 16:51:45 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:28 2019 +0000"
+  },
+  "message": "Ask for PIN when granting permissions in front of lock screen\n\nTest: - Revoked all permissions from camera\n      - Set lock screen PIN\n      - Opened camera app -\u003e Camera app asks for permissions\n      - Locked screen\n      - Granted permission from in front of lock screen\nBug: 68777217, 65337954\nMerged-In: I8358f1eba436786b25b2c2b0c12ac7dcfd334fec\nChange-Id: I3f252e2c325bd638ea29d1ce63b12e391e13c8f0\n(cherry picked from commit b5302e6789b7a0b8f5625e054fbb21d5916652be)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "215035736e22e34b063ff22c433d7fd11c20e78a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/permission/ui/GrantPermissionsActivity.java",
+      "new_id": "e182655a1bc0e261f790d64cec5de7a29ad513d0",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/ui/GrantPermissionsActivity.java"
+    }
+  ]
+}

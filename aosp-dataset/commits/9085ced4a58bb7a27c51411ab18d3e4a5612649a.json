@@ -1,0 +1,102 @@
+)]}'
+{
+  "commit": "9085ced4a58bb7a27c51411ab18d3e4a5612649a",
+  "tree": "e5e9f1ac60b2065c331be6073849ea7ac176bc67",
+  "parents": [
+    "6a2127f162788add4da891fcd22882b9e2b65bad"
+  ],
+  "author": {
+    "name": "Robert Carr",
+    "email": "racarr@google.com",
+    "time": "Tue Feb 19 10:05:00 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:31 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE]: Exclude secure layers from most screenshots taken by the system server.\n\nIn pre-P versions of Android, it was allowed to screenshot secure layers if the\nbuffer queue producer which was the target of the screenshot was owned by\nthe system (in this case SurfaceFlinger). This really was a synonym for:\nThe screen rotation animation was allowed to capture secure layers, but the other\ncode paths weren\u0027t. In O we mistakenly changed this check to always allow the system server\nto capture secure layers via the captureScreen path (the captureLayers path used for\nTaskSnapshots was unaffected). This can result in data leakage in cases where the\nsystem server takes screenshots on behalf of other parts of the system (e.g. for\nthe assistant). To mitigate this we provide an explicit switch for the system server\nto specify whether it wishes to capture Secure layers. While this is dangerous, I think\nit is less dangerous than the previous implicit switch of capturing secure layers based on which\ntype of BufferQueue was passed in. The flag defaults to not capturing secure layers\nand we set it to true in the one place we need it (for the screen rotation animation).\nNon privileged clients can still not capture secure layers at all directly.\n\nTest: SetFlagsSecureEUidSystem\nBug: 120610669\nChange-Id: I288ad3bbb0444306e90fe3bb15e51b447539dea5\n(cherry picked from commit 5c99901e77437e403ba643c9dc839ee9659acada)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d2d27e82399e4879e14ed7d28223037b0fe96e8d",
+      "old_mode": 33188,
+      "old_path": "libs/gui/ISurfaceComposer.cpp",
+      "new_id": "e230b3affbd195a135871cd126393e7ed3b5b73a",
+      "new_mode": 33188,
+      "new_path": "libs/gui/ISurfaceComposer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f3c6fd2f87f5bc57c3f6ebfd8bf589c6758306be",
+      "old_mode": 33188,
+      "old_path": "libs/gui/SurfaceComposerClient.cpp",
+      "new_id": "263c7ef9e0a20b1d43f51caf2bad16686eea16ff",
+      "new_mode": 33188,
+      "new_path": "libs/gui/SurfaceComposerClient.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "99a3a75502dae7dc0d0389dc1bba82169ddb1b7f",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/ISurfaceComposer.h",
+      "new_id": "fc7579ff110bc53c48daf285c58a4f28ed49e849",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/ISurfaceComposer.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad8a8b09d0cdda14a4c5a084204d6964521662ab",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/SurfaceComposerClient.h",
+      "new_id": "7d72661717b358caa015d9115a20a66ea1f8517b",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/SurfaceComposerClient.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e196bfac867d35107025fffbe469e56682bf90a",
+      "old_mode": 33188,
+      "old_path": "libs/gui/tests/Surface_test.cpp",
+      "new_id": "959d7825063b6305590b5994dee84ea552ec0b68",
+      "new_mode": 33188,
+      "new_path": "libs/gui/tests/Surface_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6c3bd917935ebcf55cf220989756a110e685f2f1",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/DisplayDevice.h",
+      "new_id": "1262209773694e12e44c70879c8f1c2bb40bd6ae",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/DisplayDevice.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "11e7ff0f68ca5a2d7feb1b315c002e029bc58e46",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "c1dc65b11a92aadad8ff016cfb32bfb41011ca92",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0148ab675414070de59aad0fd98991e9a293f87e",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.h",
+      "new_id": "2577f179cb4363c68d2735aac97f48b9d8363588",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5108279043f666a9d3e3189a54b62cd532c5748d",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/tests/Transaction_test.cpp",
+      "new_id": "deca17799c4ebd0389a45f7f2a300b0fbc48e420",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/tests/Transaction_test.cpp"
+    }
+  ]
+}

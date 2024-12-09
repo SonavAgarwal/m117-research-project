@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "16024ea7c4bae08c972cf6b3734029aad33e8870",
+  "tree": "69f2dec206463ae8b85b65f2c5858b1323ca68f1",
+  "parents": [
+    "b1dc1757071ba46ee653d68f331486e86778b8e4"
+  ],
+  "author": {
+    "name": "John Reck",
+    "email": "jreck@google.com",
+    "time": "Mon Sep 12 10:43:35 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:15:39 2016 -0700"
+  },
+  "message": "Ensure munmap matches mmap\n\nBug: 31350622\nChange-Id: I6d3f9faec32d54360caa6706d17405e20b50966c\n(cherry picked from commit aa394dd42c049479bface1991f11b863dc1a0922)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d68124660a51e4832c2a0be859d13fee759913f3",
+      "old_mode": 33261,
+      "old_path": "core/jni/android/graphics/Bitmap.cpp",
+      "new_id": "c3ebea4fedc409dfb96548e237f5731a3efefa46",
+      "new_mode": 33261,
+      "new_path": "core/jni/android/graphics/Bitmap.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "eadba5c0e634166b5a7f47d41fcf8d4589790c73",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/Bitmap.h",
+      "new_id": "aaea178e738709a207b18ee1470a124d77a71d4b",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/Bitmap.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "528541dadfb89ff947283b06393068433fc7d942",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/Graphics.cpp",
+      "new_id": "889a3db81e6f0178e9812df14a8daba83ca695f1",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/Graphics.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5baa8f8740c2cc52aa8fbc591a2b8a272d44cb68",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/GraphicsJNI.h",
+      "new_id": "a2157099285024d834e004e1a87610104db6b9e6",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/GraphicsJNI.h"
+    }
+  ]
+}

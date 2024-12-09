@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aa2ffea8baea65c13ac2b841b3d581f28261dd2b",
+  "tree": "094f1f7694c21383d7f80808f8d06735fbdc93fe",
+  "parents": [
+    "aa68a4f19e6a122b80ca1bcff57228dc795081e5"
+  ],
+  "author": {
+    "name": "Philip P. Moltmann",
+    "email": "moltmann@google.com",
+    "time": "Mon Oct 28 11:49:11 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:12 2019 +0000"
+  },
+  "message": "Revoke granted permission when the permission defining app is removed.\n\nBug: 67319274\nTest: atest android.permission.cts.RemovePermissionTest\nChange-Id: I22df546f5cd19e10045131d36dc3f5033f727baa\nMerged-In: I20c4c975a1dd41a0a6c3e068988fe60be51dd1b4\n(cherry picked from commit bde381848d0d07780710ce36e0c974646ba8f995)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4c33bec71a143a63636acd3f15cef143d9061084",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java",
+      "new_id": "b844362e69ed3590bbcf2699778721acc8c12ea7",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/permission/PermissionManagerService.java"
+    }
+  ]
+}

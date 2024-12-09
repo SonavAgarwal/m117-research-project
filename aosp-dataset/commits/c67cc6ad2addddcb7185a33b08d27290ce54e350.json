@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c67cc6ad2addddcb7185a33b08d27290ce54e350",
+  "tree": "f5a303179ae8187a2a9283740cb160524e112ab2",
+  "parents": [
+    "0e3eeae5ec8d7ea910407b81e2ba52abc9b84257"
+  ],
+  "author": {
+    "name": "fang.x.chen",
+    "email": "fang.x.chen@sonymobile.com",
+    "time": "Mon Nov 07 12:31:10 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:06 2017 -0800"
+  },
+  "message": "Fix native crash in nfc_ncif_proc_activate\n\nThe destination of memcpy is allocated with a predetermined maximum\nlength, but in some cases the length of information being copied is\ngreater than the maximum length of the destination.\nThis is the root cause of crash.\n\nAdd length check before memcpy to avoid memory overflow\n\nTest: Repeat reading and writing tag\nBug: 33434992\nBug: 32688507\nChange-Id: I09ee3c734e9be38a35b1d48679d74e42e0432d78\n(cherry picked from commit 09cb3b3dc46c8bab51346a4163b130857d806418)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "99ad256a1150b48f2bfbee3d29ec9c331b0fe554",
+      "old_mode": 33188,
+      "old_path": "src/nfc/nfc/nfc_ncif.c",
+      "new_id": "2e2c14f0af0c2b501d07c28730afe084d629311f",
+      "new_mode": 33188,
+      "new_path": "src/nfc/nfc/nfc_ncif.c"
+    }
+  ]
+}

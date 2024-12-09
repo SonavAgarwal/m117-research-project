@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "b0de569edd2d27b8dae9e3048f9c131b6ebc2d45",
+  "tree": "90e0f48fde7d3f07367b62be0c2f98527fc327d6",
+  "parents": [
+    "bcb57f62b0f75630a5c1199c78f5af311934b6ce"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Tue Aug 20 15:42:04 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:34:35 2019 +0000"
+  },
+  "message": "AudioFlinger: enforce OP_RECORD_AUDIO during recording\n\n  Fix issue where RecordTrack silencing didn\u0027t silence the\nfull buffer: the memset to 0 was using the RecordThread frame\nsize, not the RecordTrack frame size.\n  OP_RECORD_AUDIO was only enforced at the start of a recording\nwhich would fail if not granted. This patch silences the recording\n(i.e. silence is recorded instead) when it is lost, and undoes that\nwhen granted again. This requires:\n- propagating the package name of the client to the RecordTrack class\n- registering an appOp callback in RecordTrack (through a new\n  OpRecordAudioMonitor class) to (un)silence the recording\n- update the isSilenced() method to take into account the appOp.\n\nBug: 138968594\nBug: 138636979\nTest: run app that records audio, then \"adb shell appops __pack_name__ 27 2\"\n     and verify recording is silent after that.\n\nChange-Id: Ib33f5b592185a67204997213bab1ac2594d90d37\n(cherry picked from commit ddf87effa4d80f413a80fde861f73877ccd80599)\nMerged-In: Ib33f5b592185a67204997213bab1ac2594d90d37\n(cherry picked from commit 7307293e8befafa12b244b74cd3c8cb84b27997c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0b745ac834885545a1a64ba4a5787157e1e7ff0e",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "d38190d95ec37152bac2296e513eceb2e69c9adb",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "08660dd67afce6af69266db58b259b23ee70444d",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/RecordTracks.h",
+      "new_id": "c8397cd127cc893036fa6638715d5e53149e5012",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/RecordTracks.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bcd351d86b930c4cfabaee262b806276ddc2ec77",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.cpp",
+      "new_id": "bd9bf7b4b58a203e6eb6a9833783650160924b74",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc8aa13cbb5cbbff463ed23afec15956135c8811",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.h",
+      "new_id": "87bebf3d89ae2f13fe3042156d647ad065a47cf2",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f720b58d5fa96da00dc259cbe9e30c26198ebb0",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/TrackBase.h",
+      "new_id": "65589e2ddace7dea31ceeebba1645eb1e52eae84",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/TrackBase.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "78db80ca0aa70df6f551d1376d8830dc10ecb099",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Tracks.cpp",
+      "new_id": "2a5a713ca3cce0270f51ccc7ed58e930ea582051",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Tracks.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7436115ffe6a5387d8fc11780a4f6ce104c7fb1b",
+  "tree": "57462d493e0241141f2f051afbf4890bd3f3b4d1",
+  "parents": [
+    "8cb1c83742196077a6c58019a08cf83ed9aaf0eb"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Mon Dec 03 10:10:21 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:55:57 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: aaudio: improve test_atomic_fifo\n\nCheck for the effects of setting a bogus counter.\nCheck for writes to memory surrounding the FIFO.\nCheck for negative array indices.\n\nBug: 120789744\nTest: this is a test\nChange-Id: Ia30cdef7f9d60f0a98b9af964cb3b3159df37dc9\n(cherry picked from commit fcdc02782c939aac336da48f8859ba1dccae3806)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "008521754642af396d29c0e867ac0059a9e3f663",
+      "old_mode": 33188,
+      "old_path": "media/libaaudio/tests/test_atomic_fifo.cpp",
+      "new_id": "0edfebe60d98fe46d0b4876defb5cf7972fe1bc6",
+      "new_mode": 33188,
+      "new_path": "media/libaaudio/tests/test_atomic_fifo.cpp"
+    }
+  ]
+}

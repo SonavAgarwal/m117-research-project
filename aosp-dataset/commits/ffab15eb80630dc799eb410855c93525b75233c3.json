@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "ffab15eb80630dc799eb410855c93525b75233c3",
+  "tree": "753b5d900e3dfd74511197e830ed209d46e1c81e",
+  "parents": [
+    "b34913857dacd4b7f82715c48ae1de9c56ede9e0"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Dec 30 17:38:27 2015 +0530"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Jan 07 10:05:56 2016 -0800"
+  },
+  "message": "Fixed bit stream access to make sure that it is not read beyond the allocated size.\n\nBug: 25765591\n\nChange-Id: I98c23a3c3f84f6710f29bffe5ed73adcf51d47f6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "92d3785d35c0a5f859f32178a019ccbb752e0a40",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_bitstream.c",
+      "new_id": "b67161d70afb78f2b1395ca7cc9d541319c13191",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_bitstream.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6fcf1f4be8eb9363392f43bc0a198fc431c2a416",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_d_pic.c",
+      "new_id": "23c393f129a6a7d33bfbcc26219f458b0f2b7a40",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_d_pic.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "061bf045efe4502660636130283c0574463b2349",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "83c1545b63ce5fbf01c23735445dc90c736fffbd",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e79e87aee12c7ce8451aca411d5b2dce16ea39eb",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_pic_proc.c",
+      "new_id": "b4f88be6f2562dd74b02b97681f378f689b54b9c",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_pic_proc.c"
+    }
+  ]
+}

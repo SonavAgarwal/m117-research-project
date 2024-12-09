@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "f26400c9d01a0e2f71690d5ebc644270f098d590",
+  "tree": "b96386b9c3bf83c969ed207dbd7b53eb29e6c6a3",
+  "parents": [
+    "d9a9a324766b26be2ff0d10537ea0b215b0261e3"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Aug 04 16:49:28 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Aug 04 23:52:34 2015 +0000"
+  },
+  "message": "Fix crash on malformed id3\n\nBug: 22954006\nChange-Id: I488cb1e2c69fc7043b6040481b30fa866000515d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3a874742c712a6ad6226353ab443a38c4deb5aae",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/MetaData.h",
+      "new_id": "78e6403b5ab9ac09e39d86edbcb2d393034dc143",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/MetaData.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f870b9843e603bda8e27bbce0ab3c58d1321a011",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MetaData.cpp",
+      "new_id": "2264a234af398c25ba7857d39d25926ef0972a5d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MetaData.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "34d671acc287f904c19230547126ce84399d7cff",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "7f478f764bf5fa9ab26543d2fbc124baec13dc18",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

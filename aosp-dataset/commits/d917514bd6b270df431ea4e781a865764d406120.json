@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d917514bd6b270df431ea4e781a865764d406120",
+  "tree": "2a94a7e06cd4f03dc9bab888781ed7d58ce0899c",
+  "parents": [
+    "3f7a33a5294cd59c331d5d036021141b6f1aef1e"
+  ],
+  "author": {
+    "name": "Christopher Ferris",
+    "email": "cferris@google.com",
+    "time": "Thu Oct 22 13:34:48 2015 -0700"
+  },
+  "committer": {
+    "name": "Christopher Ferris",
+    "email": "cferris@google.com",
+    "time": "Thu Oct 22 17:54:24 2015 -0700"
+  },
+  "message": "Fix incorrect check of descsz value.\n\nBug: 25187394\n\n(cherry picked from commit 1fa55234d6773e09e3bb934419b5b6cc0df981c9)\n\nChange-Id: Idbc9071e8b2b25a062c4e94118808d6e19d443d9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5ea03e752ce8aae46b3271cc323eeb7b9fa4c481",
+      "old_mode": 33188,
+      "old_path": "debuggerd/elf_utils.cpp",
+      "new_id": "65c19047907d3c9ea1ae3fda9efc1343b90e7f56",
+      "new_mode": 33188,
+      "new_path": "debuggerd/elf_utils.cpp"
+    }
+  ]
+}

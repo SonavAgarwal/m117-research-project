@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "8157d73fb620bc463eb26e974fe92d3259e7545a",
+  "tree": "26201d60e503cb4167217b435484cc02493e9cf9",
+  "parents": [
+    "15c377e6230b060d54c43247a0a261ff7c73553b"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Tue Oct 16 15:29:11 2018 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:13:38 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Fix uninitialized errors in SkPngCodec\n\nBug: 117838472\nTest: Iae4d7f393c892111b12282c5eae31d79912721f9\n\n- Initialize rowsDecoded in SkSampledCodec. Otherwise,\nfillIncompleteImage may be called with an uninitialized\nvalue. This change was originally uploaded to AOSP as\nhttps://android-review.googlesource.com/c/platform/external/skia/+/785816\n- If SkPngCodec hits an error, still transform from the\ninterlace buffer (if needed) and set rowsDecoded properly.\n- Do not copy uninitialized memory from the interlace buffer.\n- Make BRD treat kErrorInInput like kIncompleteInput. The two errors\nare different for the purposes of incremental decode. For a direct\ndecode, they\u0027re essentially the same - part was decoded, but then\nthe decode was interrupted. This allows testing images with\nerrors on the bots without reporting a failure.\n\nOriginally uploaded as https://skia-review.googlesource.com/c/skia/+/161822\n\n- Also includes SkPngCodec SafetyNet logging from\nhttps://skia-review.googlesource.com/c/skia/+/170354\n\nChange-Id: Ie170abf65393feb4edba60aa941f2783fe18cd8b\n(cherry picked from commit fc165d5cccf133574058cd0c5ba3a95ea6ad2bb8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b17a9015dd43f6326e24fad9d599b7a54f16a1d",
+      "old_mode": 33188,
+      "old_path": "src/android/SkBitmapRegionCodec.cpp",
+      "new_id": "682c70526a905e404a329708555767c42be37974",
+      "new_mode": 33188,
+      "new_path": "src/android/SkBitmapRegionCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "31a407c6701a71c2bf8b94258a3b6714acf4ca92",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkPngCodec.cpp",
+      "new_id": "aa621380c43dcb565ab5a3a1402eea7978d610b4",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkPngCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac0539fc74278410f7fce6ffd42d4153668ffb2c",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkSampledCodec.cpp",
+      "new_id": "2282d6beb4e17bf99f76a43a170a624f9584d5ab",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkSampledCodec.cpp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "f81038006b4c59a5a148dcad887371206033c28f",
+  "tree": "e27334106fce00eddb73daa302a4d8d40fd2bce6",
+  "parents": [
+    "6fdee2a83432b3b150d6a34f231c4e2f7353c01e"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Aug 28 10:35:35 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:16 2016 -0700"
+  },
+  "message": "MPEG4Extractor: ensure kKeyTrackID exists before creating an MPEG4Source as track.\n\nGenericSource: return error when no track exists.\n\nSampleIterator: make sure mSamplesPerChunk is not zero before using it as divisor.\n\nBug: 21657957\nBug: 23705695\nBug: 22802344\nBug: 28799341\nChange-Id: I7664992ade90b935d3f255dcd43ecc2898f30b04\n(cherry picked from commit 0386c91b8a910a134e5898ffa924c1b6c7560b13)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "45da2186f4f177218446922c945e497fc34b3a5c",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp",
+      "new_id": "05982540a0cfed2ee4f2e156477ec51e9c585c89",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/nuplayer/GenericSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f6206d27f32912f975e45d34e4aefed5b7ff4923",
+      "old_mode": 33261,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "4c10cc9ef9cc63c58819841bd66f150b2ee14d43",
+      "new_mode": 33261,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "274834992e4417a88324a2ee0c46a3ad6c4861fb",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleIterator.cpp",
+      "new_id": "c5f359eebe07e5561914b9312f0d075a34439f60",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleIterator.cpp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "ff8dc21278b19b22ed8dc9f9475850838336d351",
+  "tree": "7af9449525e2c57ea0100070280c31237fcfd895",
+  "parents": [
+    "9b6a60991453136819a6feeca404e1102e78f735"
+  ],
+  "author": {
+    "name": "Sebastien Hertz",
+    "email": "shertz@google.com",
+    "time": "Mon Aug 10 18:55:34 2015 +0200"
+  },
+  "committer": {
+    "name": "Sebastien Hertz",
+    "email": "shertz@google.com",
+    "time": "Wed Aug 19 11:25:56 2015 +0200"
+  },
+  "message": "Allow debugging only for apps forked from zygote\n\nWhen starting the runtime from app_process, we only pass JDWP options\nif starting zygote. It prevents from opening a JDWP connection in\nnon-zygote programs while Android apps (forked from zygote) remain\ndebuggable.\n\nBug: 23050463\n\n(cherry picked from commit 7a09b8322cab26d6e3da1362d3c74964ae66b5d4)\n\nChange-Id: Ib5b6d3bc4d45389993c3c54226df5a7b72479d19\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1bb28c38ceef2c1bc2945c61c30ef174cc51e5f1",
+      "old_mode": 33188,
+      "old_path": "cmds/app_process/app_main.cpp",
+      "new_id": "91cec19d3a3d7ba85a1bb49ca4a1569f837af2be",
+      "new_mode": 33188,
+      "new_path": "cmds/app_process/app_main.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f4105fdca9896766b294f94111cc9f055663967",
+      "old_mode": 33188,
+      "old_path": "core/jni/AndroidRuntime.cpp",
+      "new_id": "0c84279d016ae5441430e9338023c99d42425b11",
+      "new_mode": 33188,
+      "new_path": "core/jni/AndroidRuntime.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc33b7e67e34e4796dfa0af7c39c9b4f4a65a4d1",
+      "old_mode": 33188,
+      "old_path": "include/android_runtime/AndroidRuntime.h",
+      "new_id": "9a3b990c45bc9b2ea21489ee5ddb2e46bdc63b15",
+      "new_mode": 33188,
+      "new_path": "include/android_runtime/AndroidRuntime.h"
+    }
+  ]
+}

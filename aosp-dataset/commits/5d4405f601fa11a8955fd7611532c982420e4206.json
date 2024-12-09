@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5d4405f601fa11a8955fd7611532c982420e4206",
+  "tree": "1890fa95db14a23bc83aea6eec77568e3f4ff661",
+  "parents": [
+    "48b330d303727e1f2671f844a1d541d596f6d5da"
+  ],
+  "author": {
+    "name": "Jean-Michel Trivi",
+    "email": "jmtrivi@google.com",
+    "time": "Mon Mar 21 14:12:19 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:34 2016 -0700"
+  },
+  "message": "Fix stack corruption happening in aacDecoder_drcExtractAndMap()\n\nIn the aacDecoder_drcExtractAndMap() function, self-\u003enumThreads\n  can be used after having exceeded its intended max value,\n  MAX_DRC_THREADS, causing memory to be cleared after the\n  threadBs[MAX_DRC_THREADS] array.\nThe crash is prevented by never using self-\u003enumThreads with\n  a value equal to or greater than MAX_DRC_THREADS.\nA proper fix will be required as there seems to be an issue as\n  to which entry in the threadBs array is meant to be initialized\n  and used.\n\nBug 26751339\n\nChange-Id: I655cc40c35d4206ab72e83b2bdb751be2fe52b5a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c33a2b016064e9efbfb567c98f1f8ef30751988",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_drc.cpp",
+      "new_id": "9cfc5d5d74b5ecdded0ad0e11ed57ab7cf00decd",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_drc.cpp"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "6a6c9a891b8e91a9bc84784909f800ba670c873b",
+  "tree": "100ca4e194625e5cf659e4c40bce256417d77418",
+  "parents": [
+    "226060395fc7c413411e7db958b51a8f2908b7e5"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Wed Mar 21 15:52:21 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:23 2018 +0000"
+  },
+  "message": "cas: fix UAF in descrambler -- DO NOT MERGE\n\nChange the plugin holder in both CasImpl and DescramblerImpl\nto shared_ptr, and use atomic store/load for read/write.\n\nbug: 73172817\nTest:CTS MediaCasTest, VTS VtsHalCasV1_0Target, poc in bug\nChange-Id: I6b040680c28c38cef2fef3042f570dc64e86bb77\n(cherry picked from commit addcb3aa51f67c8c4f2959ee6f022fdb9473859c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d1f4a3268800320700645733aa4e27a19617e36",
+      "old_mode": 33188,
+      "old_path": "cas/1.0/default/CasImpl.cpp",
+      "new_id": "178020e4774fb813e70a806b6031daf54785497f",
+      "new_mode": 33188,
+      "new_path": "cas/1.0/default/CasImpl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "841d64e038328e7fbae9343cac77d203ba5e8ceb",
+      "old_mode": 33188,
+      "old_path": "cas/1.0/default/CasImpl.h",
+      "new_id": "d7928381ccb6bccfa3b12e49330aa0b1d754d1a3",
+      "new_mode": 33188,
+      "new_path": "cas/1.0/default/CasImpl.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "36699baf28128f46294c4981b3d7fb4b3d3118e8",
+      "old_mode": 33188,
+      "old_path": "cas/1.0/default/DescramblerImpl.cpp",
+      "new_id": "1f8993379fce62f2947efeee14ee3287f1bccb5c",
+      "new_mode": 33188,
+      "new_path": "cas/1.0/default/DescramblerImpl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d3b146ecc73381e08e29bc835856348ea4286888",
+      "old_mode": 33188,
+      "old_path": "cas/1.0/default/DescramblerImpl.h",
+      "new_id": "305f1154735cdbf3f35f420735e39f7818c77fb2",
+      "new_mode": 33188,
+      "new_path": "cas/1.0/default/DescramblerImpl.h"
+    }
+  ]
+}

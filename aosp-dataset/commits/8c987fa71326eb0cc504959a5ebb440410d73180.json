@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8c987fa71326eb0cc504959a5ebb440410d73180",
+  "tree": "5d7b75a17bf736d15f95880a06b564f03cd03ee1",
+  "parents": [
+    "a8f90d57f5b3ad4ef7194501aa20f0a0bd903e8f"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Sep 24 16:36:56 2015 -0700"
+  },
+  "committer": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Sep 24 16:49:57 2015 -0700"
+  },
+  "message": "DO NOT MERGE - AudioFlinger: Clear record buffers when starting RecordThread\n\nBug: 24211743\nBug: 24267152\nChange-Id: I58c55e56b85067b71e4e300f947b4dfc159637ba\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c9b9767e479fabf06b60377ecd858485bd149ed",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/FastCapture.cpp",
+      "new_id": "9613e26d0e6615e30a9c81a41affb4c429c97ac3",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/FastCapture.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "b429cc26080295d971a1e841572a1f637f6c7c18",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Threads.cpp",
+      "new_id": "63feeaa1b3678c2b7c53c4c3073fd5a205b37a13",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Threads.cpp"
+    }
+  ]
+}

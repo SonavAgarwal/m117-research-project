@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7fd96ebfc4c9da496c59d7c45e1f62be178e626d",
+  "tree": "82765ebf1ecd23b6cb319955151dcbe2573982f9",
+  "parents": [
+    "a2d1d85726aa2a3126e9c331a8e00a8c319c9e2b"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Sun Mar 20 10:44:44 2016 +0900"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:45 2016 -0700"
+  },
+  "message": "codecs: check OMX buffer size before use in VP8 encoder.\n\nBug: 27569635\nChange-Id: I469573f40e21dc9f4c200749d4f220e3a2d31761\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "410f9d0d9407f03dcbe4d7d48e948590d264ce02",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp",
+      "new_id": "d9895f0ad4baafcb072044848d6c1d33f080ce8f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp"
+    }
+  ]
+}

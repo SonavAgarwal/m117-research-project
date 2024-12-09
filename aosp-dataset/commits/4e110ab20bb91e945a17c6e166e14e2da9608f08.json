@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4e110ab20bb91e945a17c6e166e14e2da9608f08",
+  "tree": "956a77738388642931bda7a4ff6803390d619ccf",
+  "parents": [
+    "542bba3f35775c48aca35e959a2eb213b2697c43"
+  ],
+  "author": {
+    "name": "Fyodor Kupolov",
+    "email": "fkupolov@google.com",
+    "time": "Mon Feb 27 17:33:18 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 15:01:38 2017 -0700"
+  },
+  "message": "[DO NOT MERGE] Check bounds in offsetToPtr\n\nCheck whether specified offset belongs to mData.\nAlso added a default argument bufferSize to check the end offset.\n\nSize of the ashmem descriptor can be modified between\nashmem_get_size_region call and mmap. createFromParcel method was updated\nto check ashmem size again immediately after memory is mapped.\n\nTest: manual - using the test app from the bug\nBug: 34128677\nChange-Id: I3ecd1616a870ce20941ce9b20a1843d2b4295750\n(cherry picked from commit 45e2e95c2ffeb2d978e2cce80b729ef6ada3b8d2)\n(cherry picked from commit acede24109412a4c09e6e4e93d7b96bc9b1ad440)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8a2979a3756d506e0124f447b163dd87d6e99904",
+      "old_mode": 33188,
+      "old_path": "include/androidfw/CursorWindow.h",
+      "new_id": "2eb349f57165cfbfab6d72d723c0499a9834f476",
+      "new_mode": 33188,
+      "new_path": "include/androidfw/CursorWindow.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "166863c0d91a0c220baa7cee5bfa7ee8b1cab51c",
+      "old_mode": 33188,
+      "old_path": "libs/androidfw/CursorWindow.cpp",
+      "new_id": "5694115f61aa9d6bb0798aa6123dce5228128f1b",
+      "new_mode": 33188,
+      "new_path": "libs/androidfw/CursorWindow.cpp"
+    }
+  ]
+}

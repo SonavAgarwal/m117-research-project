@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c802c3713270b363240dc48409a66c5c35601281",
+  "tree": "521076456bd74801a069a72cc65e4b3341610ece",
+  "parents": [
+    "40e8eb8266126d7883edb12778efb901fcd4894c"
+  ],
+  "author": {
+    "name": "Ulya Trafimovich",
+    "email": "skvadrik@google.com",
+    "time": "Thu Apr 08 14:09:31 2021 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Apr 12 23:38:27 2021 +0000"
+  },
+  "message": "dex2oat_vdex_test: add missing dependency on core boot image.\n\nBug: 178055795\n\nTest: lunch armv8 \\\n  \u0026\u0026 rm out/host/linux-x86/framework/x86_64/core.art \\\n  ; m SOONG_ALLOW_MISSING_DEPENDENCIES\u003dtrue \\\n    test-art-host-gtest-dex2oat_vdex_test64\n  # failed before this CL, now passes\n\nChange-Id: I2bc5dde0916393842cd444d256022c9b1c36343b\nMerged-In: I5b104329af899ea62dc1779800264bad6b5424a4\n(cherry picked from commit c60638a44e3d0b78b704665650d58044cf0195e3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "95d0f38b6713e262b355d7a9cb44fb6f688668df",
+      "old_mode": 33188,
+      "old_path": "build/Android.gtest.mk",
+      "new_id": "1b2180e508a87a52469b0ec8c2cb941d684d52fd",
+      "new_mode": 33188,
+      "new_path": "build/Android.gtest.mk"
+    }
+  ]
+}

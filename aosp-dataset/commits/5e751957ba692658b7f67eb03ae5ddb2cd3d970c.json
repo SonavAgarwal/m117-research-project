@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5e751957ba692658b7f67eb03ae5ddb2cd3d970c",
+  "tree": "d922546ec223bf6442467c9ef9efc6fc7d5646bc",
+  "parents": [
+    "2434839bbd168469f80dd9a22f1328bc81046398"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Wed Apr 08 23:53:10 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:59 2015 -0700"
+  },
+  "message": "Fix integer underflow in ESDS processing\n\nSeveral arithmetic operations within parseESDescriptor could underflow, leading\nto an out-of-bounds read operation. Ensure that subtractions from \u0027size\u0027 do not\ncause it to wrap around.\n\nBug: 20139950\n\n(cherry picked from commit 07c0f59d6c48874982d2b5c713487612e5af465a)\n\nChange-Id: I377d21051e07ca654ea1f7037120429d3f71924a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "427bf7b5168b9bcfb892b16ad1a81c1aee5368b9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/ESDS.cpp",
+      "new_id": "8fbb57c38f6c2e41964a7e10545d2e12c763c893",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/ESDS.cpp"
+    }
+  ]
+}

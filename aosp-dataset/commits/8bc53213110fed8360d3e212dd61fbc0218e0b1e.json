@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8bc53213110fed8360d3e212dd61fbc0218e0b1e",
+  "tree": "e55571d1b5082ef1304effc784f29f27724d8b76",
+  "parents": [
+    "1a957d741ccfe580fcf03683dad15ff221a1ab15"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Oct 16 17:10:42 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:22 2018 +0000"
+  },
+  "message": "Prevent Out of bounds read in llcp_dlc\n\nTest: Nfc Enable/Disable; Android Beam; Tag reading\nBug: 116722267\nMerged-In: I9b5d1ad46ed18862dbb23b2ab2393edc3d0995e6\nChange-Id: I9b5d1ad46ed18862dbb23b2ab2393edc3d0995e6\n(cherry picked from commit e9a57b8c410469de05c14e0ebc53fa021a84a06e)\n(cherry picked from commit b0cd165a602d71ae8748021cd5ee0ef9ebc1ed5b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7f0ae4f8ba7135da15e823260553a95347b6a7aa",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_dlc.cc",
+      "new_id": "7f06e36b395ff17959f72100a3acacaf76cccea9",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_dlc.cc"
+    }
+  ]
+}

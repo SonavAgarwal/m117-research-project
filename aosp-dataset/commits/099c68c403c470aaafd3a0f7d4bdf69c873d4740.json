@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "099c68c403c470aaafd3a0f7d4bdf69c873d4740",
+  "tree": "4a61a7b6ca1a809b9a6b6ab4bb7244d4d9100f73",
+  "parents": [
+    "ff2881a7c2232ab01b17b4076b1e1c1f62624a56"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Mon Dec 16 11:30:53 2019 -0800"
+  },
+  "committer": {
+    "name": "Greg Wroblewski",
+    "email": "musashi@google.com",
+    "time": "Fri Jan 10 14:53:31 2020 -0800"
+  },
+  "message": "DO NOT MERGE Check permissions for URL_SIMINFO\n\nCheck permissions if the query is attempting to access URL_SIMINFO,\nsince it contains sensitive IDs.\n\nTest: atest android.provider.cts.TelephonyProviderTest\nBug: 140622024\nChange-Id: Ibcf4cf01a965b5c91aebf65adc98110ba3be89f6\n(cherry picked from commit caab85d9144e83165637098ba8cb3c99fcf5cae2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0053036c8f13e436c52a05fcb412f9c081aef03f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/telephony/TelephonyProvider.java",
+      "new_id": "3490200393943564be9454bbc841711948245d73",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/telephony/TelephonyProvider.java"
+    }
+  ]
+}

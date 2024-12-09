@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "785665677f471b1a6b404ed357b90318e7ec2c3f",
+  "tree": "28d586456c4190685bc3b72b60ec3d75d3926dbc",
+  "parents": [
+    "fcc33ffcbc7552399c6290b5554e2ad7bdce40c6"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Mon Jan 07 16:17:48 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:18 2019 +0000"
+  },
+  "message": "Fix heap overflow in NFA_SendRawFrame()\n\nBug: 120664978\nTest: NFC enable/disable\nChange-Id: I1b6a062fb5bf10364a20e99faf4adef13a478d22\n(cherry picked from commit e873f932bab2335edb2503dd775fa51d3ae99f01)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bec5df4466d611d0e1175e6e4ded9ede75b0e442",
+      "old_mode": 33188,
+      "old_path": "src/nfa/dm/nfa_dm_api.cc",
+      "new_id": "197174a62503344e966af2760b8dbbaab39d24be",
+      "new_mode": 33188,
+      "new_path": "src/nfa/dm/nfa_dm_api.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "758f0dac9104b46016af98304656a0268ac3e105",
+  "tree": "97a2eece075a25e7d4ddabf63b4e0590b11777b4",
+  "parents": [
+    "4c941665c7368a34b146929b31949555e680a4ee"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@linux.intel.com",
+    "time": "Fri May 02 11:33:51 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86, espfix: Fix broken header guard\n\ncommit 20b68535cd27183ebd3651ff313afb2b97dac941 upstream.\n\nHeader guard is #ifndef, not #ifdef...\n\nReported-by: Fengguang Wu \u003cfengguang.wu@intel.com\u003e\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "729051c82b02071d3955bae7691fb45076bb2371",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/espfix.h",
+      "new_id": "99efebb2f69df5fd5a9d9fdf1a37c6a15ac38dd1",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/espfix.h"
+    }
+  ]
+}

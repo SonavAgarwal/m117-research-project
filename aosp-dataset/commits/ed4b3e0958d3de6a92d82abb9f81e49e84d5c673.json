@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ed4b3e0958d3de6a92d82abb9f81e49e84d5c673",
+  "tree": "8a21236ca2813ae0da6da45c56392a0608779988",
+  "parents": [
+    "7dd48b90bd0968375cba8dffa2141cc9973329f9"
+  ],
+  "author": {
+    "name": "Vladimir Marko",
+    "email": "vmarko@google.com",
+    "time": "Fri Dec 04 15:50:30 2020 +0000"
+  },
+  "committer": {
+    "name": "Vladimir Marko",
+    "email": "vmarko@google.com",
+    "time": "Tue Dec 08 09:41:01 2020 +0000"
+  },
+  "message": "Add SafetyNet logging to JNI::NewStringUTF.\n\n(cherry picked from commit 10c45e29774d51e5b770f1b369dba90015c640a5)\n\nTest: blueline-userdebug boots.\nBug: 172655291\nMerged-In: I653db8be0c0a45302f0d1c54285c02d2d052a9f4\nChange-Id: I653db8be0c0a45302f0d1c54285c02d2d052a9f4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8e4f60fc9c574d6cb26db82accf3f0e7aa8b3e87",
+      "old_mode": 33188,
+      "old_path": "runtime/jni/jni_internal.cc",
+      "new_id": "f4ef78548e7c320074d61831749aab8f32a32d34",
+      "new_mode": 33188,
+      "new_path": "runtime/jni/jni_internal.cc"
+    }
+  ]
+}

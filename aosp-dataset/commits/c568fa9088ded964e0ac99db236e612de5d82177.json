@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c568fa9088ded964e0ac99db236e612de5d82177",
+  "tree": "adebe1fa6e5338f629c7affd64ac10fd63c38ab6",
+  "parents": [
+    "1e0bb31f6a809b49014483dc118b9d9ad31ade68"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Mon Jul 17 16:03:21 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:45:12 2017 +0000"
+  },
+  "message": "Add missing extension length check while parsing BNEP control packets\n\nBug: 63146237\nTest: External script\nChange-Id: I4e519cec1c7dffb8bd42add00bd891e0969a3d9f\n(cherry picked from commit 9ab89b7dbe5735b796799f65144efa48595d0230)\n(cherry picked from commit dc7700a43189d2a8607b69ae19a6d646f11ddf51)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f2be4110861a52309ac18fa9553b7c5a52ae00e6",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_utils.cc",
+      "new_id": "872f4f565240523e35ae94298914ce1f5b624793",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_utils.cc"
+    }
+  ]
+}

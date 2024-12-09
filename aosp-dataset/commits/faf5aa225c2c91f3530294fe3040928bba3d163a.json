@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "faf5aa225c2c91f3530294fe3040928bba3d163a",
+  "tree": "d2a15d1452734473a87889d7497e183f815943df",
+  "parents": [
+    "098e2972201b454de0f95a72636ecd9009dc32de"
+  ],
+  "author": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Thu Aug 29 18:23:37 2019 -0700"
+  },
+  "committer": {
+    "name": "Rahul Sabnis",
+    "email": "rahulsabnis@google.com",
+    "time": "Mon Sep 16 23:32:27 2019 +0000"
+  },
+  "message": "Use memcpy instead of casting to convert device_class to int\n\nBug: 140152619\nTest: atest net_test_btcoreclear\nChange-Id: Iee71ce35576e438317841d41a81fda6a87e1984a\nMerged-In: Iee71ce35576e438317841d41a81fda6a87e1984a\n(cherry picked from commit ec75f1efb6b9be4933225a4b724e7a3ef5e3d70b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d421b6dd492c8cf31162b527bb7f30c76efe1082",
+      "old_mode": 33188,
+      "old_path": "btcore/src/device_class.cc",
+      "new_id": "1630d462aaffd140af8bede44372293b733573bf",
+      "new_mode": 33188,
+      "new_path": "btcore/src/device_class.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "434f9ca4c72f70807b8f81aea932c8f2abc9b2a5",
+      "old_mode": 33188,
+      "old_path": "btcore/test/device_class_test.cc",
+      "new_id": "82a68f00d00992c6b4f03f61e8fbacafab67be70",
+      "new_mode": 33188,
+      "new_path": "btcore/test/device_class_test.cc"
+    }
+  ]
+}

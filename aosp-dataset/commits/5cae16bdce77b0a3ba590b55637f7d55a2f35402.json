@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5cae16bdce77b0a3ba590b55637f7d55a2f35402",
+  "tree": "937cc1cd378e3e3200878f673f9a39f0f816f944",
+  "parents": [
+    "a9a899d3970f41162c8e9c720bf05f3e6226a90a"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Sep 28 14:50:47 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Oct 02 11:10:22 2015 -0700"
+  },
+  "message": "MPEG4Extractor: ensure buffer size is not less than 8 for LastCommentData.\n\nBug: 24346430\nChange-Id: I897a724e968841d9160f819d06c0ce22f6d743c4\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "38ae6f380671354923dcd47f36ee44f83a5a49ad",
+      "old_mode": 33261,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "4e12c07f9933c30834b4e6d621054fddae70fea1",
+      "new_mode": 33261,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,3441 @@
+)]}'
+{
+  "commit": "b730f8d3c15da4ac439f1184bf17a13021963ea9",
+  "tree": "14ed02767a3ab45f35cea20ad45d23bdd93e00af",
+  "parents": [
+    "accc7f33b72e5332894b00bbfed5dbc94c309afb"
+  ],
+  "author": {
+    "name": "akirilov",
+    "email": "akirilov@google.com",
+    "time": "Fri Jun 01 13:46:04 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 10 20:24:58 2018 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE: Update libxml2 to 2.9.8\n\nMerge to pi-dev and restore Android.mk\n\nBug: 79662501\nBug: 36809766\nBug: 36810305\nBug: 62151041\n\nTest: manually verify functionality for regression\n\nChange-Id: Ife351c91c932eb92992656f8ea5c08724a220306\n(cherry picked from commit 4e91cfdbb1a8624e5cd5a850d6e17da11d1e34a8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "84cf80fc1f7145cab974c2bf43254ab2b25cec24",
+      "old_mode": 33188,
+      "old_path": ".gitignore",
+      "new_id": "680a7e11263ebece3068a47f7a38fa8e82ef002c",
+      "new_mode": 33188,
+      "new_path": ".gitignore"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "da4814333195ffe459fc32ce64662c1794560ff1",
+      "new_mode": 33188,
+      "new_path": ".travis.yml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6f7a9885ea2124cd1cba372ef8eee13e8bdea7d2",
+      "new_mode": 33188,
+      "new_path": "CONTRIBUTING"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef6cb8e427f7e8b89289489a20e8872d3ee92894",
+      "old_mode": 33188,
+      "old_path": "ChangeLog",
+      "new_id": "896fbbb6538c4d1ef943507253e809cfbc384875",
+      "new_mode": 33188,
+      "new_path": "ChangeLog"
+    },
+    {
+      "type": "delete",
+      "old_id": "5d2829479b41f24ffd92cc07a93dec63803f318c",
+      "old_mode": 33188,
+      "old_path": "HACKING",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f988b069bf59d77c0f4fc32482149954cc5a90b",
+      "old_mode": 33188,
+      "old_path": "Makefile.am",
+      "new_id": "9c630be4ba6511c151d6559d3ad7373cc026cbbe",
+      "new_mode": 33188,
+      "new_path": "Makefile.am"
+    },
+    {
+      "type": "modify",
+      "old_id": "a4bd84167bbf2d0d43a86ec09b895c40df4e14ee",
+      "old_mode": 33188,
+      "old_path": "README.cvs-commits",
+      "new_id": "9c7bdd0f7c4bc8927e76abda22b0621876bf6fd2",
+      "new_mode": 33188,
+      "new_path": "README.cvs-commits"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6b6669ae4a4963a6ef0a3857f56cd8cf14934213",
+      "new_mode": 33188,
+      "new_path": "README.zOS"
+    },
+    {
+      "type": "modify",
+      "old_id": "5cbb700af54d55c2b664fa8aebec14e64ba727f2",
+      "old_mode": 33188,
+      "old_path": "SAX2.c",
+      "new_id": "0f261b7b3623bbf7ffd1437a0214c8f1221d95df",
+      "new_mode": 33188,
+      "new_path": "SAX2.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f314465ed9049bac978c6daac86aa97ec50d68e4",
+      "old_mode": 33188,
+      "old_path": "bakefile/libxml2.bkl",
+      "new_id": "dd6ce2c2ecbcc40e191aea6ffb26f64f76e7e432",
+      "new_mode": 33188,
+      "new_path": "bakefile/libxml2.bkl"
+    },
+    {
+      "type": "modify",
+      "old_id": "07922ff693e1eaa50b6aa920303668dc9494233b",
+      "old_mode": 33188,
+      "old_path": "buf.c",
+      "new_id": "21cb9d8047758a3d9cb56530b462b20a4ef1e1ef",
+      "new_mode": 33188,
+      "new_path": "buf.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca77f922a0f3691fce76c0e2eb704d6d5e02ebde",
+      "old_mode": 33188,
+      "old_path": "c14n.c",
+      "new_id": "c04ce666348ff3722c4962baa3e06a22a26c6996",
+      "new_mode": 33188,
+      "new_path": "c14n.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6dfdfbb8ca6684c0723da4e04bf73ab50daa9f6b",
+      "old_mode": 33188,
+      "old_path": "catalog.c",
+      "new_id": "f814121ce82aca5d25a83fefd14f825c6bed65c5",
+      "new_mode": 33188,
+      "new_path": "catalog.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "911984e1511c5638ca614cb85bab875dc854c652",
+      "old_mode": 33188,
+      "old_path": "configure.ac",
+      "new_id": "370e2dee72e591a65f2fdda2bf507e4b8731594e",
+      "new_mode": 33188,
+      "new_path": "configure.ac"
+    },
+    {
+      "type": "modify",
+      "old_id": "a1b550ac534a0bd0e76c5819b80bb9e9dde4f3f6",
+      "old_mode": 33188,
+      "old_path": "debugXML.c",
+      "new_id": "c98db0bcc77e7b893c11fb2bac95ed3ce2fb1875",
+      "new_mode": 33188,
+      "new_path": "debugXML.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c0585fe239633928036080cbede9ff3352eb64ab",
+      "old_mode": 33188,
+      "old_path": "dict.c",
+      "new_id": "0ef3718da282f92d8115e70e875437db244663d7",
+      "new_mode": 33188,
+      "new_path": "dict.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c90e042c01693c36063a4b0d619e887114938c40",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk0.html",
+      "new_id": "f7783272d55978e70be552fbf1ba739cc3603ac6",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk0.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "de376f70add5717b70403ef1146c3968fd174e61",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk12.html",
+      "new_id": "d7404f8fbbcff5ae3e9fcc688d455ed03ef5668c",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk12.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "dba59525473cc5cf845ac89c1ca2aa2e31564fd8",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk13.html",
+      "new_id": "5889ebf7b4ffbd62282b5e3317cdd42108705e53",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk13.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "0e33ddbec80f55c1156236ca0e981a716436cd6b",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk14.html",
+      "new_id": "835465aa9dcbd108c32bfd7941b73364fe22b54b",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk14.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "92d38453ce30622bbdfac6eee6cd92878fbf844c",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk16.html",
+      "new_id": "e7e236d5860c32326060dafd17e931936312a1de",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk16.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "070f8ce9807b125a8466a0a1f9ca80028b2a593e",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk17.html",
+      "new_id": "e6647e2e630c4dbc94d0124246fa6726ecb0942b",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk17.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "90249a15e592bb82b3dfc73d544429b91049e808",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk18.html",
+      "new_id": "91566f7c31ca0dfee0454b435b4d45cb5a98bab3",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk18.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "1d10f932abb1b11f8cc91916b8ee451cb97a46cc",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk2.html",
+      "new_id": "bb6c1415a0ac97a056fd94fab7c56746a7413b38",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk2.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "03170660eb19f4570fdf55f8ec16b12773fd403b",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk20.html",
+      "new_id": "3559b08ba60a7e81ed8e120d2f00cd76f753633a",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk20.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "c655198fb48ff98011d2bea7ed77019997383880",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk21.html",
+      "new_id": "85fa55e0436a73910206f6e04a4c726f66c23106",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk21.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f20018582f2c68502893b5ecf799f1c17809773",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk22.html",
+      "new_id": "ec9547bb6b8171b7a860338b12ca3bf327d84afa",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk22.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "16c7c2173073742393684ba0a6bc37f3ee0ba4e8",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk23.html",
+      "new_id": "a18be6e4b180f80d855706d8882de96de328ccad",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk23.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "e81f34dad5578a9daa563be0a4468a916e36e716",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk24.html",
+      "new_id": "64aac67f2211363007d0bd08caa866fb1b449950",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk24.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "dec65ba56ce547f3641dfb774647ca855b6200b9",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk25.html",
+      "new_id": "71ba3bdbe7004eeaa869da5f7f5dba266a729f56",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk25.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "c5993f9fa01762c5b59318b2d75053ac98438296",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk28.html",
+      "new_id": "c3f49b20c36e586810d2b4d5992028f4bfc6484f",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk28.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "d26883bb54a29bdb2f0b0ab74baf0b8d7cf70071",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk4.html",
+      "new_id": "6fe8261a9a7fbd20a8f9ea3723cf9c3e0cecb181",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk4.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "da60d1aec1c6bd7c0e2de3ca45957ce7fa05037e",
+      "old_mode": 33188,
+      "old_path": "doc/APIchunk5.html",
+      "new_id": "98da499df1caa25a40971bb152751c03cd865036",
+      "new_mode": 33188,
+      "new_path": "doc/APIchunk5.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "2252a6b0e6953643566c8b593b2d7695d11adbac",
+      "old_mode": 33188,
+      "old_path": "doc/APIfiles.html",
+      "new_id": "8c29c067785b81fb18988d75e4c27a1f4d5e7ca1",
+      "new_mode": 33188,
+      "new_path": "doc/APIfiles.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9ac249b36b498efaec039356fb5f47b6b7d3327",
+      "old_mode": 33188,
+      "old_path": "doc/APIfunctions.html",
+      "new_id": "c1d172dcc97ffa38187e6631cae3b85c8517a893",
+      "new_mode": 33188,
+      "new_path": "doc/APIfunctions.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "cdde358dd10900dede8899a710f96688b06ed611",
+      "old_mode": 33188,
+      "old_path": "doc/APIsymbols.html",
+      "new_id": "a77be6d43568028c974da3ba942c7b1d0a8062e6",
+      "new_mode": 33188,
+      "new_path": "doc/APIsymbols.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "0cc0a50f93e05be4a1d68be3652264eb98887d8c",
+      "old_mode": 33188,
+      "old_path": "doc/Makefile.am",
+      "new_id": "6bda566575fd2d25e2d909566aede9bd76614b85",
+      "new_mode": 33188,
+      "new_path": "doc/Makefile.am"
+    },
+    {
+      "type": "modify",
+      "old_id": "55ff296ac7d21e1abf6d391fcad324d70de296b9",
+      "old_mode": 33188,
+      "old_path": "doc/bugs.html",
+      "new_id": "52970d3b584fff6db54d31c3096617d7b6505747",
+      "new_mode": 33188,
+      "new_path": "doc/bugs.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "6d8a42a5d7d5e780d4a74226176ae3cb763163be",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-HTMLparser.html",
+      "new_id": "3af5a9c92cb049c2ec61a17e520ca2ce3b911246",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-HTMLparser.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "3776c5bda4869192fe6f8fc2073cfd68b905f1f2",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-dict.html",
+      "new_id": "6bff563b9eed89304165b71db31f9cb90d77ad08",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-dict.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "261e50a6a29d2c95550e33e1534d92b14f51e94b",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-encoding.html",
+      "new_id": "b11fbfbb3a6edabaae7c792eaad46563df0305ce",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-encoding.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "c5a9911b561f52448cc25d6aba284489aafb084e",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-hash.html",
+      "new_id": "e2dd7abdcf58939e7a11ef828a013aff63df2b4a",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-hash.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a4fa734c5613468cbbda2400580c43fdf8fb22d",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-list.html",
+      "new_id": "0ae2f11b4fb3dcbab34cef9789db7e7f95439c57",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-list.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f9cbc949ce58daa5243fad567201747e9e927ec",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-schemasInternals.html",
+      "new_id": "ab91754968ffb9dab3502c3d611a2ef17046c492",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-schemasInternals.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac85d60ec7dff19f6a8035f220c0e9a2c2b00058",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-tree.html",
+      "new_id": "44e1e03a543b5f18cbd1e9f16538315fec09d26a",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-tree.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "13bab8ac358adfe0eea8c1292f1c08ff1ed001ba",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xmlerror.html",
+      "new_id": "6a936496063d48195f0c3ce516896b738b8d6662",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xmlerror.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "3814f431d200f572115b2d065b8273d6e6ce0e6f",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xmlreader.html",
+      "new_id": "2051f701438928621615592e252ddf63d15b5807",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xmlreader.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca90ed4424c91640333b3b04433045aa00432744",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xmlstring.html",
+      "new_id": "95a845f1fdab147daf9063f285edcb6f1ecfbfc3",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xmlstring.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "640c715ac52846d5c08a2e990c6d049297de771c",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xpath.html",
+      "new_id": "edf76439877a87c47e30fb16fc1fabbc3dbbc8fb",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xpath.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "05973439250d7fb77e1dd678916b9b8f2abad66e",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xpathInternals.html",
+      "new_id": "17d27cd62d5fcabbe7bafafb6fcfa919f17cda6d",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xpathInternals.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "807eed76be89b6216bfe68f343a0465184179e5c",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2-xpointer.html",
+      "new_id": "4d7c3370356cae364452390826f1870b4e8e5a2e",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2-xpointer.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "fbd3ad4acba517b72b1a95e5efedce3a0015f064",
+      "old_mode": 33188,
+      "old_path": "doc/devhelp/libxml2.devhelp",
+      "new_id": "575b222a6cdd7c57b22c6034d5032e5c43ce45d8",
+      "new_mode": 33188,
+      "new_path": "doc/devhelp/libxml2.devhelp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9b1a9bc1ca234dec33aa4b166b4e211276d0da74",
+      "old_mode": 33188,
+      "old_path": "doc/elfgcchack.xsl",
+      "new_id": "8dd5c6a7971e422a99bad9df7a231c7a0f36044d",
+      "new_mode": 33188,
+      "new_path": "doc/elfgcchack.xsl"
+    },
+    {
+      "type": "modify",
+      "old_id": "57af9c2ef015e0bbdeb842239f06b7d4e3a13844",
+      "old_mode": 33188,
+      "old_path": "doc/examples/Makefile.am",
+      "new_id": "ef59fcef7abd4cda05fc4fadb20aefdd3957fdf4",
+      "new_mode": 33188,
+      "new_path": "doc/examples/Makefile.am"
+    },
+    {
+      "type": "modify",
+      "old_id": "28929ccb32ac5801f22369b176f14a9853e4599d",
+      "old_mode": 33188,
+      "old_path": "doc/examples/examples.xml",
+      "new_id": "d38247b40ad71adacb1f0f700947b80dc2cf2f0f",
+      "new_mode": 33188,
+      "new_path": "doc/examples/examples.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "7e0efaa2b1bfe808e20c639b7e5e9e7fae49c03e",
+      "old_mode": 33261,
+      "old_path": "doc/examples/index.py",
+      "new_id": "ac44ec51e5168c452986745807fc35feda2ec88b",
+      "new_mode": 33261,
+      "new_path": "doc/examples/index.py"
+    },
+    {
+      "type": "modify",
+      "old_id": "f662f76732c6822d537f41e7e7f24b2f55437e8c",
+      "old_mode": 33188,
+      "old_path": "doc/examples/testWriter.c",
+      "new_id": "82e8d3abb7f7f40bdc635fb7e589ecef7a61670d",
+      "new_mode": 33188,
+      "new_path": "doc/examples/testWriter.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "1cd1abe56b96b6ff146705ba62f6d839859af3d6",
+      "old_mode": 33188,
+      "old_path": "doc/examples/tree2.c",
+      "new_id": "6548e296c88d339594aaa86a7bcef2eaeca2fb9b",
+      "new_mode": 33188,
+      "new_path": "doc/examples/tree2.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f5f77afdc3421a6a8f4d2966dccb98ae7e1e5f71",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-HTMLparser.html",
+      "new_id": "7d9d29908e449ce0ee0359367b0ed82dd2badb35",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-HTMLparser.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "74e243b9b070c7dc6c893a24e450fa6601a46393",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-dict.html",
+      "new_id": "0854d29fee86e0af354afe9974b55d91bd656805",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-dict.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "70f56f811d7529f889556d805bfadf9427fddffa",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-encoding.html",
+      "new_id": "0ebfb149fd7b148b566c71bfa2fe90549c5fdbfa",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-encoding.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "922e3f19b909ed0992b598a3c816a4b0f88fa757",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-hash.html",
+      "new_id": "021adb8f221c3ec32c3d80a26a8ec8fece02af12",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-hash.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "33e60d1d75f034a6f7d5be740f682bafa414d595",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-list.html",
+      "new_id": "1738afc77108520fff7f1309589c9197460e97d5",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-list.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "db4a5a15fe8e4315c89167940c1034ef663e30c5",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-schemasInternals.html",
+      "new_id": "954f0d2eeeeb76d79f8b170e741920ded924a01a",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-schemasInternals.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "d95872dcfcdacb32ba89d47b9056641a1b6940ec",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-tree.html",
+      "new_id": "09e7bdcda769acc56d4e5293b119d56990d5feea",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-tree.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "5c3a1040fd2d5f5fb13fea33a749dc7821c022a2",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xmlerror.html",
+      "new_id": "2550ac0d267dcaed677abce0e1011901965b3bc9",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xmlerror.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7e00fbaa95dc16754766d620b4c8449f6da35b5",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xmlreader.html",
+      "new_id": "b9bd032ad8c7cb2664fab6ab7d7f2b85dc14d3ea",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xmlreader.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "89e98099edc136fb088ff8ffe15c96c41eb0b367",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xmlstring.html",
+      "new_id": "dc8248c4b76dcc4a27bf3b1171c846dc53842d83",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xmlstring.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "e47e600bb1627a31e0b5a23d569dead04eac77c5",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xpath.html",
+      "new_id": "482a983f226879af759a3eabbcace6003c5f22f2",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xpath.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "f12d808aaf3149149020b78f2ca3d91d2187c2ab",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xpathInternals.html",
+      "new_id": "49546aba693f6062513e99e011de2c0f2bce65f7",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xpathInternals.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "45526de276d39ffe53222548efdda8f1ce0f809a",
+      "old_mode": 33188,
+      "old_path": "doc/html/libxml-xpointer.html",
+      "new_id": "66eb80bd20698563e9dbed5fdb61bf0092a3af0b",
+      "new_mode": 33188,
+      "new_path": "doc/html/libxml-xpointer.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "a0a01178119926dec5af51ef85e4f04897609e67",
+      "old_mode": 33188,
+      "old_path": "doc/libxml2-api.xml",
+      "new_id": "9cf6c72ec6c44fea9f71a6789818edfae95630cd",
+      "new_mode": 33188,
+      "new_path": "doc/libxml2-api.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "6dce37f0ebf16ce77555c871ee11e761c5f13f3e",
+      "old_mode": 33188,
+      "old_path": "doc/libxml2-refs.xml",
+      "new_id": "3fe0876fd55ad1ac0e222dc8be8cbd0fd831288d",
+      "new_mode": 33188,
+      "new_path": "doc/libxml2-refs.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d4b8fe96fca652fb28d34aad7005549318a2d14",
+      "old_mode": 33188,
+      "old_path": "doc/libxml2.xsa",
+      "new_id": "33f38487a91b757199950de0324e9efc841fae38",
+      "new_mode": 33188,
+      "new_path": "doc/libxml2.xsa"
+    },
+    {
+      "type": "modify",
+      "old_id": "0c692c8bea90aaccf45f6c7da3c8b8a95c1d7cee",
+      "old_mode": 33188,
+      "old_path": "doc/news.html",
+      "new_id": "65839ad4d8a4753dd90737e34c2aad155539c8cb",
+      "new_mode": 33188,
+      "new_path": "doc/news.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "ec275e7749b3c316949aa13f7cb4a2baf21e1d38",
+      "old_mode": 33188,
+      "old_path": "doc/symbols.xml",
+      "new_id": "99aea7102bff88335e51fa9433c88e85b494e17a",
+      "new_mode": 33188,
+      "new_path": "doc/symbols.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "d035934b47909ed2aceca3b9a1d95ffb823104f6",
+      "old_mode": 33188,
+      "old_path": "doc/xml.html",
+      "new_id": "4059fb76ebdd2475de6665e040d36e2df252f358",
+      "new_mode": 33188,
+      "new_path": "doc/xml.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "b4a6b2216c39270516453a36695cead6a913a013",
+      "old_mode": 33188,
+      "old_path": "doc/xmlcatalog.1",
+      "new_id": "2fbfaf2b04146c61a69e0b8e689735beff87754e",
+      "new_mode": 33188,
+      "new_path": "doc/xmlcatalog.1"
+    },
+    {
+      "type": "modify",
+      "old_id": "d7b02bad1d59a44880b4d75396a2c554a89da75e",
+      "old_mode": 33188,
+      "old_path": "doc/xmlcatalog_man.html",
+      "new_id": "f72cd474d671b6dd6cfa874f243999d023b11520",
+      "new_mode": 33188,
+      "new_path": "doc/xmlcatalog_man.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "049ed8fe96b6215bae768e1b53e04dad93028ee1",
+      "old_mode": 33188,
+      "old_path": "doc/xmlcatalog_man.xml",
+      "new_id": "b3ce8b2a9d7b8545ad9a306b081900713715fb06",
+      "new_mode": 33188,
+      "new_path": "doc/xmlcatalog_man.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "0a55877c07d4b439f0be2b0d51aafed17c23df2f",
+      "old_mode": 33188,
+      "old_path": "doc/xmllint.html",
+      "new_id": "5fc52c5c2c3efa20e1204985793953a083f70a2d",
+      "new_mode": 33188,
+      "new_path": "doc/xmllint.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "8c52884a37aa780001343d03a079ba2a807dad45",
+      "old_mode": 33188,
+      "old_path": "elfgcchack.h",
+      "new_id": "5ac93bfb9f435d43bd71a59e8d0991d67c5aaad3",
+      "new_mode": 33188,
+      "new_path": "elfgcchack.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e49c7f898fcdf1d1625a8c4c95e9e01af80b8ea0",
+      "old_mode": 33188,
+      "old_path": "encoding.c",
+      "new_id": "de7b511a296a82a165a8ae8e7391b207b879ae46",
+      "new_mode": 33188,
+      "new_path": "encoding.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "64808ff64d6a83ae95739ac9f42d6979e30b5260",
+      "old_mode": 33188,
+      "old_path": "entities.c",
+      "new_id": "43549bc5def9c0530f7172447a34210db4953de3",
+      "new_mode": 33188,
+      "new_path": "entities.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9606f1357e0ed50529268060533f36e32a410ed8",
+      "old_mode": 33188,
+      "old_path": "error.c",
+      "new_id": "50e9e6f8603e1fa3bd21a6359f93fe445e8ee9fc",
+      "new_mode": 33188,
+      "new_path": "error.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "488ee6e8c49edd648cba7602e0d6c75fe5451d62",
+      "old_mode": 33188,
+      "old_path": "example/Makefile.am",
+      "new_id": "49bca390116a7cc0b9b61f8c30b024b3dba7af0e",
+      "new_mode": 33188,
+      "new_path": "example/Makefile.am"
+    },
+    {
+      "type": "modify",
+      "old_id": "d3f6d57d66e0788be5aac9612031c4d5c36b0aa2",
+      "old_mode": 33188,
+      "old_path": "example/gjobread.c",
+      "new_id": "a435ca4f6f80375fdec3319a1ecd0470717dc735",
+      "new_mode": 33188,
+      "new_path": "example/gjobread.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "56e4e9ba2abcb542814e483629c83a6fe778da39",
+      "old_mode": 33261,
+      "old_path": "genUnicode.py",
+      "new_id": "4487eeb5cac747da580ce66b9444465ee458fb8e",
+      "new_mode": 33261,
+      "new_path": "genUnicode.py"
+    },
+    {
+      "type": "modify",
+      "old_id": "f178620502050d4bc4ee4adbf8f7e7c5ae57d6b5",
+      "old_mode": 33261,
+      "old_path": "gentest.py",
+      "new_id": "e4a89325cdcbcffae997ba4c4d0e5c883d32e376",
+      "new_mode": 33261,
+      "new_path": "gentest.py"
+    },
+    {
+      "type": "modify",
+      "old_id": "e351b03ff5c0098cb42dc9ef352c01d9eaf3758a",
+      "old_mode": 33188,
+      "old_path": "globals.c",
+      "new_id": "20b430880ab7270f62712bc185607f53bd23dae7",
+      "new_mode": 33188,
+      "new_path": "globals.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f9a201722445f17a297414fc222106b0ea40f39f",
+      "old_mode": 33188,
+      "old_path": "hash.c",
+      "new_id": "b0b4abc92e47827a55539fc504bbf0652142d6b8",
+      "new_mode": 33188,
+      "new_path": "hash.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "551186cb0cc779b823bf139f962026c6f2ae53fe",
+      "old_mode": 33188,
+      "old_path": "include/libxml/HTMLparser.h",
+      "new_id": "1d4fec2f734375efe95363e268ae8618d660e2de",
+      "new_mode": 33188,
+      "new_path": "include/libxml/HTMLparser.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7967cc66a965f9381e2c569d153943fb2b7593c8",
+      "old_mode": 33188,
+      "old_path": "include/libxml/encoding.h",
+      "new_id": "c875af6fb7c2e4840b00d68a1d08879cd1dbad97",
+      "new_mode": 33188,
+      "new_path": "include/libxml/encoding.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "dc8ab7ec52c172d48ff7d0088d028a88d4fd012e",
+      "old_mode": 33188,
+      "old_path": "include/libxml/hash.h",
+      "new_id": "6352874ef262a7260ca3245f7d53672766a7885b",
+      "new_mode": 33188,
+      "new_path": "include/libxml/hash.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "0504e0cff4af1be93c80f3201f13dd826393b32f",
+      "old_mode": 33188,
+      "old_path": "include/libxml/list.h",
+      "new_id": "3211c755247b3d5d335dd8dcc82242d6ce58edef",
+      "new_mode": 33188,
+      "new_path": "include/libxml/list.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "abb4bf7142b38de61fd459f9419bdb78d840c48b",
+      "old_mode": 33188,
+      "old_path": "include/libxml/nanoftp.h",
+      "new_id": "7335faf107510fe8313df84e0ede29bbc5f2c533",
+      "new_mode": 33188,
+      "new_path": "include/libxml/nanoftp.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c7cf55255a0e4b7c9cde252406f41454d58ca22a",
+      "old_mode": 33188,
+      "old_path": "include/libxml/schemasInternals.h",
+      "new_id": "6fb71139ce9b099f7f63c419f8b2b4234b49a1e0",
+      "new_mode": 33188,
+      "new_path": "include/libxml/schemasInternals.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d31f16acbd416bebdcc484077d53aa9ad199532a",
+      "old_mode": 33188,
+      "old_path": "include/libxml/threads.h",
+      "new_id": "9969ae7cfd0d8a0751d6e5343b44f55c703268a4",
+      "new_mode": 33188,
+      "new_path": "include/libxml/threads.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2c99e3a765df9cfceb63586ff98496db74ca1393",
+      "old_mode": 33188,
+      "old_path": "include/libxml/xmlreader.h",
+      "new_id": "e8a8bcc9aab0041b5acabd8715952b078a36e674",
+      "new_mode": 33188,
+      "new_path": "include/libxml/xmlreader.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b173be9e0730959491a494850e274617ed260090",
+      "old_mode": 33188,
+      "old_path": "include/libxml/xmlversion.h.in",
+      "new_id": "d10f9754eacbaf3d6fe458fdded48df912a33ce1",
+      "new_mode": 33188,
+      "new_path": "include/libxml/xmlversion.h.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "96412411ee3f34ed004efad61a47c9f7009e1e41",
+      "old_mode": 33188,
+      "old_path": "include/libxml/xmlwin32version.h",
+      "new_id": "e0f2b389a56e51e5508d5452c6fd7b2a5a33542e",
+      "new_mode": 33188,
+      "new_path": "include/libxml/xmlwin32version.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "375f3a4e852b68a247f1dadd52df5c552d3d0b32",
+      "old_mode": 33188,
+      "old_path": "include/libxml/xmlwin32version.h.in",
+      "new_id": "2176ad11d21d96855e9aa96253e58769ec60f6e5",
+      "new_mode": 33188,
+      "new_path": "include/libxml/xmlwin32version.h.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "40cf7df8047f4e6fdacd06e677dccd1faf71fd73",
+      "old_mode": 33188,
+      "old_path": "include/win32config.h",
+      "new_id": "7fc74031400eba1d7c1bb26b5e804e3201c9800e",
+      "new_mode": 33188,
+      "new_path": "include/win32config.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6a1a993e77958971d42940e211b69daa89145b8",
+      "old_mode": 33188,
+      "old_path": "include/wsockcompat.h",
+      "new_id": "0484ee36c66ac42c4679ef9df37c7f4ca3f40df9",
+      "new_mode": 33188,
+      "new_path": "include/wsockcompat.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "88e515f5d4c0974a6c9ed079795191331dcae114",
+      "old_mode": 33188,
+      "old_path": "libxml.h",
+      "new_id": "64e30f77046f2bcd1df026a162f8d96a8ea57d86",
+      "new_mode": 33188,
+      "new_path": "libxml.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "68cd8242fbc889c942e1104511b5ea7b9f66f35a",
+      "old_mode": 33188,
+      "old_path": "libxml.m4",
+      "new_id": "2d7a6f53fb8140d0752e1ef13f3d2049fe87d2f9",
+      "new_mode": 33188,
+      "new_path": "libxml.m4"
+    },
+    {
+      "type": "modify",
+      "old_id": "9029a1806de5ac26b58ed73ef6d7f435cad9f767",
+      "old_mode": 33188,
+      "old_path": "libxml.spec.in",
+      "new_id": "d5f5ccbb7dd2805474d52854ca0d26c209521931",
+      "new_mode": 33188,
+      "new_path": "libxml.spec.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "370dcf17701c4e01e81dcd90c492142853fbe60e",
+      "old_mode": 33188,
+      "old_path": "libxml2.syms",
+      "new_id": "9889cb201174f3671c6d287fdd63776378494197",
+      "new_mode": 33188,
+      "new_path": "libxml2.syms"
+    },
+    {
+      "type": "modify",
+      "old_id": "d33d92818a52006d288751fdefbb11f2169e637f",
+      "old_mode": 33188,
+      "old_path": "list.c",
+      "new_id": "24da6b1e9b6fe172da2b430a505ce56eb149e65b",
+      "new_mode": 33188,
+      "new_path": "list.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e9a8f9d92893cddbc5726e17ae23d5a33bacf093",
+      "old_mode": 33188,
+      "old_path": "macos/src/config-mac.h",
+      "new_id": "ca6f9939410106633b5666b10a2552ed9c2fc744",
+      "new_mode": 33188,
+      "new_path": "macos/src/config-mac.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2135ab9b08bbd6b1568d2b2f9a63cd8330655eda",
+      "old_mode": 33188,
+      "old_path": "nanoftp.c",
+      "new_id": "54fa026d1bc3e7fd3869cfecd7aa563db5cec779",
+      "new_mode": 33188,
+      "new_path": "nanoftp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e109ad753c6b9bc089f336bc2a684eff6b97e63f",
+      "old_mode": 33188,
+      "old_path": "nanohttp.c",
+      "new_id": "2143718a1428e0ce5c72691b9bb97c55ccddea24",
+      "new_mode": 33188,
+      "new_path": "nanohttp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cc52e45e332b61b31831e87a984306a7174125cc",
+      "old_mode": 33188,
+      "old_path": "os400/initscript.sh",
+      "new_id": "42ce54d5b64656f89a3ca78910129376601d5128",
+      "new_mode": 33188,
+      "new_path": "os400/initscript.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d3013efe5bbcce1e37a06f370836b62e0a54892",
+      "old_mode": 33188,
+      "old_path": "os400/libxmlrpg/schemasInternals.rpgle",
+      "new_id": "765ed007f52b8bc1c4b26d684413e7856f6f3f75",
+      "new_mode": 33188,
+      "new_path": "os400/libxmlrpg/schemasInternals.rpgle"
+    },
+    {
+      "type": "modify",
+      "old_id": "9ec76b3b45eddb234b8c89bca883aa098e96e012",
+      "old_mode": 33188,
+      "old_path": "os400/libxmlrpg/xmlreader.rpgle",
+      "new_id": "f9ab207a721f261043e6d74a5e109f41d26d9be9",
+      "new_mode": 33188,
+      "new_path": "os400/libxmlrpg/xmlreader.rpgle"
+    },
+    {
+      "type": "modify",
+      "old_id": "8980fc04e1180ff9ded99faeec704e3f02179159",
+      "old_mode": 33188,
+      "old_path": "os400/libxmlrpg/xmlstring.rpgle",
+      "new_id": "59a7625ca771dea21be4420672a4a57fe534028a",
+      "new_mode": 33188,
+      "new_path": "os400/libxmlrpg/xmlstring.rpgle"
+    },
+    {
+      "type": "modify",
+      "old_id": "6094de8e1731c1e5288998c56b8cc0ae946136fa",
+      "old_mode": 33188,
+      "old_path": "os400/make-src.sh",
+      "new_id": "4c03c5655245d2153ae38b9f60b5f0d74ccdd067",
+      "new_mode": 33188,
+      "new_path": "os400/make-src.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "95a35a2801654019f3a8edcdf177c36e7630fad4",
+      "old_mode": 33188,
+      "old_path": "os400/make.sh",
+      "new_id": "860365ebaf00a5c875fec16a39ec5c2ab9cc4dbe",
+      "new_mode": 33188,
+      "new_path": "os400/make.sh"
+    },
+    {
+      "type": "modify",
+      "old_id": "3966ac81311c86706fcd5c7f2e82e94ff0f8d5d7",
+      "old_mode": 33188,
+      "old_path": "os400/os400config.h.in",
+      "new_id": "1840c17c40dafca92bde42318f983368191172b7",
+      "new_mode": 33188,
+      "new_path": "os400/os400config.h.in"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f592b79f1b6af5de7463f67e0050ac06fb6bb0a",
+      "old_mode": 33188,
+      "old_path": "os400/wrappers.c",
+      "new_id": "06f6c2698626405dd42c7cf2eef3596e164b9de5",
+      "new_mode": 33188,
+      "new_path": "os400/wrappers.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "388ec8c24743a142e109bbe73be29d4ad0018bdb",
+      "old_mode": 33188,
+      "old_path": "os400/wrappers.h",
+      "new_id": "6f3e6c9ddfbf233bdde5b13254420cf33b30ecd8",
+      "new_mode": 33188,
+      "new_path": "os400/wrappers.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "63ae15f0f6b08489614ba6bb35c33f554e5d7ec5",
+      "old_mode": 33188,
+      "old_path": "parser.c",
+      "new_id": "ca9fde2c87588b2c2373cdaf26208d1a81796325",
+      "new_mode": 33188,
+      "new_path": "parser.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bfc778ac1f778c5dab5b5fcd91dbe994e8f8d58c",
+      "old_mode": 33188,
+      "old_path": "parserInternals.c",
+      "new_id": "8c0cd57af6915653f72106a050bec23f2bf4fb62",
+      "new_mode": 33188,
+      "new_path": "parserInternals.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "33dee3aacef157a40faf6ca242e9dc6edb069beb",
+      "old_mode": 33188,
+      "old_path": "pattern.c",
+      "new_id": "0eb8d81244d2241520a6d7df4f80ce75a04af546",
+      "new_mode": 33188,
+      "new_path": "pattern.c"
+    },
+    {
+      "type": "delete",
+      "old_id": "1ac4eacaccbcf106d8e990ca62eae398193a1f57",
+      "old_mode": 33261,
+      "old_path": "python/setup.py",
+      "new_id": "0000000000000000000000000000000000000000",
+      "new_mode": 0,
+      "new_path": "/dev/null"
+    },
+    {
+      "type": "modify",
+      "old_id": "33ab61c08b12dde44b3460ceb3beebcd5d846ea3",
+      "old_mode": 33261,
+      "old_path": "python/tests/xpathleak.py",
+      "new_id": "6940b7902ec2e201431cc09a83d59cc0f163954e",
+      "new_mode": 33261,
+      "new_path": "python/tests/xpathleak.py"
+    },
+    {
+      "type": "modify",
+      "old_id": "f2376776a5d5de7d36278cc094594b3fe7589224",
+      "old_mode": 33188,
+      "old_path": "python/types.c",
+      "new_id": "124af565cf5859ee2d40057d631cbb6fd81a5633",
+      "new_mode": 33188,
+      "new_path": "python/types.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3d3e69c0e3621b6d044234695bb5f4661b214397",
+      "old_mode": 33188,
+      "old_path": "relaxng.c",
+      "new_id": "88d351df86a150a17f8aecd92e9d8ed957eb6474",
+      "new_mode": 33188,
+      "new_path": "relaxng.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "81a9f15f0d67193095109a3ad11381e49dc195c5",
+      "old_mode": 33188,
+      "old_path": "result/HTML/53867.html.sax",
+      "new_id": "1bb0d14adc36186ce4f2e5ef0cf46e83022bfc3f",
+      "new_mode": 33188,
+      "new_path": "result/HTML/53867.html.sax"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e72b0cbd33ea5ba5e35618e239de2371e591df65",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-entity.html"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0186677b5ec90dd43732ba99473e0f8e5a1b7949",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-entity.html.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3d017ab22b1a03edf887dda5f820c80ed17c46d3",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-entity.html.sax"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f99f42116ebb2ba8f73b7da5fbb4e25c2a38f4f9",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-tag.html"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c912c91fa748a788398fa9703c91a078968657a0",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-tag.html.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "fd4aa94945cef77d28fe1992a79f18e3db1fe097",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758518-tag.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6e0986a0991025ffb5519100e802912276a7bb5",
+      "old_mode": 33188,
+      "old_path": "result/HTML/758605.html.sax",
+      "new_id": "1f18426185b9f41b5afa3843fffd6707fbc0592f",
+      "new_mode": 33188,
+      "new_path": "result/HTML/758605.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c23c3329f5327e834b1e8dc1b990e37293b6b212",
+      "old_mode": 33188,
+      "old_path": "result/HTML/Down.html.sax",
+      "new_id": "ae3c0560be46eff1ea99869062159f20f44c0817",
+      "new_mode": 33188,
+      "new_path": "result/HTML/Down.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1cfb4273759c7850b271de14122bb6c49e3cab6",
+      "old_mode": 33188,
+      "old_path": "result/HTML/attrents.html.sax",
+      "new_id": "30df683925b7f5474449512bf33114a65da23665",
+      "new_mode": 33188,
+      "new_path": "result/HTML/attrents.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "5a45627b52bc80e561e643299625bd78c970fb2e",
+      "old_mode": 33188,
+      "old_path": "result/HTML/autoclose.html.sax",
+      "new_id": "c541c5eb40c65a7c07b51f0b9969ce6473800c02",
+      "new_mode": 33188,
+      "new_path": "result/HTML/autoclose.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f66a42efee5aba770ae73516e96b43d58f9d9e6",
+      "old_mode": 33188,
+      "old_path": "result/HTML/cf_128.html.sax",
+      "new_id": "3913ebd307afb63072f71d2205ca23d969323062",
+      "new_mode": 33188,
+      "new_path": "result/HTML/cf_128.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "7cbbc510543387aef6c14ecc5fcfea519e0fc7aa",
+      "old_mode": 33188,
+      "old_path": "result/HTML/doc2.htm.sax",
+      "new_id": "63c71649107a99f176bd38589051042b13f48583",
+      "new_mode": 33188,
+      "new_path": "result/HTML/doc2.htm.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "13477f1f2816bb9a5012f7e12ceefa8ca8f7662d",
+      "old_mode": 33188,
+      "old_path": "result/HTML/doc3.htm.sax",
+      "new_id": "fb33cf22f9d94ec5e2da4328585978ed76776d47",
+      "new_mode": 33188,
+      "new_path": "result/HTML/doc3.htm.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "709b60dafb07fbde80ff4544b55580879ea51b21",
+      "old_mode": 33188,
+      "old_path": "result/HTML/entities.html.sax",
+      "new_id": "3843f6d0468836e5d19d20f3b45a0d01a181ee20",
+      "new_mode": 33188,
+      "new_path": "result/HTML/entities.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6efbe530619b2b4f4f8edda7159c101858a8550",
+      "old_mode": 33188,
+      "old_path": "result/HTML/entities2.html.sax",
+      "new_id": "131b81365fac87f6aaf5e53f4a6edc08a49afcdb",
+      "new_mode": 33188,
+      "new_path": "result/HTML/entities2.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "6f7779450857f8685c0cefed6179af7744830fec",
+      "old_mode": 33188,
+      "old_path": "result/HTML/fp40.htm.sax",
+      "new_id": "a51668cdceda16934e80e68fc1036ec6e5cc9233",
+      "new_mode": 33188,
+      "new_path": "result/HTML/fp40.htm.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "292be575b6547934a18e411a6e2367effd4aa645",
+      "old_mode": 33188,
+      "old_path": "result/HTML/html5_enc.html.sax",
+      "new_id": "6c5802f5601e3d1ce4f09641a337109892d69d3c",
+      "new_mode": 33188,
+      "new_path": "result/HTML/html5_enc.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "eabcdf672cf0ad876a48e0255ea2779dc25dafe9",
+      "old_mode": 33188,
+      "old_path": "result/HTML/liclose.html.sax",
+      "new_id": "50fa77888d75b6822e42ea77eb63931f0c91364d",
+      "new_mode": 33188,
+      "new_path": "result/HTML/liclose.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "a4ab5e37a3a941de0465977856a4a9321ea75bf7",
+      "old_mode": 33188,
+      "old_path": "result/HTML/lt.html.sax",
+      "new_id": "43e1b11a2b65e6b8bc93f19cb3eeaa0e3b9a332e",
+      "new_mode": 33188,
+      "new_path": "result/HTML/lt.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "b69396f504b32161ee630da3fe5e4b96c41ba5e0",
+      "old_mode": 33188,
+      "old_path": "result/HTML/noscript.html.sax",
+      "new_id": "a4d036f798e64d3352de16eab630ba9ce56f5146",
+      "new_mode": 33188,
+      "new_path": "result/HTML/noscript.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "f8782b7dfe16332e3cb70244fbdecab78f6ac9eb",
+      "old_mode": 33188,
+      "old_path": "result/HTML/pre.html.sax",
+      "new_id": "bdf1b75b25147653e853a93d2e42bc6b2affa5f6",
+      "new_mode": 33188,
+      "new_path": "result/HTML/pre.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "665539c1cbbfc43a4433be076f9e7af573b1c635",
+      "old_mode": 33188,
+      "old_path": "result/HTML/python.html.sax",
+      "new_id": "ec300d359535849651b02676b4ffe7fe9f392ea5",
+      "new_mode": 33188,
+      "new_path": "result/HTML/python.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c8ee3ac168dbdd791a55756703a8736896a28245",
+      "old_mode": 33188,
+      "old_path": "result/HTML/reg1.html.sax",
+      "new_id": "758fd4f53ee032b50233439f0a485c48cd91ce83",
+      "new_mode": 33188,
+      "new_path": "result/HTML/reg1.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "f85691e42c2ab5fd6805fe86c01856f58888e772",
+      "old_mode": 33188,
+      "old_path": "result/HTML/reg2.html.sax",
+      "new_id": "c9fe5cb94aec2edc96219948779eef47cf3a23e3",
+      "new_mode": 33188,
+      "new_path": "result/HTML/reg2.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "ec0f03965e064e9139a5e6368fd655813276a428",
+      "old_mode": 33188,
+      "old_path": "result/HTML/reg3.html.sax",
+      "new_id": "a2ea57e553c676ef1b7d7a2be1b984c08b3b3c13",
+      "new_mode": 33188,
+      "new_path": "result/HTML/reg3.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "4c5147cdde8d9ce47afebc9fd07589ebfbd6ae59",
+      "old_mode": 33188,
+      "old_path": "result/HTML/reg4.html.sax",
+      "new_id": "3ed6c9d04664aa952371b332a24e97c3efa3e681",
+      "new_mode": 33188,
+      "new_path": "result/HTML/reg4.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "2dbf35c14dcea61f60e32c04b9da22c88d02850f",
+      "old_mode": 33188,
+      "old_path": "result/HTML/repeat.html.sax",
+      "new_id": "50b3a76242081295b0796fe3ea9cdba7941c5296",
+      "new_mode": 33188,
+      "new_path": "result/HTML/repeat.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "b259f7f7cdccbb3fe1f0c311689a8a4721fdeb69",
+      "old_mode": 33188,
+      "old_path": "result/HTML/script.html.sax",
+      "new_id": "5925eccbcb58736308437b0edfe8432ee6066eda",
+      "new_mode": 33188,
+      "new_path": "result/HTML/script.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "19719917e999eb6d527b6d77a7f1d3c190b954e0",
+      "old_mode": 33188,
+      "old_path": "result/HTML/script2.html.sax",
+      "new_id": "405549d11f79752e5434e57998d7207bf5a820cc",
+      "new_mode": 33188,
+      "new_path": "result/HTML/script2.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "78bb090a76388a5e05732caa1d7e17e797bb5581",
+      "old_mode": 33188,
+      "old_path": "result/HTML/test2.html.sax",
+      "new_id": "fd328dd69a4e41f5e6ebc56ea5f804d96135a3e6",
+      "new_mode": 33188,
+      "new_path": "result/HTML/test2.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "c9f66384f947246e0927dd48fef4cd678d370f46",
+      "old_mode": 33188,
+      "old_path": "result/HTML/test3.html.sax",
+      "new_id": "b75b2119018d63b648a4cd08fe7bac3b2da94641",
+      "new_mode": 33188,
+      "new_path": "result/HTML/test3.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "06cdb15d1f543a09abaf42676aa110f723d31b5b",
+      "old_mode": 33188,
+      "old_path": "result/HTML/utf8bug.html.sax",
+      "new_id": "e148358380dafac08db99c2dbb01bf3a30a6e663",
+      "new_mode": 33188,
+      "new_path": "result/HTML/utf8bug.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "3860c76fe376682e1c769b47ab640453d17bf9a1",
+      "old_mode": 33188,
+      "old_path": "result/HTML/wired.html.sax",
+      "new_id": "d5b1629760ef0b57b125fbdc3a881b8fecd276cb",
+      "new_mode": 33188,
+      "new_path": "result/HTML/wired.html.sax"
+    },
+    {
+      "type": "modify",
+      "old_id": "e04346fa63517d2768b517156eab513a30638f94",
+      "old_mode": 33188,
+      "old_path": "result/XPath/expr/base",
+      "new_id": "57c93cf85030ac5a03a3e1f520dd5f3316f6eb75",
+      "new_mode": 33188,
+      "new_path": "result/XPath/expr/base"
+    },
+    {
+      "type": "modify",
+      "old_id": "b6255ce0a68cf050b9c1368781db3911ccd2d060",
+      "old_mode": 33188,
+      "old_path": "result/XPath/expr/floats",
+      "new_id": "157bd767be9e91cf0fa390a2ed6bfd6507ee92b7",
+      "new_mode": 33188,
+      "new_path": "result/XPath/expr/floats"
+    },
+    {
+      "type": "modify",
+      "old_id": "10cc27ef3382e488ca539b30d010781b5fe9d0b6",
+      "old_mode": 33188,
+      "old_path": "result/XPath/expr/functions",
+      "new_id": "e09eb4a4bf2ca830c3edebb5c33b1242c8dc528c",
+      "new_mode": 33188,
+      "new_path": "result/XPath/expr/functions"
+    },
+    {
+      "type": "modify",
+      "old_id": "fad7048fca78e7b45f3dc82df9a09d416f8993e0",
+      "old_mode": 33188,
+      "old_path": "result/XPath/expr/strings",
+      "new_id": "1ae5cc4090d6a8cac7b99606f65702ee90ff7543",
+      "new_mode": 33188,
+      "new_path": "result/XPath/expr/strings"
+    },
+    {
+      "type": "modify",
+      "old_id": "e023bf01c1d30c926fd2a112cbca25d851977792",
+      "old_mode": 33188,
+      "old_path": "result/XPath/tests/chaptersbase",
+      "new_id": "fd021d8a00a15a2a7024b977f58541716cbe1c3d",
+      "new_mode": 33188,
+      "new_path": "result/XPath/tests/chaptersbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "8f0dd0e3b9eee0f93b75c25032cb36f868400eb7",
+      "old_mode": 33188,
+      "old_path": "result/XPath/tests/nssimple",
+      "new_id": "cd09a177e2910feab1854a3299d8837b10bc161d",
+      "new_mode": 33188,
+      "new_path": "result/XPath/tests/nssimple"
+    },
+    {
+      "type": "modify",
+      "old_id": "3c32d17ebe4a287d4079de1dec3a63a22d18244d",
+      "old_mode": 33188,
+      "old_path": "result/XPath/tests/simplebase",
+      "new_id": "6d4b347e60810dcb72de36f4d35d8ea96f6a3b71",
+      "new_mode": 33188,
+      "new_path": "result/XPath/tests/simplebase"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e6035cae79f0e0fdac37776ce1c7eb66d44d0fc9",
+      "new_mode": 33188,
+      "new_path": "result/XPath/tests/strbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b9e92d66d97cd22c4abe17b978d8b44bbf861fe",
+      "old_mode": 33188,
+      "old_path": "result/XPath/xptr/vidbase",
+      "new_id": "f19193e70edb7bfd5150aba5c01ad6890187aedf",
+      "new_mode": 33188,
+      "new_path": "result/XPath/xptr/vidbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "c03e35bf76a39dd93916e87681445d37c7c0f31a",
+      "old_mode": 33188,
+      "old_path": "result/errors/754946.xml.err",
+      "new_id": "be7778176ff2e97db17acbc67316b5457b1ce82b",
+      "new_mode": 33188,
+      "new_path": "result/errors/754946.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "3b748cc78b7bbbd31ce93d43d1583b3a355e0306",
+      "old_mode": 33188,
+      "old_path": "result/errors/754946.xml.str",
+      "new_id": "49395b61a7479cf0567461ea5f3b01632861b4e4",
+      "new_mode": 33188,
+      "new_path": "result/errors/754946.xml.str"
+    },
+    {
+      "type": "modify",
+      "old_id": "e08d9bf81cfd08223611d0fa95afb36b389b2b05",
+      "old_mode": 33188,
+      "old_path": "result/errors/759398.xml.err",
+      "new_id": "f6036a3b50a5f70910001bb6c349ad540d16cee2",
+      "new_mode": 33188,
+      "new_path": "result/errors/759398.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8773d8adc69f390b96eefe0bfe488a8e6918f7e",
+      "old_mode": 33188,
+      "old_path": "result/errors/759573-2.xml.err",
+      "new_id": "86d64209b506bbdef1b5fbc38aa862db3170dcd7",
+      "new_mode": 33188,
+      "new_path": "result/errors/759573-2.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "2c21e9acafb66820f4b0b30f546dab5c44683368",
+      "old_mode": 33188,
+      "old_path": "result/errors/759573.xml.err",
+      "new_id": "554039f65b917f0b4c1ef2bd4dc07103d455adab",
+      "new_mode": 33188,
+      "new_path": "result/errors/759573.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "result/errors/759579.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "288026e69aae8f4ec2745d020ea9965435104edd",
+      "new_mode": 33188,
+      "new_path": "result/errors/759579.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "09408f5205ac27af5dbb283830ba34543c35bc38",
+      "new_mode": 33188,
+      "new_path": "result/errors/759579.xml.str"
+    },
+    {
+      "type": "modify",
+      "old_id": "4f08538908807c4221c3a865609a413cc26d3b92",
+      "old_mode": 33188,
+      "old_path": "result/errors/attr1.xml.err",
+      "new_id": "c4c4fc84d9d731feb9c9a0ac5b9f0889c969d356",
+      "new_mode": 33188,
+      "new_path": "result/errors/attr1.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "c8a9c7d4478d4fd3730606dddded6f4fcb69fb53",
+      "old_mode": 33188,
+      "old_path": "result/errors/attr2.xml.err",
+      "new_id": "77e342e330e5813e346b1d0eabe1704ecd95a5ed",
+      "new_mode": 33188,
+      "new_path": "result/errors/attr2.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "a6649a12d4450e20a0e3b45fa9d6aa6c1a675502",
+      "old_mode": 33188,
+      "old_path": "result/errors/name2.xml.err",
+      "new_id": "8acef792455b3b1b5ead5b48ce8841f5d4177c12",
+      "new_mode": 33188,
+      "new_path": "result/errors/name2.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "daee0909cb4c99d0b01355c4460fa8bde02a62bf",
+      "old_mode": 33188,
+      "old_path": "result/errors/name2.xml.str",
+      "new_id": "90f8c08efbbf4cd4c86762ed108bdeea66be9957",
+      "new_mode": 33188,
+      "new_path": "result/errors/name2.xml.str"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "result/errors10/781205.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3ddc2038a8905f15a494e4ad8a6a1ae444cf11cc",
+      "new_mode": 33188,
+      "new_path": "result/errors10/781205.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "result/errors10/781361.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "655f41a298940a1d582552242281b1ca8d9f9198",
+      "new_mode": 33188,
+      "new_path": "result/errors10/781361.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "031a967caed3a62240f5825b35f4263c4a3b81ea",
+      "new_mode": 33188,
+      "new_path": "result/icu_parse_test.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "54cd5f0daed523addf79738d267db643b240d096",
+      "new_mode": 33188,
+      "new_path": "result/icu_parse_test.xml.rde"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "54cd5f0daed523addf79738d267db643b240d096",
+      "new_mode": 33188,
+      "new_path": "result/icu_parse_test.xml.rdr"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "91e11d53d0e0ed2a0b1cf75f52d9781ef77c31cc",
+      "new_mode": 33188,
+      "new_path": "result/icu_parse_test.xml.sax"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "eb0d6c6c989522db281ea8580b9ac4c9cd66cc36",
+      "new_mode": 33188,
+      "new_path": "result/icu_parse_test.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "76ba131a697b08f2c29bbcf22313d2698ce73419",
+      "new_mode": 33188,
+      "new_path": "result/noent/att1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "cc8b58e8792ecd8c7e1a76fa77c53fe0d6e6c282",
+      "new_mode": 33188,
+      "new_path": "result/noent/att10.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "518e231d0b8fa0e1e31cf7979d7fc2a480f566bd",
+      "new_mode": 33188,
+      "new_path": "result/noent/att11.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "84aebcb4ac581fb77a6a04c8f3e5be79c4017b63",
+      "new_mode": 33188,
+      "new_path": "result/noent/att2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8e7ca862d733611ebf227518911ad1a4af4c2f35",
+      "new_mode": 33188,
+      "new_path": "result/noent/att3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "553148c591daa28963eb8b776cd5a889ffa59993",
+      "new_mode": 33188,
+      "new_path": "result/noent/att4.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "22da39d6104fcc3bbe2ab20e470a5ba8d10666f2",
+      "new_mode": 33188,
+      "new_path": "result/noent/att5.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "54dd6d308fe0371a0192300ef9b26af9126984dd",
+      "new_mode": 33188,
+      "new_path": "result/noent/att6.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4a5f318bdb34d1459deda15133b963b2839cf692",
+      "new_mode": 33188,
+      "new_path": "result/noent/att7.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1f2344a9ae115a4f35308a54c975ee14e4442aa2",
+      "new_mode": 33188,
+      "new_path": "result/noent/att8.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "09b3a04cdc4f2577f54f1679d96e64ab5569c3f5",
+      "new_mode": 33188,
+      "new_path": "result/noent/att9.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c7d2c872cceb02ac357bfdf0c6976eda1694fa76",
+      "new_mode": 33188,
+      "new_path": "result/noent/attrib.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "08e5622120a511998edaa7fa76ee4b0d3b8303b7",
+      "new_mode": 33188,
+      "new_path": "result/noent/badcomment.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1067843e29661431b4756cfa4af7469473ac42aa",
+      "new_mode": 33188,
+      "new_path": "result/noent/bigentname.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ef939f9a8f29088a53ce109496e22e6e2f9edce0",
+      "new_mode": 33188,
+      "new_path": "result/noent/bigname.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6b406f4e8dab865bdc3e68ced00ecbc14423c2eb",
+      "new_mode": 33188,
+      "new_path": "result/noent/bigname2.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "2da2d5009f0e3ab3340dbdfe343ae1c5e7b44e7e",
+      "new_mode": 33188,
+      "new_path": "result/noent/cdata-2-byte-UTF-8.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3969579cb91e1b1fbddef0c0a2369a6f237bcb4e",
+      "new_mode": 33188,
+      "new_path": "result/noent/cdata-3-byte-UTF-8.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "5e07d83e36048fa6b4b93cfe65f0b31fbc8ef03c",
+      "new_mode": 33188,
+      "new_path": "result/noent/cdata-4-byte-UTF-8.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "117b2b0c60ad0d6d4a748021feafd8aa51f05ade",
+      "new_mode": 33188,
+      "new_path": "result/noent/cdata.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d1420e9338c75601e7c3c8d04c38ebdc3d948752",
+      "new_mode": 33188,
+      "new_path": "result/noent/cdata2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "da57f50894c78f09acd99c8a0650d3dbb1bb02af",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a2867440fbab1ec5bc3fba1767131df2eb2af894",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment2.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a5f1fd69434fcd4e4eee07218074be990ce6eba7",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment3.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0e2611febb80b0acfe9ba815d95a44d9feec38f7",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment4.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f0940b2c7a96ae274a6b8d71ab1c89ac4696bd37",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment5.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7dd7dc08fad0442c0bc710b20e11dc339efdb5dd",
+      "new_mode": 33188,
+      "new_path": "result/noent/comment6.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "44ad11c3933f763958630a20ca6e18583653c8d1",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e93e22c908f85ca25a875a855947adb7983a283a",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav10.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d0f232901b94f9a2e5daaa435102fc80b0511e5a",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav11.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "61715b6259e6f0a38ac430e69a9f156839367d4c",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav12.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f6c5381916c1b7eae984172255c44ede8b194ad3",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav13.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6040cd109c3fc519e0f307b2224140ba5b601f8d",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav15.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1ede22ef35d8e488f2fe121fc4c890f2cd944dc4",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav16.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "48185a2341942d72a896bcdc52601296bb8c5e39",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav17.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "cddc100e257cb73c69b57e9298a98f51d52b2556",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav18.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f0dd402528e05fd9b62dd4b6d28d5239da8498cd",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav19.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "22c7bb0be7225663aa8b1f4add3b1058c4f296a6",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0088f292630a3860d7bf284051f2a3e23897961e",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "58fb8acbf6442a1b71811b33f38922dec05fa177",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav4.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6062ccaea0207008ef5cb3dd05a44fc66e229d9e",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav5.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "31952c54b48876e965844e2d8f5291f973edf9dc",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav6.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1d51e74c8111a6d97645370d6226b458704f75c8",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav7.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7de547e27c13c973be3a90c9a62b8a36bb2d9b13",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav8.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "26e4942606091bfd641c48f851a86b9f1058f95c",
+      "new_mode": 33188,
+      "new_path": "result/noent/dav9.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "dfeba4949e2793ca0bad5cb97c5e8dd8373e6a23",
+      "new_mode": 33188,
+      "new_path": "result/noent/defattr.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0f772711ed3d47d488b04e8ed5bc87ce06c6c9e7",
+      "new_mode": 33188,
+      "new_path": "result/noent/defattr2.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4821c9bf3cef49188b7791cd8ce94b5ffc288fb4",
+      "new_mode": 33188,
+      "new_path": "result/noent/dia1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4821c9bf3cef49188b7791cd8ce94b5ffc288fb4",
+      "new_mode": 33188,
+      "new_path": "result/noent/dia2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "47be5e0eb08db64bd4187400beff0b4e10759506",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7f15a09903cb057f8a6c508f8a64817b20ed043e",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd10.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a9cae5d171d4dd8a76fb76e31a0fd2d910f32fee",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd11.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "53206d4e6e933110b39d124840ed8e88d8728895",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd12.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b6315011bd4392f7bb99801af4261f34bc4dc626",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd13.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ff6b5682ab17c0e3f963a3f688d484b3c62e5feb",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9625ad5332d13acb257fcd736c593a2b8a7a014f",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8366d48a8692212099c91638d14e8b52376e4a40",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd4.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f48c01c275cb69519cab36e73d75816192984cc2",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd5.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6e78924ca366c243658a109f9ef490d56cbf1b0f",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd6.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4a47191480f01dd4da98e25424a2ac58554a66ff",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd7.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d38b60d3855ac8678cb867dc42a14c44ff30f63f",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd8.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a5b537f9cd44431aff82d74e770663fc06703a94",
+      "new_mode": 33188,
+      "new_path": "result/noent/dtd9.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b8a4ce0e8964b8114fedfc4bdf7ac286f0b2d3c1",
+      "new_mode": 33188,
+      "new_path": "result/noent/ebcdic_566012.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7f80296edc4027c56f428cff86b68609ba4883db",
+      "new_mode": 33188,
+      "new_path": "result/noent/emptycdata.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9f270efa06d1943948c9461f2b59d818dd880b01",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4b86bfb39fd9a2a3048ba984f93576ab80ebb825",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent10.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "5c2c9169b1c8c27e3f6039a2fcb81697c86c26b5",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent11.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "fd5c71e312da245e6a3ec910718b902f7b48774a",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent12.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9add14635c17f73821dfc5056dd0905f46c0901a",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent13.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "88c6aa6b2a17929686305af2627f8053a67e8776",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "96f605f5defffc2bdb9d0c57b3b9c52891996f9b",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b0a6b0897ff5d7b77a0c502d157729701fac5a64",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent4.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f7251e4e67c68a0a77928d61f91bf1bcc8bd6a38",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent5.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a70d0bb4f544e93e8e1a7f4b79f83a35e4992e22",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent6.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3228de3e85f6dd0d3c6b3712051c47e8b4be8d77",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent7.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c8418fac04f9b915ff8dc75865c512ca6e4aecda",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent8.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "442333efd5b40a7b39ac8e8b230d5a7eefbb3943",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent9.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d8a4f1e55402648eab375b054276c4fe87094489",
+      "new_mode": 33188,
+      "new_path": "result/noent/ent_738805.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ea3b430adbe43aa974a6768359302704cb1af6bb",
+      "new_mode": 33188,
+      "new_path": "result/noent/eve.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "031a967caed3a62240f5825b35f4263c4a3b81ea",
+      "new_mode": 33188,
+      "new_path": "result/noent/icu_parse_test.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "eb0d6c6c989522db281ea8580b9ac4c9cd66cc36",
+      "new_mode": 33188,
+      "new_path": "result/noent/icu_parse_test.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "f4db2a81267bbfd0eb8ec32e6a3f20230be3931f",
+      "new_mode": 33188,
+      "new_path": "result/noent/intsubset.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "55587017585950d328c1d2ba6af0185d990ca91e",
+      "new_mode": 33188,
+      "new_path": "result/noent/intsubset2.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b97920a8490a33abb4d3f20ce6557ee4822ca993",
+      "new_mode": 33188,
+      "new_path": "result/noent/isolat1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0ac3f5662bb970fe66d92b45e7a0e1329e34694a",
+      "new_mode": 33188,
+      "new_path": "result/noent/isolat2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "31296afd06b2a519abe60285ac9976b57651f706",
+      "new_mode": 33188,
+      "new_path": "result/noent/isolat3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "878eae452d12ddb34a9f986fdf5f119e433cc27f",
+      "new_mode": 33188,
+      "new_path": "result/noent/japancrlf.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c615db38082b8dd4de3135ca8986967e7eb2db94",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "fc8d6f448dfc38fbc64b65010516c3040827ce36",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "fc8d6f448dfc38fbc64b65010516c3040827ce36",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e31cc561a0e0fb7870ae74aa0e7e18055178af7b",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns4.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a434d6b535be7a8b98229aa147791a23c6186523",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns5.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7b545527a322fa35bca1786767b2f57e6d9f3b56",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns6.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "2a2c71457293285f7846b08240067102bc8190c8",
+      "new_mode": 33188,
+      "new_path": "result/noent/ns7.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d443e2bdfab4f99d5e125254b280f8605ed13b60",
+      "new_mode": 33188,
+      "new_path": "result/noent/nsclean.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6815789a5f6b433ca4a29b276ba38aa98f331d65",
+      "new_mode": 33188,
+      "new_path": "result/noent/p3p.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a4490ea1cb6dc38141dfdcacf774147166c81aca",
+      "new_mode": 33188,
+      "new_path": "result/noent/pi.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1e6caad3603eb580d01f343a57389fce569c2df8",
+      "new_mode": 33188,
+      "new_path": "result/noent/pi2.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "24822e14576948447813de6316a2ca8d183da38e",
+      "new_mode": 33188,
+      "new_path": "result/noent/rdf1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "388174f35daae13f5c139e6f47b348849617ab85",
+      "new_mode": 33188,
+      "new_path": "result/noent/rdf2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c561cf8d413a66a28c4b9422bdd10a2b468a2c8e",
+      "new_mode": 33188,
+      "new_path": "result/noent/slashdot.rdf.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "2ead70da9d227c4da24ddf689566d861e3325cfc",
+      "new_mode": 33188,
+      "new_path": "result/noent/slashdot.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "785e69918ce557b590b7e084c39a5f75e5c8bca6",
+      "new_mode": 33188,
+      "new_path": "result/noent/slashdot16.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7b8145914464f6515d7f16ad99e9607a9904cd16",
+      "new_mode": 33188,
+      "new_path": "result/noent/svg1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ab73992b2dd079ed07d6870bb3435cc36f975d4b",
+      "new_mode": 33188,
+      "new_path": "result/noent/svg2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b63dff0194137d554aaf419c1aed8534e41a0252",
+      "new_mode": 33188,
+      "new_path": "result/noent/svg3.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6fa4fa948faa3a900ef7080fcdb802d9767ac1db",
+      "new_mode": 33188,
+      "new_path": "result/noent/title.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "45563a48305c475ec4712490d82dbd9bb68c16e4",
+      "new_mode": 33188,
+      "new_path": "result/noent/tstblanks.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "43268904097996c49abb54c493fb299c0019fc3a",
+      "new_mode": 33188,
+      "new_path": "result/noent/utf16bebom.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "2b2db15c0c2548d521027190e3279f49bc3dcb9f",
+      "new_mode": 33188,
+      "new_path": "result/noent/utf16bom.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "3b623463120180c246d89402cb76844c61ce8fd6",
+      "new_mode": 33188,
+      "new_path": "result/noent/utf16lebom.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "cf7f20ffda86757bd1d660595f836ebe4d2b146f",
+      "new_mode": 33188,
+      "new_path": "result/noent/utf8bom.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6d40b255d237f1d775a753d59830fd1dc595b126",
+      "new_mode": 33188,
+      "new_path": "result/noent/wap.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "6e9d693fcc489b2bd8066f2297738cebf9248253",
+      "new_mode": 33188,
+      "new_path": "result/noent/winblanks.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7772d0472355195f20b7ca8f09066a5e8a4e935f",
+      "new_mode": 33188,
+      "new_path": "result/noent/wml.xml.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e6952c866c7164d5b906cbd989e45b549d43ea78",
+      "new_mode": 33188,
+      "new_path": "result/noent/xhtml1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "085b770c5608ecd78a50ebd9008a141c55b094e5",
+      "new_mode": 33188,
+      "new_path": "result/noent/xhtmlcomp.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "2dce92594c28fd7b4f2a2730b43304f0ef7beaac",
+      "new_mode": 33188,
+      "new_path": "result/noent/xml1.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "141accd67ad072a3474e649c63f006f3273d935c",
+      "new_mode": 33188,
+      "new_path": "result/noent/xml2.sax2"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a7a1f463129271b79551e8c36665a8a100635b79",
+      "new_mode": 33188,
+      "new_path": "result/relaxng/pattern3_err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "result/relaxng/pattern3_valid"
+    },
+    {
+      "type": "modify",
+      "old_id": "18f0d694c11eb7ce4fd4e4411f26280a89ec65cc",
+      "old_mode": 33188,
+      "old_path": "result/scripts/set3.err",
+      "new_id": "0dd77926c7db27ee653fffb981cf4d57605ae317",
+      "new_mode": 33188,
+      "new_path": "result/scripts/set3.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "new_mode": 33188,
+      "new_path": "result/valid/766956.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b4ac1e592aace31614db2b5b978b9cdb95c943e0",
+      "new_mode": 33188,
+      "new_path": "result/valid/766956.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "42863793b19aee8e94d24cbf6a4946a7cf1a0021",
+      "new_mode": 33188,
+      "new_path": "result/valid/766956.xml.err.rdr"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "45dc451d4d8a969792d27370ab79e24079892f65",
+      "new_mode": 33188,
+      "new_path": "result/valid/781333.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b401b49aafc26ae675ce48fc70f3375742c32f0a",
+      "new_mode": 33188,
+      "new_path": "result/valid/781333.xml.err"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "5ff569926fbcd5dd48a8476ddcdfb6ece69dab7d",
+      "new_mode": 33188,
+      "new_path": "result/valid/781333.xml.err.rdr"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a3c006d40b9c7addbc0897ac89e65fbf61ba3bc",
+      "old_mode": 33188,
+      "old_path": "result/valid/t8.xml.err",
+      "new_id": "52726946b22b0453746bff35fea49083d926c0e2",
+      "new_mode": 33188,
+      "new_path": "result/valid/t8.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "c198a163c5694c196195b8a59ca0f3172adcc43d",
+      "old_mode": 33188,
+      "old_path": "result/valid/t8.xml.err.rdr",
+      "new_id": "8da08fbeb8f5884b95c5d2d293c886bf90207b00",
+      "new_mode": 33188,
+      "new_path": "result/valid/t8.xml.err.rdr"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a3c006d40b9c7addbc0897ac89e65fbf61ba3bc",
+      "old_mode": 33188,
+      "old_path": "result/valid/t8a.xml.err",
+      "new_id": "2846b196425bf2dd0a96183291e2b05816e146ab",
+      "new_mode": 33188,
+      "new_path": "result/valid/t8a.xml.err"
+    },
+    {
+      "type": "modify",
+      "old_id": "b6bdcbe70c73260bbf1455e2ca1cd343c5e2c40c",
+      "old_mode": 33188,
+      "old_path": "result/valid/t8a.xml.err.rdr",
+      "new_id": "6abe75a9b9be6aa135ec81aeb528b4881280d5ec",
+      "new_mode": 33188,
+      "new_path": "result/valid/t8a.xml.err.rdr"
+    },
+    {
+      "type": "modify",
+      "old_id": "18615773228b0cc85522d6cb8037f5598c92a8d4",
+      "old_mode": 33188,
+      "old_path": "runtest.c",
+      "new_id": "605c1d1adf825b3e40ad64f4b8eb2a5949d92758",
+      "new_mode": 33188,
+      "new_path": "runtest.c"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d31c8ff95e622c37ecf2255a6132646ee5fdca8f",
+      "new_mode": 33188,
+      "new_path": "test/HTML/758518-entity.html"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "935e7521ddd2e467f1d38becb46e582d2c287ff8",
+      "new_mode": 33188,
+      "new_path": "test/HTML/758518-tag.html"
+    },
+    {
+      "type": "modify",
+      "old_id": "88f45756f39749554dd8642ee24f806267f54c19",
+      "old_mode": 33188,
+      "old_path": "test/XPath/docs/ns",
+      "new_id": "2338a6fe0ce28f53a8966266065d42a168356b7b",
+      "new_mode": 33188,
+      "new_path": "test/XPath/docs/ns"
+    },
+    {
+      "type": "modify",
+      "old_id": "547e54de71865c53c3e6a66cd09c58d8608eaea1",
+      "old_mode": 33188,
+      "old_path": "test/XPath/docs/str",
+      "new_id": "449de015cdd3aa401ebd48ad8efb16129059d095",
+      "new_mode": 33188,
+      "new_path": "test/XPath/docs/str"
+    },
+    {
+      "type": "modify",
+      "old_id": "f57e4d0c439b9c0e75108c3933e735987501cb25",
+      "old_mode": 33188,
+      "old_path": "test/XPath/expr/base",
+      "new_id": "cc18735697b91e897957287d73f61b6a7814340f",
+      "new_mode": 33188,
+      "new_path": "test/XPath/expr/base"
+    },
+    {
+      "type": "modify",
+      "old_id": "96c10d154290c69fdccc78f325b8ab640a90a25f",
+      "old_mode": 33188,
+      "old_path": "test/XPath/expr/floats",
+      "new_id": "b4475240d2a92d38359eee5aa674efdb3ea71f76",
+      "new_mode": 33188,
+      "new_path": "test/XPath/expr/floats"
+    },
+    {
+      "type": "modify",
+      "old_id": "d168b189bd0fcff620d12f866fde666484ed41c9",
+      "old_mode": 33188,
+      "old_path": "test/XPath/expr/functions",
+      "new_id": "00b9461f451200c19ba5dcbf080e2239ce15d363",
+      "new_mode": 33188,
+      "new_path": "test/XPath/expr/functions"
+    },
+    {
+      "type": "modify",
+      "old_id": "849ca14cbfadf84d63e832351e2204a88b21df3d",
+      "old_mode": 33188,
+      "old_path": "test/XPath/expr/strings",
+      "new_id": "ba02c7944c428c76f9ccd98159b9620650405655",
+      "new_mode": 33188,
+      "new_path": "test/XPath/expr/strings"
+    },
+    {
+      "type": "modify",
+      "old_id": "17638f737b9adb32554aedf8e8ddfa702f95b30f",
+      "old_mode": 33188,
+      "old_path": "test/XPath/tests/chaptersbase",
+      "new_id": "f8fbe2a807e6c57ca59e91cbfac6273a64e8a9e7",
+      "new_mode": 33188,
+      "new_path": "test/XPath/tests/chaptersbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "d2a95281513952de6e918a839a428191e5ad6295",
+      "old_mode": 33188,
+      "old_path": "test/XPath/tests/nssimple",
+      "new_id": "8b343a30b043858cf90f67263ff33e02cbeec7e1",
+      "new_mode": 33188,
+      "new_path": "test/XPath/tests/nssimple"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b2c7d15af798c1e714485fc6238c7b3f6bd611b",
+      "old_mode": 33188,
+      "old_path": "test/XPath/tests/simplebase",
+      "new_id": "7b302af2202297757a02574b149dbcd707ed2152",
+      "new_mode": 33188,
+      "new_path": "test/XPath/tests/simplebase"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b81832537960e9a3feb783a4c706dd2c8b9caee4",
+      "new_mode": 33188,
+      "new_path": "test/XPath/tests/strbase"
+    },
+    {
+      "type": "modify",
+      "old_id": "6b5f9b0688a1dcab5d1152d3cb8682d45ebe23ae",
+      "old_mode": 33188,
+      "old_path": "test/errors/754946.xml",
+      "new_id": "edeab32d74a641efa99dc583a58092c849902e7d",
+      "new_mode": 33188,
+      "new_path": "test/errors/754946.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "7fadd702413a6e6fbf83522768214f9823f82f03",
+      "new_mode": 33188,
+      "new_path": "test/errors/759579.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d9e9e83957e743ecfdb68cb4ead4283a14dd208d",
+      "new_mode": 33188,
+      "new_path": "test/errors10/781205.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "67476bcbe7b8457c294a0b6d57577048e4daa626",
+      "new_mode": 33188,
+      "new_path": "test/errors10/781361.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "031a967caed3a62240f5825b35f4263c4a3b81ea",
+      "new_mode": 33188,
+      "new_path": "test/icu_parse_test.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "19a95a0eeb062745e18ef51836b9b439366765ed",
+      "new_mode": 33188,
+      "new_path": "test/valid/766956.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "b29e5a688fa47522396865682908ff319d083c65",
+      "new_mode": 33188,
+      "new_path": "test/valid/781333.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "dddde68bcf01dcc2c377129898d22a031fbc9dc5",
+      "new_mode": 33188,
+      "new_path": "test/valid/dtds/766956.dtd"
+    },
+    {
+      "type": "modify",
+      "old_id": "bff53912ecbf93689532256dc8ba28ecd7b991a5",
+      "old_mode": 33188,
+      "old_path": "testThreads.c",
+      "new_id": "2ef70a74c907da41573952c7172050e57831ee17",
+      "new_mode": 33188,
+      "new_path": "testThreads.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "60f4bddb7cae72550bbdde7f7387fd1d7f1e8bab",
+      "old_mode": 33188,
+      "old_path": "testapi.c",
+      "new_id": "4a751e207c56a521fd43b740b5942c1cf66d6d70",
+      "new_mode": 33188,
+      "new_path": "testapi.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "577f593ce497e4dd298f2d2dc8bc8fdf505b3bcf",
+      "old_mode": 33188,
+      "old_path": "testlimits.c",
+      "new_id": "68c94dbcf2b9722aa795c5ae6f9723c6e2b969fe",
+      "new_mode": 33188,
+      "new_path": "testlimits.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e5d5d1b307ac14c03b79161738f3c0548c3ea301",
+      "old_mode": 33188,
+      "old_path": "testrecurse.c",
+      "new_id": "f95ae1c3970bb2a12543cd49a4bd4a01f71370c9",
+      "new_mode": 33188,
+      "new_path": "testrecurse.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9d6cae35333830e3ea72f766c5e2838ee43dac5",
+      "old_mode": 33188,
+      "old_path": "threads.c",
+      "new_id": "0433ac0f5919d57b585e3c61adf01f2f2db33efe",
+      "new_mode": 33188,
+      "new_path": "threads.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "443918ab8d14213ecee68567c9b4c22fa90d6f26",
+      "old_mode": 33188,
+      "old_path": "timsort.h",
+      "new_id": "0c6346b8a6e616d7ce5a8de22f24ca5753bdbbae",
+      "new_mode": 33188,
+      "new_path": "timsort.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d330b85cd3abd6c08e070b8370d70dbc1468bab",
+      "old_mode": 33188,
+      "old_path": "tree.c",
+      "new_id": "959421bd652bfdcf0be45e9228b03554611a9c6a",
+      "new_mode": 33188,
+      "new_path": "tree.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b32ef10a28d1b0ff9b175d06454bb3699587459e",
+      "old_mode": 33188,
+      "old_path": "uri.c",
+      "new_id": "860b2030a7189a3db80c1c58034d630dabae2e24",
+      "new_mode": 33188,
+      "new_path": "uri.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "aee6f40f4324863da0a7f0719761295b00c47a61",
+      "old_mode": 33188,
+      "old_path": "valid.c",
+      "new_id": "57a1a9ee285206846d7677ab1560608add343d0b",
+      "new_mode": 33188,
+      "new_path": "valid.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3a6fcc01a31e55b011dbe53b1650535337393716",
+      "old_mode": 33261,
+      "old_path": "vms/build_libxml.com",
+      "new_id": "1f7936e5998cee32d7c0ef61a980e26475f44228",
+      "new_mode": 33261,
+      "new_path": "vms/build_libxml.com"
+    },
+    {
+      "type": "modify",
+      "old_id": "d1cd7f33ed9c2cddf3c59b616d5c82d3088b1efa",
+      "old_mode": 33261,
+      "old_path": "vms/config.vms",
+      "new_id": "375406b0cacb837724e10789f523e467d6689c78",
+      "new_mode": 33261,
+      "new_path": "vms/config.vms"
+    },
+    {
+      "type": "modify",
+      "old_id": "7129c6175037841060258fedcdc733346444df82",
+      "old_mode": 33188,
+      "old_path": "win32/Makefile.bcb",
+      "new_id": "41002da586fb6d091a11d6226706c60867c54c20",
+      "new_mode": 33188,
+      "new_path": "win32/Makefile.bcb"
+    },
+    {
+      "type": "modify",
+      "old_id": "18893760d643a0ac0ba365e1d6d36b8edad1fbe6",
+      "old_mode": 33188,
+      "old_path": "win32/Makefile.mingw",
+      "new_id": "3d4cb88821f3027e330dbb2c829d5ae3a4ce368f",
+      "new_mode": 33188,
+      "new_path": "win32/Makefile.mingw"
+    },
+    {
+      "type": "modify",
+      "old_id": "d16c1a2d51b0a5d7b094432deff8f83cae05d49e",
+      "old_mode": 33188,
+      "old_path": "win32/Makefile.msvc",
+      "new_id": "491dc8801287340ed8e94ca2a278dbee2fd679f6",
+      "new_mode": 33188,
+      "new_path": "win32/Makefile.msvc"
+    },
+    {
+      "type": "modify",
+      "old_id": "891b57e43cfbb7f10c6b05ed05611b4703dff279",
+      "old_mode": 33188,
+      "old_path": "win32/VC10/config.h",
+      "new_id": "c1e16f141cd0716472360940c87c4474587948a9",
+      "new_mode": 33188,
+      "new_path": "win32/VC10/config.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "92b9ba052c2985f589b88a2b52028b6ce1fd4a93",
+      "old_mode": 33188,
+      "old_path": "win32/configure.js",
+      "new_id": "dbf238c70c4e0828d79065c8e663b758113926ba",
+      "new_mode": 33188,
+      "new_path": "win32/configure.js"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c774a5ee5a914e0180972796ea59e32357cbf4ff",
+      "new_mode": 33188,
+      "new_path": "win32/libxml2.rc"
+    },
+    {
+      "type": "modify",
+      "old_id": "e3bb43ec502b3caea85f371f11bf37745b3b7476",
+      "old_mode": 33188,
+      "old_path": "xinclude.c",
+      "new_id": "001e992f7c28ef970d5a8f0afa540ad4f1d47742",
+      "new_mode": 33188,
+      "new_path": "xinclude.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c0e4ff3234772a402e57cb1d6aade59fb1836f57",
+      "old_mode": 33188,
+      "old_path": "xlink.c",
+      "new_id": "ecf9f968a716e41994ae78364c6fd56c50eaf911",
+      "new_mode": 33188,
+      "new_path": "xlink.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a79c09605e8b244591d5443afcada388136aba7",
+      "old_mode": 33188,
+      "old_path": "xmlIO.c",
+      "new_id": "8254347708f964acf514227d3995e15bc84067d0",
+      "new_mode": 33188,
+      "new_path": "xmlIO.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "006f0cc94c952e0e0102578a77451b53c4e871f0",
+      "old_mode": 33188,
+      "old_path": "xmlcatalog.c",
+      "new_id": "c02b97f67b2a14a0c5acf5a6915bcd15c37cb7e7",
+      "new_mode": 33188,
+      "new_path": "xmlcatalog.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "67f7adb23407c76ee1879c67669f456cb95b30b8",
+      "old_mode": 33188,
+      "old_path": "xmllint.c",
+      "new_id": "651254095694445d44bce6339335a8a7d0196d07",
+      "new_mode": 33188,
+      "new_path": "xmllint.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f08c8c3d3bb13f4c0688966d3f1854ef442ab802",
+      "old_mode": 33188,
+      "old_path": "xmlmemory.c",
+      "new_id": "6f16c4b3caf5f46b909d63cd9effd681f7eeb00f",
+      "new_mode": 33188,
+      "new_path": "xmlmemory.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "50ed666af7843309261733065d49857a49d8575a",
+      "old_mode": 33188,
+      "old_path": "xmlmodule.c",
+      "new_id": "a95ab66acdfd799e7446d36f181d334e33d30c8b",
+      "new_mode": 33188,
+      "new_path": "xmlmodule.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f285790be21ab1eb760ae04a3e6b325b5271e512",
+      "old_mode": 33188,
+      "old_path": "xmlreader.c",
+      "new_id": "4053269b4e804a4108bdfb1e98291ebf015b00e9",
+      "new_mode": 33188,
+      "new_path": "xmlreader.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca3b4f46dc816517cf9f627e7fe0acf0d7577eec",
+      "old_mode": 33188,
+      "old_path": "xmlregexp.c",
+      "new_id": "d255fbf063e7dd3a688a119f309b3783ffa03b02",
+      "new_mode": 33188,
+      "new_path": "xmlregexp.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a8e3f3903274558390c2e9981917020b77d6d81",
+      "old_mode": 33188,
+      "old_path": "xmlsave.c",
+      "new_id": "6c7418ec39ba0aff39b0ef839f360d2d560d055f",
+      "new_mode": 33188,
+      "new_path": "xmlsave.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7afe2ebfada28f4b1b8f98a90e9393aea3aed41e",
+      "old_mode": 33188,
+      "old_path": "xmlschemas.c",
+      "new_id": "405f72ae489a4e386c73bbae2b9f4526ef07a338",
+      "new_mode": 33188,
+      "new_path": "xmlschemas.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f38599044632541a6b5337f87614fdc98a00b71",
+      "old_mode": 33188,
+      "old_path": "xmlschemastypes.c",
+      "new_id": "ca381d3806653f7a8d30532c145e10fb338ba7d8",
+      "new_mode": 33188,
+      "new_path": "xmlschemastypes.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "cc85777eadc71889f5ab25ba8ef54c4724f5bc20",
+      "old_mode": 33188,
+      "old_path": "xmlstring.c",
+      "new_id": "8d2e06f66cde0536dfa40cae443bea12a5ea3936",
+      "new_mode": 33188,
+      "new_path": "xmlstring.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ce6e9a4f10d5c4a3e66414d1a91fc8d6f8291533",
+      "old_mode": 33188,
+      "old_path": "xmlunicode.c",
+      "new_id": "6d0a96a0e270cf94cea5e05a45008b2e6d1d6959",
+      "new_mode": 33188,
+      "new_path": "xmlunicode.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "69541b894f6ddc2da2753dacdf16616f467bd3d2",
+      "old_mode": 33188,
+      "old_path": "xmlwriter.c",
+      "new_id": "b5cd171f5bc3ab635989aea435321d9f8bb0e384",
+      "new_mode": 33188,
+      "new_path": "xmlwriter.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3472ff0563d9cf96428b24e4586ca6ef339f47a0",
+      "old_mode": 33188,
+      "old_path": "xpath.c",
+      "new_id": "d134025ab4421e17681104621797ba01c94bcf0b",
+      "new_mode": 33188,
+      "new_path": "xpath.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8a2e5994c8856906aabb031dcb52845269be13c",
+      "old_mode": 33188,
+      "old_path": "xpointer.c",
+      "new_id": "6a41f07977cf351b56d0a81d567a1fb83a51dd6b",
+      "new_mode": 33188,
+      "new_path": "xpointer.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "782957f65256ebf1b5219feb5c6d0e1923a250c4",
+      "old_mode": 33188,
+      "old_path": "xzlib.c",
+      "new_id": "a839169ef2ecee62fbc6061d387bcdd36366898b",
+      "new_mode": 33188,
+      "new_path": "xzlib.c"
+    }
+  ]
+}

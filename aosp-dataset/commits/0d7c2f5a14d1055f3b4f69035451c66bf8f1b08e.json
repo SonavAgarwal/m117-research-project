@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0d7c2f5a14d1055f3b4f69035451c66bf8f1b08e",
+  "tree": "c63eff3c4cb68d543c94e01a3f575b0a5f42e6e1",
+  "parents": [
+    "85677abe2cc90bcd8b9df127088a97657d17c986"
+  ],
+  "author": {
+    "name": "Stanley Tng",
+    "email": "stng@google.com",
+    "time": "Thu Apr 05 09:54:13 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:37 2018 +0000"
+  },
+  "message": "DO NOT MERGE Handle bad packet length in gatts_process_read_req\n\nAdded error check and handling code in gatts_process_read_req to\nmake sure that the packet length is correct.\nPlease note that there is another earlier CL that is reverted and this\nis the updated one.\n\nBug: 73172115\nTest: Run the test program, poc, that was attached in the bug report\nMerged-In: Ia9b4e502fa8f8384bf9767e68f73b48a0915141b\nChange-Id: Ia9b4e502fa8f8384bf9767e68f73b48a0915141b\n(cherry picked from commit cc9c7330d1c3507d745170ae7b2e0546197b7acb)\n(cherry picked from commit 16f4c21be5bd0ea1968eee8a0f00648b1e326253)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3af9866397adcae0c65c2eba957500451795d7bc",
+      "old_mode": 33188,
+      "old_path": "stack/gatt/gatt_sr.cc",
+      "new_id": "06c9c520511dd56a1795b05ba41d5940ef7998ec",
+      "new_mode": 33188,
+      "new_path": "stack/gatt/gatt_sr.cc"
+    }
+  ]
+}

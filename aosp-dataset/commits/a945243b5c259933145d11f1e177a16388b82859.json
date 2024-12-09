@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a945243b5c259933145d11f1e177a16388b82859",
+  "tree": "55c02a46cb359767f1480a07084d5f24a9d4a596",
+  "parents": [
+    "fd365ae91ebe924197c5f443c889928eb07bd02c"
+  ],
+  "author": {
+    "name": "Jonathan Scott",
+    "email": "scottjonathan@google.com",
+    "time": "Tue Apr 30 15:52:52 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:46 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Make ScreenPinningSettings behaviour consistent with LockTaskController.\n\nBug: 127605586\nTest: Manual\nChange-Id: Id85632b5e6975fc5f92d6e8126a6603a07f097e1\n(cherry picked from commit 687b18067cb3bf28282376b311ece73b1c893254)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e4856ee423ffebf136625460a09f8bf67be3c5a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/security/ScreenPinningSettings.java",
+      "new_id": "0af7b7273df15e8b0110c4ccdd1a123c0ae54de7",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/security/ScreenPinningSettings.java"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "e629194c62a9a129ce378e08cb1059a8a53f1795",
+  "tree": "7fd996056a58f8e26c69288c2b55a8cd26cc08a0",
+  "parents": [
+    "ecf6c7ce6d5a22d52160698aab44fc234c63291a"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Apr 20 16:13:52 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:02 2016 -0700"
+  },
+  "message": "Decoder: Initialize slice parameters before concealing error MBs\n\nAlso memset ps_dec_op structure to zero.\nFor error input, this ensures dimensions are initialized to zero\n\nBug: 28165661\nChange-Id: I66eb2ddc5e02e74b7ff04da5f749443920f37141\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b6d4e3580d1275ab223bb3b42ffa21a6447a7f6c",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "82226f39467575ead037dbf64869a2738e765761",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "4084fcaca9de9252941c778939d5763114d38057",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "14fa0bac46f51d12f45bba3084df489cb60595eb",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "fa85aa1674e5b0b27477c828274d35092140c93a",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "5ff92f8c9c28c4ded6b91d0bc72f43d3dd6581f2",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

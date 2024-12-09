@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "40dd65db3996399530cf549b3afe0c3a5f884b78",
+  "tree": "a4184bd4a1e739e4b275fe9f0a8153eac6e6f1ff",
+  "parents": [
+    "2327d933d5f670c5aaf8157e88c8715f324f2f2f"
+  ],
+  "author": {
+    "name": "Fabian Kozynski",
+    "email": "kozynski@google.com",
+    "time": "Wed Dec 18 09:54:09 2019 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:06:57 2020 +0000"
+  },
+  "message": "Prevent sending early termination of appop use\n\nIf a package starts a particular appop both as active and noted, once\none of them is finished (usually noted after 5s), a message will be sent\nto callbacks indicating the end of the use. However, the app op may\nstill be active. This could result in the removal of indicators\nprematurely from notifications.\n\nThis change prevents that from happening by checking if the app op is\nstill in use by that combination uid/package (either active or noted)\nand not notifying listeners if that\u0027s the case.\n\nTest: atest AppOpsControllerTest\nTest: use app from bug report. Observe that notification does not lose\nthe microphone indicator\nBug: 144092031\nMerged-In: I180e7c257e6171e7686ba7eda9bf02249358ed0\n\nChange-Id: I94473c3ccf1318dac29f067dade91e540e20285e\n(cherry picked from commit 1a459638398446938a20b32fa0fbc63ad4bd505f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7a74dba27dce34a51091ba3a8f9659b6f737fde4",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/appops/AppOpsControllerImpl.java",
+      "new_id": "b2eedaf085cf6a92ed6f814d50ce31e68bcf49ad",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/appops/AppOpsControllerImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "59d5c243af730291302327d4e5e93df74654202e",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/tests/src/com/android/systemui/appops/AppOpsControllerTest.java",
+      "new_id": "a1842f821fe0e819116059c5ab466a5ed255941b",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/tests/src/com/android/systemui/appops/AppOpsControllerTest.java"
+    }
+  ]
+}

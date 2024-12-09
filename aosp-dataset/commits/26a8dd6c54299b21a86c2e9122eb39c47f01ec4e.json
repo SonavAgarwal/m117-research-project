@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "26a8dd6c54299b21a86c2e9122eb39c47f01ec4e",
+  "tree": "70fd32c84e65e006ee807bc23d2d5948dd17d48f",
+  "parents": [
+    "33e2bad2ab3944e73ea4eeeaf46217d062059fd9"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Mon Jun 03 17:28:27 2019 -0700"
+  },
+  "committer": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Mon Jun 03 17:28:27 2019 -0700"
+  },
+  "message": "Verify Parcel object list does not get double freed after a setDataSize\n\nAlso clean up a commented out line in IParcelExceptionService.aidl\n\nBug: 134168436\nTest: atest CtsOsTestCases:ParcelTest#testObjectDoubleFree\nChange-Id: I8300423fd4351add8db27d1c4586577c98773c8a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d706470d3e74e46b6e43602d5a50d5bf9902b7b8",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/AndroidManifest.xml",
+      "new_id": "765c8efdcf80266f3919efa01b99615d923a9845",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "ce7af6deece885a2d0224844173a069e674d39e4",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/src/android/os/cts/IParcelExceptionService.aidl",
+      "new_id": "58d791cdc0fa32d0c2d839131b37715b2819c2b8",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/IParcelExceptionService.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "77d325cb62d77bd9dd57b3adcfc931bb6d4381c2",
+      "old_mode": 33188,
+      "old_path": "tests/tests/os/src/android/os/cts/ParcelTest.java",
+      "new_id": "0287b7a67774434241832fc90119be15ea595feb",
+      "new_mode": 33188,
+      "new_path": "tests/tests/os/src/android/os/cts/ParcelTest.java"
+    }
+  ]
+}

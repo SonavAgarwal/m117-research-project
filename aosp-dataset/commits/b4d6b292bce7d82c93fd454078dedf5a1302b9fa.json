@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b4d6b292bce7d82c93fd454078dedf5a1302b9fa",
+  "tree": "42b5b56f09da138712bb0c62ba94603f1d6585c5",
+  "parents": [
+    "675e212c8c6653825cc3352c603caf2e40b00f9f"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Thu Nov 03 13:32:41 2016 -0700"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Mon Dec 19 21:47:14 2016 +0000"
+  },
+  "message": "Correct overflow check in Parcel resize code\n\nFix merge conflict into nyc-mr1-release\nBug 31929765\n\nChange-Id: Ie27b9945f1de056624668869bdf9a5578abff467\n(cherry picked from commit 65dd433f0db2fe402dc725f7012c6e26769b3224)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e88ae29518a49a8eed3910ad5019df7d3d985a63",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "19ce3ebae2cb44fbcdcf6607cc0f86ec59bfb491",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "c4087ff5486d36a690c681affb668164ec0dd697",
+  "tree": "6a326255fe35f9807b36f36f9cb07dcb0d2b410c",
+  "parents": [
+    "042ec713958d0d1c9b6f8f57559fbe4861926c2c"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Fri Feb 24 15:33:24 2017 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 21:53:29 2017 +0000"
+  },
+  "message": "Set a limit on the size for BMP images DO NOT MERGE\n\nThis limit matches the limit used by Chromium. I am not aware of any\nreal world BMPs that are larger than this (or even close to it), but\nthere are some invalid BMPs that are larger than this, leading to\ncrashes when we try to read a row.\n\nBug:34778578\nBUG\u003dskia:3617\n\nChange-Id: I0f662e8d0d7bc0b084e86d0c9288b831e1b296d7\nReviewed-on: https://skia-review.googlesource.com/8966\nReviewed-by: Matt Sarett \u003cmsarett@google.com\u003e\nCommit-Queue: Leon Scroggins \u003cscroggo@google.com\u003e\n(cherry picked from commit 70eb18cb85c088fbf7b1545515af28769c0097e0)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4a08a61e0100e09f5d60125e275bfcb4fead1434",
+      "new_mode": 33188,
+      "new_path": "resources/invalid_images/b34778578.bmp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5274ec4325169e2a25d596a9c94ab4693c70e7d8",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpCodec.cpp",
+      "new_id": "7eb1baf2232d59d23506c106019b51d6eafdb000",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "ead679544f273cb9ec27cb5710464af07275d791",
+      "old_mode": 33188,
+      "old_path": "tests/CodexTest.cpp",
+      "new_id": "342c3693bab1eba0dc44a78a677e93897696c98a",
+      "new_mode": 33188,
+      "new_path": "tests/CodexTest.cpp"
+    }
+  ]
+}

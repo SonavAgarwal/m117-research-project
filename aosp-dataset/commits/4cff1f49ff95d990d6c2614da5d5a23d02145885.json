@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4cff1f49ff95d990d6c2614da5d5a23d02145885",
+  "tree": "9c4df3c5515684efbd2145bd9add4e738ef1f958",
+  "parents": [
+    "a5e904e7eb3aaec532de83ca52e24af18e0496b4"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Tue May 26 16:41:09 2015 -0400"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:41 2015 -0700"
+  },
+  "message": "Check that the parcel contained the expected amount of region data. DO NOT MERGE\n\nbug:20883006\nChange-Id: Ib47a8ec8696dbc37e958b8dbceb43fcbabf6605b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "912968a9da3f975aea5856226b87d75c1bb63f49",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/Region.cpp",
+      "new_id": "6b99de85a248824ce78fc3d50fb29d71fa27b64c",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/Region.cpp"
+    }
+  ]
+}

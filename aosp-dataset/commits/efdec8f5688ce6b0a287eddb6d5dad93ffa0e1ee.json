@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "efdec8f5688ce6b0a287eddb6d5dad93ffa0e1ee",
+  "tree": "37c961518edd7ccf8f250d766757772918e40234",
+  "parents": [
+    "56d29925acf566535738aa93f0397a43202eecc8"
+  ],
+  "author": {
+    "name": "Makoto Onuki",
+    "email": "omakoto@google.com",
+    "time": "Wed Jan 04 14:36:59 2017 -0800"
+  },
+  "committer": {
+    "name": "Makoto Onuki",
+    "email": "omakoto@google.com",
+    "time": "Fri Jan 27 14:08:01 2017 -0800"
+  },
+  "message": "Do not call RecoverySystem with DPMS lock held\n\nNote DPM.wipeData() on a secondary user is now blocking, just like\nit\u0027s been always blocking on the primary user.\n\nTest: Manually tested wipeData() with ApiDemos, both on 1) the primary user,\n2) a secondary user and 3) work profile.\n\nTest: adb shell am instrument -e class com.android.server.devicepolicy.DevicePolicyManagerTest -w com.android.frameworks.servicestests\n\nBug 30681079\n\nChange-Id: Ia832bed0f22396998d6307ab46e262dae9463838\nMerged-in: Ib97a92a6af87a5589d2643b9ae0522395735e1a5\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1a5e31560c897502eb61fbe7d6c47994d56bce33",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "fd3fa82765bc82b36fbaff219945555177cf3488",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

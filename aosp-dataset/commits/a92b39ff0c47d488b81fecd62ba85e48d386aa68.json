@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a92b39ff0c47d488b81fecd62ba85e48d386aa68",
+  "tree": "e6ed418a71228982c4f961c0bd97b967ae464c4f",
+  "parents": [
+    "4395fc2288e3f692765c73fce416e831fdaa5463"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Sat Apr 22 11:52:48 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:07:07 2017 +0000"
+  },
+  "message": "memset SPS to zero\n\nSPS structure is memset to zero in parse_sps()\nBug: 33966031\nBug: 37458993\n\nChange-Id: I7d4c04d2d25d7e9c8f581bd470260fc4394a564b\n(cherry picked from commit 2e0e75aedef322baeb829bf5151aba312840ed40)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8b50def1f34beabc404c53cebaf353f9113c2203",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "3fdbf2a7814d687a49da4b8583573731541fe2eb",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

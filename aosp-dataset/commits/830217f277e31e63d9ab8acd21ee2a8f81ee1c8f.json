@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "830217f277e31e63d9ab8acd21ee2a8f81ee1c8f",
+  "tree": "13741159565afc6a89229a8a34b3b0ad4cd5e3f7",
+  "parents": [
+    "bab818fd4cfc3bd0138ce5180e32a5087b4e0280"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Tue Jul 09 15:09:56 2019 +0800"
+  },
+  "committer": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Tue Jul 09 15:09:56 2019 +0800"
+  },
+  "message": "HidProfile: sync isPreferred() with HidHostService\n\nHidHostService allow to connect when priority is PRIORITY_UNDEFINED.\nHidProfile should return ture when priority is PRIORITY_UNDEFINED.\nOtherwise, the \"Input device\" toggle in off state when HID device\nconnected.\n\nBug: 132456322\nTest: manual\nChange-Id: Id7bae694c57aec17e019d591c0a677e3cb64f845\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a9e8db599177a74acb294eb17536adfef05c6e1a",
+      "old_mode": 33261,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/HidProfile.java",
+      "new_id": "fb6a990a29fd3ad1342b6577f655788e67da8fd3",
+      "new_mode": 33261,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/HidProfile.java"
+    }
+  ]
+}

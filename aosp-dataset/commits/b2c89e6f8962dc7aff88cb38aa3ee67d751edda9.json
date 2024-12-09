@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b2c89e6f8962dc7aff88cb38aa3ee67d751edda9",
+  "tree": "9729cb064aaffdef128d1b046f5bb5ce59072cbe",
+  "parents": [
+    "6a552451eef6ea11f33d1084397a7508c3c7e847"
+  ],
+  "author": {
+    "name": "fionaxu",
+    "email": "fionaxu@google.com",
+    "time": "Thu Jun 30 15:47:35 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:31 2016 -0700"
+  },
+  "message": "DO NOT MERGE add private function convertSafeLable\n\nBug: 28557603\nChange-Id: I8d6a13a71011c38e7dd7039fa7ae0a69cf6adc2e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7590a8a772b1a2d19d1a708886bed3e218bc8d23",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/SMSDispatcher.java",
+      "new_id": "963b8728ed44f6ff87fd444aa0f9ed5f09dfe776",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/SMSDispatcher.java"
+    }
+  ]
+}

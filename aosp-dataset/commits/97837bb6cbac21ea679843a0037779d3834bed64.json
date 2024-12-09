@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "97837bb6cbac21ea679843a0037779d3834bed64",
+  "tree": "2ced355e96f4387a8b36e68da9f3d8ae10aaeb50",
+  "parents": [
+    "f9391b39b1f0c98191ad3fff1a54b5f26e954421"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Jul 12 18:00:53 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 21 17:29:23 2016 -0700"
+  },
+  "message": "OMXCodec: check IMemory::pointer() before using allocation\n\nBug: 29421811\nChange-Id: I0a73ba12bae4122f1d89fc92e5ea4f6a96cd1ed1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4618e21f1895eb0207491c8f67727afc77d795e0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OMXCodec.cpp",
+      "new_id": "7e15e182e1167244cf4524c973238e2a234e8612",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OMXCodec.cpp"
+    }
+  ]
+}

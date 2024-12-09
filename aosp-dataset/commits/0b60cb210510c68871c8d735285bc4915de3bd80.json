@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0b60cb210510c68871c8d735285bc4915de3bd80",
+  "tree": "6172d689aaaf12f593a4675d872894d78db8016b",
+  "parents": [
+    "8a709f502630b9cd643c586997f4c3c4064da048"
+  ],
+  "author": {
+    "name": "Jimmy Chen",
+    "email": "jimmycmchen@google.com",
+    "time": "Mon Nov 09 11:43:12 2020 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:36 2020 +0000"
+  },
+  "message": "P2P: Fix copying of secondary device types for P2P group client\n\nParsing and copying of WPS secondary device types list was verifying\nthat the contents is not too long for the internal maximum in the case\nof WPS messages, but similar validation was missing from the case of P2P\ngroup information which encodes this information in a different\nattribute. This could result in writing beyond the memory area assigned\nfor these entries and corrupting memory within an instance of struct\np2p_device. This could result in invalid operations and unexpected\nbehavior when trying to free pointers from that corrupted memory.\n\nCredit to OSS-Fuzz: https://bugs.chromium.org/p/oss-fuzz/issues/detail?id\u003d27269\nFixes: e57ae6e19edf (\"P2P: Keep track of secondary device types for peers\")\nSigned-off-by: Jouni Malinen \u003cjouni@codeaurora.org\u003e\n\nBug: 172937525\nTest: add malformed vendor element config in p2p_supplicant.conf\nChange-Id: I6837931dcd3be01e68dc93d79ec1f874063fcae3\nMerged-In: I6837931dcd3be01e68dc93d79ec1f874063fcae3\n(cherry picked from commit 7382285854168509c5e8581ba0dcce830d4c7c82)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9c7388506a6494860b040a39d78cccc91880176a",
+      "old_mode": 33188,
+      "old_path": "src/p2p/p2p.c",
+      "new_id": "1dc5b92a537ebb3e0b68aa7d99eba992c6b32885",
+      "new_mode": 33188,
+      "new_path": "src/p2p/p2p.c"
+    }
+  ]
+}

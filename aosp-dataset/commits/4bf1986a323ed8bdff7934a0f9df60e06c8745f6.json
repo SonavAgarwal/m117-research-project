@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4bf1986a323ed8bdff7934a0f9df60e06c8745f6",
+  "tree": "a3b076c098e2e12ba1e2917a2dd35077662b9b60",
+  "parents": [
+    "2d62d5b7ecdd5524b36360d80501e1151e9525ec"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Wed Apr 01 18:00:09 2020 -0700"
+  },
+  "committer": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Thu Apr 02 01:06:00 2020 +0000"
+  },
+  "message": "Fix order of uid/pid in LocationAccessPolicy\n\nFix the order in which uid and pid are passed into the permission check.\n\nTest: atest LocationAccessPolicyTest\nFixes: 151330809\nChange-Id: I479c8fc123d5a994e8cbe6489aa00bea4abca1c7\nMerged-In: I479c8fc123d5a994e8cbe6489aa00bea4abca1c7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb744f619f2e5e034997c534c2c2532ec5f02d48",
+      "old_mode": 33188,
+      "old_path": "telephony/java/android/telephony/LocationAccessPolicy.java",
+      "new_id": "2d7c561cd18025d52464ef2bf7ec169a35e7c10f",
+      "new_mode": 33188,
+      "new_path": "telephony/java/android/telephony/LocationAccessPolicy.java"
+    }
+  ]
+}

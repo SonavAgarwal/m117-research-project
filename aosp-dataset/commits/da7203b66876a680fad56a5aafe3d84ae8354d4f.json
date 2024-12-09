@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "da7203b66876a680fad56a5aafe3d84ae8354d4f",
+  "tree": "35ee835f991e4ac78edec07a152790371926e4d9",
+  "parents": [
+    "3256e59a87466b1a1d20a6cfe22617e23fa25299"
+  ],
+  "author": {
+    "name": "Robert Carr",
+    "email": "racarr@google.com",
+    "time": "Tue Apr 02 14:18:56 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:19 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Careful with screenshots containing secure layers!\n\nFor purposes of\tthe screen rotation animation the system server\tis allowed\nto capture secure (not protected) layers and trusted not to persist screenshots\nwhich may contain secure layers. However when displaying the screen rotation animation,\nthe layer the screenshot is placed on will itself not be secure, so if we record\nthe animation the recording will contain persisted versions of the secure content. Make sure\nwe use the new API from SurfaceFlinger to set FLAG_SECURE if our screenshot contains secure\ncontent.\n\nBug: 69703445\nTest: Transaction_test#SetFlagsSecureEUidSystem\nChange-Id: I0dd36462867da52e6b1451f65f56c2c5d37538f3\n(cherry picked from commit bab740f10e0812ba47d19931fdfe2fa7e02bbd0c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1529a6bcf243fb65060bfb6dbe8c264eedfee201",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_view_SurfaceControl.cpp",
+      "new_id": "614a8ff124ea1178c55ba1388e8f5dde79445597",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_view_SurfaceControl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "53d21776eed7eeaac968f762f084cd0052a52e19",
+      "old_mode": 33188,
+      "old_path": "graphics/java/android/graphics/GraphicBuffer.java",
+      "new_id": "61dd37fb0581ad4f7dd37a134a8218a5937e722a",
+      "new_mode": 33188,
+      "new_path": "graphics/java/android/graphics/GraphicBuffer.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "498cda11c1b4de7febfad46da8adb844f7b7e1e9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/ScreenRotationAnimation.java",
+      "new_id": "95051dea2e9a3ee57f21a127a4eb1e996d3da1ce",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/ScreenRotationAnimation.java"
+    }
+  ]
+}

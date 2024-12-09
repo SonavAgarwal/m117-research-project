@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "45d233b0f17f45619767d66e56a376701efda99c",
+  "tree": "16f841305a007119cf997321e2896e7b1e5c76d3",
+  "parents": [
+    "ef408dae0473b5058f79b329328c0650396c97ee"
+  ],
+  "author": {
+    "name": "Svet Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Thu Sep 26 22:05:20 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:35:20 2019 +0000"
+  },
+  "message": "Update PermissionChecker usages to avoid unnecessary attribution.\n\nWe had accidental usages of the PermissionChecker for cases where no\nprivate data was provided to the app but the checkPermission API on\nthe latter also did blame data access on the app. The PermissionChecker\nwas designed to handle IPC calls and not for generic API checks.\n\nTo avoid future accidental incorrect PermissionChecker usages this\nchange renames the existing APIs of the latter to clearly indicate\nthat they should be used for data delivery and also adds sibling\nmethods for doing the same permission checks for preflight purposes.\nAlso the documentation is improved to furhter assist developers.\n\nIn addition, this change fixes accidental permission checker usages\nthat blame when they should not by using the new preflight flavor\nof the permission check APIs.\n\nTest:\n    atest com.android.settingslib.location.RecentLocationAppsTest\n    atest CtsPermissionTestCases\n    added: LocationAccessCheckTest#notificationOnlyForAccessesSinceFeatureWasEnabled\n    added: LocationAccessCheckTest#noNotificationIfFeatureDisabled\n    added: LocationAccessCheckTest#noNotificationIfBlamerNotSystemOrLocationProvider\n    added: LocationAccessCheckTest#testOpeningLocationSettingsDoesNotTriggerAccess\n\nbug:141028068\nMerged-In: I902a0ab049783a222ac2acdfac93ecd49f34dece\nChange-Id: I902a0ab049783a222ac2acdfac93ecd49f34dece\n(cherry picked from commit 625b69e00869d041b3114346965cd72a5d5c3c6a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fa25bebc48556afc7c09742f91e9940808c09a75",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/Constants.java",
+      "new_id": "38a2e205d5d4ee37c628e29213b346317dbacc13",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/Constants.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "727808bc373a1cdd50848852642883b714e22f9e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/permission/service/LocationAccessCheck.java",
+      "new_id": "5d6425a3df6c319eea3c4cee0ab2b2a9408d6cc9",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/service/LocationAccessCheck.java"
+    }
+  ]
+}

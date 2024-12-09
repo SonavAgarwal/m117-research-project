@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d4841f1161bdb5e13cb19e81af42437a634dd6ef",
+  "tree": "42be06eda73b4b38c1660c255da445825919df97",
+  "parents": [
+    "e629194c62a9a129ce378e08cb1059a8a53f1795"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri May 13 10:33:34 2016 +0530"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:02 2016 -0700"
+  },
+  "message": "Decoder: Set u1_long_term_reference_flag to 0 for error concealment\n\nFor MBs which are in error, set u1_long_term_reference_flag to zero.\nThis ensures latest frame is used for concealment\n\nBug: 28470138\nChange-Id: I58eab5bc1da277823f3dbb4103ba50867f8935dc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "14fa0bac46f51d12f45bba3084df489cb60595eb",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "5f6f63f701156e9c663f52310d1b9083a6fb6438",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

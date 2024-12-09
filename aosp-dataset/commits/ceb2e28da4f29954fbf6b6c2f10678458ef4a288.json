@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ceb2e28da4f29954fbf6b6c2f10678458ef4a288",
+  "tree": "9f92feb3d001a636572ef7ee984986ea844e2aeb",
+  "parents": [
+    "e5bbccb2ee49d2fa384907939d7af011adfc02a0"
+  ],
+  "author": {
+    "name": "Arc Wang",
+    "email": "arcwang@google.com",
+    "time": "Thu Mar 11 12:10:18 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Apr 12 23:38:43 2021 +0000"
+  },
+  "message": "Hide non-system overlay window on ActivityPicker\n\nTo improve security.\n\nBug: 181962311\nTest: manual\n      Show an AlertDialog and observe if it will hide after below command.\n      adb shell am start -a android.intent.action.PICK_ACTIVITY -n com.android.settings/.ActivityPicker\nChange-Id: I6e2845cc19dc012cba2933318a067bbb8db90a23\n(cherry picked from commit 3b4853e109a5d95656f73d31dace4099d5dfbca7)\n(cherry picked from commit aef628646af22f01f80167f88980b69004cf2567)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae61944cbe1406c91e0e19dfecdbcefb00136a8a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/ActivityPicker.java",
+      "new_id": "f75ce3740aafb8ab06b151d142da0c9ee6e56318",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/ActivityPicker.java"
+    }
+  ]
+}

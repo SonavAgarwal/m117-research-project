@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0981df6e3db106bfb7a56a2b668c012fcc34dd2c",
+  "tree": "dc6913625ac7d7897ae45adecc82cd9e454ebb6b",
+  "parents": [
+    "9a2be5d49d57b239bf6345f033eab01ba98f3889"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Thu Aug 20 09:56:39 2015 -0700"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Thu Aug 27 21:10:32 2015 +0000"
+  },
+  "message": "IMediaPlayer.cpp: make sure structures are initialized to 0\n\nCredit https://code.google.com/p/android/issues/detail?id\u003d183310\n\nBug: 23515142\nChange-Id: Idbd66fb148bd0ac1dd78f8651d0164f2a41e2427\n(cherry picked from commit b73b826cc16291b33649402497efbe0f946413bd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e79bcd242d647d10b3319a0ac04f864d74dd1bfc",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IMediaPlayer.cpp",
+      "new_id": "9b57902aec383ae9edab4d81efa12346fb8c8713",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IMediaPlayer.cpp"
+    }
+  ]
+}

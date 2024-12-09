@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "9aa026d0b867b270149dd7323ce36f4f9bfea980",
+  "tree": "a5f020fff8edb4babd7c64a8f2c91b121534e989",
+  "parents": [
+    "dd790de419425b399f39ccbf2df6af353f2e6d27"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Mar 10 16:03:40 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:48:34 2017 +0000"
+  },
+  "message": "Fix TOCTOU problem in libstagefright_soft_aacenc\n\nFixes a configuration error where we sized a buffer initially based\non the configuration at the time and held onto the buffer through the\nrest of our lifetime. If the configuration was changed in a way that\nresulted in needing a different size buffer, the code did not make\nthis happen.\n\nPatch keeps the buffer around but also stores the \u0027current allocation\nsize\u0027.  This allows the later code that preps the buffer to query if\nthe buffer size is same or changed.  If changed, we discard the old\nbuffer and allocate a new one of the appropriate size.\n\nsafetynet logging added so we can tell how often this happens in the\nfield.\n\nTesting was done on nyc-mr2 (where poc was built). Patch applies\nwithout change to k/l/m/n/master.\n\nBug: 34621073\nTest: run POC, saw new diagnostics saying it caught the size change.\nChange-Id: Ia95aadc8c727434b7ba9628deeae327c405336d3\n(cherry picked from commit 0495c029bd51bcfc1cca8c943ab4ce2f201dbe98)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f00a5d1b0c4fa034a4968589fd1a0668e60fc1a5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp",
+      "new_id": "44415e2e01c118cb3a5fe5f750a7a844c6f358bc",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f1b81e18f65749386bca364b9085255b1db8742d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.h",
+      "new_id": "123fd253f7c4b501d5366cf6e41e9fa5a9a6438c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.h"
+    }
+  ]
+}

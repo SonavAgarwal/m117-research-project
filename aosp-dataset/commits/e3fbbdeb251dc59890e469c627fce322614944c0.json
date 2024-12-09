@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "e3fbbdeb251dc59890e469c627fce322614944c0",
+  "tree": "230eb1ded20da35703d232d5ddaf0c57164cd946",
+  "parents": [
+    "1983621106184ccb03370fe0523ff550a59d6220"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Sep 05 16:39:16 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:20:19 2018 +0000"
+  },
+  "message": "HID Device: Fix OOB in register_app\n\nBug: 113037220\nBug: 113111784\nTest: manual\nChange-Id: I91bcd5032959458b926c479160c7e391b8de313b\n(cherry picked from commit 6aa2d0a5fab28c8829aab4099da0ad450e451c1e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "54597475ff7deabaffc96d7c5dffa504e5a4506f",
+      "old_mode": 33188,
+      "old_path": "bta/hd/bta_hd_api.cc",
+      "new_id": "40963cce2472b2746ee53f48f44771d8867195d5",
+      "new_mode": 33188,
+      "new_path": "bta/hd/bta_hd_api.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "bc0992daf90da16abd8c243a4acdcd0cb5e85fa8",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hd.cc",
+      "new_id": "6d83167e808f2b07f3d3f114bad8a1991e046700",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hd.cc"
+    }
+  ]
+}

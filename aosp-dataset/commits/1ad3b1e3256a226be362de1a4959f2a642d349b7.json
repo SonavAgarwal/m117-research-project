@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1ad3b1e3256a226be362de1a4959f2a642d349b7",
+  "tree": "eda6c8df9998206263271e0f3e9cbde9f1697b93",
+  "parents": [
+    "1166ca8adba9b49c9185dad11b28b02e72124d95"
+  ],
+  "author": {
+    "name": "Peter Qiu",
+    "email": "zqiu@google.com",
+    "time": "Mon Jan 30 12:55:09 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Jan 30 16:33:04 2017 -0800"
+  },
+  "message": "WifiInstaller: add permission for access downloaded files\n\nThe previous fix for the security vulnerability b/33178389\nadd the code to drop the downloaded installation file but\nforget to update the manifest for additional permission.  This\nomission was due to that the original fix was merged from\nmnc-dev, which doesn\u0027t have such permission requirement.\n\nSo add the required permission for deleting downloaded\ninstallation file.\n\nBug: 33178389\nTest: Verify WifiInstaller works and not crashing due permission\n      denied exception\n\nChange-Id: I987ad73dde0e3cc5b920cd08830dd065c47be402\n(cherry picked from commit 9a9e51727a5cdaf3ac10c98e1ea4661bc13a11c7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "03291aeaeaa93bc20855c8637901cefff104e0d1",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "56ac88486d559d9b9db9b3225c4c3356a73e6af4",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

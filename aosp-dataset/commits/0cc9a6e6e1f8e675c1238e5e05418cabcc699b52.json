@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "0cc9a6e6e1f8e675c1238e5e05418cabcc699b52",
+  "tree": "4e04ebcb613283da3d4adf62c7a67a69ebd2810f",
+  "parents": [
+    "ca15dfd05cdeea7ed57578aa569831698324b2a0"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Aug 18 17:36:50 2015 +0100"
+  },
+  "committer": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Aug 25 16:18:16 2015 +0100"
+  },
+  "message": "libutils: fix overflow in SharedBuffer [DO NOT MERGE]\n\nSee\nhttps://code.google.com/p/android/issues/detail?id\u003d181910\n\nBug: 22952485\n(cherry picked from commit 66b6eb9490beeeabc804d790c1c4060ce047afd4)\n\nChange-Id: Ic71dd0025b9a7588c4f3bb1c7be1bd13d2ff5105\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b1dc1f81d855124db6f4ea1faa86763876003c50",
+      "old_mode": 33188,
+      "old_path": "libutils/Android.mk",
+      "new_id": "4127b995acccb3073f590da74e5de7b1fecc0ca3",
+      "new_mode": 33188,
+      "new_path": "libutils/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "3555fb712968c9d45e340845f6dca301afd44586",
+      "old_mode": 33188,
+      "old_path": "libutils/SharedBuffer.cpp",
+      "new_id": "947551a6aa7d5d4dcf46f9d887a82d1bf2f149a3",
+      "new_mode": 33188,
+      "new_path": "libutils/SharedBuffer.cpp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d88fbf397e2fd9aa9c6a372014a299a87237d15b",
+      "new_mode": 33188,
+      "new_path": "libutils/SharedBufferTest.cpp"
+    }
+  ]
+}

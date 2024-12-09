@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d5b0d0b1df2e1a7943a4bb2034fd21487edd0264",
+  "tree": "57bab1a1217689b795d878a03e1d9ba6b4d45ac6",
+  "parents": [
+    "7625010a2d22f8c3f1aeae2ef88dde37cbebd0bf"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Mon Sep 19 11:37:54 2016 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Tue Sep 27 00:17:07 2016 -0700"
+  },
+  "message": "Avoid crashing when downloading MitM\u0027d PAC that is too big am: 7d2198b586 am: 9c1cb7a273 am: 6634e90ad7\nam: 66ee2296a9\n\nChange-Id: Ib0023b44e521b936ab2f9450ad367b1feda64492\n(cherry picked from commit d37eb7646581a2ffc68b11ccb67e3457716d878e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7d1da01b8ca6adba3a1a66cc086573e034d7d99c",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/connectivity/PacManager.java",
+      "new_id": "758646f4c62d2c2b01b4cc46421a8cf2f1dfd337",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/connectivity/PacManager.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "91fc934bb2e5ea59929bb2f574de6db9b5100745",
+  "tree": "31ed0191721f1a4943a373af662d87c44657cc42",
+  "parents": [
+    "866dc26ad4a98cc835d075b627326e7d7e52ffa1"
+  ],
+  "author": {
+    "name": "Benjamin Franz",
+    "email": "bfranz@google.com",
+    "time": "Tue Jul 12 13:42:21 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:27 2016 -0700"
+  },
+  "message": "Block user from setting safe boot setting via adb\n\nBug: 29900345\nChange-Id: Id3b4472b59ded2c7c29762ddf008ee8486009dbb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5c7221570053c4a9c6e5461df4332e9e0b0eaa20",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java",
+      "new_id": "90eade4d36fed1a490a239eec8043076edffde5a",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsProvider/src/com/android/providers/settings/SettingsProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "38a3f421264f85f38afaa71a9bb85aaba4a38969",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/UserRestrictionsUtils.java",
+      "new_id": "1f1c6f8870194c6b43ada1de8b6afe32fba81347",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/UserRestrictionsUtils.java"
+    }
+  ]
+}

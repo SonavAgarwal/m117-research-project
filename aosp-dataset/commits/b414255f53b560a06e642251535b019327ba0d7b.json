@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b414255f53b560a06e642251535b019327ba0d7b",
+  "tree": "f1e5d56cd14773002465200eff1c2de376c0fbc3",
+  "parents": [
+    "3a9b9aec7a0c04b74a278be5773fcfdaa2a04f4e"
+  ],
+  "author": {
+    "name": "Naveen Leekha",
+    "email": "leekha@google.com",
+    "time": "Tue Sep 22 18:04:44 2015 -0700"
+  },
+  "committer": {
+    "name": "Naveen Leekha",
+    "email": "leekha@google.com",
+    "time": "Tue Sep 22 18:04:44 2015 -0700"
+  },
+  "message": "Initialize local variables to avoid data leak\n\nThe uninitialized local variables pick up\nwhatever the memory content was there on stack.\nThis data gets sent to the remote process in\ncase of a failed transaction, which is a security\nissue. Fixed.\n\n(Partial manual merge of master change\n 12ba0f57d028a9c8f4eb3afddc326b70677d1e0c. Rest\n to automerge from klp-dev)\n\nFor b/23696300\n\nChange-Id: I704c9fab327b3545c58e8a9a96ac542eb7469c2a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1e28f9bb83ab4f3d0d6a9ebe3f252aca23212584",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferProducer.cpp",
+      "new_id": "dd9db3378a57ff2c92a2a2afa05e8cf9a92663fb",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferProducer.cpp"
+    }
+  ]
+}

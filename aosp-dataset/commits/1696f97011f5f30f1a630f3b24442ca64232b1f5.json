@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1696f97011f5f30f1a630f3b24442ca64232b1f5",
+  "tree": "879194ec04c0c86e7291878232af22e027241516",
+  "parents": [
+    "6ecbbc093f4383e90cbbf681cd55da1303a8ef94"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Fri Feb 02 01:26:34 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:17:58 2018 +0000"
+  },
+  "message": "AVRCP: Initialize buffer for attribute values to be written to\n\nTest: Build\nBug: 71603553\nChange-Id: I978270605cfaa3b833d6c19f1b1d2cd5a82ac079\n(cherry picked from commit e36d6f8edceed860929901b6c49c1964a1ac563f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7f7fe015d6729e063429bd5f654665ff237a1308",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "82c3cd75514bfcd0dd7ad6cc697df36769e69516",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

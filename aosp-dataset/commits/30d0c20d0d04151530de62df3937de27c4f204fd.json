@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "30d0c20d0d04151530de62df3937de27c4f204fd",
+  "tree": "f8a0671b181ab6cbe2d7df01bccc5f3469e7e8a6",
+  "parents": [
+    "738797135d1f65c760f3d1139c9c254fac22c9a5"
+  ],
+  "author": {
+    "name": "James Zern",
+    "email": "jzern@google.com",
+    "time": "Wed Jun 07 20:46:13 2017 -0700"
+  },
+  "committer": {
+    "name": "Greg Wroblewski",
+    "email": "musashi@google.com",
+    "time": "Fri Jan 10 14:53:36 2020 -0800"
+  },
+  "message": "vp8_decode_frame: fix oob read on truncated key frame -- DO NOT MERGE\n\nthe check for error correction being disabled was overriding the data\nlength checks. this avoids returning incorrect information (width /\nheight) for the decoded frame which could result in inconsistent sizes\nreturned in to an application causing it to read beyond the bounds of\nthe frame allocation.\n\nBUG\u003dwebm:1443\nBUG\u003db/62458770\nbug: 62458770\n\nChange-Id: I063459674e01b57c0990cb29372e0eb9a1fbf342\n(cherry picked from commit 071357d86191d052f3e4d1a312d019b9a76ffb35)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eae81faa13019e58b56eb59e9d6ad0e30e4b0259",
+      "old_mode": 33188,
+      "old_path": "libvpx/test/invalid_file_test.cc",
+      "new_id": "3d9f5c16a737b84563871d19ce5d64f4b71799d3",
+      "new_mode": 33188,
+      "new_path": "libvpx/test/invalid_file_test.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "b39ab87635b9a20b9a0b40686028a05160534e21",
+      "old_mode": 33188,
+      "old_path": "libvpx/test/test-data.mk",
+      "new_id": "1656372b37a0e0e134412840cd12fea879efd2d3",
+      "new_mode": 33188,
+      "new_path": "libvpx/test/test-data.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "22ca6f564311486f093b54c74dd79f64295412b1",
+      "old_mode": 33188,
+      "old_path": "libvpx/test/test-data.sha1",
+      "new_id": "7948f9e3fb78cb7e699bf22dd68e15e40bbe3210",
+      "new_mode": 33188,
+      "new_path": "libvpx/test/test-data.sha1"
+    },
+    {
+      "type": "modify",
+      "old_id": "0aec2a01b048d73c1fa47ae54dbb8dfb62e1cf9f",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp8/decoder/decodeframe.c",
+      "new_id": "d900b670d2fdb8bf99ca7aebd7b05997bdfce41e",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp8/decoder/decodeframe.c"
+    }
+  ]
+}

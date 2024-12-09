@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ca6b0a211eb39ba85eed60ea740c85d1122fc6bc",
+  "tree": "ec1db008f1638fc2321a05343df588222314d6a7",
+  "parents": [
+    "d4c158133cb48b587c1ef7a8fe2301a0f5beed1b"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Oct 29 13:05:21 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:50 2020 +0000"
+  },
+  "message": "ACL: Drop broadcasts\n\nBug: 169327567\nTest: compiles\nTag: #security\nChange-Id: Id4231fd7a142d630a2ada0f41a90e01afc011045\nMerged-In: Id4231fd7a142d630a2ada0f41a90e01afc011045\n(cherry picked from commit 83c32e8e8c0c27333779c64b74473cad86670265)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ebd9c3adaf91f6197ad623545ed515df0a1edcf8",
+      "old_mode": 33188,
+      "old_path": "hci/src/packet_fragmenter.cc",
+      "new_id": "4c235aee01fd62e1242bd730f1b0245e99e482e2",
+      "new_mode": 33188,
+      "new_path": "hci/src/packet_fragmenter.cc"
+    }
+  ]
+}

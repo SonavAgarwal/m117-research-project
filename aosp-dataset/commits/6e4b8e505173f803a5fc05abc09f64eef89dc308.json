@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6e4b8e505173f803a5fc05abc09f64eef89dc308",
+  "tree": "56774ee58c5c27d048c31da41ab359768b73437c",
+  "parents": [
+    "198888b8e0163bab7a417161c63e483804ae8e31"
+  ],
+  "author": {
+    "name": "Cheney Ni",
+    "email": "cheneyni@google.com",
+    "time": "Wed Aug 08 22:20:08 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:28 2018 +0000"
+  },
+  "message": "Checks the SMP length to fix OOB read\n\nBug: 111937065\nTest: manual\nChange-Id: I330880a6e1671d0117845430db4076dfe1aba688\nMerged-In: I330880a6e1671d0117845430db4076dfe1aba688\n(cherry picked from commit fceb753bda651c4135f3f93a510e5fcb4c7542b8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe21398a7857faa8bd1363da381395a6a04fcb51",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "15dfae108afe0e47513e3f248e6b44c1732a7443",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

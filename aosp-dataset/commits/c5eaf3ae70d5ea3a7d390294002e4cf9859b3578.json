@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c5eaf3ae70d5ea3a7d390294002e4cf9859b3578",
+  "tree": "9a1b685ec775c24102ae9f84f2d8b497a95a755f",
+  "parents": [
+    "1f418f10f4319fc829360b7efee7fca4b3880867"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri May 12 10:45:14 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:05:17 2017 +0000"
+  },
+  "message": "Fix memory leak in error case\n\nBug: 37239013\nChange-Id: Ic33e0f7ed946d0729efa46f69aff1a5d35e81b1e\n(cherry picked from commit ab34612a31e82b713ca0ac043e14f68f3788fbda)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f42fbcf2973c6db6506c8fc92e9c11180e66290c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "23b36d46f5bc42458b35e42eb671a5ad13394572",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bbf60925044c9ea7613c4264dea20c6c12246118",
+  "tree": "62355a81f730a3fb82661d02616f0a7c0ccb83cc",
+  "parents": [
+    "dc057fcf3789c181bf553302f592bfcd4bb2430c"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon May 10 15:36:32 2021 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 14 21:56:32 2021 +0000"
+  },
+  "message": "Protect MAP Client message broadcasts with RECEIVE_SMS permission\n\nTest: compilation\nBug: 177238342\nMerged-In: Ie9984a95aa204710519da049819464875084900b\nChange-Id: I80fa47b81e99cc43b432d01c88ff42e06d7647e1\n(cherry picked from commit 1053a248da167ab586e282fb8057fef2ef87b659)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae11d2a281c0b7e9569cff2eb4d6295013c2dd5a",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/mapclient/MceStateMachine.java",
+      "new_id": "7bc70ebc8eb61bcf4b5ecfb90f0200cb666a0b85",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/mapclient/MceStateMachine.java"
+    }
+  ]
+}

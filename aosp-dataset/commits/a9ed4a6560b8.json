@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a9ed4a6560b8562b7e2e2bed9527e88001f7b682",
+  "tree": "0769da3ad923b7c84ce4eb86fd2bc3e9fde6efe6",
+  "parents": [
+    "9123e3a74ec7b934a4a099e98af6a61c2f80bbf5"
+  ],
+  "author": {
+    "name": "Marc Zyngier",
+    "email": "maz@kernel.org",
+    "time": "Wed Aug 19 17:12:17 2020 +0100"
+  },
+  "committer": {
+    "name": "Al Viro",
+    "email": "viro@zeniv.linux.org.uk",
+    "time": "Sat Aug 22 18:23:57 2020 -0400"
+  },
+  "message": "epoll: Keep a reference on files added to the check list\n\nWhen adding a new fd to an epoll, and that this new fd is an\nepoll fd itself, we recursively scan the fds attached to it\nto detect cycles, and add non-epool files to a \"check list\"\nthat gets subsequently parsed.\n\nHowever, this check list isn\u0027t completely safe when deletions\ncan happen concurrently. To sidestep the issue, make sure that\na struct file placed on the check list sees its f_count increased,\nensuring that a concurrent deletion won\u0027t result in the file\ndisapearing from under our feet.\n\nCc: stable@vger.kernel.org\nSigned-off-by: Marc Zyngier \u003cmaz@kernel.org\u003e\nSigned-off-by: Al Viro \u003cviro@zeniv.linux.org.uk\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "12eebcdea9c8a2a39c9dbf079dd41d8e67648fec",
+      "old_mode": 33188,
+      "old_path": "fs/eventpoll.c",
+      "new_id": "196003d9242c6010b2a6f4cca62908bc5797061a",
+      "new_mode": 33188,
+      "new_path": "fs/eventpoll.c"
+    }
+  ]
+}

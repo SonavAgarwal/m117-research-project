@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "6bc126b040718d9252ec72d2dd5207c7a4913238",
+  "tree": "1469e8e50d790cfa55637e287961b31296536eec",
+  "parents": [
+    "98f21c24749b00743bf366fd3bd37d136091b75e"
+  ],
+  "author": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Fri Mar 06 10:34:17 2020 -0800"
+  },
+  "committer": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Wed Mar 11 11:47:05 2020 -0700"
+  },
+  "message": "Do not set referrerUri on SessionInfo for non-owners\n\nThis change leaves the referrerUri field null when the caller leading to\nits production is not the owner of the session.\n\nBug: 142125338\nTest: atest SessionReferrerUriTest\nChange-Id: I84679ea0636aa2097e25e23813c48134c9cc1d75\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1f5317679bd2c87dd98e464e5a0a16696623bd5f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/content/pm/PackageInstaller.java",
+      "new_id": "ec3590fd23cf80d55221c8c3ad22b802a6bfdde6",
+      "new_mode": 33188,
+      "new_path": "core/java/android/content/pm/PackageInstaller.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "33ef2d43d720fc9929309d878381fde2cfd77bca",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageInstallerService.java",
+      "new_id": "cdc37364ca79da545cd74c7ea8b2722eb84137d5",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageInstallerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "97aa79de5e8d622cbf7550b4c98a44bdd7f98381",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageInstallerSession.java",
+      "new_id": "483f83efd508738b1df893184df007bb69c528d3",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageInstallerSession.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "83fe5562324fe902d5c06c71339da75f060089f9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/StagingManager.java",
+      "new_id": "342c90719916e794cb52b07f8379d4e6b2e552eb",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/StagingManager.java"
+    }
+  ]
+}

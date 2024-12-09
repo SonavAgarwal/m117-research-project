@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "85c0ec4106659a11c220cd1210f8d76c33d9e2ae",
+  "tree": "db4130c4f449d238d76b73743b5d0ac0622b1f4a",
+  "parents": [
+    "21851eaecc814be709cb0c20f732cb858cfe1440"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Jan 13 11:23:29 2017 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:00 2017 -0800"
+  },
+  "message": "Decoder: Fixed an out of bound access while parsing SEI\n\nInvalid SPS Id read was resulting in an out of bound read\nBug: 33552073\nChange-Id: Ie5b80222fc7ac3a64475340371be0facdf999d7b\n\n(cherry picked from commit d3d60c6a5d7ab605d19b9ac4b95bc227b7b870dc)\n(cherry picked from commit 99a85bb4690dd30871d9457c30ca3b44a0928cc1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "14ffcd6737dd5744ba7709359c6753a11d3ef4c0",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_sei.c",
+      "new_id": "800f2c9c20dd0e6652c7ecfd49d4bc9ad4a45bf5",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_sei.c"
+    }
+  ]
+}

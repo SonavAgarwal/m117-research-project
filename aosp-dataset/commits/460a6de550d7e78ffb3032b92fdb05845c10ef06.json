@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "460a6de550d7e78ffb3032b92fdb05845c10ef06",
+  "tree": "e620ec32680195e0e84c4ce0fa7e3f90571b7fb4",
+  "parents": [
+    "34a4fb93ae4fb33844fe7ea4fd7e573bbdd1a46a"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Fri Jan 24 18:07:12 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:45 2020 +0000"
+  },
+  "message": "Enforce ACCESS_COARSE_LOCATION on getCellLocation\n\nA implementation bug in Q meant that we weren\u0027t checking\nACCESS_COARSE_LOCATION on apps targeting API 28 or earlier on\ngetCellLocation. This change patches this issue.\n\nBug: 147402629\nBug: 148414207\nTest: atest TelephonyManagerTest:#testSdk28CellLocation\nChange-Id: Ie1f622307dec66500b83e960a44f49c37068007e\n(cherry picked from commit 773ba0257913f3fa3fc1e28d33826ea6cbdf86cd)\n(cherry picked from commit c3f8eb66822b3f32d3af7b78d2220d9a53d8091d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e1e1a06cf25781bcd5c7019f6f83ba35628e9fe6",
+      "old_mode": 33261,
+      "old_path": "src/com/android/phone/PhoneInterfaceManager.java",
+      "new_id": "435cd9601b47a65783a66a86f6822346c7805b01",
+      "new_mode": 33261,
+      "new_path": "src/com/android/phone/PhoneInterfaceManager.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a1d5b40aaaa050af40c0f95d8b2d3e1ae8cfebbf",
+  "tree": "5d9c8e4f3ff3193a8e8d09c1baf6a74b452e7aca",
+  "parents": [
+    "292d85545c6dec3c4386ec1fc2877597ea0ac5cc"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Fri Jul 07 18:25:16 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:32 2017 +0000"
+  },
+  "message": "stagefright: check aac_frame_length to prevent infinite loop\n\nbug: 62673179\nChange-Id: I5da44822ad2ff59d396d1df42f34cd0a5620e134\n(cherry picked from commit 6e2bcf40e4083be3a0fbb13d03293a78301e66ef)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "96ca40509861d1fc262ee5d94e228fb798c54672",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/mpeg2ts/ESQueue.cpp",
+      "new_id": "7599c13fd7bfe47d32a1e95984ae899f38759b69",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/mpeg2ts/ESQueue.cpp"
+    }
+  ]
+}

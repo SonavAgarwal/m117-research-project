@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "3a967720202ba074f747ddfb698a3757e037afb1",
+  "tree": "88f90593a4ac642aa0a4136ceae33fbc7dc1a7e8",
+  "parents": [
+    "b117c7f9892ae0bddd11bc6f2aaa18729fbcd429"
+  ],
+  "author": {
+    "name": "Ted Wang",
+    "email": "tedwang@google.com",
+    "time": "Mon Apr 29 10:11:04 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:09 2019 +0000"
+  },
+  "message": "Fix potential OOB read in sdpu_get_len_from_type\n\nAdd boundary check in sdpu_get_len_from_type to prevent potential OOB read.\n\nBug: 117105007\nTest: Manul\nMerged-In: I3755e13ee0a7e22ffd5f48fca909610a26b09d0a\nChange-Id: I3755e13ee0a7e22ffd5f48fca909610a26b09d0a\n(cherry picked from commit 1243f8da338dadfe2a3c281a08297b431402d41c)\n(cherry picked from commit 4d8e1d63e1a2116c47702d38d858f5a742e8292f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d8cee9a753ebe033e9228125e436659716a25263",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_db.cc",
+      "new_id": "769e7d83ff9fdc86c0e8042d18f1e694f182ee11",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_db.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1ca2ad3ede6e2dcc26bf470b798d0b5464240a88",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_discovery.cc",
+      "new_id": "f2e9805b1086217a4692630b31932fa2f047bc35",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_discovery.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "c57a4996f5f80149f237741f31a298a585288be6",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_utils.cc",
+      "new_id": "c2c6b2763a9160f1db54a3f6fc2629314dc1dd96",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_utils.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d44c9d9b934401e29011c1b46e01f64865352e4",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdpint.h",
+      "new_id": "e00a8caa9ab4c1134fafb5eb93db4f69e733dcfe",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdpint.h"
+    }
+  ]
+}

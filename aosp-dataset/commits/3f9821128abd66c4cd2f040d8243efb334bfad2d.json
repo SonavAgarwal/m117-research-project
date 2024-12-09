@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3f9821128abd66c4cd2f040d8243efb334bfad2d",
+  "tree": "7ce2676e717bffb7d4c3450e4c6f75ff85989c12",
+  "parents": [
+    "8ba22b48ebff50311d7eaa8d512f9d507f0bdd0d"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Wed Jan 11 09:17:01 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:33:04 2017 -0800"
+  },
+  "message": "32764144 Security Vulnerability - heap buffer overflow in libgiftranscode.so\nin colorMap-\u003eColors[colorIndex]\n\n* No range checking was done on a color index. Add range\nchecking and bail if the color index is out of range.\n\nTest: tested sending a large gif that would invoke the GifTranscoder library\nto make the gif smaller.\n\nBug: 32764144\nChange-Id: I44f36274ec333ae1960fa8fc96b2dbde35fbaa66\n(cherry picked from commit 6f763fef7ab16e28f6c43496e0f866e7803b4dc8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "624553874017db215b873816c209eba63562a063",
+      "old_mode": 33188,
+      "old_path": "jni/GifTranscoder.cpp",
+      "new_id": "112feca6e8743b08975bbf5460794594b9812b8b",
+      "new_mode": 33188,
+      "new_path": "jni/GifTranscoder.cpp"
+    }
+  ]
+}

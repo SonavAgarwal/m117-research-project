@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "396ba2fc4f27ef6c44bbc0098bfddf4da76dc4c9",
+  "tree": "1aa3d14cb68ea5cd33a7c068d519aeb263a5fb99",
+  "parents": [
+    "dd54eb64ba65370b1abb1c689bd2e235bcd94284"
+  ],
+  "author": {
+    "name": "Vasily Averin",
+    "email": "vvs@virtuozzo.com",
+    "time": "Tue Jun 09 10:53:22 2020 +0300"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Thu Jul 09 09:35:57 2020 +0200"
+  },
+  "message": "netfilter: nf_conntrack_h323: lost .data_len definition for Q.931/ipv6\n\nCould you please push this patch into stable@?\nit fixes memory corruption in kernels  v3.5 .. v4.10\n\nLost .data_len definition leads to write beyond end of\nstruct nf_ct_h323_master. Usually it corrupts following\nstruct nf_conn_nat, however if nat is not loaded it corrupts\nfollowing slab object.\n\nIn mainline this problem went away in v4.11,\nafter commit 9f0f3ebeda47 (\"netfilter: helpers: remove data_len usage\nfor inkernel helpers\") however many stable kernels are still affected.\n\nFixes: 1afc56794e03 (\"netfilter: nf_ct_helper: implement variable length helper private data\") # v3.5\ncc: stable@vger.kernel.org\nReviewed-by: Florian Westphal \u003cfw@strlen.de\u003e\nSigned-off-by: Vasily Averin \u003cvvs@virtuozzo.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f65d93639d12595884081726808f4c1e17caec03",
+      "old_mode": 33188,
+      "old_path": "net/netfilter/nf_conntrack_h323_main.c",
+      "new_id": "29fe1e7eac889bb33f5539ca2c44a28659ac4083",
+      "new_mode": 33188,
+      "new_path": "net/netfilter/nf_conntrack_h323_main.c"
+    }
+  ]
+}

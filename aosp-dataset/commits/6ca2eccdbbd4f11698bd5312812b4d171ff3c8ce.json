@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "6ca2eccdbbd4f11698bd5312812b4d171ff3c8ce",
+  "tree": "a171172d30c6b137a1df9fa9ae8ccaf3eb3a1399",
+  "parents": [
+    "2d12ab62d5dd0fd9e6ba8df49f3d59d5629ef583"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Wed Jul 12 14:04:16 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:52 2017 +0000"
+  },
+  "message": "Back-port fixes for b/62196835\n\nBug: 62196835\nTest: Created an accessibility service that displays a system\nand a toast overlay, confirmed that it disappeared when we\nreached the accessibility permission screen that uses this\nflag.\n\nChange-Id: Ic51ead670fc480e549512ba1d02f49d9c13bc3f0\n(cherry picked from commit 41ff5389daa6e6ce4aa853bfae96e5ced0b1d8df)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0fe164a269cdc19b66d1b9d86956bf443200c054",
+      "old_mode": 33188,
+      "old_path": "api/system-current.txt",
+      "new_id": "6b6f7e99e4b1e7f65fcfc2e1077a31e2fa2a9c53",
+      "new_mode": 33188,
+      "new_path": "api/system-current.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "395f73844b0721d3447f4ec286920c66990815d3",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/WindowManager.java",
+      "new_id": "169f7e170dd6616d340f58c65d12038561dbdb5b",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/WindowManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c79d50067f932838037f0a78bdf6f2f63d5d136f",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "43deb02d6fa655ce3b613405ecaa8b8105b4e28a",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "08c0a4b013579a00e27b05a51386d3fc16b908d4",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/Session.java",
+      "new_id": "b5c4202dc1078e3f77afc6b5c027c4141e3724a5",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/Session.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca2610af3f66144cc3259f6d64dda3716a3019d4",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "0d970591cb5c19c69bb9ae4eccd993258e6c841a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "fbef2c626a9c73ba039a550abf3cd9a9a65b60b3",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowState.java",
+      "new_id": "228ef1afb2a99a5681f3d95664edb8df09f497c4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowState.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa8e781b1c075af25ea12f07a0a0a376c59738d9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowStateAnimator.java",
+      "new_id": "ec3208b3cc6c84a3484f45602a596028f5a98f2a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowStateAnimator.java"
+    }
+  ]
+}

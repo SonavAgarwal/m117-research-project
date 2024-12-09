@@ -1,0 +1,93 @@
+)]}'
+{
+  "commit": "c510ecb3ec0eeca5425f5bc96fae80ea56f85be6",
+  "tree": "0e43ab585113ae6c71c4f14065bfafd7a26f95a7",
+  "parents": [
+    "07a21754f45672b27e765d8c7677c9663c6dce91"
+  ],
+  "author": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Fri Aug 18 18:01:46 2017 -0700"
+  },
+  "committer": {
+    "name": "Phil Weaver",
+    "email": "pweaver@google.com",
+    "time": "Tue Aug 29 00:52:25 2017 +0000"
+  },
+  "message": "Backport overlay security fix\n\nReplacing app opps fix with the flag that is used\nelsewhere.\n\nBug: 37442941\nTest: Verified that toast and system overlay still goes\naway on permission and a11y service capability screens.\n\nMerged-In: I1a3e3c5b1696a5f5b95eac187acb5a03863b4a0b\n\nChange-Id: If9bec515105369055415d54c7fcad7a65431f8e7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a2c2771b4844a8905ae09d96138c8a36cd483950",
+      "old_mode": 33188,
+      "old_path": "api/system-current.txt",
+      "new_id": "74a2bae634adefbf2adebea9102930fbaf5f9271",
+      "new_mode": 33188,
+      "new_path": "api/system-current.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "4060b9a7c2715c68a6354abfa6dfdba6f5344410",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/WindowManager.java",
+      "new_id": "c1e8f1cc3bc6faebb6e1881cef31b84ed16f27f2",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/WindowManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "794d4f8b78b938f5d20d608fc9a8417d4d3ebcd1",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "b2a736304ed0445b4679f409fde71843c4e22ab6",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "7e575bfc647031fb38af51d761708fa89ab2f1a5",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/Session.java",
+      "new_id": "74f644c41c904ef1bf289326db8d1e2f5f0f0550",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/Session.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a96d224129187bf7bec8e7f9b3ef1dd317924344",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/TaskSnapshotSurface.java",
+      "new_id": "249620131867b139ca3554a298beffe53a29d937",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/TaskSnapshotSurface.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a91d1e9c28a8ac9d5973c295ad9124ca72bfea6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "f236b5a73be0686da8df0cc62278753b9d8b4f6e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f74948f8e7f0642d2c22e720cf50beb0d2b84b35",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowState.java",
+      "new_id": "b3f0a43416c900847272a0f00f25c347616ee880",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowState.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "27927e6c06938334d741beea441fb3ea4887fee9",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowSurfaceController.java",
+      "new_id": "1728cfbb6ef0cb6f80d98d5c3509ae31c78203a3",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowSurfaceController.java"
+    }
+  ]
+}

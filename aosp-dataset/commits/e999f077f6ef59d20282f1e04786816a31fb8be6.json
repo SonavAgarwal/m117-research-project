@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e999f077f6ef59d20282f1e04786816a31fb8be6",
+  "tree": "556282b6bcab23207fe0cb8dad2f10a1e77c3c9c",
+  "parents": [
+    "c0723d864b10fbd6c5cbbfa65e886c5e9eb3aafd"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu May 14 09:10:40 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:48 2015 -0700"
+  },
+  "message": "DLS parser: fix wave pool size check.\n\nBug: 21132860.\nChange-Id: I8ae872ea2cc2e8fec5fa0b7815f0b6b31ce744ff\n(cherry picked from commit 2d7f8e1be2241e48458f5d3cab5e90be2b07c699)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e8dc4636461706e32c3f0e553d259aae6b39ec1f",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "51cce704d07dee2b5de768a0cb98fbc9b8abef14",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}

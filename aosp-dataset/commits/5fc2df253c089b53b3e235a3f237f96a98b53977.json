@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5fc2df253c089b53b3e235a3f237f96a98b53977",
+  "tree": "889ec8cf2da4fdb777f576227e67486ddb0b8613",
+  "parents": [
+    "8afdb00385e7621e319d1d7280a19bcd0e8b9800"
+  ],
+  "author": {
+    "name": "Chris Forbes",
+    "email": "chrisforbes@google.com",
+    "time": "Wed May 10 13:12:00 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:05:42 2017 +0000"
+  },
+  "message": "ui: Fix bad size check in Fence::unflatten\n\nDiffers slightly from mnc+ patch: GetFlattenedSize was fixed in mnc.\n\nTest: Boot device, run poc from bug, observe no longer crashes\nBug: 37285689\nChange-Id: Id8b851733b088cce0d07493fbf76e7e24f9299ad\n(cherry picked from commit 9809602ac32dcb7bceaa5bc34df5b7fb68aacd38)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7cf82338206f8402465ae6af59e81814c92bd2cc",
+      "old_mode": 33188,
+      "old_path": "libs/ui/Fence.cpp",
+      "new_id": "5531b238f967a13532b74b9ccf2af628254ded96",
+      "new_mode": 33188,
+      "new_path": "libs/ui/Fence.cpp"
+    }
+  ]
+}

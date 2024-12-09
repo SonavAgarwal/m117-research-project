@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "06041db074add181ddf19c3e4235a73c62207495",
+  "tree": "f5c511bd0c41c293ec5e10ce3c306a048a90d7e9",
+  "parents": [
+    "aae9d6c77a404f022645c99d3492c9079ec0e747"
+  ],
+  "author": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Wed May 15 22:58:15 2019 -0700"
+  },
+  "committer": {
+    "name": "Michael Wachenschwanz",
+    "email": "mwachens@google.com",
+    "time": "Wed May 15 23:10:02 2019 -0700"
+  },
+  "message": "Clear the Parcel before writing an exception during a transaction\n\nThis prevents any object data from being accidentally overwritten by the\nexception, which could cause unexpected malformed objects to be sent\nacross the transaction.\n\nTest: atest CtsOsTestCases:ParcelTest#testExceptionOverwritesObject\nFixes: 34175893\nChange-Id: Iaf80a0ad711762992b8ae60f76d861c97a403013\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "66ddf21790fee80619010c682cbb3a4c59e5d2db",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/Binder.java",
+      "new_id": "6178b2bf5817d64135a4155d9b7b74fb6998b2e5",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/Binder.java"
+    }
+  ]
+}

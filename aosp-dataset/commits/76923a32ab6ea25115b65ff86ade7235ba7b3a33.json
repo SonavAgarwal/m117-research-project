@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "76923a32ab6ea25115b65ff86ade7235ba7b3a33",
+  "tree": "c6d835c4ba6b8f7cf800b00b75067a3df1679642",
+  "parents": [
+    "564bf677ccfc9a9e35e068e6f329d401802b8871"
+  ],
+  "author": {
+    "name": "Valerie Hau",
+    "email": "vhau@google.com",
+    "time": "Fri Jul 17 17:18:40 2020 -0700"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Aug 06 17:13:34 2020 -0700"
+  },
+  "message": "Fixing small bug for sec release\n\nBug: 150845631, 137284057\nTest: build, boot, SurfaceFlinger_test, libsurfaceflinger_unittest\nChange-Id: I9b7ab17ea0f7fb7723a7d5bf914041b1b45a59d3\n(cherry picked from commit 9a17ac2ca4beb9504f006487d4e6d72428c5f421)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ba203bd176b38656cc3b14be19cce30f5d2cf544",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "6dde7397316b5c599ad1bc81fa93d929c18eb8a7",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    }
+  ]
+}

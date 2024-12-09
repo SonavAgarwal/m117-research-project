@@ -1,0 +1,120 @@
+)]}'
+{
+  "commit": "203725e4d58e16334d84998c1483c374f541ed9f",
+  "tree": "e1924e478b0b2c4adc53321211c98ae2ff3ad822",
+  "parents": [
+    "90a6312dc958f51c9cc8a00a1b54502ba5ad3a1b"
+  ],
+  "author": {
+    "name": "Svetoslav Ganov",
+    "email": "svetoslavganov@google.com",
+    "time": "Thu Dec 08 11:48:19 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:13 2016 -0800"
+  },
+  "message": "Fix vulnerability in MemoryIntArray\n\nMemoryIntArray was using the size of the undelying\nashmem region to mmap the data but the ashmem size\ncan be changed until the former is memory mapped.\nSince we use the ashmem region size for boundary\nchecking and memory unmapping if it does not match\nthe size used while mapping an attacker can force\nthe system to unmap memory or to access undefined\nmemory and crash.\n\nAlso we were passing the memory address where the\nashmem region is mapped in the owner process to\nsupport cases where the client can pass back the\nMemoryIntArray instance. This allows an attacker\nto put invalid address and cause arbitrary memory\nto be freed.\n\nNow we no longer support passing back the instance\nto the owner process (the passed back instance is\nread only), so no need to pass the memory adress\nof the owner\u0027s mapping, thus not allowing freeing\narbitrary memory.\n\n Further, we now check the memory mapped size against\n the size of the underlying ashmem region after we do\n the memory mapping (to fix the ahsmem size) and if\n an attacker changed the size under us we throw.\n\n Tests: Updated the tests and they pass.\n\n bug:33039926\n bug:33042690\n\nChange-Id: I1004579181ff7a223ef659e85c46100c47ab2409\n(cherry picked from commit a97171ec499fd876722733f35e51d0d6dbd8d223)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "83e693c49c146c7c1d1170fd0359c819a5bd8379",
+      "old_mode": 33188,
+      "old_path": "core/java/android/util/MemoryIntArray.java",
+      "new_id": "0d62054825e888120e5387079f5fb050fbdcae98",
+      "new_mode": 33188,
+      "new_path": "core/java/android/util/MemoryIntArray.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d0c0f2f3e6d4e1301ea12b14550d2b0a6997123e",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_util_MemoryIntArray.cpp",
+      "new_id": "a8e14523e5dc54b9d1be04ae152dfa6f09610baf",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_util_MemoryIntArray.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "6d1ebb4a6f58a1090e42fb8c6a73336f0e232ee9",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/Android.mk",
+      "new_id": "d4a6493880f249891ac46aa6128df35bbced7439",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "d0b611cee7a1f73029cd27a5d5c367bfdecdf1f8",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/jni/Android.mk"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "57ee2d5f6cbbb18a23dc03799d3a4ac7816df6aa",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/jni/android_util_MemoryIntArrayTest.cpp"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0c84d98e9de93f407084a57e80f089f9d0ebb642",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/jni/registration.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0a65fff2c38c7b26e67b51e05e30082fadc41712",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/src/android/util/IRemoteMemoryIntArray.aidl",
+      "new_id": "10d14f1c3266317fcca34ff7c5e29c376e4eab09",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/src/android/util/IRemoteMemoryIntArray.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "129e6b7cbc03ead3e4e2ea76451b20cfbc6aaa2c",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/src/android/util/MemoryIntArrayTest.java",
+      "new_id": "85817bbde1bb0aa6435b70f4aee5aeb523669776",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/src/android/util/MemoryIntArrayTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "10c325fcc1fb7515f951319615161eb167f76eee",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/src/android/util/RemoteIntArray.java",
+      "new_id": "7dc3400779b0f916e70252076f8eec78d5c590a4",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/src/android/util/RemoteIntArray.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "35ae9a777bcb7d1ce8ec8e677171a87f7d3a8c18",
+      "old_mode": 33188,
+      "old_path": "core/tests/utiltests/src/android/util/RemoteMemoryIntArrayService.java",
+      "new_id": "9264c6c86c3fa5800265d7315f305a1d76a467f9",
+      "new_mode": 33188,
+      "new_path": "core/tests/utiltests/src/android/util/RemoteMemoryIntArrayService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "f4f7986a753d28fbe50d408229aed208844a5ad8",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsProvider/src/com/android/providers/settings/GenerationRegistry.java",
+      "new_id": "6e291c789b28b16bd954f6b4c1e443583269caf0",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsProvider/src/com/android/providers/settings/GenerationRegistry.java"
+    }
+  ]
+}

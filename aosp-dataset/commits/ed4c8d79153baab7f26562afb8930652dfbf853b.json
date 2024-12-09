@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ed4c8d79153baab7f26562afb8930652dfbf853b",
+  "tree": "7bcf2ce6b7cd2cf91c8703780bfba13274f55b80",
+  "parents": [
+    "253320d25fccbb49621926d49dcf5ef64cf529c6"
+  ],
+  "author": {
+    "name": "Raph Levien",
+    "email": "raph@google.com",
+    "time": "Mon Nov 30 15:04:59 2015 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 10 16:41:09 2015 -0800"
+  },
+  "message": "Avoid integer overflows in parsing fonts\n\nA malformed TTF can cause size calculations to overflow. This patch\nchecks the maximum reasonable value so that the total size fits in 32\nbits. It also adds some explicit casting to avoid possible technical\nundefined behavior when parsing sized unsigned values.\n\nBug: 25645298\nChange-Id: Id4716132041a6f4f1fbb73ec4e445391cf7d9616\n(cherry picked from commit 183c9ec2800baa2ce099ee260c6cbc6121cf1274)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "75033729e31d0abdf8d929826a316330b5d89d23",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "64310006fd7c195073b0cafe9645c20b1481f152",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    }
+  ]
+}

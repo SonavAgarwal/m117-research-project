@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "71c573ae67b6a15c33ad1036b37b999c54d7236b",
+  "tree": "33b553a9c119f112e2d7606863736ce084c5f75d",
+  "parents": [
+    "b2d9ae364060a5229e4b268597156acf879eb832"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Fri Feb 19 20:05:20 2021 +0800"
+  },
+  "committer": {
+    "name": "Chienyuan Huang",
+    "email": "chienyuanhuang@google.com",
+    "time": "Thu Mar 11 12:43:16 2021 +0000"
+  },
+  "message": "AVRCP: pass bdaddr by value when use SdpCb\n\nTAG: #security\nBug: 174182139\nTest: compilation\nIgnore-AOSP-First: security fix\nChange-Id: I7f5b2a3dd0540a922b64ce213d871d355bd6dac6\nMerged-In: I7f5b2a3dd0540a922b64ce213d871d355bd6dac6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "af8fb578c57b1652393e256c6877f1b814fb468f",
+      "old_mode": 33188,
+      "old_path": "profile/avrcp/connection_handler.cc",
+      "new_id": "06c61b3babec9dba1ea1c744d2115fcc78b59188",
+      "new_mode": 33188,
+      "new_path": "profile/avrcp/connection_handler.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d5f0a27250876a9c2006eea3e8aec6fb04891019",
+      "old_mode": 33188,
+      "old_path": "profile/avrcp/connection_handler.h",
+      "new_id": "a5029cfc91cd57381b38e613da4b06b71ed14737",
+      "new_mode": 33188,
+      "new_path": "profile/avrcp/connection_handler.h"
+    }
+  ]
+}

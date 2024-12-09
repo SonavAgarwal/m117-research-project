@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4b3b618144050d80dbaa0228797b021d5df5e919",
+  "tree": "759455339622f052c08dec252577cd7de32c9065",
+  "parents": [
+    "1adff0be1c97a53bdb1645d7fe35bb0a82b516c1"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Mar 06 15:55:29 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:57:49 2018 +0000"
+  },
+  "message": "better mpeg2 TS elementary stream Access Unit parsing\n\nmpeg2 es stream access units have a 3 byte prefix and a 1 byte start\ncode. Searching for the next access unit started after the prefix\ninstead of after the start byte.\n\nBug: 74114680\nTest: ran POC before/after\n(cherry picked from commit 371066d073c5db289b0f38b9d2bfd3e326c78c66)\n\nChange-Id: I3c51c62355c810e1b8dbc644cad3de335b7d8108\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1cf97447992e3176a1ad3785da237848de52ec34",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/mpeg2ts/ESQueue.cpp",
+      "new_id": "11f3ed1c973edb494fbb59308e5a0ad147a7e13d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/mpeg2ts/ESQueue.cpp"
+    }
+  ]
+}

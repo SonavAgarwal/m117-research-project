@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "251dfbee7fb5986c7e93362556ea556785e4d0e4",
+  "tree": "63bc9827f75af6098bfcd5aada6c217ab5756c66",
+  "parents": [
+    "69eaa90b0e4cc78fa2f518a50182bc9e4c9e87f3"
+  ],
+  "author": {
+    "name": "Winson",
+    "email": "chiuwinson@google.com",
+    "time": "Wed Oct 28 13:25:44 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:51 2020 +0000"
+  },
+  "message": "Remove updateIntentVerificationStatusAsUser from ResolverActivity\n\nDO NOT CHERRY PICK ANYWHERE: Security issue\n\nThis API is meant to grant an app complete verification over the\ndomains it has declared, meaning it will always resolve the domains it\ndeclares for web links.\n\nThis can allow an app to take over links that are unowned. Any time a\nuser selects \"Always\" when resolving an Intent in the diambiguation\ndialog, this API would be called, and all subsequent resolutions of any\ndomain declared by the app selected would be automatically directed to\nthat app, with no prompt to the user.\n\nFrom a quick search, it\u0027s possible that all usages of this API are\nactually unintended and should be removed. Should be considered for\ndeprecation in the future.\n\nBug: 163358811\n\nTest: none, this is not generally testable, see linked bug for context\n\nMerged-In: Iff7f788a83af68c7fbb1c6b9a8be7b47136be2b6\nChange-Id: Iff7f788a83af68c7fbb1c6b9a8be7b47136be2b6\n(cherry picked from commit 3ebeb4c490d1a36ff15f8f5767ef443c0bdac2b8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "233231cfcfdf0c3ceb82a1c656243d7f09012055",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/app/ResolverActivity.java",
+      "new_id": "fadc15912dc1e43803bb3a6dc6f20a2526455e90",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/app/ResolverActivity.java"
+    }
+  ]
+}

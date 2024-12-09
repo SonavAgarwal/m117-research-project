@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "f196061addcc56878078e5684f2029ddbf7055ff",
+  "tree": "513f9ee9554a084f5bab5041c304f2c949547148",
+  "parents": [
+    "971d02c0af79530b3d8be906476abfdbc563ba99"
+  ],
+  "author": {
+    "name": "Jack He",
+    "email": "siyuanh@google.com",
+    "time": "Mon Mar 13 10:37:06 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:21 2017 -0700"
+  },
+  "message": "OPP: Restrict file based URI access to external storage\n\n* Allow only external storage paths in file based URI in\n  BluetoothOppSendFileInfo when the file send request comes from an\n  external source\n* Fix a potential NPE when using Uri.getPath()\n\nBug: 35310991\nTest: Make, test various cases of Bluetooth file share\nChange-Id: I8ff00d63d3c880667302f8d7ff8eaa0c0b533921\n(cherry picked from commit 3edd7f0a8aadf2f44bc62ea5b567c74d39a534c8)\n(cherry picked from commit 3ce229fa602f739d1e98e2a85a3bd955c3a308f6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3553d34fca6b299719f51f9f4926b16181e91afd",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppHandoverReceiver.java",
+      "new_id": "4f03c96cb092a8bf9eec26f1892aa27cb98784f3",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppHandoverReceiver.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d4b5b2821fa00cab446bdbe3d2e421096ce41c9",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppLauncherActivity.java",
+      "new_id": "c298745659cb7d00cf3dc9ff77f0a5cd4d67888f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppLauncherActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "dd8efe01f7b444444bd5235455e97128ddbe6085",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppManager.java",
+      "new_id": "39929aa9e55373c14078243a4f958becca9f77da",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9d2b9f2e6fc0e9d467bd15764adeb0e171554a1",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppSendFileInfo.java",
+      "new_id": "84ebc8229b991ebf83106c812d7c494b21d7e7ad",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppSendFileInfo.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "bd671b21250d17693752b325860d98ed3899d4f0",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java",
+      "new_id": "6b94ab56b76170e0ff18149df1fea78153896956",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f6650b34ef27d6da8cdccd42e0f76fe756a9375b",
+  "tree": "3f15ac1a5d77eee168769f85062837207a10faed",
+  "parents": [
+    "fe5ade4c86e2f5a86eab6c6593981d02f4c1710b"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Fri Feb 10 14:47:11 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:33 2017 +0000"
+  },
+  "message": "Decoder: Fix in the case of MMCO 6\n\nAdded an error check in the case of MMCO 6\n(SET_LT_INDEX)\n\nBug: 38014992\nTest: POC fails before / works after patch\nChange-Id: I76e38a8e2ff0bab043b47f44f1f7b1d4fe60d416\n(cherry picked from commit 9e4f0ce7042078aeffaa16f2773cc2d1b82cdb12)\n(cherry picked from commit 41489f9ece970df8530e28d7a24710b1beb755e2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e02cc908c37d82da55996f8b5de5a3a9224f9281",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_dpb_mgr.c",
+      "new_id": "0a61ffd548f91bf4c05576e848cb5a131a48ff93",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_dpb_mgr.c"
+    }
+  ]
+}

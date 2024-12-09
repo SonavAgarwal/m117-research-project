@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "073a80800f341325932c66818ce4302b312909a4",
+  "tree": "d016e6ae68111687fbcb1555db11360e51cda955",
+  "parents": [
+    "a18111d2db2a5e43a5ba318073986c12f9c86720"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Apr 28 13:43:44 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:31:30 2016 -0700"
+  },
+  "message": "DO NOT MERGE Fix AudioEffect reply overflow\n\nBug: 28173666\nChange-Id: I055af37a721b20c5da0f1ec4b02f630dcd5aee02\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a6b07278a1bc3e3df03fa367ff2e48cf2a14b5ef",
+      "old_mode": 33188,
+      "old_path": "post_proc/bundle.c",
+      "new_id": "df327ab74e7855b2ad9051f90874bc324590919c",
+      "new_mode": 33188,
+      "new_path": "post_proc/bundle.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b3f97c6a7f9d90df7642de4df27afbdd2c3e9a0c",
+      "old_mode": 33188,
+      "old_path": "voice_processing/voice_processing.c",
+      "new_id": "7d2b5929ac69c24c144bb31e7a7f3c6a6c4cfced",
+      "new_mode": 33188,
+      "new_path": "voice_processing/voice_processing.c"
+    }
+  ]
+}

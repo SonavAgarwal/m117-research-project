@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e151bf8999345399208d54663f103921ae5e1c6",
+  "tree": "5378808b5b65b98f172ece3edf44577210c8c15b",
+  "parents": [
+    "69ca32dcea56329090551016070e9028ae220764"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Sep 20 16:09:16 2017 -0600"
+  },
+  "committer": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@google.com",
+    "time": "Wed Sep 20 23:39:20 2017 +0000"
+  },
+  "message": "Only construct real Throwable objects.\n\nWithout this test, someone could trick us into constructing other\nshady classes.\n\nTest: builds, boots\nBug: 65281159\nChange-Id: If678d0681708d1b0dcf056aa1133830ad3dbce31\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d84d62997d93910ac888a812c580676bb18612b4",
+      "old_mode": 33188,
+      "old_path": "core/java/android/os/ParcelableException.java",
+      "new_id": "7f71905d7f280954cb90d2b51dc4c595669a66c0",
+      "new_mode": 33188,
+      "new_path": "core/java/android/os/ParcelableException.java"
+    }
+  ]
+}

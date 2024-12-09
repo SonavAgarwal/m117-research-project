@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "16a3cd0b0729bd53265897cf8c790013156e92ce",
+  "tree": "c10bd7c4cbf2d87210491f5be6f8edd381393674",
+  "parents": [
+    "d97f8714f07a762efe5a48747454fb4bdd51be8b"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Tue Oct 24 22:42:30 2017 -0700"
+  },
+  "committer": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Tue Oct 31 11:53:39 2017 -0700"
+  },
+  "message": "cas: validate shared buffer size before using\n\nbug: 67962232\n\ntest:\ncts MediaCasTest\nvts VtsHalCasV1_0Target\n\nChange-Id: I20b89d5971db4c89704245bb00c281af8c943697\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3d90809cd05ad89fbe41e1460d1833a2bac24ef3",
+      "old_mode": 33188,
+      "old_path": "cas/1.0/default/DescramblerImpl.cpp",
+      "new_id": "36699baf28128f46294c4981b3d7fb4b3d3118e8",
+      "new_mode": 33188,
+      "new_path": "cas/1.0/default/DescramblerImpl.cpp"
+    }
+  ]
+}

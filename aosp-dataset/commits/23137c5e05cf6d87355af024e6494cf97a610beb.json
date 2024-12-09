@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "23137c5e05cf6d87355af024e6494cf97a610beb",
+  "tree": "9c643375b0a7132cfc6dcd83b42cfe75f386606d",
+  "parents": [
+    "3ba77cf43842eea409c891e815f14261aafde289"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Mon Jan 07 17:36:52 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:11 2019 +0000"
+  },
+  "message": "Prevent Integer Overflow in rw_t3t_act_handle_check_rsp()\n\nBug: 120503926\nTest: NFC Enable/Disable\nChange-Id: I260c2028ab56260ae4d26ce7c4699763df20ce7a\n(cherry picked from commit cee2f35a694627e191c7bf26728f9ff7aa07414a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "81307303b10fd1ef0c1a9f77c6d29545b80c461c",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_t3t.cc",
+      "new_id": "b911f3b2f63947b4057c5ddf4e87e0ba38848007",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_t3t.cc"
+    }
+  ]
+}

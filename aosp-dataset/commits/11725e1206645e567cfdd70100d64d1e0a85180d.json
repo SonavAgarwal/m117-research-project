@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "11725e1206645e567cfdd70100d64d1e0a85180d",
+  "tree": "d1c6f92a15040b1ff31ece5c3bb15e9b79b54a2e",
+  "parents": [
+    "2ed2c83c83286ee033b78b6fa11394ea405e57ed"
+  ],
+  "author": {
+    "name": "Andrii Kulian",
+    "email": "akulian@google.com",
+    "time": "Fri Jul 31 18:46:28 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:06:48 2020 +0000"
+  },
+  "message": "Require permission to create trusted displays\n\nBug: 162627132\nTest: atest VirtualDisplayTest#testTrustedVirtualDisplay\nTest: atest\nframeworks/base/packages/SystemUI/tests/src/com/android/systemui/bubbles\nTest: atest DisplayTest\nTest: atest VirtualDisplayTest#testTrustedVirtualDisplay\nTest: atest VirtualDisplayTest#testUntrustedSysDecorVirtualDisplay\nTest: adb logcat -b events\n\nChange-Id: Id06b2013ef5fdeadf321f14f8b611c733031d54d\nMerged-In: Id06b2013ef5fdeadf321f14f8b611c733031d54d\n(cherry picked from commit ef7b1333f0e87cd07af115719b94dd37e2de54dc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "98a23f2b007502ce78dbac5bc714bd96c4993574",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/ActivityView.java",
+      "new_id": "3cb6293f0706658df9339bd1ff2d3d9db7abfeec",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/ActivityView.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9ccb4c172158d5678523dc339f55e051ae97b88f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/window/VirtualDisplayTaskEmbedder.java",
+      "new_id": "9013da36007e4f81c81a3f45c4de40580e927642",
+      "new_mode": 33188,
+      "new_path": "core/java/android/window/VirtualDisplayTaskEmbedder.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5c2841aff1d83d7e770e413bb2ee96dd8cc4f5a8",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/AndroidManifest.xml",
+      "new_id": "7597e87321530b935ad5f10ffac2407de24dd2bd",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "daf613976358ec2aaa2a355699a93a3fd064d2e6",
+      "old_mode": 33188,
+      "old_path": "core/tests/coretests/src/android/hardware/display/VirtualDisplayTest.java",
+      "new_id": "0f6284d22d1067ff6760bdddeeb665e4eaad42ac",
+      "new_mode": 33188,
+      "new_path": "core/tests/coretests/src/android/hardware/display/VirtualDisplayTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1e556a3ed40269c36e924c41428ac8eb42f585c3",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/bubbles/BubbleExpandedView.java",
+      "new_id": "58d5776543a914556e422fa223d514e295c30d9d",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/bubbles/BubbleExpandedView.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "24661d69a78eb52cac3081a71095d36d52db3fff",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/display/DisplayManagerService.java",
+      "new_id": "852868616afdbaaac811216594e4bc4a10a631d1",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/display/DisplayManagerService.java"
+    }
+  ]
+}

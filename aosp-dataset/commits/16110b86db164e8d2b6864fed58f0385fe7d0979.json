@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "16110b86db164e8d2b6864fed58f0385fe7d0979",
+  "tree": "2b63da15310105f86dbaf79f95b89b21de1d9aa1",
+  "parents": [
+    "2e16d5fac149dab3c3e8f1b2ca89f45cf55a7b34"
+  ],
+  "author": {
+    "name": "Fabien Sanglard",
+    "email": "sanglardf@google.com",
+    "time": "Mon Dec 05 15:06:29 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:41:21 2016 -0800"
+  },
+  "message": "Fix security vulneratibly 31960359\n\nBufferQueueCore features a variable mLastQueuedSlot which is not\ninitialized in its constructor resulting in security vulnerability\n\nBug: 31960359\nChange-Id: If892f59f6288d8b81b1e312995832a20c8341494\nTests: Manually on Angler\n(cherry picked from commit dffa078205f6b6c17e24214928f642393423e081)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9cb9c624016b3999795e65fe6e3353e43b2b908e",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueCore.cpp",
+      "new_id": "4f6ecffd60efc588b03f1e278dce8e35fe6e13a1",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueCore.cpp"
+    }
+  ]
+}

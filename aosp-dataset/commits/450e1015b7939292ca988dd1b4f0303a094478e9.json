@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "450e1015b7939292ca988dd1b4f0303a094478e9",
+  "tree": "343e686f5c98dd7ade19045f82f0cfebfb2b353c",
+  "parents": [
+    "2e637bfd64c59200414130671e32e3e087e9f147"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Aug 06 08:03:47 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Sat Aug 08 01:00:47 2015 +0000"
+  },
+  "message": "Fix Ogg album art\n\nBug: 23036083\nBug: https://code.google.com/p/android/issues/detail?id\u003d182053\nChange-Id: I1a5cbe06990900160c2addade238c1e9feab8f71\n(cherry picked from commit c63cc509404b9328aedd1be3adc4e87cd07b4eb1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5e79e788816d24150a0d212e8e51a68b87c85959",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OggExtractor.cpp",
+      "new_id": "073c53f1308f419c48670de6761a26d30b674d43",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OggExtractor.cpp"
+    }
+  ]
+}

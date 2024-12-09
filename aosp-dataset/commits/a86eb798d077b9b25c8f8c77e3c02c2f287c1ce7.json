@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a86eb798d077b9b25c8f8c77e3c02c2f287c1ce7",
+  "tree": "ccafb91552aafdc99a151e333cdebec71213ac7f",
+  "parents": [
+    "b7c0507c9db65a455244e965bd7044edb6820172"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed Jun 01 15:37:18 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:33 2017 -0700"
+  },
+  "message": "Fix in handling header decode errors\n\nIf header decode was unsuccessful, do not try decoding a frame\n\nAlso, initialize pic_wd, pic_ht for reinitialization when\ndecoder is created with smaller dimensions\n\nBug: 28886651\nBug: 35219737\nChange-Id: I8c06d9052910e47fce2e6fe25ad318d4c83d2c50\n(cherry picked from commit 2b9fa9ace2dbedfbac026fc9b6ab6cdac7f68c27)\n(cherry picked from commit c2395cd7cc0c286a66de674032dd2ed26500aef4)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a792f06480b143966132377acd11f74709119ee3",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_api_main.c",
+      "new_id": "c0813c4ba40c908c305b743bac1b431c01830348",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_api_main.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "6408fcacb20ca52fcef99522db58dc2497e10d96",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "1d5bceee3fd68bcc21828ef45e2d06210fb2279a",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7bc3253911fdff4cbf0529f2c738e3dc34176b7f",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_decoder.c",
+      "new_id": "e9b31a09cce48183f51d22347565f5a3dab45785",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_decoder.c"
+    }
+  ]
+}

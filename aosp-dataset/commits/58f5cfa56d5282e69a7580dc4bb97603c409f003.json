@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "58f5cfa56d5282e69a7580dc4bb97603c409f003",
+  "tree": "4717ace370be83e337c26e372cf798aeeac2b252",
+  "parents": [
+    "607a9a94cfa3221f5997d21a19d0e9bb76eab798"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Wed Nov 18 00:32:42 2020 +0000"
+  },
+  "committer": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri Dec 04 20:09:59 2020 +0000"
+  },
+  "message": "libbinder: check null bytes in readString*Inplace\n\nThis is entirely defensive, since the only real guarantee we have here\nfrom these APIs is that a buffer of a given length is available.\nHowever, since we write 0\u0027s here, presumably to guard against people\nassuming these are null-terminated strings, we might as well enforce\nthat they are actually null terminated.\n\nBug: 172655291\nTest: binderParcelTest (added in newer CL)\nChange-Id: Ie879112540155f6a93b97aeaf3d41ed8ba4ae79f\nMerged-In: Ie879112540155f6a93b97aeaf3d41ed8ba4ae79f\n(cherry picked from commit 51e02b16c397c44ddf81a0736cf6045cd4c44128)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9642a87f4e0b82579f70e865ab2988252bf14450",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "1f7d27e0e95241ea1617a640759be555c8ff9135",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

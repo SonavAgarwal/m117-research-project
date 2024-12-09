@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "494561291a503840f385fbcd11d9bc5f4dc502b8",
+  "tree": "47fe5dd76ba3a45b1bcfe4c44c538bcebca30947",
+  "parents": [
+    "8b5fd8f24eba5dd19ab2f80ea11a9125aa882ae2"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Jan 05 12:10:47 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Feb 14 16:58:07 2017 +0000"
+  },
+  "message": "Decoder: Moved end of pic processing to end of decode call\n\nih264d_end_of_pic() was called after parsing slice of a new picture.\nThis is now being done at the end of decode of the current picture.\ndecode_gaps_in_frame_num which needs frame_num of new slice is now\ndone after decoding frame_num in new slice.\n\nThis helps in handling errors in picaff streams with gaps in frames\n\nBug: 33588051\nBug: 33641588\nBug: 34097231\nChange-Id: I1a26e611aaa2c19e2043e05a210849bd21b22220\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aa1312bce00a757bdc6083cdc63a10a3ec0f52df",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "04212dcc200b852af6af5a3f23b141eb95b6caed",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ae59e7139d9c40bf722a7b021456a5d5d6f71147",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "72064ed7a415ec3a8482cfb14563b5b27550a2ee",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c76e186ab0fbab22e00c16b0edf5bb4a75ce12f5",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "a7c84a9eafd12453667075df78743f4b5bfa6c06",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8125144c3d28107b39a364c267cae58f520f761",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.h",
+      "new_id": "c0120624d5a18e3855a7b21e08553a6c1f8282fa",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.h"
+    }
+  ]
+}

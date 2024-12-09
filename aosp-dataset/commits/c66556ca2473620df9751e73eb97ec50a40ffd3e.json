@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "c66556ca2473620df9751e73eb97ec50a40ffd3e",
+  "tree": "39d1a11135b56c6b378a90b3f5c01b9b919d7f9a",
+  "parents": [
+    "f6e1f661b95908660c2bcf200266734c30803910"
+  ],
+  "author": {
+    "name": "Mathy Vanhoef",
+    "email": "Mathy.Vanhoef@cs.kuleuven.be",
+    "time": "Fri Sep 29 04:22:51 2017 +0200"
+  },
+  "committer": {
+    "name": "Glen Kuhne",
+    "email": "kuh@google.com",
+    "time": "Mon Oct 16 09:50:39 2017 -0700"
+  },
+  "message": "Prevent installation of an all-zero TK\n\nProperly track whether a PTK has already been installed to the driver\nand the TK part cleared from memory. This prevents an attacker from\ntrying to trick the client into installing an all-zero TK.\n\nThis fixes the earlier fix in commit\nad00d64e7d8827b3cebd665a0ceb08adabf15e1e (\u0027Fix TK configuration to the\ndriver in EAPOL-Key 3/4 retry case\u0027) which did not take into account\npossibility of an extra message 1/4 showing up between retries of\nmessage 3/4.\n\nBug: 65245581\nTest: Wifi Integration suite\nChange-Id: If3e736da9a822635551b72074e8f7c3f4d921e87\nMerged-In: If3e736da9a822635551b72074e8f7c3f4d921e87\nSigned-off-by: Mathy Vanhoef \u003cMathy.Vanhoef@cs.kuleuven.be\u003e\nSigned-off-by: Glen Kuhne \u003ckuh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ebcfe943479c7b2ded805d45081fb59747abe2b3",
+      "old_mode": 33188,
+      "old_path": "src/common/wpa_common.h",
+      "new_id": "5733c75c9a3c691967f2148bdb56f11d79306099",
+      "new_mode": 33188,
+      "new_path": "src/common/wpa_common.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "bbb7ad9e8da75006808f1c04b0e04af1ecba5b37",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa.c",
+      "new_id": "eb3d75c268a234985669abffd45a793b48c1570d",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "b605da92701c4fa8fe133c4f57906a42629a47ba",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/wpa_i.h",
+      "new_id": "899dc459083e47dcaaa5449d4b56c80cd5ca543e",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/wpa_i.h"
+    }
+  ]
+}

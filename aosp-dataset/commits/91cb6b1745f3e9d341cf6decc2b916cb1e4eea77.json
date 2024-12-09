@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "91cb6b1745f3e9d341cf6decc2b916cb1e4eea77",
+  "tree": "996720c2a6e3b770e801d6feab3f6c61ac98268c",
+  "parents": [
+    "f02a31da36bf876bafec540eb96fea572ff84dd1"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Mon May 08 17:11:05 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:05:36 2017 +0000"
+  },
+  "message": "Decoder: Fix allocation for Mbaff weight matrix\n\nIncreased the allocation size for Mbaff weight\nmatrix buffer\n\nBug: 36996978\n\nChange-Id: I21cf2cb1010abdc6346f743f5237ae1730c4bf41\n(cherry picked from commit 07db35ad5af8c4ee2308f983650d9a1b811841ea)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "36b745f5083eeb46219ba582ef50c908ebebb9c5",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "694078841575ed9aefd6377365df42a850067a19",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

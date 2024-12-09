@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "79eecef63f3ea99688333c19e22813f54d4a31b1",
+  "tree": "0454f11a4938b63bd1e75b976b62b3cf6aba6edf",
+  "parents": [
+    "aa1b0618a847ee1365c1e9810f085214c717a27e"
+  ],
+  "author": {
+    "name": "Robert Greenwalt",
+    "email": "rgreenwalt@google.com",
+    "time": "Fri Dec 04 15:09:47 2015 -0800"
+  },
+  "committer": {
+    "name": "Robert Greenwalt",
+    "email": "rgreenwalt@google.com",
+    "time": "Fri Dec 04 15:09:47 2015 -0800"
+  },
+  "message": "Check permissions on getDeviceId.\n\nbug:25778215\nChange-Id: Ie27d69e558a8132f6e0c5058aaad1a4ae02bf82f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7ff70ffac456aef1aae0c84df61a0019e855a93d",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/PhoneSubInfoController.java",
+      "new_id": "3394d207576ac20ef1903a8db1b17a995f8b8faf",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/PhoneSubInfoController.java"
+    }
+  ]
+}

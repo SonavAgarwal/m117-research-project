@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8ba22b48ebff50311d7eaa8d512f9d507f0bdd0d",
+  "tree": "50b0da28bf3ba393abe6a3e9696238fb03ab8dec",
+  "parents": [
+    "1bb11f37f98e11e7925a8c1338ed951af476f027"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Wed Jan 04 09:42:37 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:33:04 2017 -0800"
+  },
+  "message": "33388925  Mismatched new vs delete in framesequence library\n\n* The array allocations neglected to include [] so delete, instead\nof delete [] would get called.\n\n* Test\nManual\n- tested sending a large gif that would invoke the GifTranscoder library\nto make the gif smaller.\n\nBug: 33388925\nChange-Id: I1e200e470d66ae615ffe9340ff9c049eaa73f63c\n(cherry picked from commit 837474a376a4599d57f791966080f93ca7afaf67)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a7f5c74ae53896c724ba3c0bc5cbe170bded290a",
+      "old_mode": 33188,
+      "old_path": "jni/GifTranscoder.cpp",
+      "new_id": "624553874017db215b873816c209eba63562a063",
+      "new_mode": 33188,
+      "new_path": "jni/GifTranscoder.cpp"
+    }
+  ]
+}

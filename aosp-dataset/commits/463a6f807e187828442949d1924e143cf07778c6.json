@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "463a6f807e187828442949d1924e143cf07778c6",
+  "tree": "de4b3adc9d7e35fd4473c8dc564e8b260cacae3f",
+  "parents": [
+    "f4a88c8ed4f8186b3d6e2852993e063fc33ff231"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Mon May 04 18:29:08 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Jul 09 14:07:50 2015 -0700"
+  },
+  "message": "Fix integer overflow when handling MPEG4 tx3g atom\n\nWhen the sum of the \u0027size\u0027 and \u0027chunk_size\u0027 variables is larger than 2^32,\nan integer overflow occurs. Using the result value to allocate memory\nleads to an undersized buffer allocation and later a potentially\nexploitable heap corruption condition. Ensure that integer overflow does\nnot occur.\n\nBug: 20923261\nChange-Id: Id050a36b33196864bdd98b5ea24241f95a0b5d1f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "522184372194c420a3f6dcdfac6b8752a366ad9c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "7354d6f966348cff7b2db879882b7f0790b18d5f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

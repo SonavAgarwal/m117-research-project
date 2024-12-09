@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b48581401259439dc5ef6dcf8b0f303e4cbefbe9",
+  "tree": "2538f137654273de4c2bf5a05ca8990d17253c69",
+  "parents": [
+    "610bafc0cf8f1b4435093babb985b9233e0906e9"
+  ],
+  "author": {
+    "name": "Amit Mahajan",
+    "email": "amitmahajan@google.com",
+    "time": "Wed Jun 10 17:04:17 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:05:05 2015 -0700"
+  },
+  "message": "DO NOT MERGE Change to add STK_PERMISSION for stk related commands.\n\nAnd make stk commands protected.\n\nBug: 21697171\nChange-Id: I7649c7341428194963ac74e9ae622dfa76ea738b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2129fc1ce86b246e6eb806ce334b618499193831",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/cat/AppInterface.java",
+      "new_id": "d48a82b7c8a5c49c1cfacd50905845f131e18b17",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/cat/AppInterface.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1ffe08c13fc535d5d08263ba18bf7f997143d606",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/cat/CatService.java",
+      "new_id": "df31c27ccc49162d95f97fb18d2e30a861e02b01",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/cat/CatService.java"
+    }
+  ]
+}

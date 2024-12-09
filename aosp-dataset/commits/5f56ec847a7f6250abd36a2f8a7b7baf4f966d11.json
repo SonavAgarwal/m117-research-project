@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5f56ec847a7f6250abd36a2f8a7b7baf4f966d11",
+  "tree": "88b666c4503639da9c238ea554c9113873a3b846",
+  "parents": [
+    "434b97b495b1bed9f21785781e6a96669979c9d8"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Mar 24 14:04:05 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 04 22:25:46 2017 +0000"
+  },
+  "message": "MPEG4Source: fix fragmented read.\n\nTest: passed CTS test DecoderTest#testDecodeFragmented\nBug: 64314728\nBug: 36571704\nChange-Id: I71ad6aaae473b03483f8405899d3178148597bba\n(cherry picked from commit ba9af7792dfed6e9b1b216aab91a97e713eec891)\n(cherry picked from commit 6b401a337674f2f22b7589534700a33187899869)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1dfa86811748abc4571e4f979709382a0fc102fb",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "2cc43c184cf6540461532d2216980712f7061df2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

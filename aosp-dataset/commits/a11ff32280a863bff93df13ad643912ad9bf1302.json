@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a11ff32280a863bff93df13ad643912ad9bf1302",
+  "tree": "063f7d6335838c78eacf4da93b22d8a7d5f19d89",
+  "parents": [
+    "52ac633b73856ded34b33bd4adb4ab793bbbe963"
+  ],
+  "author": {
+    "name": "Paul Duffin",
+    "email": "paulduffin@google.com",
+    "time": "Tue Jun 07 15:53:38 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Tue Sep 27 15:55:45 2016 -0700"
+  },
+  "message": "Security Vulnerability - CVE-2012-6702 and CVE-2016-5300\n\nApplies the patch from the bug. The change to CMakeLists.txt is\nnot applicable as Android does not use that to build expat. It\nis not needed as it only applies to building for Windows.\n\nBug: 29149404\nChange-Id: I557d2d5e5f338cd141db7f09fb2648f1be4cc8bc\n(cherry picked from commit 3c2f09e63ae65adffdfe07164f872e454e338789)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "18bfb7e88755e5105ee00fd8f013b839159f970d",
+      "old_mode": 33188,
+      "old_path": "lib/xmlparse.c",
+      "new_id": "e12853c63c74fb3f3590858bfff4a77f171d833e",
+      "new_mode": 33188,
+      "new_path": "lib/xmlparse.c"
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+)]}'
+{
+  "commit": "9744e41c40598c6a0b74440f3b5be63f9f3708a5",
+  "tree": "66fe1fc4eb2c283bcebf91e53f365c6b22f1b47c",
+  "parents": [
+    "61381bd0f4bc012876ccf4b63eafddd2d60c35c9"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Fri Jun 08 18:03:16 2018 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:19 2018 +0000"
+  },
+  "message": "Prevent bit buffer counter overflow.\n\nWhile long-term test we discovered a bit counter overflow in the bit buffer.\nThe bit buffer state was only used by HCR and RVLC tool and can easily be substituted with FDKgetValidBits() call.\nThe following patch completely removes the bit counter and all its obsolete functions.\n\nBug: 112662184\nTest: atest DecoderTestXheAac ; atest DecoderTestAacDrc\n\nChange-Id: Icee0519d26a2aa62367d2dece59cd3d60ffcade7\n(cherry picked from commit 15292f7e9620caf9e8df26a62efc2a2891ea822e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "84e05b09a5dbaec619183206560af3c76a4c4b47",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_hcr.cpp",
+      "new_id": "6114756ca74f1c6090c60181e9e2a2fd4a9b866c",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_hcr.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a53ef169c4bf5398038bd95920f57515c606454f",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_hcr_bit.cpp",
+      "new_id": "0198659147b277a4b232a29ddd43eac00401a176",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_hcr_bit.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a57c8cf9ddc11b42db60c9a49c2f1fb0c512fe2",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_hcr_bit.h",
+      "new_id": "77242acb8281819926b31772f7b3ed77b45e8a83",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_hcr_bit.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d550bc27c94d518fa8821492f9323f07bfff11f8",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_hcr_types.h",
+      "new_id": "1cc3cb0d7c68813bc5d155f9cbd89b81b511addb",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_hcr_types.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e2b7cd8ef86b729146f42e43dad28a797d7bab4c",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/aacdec_hcrs.cpp",
+      "new_id": "1d5aa27b2ac1e145719247c6dc3b6ba0d861778b",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/aacdec_hcrs.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "92f9f02d010e89c98b9685e58be03712aac1ebc4",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/rvlc.cpp",
+      "new_id": "b7a9be18deb51c875981e73e159f82d0238728c1",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/rvlc.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc9c19df981f079006b639c4c1414482413967fc",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/rvlc_info.h",
+      "new_id": "e7b3b999185a7b11e35698e1d2cd2db5357f6b42",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/rvlc_info.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c06cf963b1e696522ea2fe0b7805cc5559827e56",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/rvlcbit.cpp",
+      "new_id": "b0c4596f33a8a54da25b3e9dd2151e953d350c27",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/rvlcbit.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5c6a3f16a74108a32606ba5dc8bc43a71c578663",
+      "old_mode": 33188,
+      "old_path": "libAACdec/src/rvlcbit.h",
+      "new_id": "2578453424d2904289670d173c1fa8c4ca4a667c",
+      "new_mode": 33188,
+      "new_path": "libAACdec/src/rvlcbit.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ed0b2f685d2cad6df1f66d3defc456d486f435a1",
+      "old_mode": 33188,
+      "old_path": "libFDK/include/FDK_bitbuffer.h",
+      "new_id": "19a24b32133a6c78d34ea5e874849b80ffea4b09",
+      "new_mode": 33188,
+      "new_path": "libFDK/include/FDK_bitbuffer.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "49eeeaf65f6b52d201dd929046a8dee591f38a21",
+      "old_mode": 33188,
+      "old_path": "libFDK/include/FDK_bitstream.h",
+      "new_id": "f799026796c7ac12bece51703802617484df0cbc",
+      "new_mode": 33188,
+      "new_path": "libFDK/include/FDK_bitstream.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "a990c58b74e930c393a745cf32e706ab195858e2",
+      "old_mode": 33188,
+      "old_path": "libFDK/src/FDK_bitbuffer.cpp",
+      "new_id": "98905ea9045c0cbd698ec881a388c718154a7642",
+      "new_mode": 33188,
+      "new_path": "libFDK/src/FDK_bitbuffer.cpp"
+    }
+  ]
+}

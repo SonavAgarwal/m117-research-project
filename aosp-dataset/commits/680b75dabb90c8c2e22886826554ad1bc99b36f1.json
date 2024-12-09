@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "680b75dabb90c8c2e22886826554ad1bc99b36f1",
+  "tree": "5a2a0a10b2ba0233a799d87d9e2594a0df9fbf4b",
+  "parents": [
+    "a86eb798d077b9b25c8f8c77e3c02c2f287c1ce7"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Apr 06 12:08:34 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:02:18 2017 +0000"
+  },
+  "message": "Fix Bytes Consumed Issue\n\nNumber of bytes consumed in multi-thread run was 0, causing the decoder to\nrun in an infinite loop. Fixed the same.\n\nBug: 34203195\nBug: 34203325\nChange-Id: I3adc833b6a6a69e63f62f2e179a1ed886f39b3ee\n(cherry picked from commit d4c1922a42aafe9a2511f630a8f4c05644517709)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1d5bceee3fd68bcc21828ef45e2d06210fb2279a",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_dec_hdr.c",
+      "new_id": "cd6c48fb0cc0d23fdbc90d89d265c0b2a6b1ec5e",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_dec_hdr.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e9b31a09cce48183f51d22347565f5a3dab45785",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_decoder.c",
+      "new_id": "fa88bb574da3866e0a73ac691880eb00d409a8f2",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_decoder.c"
+    }
+  ]
+}

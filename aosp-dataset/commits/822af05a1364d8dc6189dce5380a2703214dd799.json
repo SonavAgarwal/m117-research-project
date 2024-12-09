@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "822af05a1364d8dc6189dce5380a2703214dd799",
+  "tree": "727e2c282a5104dd4150832b510de40144026091",
+  "parents": [
+    "d9761c83f14339a0a5cc14915f19a085af89957d"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu May 11 08:26:37 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:02:32 2017 +0000"
+  },
+  "message": "Always use unsigned char\n\nchar is unsigned by default on ARM, so make it so on other architectures as well\n\nBug: 37208566\nTest: ran poc with and without change, ran CTS on x86 and ARM\nChange-Id: I264db1dad884de7fd8f932cd9571199a1c517f6a\n(cherry picked from commit 220e1a7b6c3fec4cee6af028c9e7de9c4cc6aabc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b6ad70174c9b74b4633dc631e8648a193dccedf4",
+      "old_mode": 33188,
+      "old_path": "Android.mk",
+      "new_id": "1fb89e0710098e161e8b061730405f0f07b716e3",
+      "new_mode": 33188,
+      "new_path": "Android.mk"
+    }
+  ]
+}

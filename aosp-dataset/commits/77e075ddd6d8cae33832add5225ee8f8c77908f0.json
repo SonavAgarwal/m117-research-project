@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "77e075ddd6d8cae33832add5225ee8f8c77908f0",
+  "tree": "1cc0b09e8287a0cedd06ae45227f0867d4bc228c",
+  "parents": [
+    "c10183960909f074a265c134cd4087785e7d26bf"
+  ],
+  "author": {
+    "name": "Pawin Vongmasa",
+    "email": "pawin@google.com",
+    "time": "Mon May 22 18:24:30 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:12:36 2017 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Check the buffer index from acquireBuffer\n\nTest: Run the POC\nTest: Small CtsMediaTestCases\nBug: 37563942\nChange-Id: I8ddfbc91a08d96de1f732e6776d6f90997042f6b\n(cherry picked from commit 77e1eb5988ed2b9abff0fec19663d1ec094af192)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3bcc599b88213b26cf59d6eadc87720686a10eb0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/GraphicBufferSource.cpp",
+      "new_id": "e1bcd285ba49db4953251438420e9a6907655a83",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/GraphicBufferSource.cpp"
+    }
+  ]
+}

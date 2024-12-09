@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "318e3505ac2436c62ec19fd27ebe9f8e7d174544",
+  "tree": "9f0ca862587e42b4849bc109c75127545ff017f7",
+  "parents": [
+    "d1fb426850d72867298383bf029862acc9d52598"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Wed Jan 18 12:39:07 2017 -0500"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Tue Feb 14 20:25:16 2017 +0000"
+  },
+  "message": "Use fixed size buffer for RLE bmps DO NOT MERGE\n\nCherry-pick of b3b24538e02ead0c3f5bc528818982475890efd6\n\nAn RLE bmp reports how many bytes it should contain. This number may be\nincorrect, or it may be a very large number. Previously, we buffered\nall bytes in a single allocation. Instead, use a fixed size buffer and\nonly read what fits into the buffer. We already have code to refill the\nbuffer if there is more data, so rely on that to keep reading.\n\nChoose an arbitrary size for the buffer. It is larger than the maximum\npossible number of bytes we need to read at once.\n\nAdd a test with a test image that reports a very large number for\nthe number of bytes it should contain. With the old method, we would\nallocate 4 gigs of memory to decode this image, which is unnecessary\nand may result in OOM.\n\nBUG\u003db/33251605\n\nChange-Id: I6d66eace626002725f62237617140cab99ce42f3\nReviewed-on: https://skia-review.googlesource.com/7028\nCommit-Queue: Leon Scroggins \u003cscroggo@google.com\u003e\nReviewed-by: Matt Sarett \u003cmsarett@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0060ff48dddf7212588452d599864b9feabc99eb",
+      "new_mode": 33188,
+      "new_path": "resources/invalid_images/b33251605.bmp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5616a650a6de0ab75e6fb2789f47eff15b2f3f71",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpCodec.cpp",
+      "new_id": "5274ec4325169e2a25d596a9c94ab4693c70e7d8",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "793bbfd2609e3bf139ec79795f7087b8d79f330d",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpRLECodec.cpp",
+      "new_id": "2b59485b298ea9e93fce705f41f27f4c9d5b141e",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpRLECodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2ddf8d8b90c9a97a4d51677e7df52cc4f73aa782",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkBmpRLECodec.h",
+      "new_id": "a44ade88a338e874418775324e195cb26683e28b",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkBmpRLECodec.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7e6d9504308e5e7e14aeeb1725c28fc3a08e6492",
+      "old_mode": 33188,
+      "old_path": "tests/CodexTest.cpp",
+      "new_id": "ead679544f273cb9ec27cb5710464af07275d791",
+      "new_mode": 33188,
+      "new_path": "tests/CodexTest.cpp"
+    }
+  ]
+}

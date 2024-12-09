@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c9909e5a980f941a5b72477755e09fb4dc57c478",
+  "tree": "e4e24387cd4fc8367680736e601b2b6470e61589",
+  "parents": [
+    "939c18e913db42cd5148dbf8e4d4aa1667fd8342"
+  ],
+  "author": {
+    "name": "Sanjay Singh",
+    "email": "sisanj@codeaurora.org",
+    "time": "Wed May 23 17:05:13 2018 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:17:12 2018 +0000"
+  },
+  "message": "OMXNodeInstance: Allow dynamic native handle mode for input buffers\n\nSome camera implementation uses Dynamic native handle to send input\nbuffers to OMX HAL. Therefore, these buffers should be allowed.\n\nBug: 77486542\nBug: 80174666\nBug: 80210572\nBug: 80252747\nTest: sts-tradefed run sts -m StsHostTestCases -t android.security.sts.Poc18_06#testPocBug_77486542\nTest: adb shell am instrument -e size small -w \u0027android.media.cts/android.support.test.runner.AndroidJUnitRunner\u0027\nTest: adb shell am instrument -e class android.hardware.cts.CameraTest -w \u0027android.camera.cts/android.support.test.runner.AndroidJUnitRunner\u0027\nTest: adb shell am instrument -e class android.hardware.multiprocess.camera.cts.CameraEvictionTest -w \u0027android.camera.cts/android.support.test.runner.AndroidJUnitRunner\u0027\nTest: Exercise secure playback with Play Movies app.\nTest: Record video with Camera app and play it back with Photos app\n\nChange-Id: I1e4eb72e070f4e60ff4df94f9b9d161361828477\n(cherry picked from commit bda339098d273066fe50d4cb77503bac5ea4ede0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4f38dee104f9eb4e09194cfa93e82de45d37a954",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "a9fbd71b3cde97b5eb04e3990791028c81447396",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cfdfe3a8e0ff3f9951970ca69b56953f6bf49ec1",
+  "tree": "745b7e93d81db78774f0c8b6f9256c9145cc50ed",
+  "parents": [
+    "41d8ab77649dffc78b538772c6fae2fcbde99fab"
+  ],
+  "author": {
+    "name": "Jordan Liu",
+    "email": "jminjie@google.com",
+    "time": "Mon Mar 23 11:55:07 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sun May 17 21:10:16 2020 +0000"
+  },
+  "message": "Used checkPackage to check UID and package\n\nThis is our best guess at a fix, but there\u0027s unfortunately no way to\nverify it currently.\n\nBug: 150979331\nBug: 146570216\nTest: builds\nChange-Id: I567639aa789c6c4db8e230d5db4938f92901f44e\nMerged-In: I567639aa789c6c4db8e230d5db4938f92901f44e\n(cherry picked from commit 4cda45544a1e5d097100afbbb549ec2e6c610763)\n(cherry picked from commit 262519f4cf0bd28dfc102775815cceb9f7788e20)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f8541bc99c36afd1c33ff6709ffe4dfbb46852e3",
+      "old_mode": 33261,
+      "old_path": "src/com/android/phone/PhoneInterfaceManager.java",
+      "new_id": "31eea789b119733ed1b940f47be1aabc4d4c432c",
+      "new_mode": 33261,
+      "new_path": "src/com/android/phone/PhoneInterfaceManager.java"
+    }
+  ]
+}

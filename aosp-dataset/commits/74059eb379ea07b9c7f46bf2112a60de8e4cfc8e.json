@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "74059eb379ea07b9c7f46bf2112a60de8e4cfc8e",
+  "tree": "7691c59f08159384908a2e20ff99a2fe8b31499b",
+  "parents": [
+    "30ab77f42d20c33c0aa9e6ffd2b164d096db32dd"
+  ],
+  "author": {
+    "name": "Tom Taylor",
+    "email": "tomtaylor@google.com",
+    "time": "Tue Dec 06 16:26:14 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Mon Dec 19 14:45:53 2016 -0800"
+  },
+  "message": "resolve merge conflicts of eafd58a to nyc-dev\n\nChange-Id: I58151ca0c248dd4b84c78c8e7ca73d5a80bbd962\n(cherry picked from commit a43c5c5f18d966355a63db194c931e02267a2695)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2c367529a04b026df881c3b85c90dc881ce0643d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/messaging/ui/mediapicker/DocumentImagePicker.java",
+      "new_id": "bb267dac5f486c6ea4550b3b1ced2804a87b8363",
+      "new_mode": 33188,
+      "new_path": "src/com/android/messaging/ui/mediapicker/DocumentImagePicker.java"
+    }
+  ]
+}

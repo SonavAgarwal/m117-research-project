@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "4c386e10c98b63cdb07bd940287e2cf1a63526c0",
+  "tree": "8181451611c6da725ce5399deedc7ab18e7c79c1",
+  "parents": [
+    "ab38d7073e15353cedfbcf8e79dfab8a77f79129"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Mon Jun 08 20:31:33 2020 +0200"
+  },
+  "committer": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Wed Jun 10 11:56:35 2020 +0000"
+  },
+  "message": "Don\u0027t give uid-based categories to app_zygote and isolated processes.\n\nThe mapping of UIDs to categories can only take 16 bits, yet isolated\nprocesses start at UID 90000. Additionally, the main purpose of these\ncategories was to isolate app-private storage, but since isolated\nprocesses don\u0027t have access to app-private storage anyway, removing them\ndoesn\u0027t hurt.\n\nThe upside is that this allows us to remove mIstrustedsubject from the\napp_zygote domain, which prevents app code running in that context from\nassigning itself arbitrary categories.\n\nBug: 157598026\nTest: inspect categories of app_zygote and children; verify Chrome works\nMerged-In: Idfa8625d939cf30f3683436949bb4f335851622a\nMerged-In: I608a096cecffc1c1ff837611ca500a8da3cf1320\nChange-Id: I608a096cecffc1c1ff837611ca500a8da3cf1320\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e44c1beb2a42a85d9173ac3e524da586c03c34f2",
+      "old_mode": 33188,
+      "old_path": "prebuilts/api/29.0/private/app_zygote.te",
+      "new_id": "467f34198edd14abd7f8883b4e9b66a7da1812a5",
+      "new_mode": 33188,
+      "new_path": "prebuilts/api/29.0/private/app_zygote.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad8a76cd939b835fc1c64fc58ec024fb7b83758a",
+      "old_mode": 33188,
+      "old_path": "prebuilts/api/29.0/private/seapp_contexts",
+      "new_id": "b898d3e1c5c5417dc53e9e02dd3fd4ab7846efcc",
+      "new_mode": 33188,
+      "new_path": "prebuilts/api/29.0/private/seapp_contexts"
+    },
+    {
+      "type": "modify",
+      "old_id": "e44c1beb2a42a85d9173ac3e524da586c03c34f2",
+      "old_mode": 33188,
+      "old_path": "private/app_zygote.te",
+      "new_id": "467f34198edd14abd7f8883b4e9b66a7da1812a5",
+      "new_mode": 33188,
+      "new_path": "private/app_zygote.te"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad8a76cd939b835fc1c64fc58ec024fb7b83758a",
+      "old_mode": 33188,
+      "old_path": "private/seapp_contexts",
+      "new_id": "b898d3e1c5c5417dc53e9e02dd3fd4ab7846efcc",
+      "new_mode": 33188,
+      "new_path": "private/seapp_contexts"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "25c0ffbe6a181b4a373c3c9b421ea449d457e6ed",
+  "tree": "913df726c9791e6a49cb4189f7b0e5e98294042f",
+  "parents": [
+    "a8646ec80effd85fb2feb67b60bcd08d2e7bbfd6"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Wed May 03 15:12:46 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 22 23:12:49 2017 +0000"
+  },
+  "message": "Ensure CTB size \u003e 16 for clips with tiles and width/height \u003e\u003d 4096\n\nFor clips with tiles and dimensions \u003e\u003d 4096,\nCTB size of 16 can result in tile position \u003e 255.\nThis is not supported by the decoder\n\nBug: 37930177\nTest: ran poc w/o crashing\nChange-Id: I2f223a124c4ea9bfd98343343fd010d80a5dd8bd\n(cherry picked from commit 248e72c7a8c7c382ff4397868a6c7453a6453141)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "28ab9621b03d0ba36af3fe2d7af1cafd18f7f17c",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_headers.c",
+      "new_id": "afa6de3248c640526bc8fdb4d0dacf841a931184",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_headers.c"
+    }
+  ]
+}

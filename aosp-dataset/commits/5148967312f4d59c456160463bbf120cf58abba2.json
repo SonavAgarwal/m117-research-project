@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "5148967312f4d59c456160463bbf120cf58abba2",
+  "tree": "94ce5dd7b130c38f323dc0f2db8b1a8a5c7d4515",
+  "parents": [
+    "355a4ec0249eed2a6665c1880de7733574383931"
+  ],
+  "author": {
+    "name": "Evan Severson",
+    "email": "evanseverson@google.com",
+    "time": "Thu Apr 23 20:08:41 2020 -0700"
+  },
+  "committer": {
+    "name": "Anis Assi",
+    "email": "anisassi@google.com",
+    "time": "Thu Aug 06 17:13:56 2020 -0700"
+  },
+  "message": "DO NOT MERGE Use permission group definintion if defined in PermissionController\n\nTest: Manual + `atest PermissionsHostTest`\nBug: 153879813\nChange-Id: I41084d247eda582391e6751ce76b412aeb4f72df\n(cherry picked from commit f454ed41d3b1500d60ab2fc260d6d3b87f6c935a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "18de0cd1988bb27dcf30d8e957c05f119ba98059",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/permission/ui/GrantPermissionsActivity.java",
+      "new_id": "3649b0ea7ccd1be04812033dbd52bdf3134ae839",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/ui/GrantPermissionsActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b77502ae4d941927cd2397731e4da8e1cc5707f8",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/permission/utils/SafetyNetLogger.java",
+      "new_id": "c4376ac4d433b31c4c60d5a138b112f0f6658b09",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/utils/SafetyNetLogger.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "707b9f7b19a221152bc00016f7a54d78494e2dcb",
+      "old_mode": 33188,
+      "old_path": "src/com/android/packageinstaller/permission/utils/Utils.java",
+      "new_id": "f4389b0a3518b3f4ba658db3898d7a7541ef7edd",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/utils/Utils.java"
+    }
+  ]
+}

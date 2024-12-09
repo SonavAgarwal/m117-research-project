@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8708d35d64df1499edeab1c211ee3d769427cc60",
+  "tree": "7f250cfc1caccc88b8c2d7feafcd000893ae3b35",
+  "parents": [
+    "0695b994762cab51cb2b7d3c95b066be215897b9"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@google.com",
+    "time": "Wed Dec 05 09:43:54 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:57:01 2019 +0000"
+  },
+  "message": "Deserialize a native_handle safely.\n\nActually verify that the native_handle size that we receive\nmatches with the number of integers and file descriptors\nenclosed within.\n\nBug: 120084106\nTest: builds, boots\nChange-Id: Ibc52170fcfc59d4f0354b5df4b9745b58ab244fe\n(cherry picked from commit 5ad4ab1189dbf3fbee6c8c75b30f37fd9db40ed9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b36da156f6775fbef453ef168230f9232a0bdb99",
+      "old_mode": 33188,
+      "old_path": "Parcel.cpp",
+      "new_id": "c2d9e3cca98c6ea4dafc4c324b28c3ecc53d7e82",
+      "new_mode": 33188,
+      "new_path": "Parcel.cpp"
+    }
+  ]
+}

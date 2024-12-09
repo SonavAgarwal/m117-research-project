@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8415635765380be496da9b4578d8f134a527d86b",
+  "tree": "e865a92e8ad6e1ed856207253f583e89a125186e",
+  "parents": [
+    "bc62c086e9ba7530723dc8874b83159f4d77d976"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Dec 15 14:46:09 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Jan 30 11:34:33 2017 -0800"
+  },
+  "message": "DO NOT MERGE - audioflinger: fix recursive mutex lock in EffectHandle.\n\nBug: 33661708\nBug: 32707507\nBug: 32095713\n\nTest: run CTS AudioEffectTest#test5_0Command, Custom binder test\n\nChange-Id: I03f674f126c191143bd8bdfe236f793e975826a5\n(cherry picked from commit 31a4598a1908b3ccac7ddb33c511ce66840aa911)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d669841a1f9c4d209e027d35067493f3609a4cbd",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "f908d6df3a127dd77c69ff4224436ce439a0d446",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ffff95538e9994d312ffdfbba94d88ed226ef7bf",
+  "tree": "ed2dba14aa6b7c124a03467ed4b5679b14f2f648",
+  "parents": [
+    "63d6409af12c87e7350cf00cd30f60d362bf3311"
+  ],
+  "author": {
+    "name": "Fraunhofer IIS FDK",
+    "email": "audio-fdk@iis.fraunhofer.de",
+    "time": "Mon Jul 06 16:37:38 2020 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:22 2020 +0000"
+  },
+  "message": "Fix heap buffer overflow in sbrDecoder_AssignQmfChannels2SbrChannels().\n\nIn the bug the SBR decoder has already set up 9 channels and tries to\nallocate one more channel. The assignment of the QMF channels to SBR\nchannels fails since the QMF domain manages only 8+1 channels instead\nof 10 channels as reqeusted by SBR.\nHere we have added a check in sbrDecoder_InitElement() which will\nreturn with a parse error in case additional SBR channels would exceed\nthe maximum number of SBR channels. This solves the potential heap\nbuffer overflow.\n\nBug: 158762825\nTest: atest DecoderTestAacDrc DecoderTestAacFormat DecoderTestXheAac\nChange-Id: I0150ac6d5a47ffce883010f531928656eebc619e\nMerged-In: I0150ac6d5a47ffce883010f531928656eebc619e\n(cherry picked from commit bb8f983bf36ee2ad8af6acebf4823a58060004ab)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e4aad4feead7762437353ab13f149d2cd0297e7",
+      "old_mode": 33188,
+      "old_path": "libSBRdec/src/sbrdecoder.cpp",
+      "new_id": "55f929fabccd0d9c8c3ac937f6183d5dc4619196",
+      "new_mode": 33188,
+      "new_path": "libSBRdec/src/sbrdecoder.cpp"
+    }
+  ]
+}

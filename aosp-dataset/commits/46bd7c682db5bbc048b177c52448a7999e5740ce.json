@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "46bd7c682db5bbc048b177c52448a7999e5740ce",
+  "tree": "5d05b2e805c58e1f776c300f191bfa75f614d433",
+  "parents": [
+    "7306d8b37c00729dc41d663a4b244a00209d537b"
+  ],
+  "author": {
+    "name": "Phil Burk",
+    "email": "philburk@google.com",
+    "time": "Tue May 01 13:03:52 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:39:04 2018 +0000"
+  },
+  "message": "aaudio: use weak pointer to prevent UAF\n\nAvoid using the mServiceEndpoint smart pointer\nfrom multiple threads.\n\nBug: 74122779\nTest: see bug for test instructions\nMerged-In: Idaf9e32a163b25e51bde35d6f5ea10a372b5d916\nChange-Id: Idaf9e32a163b25e51bde35d6f5ea10a372b5d916\n(cherry picked from commit 92c3e26338637a7ddac54988187c89fb0fe49430)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2ef623464db22c9a8f9fdc128b24fb95c2af0801",
+      "old_mode": 33188,
+      "old_path": "services/oboeservice/AAudioServiceEndpoint.h",
+      "new_id": "c19cc3547f6f755212140dbce3edcd1e17a41e15",
+      "new_mode": 33188,
+      "new_path": "services/oboeservice/AAudioServiceEndpoint.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ff0b037e526798beaf61e123693bb9e69f684893",
+      "old_mode": 33188,
+      "old_path": "services/oboeservice/AAudioServiceStreamBase.cpp",
+      "new_id": "d9b87666d4c980e79f08f27124757758e5ea081f",
+      "new_mode": 33188,
+      "new_path": "services/oboeservice/AAudioServiceStreamBase.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "af435b4b8f51d1c5fabaa2c094d686cc4db6bf40",
+      "old_mode": 33188,
+      "old_path": "services/oboeservice/AAudioServiceStreamBase.h",
+      "new_id": "815b1ccf7b7cad0718892ae990656dff9273a632",
+      "new_mode": 33188,
+      "new_path": "services/oboeservice/AAudioServiceStreamBase.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "44ba1ca8d8bbb8214af0b9a75cb6c0d711837a41",
+      "old_mode": 33188,
+      "old_path": "services/oboeservice/AAudioServiceStreamMMAP.cpp",
+      "new_id": "2e7ff8b2625f2810cdcb2ef6e33e20785f99bd83",
+      "new_mode": 33188,
+      "new_path": "services/oboeservice/AAudioServiceStreamMMAP.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "084f996cd6a098f151606a40c220429d6f8ffa3a",
+      "old_mode": 33188,
+      "old_path": "services/oboeservice/AAudioServiceStreamShared.cpp",
+      "new_id": "f55c40d0eec4d86e414b8504cebae3f2fe0e10be",
+      "new_mode": 33188,
+      "new_path": "services/oboeservice/AAudioServiceStreamShared.cpp"
+    }
+  ]
+}

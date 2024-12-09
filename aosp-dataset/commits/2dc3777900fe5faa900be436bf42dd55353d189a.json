@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2dc3777900fe5faa900be436bf42dd55353d189a",
+  "tree": "1d4669c80ae865ae85d4bac39fb8f943eff8e75e",
+  "parents": [
+    "c509674b68584088c88dd2aa04cc0d3616ef116c"
+  ],
+  "author": {
+    "name": "Cindy Zhou",
+    "email": "zhouci@google.com",
+    "time": "Fri Mar 19 17:01:13 2021 -0700"
+  },
+  "committer": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Tue Apr 06 14:14:44 2021 +0000"
+  },
+  "message": "Update v8 cfi blocklist\n\nThe api-arguments-inl.h file seem to have been moved so the blocklist\nwas not working and new cfi crashes were emerging. This commit updates\nthe list so the correct file path is used.\n\nTest: proxy_resolver_v8_unittest\nBug: 183079234\nBug: 162604069\nBug: 167389063\nChange-Id: I70b5cd699d33fa4eda3f76cfac1ca1c71f92547a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "822f83f170dde1f9f1b48f5f86ba3531067effdd",
+      "old_mode": 33188,
+      "old_path": "tools/cfi/blacklist.txt",
+      "new_id": "790f09e1a8e596de081f65d22adb7d43a09be2f5",
+      "new_mode": 33188,
+      "new_path": "tools/cfi/blacklist.txt"
+    }
+  ]
+}

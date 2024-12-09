@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9fab683c9598d234dd8461335c276ed3e37c91e8",
+  "tree": "7a509e5d99453987bfe640cf19b0c108fc81cf3f",
+  "parents": [
+    "218b813d5bc2d7d3952ea1861c38b4aa944ac59b"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Fri Sep 16 12:04:05 2016 -0600"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Mon Sep 26 21:15:04 2016 +0000"
+  },
+  "message": "Use \"all_downloads\" instead of \"my_downloads\".\n\nFix Merge Conflict into nyc-release\nWe can no longer return the \"my_downloads\" paths: if those Uris were\nshared beyond the app that requested the download, access would be\ndenied.  Instead, we need to switch to using \"all_downloads\" Uris so\nthat permission grants can be issued to third-party viewer apps.\n\nSince an app requesting a download doesn\u0027t normally have permission\nto \"all_downloads\" paths, DownloadProvider now issues narrow grants\ntoward the owner of each download, both at device boot and when new\ndownloads are started.\n\nBug: 30537115, 30945409\nChange-Id: I533125b36444877f54373d88922f2acc777e250b\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb07fbc5271a1fe393169ea149486c10f25565a9",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/DownloadManager.java",
+      "new_id": "66234da72c5d2798cddd63e9c8b568e58710e912",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/DownloadManager.java"
+    }
+  ]
+}

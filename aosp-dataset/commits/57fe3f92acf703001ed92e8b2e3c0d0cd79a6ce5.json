@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "57fe3f92acf703001ed92e8b2e3c0d0cd79a6ce5",
+  "tree": "b0bc61a7cc970849b665c592a87da2f5973155e4",
+  "parents": [
+    "f5911687e9b9b9a9c26e1cb58f31c941fb199195"
+  ],
+  "author": {
+    "name": "Ahan Wu",
+    "email": "ahanwu@google.com",
+    "time": "Thu Oct 03 12:36:59 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Nov 15 06:16:32 2019 +0000"
+  },
+  "message": "Validate wallpaper dimension while generating crop\n\nIf dimensions of cropped wallpaper exceed max texture size that GPU can\nsupport, it will cause sysui keep crashing because it can not initialize\negl with an appropriate surface.\n\nBug: 120847476.\nTest: Write a custom app to set a 8000x800 bitmap as wallpaper.\nTest: The cropped file will be 29600x2960 and make sysui keep crashing.\nTest: After applyed this cl, wallpaper will use fallback.\nTest: Sysui will not keep crashing any more.\nChange-Id: Icdc6292191d1e966c52640f4c1a5a154dfba45d3\n(cherry picked from commit 32c6a7c691b0d91085c1ed13fe6f1c473c94b4c8)\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1d733f53f0550f1a34f2e3e9a690163f39eaf5be",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wallpaper/GLHelper.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b0f1e5d69be4006f3c4e07d2c3dc308d9eeb8e22",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wallpaper/WallpaperManagerService.java",
+      "new_id": "991c09a97bf5e0082fdd0eb145015bfbed4ec312",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wallpaper/WallpaperManagerService.java"
+    }
+  ]
+}

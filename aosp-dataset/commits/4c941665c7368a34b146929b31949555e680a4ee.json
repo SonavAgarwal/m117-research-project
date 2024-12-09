@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "4c941665c7368a34b146929b31949555e680a4ee",
+  "tree": "efb88653796918a402ae865bfe45d6e6508cc99f",
+  "parents": [
+    "1b627d4e5e61e89b840f77abb3ca6711ad6ffbeb"
+  ],
+  "author": {
+    "name": "H. Peter Anvin",
+    "email": "hpa@linux.intel.com",
+    "time": "Thu May 01 14:12:23 2014 -0700"
+  },
+  "committer": {
+    "name": "Greg Hackmann",
+    "email": "ghackmann@google.com",
+    "time": "Tue Feb 09 16:26:08 2016 -0800"
+  },
+  "message": "x86, espfix: Move espfix definitions into a separate header file\n\ncommit e1fe9ed8d2a4937510d0d60e20705035c2609aea upstream.\n\nSparse warns that the percpu variables aren\u0027t declared before they are\ndefined.  Rather than hacking around it, move espfix definitions into\na proper header file.\n\nReported-by: Fengguang Wu \u003cfengguang.wu@intel.com\u003e\nSigned-off-by: H. Peter Anvin \u003chpa@linux.intel.com\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n\n",
+  "tree_diff": [
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "729051c82b02071d3955bae7691fb45076bb2371",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/espfix.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "93797d17ef329620fc83ce128958292c002ad6bd",
+      "old_mode": 33188,
+      "old_path": "arch/x86/include/asm/setup.h",
+      "new_id": "2e327f114a1bf210d457f2a780bdc30f4d481581",
+      "new_mode": 33188,
+      "new_path": "arch/x86/include/asm/setup.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "8a64da36310f332ae08452c05a99de7f5da7bf99",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/espfix_64.c",
+      "new_id": "6afbb16e9b794819e23e2e284e06206f59bc92c3",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/espfix_64.c"
+    }
+  ]
+}

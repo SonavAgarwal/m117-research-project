@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "119a012b2a9a186655da4bef3ed4ed8dd9b94c26",
+  "tree": "9b5128e3b6ca295ccffe4293184d1688819a6c21",
+  "parents": [
+    "5ecb86f9737d5a11522a66255bf4d7af48a26264"
+  ],
+  "author": {
+    "name": "Wonsik Kim",
+    "email": "wonsik@google.com",
+    "time": "Fri Jun 17 01:24:30 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:12:57 2016 -0700"
+  },
+  "message": "stagefright: fix possible stack overflow in AVCC reassemble\n\nAdditionally, remove use of variable length array which is\nnon-standard in C++.\n\nBug: 29161888\nChange-Id: Ifdc3e7435f2225214c053b13f3bfe71c7d0ff506\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4303d09eab5b26225b33a6e8bb340fd8068cb0ac",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/Utils.cpp",
+      "new_id": "8a0009c4407022f070950a96dc2e73180da68333",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/Utils.cpp"
+    }
+  ]
+}

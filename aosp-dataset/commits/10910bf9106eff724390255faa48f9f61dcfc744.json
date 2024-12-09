@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "10910bf9106eff724390255faa48f9f61dcfc744",
+  "tree": "975f5a83297d15015a0edc0159dca51702769717",
+  "parents": [
+    "7e06940dce7245f03fd950edf7f72ff321b2b451"
+  ],
+  "author": {
+    "name": "Neelkamal Semwal",
+    "email": "neelkamal.semwal@ittiam.com",
+    "time": "Wed Mar 10 10:03:39 2021 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Sat Mar 20 15:36:08 2021 +0000"
+  },
+  "message": "avcenc: Add bitstream overflow check during emulation prevention\n\nBug: 176533109\n\nTest: poc in the bug description\n\nChange-Id: Ia83383f9b65cbde8d7a50a1af8a054936daa4d78\n(cherry picked from commit b59de5a25f28f0fe411526b2e50bb8052957c517)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d79f63732a545ba436d5a0084de47a03007f9293",
+      "old_mode": 33188,
+      "old_path": "encoder/ih264e_bitstream.c",
+      "new_id": "9f73f69945c02eb0dadb5aa453263242fb267183",
+      "new_mode": 33188,
+      "new_path": "encoder/ih264e_bitstream.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "9cd2b817945f1b270f8f9566a25ed01d4cde82c2",
+      "old_mode": 33188,
+      "old_path": "encoder/ih264e_bitstream.h",
+      "new_id": "5b5c70087ec908024a950c4291255295acef1bd2",
+      "new_mode": 33188,
+      "new_path": "encoder/ih264e_bitstream.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "26ded4d8d8cf05ed8d1f9440928429b4377460f7",
+      "old_mode": 33188,
+      "old_path": "encoder/ih264e_cabac.c",
+      "new_id": "2d91058fca09ba947bb58f4758e6f0fe7a5cf950",
+      "new_mode": 33188,
+      "new_path": "encoder/ih264e_cabac.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "e4722fac83fa385a7a6b77727cacff8489e13843",
+      "old_mode": 33188,
+      "old_path": "encoder/ih264e_cabac.h",
+      "new_id": "bc4b07c10813b4e0cc26b9b42aa6164f5cc45a7e",
+      "new_mode": 33188,
+      "new_path": "encoder/ih264e_cabac.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5fb0b8854c00cef2f5d67f66efdeee39783c724b",
+      "old_mode": 33188,
+      "old_path": "encoder/ih264e_process.c",
+      "new_id": "c405b7f8c93010f03ad270ff9340435ef890e9dc",
+      "new_mode": 33188,
+      "new_path": "encoder/ih264e_process.c"
+    }
+  ]
+}

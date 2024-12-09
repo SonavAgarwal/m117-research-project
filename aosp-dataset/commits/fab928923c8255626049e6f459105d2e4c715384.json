@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fab928923c8255626049e6f459105d2e4c715384",
+  "tree": "3ca465f79d51dfa8333f56287e5f6b0a1818dcb9",
+  "parents": [
+    "18ed45f835485d8d64708540d318707eeb215c1c"
+  ],
+  "author": {
+    "name": "Patrick Baumann",
+    "email": "patb@google.com",
+    "time": "Thu Oct 10 15:50:28 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Nov 16 00:27:18 2019 +0000"
+  },
+  "message": "Use KNOWN_PACKAGES when shared lib consumers\n\nThis change ensures we find ALL known packages that could be consuming a\nshared library, not only currently installed ones. Without this check,\nthe system may get into a state in which we have currently uninstalled\nbut on-device apps that depend on a shared library that does not exist\non device.\n\nThis change also leaves static shared library packages on device even if\nit\u0027s not installed for any of the remaining users as it could still be\nused, but marked uninstalled for users in which it is consumed.\n\nBug: 141413692\nBug: 142083996\nTest: Manual; attempt to remove shared lib after marking its consumer uninstalled.\nTest: atest StaticSharedLibsHostTests\nChange-Id: Id4e37c3e4d3ea3ad5fddae5d2c7305e56f50eeea\n(cherry picked from commit 34b504c32ff054265630662fa6fa57158cbcdc6c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aae48239a0cc5ac0d5e46189f1e00af618eb647e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "703c17acd6cef4f533575099ca5789b52eb4bf80",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

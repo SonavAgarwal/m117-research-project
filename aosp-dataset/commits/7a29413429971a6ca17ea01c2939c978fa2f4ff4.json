@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7a29413429971a6ca17ea01c2939c978fa2f4ff4",
+  "tree": "0cd186207e26fb7062bb1943beb2b9e00f867397",
+  "parents": [
+    "00537efd07aae9405944573728ac8279041ac42d"
+  ],
+  "author": {
+    "name": "Bernardo Rufino",
+    "email": "brufino@google.com",
+    "time": "Thu Aug 29 19:12:28 2019 +0100"
+  },
+  "committer": {
+    "name": "Bernardo Rufino",
+    "email": "brufino@google.com",
+    "time": "Thu Sep 19 08:00:42 2019 +0000"
+  },
+  "message": "Don\u0027t consider tasks with INITIALIZING top activity as visible\n\nTo fix b/130645908, tasks with top activities in INITIALIZING state were\nconsidered visible. This allowed apps to circumvent background activity\nlaunch restriction by starting 2 activities when in a background stack.\nThe first activity will remain in INITIALIZING state (since it\u0027s in the\nbg), so the second launch is permitted since top activity is\nINITIALIZING.\n\nRemoving \u0027|| topActivity.isState(INITIALIZING)\u0027 removes the\nvulnerability and curiously still allow the legitimate use case of the\nbug linked above to work, i.e. the test in ag/7088262 still passes. This\nis because of 2 reasons:\n1) Grace period introduced in ag/7638265.\n2) Allow bg activity starts to put activity on top of bg task (instead of\n   fg’ing it) in ag/7190176.\n\nI verified (2) by removing the grace period check, reverting the linked\nCL and verifying that the test failed.\n\nThis essentially reverts ag/7090415.\n\nTest: atest BackgroundActivityLaunchTest \\\n          RootWindowContainerTests \\\n          WmTests:ActivityStarterTests \\\n          CtsWindowManagerDeviceTestCases:ActivityStarterTests\nBug: 138583650\nBug: 130645908\nChange-Id: Iee4ba841c6c83888b55c5cb55fffc949048d2030\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc5e32823547af0d6eaea0b50b5dc996ed336bab",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowProcessController.java",
+      "new_id": "a8f5d00219ba105bd6ac52cd3167beededf6cada",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowProcessController.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cee78199bbfae81f54a40671db47096f5f32cdad",
+  "tree": "718d74be1b56a311381d32f6bd9caa5b984d1d59",
+  "parents": [
+    "e760e93dae08b13e5ccdb25fd1c385e36e7ba760"
+  ],
+  "author": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Tue Feb 06 11:02:21 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 08 04:10:34 2018 +0000"
+  },
+  "message": "SVOX: Properly initialize buffers.\n\nBug: 69177126\nTest: Manual / TH\nChange-Id: I894ad89eb0abbc2fd8dc47ecfc897c793751ca9f\n(cherry picked from commit 2258b6512256a2a2ff1a0688c9d3d43ac2df573f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1e869408e3f4de06fc03592c6fe95c04d873f827",
+      "old_mode": 33261,
+      "old_path": "pico/tts/svox_ssml_parser.cpp",
+      "new_id": "94cd25ab364f3093d8c1d6305f9616a4251738fa",
+      "new_mode": 33261,
+      "new_path": "pico/tts/svox_ssml_parser.cpp"
+    }
+  ]
+}

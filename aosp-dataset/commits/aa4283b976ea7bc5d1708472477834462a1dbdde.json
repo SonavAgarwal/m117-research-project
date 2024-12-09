@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aa4283b976ea7bc5d1708472477834462a1dbdde",
+  "tree": "861c2b82cffbf3e782fcc0e97466823e20099a1b",
+  "parents": [
+    "202613bc7b86f12d5b50c46c9ecc8c515e15e650"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Thu May 21 17:09:35 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:37:05 2020 +0000"
+  },
+  "message": "requestCellInfoUpdate: always check location perms\n\nCheck for fine location permission on all api levels -- this api is new\nto api level 29, so older apps won\u0027t be tripped up by it.\n\nFixes: 154934934\nTest: atest TelephonyLocationTest\nChange-Id: Ia4edcf9ac5b5e3c4c2a3bfb79abb31242484f14f\n(cherry picked from commit d60acc9f3247eaa64626d2c119114e31f47b30c1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "31eea789b119733ed1b940f47be1aabc4d4c432c",
+      "old_mode": 33261,
+      "old_path": "src/com/android/phone/PhoneInterfaceManager.java",
+      "new_id": "768e868e0ff863a87238983d591350ac02f90fb6",
+      "new_mode": 33261,
+      "new_path": "src/com/android/phone/PhoneInterfaceManager.java"
+    }
+  ]
+}

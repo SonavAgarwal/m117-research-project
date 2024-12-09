@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d1ce32b059bed774b41f11413c1d83a1bc412964",
+  "tree": "374965378881455ae38d65fb1d5108e8617be4d4",
+  "parents": [
+    "72f8b6dbe23bee483c45b314968321620c5ae932"
+  ],
+  "author": {
+    "name": "Benedict Wong",
+    "email": "benedictwong@google.com",
+    "time": "Thu May 17 16:48:27 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:18:38 2018 +0000"
+  },
+  "message": "DO NOT MERGE: Update ConnectivityServiceMock for VPN meteredness bug\n\nThis patch updates the ConnectivityServiceMock as part of the fix for\nVPN meteredness checks.\n\nBug: 78644887\nTest: Flashed and tested on Walleye\nChange-Id: I3d331d5f2d07e476bec4b199c695fd28755f031d\n(cherry picked from commit 3555e5d07d0ec1d7fc1ed58b0fc729283884d6fe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9210a088fd8df98a14953c6b7f23453b056d24de",
+      "old_mode": 33188,
+      "old_path": "tests/telephonytests/src/com/android/internal/telephony/mocks/ConnectivityServiceMock.java",
+      "new_id": "87818afa23e244cc9c34aba30ec2c28dc4e1dd21",
+      "new_mode": 33188,
+      "new_path": "tests/telephonytests/src/com/android/internal/telephony/mocks/ConnectivityServiceMock.java"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "a1b4a910e8bf11e03479d91004652fc5919f475b",
+  "tree": "e3502fd4e690463268ebb066881d2cacb9a9e871",
+  "parents": [
+    "22e4fbf8c141585d1149c4561728d9efe4d373b8"
+  ],
+  "author": {
+    "name": "JP Sugarbroad",
+    "email": "jpsugar@google.com",
+    "time": "Fri Jul 21 01:34:24 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:42:29 2017 +0000"
+  },
+  "message": "DO NOT MERGE - fix FTS3 column pointer handling\n\nAdd new interfaces sqlite3_result_pointer(), and sqlite3_value_pointer()\nand use them to transfer the eponymous FTS3 column pointer to the\nsnippet() and offsets() routines.\n\nBug: 63852675\nTest: presubmit\nChange-Id: I0f0be2bfc21aef8917da63d76d1007fbf8c8ad4d\n(cherry picked from commit 0f98d87975ce325a2fd93f391c18cd782ad571fb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "71d2afd8da098f6fd6cba6c04543a4ee9c7afeaa",
+      "old_mode": 33188,
+      "old_path": "README.version",
+      "new_id": "64db55fa02654758713d59e0076be7de8143c9b3",
+      "new_mode": 33188,
+      "new_path": "README.version"
+    },
+    {
+      "type": "modify",
+      "old_id": "5f7a63bf24386c1782219a0dc8b410962b6b97af",
+      "old_mode": 33188,
+      "old_path": "dist/Android.mk",
+      "new_id": "e87c30e778423ae2e551baea73b886444d0df033",
+      "new_mode": 33188,
+      "new_path": "dist/Android.mk"
+    },
+    {
+      "type": "modify",
+      "old_id": "ad62acc3541d4bd8173e233b8f775fa19585d2cc",
+      "old_mode": 33188,
+      "old_path": "dist/Android.patch",
+      "new_id": "9ca7424c01df047f62af804df2bf19e479e258f2",
+      "new_mode": 33188,
+      "new_path": "dist/Android.patch"
+    },
+    {
+      "type": "modify",
+      "old_id": "f61a1bc9b8c4b2a978b35ca64a6b754bc78d8254",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.c",
+      "new_id": "cb78c5eae7e89bfd48f43474fd7c81c2e4fd8cbb",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7ce22a7964b8a2df60830a16cad313d42914282",
+      "old_mode": 33188,
+      "old_path": "dist/orig/sqlite3.h",
+      "new_id": "a16ce138b9ab6ce6ab3af1cb8a5e57033b1c9bf3",
+      "new_mode": 33188,
+      "new_path": "dist/orig/sqlite3.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "5dd9488ca480bcb56bc7a9c0a8810f1e24173998",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.c",
+      "new_id": "df415b5a2bdb0a59458cb1349cf74a08c9725e66",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "f7ce22a7964b8a2df60830a16cad313d42914282",
+      "old_mode": 33188,
+      "old_path": "dist/sqlite3.h",
+      "new_id": "a16ce138b9ab6ce6ab3af1cb8a5e57033b1c9bf3",
+      "new_mode": 33188,
+      "new_path": "dist/sqlite3.h"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "173d37569997fdf7eaf7b05912c760352e724893",
+  "tree": "b26ce67e32c8763d24db82537d4937d72f8ab231",
+  "parents": [
+    "78871886c55d934f961bb848ba17c62887962fb4"
+  ],
+  "author": {
+    "name": "Felipe Leme",
+    "email": "felipeal@google.com",
+    "time": "Thu Nov 30 17:41:57 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 22 20:41:58 2018 +0000"
+  },
+  "message": "Make sure apps cannot forge package name on AssistStructure used for Autofill.\n\nTest: cts-tradefed run commandAndExit cts-dev -m CtsAutoFillServiceTestCases -t android.autofillservice.cts.VirtualContainerActivityTest#testAppCannotFakePackageName\nTest: cts-tradefed run commandAndExit cts-dev -m CtsAutoFillServiceTestCases\n\nBug: 69981710\n\nChange-Id: Id6036cddb51dd8dd0c9128b7212d573f630d693f\nMerged-In: Id6036cddb51dd8dd0c9128b7212d573f630d693f\n(cherry picked from commit 23e61a9086a34405e277868474e003b37ed1b711)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9383626360dc44bb16805a0ddd6f69d3cb79b5dc",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/assist/AssistStructure.java",
+      "new_id": "bf715c35d9b7797e6fd3b2d3ae2d316bc08f4e78",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/assist/AssistStructure.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "4fb2a99af57546befcbdee7845197978bc0e5362",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/autofill/AutofillManager.java",
+      "new_id": "ba738b6dfceae7267c2930e8f2bb4db4ce24366e",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/autofill/AutofillManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "6bd9bec368c8860067eae5cc7d4ccff51b69979f",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/autofill/IAutoFillManager.aidl",
+      "new_id": "9329c4dcff6a56253f498c849b0e7705d043fa1f",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/autofill/IAutoFillManager.aidl"
+    },
+    {
+      "type": "modify",
+      "old_id": "a27515c0266d2add46a09c4fbcfe8478878c2249",
+      "old_mode": 33188,
+      "old_path": "proto/src/metrics_constants.proto",
+      "new_id": "3cadff242e039229e9bb0eaf1333028159d3cdc7",
+      "new_mode": 33188,
+      "new_path": "proto/src/metrics_constants.proto"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f4161ac54d4cb02ee450d98a49d88ccf9a9d14c",
+      "old_mode": 33188,
+      "old_path": "services/autofill/java/com/android/server/autofill/AutofillManagerService.java",
+      "new_id": "ffc778a8ee40554285f2125639b64d14bd703195",
+      "new_mode": 33188,
+      "new_path": "services/autofill/java/com/android/server/autofill/AutofillManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3a3b5707fc6f17ff269fa0cfc32b5b8416f6d2a0",
+      "old_mode": 33188,
+      "old_path": "services/autofill/java/com/android/server/autofill/AutofillManagerServiceImpl.java",
+      "new_id": "a17c3ca92e5dd0bc96660251912c01729c5b0196",
+      "new_mode": 33188,
+      "new_path": "services/autofill/java/com/android/server/autofill/AutofillManagerServiceImpl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "de2950dd5985f01c22e82fb99a72fcd7c62ec9c4",
+      "old_mode": 33188,
+      "old_path": "services/autofill/java/com/android/server/autofill/Session.java",
+      "new_id": "1f0e51c694aaa5bae8ab2d50bfd0d46ed788389b",
+      "new_mode": 33188,
+      "new_path": "services/autofill/java/com/android/server/autofill/Session.java"
+    }
+  ]
+}

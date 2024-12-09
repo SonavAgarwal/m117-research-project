@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1bb41f3767c785eecefb3376dab6267f69f3a8fb",
+  "tree": "2d09c773927d6d77764299c5246877923f97aa74",
+  "parents": [
+    "3b55f75a09b097c6877b47d6e9edba9563eff27f"
+  ],
+  "author": {
+    "name": "Frank Galligan",
+    "email": "fgalligan@google.com",
+    "time": "Fri May 10 17:42:46 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:54:52 2019 +0000"
+  },
+  "message": "Check there is only one settings per ContentCompression\n\nThis fixes a memory leak with invalid files.\n\nBUG: 127702368\n\nMerged-In: Id7de1f8c35ef2f6458c6fb6c7751a84fe43ed1cc\nChange-Id: I73bd34e212d74ffcf8d428e01b5269037147bf8c\n(cherry picked from commit 0fbbf3c3e05647aa10174a1876e02ba6a2ec631d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "70c1f043f1174f8b6190369a411f0856455955d3",
+      "old_mode": 33188,
+      "old_path": "libwebm/mkvparser/mkvparser.cc",
+      "new_id": "87adef33652450d488fb30e64d53e5c638a74e63",
+      "new_mode": 33188,
+      "new_path": "libwebm/mkvparser/mkvparser.cc"
+    }
+  ]
+}

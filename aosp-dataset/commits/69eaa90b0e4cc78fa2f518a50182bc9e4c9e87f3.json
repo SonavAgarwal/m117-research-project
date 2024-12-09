@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "69eaa90b0e4cc78fa2f518a50182bc9e4c9e87f3",
+  "tree": "38345bbf1c58fd34627328e655f4b8b6aa74fbe7",
+  "parents": [
+    "513c3b5c2987891832363e79cf6fad60c7d0bd61"
+  ],
+  "author": {
+    "name": "Varun Shah",
+    "email": "varunshah@google.com",
+    "time": "Wed Nov 18 19:59:44 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:46 2020 +0000"
+  },
+  "message": "Ensure caller identity is restored in CP quick-path.\n\nBug: 172935267\nTest: PoC in bug\nChange-Id: Ib11a5d33be75e208bccda86fef55758d357ccebd\nMerged-In: I69d5c792cf442e694a5b5ab15ce5913279a5545a\n(cherry picked from commit 2f28b20e036ccdc9a5ef6680c394d4127075a259)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "091c77ecaac3e02b35bdbe5b4fe4442a6a19a011",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "7acb1bf47e784242ea84825eaf96b5d7b5311b18",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

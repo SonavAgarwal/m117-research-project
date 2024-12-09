@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3332ca8f16491193c58fcafa8d6105925f2aad43",
+  "tree": "0006ef2b90f5173de5a1d090fa572d886f878738",
+  "parents": [
+    "14418a7f30d925c320ba27dc8a7339ffb349ced6"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu Apr 18 11:31:03 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:31 2019 +0000"
+  },
+  "message": "Rely on compiler to zero out structs.\n\nBefore, we were relying on having contiguous structs and remembering\nto manually zero-out fields. Alleviate all concerns by using C99\ndesignator initializers. These are technically not slated to be added\nto the C++ standard until C++20. However, because they are in C99, and\nthey are awesome, they are commonly used in Android.\n\nBug: 130161842\nTest: manual\nChange-Id: I96e4bea47f99e00ef33cfce74621e5869b1ff3d7\nMerged-In: I96e4bea47f99e00ef33cfce74621e5869b1ff3d7\n(cherry picked from commit 16786a76b2c736791f2c364a1bce7632e112e93e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2b1bb90ebc801e47127eba5c153b846a278956da",
+      "old_mode": 33188,
+      "old_path": "Parcel.cpp",
+      "new_id": "6e9bd1eae3256ce31ecd82927fdbde99b223c0a7",
+      "new_mode": 33188,
+      "new_path": "Parcel.cpp"
+    }
+  ]
+}

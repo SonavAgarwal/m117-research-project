@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "df7b56457184600e3d2b7cbac87ebe7001f7cb48",
+  "tree": "36b2e9569aa14bd888d7ffa7df63473734569193",
+  "parents": [
+    "fed702734d86801cc86b4865a57e2f2028c4b575"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Fri Nov 18 14:23:34 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Dec 19 14:39:49 2016 -0800"
+  },
+  "message": "Fixed handling invalid chroma tu size for error clips\n\nLimit func_idx to valid range to ensure invalid functions are not\ncalled when wrong TU size is signalled for chroma due to error in\nparsing\n\nBug: 32915871\nChange-Id: I662212eb2e9b8994e7e85780e667f14df73b5905\n(cherry picked from commit a76773ab749bd57f3467c79aa60c16c1f2c87380)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "88ace442c32817e4fc4304915ab162644e212970",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_iquant_itrans_recon_ctb.c",
+      "new_id": "6009d0958c61c4fda8f84e7c17cf2c65e92606a2",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_iquant_itrans_recon_ctb.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a898d1198050c40b73f1467ea5adaf881f3d7961",
+  "tree": "e258dd69d4dc178f7abe12a7d488d6cc08ddf0b5",
+  "parents": [
+    "44654288c0bdb6a05ef4a9be123945900f57c761"
+  ],
+  "author": {
+    "name": "Rhed Jao",
+    "email": "rhedjao@google.com",
+    "time": "Mon Jun 22 18:32:49 2020 +0800"
+  },
+  "committer": {
+    "name": "Rhed Jao",
+    "email": "rhedjao@google.com",
+    "time": "Mon Jun 22 10:38:11 2020 +0000"
+  },
+  "message": "Tests no screenshot is copied when user consent timed out\n\nBug: 152944488\nTest: BugreportManagerTest#normalFlow_full\nChange-Id: I5bc8fcbff908258a20c5515a6ba092ceab1cc447\nMerged-in: I5bc8fcbff908258a20c5515a6ba092ceab1cc447\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c72707db9560d445964a3e22294c1763c10703fb",
+      "old_mode": 33188,
+      "old_path": "core/tests/bugreports/src/android/server/bugreports/BugreportManagerTest.java",
+      "new_id": "153337727e967f4ff321dbb98f5f99c64bd51977",
+      "new_mode": 33188,
+      "new_path": "core/tests/bugreports/src/android/server/bugreports/BugreportManagerTest.java"
+    }
+  ]
+}

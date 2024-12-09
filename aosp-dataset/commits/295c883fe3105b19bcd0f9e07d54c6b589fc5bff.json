@@ -1,0 +1,210 @@
+)]}'
+{
+  "commit": "295c883fe3105b19bcd0f9e07d54c6b589fc5bff",
+  "tree": "78e44d1f67000b06f9a621b01e11bb0fa647c59b",
+  "parents": [
+    "daa85dac2055b22dabbb3b4e537597e6ab73a866"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Feb 29 12:47:20 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:54 2016 -0700"
+  },
+  "message": "DO NOT MERGE Verify OMX buffer sizes prior to access\n\nBug: 27207275\nChange-Id: I4412825d1ee233d993af0a67708bea54304ff62d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "865d5755794a4663573191dd7a5311c15c783387",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IOMX.cpp",
+      "new_id": "84925f19eda580dea24b682cb34aaf1826a573b5",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IOMX.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "965c55e01945431d2beec2ecfec99d320b9d7810",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacdec/SoftAAC2.cpp",
+      "new_id": "520ecb4059913438323944418de3515bb690974d",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacdec/SoftAAC2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6724c260d56b11384c6b0e2889ee847effaa606",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.cpp",
+      "new_id": "ab0a2285fc48f018e1460a5f257e03eed2e61d7a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "35aa8832b36678d02138dfcdb34e795918951df6",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp",
+      "new_id": "e8dabed69c305d41750259e8d5246ad1b5307ba8",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/aacenc/SoftAACEncoder2.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "955309aa92a43b3ab44b08fd50a09533eee76a8c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp",
+      "new_id": "edf648dcb4d495452bfa6384a6183b4183014b94",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9489457c4938be6d3ac9f23ee38ddb851e306c05",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/enc/SoftAMRNBEncoder.cpp",
+      "new_id": "aaa6731d61cbe52ce43b77865205f27c2e084bb2",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/enc/SoftAMRNBEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "91a512d24ffef507513cf9703224f053e5057ded",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrwbenc/SoftAMRWBEncoder.cpp",
+      "new_id": "9d50c4e794f34ce3376bd94b076d4323274f79ef",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrwbenc/SoftAMRWBEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fa6ec406715fe05f002f434f9272dd8425ce8677",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp",
+      "new_id": "cce6d15c33b134c61046bb48d25cbb1d3cd3f58e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avc/enc/SoftAVCEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "387d17da63ca6a612b60c62c9a8dd56703bdd2d5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp",
+      "new_id": "e4e8fd70ecd33f20ba6e672772c354d3db7cade0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcenc/SoftAVCEnc.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9edffd2fab96c892456662c4288b8b1ffc1776ff",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/flac/enc/SoftFlacEncoder.cpp",
+      "new_id": "caceda9bb4a6ae45c7dd6cd21cd10a91a9fb925f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/flac/enc/SoftFlacEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "015515ea6f9b64c56808f15d7d8670b5bc9a12ff",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/g711/dec/SoftG711.cpp",
+      "new_id": "3de95a50e55f2d40c80ff7ebca22ea4d518f52dc",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/g711/dec/SoftG711.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "bd01a1ac6b598468c2eb22d9348b9defa73c1711",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/gsm/dec/SoftGSM.cpp",
+      "new_id": "7916c45b23fe82182d00d8bb9c70f5c0cac5ffdd",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/gsm/dec/SoftGSM.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f2a4e65f2d61a75467f6d34d0fad777494f48ee3",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp",
+      "new_id": "7638bb7eb2f197729169a02295db474208ca84d0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f743b1cc940a5b1244c9fec53352203fa8594c46",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp",
+      "new_id": "9988015e0e887f3bcc0d3b781d7632d89412bd7a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d9895f0ad4baafcb072044848d6c1d33f080ce8f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp",
+      "new_id": "5c950c7f55160718955c5cb20eb67183c27b0b4f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb10bce71b679d99c7eb3260c1a8637d888257a5",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp",
+      "new_id": "2afa0ed9791f663e29891434a03c889aafb150d7",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "9d514a61bcaa8bd07371c39e8f4c9adf89dced67",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/raw/SoftRaw.cpp",
+      "new_id": "4f7ae9552feefcded2e1b5a8d1f73704e8694d9a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/raw/SoftRaw.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c559682635264beaade84aa68d1894a0aa094cee",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp",
+      "new_id": "4e1e6a560ff22feef0e36b73da017c7031f63140",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/vorbis/dec/SoftVorbis.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a808611c2ec69d9a1f0747edd8231d2d059c3b20",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/SoftOMXComponent.h",
+      "new_id": "3ab6f8876285c64e516425d19c5863e081170745",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/SoftOMXComponent.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "e6a0c4972683238d1ef6f535342b372da84ee6c2",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/SimpleSoftOMXComponent.cpp",
+      "new_id": "60c1e2e01806b6cd7562c0dedce8ca619ed5a47a",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/SimpleSoftOMXComponent.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4ce165be6645cebea171cfc0c4a78a195d2da669",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp",
+      "new_id": "19dde8328721a47efb9c3cc531028e691800e15f",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/SoftVideoDecoderOMXComponent.cpp"
+    }
+  ]
+}

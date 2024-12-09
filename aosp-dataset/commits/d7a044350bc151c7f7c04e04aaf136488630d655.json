@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d7a044350bc151c7f7c04e04aaf136488630d655",
+  "tree": "6133800e0d7da7f46ece8a9d173fc9b51b19c64e",
+  "parents": [
+    "ff4c8310ab7976ea9930b1dc4e3383720d5b5a8d"
+  ],
+  "author": {
+    "name": "Dongwon Kang",
+    "email": "dwkang@google.com",
+    "time": "Mon Jun 12 12:58:58 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:20 2017 +0000"
+  },
+  "message": "MPEG4Extractor: check size for yrrc box\n\nTest: stagefright -s poc_file\nBug: 62133227\nChange-Id: Iafefac39764ce01b4dde414b9f152c9ea71810e9\n(cherry picked from commit 6ace94d2952eac82fc4c86aa6d585258248bf18c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "544171496cef6d373254d6758cd3cbd28a8357c4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "d014b2ae89b990249bc0ed328bcfa5bcfe0074f4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

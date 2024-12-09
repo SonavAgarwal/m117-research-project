@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f9fec5c36952301e585a420f31e96d35a60d0498",
+  "tree": "3319aa3988fb14c85b2121bccbf5032fff6b9c9f",
+  "parents": [
+    "90da8c8f15db2c82aece6e4085aaf9c116d481f2"
+  ],
+  "author": {
+    "name": "Paul Mackerras",
+    "email": "paulus@ozlabs.org",
+    "time": "Mon Feb 03 15:53:28 2020 +1100"
+  },
+  "committer": {
+    "name": "Xin Li",
+    "email": "delphij@google.com",
+    "time": "Tue Mar 17 01:18:57 2020 +0000"
+  },
+  "message": "pppd: Fix bounds check in EAP code\n\nGiven that we have just checked vallen \u003c\u003d len, it can never be the case\nthat vallen \u003e\u003d len + sizeof(rhostname).  This fixes the check so we\nactually avoid overflowing the rhostname array.\n\nReported-by: Ilja Van Sprundel \u003civansprundel@ioactive.com\u003e\nSigned-off-by: Paul Mackerras \u003cpaulus@ozlabs.org\u003e\nBug: 151153886\nChange-Id: Ibc29e1b5b17ddee256b1ff5f3e9909347403a791\nMerged-In: Ibc29e1b5b17ddee256b1ff5f3e9909347403a791\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6ea6c1f8bff6423c4038edb9e47763e111ea0724",
+      "old_mode": 33188,
+      "old_path": "pppd/eap.c",
+      "new_id": "5940ebfa658d4795533d09afc55f9a70b15e815b",
+      "new_mode": 33188,
+      "new_path": "pppd/eap.c"
+    }
+  ]
+}

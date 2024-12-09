@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "ef25600f187f5372ad89645e6e6e7b4204bf0676",
+  "tree": "5163edb302254b9dd7de196e9cd23de5aa1a6d41",
+  "parents": [
+    "ee063ea0e728344bb3e0f875e91c3c4caf150fe8"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Wed Jul 17 18:54:49 2019 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:04 2019 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE Enable stricter SQLiteQueryBuilder options.\n\nMalicious callers can leak side-channel information by using\nsubqueries in any untrusted inputs where SQLite allows \"expr\" values.\n\nThis change starts using setStrictColumns() and setStrictGrammar()\non SQLiteQueryBuilder to block this class of attacks.  This means we\nnow need to define the projection mapping of valid columns, which\nconsists of both the columns defined in the public API and columns\nread internally by DownloadInfo.Reader.\n\nWe\u0027re okay growing sAppReadableColumnsSet like this, since we\u0027re\nrelying on our trusted WHERE clause to filter away any rows that\ndon\u0027t belong to the calling UID.\n\nRemove the legacy Lexer code, since we\u0027re now internally relying on\nthe robust and well-tested SQLiteTokenizer logic.\n\nBug: 135270103, 135269143\nTest: atest DownloadProviderTests\nTest: atest CtsAppTestCases:android.app.cts.DownloadManagerTest\nChange-Id: I8e595e1470df586a3d593b7851305da413e44347\n(cherry picked from commit ffec00b013a34800681ec90c88ad40337aa20c1a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb0313c73c76ad34fc4a6625d796be2d9601dce3",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "c68d702aed867ef9624d3e3eb20431deea86944c",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "565aa52ecd5dc7d13cd37d3b349b6ee67e358bff",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/Helpers.java",
+      "new_id": "226fb4816738ad4ded36f9e7053aee89f57e0a64",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/Helpers.java"
+    }
+  ]
+}

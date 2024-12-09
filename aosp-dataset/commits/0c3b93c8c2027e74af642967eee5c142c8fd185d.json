@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0c3b93c8c2027e74af642967eee5c142c8fd185d",
+  "tree": "a8da04fbac3e3803271fbc1e76a4a76b251649a2",
+  "parents": [
+    "6d0249be2275fd4086783f259f4e2c54722a7c55"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Tue Aug 16 16:50:54 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:24 2016 -0700"
+  },
+  "message": "MediaPlayerService: avoid invalid static cast\n\nBug: 30204103\nChange-Id: Ie0dd3568a375f1e9fed8615ad3d85184bcc99028\n(cherry picked from commit ee0a0e39acdcf8f97e0d6945c31ff36a06a36e9d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "32f86dff4a190091f1799ba82a191f3ca21f8a67",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.cpp",
+      "new_id": "bb2715eb683ea10c36926e77f9873abb655fb3b9",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "01977f5d47ae7285618e114f46e9f1bb5eb5e6f5",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.h",
+      "new_id": "19f12bc5c437f3b7bfe9c111b34860cae24933dd",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.h"
+    }
+  ]
+}

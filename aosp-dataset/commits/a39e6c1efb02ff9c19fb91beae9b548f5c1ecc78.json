@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a39e6c1efb02ff9c19fb91beae9b548f5c1ecc78",
+  "tree": "e4ea2a716c5bdcb3e7386ea9eedb5baa22f65fd0",
+  "parents": [
+    "8b04a9a40d10164b9e5f3ea42660f21932ecb8ff"
+  ],
+  "author": {
+    "name": "Jordan Liu",
+    "email": "jminjie@google.com",
+    "time": "Wed Mar 04 13:59:23 2020 -0800"
+  },
+  "committer": {
+    "name": "Jordan Liu",
+    "email": "jminjie@google.com",
+    "time": "Thu Mar 05 19:37:22 2020 +0000"
+  },
+  "message": "Check UID in getUiccCardsInfoSecurity\n\nTo avoid the case where a caller calls\nPhoneInterfaceManager#getUiccCardsInfoSecurity using reflection and\nsupplies a calling package with privilege which isn\u0027t their own package,\nwe confirm that the calling package UID matches the supplied package.\n\nBug: 146570216\nTest: atest com.android.phone.PhoneInterfaceManagerTest\nChange-Id: Id08009f2feb281c20aaad55aa89faae66b709f88\nMerged-In: Id08009f2feb281c20aaad55aa89faae66b709f88\n(cherry picked from commit 102b27765aadb26935faa9b89bb0c784d019fd18)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d0ed9bd7786988d164c478358bd6a780fb289296",
+      "old_mode": 33261,
+      "old_path": "src/com/android/phone/PhoneInterfaceManager.java",
+      "new_id": "2061796e7933baad242716b4fe0dd4af8a75459a",
+      "new_mode": 33261,
+      "new_path": "src/com/android/phone/PhoneInterfaceManager.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "9f8de9e6d780e203ce726a5a461f8b10abce815d",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/phone/PhoneInterfaceManagerTest.java"
+    }
+  ]
+}

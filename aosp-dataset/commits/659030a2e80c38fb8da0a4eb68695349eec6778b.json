@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "659030a2e80c38fb8da0a4eb68695349eec6778b",
+  "tree": "3dad52aee699caa47f479f04fca5b6dd968478d2",
+  "parents": [
+    "33a503e1606e96608a06f7aefa72b6488b5e3b8e"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri May 20 09:14:36 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:06 2016 -0700"
+  },
+  "message": "Check partword is in range for # of partitions\n\nand reformat tabs-\u003espaces for readability.\n\nBug: 28556125\nChange-Id: Id02819a6a5bcc24ba4f8a502081e5cb45272681c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed38ab9f5c25dcac019006785e93baf4d0720ba0",
+      "old_mode": 33188,
+      "old_path": "Tremolo/res012.c",
+      "new_id": "a0c3d36e291e89c69b369d05a502d7e22fd83077",
+      "new_mode": 33188,
+      "new_path": "Tremolo/res012.c"
+    }
+  ]
+}

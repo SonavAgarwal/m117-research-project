@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0787bc222a016e944f01492c2dd04bd03c1da6af",
+  "tree": "8d2fe13fbf5ec04861cbf734356e5637d03a5c0e",
+  "parents": [
+    "95c2601aab7f27505e8b086fdd1f1dce31091e5d"
+  ],
+  "author": {
+    "name": "Arun Kumar K.R",
+    "email": "akumarkr@codeaurora.org",
+    "time": "Thu Jun 06 19:43:53 2013 -0700"
+  },
+  "committer": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Fri Oct 16 11:49:29 2015 -0700"
+  },
+  "message": "hwc: Move max app layer check outside isFrameDoable routine.\n\nMove the condition for checking maximum number of app layers\nourside the isFrameDoable function to avoid heap corruption while\nupdating hnd array in cacheAll function.\n\nBug: 24163261\n\nAcked-by: Ramkumar Radhakrishnan \u003cramkumar@codeaurora.org\u003e\n\nChange-Id: Id4458fcadc7775a2d78b1849de6782857c6ac17f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "24b941f283207209ad2650f3005f74fad203803f",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp",
+      "new_id": "744fc095c27684607cac11dc929072ba92917eb3",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp"
+    }
+  ]
+}

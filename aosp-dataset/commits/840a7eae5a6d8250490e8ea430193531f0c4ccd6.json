@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "840a7eae5a6d8250490e8ea430193531f0c4ccd6",
+  "tree": "2e832fa33f6249e11659f1eeae0255fe37fc8b56",
+  "parents": [
+    "da851450dfc625719754af022c38f91a97838c93"
+  ],
+  "author": {
+    "name": "Sen Jiang",
+    "email": "senj@google.com",
+    "time": "Wed Sep 19 14:29:44 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Oct 20 00:18:31 2018 +0000"
+  },
+  "message": "Check metadata size in payload.\n\nDetect overflow for unsigned integer addition.\n\nBug: 113118184\nTest: manual test with a hand crafted payload\nChange-Id: I0155de49c241c392fb74f3d830ceebdb4174f872\n(cherry picked from commit 08769f9c05199f96b257eded926975fd83c6edbf)\n(cherry picked from commit 3e9410898d2687d7df3bdb03c6830d3ec428c2c6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe2df0a9d05fe2c0634518ff9307f9f192001536",
+      "old_mode": 33188,
+      "old_path": "payload_consumer/payload_metadata.cc",
+      "new_id": "6b8d448667a008b56b5a24cbc1410affeff7166e",
+      "new_mode": 33188,
+      "new_path": "payload_consumer/payload_metadata.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "04ccb18594bb02b575ff078c8eb4df64f325bd96",
+      "old_mode": 33188,
+      "old_path": "update_attempter_android.cc",
+      "new_id": "406e40a3aa5fbacc370b9d21cb857ba6d28f2c96",
+      "new_mode": 33188,
+      "new_path": "update_attempter_android.cc"
+    }
+  ]
+}

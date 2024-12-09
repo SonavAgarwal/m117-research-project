@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8279c47df01ac6dc28d67c411dfa36c61a068c62",
+  "tree": "d203d4f727f2610f7071ec39b2e8d9d0ac8f8a7d",
+  "parents": [
+    "a84c4b763ed287f762e4112c73d9fb357605b02c"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Tue Mar 05 17:18:50 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:01:15 2019 +0000"
+  },
+  "message": "Fix type confusion in libpac\n\nFrom the upstream patch\n(https://chromium.googlesource.com/v8/v8/+/ea55b873f2ed8336604540a532cbd460eeb66430%5E%21/#F0):\n\n\"\"\"\nDon\u0027t generate elements kind transitions from stable maps.\n\nIC system does its best to properly mark stable transition source maps\nas unstable (see https://chromium-review.googlesource.com/483442)\nhowever an already recorded map can be deprecated later and the\noptimizing compiler may try to generate an elements kind transition\nfrom the updated version of deprecated map which can \"become\" stable\nagain.\n\"\"\"\n\nBug: 117607414\n\nTest: /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\n\nTest: gts-tradefed run gts --test \\\n  com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest \\\n  --module GtsGmscoreHostTestCases\n\nTest: PoC from bug report\n\nMerged-In: I2e02d994f107e64e4f465b4d8a02d4159a95240e\n\nChange-Id: I12c501bffd190e20d4a45a4256a403c5343350eb\n(cherry picked from commit 97832faf9d62ce9d6ca0639eacac0a930e51df8a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8fef2f079cc84ce789343c50e22a1f2e43df5327",
+      "old_mode": 33188,
+      "old_path": "src/compiler/access-info.cc",
+      "new_id": "d563e1dd8530c53abd987fbb3466c977e6683ea4",
+      "new_mode": 33188,
+      "new_path": "src/compiler/access-info.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "d55bb37c398337da1828f82cc7bbfce1da1dd6a2",
+      "old_mode": 33188,
+      "old_path": "src/crankshaft/hydrogen.cc",
+      "new_id": "df7b02f25138dade03b1ae53070803dd2c35dcab",
+      "new_mode": 33188,
+      "new_path": "src/crankshaft/hydrogen.cc"
+    }
+  ]
+}

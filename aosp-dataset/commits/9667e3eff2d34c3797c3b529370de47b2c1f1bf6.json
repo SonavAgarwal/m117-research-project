@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9667e3eff2d34c3797c3b529370de47b2c1f1bf6",
+  "tree": "cddf3b6ae1401bed68a831c735c71319340447cc",
+  "parents": [
+    "fdf64bab960ec1d0effab8dd8ea67e46d120a45b"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Feb 06 14:12:30 2017 -0800"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Feb 06 22:31:24 2017 +0000"
+  },
+  "message": "Fix overflow check and check read result\n\nBug: 33861560\nTest: build\nChange-Id: Ia85519766e19a6e37237166f309750b3e8323c4e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d93320c0f40afd845e7a2a95419e9bd88d8e5f3",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IHDCP.cpp",
+      "new_id": "1e2cddbd7e4b0571d624f46e2a590a8998606537",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IHDCP.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "db34519cd6559fba3973a2fa38674dbe6e9f7c8e",
+  "tree": "c07a50b21b3a811190f507dbf0fccbbdc3c89189",
+  "parents": [
+    "4dd458dab6c7a29fc5394fd20b1e7931a3caabec"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Wed Sep 11 14:10:14 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:56:46 2019 +0000"
+  },
+  "message": "default hidl CryptoPlugin: security fixes\n\n* reject native handle output for clearkey\n* validate subsample sizes\n\nBug: 137370777\nTest: cryptopoc\nChange-Id: Idf075e1a297fe1ab3ea3e1621806dd46b4a51e35\n(cherry picked from commit 1e18883b72351531e4a11df49fffc0454e9108b8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "666653b26153e3818461da99bfc7c68fb69ba298",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.cpp",
+      "new_id": "8ddc3802297950217c08d014d47d1862ff5ac45a",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.cpp"
+    }
+  ]
+}

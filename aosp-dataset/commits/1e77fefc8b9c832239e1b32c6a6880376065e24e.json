@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e77fefc8b9c832239e1b32c6a6880376065e24e",
+  "tree": "efe753a3efc9a568db6f3b18af337b5a9e6dd2b0",
+  "parents": [
+    "1b08775917413f1674882130a948add1ae44cc91"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Fri Jul 07 01:48:40 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:51 2017 +0000"
+  },
+  "message": "Disable PAN Reverse Tethering when connection originated by the Remote\n\n* Check for valid interactions between the three PAN profile roles per\n  Table 1 in PAN Profile v1.0 spec.\n* Explicitly disable connections to the local PANU if the remote is\n  not PANU.\n\nBug: 63145701\nTest: External script\nChange-Id: I29a7e404ba7e4453b6a7c59148a2b3eb7395303a\nMerged-In: I29a7e404ba7e4453b6a7c59148a2b3eb7395303a\n(cherry picked from commit 9aea2c2f92dd5245f6b35d564ce8e471fec2b4ec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d89096bb1503fd92006170096e5dcfb6a94bf7ec",
+      "old_mode": 33188,
+      "old_path": "stack/pan/pan_main.cc",
+      "new_id": "01e1ea4cae7faae977bd7be4f5d632bf3c49e261",
+      "new_mode": 33188,
+      "new_path": "stack/pan/pan_main.cc"
+    }
+  ]
+}

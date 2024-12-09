@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "873e19f63f97dbb74db499c1145a1102b1ce8fda",
+  "tree": "29fcfcf024b5d72567a5edece18212e8d4f48b40",
+  "parents": [
+    "23b6339ebd2cfc0c9a82e2ab21b0e85b40c27ad1"
+  ],
+  "author": {
+    "name": "Suprabh Shukla",
+    "email": "suprabh@google.com",
+    "time": "Mon Sep 16 13:20:22 2019 -0700"
+  },
+  "committer": {
+    "name": "Suprabh Shukla",
+    "email": "suprabh@google.com",
+    "time": "Mon Sep 16 17:12:40 2019 -0700"
+  },
+  "message": "DO NOT MERGE revoke certain app-ops on suspend\n\nRevoking an apps authorizations to use camera and record or play audio\nwhile suspended. Appops watchers will also be notified of this change to\nre-evaluate privileges at the time of suspension.\n\nTest: atest FrameworksServicesTests:SuspendPackagesTest\natest GtsSuspendAppsTestCases\n\nBug: 138636979\nChange-Id: Ie95555856afdd56728125f7e60b6a78cf9fc0e58\nMerged-In: Ic5fb1807deceabfd956b666fa76f8bcc94020ac3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7569363a7134c3f0a068469eae1da704f5b9ea1a",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/appop/AppOpsService.java",
+      "new_id": "f0fac67f3494e876d54004df90bf359bf0b4b945",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/appop/AppOpsService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d5d32bdd00ccd32ed41ea9184f0acda7488a3527",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/pm/SuspendPackagesTest.java",
+      "new_id": "376f5cd3ab471c08cdfd2f6b0a6f0e75c7d7d5ae",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/pm/SuspendPackagesTest.java"
+    }
+  ]
+}

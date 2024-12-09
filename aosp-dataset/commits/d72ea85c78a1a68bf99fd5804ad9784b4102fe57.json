@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d72ea85c78a1a68bf99fd5804ad9784b4102fe57",
+  "tree": "a5ccfc71f8faaca7cbc613c36428ffcb7f879f42",
+  "parents": [
+    "cc4fc7f79614498bdcdad452c11042ff7c64ac72"
+  ],
+  "author": {
+    "name": "rago",
+    "email": "rago@google.com",
+    "time": "Mon Oct 31 12:42:15 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:47:07 2016 -0800"
+  },
+  "message": "Fix security vulnerability: Equalizer command might allow negative indexes\n\nBug: 32247948\nBug: 32438598\nBug: 32436341\n\nTest: use POC on bug or cts security test\n\nChange-Id: I56a92582687599b5b313dea1abcb8bcb19c7fc0e\n(cherry picked from commit 3f37d4ef89f4f0eef9e201c5a91b7b2c77ed1071)\n(cherry picked from commit ceb7b2d7a4c4cb8d03f166c61f5c7551c6c760aa)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7cff34881ddbc72d4657c606cd677df09ccb3439",
+      "old_mode": 33188,
+      "old_path": "post_proc/equalizer.c",
+      "new_id": "6d12e9136bf50f0c41d0724df43bd54dec426664",
+      "new_mode": 33188,
+      "new_path": "post_proc/equalizer.c"
+    }
+  ]
+}

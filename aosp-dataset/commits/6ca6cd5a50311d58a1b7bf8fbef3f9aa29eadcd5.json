@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6ca6cd5a50311d58a1b7bf8fbef3f9aa29eadcd5",
+  "tree": "a24b770cd5f9affbbd26dde61d10df5be2b52c5b",
+  "parents": [
+    "91fc934bb2e5ea59929bb2f574de6db9b5100745"
+  ],
+  "author": {
+    "name": "Jason Monk",
+    "email": "jmonk@google.com",
+    "time": "Tue Jul 19 12:39:58 2016 -0400"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:28 2016 -0700"
+  },
+  "message": "Don\u0027t allow enable/disable of tuner on lockscreen\n\nChange-Id: Id9748ea39a8fa03b67d3fa6f91da530dd5cf9409\nFixes: 30107438\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e091d6dc519525f4f2d985d23f449be066515049",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/QuickStatusBarHeader.java",
+      "new_id": "2de83292660892219c4fa39a1fb4acbba0e1acf4",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/phone/QuickStatusBarHeader.java"
+    }
+  ]
+}

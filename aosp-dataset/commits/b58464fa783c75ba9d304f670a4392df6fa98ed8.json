@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b58464fa783c75ba9d304f670a4392df6fa98ed8",
+  "tree": "c0d9619f851d136326d5a31f2e08f8c493511c31",
+  "parents": [
+    "d7a044350bc151c7f7c04e04aaf136488630d655"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Mon Jun 12 17:22:46 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:49:33 2017 +0000"
+  },
+  "message": "Track: Check buffer size of static tracks\n\nMerged-In: Ia7edd9a802905214a27961dbcec6352f6ef98f73\nTest: Native POC\nBug: 38340117\nChange-Id: I633caf563d3607dbe4b9be10be1687efce33469c\n(cherry picked from commit f4aeab2bd69bead05ed75ae3254f53a6ab2316b5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aab4ba9dbd1abf89b634113627b90f95c9c14ee9",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Tracks.cpp",
+      "new_id": "a3f3ea5cf681707fa80a44c855e5dcb295ea4fea",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Tracks.cpp"
+    }
+  ]
+}

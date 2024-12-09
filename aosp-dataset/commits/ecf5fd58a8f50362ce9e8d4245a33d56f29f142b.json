@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "ecf5fd58a8f50362ce9e8d4245a33d56f29f142b",
+  "tree": "78c8add0ffe77731a01ba25477d924c05469c4d1",
+  "parents": [
+    "d7603583f90c2bc6074a4ee2886bd28082d7c65b"
+  ],
+  "author": {
+    "name": "Sergio Giro",
+    "email": "sgiro@google.com",
+    "time": "Tue Jun 28 18:02:29 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Aug 01 19:13:40 2016 -0700"
+  },
+  "message": "libutils/Unicode.cpp: Correct length computation and add checks for utf16-\u003eutf8\n\nInconsistent behaviour between utf16_to_utf8 and utf16_to_utf8_length\nis causing a heap overflow.\n\nCorrecting the length computation and adding bound checks to the\nconversion functions.\n\nTest: ran libutils_tests\nBug: 29250543\nChange-Id: I6115e3357141ed245c63c6eb25fc0fd0a9a7a2bb\n(cherry picked from commit c4966a363e46d2e1074d1a365e232af0dcedd6a1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a006082b0dd4abcc7c91298ad7d66685ab2458d1",
+      "old_mode": 33188,
+      "old_path": "include/utils/Unicode.h",
+      "new_id": "cddbab4974f686619a823738abb851dec358df82",
+      "new_mode": 33188,
+      "new_path": "include/utils/Unicode.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "771d312668bddb0cb3fcf7bf8444c61cfac02cf7",
+      "old_mode": 33188,
+      "old_path": "libutils/String8.cpp",
+      "new_id": "755e0d1e80e6a92ac298a23e68d024d4cd472f8e",
+      "new_mode": 33188,
+      "new_path": "libutils/String8.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "f1f8bc9393b7f3c4ac2cf1465da2e2059de9dd2c",
+      "old_mode": 33188,
+      "old_path": "libutils/Unicode.cpp",
+      "new_id": "ba084f6ce4aa4bed81a2aaaf1d5b2dbe69b07902",
+      "new_mode": 33188,
+      "new_path": "libutils/Unicode.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "01e64f60ab296cff361f8b5bda5f8935b44d8433",
+      "old_mode": 33188,
+      "old_path": "libutils/tests/String8_test.cpp",
+      "new_id": "3947a5fb985bb76a1755a59cd3217a4800bf9438",
+      "new_mode": 33188,
+      "new_path": "libutils/tests/String8_test.cpp"
+    }
+  ]
+}

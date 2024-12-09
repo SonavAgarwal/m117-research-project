@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "358c238408a1fdc357d9afef6811369a7701e004",
+  "tree": "8274228d6bc2dd68afbe3e366fd27a6efb3a8313",
+  "parents": [
+    "dad08fc5667b0a40923ca45c654bd6cb425ccc68"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Wed Oct 21 19:22:22 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:27 2020 +0000"
+  },
+  "message": "Cherry-pick one upstream patch\n\nThe original commit in upstream patch is\nhttp://git.savannah.gnu.org/cgit/freetype/freetype2.git/commit/?id\u003da3bab162b2ae616074c8877a04556932998aeacd\n\nBug: 171232105\nTest: m -j\nChange-Id: Ib9e82430d1c8a232dc7d86848c807948a35ee55e\n(cherry picked from commit 90788a1c9c2f9af29046889c18f4a9b8fe2c7681)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ca85d9751f02c04883eb7f78e3e6287110a6280e",
+      "old_mode": 33188,
+      "old_path": "src/sfnt/pngshim.c",
+      "new_id": "15f4e16319f03c569258b86cd4489561e72474a8",
+      "new_mode": 33188,
+      "new_path": "src/sfnt/pngshim.c"
+    }
+  ]
+}

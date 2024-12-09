@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5df744afde273bc4d0f7a499581dd2fb2ae6cb45",
+  "tree": "518480212e4e17bab8d1a9493b299705e631bd37",
+  "parents": [
+    "a925a6b539642c8749c91a6f33e362eda8c4a5b6"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Thu Jun 22 16:55:28 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Aug 18 20:45:17 2017 +0000"
+  },
+  "message": "Decoder: Conceal picture only if valid picture buffer is obtained.\n\nIf all the slices in the current pic were invalid, then\nthe decoder would not have received a valid picture buffer\nin the current call. In such cases there is no need to conceal or\ndeblock the picture.\n\nBug: 62896384\nTest: run ASAN-enabled PoC before/after the patch\nChange-Id: I3cf6e871592826f93b0dcd2b06fff80677bc8338\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b6288b4f6993fc3650b11157b1be1c5a197197f6",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_api.c",
+      "new_id": "b34b6f5bbc0c157d62b8f1ca06f712ab264b2a37",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_api.c"
+    }
+  ]
+}

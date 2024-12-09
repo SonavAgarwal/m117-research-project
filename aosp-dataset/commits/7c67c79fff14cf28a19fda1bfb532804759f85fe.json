@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7c67c79fff14cf28a19fda1bfb532804759f85fe",
+  "tree": "bda38558518cb9acd455f544cf217d4d7f182d94",
+  "parents": [
+    "4a677fbb96166a78c38e74f6374a5a3a2ca1ec77"
+  ],
+  "author": {
+    "name": "Chuangjie Xia",
+    "email": "chuangjie.xia@mediatek.com",
+    "time": "Wed Oct 09 13:55:16 2019 +0800"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Feb 11 19:58:47 2020 +0000"
+  },
+  "message": "Delete an uninitialized object in AACExtractor\n\nDue to some reason, for example bad file, readAt header fails\nin AACExtractor(...) and the variable mMeta is not initialized.\nThen exception happens when to delete mMeta in ~AMRExtractor().\n\nBug: 142630125\nTest: MTBF test and make sure\n      no assertion in AMediaFormat_delete(mMeta) of ~AACExtractor()\nChange-Id: Ie04989f20170391961c8a6d12e1882262be18d7f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9d183d498dbe4c6196864b3e69c7666528985981",
+      "old_mode": 33188,
+      "old_path": "media/extractors/aac/AACExtractor.cpp",
+      "new_id": "5d00d94ae1972dfc41f0d013e6f0c925963a3237",
+      "new_mode": 33188,
+      "new_path": "media/extractors/aac/AACExtractor.cpp"
+    }
+  ]
+}

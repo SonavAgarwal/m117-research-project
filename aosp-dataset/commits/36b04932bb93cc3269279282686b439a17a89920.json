@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "36b04932bb93cc3269279282686b439a17a89920",
+  "tree": "1835dad95c381151b8700044a4e439fcde90824c",
+  "parents": [
+    "523f6b49c1a2289161f40cf9fe80b92e592e9441"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Mar 09 15:01:55 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:47 2017 -0700"
+  },
+  "message": "Fix integer overflow and divide-by-zero\n\nBug: 35763994\nTest: ran CTS with and without fix\nChange-Id: If835e97ce578d4fa567e33e349e48fb7b2559e0e\n(cherry picked from commit 8538a603ef992e75f29336499cb783f3ec19f18c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0e98db828c6fc07e0aab8c20377011e29f53574d",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/AMRExtractor.cpp",
+      "new_id": "2892520c07973e96f7986c6d47a084625a791ac0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/AMRExtractor.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "276d73136f7084f2abdb571192b6c63e56193375",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/NuMediaExtractor.cpp",
+      "new_id": "4558b3c1cf2b249763ec7ce55e58d4bb416ff27e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/NuMediaExtractor.cpp"
+    }
+  ]
+}

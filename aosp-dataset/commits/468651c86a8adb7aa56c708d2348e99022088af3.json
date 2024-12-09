@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "468651c86a8adb7aa56c708d2348e99022088af3",
+  "tree": "d4221c2c7008d01adf3fa76d7860a0ea7764fb98",
+  "parents": [
+    "a75537b496e9df71c74c1d045ba5569631a16298"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Thu Jun 02 10:32:08 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:52:49 2016 -0700"
+  },
+  "message": "DO NOT MERGE Disable app pinning when emergency call button pressed\n\nAlso disables app pinning when the \"return to call\" button is pressed\nand brings up the in-call screen when app pinning is stopped if there is\nan existing call.\n\nCombination of ag/1091397 and ag/1085584 adapted for MNC.\n\nBug: 28558307\nBug: 28761672\nChange-Id: I82ec4042bff387c845ce571b197a4a86e1dd5ec8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cbf22c00d61cf810be18b449aafefccea83f175d",
+      "old_mode": 33188,
+      "old_path": "packages/Keyguard/src/com/android/keyguard/EmergencyButton.java",
+      "new_id": "93809af3e2296d70f0cc52f62c7a8f5700928c03",
+      "new_mode": 33188,
+      "new_path": "packages/Keyguard/src/com/android/keyguard/EmergencyButton.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "daa4c13cd977b44932e958d12188d17adda18841",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "50d74a28703de27ef4520bbc1e7a5cbc933a827f",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "17a86caccc4b9b0630555dfe0ebd10903efb219e",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityStackSupervisor.java",
+      "new_id": "29f8d6fce3a86e73fd0393fef8c8b7b48051e8e3",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityStackSupervisor.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fe5ade4c86e2f5a86eab6c6593981d02f4c1710b",
+  "tree": "8ccdb735745a79bdeff923cfca6563d436999305",
+  "parents": [
+    "efd28f6c36d40d0a8dd92f344e1d9a992b315c36"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Fri Apr 21 17:17:45 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:26 2017 +0000"
+  },
+  "message": "Decoder: Cleaned up parse sps function.\n\nPostponed the initializations to decoder context\ntill the end of the parse sps function, after\nall the error checks are done.\n\nBug: 37968755\nTest: ran poc on ASAN-enabled build before/after\nChange-Id: Ibee3383c28cede3edb68d2459565d6ce10683bbd\n(cherry picked from commit 4eb72f7c935595817026b4cf4aed5ef2ff579ab5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2694114c51db69c46a6d8665b7a3bb68a5bef5b6",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_headers.c",
+      "new_id": "352d605895bcd239e474973d4bc7183e11d0e6d7",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_headers.c"
+    }
+  ]
+}

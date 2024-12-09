@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a0b253c8797bf1c0b8dca73128e60cd1f823a6d",
+  "tree": "69c0052c2cbc44833aea24fec8ded63b261ea890",
+  "parents": [
+    "94a5953e5eef62079231756161120199478953b7"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Tue Nov 27 10:51:09 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:21 2018 +0000"
+  },
+  "message": "AOSP/Email - Fixed - Security Vulnerability - Email App: Malicious app\nis able to compose message with hidden attachments and bypass\nattachments path checks attaching private files from\n/data/data/com.android.email/*\n\n+ Ported the following CLs. Code is different from gmail. Made the changes\n  to work with Email.\n  ++ https://critique.corp.google.com/#review/136780360\n     +++ Add isExternal() to ComposeActivity.java and it always returns false.\n         Treat body and quoted text as plaintext if intent is external.\n\n  ++ https://critique.corp.google.com/#review/137654162\n     +++ Don\u0027t let other apps use our EXTRA_MESSAGE.\n         Load EXTRA_MESSAGE only if action is LAUNCH_COMPOSE.\n         LAUNCH_COMPOSE action is an internal only action: b/32068883.\n\n  ++ https://critique.corp.google.com/#review/142296051\n     +++ Don\u0027t let external Intent use EXTRA_MESSAGE\n\nBug: 32068883\nBug: 32502421\nBug: 32589229\n\nTest: manual - Ran the following tests on Pixel phone. Tested the Email UI.\n\n$ adb install -r out/target/product/marlin/system/app/Email/Email.apk\n\n$ adb install -r  app-debug.apk\n   Success\n\n$ adb shell am start -n com.test.poc.poc32589229/.MainActivity -a android.intent.action.MAIN\n  Starting: Intent { act\u003dandroid.intent.action.MAIN cmp\u003dcom.test.poc.poc32589229/.MainActivity }\n\n  Duplicated the steps in https://b.corp.google.com/issues/32589229#comment5\n  and didn\u0027t get the attachments after the fix (was getting attachments before the fix).\n\n  logcat output:\n    11-21 03:45:48.927 11705 11705 I poc-test: sending a hidden file attachment\n    11-21 03:45:48.929 11705 11705 I poc-test: Sending contentType: text/html, previewImage: null\n    11-21 03:45:48.935   914  4482 I ActivityManager: START u0 {act\u003dcom.android.mail.intent.action.LAUNCH_COMPOSE pkg\u003dcom.android.email cmp\u003dcom.android.email/.activity.ComposeActivityEmail (has extras)} from uid 10072\n    11-21 03:45:48.935   914  4482 W ActivityManager: Permission Denial: starting Intent { act\u003dcom.android.mail.intent.action.LAUNCH_COMPOSE pkg\u003dcom.android.email cmp\u003dcom.android.email/.activity.ComposeActivityEmail (has extras) } from ProcessRecord{6941817 11705:com.test.poc.poc32589229/u0a72} (pid\u003d11705, uid\u003d10072) not exported from uid 10062\n    11-21 03:45:48.937 11705 11705 D AndroidRuntime: Shutting down VM\n    --------- beginning of crash\n    11-21 03:45:48.940 11705 11705 E AndroidRuntime: FATAL EXCEPTION: main\n    11-21 03:45:48.940 11705 11705 E AndroidRuntime: Process: com.test.poc.poc32589229, PID: 11705\n    11-21 03:45:48.940 11705 11705 E AndroidRuntime: java.lang.IllegalStateException: Could not execute method for android:onClick\n    ...\n    11-21 03:45:48.940 11705 11705 E AndroidRuntime: Caused by: java.lang.SecurityException: Permission Denial: starting Intent { act\u003dcom.android.mail.intent.action.LAUNCH_COMPOSE pkg\u003dcom.android.email cmp\u003dcom.android.email/.activity.ComposeActivityEmail (has extras) } from ProcessRecord{6941817 11705:com.test.poc.poc32589229/u0a72} (pid\u003d11705, uid\u003d10072) not exported from uid 10062\n\n$ adb install -r out/target/product/marlin/testcases/EmailTests/EmailTests.apk\n  Performing Streamed Install\n  Success\n\n$ adb shell am instrument -w com.android.email.tests\n  The number of failures are same as before (with or without this change).\n  Tests run: 158,  Failures: 5\n\nChange-Id: If6e2a2efa08b75675c980b72735cde8252e95760\n(cherry picked from commit 3526a4ac552f93a83ea838ddae5de45e1e068af0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3dd9e8744df70b6bb68989db614a6be0d1f2594e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/mail/compose/ComposeActivity.java",
+      "new_id": "657f4aa2278ff57dd31a5fb230b8d25a7f7cbfd7",
+      "new_mode": 33188,
+      "new_path": "src/com/android/mail/compose/ComposeActivity.java"
+    }
+  ]
+}

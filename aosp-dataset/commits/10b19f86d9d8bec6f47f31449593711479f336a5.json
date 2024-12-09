@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "10b19f86d9d8bec6f47f31449593711479f336a5",
+  "tree": "cf6db00679d1f543593ab9e8e7da6626a01bc909",
+  "parents": [
+    "d04d08d1c78c6455f5e2d883844076ece94b235f"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu Aug 06 19:32:45 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:56 2020 +0000"
+  },
+  "message": "libbinder_ndk: fix failure when dump/shell are unset\n\nPeople directly using libbinder_ndk functions who didn\u0027t create a debug\ndump function function would fail to initialize that pointer, and\npotentially crash. Those who didn\u0027t create a shell function were\nguaranteed to crash. This wasn\u0027t noticed because the C++ wrappers which\nare the recommended way to use libbinder_ndk always set these functions.\n\nBug: 161812320\nTest: unit tests\n\nMerged-In: I1f6909531bc640097f3f48c4a558fd03f2fa62cb\nChange-Id: I1f6909531bc640097f3f48c4a558fd03f2fa62cb\n(cherry picked from commit deb5346761308d9cda3a249283a482a1ce08549e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "649faa1c76ac0c7b668f3726fa33cab6b5cf4bfb",
+      "old_mode": 33188,
+      "old_path": "libs/binder/ndk/ibinder.cpp",
+      "new_id": "919150d74030ba020ee38f74eceb3331bd9420fb",
+      "new_mode": 33188,
+      "new_path": "libs/binder/ndk/ibinder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "57794279f2b25f0880edc7bfc1c428c0bceddc07",
+      "old_mode": 33188,
+      "old_path": "libs/binder/ndk/ibinder_internal.h",
+      "new_id": "902fe7934d2be1a14919898d16f6eb511b8d351a",
+      "new_mode": 33188,
+      "new_path": "libs/binder/ndk/ibinder_internal.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "64832f3081648d60a6f0cdcc35faf27bc5125360",
+      "old_mode": 33188,
+      "old_path": "libs/binder/ndk/test/iface.cpp",
+      "new_id": "a5889856fc68846540dccb359adfa71d82d6f809",
+      "new_mode": 33188,
+      "new_path": "libs/binder/ndk/test/iface.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "cdf5493216a87fbd796cb147a368f5c1f86e744a",
+      "old_mode": 33188,
+      "old_path": "libs/binder/ndk/test/include/iface/iface.h",
+      "new_id": "d9dd64b8a602b0ace9044718221cc9912aa82bc0",
+      "new_mode": 33188,
+      "new_path": "libs/binder/ndk/test/include/iface/iface.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "fd30d87c76249feaded7a1aa116600122b62a92d",
+      "old_mode": 33188,
+      "old_path": "libs/binder/ndk/test/libbinder_ndk_unit_test.cpp",
+      "new_id": "aaf36b97a4f5573cea500d0c5ef6d8beb6e78645",
+      "new_mode": 33188,
+      "new_path": "libs/binder/ndk/test/libbinder_ndk_unit_test.cpp"
+    }
+  ]
+}

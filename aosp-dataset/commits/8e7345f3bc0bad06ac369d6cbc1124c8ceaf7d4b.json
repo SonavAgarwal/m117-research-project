@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8e7345f3bc0bad06ac369d6cbc1124c8ceaf7d4b",
+  "tree": "59a88298f7c89940ab099332cfb3216674b7f4a1",
+  "parents": [
+    "6d565ca140a62691e336a1b48bc6f1235634fbd8"
+  ],
+  "author": {
+    "name": "Emilian Peev",
+    "email": "epeev@google.com",
+    "time": "Thu Jul 30 16:53:29 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:28:26 2020 +0000"
+  },
+  "message": "libexif: Avoid buffer overflow due to compiler optimization\n\nModify an arguments size check and decrease so that the\nlikelihood of the compiler removing it as part of\noptimizations is low.\nThe arguments check must always be triggered to avoid\npotential buffer overflows.\n\nBug: 159625731\nTest: run sts-engbuild-no-spl-lock -m StsHostTestCases --test\nandroid.security.sts.Poc20_08#testPocBug_159625731\n\nChange-Id: I6f1b24a699c307b59e51dc0e22f4ed21f4b99feb\n(cherry picked from commit 4c18b0fabf48fe4460b679805b0442d76a78bde7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "62ba9432c6dea98d777c3f5c6d8a49c1bf4f4afa",
+      "old_mode": 33188,
+      "old_path": "Android.bp",
+      "new_id": "1db830fbddc55212850c9a6366594dd944d14d90",
+      "new_mode": 33188,
+      "new_path": "Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a9084226106e3d45f06452edb9b6a8e96fb4ef8",
+      "old_mode": 33188,
+      "old_path": "libexif/exif-entry.c",
+      "new_id": "347539cffda8f34abe5a6194a4d022983cd768df",
+      "new_mode": 33188,
+      "new_path": "libexif/exif-entry.c"
+    }
+  ]
+}

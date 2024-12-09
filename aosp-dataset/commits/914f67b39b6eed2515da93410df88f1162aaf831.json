@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "914f67b39b6eed2515da93410df88f1162aaf831",
+  "tree": "bc20996e10a2939b445f26f15e4f22a407960a45",
+  "parents": [
+    "5f5b8b6582803e1867d8a433646de367ae144eeb"
+  ],
+  "author": {
+    "name": "Alisher Alikhodjaev",
+    "email": "alisher@google.com",
+    "time": "Thu Jul 23 14:38:34 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:41 2020 +0000"
+  },
+  "message": "NFC - Memory disclosure in rw_i93_sm_format\n\nBug: 157650336\nTest: build and run (no tag testing)\nExempt-From-Owner-Approval: new owner approved\nChange-Id: If6cd929624f8ae8c2c70295924bea206d82d48f4\n(cherry picked from commit 046b6676ad19472e2c87aa6cb35f6d42e5dcfcc6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "11953d6b5a38c9a6173edf76a585c7fc80992821",
+      "old_mode": 33188,
+      "old_path": "src/nfc/tags/rw_i93.cc",
+      "new_id": "e06142bba744f0adb88fce125e04ea0ab4c8baea",
+      "new_mode": 33188,
+      "new_path": "src/nfc/tags/rw_i93.cc"
+    }
+  ]
+}

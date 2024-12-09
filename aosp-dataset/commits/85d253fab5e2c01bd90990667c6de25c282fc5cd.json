@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "85d253fab5e2c01bd90990667c6de25c282fc5cd",
+  "tree": "834b5c6a281923e92a83e4818fe4c42456e2c741",
+  "parents": [
+    "b8a86fe81c0da124d04630b9b3327482fef6220a"
+  ],
+  "author": {
+    "name": "Pablo Ceballos",
+    "email": "pceballos@google.com",
+    "time": "Thu Feb 11 18:01:49 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:59 2016 -0800"
+  },
+  "message": "BQ: Add permission check to BufferQueueConsumer::dump\n\nBug 27046057\n\nChange-Id: Id7bd8cf95045b497943ea39dde49e877aa6f5c4e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "36e3c06a5a9f8d317487aecdbfa18f2aaaf21143",
+      "old_mode": 33188,
+      "old_path": "libs/gui/BufferQueueConsumer.cpp",
+      "new_id": "1f84750c508a88c0bef93236594c3f430cbb99c0",
+      "new_mode": 33188,
+      "new_path": "libs/gui/BufferQueueConsumer.cpp"
+    }
+  ]
+}

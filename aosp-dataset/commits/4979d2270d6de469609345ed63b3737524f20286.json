@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4979d2270d6de469609345ed63b3737524f20286",
+  "tree": "917323ec76b06ba99a2f6d78437cb9971e969848",
+  "parents": [
+    "ef69264e45177fced9ecbc8d000b72129534c984"
+  ],
+  "author": {
+    "name": "shubang",
+    "email": "shubang@google.com",
+    "time": "Mon Jul 22 16:05:36 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:27 2019 +0000"
+  },
+  "message": "Add SafetyNet logging to Tvprovider\n\nsee\ngo/safetynet-logging\ndrive/open?id\u003d1TQgBUkUUGYsiujLBn_4uzeUbwYdcguooHSwCzz0beTI\n\nTest: N/A\nBug: 135269669\nChange-Id: I73a62fdd33782de87aaf46e5392d186db296f52c\n(cherry picked from commit 52ec984f862fcc76ee1a7590b753fb64390f5f3a)\n(cherry picked from commit 1479ef8f05778813250a79dc8616f5a5c8652735)\n(cherry picked from commit 929b2a554a61c06bc26c4736a95859d21b0062d7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b324ba3b188ddfe88f03729f77af75262f46131d",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/tv/TvProvider.java",
+      "new_id": "d57eb8b8fff1a439105353f6510af0782202d344",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/tv/TvProvider.java"
+    }
+  ]
+}

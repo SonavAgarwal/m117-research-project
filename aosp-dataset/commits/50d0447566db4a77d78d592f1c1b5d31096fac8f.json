@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "50d0447566db4a77d78d592f1c1b5d31096fac8f",
+  "tree": "564c5893ee75e1c0b8ddb5c3e6a79c8596b37d06",
+  "parents": [
+    "4bdc877ba02469916cc8c865083f6523b222c28f"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Thu Feb 25 23:19:45 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:36 2016 -0700"
+  },
+  "message": "OpenSSLCipher: reset AAD when necessary\n\nAAD was not being reset correctly during init or doFinal calls thus\nleading to incorrect output.\n\n(cherry picked from commit 0bab7f3b89ea13eb0d0c39d9c7b60c6112f0d6a8)\n\nBug: 27324690\nChange-Id: If7806a9d7847814b60719637abceb94d8fbc8831\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "47de94a9ceff476ecf19497c0882189d3fc7580e",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/OpenSSLCipher.java",
+      "new_id": "305f17407595a8f9e335aad91178003d66ab6263",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/OpenSSLCipher.java"
+    }
+  ]
+}

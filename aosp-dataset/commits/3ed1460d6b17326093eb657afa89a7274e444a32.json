@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3ed1460d6b17326093eb657afa89a7274e444a32",
+  "tree": "20a78166a56f8a69bff4a54128e8cc1b826c8930",
+  "parents": [
+    "fe7b309adafbb87137c90cfbeac3c936fda69545"
+  ],
+  "author": {
+    "name": "Ben Hutchings",
+    "email": "ben@decadent.org.uk",
+    "time": "Tue Aug 13 12:53:17 2019 +0100"
+  },
+  "committer": {
+    "name": "Matthias Maennich",
+    "email": "maennich@google.com",
+    "time": "Wed Nov 13 09:57:28 2019 +0000"
+  },
+  "message": "tcp: Clear sk_send_head after purging the write queue\n\nDenis Andzakovic discovered a potential use-after-free in older kernel\nversions, using syzkaller.  tcp_write_queue_purge() frees all skbs in\nthe TCP write queue and can leave sk-\u003esk_send_head pointing to freed\nmemory.  tcp_disconnect() clears that pointer after calling\ntcp_write_queue_purge(), but tcp_connect() does not.  It is\n(surprisingly) possible to add to the write queue between\ndisconnection and reconnection, so this needs to be done in both\nplaces.\n\nThis bug was introduced by backports of commit 7f582b248d0a (\"tcp:\npurge write queue in tcp_connect_init()\") and does not exist upstream\nbecause of earlier changes in commit 75c119afe14f (\"tcp: implement\nrb-tree based retransmit queue\").  The latter is a major change that\u0027s\nnot suitable for stable.\n\nReported-by: Denis Andzakovic \u003cdenis.andzakovic@pulsesecurity.co.nz\u003e\nBisected-by: Salvatore Bonaccorso \u003ccarnil@debian.org\u003e\nFixes: 7f582b248d0a (\"tcp: purge write queue in tcp_connect_init()\")\nCc: \u003cstable@vger.kernel.org\u003e # before 4.15\nCc: Eric Dumazet \u003cedumazet@google.com\u003e\nSigned-off-by: Ben Hutchings \u003cben@decadent.org.uk\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\nBug: 143009752\n(cherry picked from commit e99e7745d03fc50ba7c5b7c91c17294fee2d5991)\nSigned-off-by: Matthias Maennich \u003cmaennich@google.com\u003e\n\nChange-Id: Ie325f18e7fe1c327a45e149034b90d2e74922263\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d03c65eac223bbc3e56918212df53fe2967bc75f",
+      "old_mode": 33188,
+      "old_path": "include/net/tcp.h",
+      "new_id": "d45caaec72710ac7ec1566084ce930f1719e9f0b",
+      "new_mode": 33188,
+      "new_path": "include/net/tcp.h"
+    }
+  ]
+}

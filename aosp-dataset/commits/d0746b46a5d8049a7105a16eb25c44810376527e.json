@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d0746b46a5d8049a7105a16eb25c44810376527e",
+  "tree": "f9825ed568597cf1d3f8bbff817c5f8cee7bb575",
+  "parents": [
+    "38691f76269b8ba6b4c965183aa9b34ea518f7e0"
+  ],
+  "author": {
+    "name": "Linus Tufvesson",
+    "email": "lus@google.com",
+    "time": "Thu Apr 30 16:54:12 2020 +0000"
+  },
+  "committer": {
+    "name": "Linus Tufvesson",
+    "email": "lus@google.com",
+    "time": "Thu May 07 10:02:59 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\n\nThis change is the union of\nI2aaab1903dee54190338f7b6e49888aa51437108 and I58834636e092f992e403342e36b475dc60e8f20a\n\nOriginal CL descriptions:\n\n*** I2aaab1903dee54190338f7b6e49888aa51437108\nBlock TYPE_PRESENTATION windows on default display\n\n... and any other display that isn\u0027t considered a public presentation\ndisplay, as per Display.isPublicPresentation()\n\n*** I58834636e092f992e403342e36b475dc60e8f20a\nUse TYPE_PRIVATE_PRESENTATION for private presentations\n\nDetect if the Presenation is targeting a private virtual display, and if they\nare use the windowType TYPE_PRIVATE_PRESENTATION.\n***\n\nBug: 141745510\nTest: atest CtsWindowManagerDeviceTestCases:android.server.wm.PresentationTest CtsDisplayTestCases:android.display.cts.VirtualDisplayTest\n\nChange-Id: I9f1c4b140ab4bc6183151aafc5501e8648fbc3fa\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cb72d4d5dc2cff297b1a4504211399b26c567b21",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/Presentation.java",
+      "new_id": "36c42e179a5767ed43f257beb3a6d07333a54db9",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/Presentation.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "529936a6c899e7bf4c5a77133824ccf6a6feb4aa",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/WindowManagerService.java",
+      "new_id": "a9f157d985a619143d5d49227ecb2da0de5fc580",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/WindowManagerService.java"
+    }
+  ]
+}

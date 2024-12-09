@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "014b01706cc64dc9c2ad94a96f62e07c058d0b5d",
+  "tree": "9d06b225b0ca0f9e4eb2b045c4b86b17dd4a3175",
+  "parents": [
+    "268068f25673242d1d5130d96202d3288c91b700"
+  ],
+  "author": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Wed May 18 10:39:48 2016 -0700"
+  },
+  "committer": {
+    "name": "Josh Gao",
+    "email": "jmgao@google.com",
+    "time": "Wed May 18 17:20:30 2016 -0700"
+  },
+  "message": "adb: use asocket\u0027s close function when closing.\n\nclose_all_sockets was assuming that all registered local sockets used\nlocal_socket_close as their close function. However, this is not true\nfor JDWP sockets.\n\nBug: http://b/28347842\nChange-Id: I40a1174845cd33f15f30ce70828a7081cd5a087e\n(cherry picked from commit 53eb31d87cb84a4212f4850bf745646e1fb12814)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cfa64aedb2a62c2b91ea6648758b9a24488f112f",
+      "old_mode": 33188,
+      "old_path": "adb/sockets.cpp",
+      "new_id": "63b7df6f24ea8094b6d0bc70cb20c52fc24c2902",
+      "new_mode": 33188,
+      "new_path": "adb/sockets.cpp"
+    }
+  ]
+}

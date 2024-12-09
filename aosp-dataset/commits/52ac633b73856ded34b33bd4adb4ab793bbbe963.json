@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "52ac633b73856ded34b33bd4adb4ab793bbbe963",
+  "tree": "8c86532dec618964bbc726a5e75af3cf5f86c891",
+  "parents": [
+    "13b40c2040a17038b63a61e2b112c634da203d3b"
+  ],
+  "author": {
+    "name": "Paul Duffin",
+    "email": "paulduffin@google.com",
+    "time": "Fri May 13 12:35:25 2016 +0100"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Tue Sep 27 15:55:45 2016 -0700"
+  },
+  "message": "Fix CVE-2016-0718: Expat XML Parser Crashes on Malformed Input\n\nIncludes all changes made on the cve-2016-0718-fix-2-2-1 branch\nthat was merged into the master branch in commit\nbe4b1c06daba1849b8ff5e00bae5caf47f6c39fd\nin repository http://git.code.sf.net/p/expat/code_git\n\n(cherry picked from commit 7b64b72da916c9c9c285939c11f81de938268fa9)\n\nBug: 28698301\nChange-Id: I9fe93040b3a9afb04be63c5fd453a2b99c01fb37\n(cherry picked from commit 4bf8f12b1d505770ce1fd3b5aa33bd7abe46ee74)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e308c795dd9c11c50402e17b036a080dbb9f4a12",
+      "old_mode": 33188,
+      "old_path": "lib/xmlparse.c",
+      "new_id": "18bfb7e88755e5105ee00fd8f013b839159f970d",
+      "new_mode": 33188,
+      "new_path": "lib/xmlparse.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "bf09dfc72b9fc85384f06850284d21c96ebc1cfa",
+      "old_mode": 33188,
+      "old_path": "lib/xmltok.c",
+      "new_id": "cb98ce1f9b4abe9d429ee2c360f9a93857705d4d",
+      "new_mode": 33188,
+      "new_path": "lib/xmltok.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca867aa6b429cf9ab0721ce89ee281e9529bbfad",
+      "old_mode": 33188,
+      "old_path": "lib/xmltok.h",
+      "new_id": "752007e8b9e21922ea9fb20d4b9ac8f1fce40c0b",
+      "new_mode": 33188,
+      "new_path": "lib/xmltok.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "9c2895b87739ef031ecd933df4b95e2441f8962b",
+      "old_mode": 33188,
+      "old_path": "lib/xmltok_impl.c",
+      "new_id": "6c5a3ba4c064e76efdea4f9735666fe677e4bc5f",
+      "new_mode": 33188,
+      "new_path": "lib/xmltok_impl.c"
+    }
+  ]
+}

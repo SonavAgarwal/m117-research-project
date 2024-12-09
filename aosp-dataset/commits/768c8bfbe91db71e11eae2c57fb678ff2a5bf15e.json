@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "768c8bfbe91db71e11eae2c57fb678ff2a5bf15e",
+  "tree": "1bd61629a603622ec1f60ee173a1399f49030d78",
+  "parents": [
+    "2a642ca97b60c0126ec5844659383fb5c894c7a0"
+  ],
+  "author": {
+    "name": "Kathan Shukla",
+    "email": "kathan@google.com",
+    "time": "Thu Oct 22 12:08:22 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:51:46 2020 +0000"
+  },
+  "message": "Grpc Graph - fix use after free\n\nGrpcGraph initializes StreamSetObserver - which triggers a thread to\nnotify GrpcGraph of termination. If GrpcGraph is destroyed, this will\nresult in use after free. Fix this by enforcing that GrpcGraph object is\nnot destroyed before StreamSetObserver.\n\nBug: 170407229\nTest: build, unit test and fuzz test\nChange-Id: I8b24f72af60c441ebd7a31939769c46589431cfe\nMerged-In: I8b24f72af60c441ebd7a31939769c46589431cfe\n(cherry picked from commit 3f53bf0525bd5c21ff6cc3235b93cb26a7866ea8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6967230bdd8d82f9882addd8a800015052f7757e",
+      "old_mode": 33188,
+      "old_path": "computepipe/runner/graph/GrpcGraph.cpp",
+      "new_id": "efd56c93ba595d3336474dc6160f2806548bfb00",
+      "new_mode": 33188,
+      "new_path": "computepipe/runner/graph/GrpcGraph.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d833dd2dd9cdb78a32ae18983322ab99d69e65ae",
+      "old_mode": 33188,
+      "old_path": "computepipe/runner/graph/GrpcGraph.h",
+      "new_id": "0805e35abaf67760c684380f40d0c8772b1e8bf0",
+      "new_mode": 33188,
+      "new_path": "computepipe/runner/graph/GrpcGraph.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "30e3b5491edd00f252ca98fe9c645a71cf8207e0",
+      "old_mode": 33188,
+      "old_path": "computepipe/runner/graph/StreamSetObserver.cpp",
+      "new_id": "2586b515fb951de9499e8294b6ab2df312e2e80c",
+      "new_mode": 33188,
+      "new_path": "computepipe/runner/graph/StreamSetObserver.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7999f18564c83ddf9312fe107f734b8db8215427",
+      "old_mode": 33188,
+      "old_path": "computepipe/runner/graph/StreamSetObserver.h",
+      "new_id": "fe3f40ff0a2c43cbf303471107173687ffae21da",
+      "new_mode": 33188,
+      "new_path": "computepipe/runner/graph/StreamSetObserver.h"
+    }
+  ]
+}

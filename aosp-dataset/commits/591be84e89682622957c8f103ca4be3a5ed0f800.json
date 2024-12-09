@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "591be84e89682622957c8f103ca4be3a5ed0f800",
+  "tree": "524148f08a096d5309e53f1c8fbc6583cada73e0",
+  "parents": [
+    "f7063c1e913edebd3402a2c2467c1bdb3d4b79a9"
+  ],
+  "author": {
+    "name": "David Benjamin",
+    "email": "davidben@chromium.org",
+    "time": "Sun Feb 07 00:35:42 2016 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:35 2016 -0700"
+  },
+  "message": "Remove support for mis-encoded PKCS#8 DSA keys.\n\nPreviously, OpenSSL supported many different DSA PKCS#8 encodings. Only\nsupport the standard format. One of the workaround formats (SEQUENCE of\nprivate key and public key) seems to be a workaround for an old Netscape\nbug. From inspection, NSS seems to have fixed this from the first open\nsource commit.\n\n(cherry-picked from 440f1037716eca16f203edb8f03d4a59c92ae0cc)\n\nBug: 27449871\nChange-Id: I1e097b675145954b4d7a0bed8733e5a25c25fd8e\nReviewed-on: https://boringssl-review.googlesource.com/7074\nReviewed-by: Adam Langley \u003cagl@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0ac7da77382d08b600bda3aeb1cff167aba8246e",
+      "old_mode": 33188,
+      "old_path": "src/crypto/evp/p_dsa_asn1.c",
+      "new_id": "2c3326e6c223aa29b1e80fa0ed0a9c06f813fed1",
+      "new_mode": 33188,
+      "new_path": "src/crypto/evp/p_dsa_asn1.c"
+    }
+  ]
+}

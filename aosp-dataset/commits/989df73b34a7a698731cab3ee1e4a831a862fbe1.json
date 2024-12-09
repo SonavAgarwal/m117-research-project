@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "989df73b34a7a698731cab3ee1e4a831a862fbe1",
+  "tree": "16374404c293bf331f08bf97cf55cc83217d27ff",
+  "parents": [
+    "91cb6b1745f3e9d341cf6decc2b916cb1e4eea77"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Fri Feb 10 14:44:43 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:06:34 2017 +0000"
+  },
+  "message": "Decoder: Fix end of bitstream error.\n\nThe end of bistream error check was fixed for\nodd number of macroblocks in Mbaff frames.\n\nBug: 37008096\nTest: Ittiam-verified\nChange-Id: I058d74a3c1d1511968c2b36802dfc5c102947919\n(cherry picked from commit 2e01924cd692191c970c64ec3f358e53dccb9e54)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "031206080b636c087ca458fdccf7802c7bf5ede1",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_islice.c",
+      "new_id": "504b7755ff0824ccb3c0a37a2cc146569c38c7f2",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_islice.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a78ea976feffea7705086ef962c5e9b07c2d2499",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_pslice.c",
+      "new_id": "97ea27c04dccdc76c182e2bd85d640369e29ba68",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_pslice.c"
+    }
+  ]
+}

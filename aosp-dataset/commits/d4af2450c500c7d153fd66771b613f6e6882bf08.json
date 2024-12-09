@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d4af2450c500c7d153fd66771b613f6e6882bf08",
+  "tree": "b49494517b1d1a90500504c0f45caec91cdf620b",
+  "parents": [
+    "0be8a2541594feec746195d6dbbc0db6c602175e"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Tue Feb 14 17:07:24 2017 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:01 2017 +0000"
+  },
+  "message": "MPEG4Extractor: ensure returned status is checked.\n\nAlso fix handling of zero atom size in MPEG4Source::parseChunk.\nIDataSource: ensure readAt returns correct status.\nTest: manually test with mediaplayer.\nBug: 34718515\nChange-Id: I1219ec579aa0876dc1230e36af46b158b84c6d77\n\n(cherry picked from commit ff1fb4d5cdd3b2b28c69edd8cd3021e335ca381a)\n(cherry picked from commit 371561214467f848496928914f771703d6c331e6)\n\nChange-Id: I51546975ac0992cff7cf890a71a177e1058ed613\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "51c9938f66994a12c1a782ea6d31697df74ca146",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IDataSource.cpp",
+      "new_id": "5ad39fe81c3ade315ff3b96449d6f75a95e37722",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IDataSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "d014b2ae89b990249bc0ed328bcfa5bcfe0074f4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "1dfa86811748abc4571e4f979709382a0fc102fb",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

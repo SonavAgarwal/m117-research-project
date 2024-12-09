@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c580c836c1941fb4912e1dd4e08626caf98a62c7",
+  "tree": "11be8eb2577972b3c522503701a59af125ca0729",
+  "parents": [
+    "916a9684295fb578f4b3c6c16b621ef201a49964"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Sat Aug 15 08:17:03 2015 -0500"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Fri Aug 21 16:06:23 2015 -0700"
+  },
+  "message": "Prevent integer issues in ID3::Iterator::findFrame\n\nInteger overflows could occur a few places within findFrame. These can lead to\nout-of-bounds reads and potentially infinite loops. Ensure that arithmetic does\nnot wrap around to prevent these behaviors.\n\nBug: 23285192\nChange-Id: I72a61df7d5719d1d3f2bd0b37fba86f0f4bbedee\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "751b81009990d997534f6e0bcadacbb4ed561da0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "5a490e9effa86cb8e4801cf28344d9f71226c203",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

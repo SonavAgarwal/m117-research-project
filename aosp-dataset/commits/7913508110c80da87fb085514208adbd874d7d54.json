@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7913508110c80da87fb085514208adbd874d7d54",
+  "tree": "57c930606b3bbba8727a17270ad362b1e182ad86",
+  "parents": [
+    "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Mon Jul 20 11:34:22 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Aug 14 18:05:07 2015 -0700"
+  },
+  "message": "ABuffer: reset members when memory allocation fails.\n\nBug: 22077698\nChange-Id: I2beb724662d041ad2339d0f4c7f983e7ac5e5e6f\n(cherry picked from commit 94b0badc025b14141ff234e3e4e2745411742bac)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6173db4b012fa45b4eab534be64a1cf9d5229368",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/foundation/ABuffer.cpp",
+      "new_id": "5f5c9775ffbb119731fc24db433cd6911b250f17",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/foundation/ABuffer.cpp"
+    }
+  ]
+}

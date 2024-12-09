@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4b78bcd5cdff81168b5b08f72764ec9a5c0405c3",
+  "tree": "c876aaea75a957afcf91a313610a2aedd22b1e2b",
+  "parents": [
+    "ba87cf74445f51092cfc223959a8d6956dd690b7"
+  ],
+  "author": {
+    "name": "Christopher Dombroski",
+    "email": "cdombroski@google.com",
+    "time": "Tue Apr 16 12:22:56 2019 -0700"
+  },
+  "committer": {
+    "name": "Christopher Dombroski",
+    "email": "cdombroski@google.com",
+    "time": "Wed Apr 24 18:29:53 2019 +0000"
+  },
+  "message": "Treat mode_default as denied for install_unknown_apps\n\nTest: atest SettingsRoboTests\nBug: 123700348\nChange-Id: Ieeb6456854cc3d0faa0e9c407accd94f56a25813\nMerged-In: Ieeb6456854cc3d0faa0e9c407accd94f56a25813\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cc7fb62c40c514332e6599cc15d2841cc6390ab0",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/applications/AppStateInstallAppsBridge.java",
+      "new_id": "ea27f3d039e5f53dc285224c2a408158501b7c35",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/applications/AppStateInstallAppsBridge.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "3076080060cac78afcc7066fcd64f855d16139c2",
+      "old_mode": 33188,
+      "old_path": "tests/robotests/src/com/android/settings/applications/AppStateInstallAppsBridgeTest.java",
+      "new_id": "7618d447f904c6facd1d0746cf02bb6b6768c0e8",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/applications/AppStateInstallAppsBridgeTest.java"
+    }
+  ]
+}

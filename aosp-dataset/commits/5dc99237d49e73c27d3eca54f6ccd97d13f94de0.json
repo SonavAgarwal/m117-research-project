@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5dc99237d49e73c27d3eca54f6ccd97d13f94de0",
+  "tree": "13e73f8dea1664efde087a2bcd95d06adc8f701e",
+  "parents": [
+    "247d383827fc8fa0ba4473be89e35cf6a200ad27"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Oct 21 09:41:00 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:07 2016 -0800"
+  },
+  "message": "Tremolo: fix ARM assembly code for decode_map type 3 case\n\nBug: 31647370\nTest: ran CTS and manual PoC tests\nChange-Id: If176cee6c267d9025d5c6af49c19354192f901a9\n(cherry picked from commit 798ceb60518ebbc9eb2f5005a83cd7779eabb879)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9bc6f18eb8dfb8f812cea43ed46d743b669d1ebe",
+      "old_mode": 33188,
+      "old_path": "Tremolo/dpen.s",
+      "new_id": "7e4f1ed1cfbaa4faff59583e7cda7fb173c6add3",
+      "new_mode": 33188,
+      "new_path": "Tremolo/dpen.s"
+    }
+  ]
+}

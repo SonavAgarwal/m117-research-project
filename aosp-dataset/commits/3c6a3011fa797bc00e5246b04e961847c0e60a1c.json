@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3c6a3011fa797bc00e5246b04e961847c0e60a1c",
+  "tree": "74ebc9ce38dd6c01217a1a7da44eb04c86c61acb",
+  "parents": [
+    "3e1ae794285e0b6a9ce8a4beedec93599881faeb"
+  ],
+  "author": {
+    "name": "Mill Chen",
+    "email": "millchen@google.com",
+    "time": "Tue Jul 16 17:45:46 2019 +0800"
+  },
+  "committer": {
+    "name": "Mill Chen",
+    "email": "millchen@google.com",
+    "time": "Mon Dec 09 03:19:31 2019 +0000"
+  },
+  "message": "Prevent accounts page directly opening in screen pinning mode\n\nIn Settings there is no auth mechanism to prevent accounts page being\nopened in screen pinning mode. This CL makes it so that when users are\ntrying to navigate to any pages in Settings from other apps in screen\npinning mode, Settings app will directly close its page.\n\nBug: 137015265\nBug: 135604684\nTest: manual\nChange-Id: If26eda408a9ef6fa03ad82e5bee51bb7185950d6\nMerged-In: If26eda408a9ef6fa03ad82e5bee51bb7185950d6\n(cherry picked from commit f3242dab3546c019d4b79c502f7b8850d36123a5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06bdd0cad465040887c6b97bb7eb3b7e7e5f7eb9",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/SettingsActivity.java",
+      "new_id": "c0ffc19df52db4292122c77b95a493b50b3ba00d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/SettingsActivity.java"
+    }
+  ]
+}

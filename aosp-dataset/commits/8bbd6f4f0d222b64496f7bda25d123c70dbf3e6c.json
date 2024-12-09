@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8bbd6f4f0d222b64496f7bda25d123c70dbf3e6c",
+  "tree": "4a90f2be910bf42178f0b96cf942aae6ca58a5f6",
+  "parents": [
+    "ab9e462966dfb738d9b4f00ed73ecbb8ad6c2df5"
+  ],
+  "author": {
+    "name": "Brian Duddie",
+    "email": "bduddie@google.com",
+    "time": "Thu Jun 06 16:43:41 2019 -0700"
+  },
+  "committer": {
+    "name": "Brian Duddie",
+    "email": "bduddie@google.com",
+    "time": "Mon Jul 01 17:52:50 2019 +0000"
+  },
+  "message": "Fix race between SensorManager ctor and callback\n\nAvoids potential invalid memory access if system server crashes during\ninitialization.\n\nBug: 132927376\nTest: confirm sensors initialize\nChange-Id: If7421c452b5893ab2567323d265503a1ce304482\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5840d510799af3d1b6a1b48701209dbf71eb4070",
+      "old_mode": 33188,
+      "old_path": "libs/sensor/SensorManager.cpp",
+      "new_id": "96d5eb9d1f555a9b8b96b0e4c27d1748741f09b3",
+      "new_mode": 33188,
+      "new_path": "libs/sensor/SensorManager.cpp"
+    }
+  ]
+}

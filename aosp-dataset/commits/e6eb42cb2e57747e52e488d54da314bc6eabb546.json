@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e6eb42cb2e57747e52e488d54da314bc6eabb546",
+  "tree": "640eda727e648a7aeaa7ab8fb6254575081e504d",
+  "parents": [
+    "e31f6eb5c49e0e638585243ac36ce139b60a6fb1"
+  ],
+  "author": {
+    "name": "Chia-I Wu",
+    "email": "olv@google.com",
+    "time": "Tue Oct 09 15:22:46 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 19 16:24:13 2018 +0000"
+  },
+  "message": "libui: add boundary check to GraphicBuffer::unflatten\n\nCommit cb496acbe593326e8d5d563847067d02b2df40ec removed the boundary\ncheck by accident.\n\nBug: 114223584\nTest: manual\nChange-Id: I057bc02d5807e438530d1a5327c2e02b9d154151\n(cherry picked from commit bf8d7210c4bbbdc875e9695a301cdf9c3b544279)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c8805000a48c7ea82a015ba08653ef9d4fab9c7e",
+      "old_mode": 33188,
+      "old_path": "libs/ui/GraphicBuffer.cpp",
+      "new_id": "6235bd6cc4aa941fc67d783a3a857f4cac56a4ff",
+      "new_mode": 33188,
+      "new_path": "libs/ui/GraphicBuffer.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "25016fd2865943dec1a6b2b167ef85c772fb90f7",
+  "tree": "c9820adc91b27ad56d4439366964aeb8a7232ce3",
+  "parents": [
+    "0787bc222a016e944f01492c2dd04bd03c1da6af"
+  ],
+  "author": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Fri Oct 16 11:32:37 2015 -0700"
+  },
+  "committer": {
+    "name": "Patrick Tjin",
+    "email": "pattjin@google.com",
+    "time": "Fri Oct 16 11:49:32 2015 -0700"
+  },
+  "message": "hwc: fix compilation issue on backport of Ieb91b70 [DO NOT MERGE]\n\nFixes compilation issue for backport of the following patch:\n\n\tcommit 6e69a5311599cc90b654031e93b272017169f1e0\n\tAuthor: Arun Kumar K.R \u003cakumarkr@codeaurora.org\u003e\n\tDate:   Wed Jun 5 17:21:38 2013 -0700\n\n\thwc: Fix to avoid heap corruption\n\nBug: 24163261\n\nChange-Id: I4d8d02bf75e7914c2c5c4f9c2b4ea047481b302c\nSigned-off-by: Patrick Tjin \u003cpattjin@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "744fc095c27684607cac11dc929072ba92917eb3",
+      "old_mode": 33188,
+      "old_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp",
+      "new_id": "6fcfba9c3b9111cc968be092fd626dcb680bb717",
+      "new_mode": 33188,
+      "new_path": "msm8960/libhwcomposer/hwc_mdpcomp.cpp"
+    }
+  ]
+}

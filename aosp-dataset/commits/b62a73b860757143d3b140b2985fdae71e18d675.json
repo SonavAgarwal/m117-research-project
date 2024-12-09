@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "b62a73b860757143d3b140b2985fdae71e18d675",
+  "tree": "19f9fa1f1a6890161c80cada416b2953b7475b81",
+  "parents": [
+    "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Jun 03 13:47:51 2015 -0700"
+  },
+  "committer": {
+    "name": "Jon Larimer",
+    "email": "jlarimer@google.com",
+    "time": "Fri Aug 14 22:33:21 2015 +0000"
+  },
+  "message": "libstagefright: check memory size for overflow before allocation.\n\nBug: 20674086\nChange-Id: I431aa2b7d30a942350ab6d105451c6b77e2f99d4\n(cherry picked from commit 42cccd7c8811597d56fb86afeacf6231d693dea6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "844bd14050bdadca6bdf578365e569dabebb7da9",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp",
+      "new_id": "78f2556e5fcdb5943806ef5b0cb929e1900d1b37",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/pvdec_api.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "946e3d099ec5b16706d9f5e82c2cfba19ff0f0bc",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4enc_api.cpp",
+      "new_id": "da2737733d85000cc1cae135af0585c2af1b1b46",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/src/mp4enc_api.cpp"
+    }
+  ]
+}

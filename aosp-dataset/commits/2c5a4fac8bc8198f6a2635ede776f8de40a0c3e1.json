@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2c5a4fac8bc8198f6a2635ede776f8de40a0c3e1",
+  "tree": "6dd20e95f82870642a05b05540957d6294922be8",
+  "parents": [
+    "06a2d34583130aa2c8d923f2f850dce1ffcf3349"
+  ],
+  "author": {
+    "name": "Paul Stewart",
+    "email": "pstew@google.com",
+    "time": "Wed Nov 18 10:28:32 2015 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 10 16:11:56 2015 -0800"
+  },
+  "message": "Fix use-after-free in wifi_cleanup()\n\nRelease reference to cmd only after possibly calling getType().\n\n\nBUG: 25753768\nChange-Id: Id2156ce51acec04e8364706cf7eafc7d4adae9eb\n(cherry picked from commit d7f3cb9915d9ac514393d0ad7767662958054b8f https://googleplex-android-review.git.corp.google.com/#/c/815223)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "28f5565accefcd8e16a5dcab7bc3330022c461df",
+      "old_mode": 33188,
+      "old_path": "bcmdhd/wifi_hal/wifi_hal.cpp",
+      "new_id": "fdb7d7b7b36ebb155aa5f0b88165323c89e285d3",
+      "new_mode": 33188,
+      "new_path": "bcmdhd/wifi_hal/wifi_hal.cpp"
+    }
+  ]
+}

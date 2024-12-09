@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1b5f99d14234bd92ce3a40d1e267f8b8a1bbe3dd",
+  "tree": "62d1909de77ea6e079a7b69fc0fde1462c798e90",
+  "parents": [
+    "2f6ca6cd85b537c8c25b2841dd5ee1ab85ecd09a"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Mon Jan 27 15:34:04 2020 -0800"
+  },
+  "committer": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Fri Feb 12 01:03:35 2021 +0000"
+  },
+  "message": "Enforce strict grammar when querying the call log\n\nDisallow subqueries and suspicious tokens when querying from the\ncall log database. Also add a column to the projection so that the token\ndetector doesn\u0027t throw a false positive.\n\nBug: 143230980\nTest: atest android.provider.cts.contacts.CallLogProviderTest\nChange-Id: I54d2d399f449ea47aa8fb4197c718f9038da25bf\n(cherry picked from commit 1e54cb39bb76f5cc12526abca99b1af017d7d3d2)\nMerged-In: I54d2d399f449ea47aa8fb4197c718f9038da25bf\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ec1d40e9692de328c5e548c7163cb7721ce986e9",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/contacts/CallLogProvider.java",
+      "new_id": "ebe111f1ccedbead45dce901872ac25edafe4d37",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/contacts/CallLogProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "9efdfaa48e1eb9bbceb36e0bdff30d1a40bbfcf3",
+      "old_mode": 33188,
+      "old_path": "tests/src/com/android/providers/contacts/CallLogProviderTest.java",
+      "new_id": "9baf1e415061ee188a334cc229592827b7c853b4",
+      "new_mode": 33188,
+      "new_path": "tests/src/com/android/providers/contacts/CallLogProviderTest.java"
+    }
+  ]
+}

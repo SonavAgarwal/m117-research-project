@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c072485125763d11da918aec3232b9e3b113d8dd",
+  "tree": "92a8820fa180927238791e1e31eab81dbde15527",
+  "parents": [
+    "1a3f0b9b4c09b67f6e9a2c2db940cfd490928c44"
+  ],
+  "author": {
+    "name": "Zim",
+    "email": "zezeozue@google.com",
+    "time": "Thu Jun 03 16:08:20 2021 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 16 01:11:03 2021 +0000"
+  },
+  "message": "DO NOT MERGE Fix floating point to text conversion overflow\n\nAny precision \u003e\u003d2147483647 will cause a buffer overflow.\nFor instance, executing the following statement will segfault\n\nselect (printf(\u0027%.2147483647G\u0027,0.01));\n\nLater sqlite versions fixed this by hard-coding a hard-limit of\n100k million on the precision of floating point to text conversions\nhttps://sqlite.org/src/info/d08d3405878d394e\n\nWe fix this on earlier versions by setting the compile time flag\nto the same 100k million\n\nBug: 153352319\nTest: builds\nChange-Id: Ied86cf81f0064da9d3d963ecf943894bc1ae1a93\n(cherry picked from commit 4810d35fd17c3ab2f1fcbe9a0c73a8c587623d89)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3bb9a10fcd3b8cf51ddeaa8d8eba0b334df770f9",
+      "old_mode": 33188,
+      "old_path": "dist/Android.bp",
+      "new_id": "b63021df7592dc30e81c39db78509c49d899bab5",
+      "new_mode": 33188,
+      "new_path": "dist/Android.bp"
+    }
+  ]
+}

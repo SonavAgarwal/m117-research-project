@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "226ea26684d4cd609a5b456d3d2cc762453c2d75",
+  "tree": "3b25ff41a6485b3c3cdb75b6aa0aba813a835301",
+  "parents": [
+    "1e77fefc8b9c832239e1b32c6a6880376065e24e"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Fri Jul 07 17:17:31 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:57 2017 +0000"
+  },
+  "message": "Add missing continuation offset check for SDP continuation requests\n\nBug: 63146698\nTest: External script\nChange-Id: Iea52f1689dc12bfe0d4b57996f17db4bc3bd5983\nMerged-In: Iea52f1689dc12bfe0d4b57996f17db4bc3bd5983\n(cherry picked from commit e776c834768bedd043ace7e5714390b61c96a248)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fe67be19b194f3270a9bd1afe328a595efb805d4",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_server.cc",
+      "new_id": "24a168c85edca97b751b108f977447ffeec4b301",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_server.cc"
+    }
+  ]
+}

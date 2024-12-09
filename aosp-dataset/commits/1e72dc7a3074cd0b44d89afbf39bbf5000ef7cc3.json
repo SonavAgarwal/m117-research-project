@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1e72dc7a3074cd0b44d89afbf39bbf5000ef7cc3",
+  "tree": "f70ab923ed48b4b7d64d8f398de6a383c79b2f1a",
+  "parents": [
+    "4cff1f49ff95d990d6c2614da5d5a23d02145885"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Fri May 29 16:13:11 2015 -0400"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:42 2015 -0700"
+  },
+  "message": "DO NOT MERGE: Ensure that unparcelling Region only reads the expected number of bytes\n\nbug: 20883006\nChange-Id: I4f109667fb210a80fbddddf5f1bfb7ef3a02b6ce\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b99de85a248824ce78fc3d50fb29d71fa27b64c",
+      "old_mode": 33188,
+      "old_path": "core/jni/android/graphics/Region.cpp",
+      "new_id": "ec4d8bf22714b9f401acdaca9139fd6ad1665f10",
+      "new_mode": 33188,
+      "new_path": "core/jni/android/graphics/Region.cpp"
+    }
+  ]
+}

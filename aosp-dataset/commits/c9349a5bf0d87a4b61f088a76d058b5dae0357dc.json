@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c9349a5bf0d87a4b61f088a76d058b5dae0357dc",
+  "tree": "bc2a830603fa5eac10b4442df27ecaa7f01e9b85",
+  "parents": [
+    "0d466c94a81eec5a701748ff7526a2e3515b3c97"
+  ],
+  "author": {
+    "name": "Shawn Willden",
+    "email": "swillden@google.com",
+    "time": "Wed Oct 02 08:58:22 2019 -0600"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Oct 11 02:35:41 2019 +0000"
+  },
+  "message": "Encrypt AES-256 keystore master keys.\n\nag/5984229 that added support for AES-256 master keys inadvertently\ncaused them not to be encyrpted by the user\u0027s password.  This is less\ndamaging to security than it might appear because these keys are also\nencrypted by Keymaster, in the TEE or StrongBox.\n\nBug: 141955555\nTest:  Manually verify password is encryption on a userdebug build.\nChange-Id: Ic5e82546df67346e4c348273cf4fe2bac382c9dc\n(cherry picked from commit b951bc53174bc583e7b76c40982aa82da8b01854)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eac8f11d9e72afcf55fd08abc22d1542edfb01b2",
+      "old_mode": 33188,
+      "old_path": "keystore/blob.cpp",
+      "new_id": "497f304ca0fc3d08d3b0e08d4d462339d939472c",
+      "new_mode": 33188,
+      "new_path": "keystore/blob.cpp"
+    }
+  ]
+}

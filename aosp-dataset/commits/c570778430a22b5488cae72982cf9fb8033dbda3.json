@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c570778430a22b5488cae72982cf9fb8033dbda3",
+  "tree": "4c849a3d50faeedaaf929ba26e95d3b6607a14d1",
+  "parents": [
+    "171b5fadb9d304f5e06686e4f3d060ef335d7250"
+  ],
+  "author": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Mon Aug 03 15:44:45 2015 -0700"
+  },
+  "committer": {
+    "name": "Nick Kralevich",
+    "email": "nnk@google.com",
+    "time": "Fri Aug 07 09:23:04 2015 -0700"
+  },
+  "message": "MPEG4Extractor.cpp: Add check for size \u003d\u003d SIZE_MAX\n\nIf size \u003d\u003d SIZE_MAX, the line:\n\n  uint8_t *buffer \u003d new (std::nothrow) uint8_t[size + 1];\n\nends up allocating zero bytes, which is obviously incorrect.\n\n(cherry picked from commit b2d33aee5122c91a59c2a676c0b89ad340232450)\n\nBug: 23031033\nChange-Id: I8027247a4e24d2c8a8b4eac88c3643eccda108b9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d1b39dc9970e8ddeb012ab40394f3249c44e2b6f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "411946cc99215266b4aab255f640eebe39b725ba",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

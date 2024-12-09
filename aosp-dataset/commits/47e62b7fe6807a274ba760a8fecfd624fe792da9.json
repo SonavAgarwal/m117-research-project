@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "47e62b7fe6807a274ba760a8fecfd624fe792da9",
+  "tree": "cbf3118efa4f2f6a8d8198c9e594d666fb8388e5",
+  "parents": [
+    "47e81a2596b00ee7aaca58716ff164a1708b0b29"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Mon Oct 31 14:33:49 2016 -0600"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:46:42 2016 -0800"
+  },
+  "message": "Public volumes belong to a single user.\n\nWhen a public (vfat) device is inserted, it\u0027s strongly associated\nwith the current foreground user, and no other users should be able\nto access it, since otherwise that would be a cross-user data leak.\n\nTo use the device under a different user, switch users and then\neject/remount the device.\n\nTest: verified user isolation of USB drive\nBug: 32523490\nChange-Id: I590c791996f1fea8d78f625dc942d149f1f41614\n(cherry picked from commit 8b38d083c42e2706e1ff5a1410fa61d1f5dea3f5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "3ef9b8e1b8c4ec4bb5454431a11d2c1eaeb72d90",
+      "old_mode": 33188,
+      "old_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java",
+      "new_id": "10e5dcc916789a25636886843a4adab5cf4ba314",
+      "new_mode": 33188,
+      "new_path": "packages/ExternalStorageProvider/src/com/android/externalstorage/ExternalStorageProvider.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d87989c5020e346322f2f9037e2ef58f41e4969a",
+  "tree": "3efcabee3bf0597bcc7adea87026dc68614fe4cb",
+  "parents": [
+    "60b2a4e7c0a15d85b4bea8181e29aae0a64c36d6"
+  ],
+  "author": {
+    "name": "Rich Cannings",
+    "email": "richc@google.com",
+    "time": "Tue Oct 09 13:56:37 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:13:51 2018 +0000"
+  },
+  "message": "Use BoringSSL to get random bytes\n\nBug: 117508900\nChange-Id: I4889513c0671ff2b689f1beca8084d6f149d473d\nTest: Existing tests pass\n(cherry picked from commit 29d54b87f121c79d5df87b0b2bcd7a1eb6090c1f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fb92417621ef500f8d68ad5967ad913907638c7c",
+      "old_mode": 33188,
+      "old_path": "src/crypto/random.c",
+      "new_id": "9774a695d69970e395cad2b1611d4854cdba7a87",
+      "new_mode": 33188,
+      "new_path": "src/crypto/random.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "d57446ced312e6f9d4cdd5bdc15c087b09144297",
+      "old_mode": 33188,
+      "old_path": "wpa_supplicant/Android.mk",
+      "new_id": "4b2bd207d4fefc18f0bee2c9a9596cf15b5ca238",
+      "new_mode": 33188,
+      "new_path": "wpa_supplicant/Android.mk"
+    }
+  ]
+}

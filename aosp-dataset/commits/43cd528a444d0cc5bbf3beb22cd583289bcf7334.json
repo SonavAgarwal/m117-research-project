@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "43cd528a444d0cc5bbf3beb22cd583289bcf7334",
+  "tree": "46044fe271f55759e3e139b9c564d2fe66358859",
+  "parents": [
+    "75c22982624fb530bc1d57aba6c1e46e7881d6ba"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Jun 27 14:21:40 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:45:20 2018 +0000"
+  },
+  "message": "HFP: Fix out of bound access in phone number processing\n\n* Write at most sizeof(dialnum) chars into dialnum array in ClccResponse\n  method\n* Write at most sizeof(ag_res.str) - 5 chars into ag_res.str array in\n  PhoneStateChange method\n\nBug: 79431031\nBug: 79266386\nTest: make call with super long phone numbers\nChange-Id: I98e7687ac4055800aa46626c6b1c866e52e474df\n(cherry picked from commit 5c0888d42d9aa29dbecd77d3443fa066cdb4e13d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5388986752cd6a73a5e912e354f40e9ea2fd83f2",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_hf.cc",
+      "new_id": "37f94716663643ad6feeaefc25f916fbcfab94b3",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_hf.cc"
+    }
+  ]
+}

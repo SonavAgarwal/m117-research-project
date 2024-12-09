@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0627e76edefd948dc3efe11564d7e53d56aac80c",
+  "tree": "397d23802aeaf63a4d6ad6d3026261098998286e",
+  "parents": [
+    "935ee775421e0c8a14f26669d9ab99f110ceb7d5"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Jan 10 14:16:15 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:07:58 2018 +0000"
+  },
+  "message": "SDP: Pass the bounds to process_service_*_rsp\n\nTest: build\nBug: 68161546\nChange-Id: Icf53d4d05f99b5e0a2b3f4d3735b6fbfd62adaa3\n(cherry picked from commit 3c7bd5a8453110a7bd1351648c5a4001b99afa70)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fd9339f08b44f283bc316ba2648eae9144df14b8",
+      "old_mode": 33188,
+      "old_path": "stack/sdp/sdp_discovery.cc",
+      "new_id": "574f5bc56fd1c52b3909ad1a5c9efd90498cf0d8",
+      "new_mode": 33188,
+      "new_path": "stack/sdp/sdp_discovery.cc"
+    }
+  ]
+}

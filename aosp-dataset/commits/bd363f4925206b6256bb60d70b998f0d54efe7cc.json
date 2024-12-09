@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bd363f4925206b6256bb60d70b998f0d54efe7cc",
+  "tree": "6951f01b39e76a481f4d292434b5f668d5b037b3",
+  "parents": [
+    "f8d659af6c15871f22b9ac4fe9cf5228a92c4511"
+  ],
+  "author": {
+    "name": "Fan Zhang",
+    "email": "zhfan@google.com",
+    "time": "Tue Jun 12 12:06:17 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 05 05:14:17 2018 +0000"
+  },
+  "message": "Hide quicksetting tile for dev options when it\u0027s turned off\n\nMerged-In: I3e11700a59c8a88bb586c77a876963b5e6a62c89\nChange-Id: I3e11700a59c8a88bb586c77a876963b5e6a62c89\nFixes: 78652607\nBug: 117770924\nTest: robotests\n(cherry picked from commit 4220b1e50ccec65cb47007155e0df7672a94a68d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c28a0504ee2f46e583498d1ecff1e10a6129b3e6",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/development/qstile/DevelopmentTiles.java",
+      "new_id": "a46dd7caf3782ca0f06c628eeeccb5fac16e9333",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/development/qstile/DevelopmentTiles.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8367fd3980e291342136e58c4f76f7aa063fb639",
+      "new_mode": 33188,
+      "new_path": "tests/robotests/src/com/android/settings/development/qstile/DevelopmentTilesTest.java"
+    }
+  ]
+}

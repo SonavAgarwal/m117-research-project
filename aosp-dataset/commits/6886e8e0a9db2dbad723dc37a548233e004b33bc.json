@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "6886e8e0a9db2dbad723dc37a548233e004b33bc",
+  "tree": "e663b8a9e77c2f1e6a5e35208f9521877157f615",
+  "parents": [
+    "152b651c8a9b91d6a1e6551e568e216971f9ad21"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Nov 14 13:59:19 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:06 2016 -0800"
+  },
+  "message": "vp8:fix threading issues\n\n1 - stops de allocating before threads are closed.\n2 - limits threads to mb_rows when mb_rows \u003c partitions\n\nBUG\u003dwebm:851\nBug: 30436808\n\nChange-Id: Ie017818ed28103ca9d26d57087f31361b642e09b\n(cherry picked from commit 70cca742efa20617c70c3209aa614a70f282f90e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4bc87eb13441161757bd58bc1afb3f47031e7aa8",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp8/decoder/decodeframe.c",
+      "new_id": "70b35c741621d69ad1574b4221582b177b2d8be2",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp8/decoder/decodeframe.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3468268a2a15bd1d838bbd7f47cfc78135a5f876",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp8/decoder/onyxd_if.c",
+      "new_id": "d129e0e9e4ea4e94fdb95ee0cae8f2cbcdf87c41",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp8/decoder/onyxd_if.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "7c7184c78aab5e8fd65be4dd0b60361e8dad15ad",
+      "old_mode": 33188,
+      "old_path": "libvpx/vp8/decoder/threading.c",
+      "new_id": "8acc3b312b5c2ba84c54a976987463c02a593afb",
+      "new_mode": 33188,
+      "new_path": "libvpx/vp8/decoder/threading.c"
+    }
+  ]
+}

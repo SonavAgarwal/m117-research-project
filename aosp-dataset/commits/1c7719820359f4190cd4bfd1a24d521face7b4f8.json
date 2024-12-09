@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1c7719820359f4190cd4bfd1a24d521face7b4f8",
+  "tree": "bdaea984bbd7c3def97f7bfc6719562a3ca94f9e",
+  "parents": [
+    "f3eb82683a80341f5ac23057aab733a57963cab2"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Sep 09 09:48:34 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Sep 10 10:06:19 2015 -0700"
+  },
+  "message": "DO NOT MERGE - IAudioFlinger: clear config before reading it from parcel.\n\nBug: 23905951\nBug: 23912202\nChange-Id: Id13a9d3cae2c09e7381b841e67ddfb188274d74c\n(cherry picked from commit e995e477ad59b79145200c8f1e9e13c16c682d59)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d7ca4250830dc424d9f99012c4d7a2a458e81de5",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioFlinger.cpp",
+      "new_id": "d31de583c61c7380cd6dd6d9451ad07b558b74ec",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4e47c79a428a59800b8bb1cb4abc48aeb7361a42",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioPolicyService.cpp",
+      "new_id": "e6e01aa2d1e00849c02d043222ded49fcd2fe81e",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioPolicyService.cpp"
+    }
+  ]
+}

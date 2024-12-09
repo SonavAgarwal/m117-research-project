@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a91d71434065cde21f480f5d92432b9a4f2f3521",
+  "tree": "9b09def9306b0a87421179ecf56f6c39d42466b3",
+  "parents": [
+    "8daf19b2c8cf7b9325b53e9b93b1eac878759f23"
+  ],
+  "author": {
+    "name": "Toon Verwaest",
+    "email": "verwaest@chromium.org",
+    "time": "Fri Jan 11 11:27:18 2019 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Jan 12 04:53:50 2021 +0000"
+  },
+  "message": "LiteralBuffer::ExpandBuffer always grows\n\nUpstream: https://chromium-review.googlesource.com/c/1405859\n\nBug: 168041375\nTest: atest proxy_resolver_v8_unittest\nChange-Id: I63dc386af7bebeaa217b864cd1931af79f75c53e\n(cherry picked from commit 05cbe2825f00470860200896b20960b66e2549ee)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "781832c2e63d375aa6e663725bf7b3f05c80cf54",
+      "old_mode": 33188,
+      "old_path": "src/parsing/scanner.cc",
+      "new_id": "38d1936f20f9a9225318463e36a698c8a6be74a7",
+      "new_mode": 33188,
+      "new_path": "src/parsing/scanner.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "e592debd8e422c7721c09052d280f4b9e45b3d11",
+      "old_mode": 33188,
+      "old_path": "src/parsing/scanner.h",
+      "new_id": "02cd247f3035b29e24c469089e5d5815ffe15086",
+      "new_mode": 33188,
+      "new_path": "src/parsing/scanner.h"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "dc17388efd1c85b32c0ae52b2545f272fb6185d4",
+  "tree": "52851d7191cf993f716cb12df949338952a172e5",
+  "parents": [
+    "97e9e1540aeb9ec1071956cef16b5e993d17286d",
+    "e8dea68f6a0116d25ab233921030d44a99ab1b58"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon Apr 08 06:00:22 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-merger",
+    "email": "android-build-merger@google.com",
+    "time": "Mon Apr 08 06:00:22 2019 -0700"
+  },
+  "message": "[automerger skipped] DO NOT MERGE Don\u0027t persist bonds using sample LTK am: 292fcf8612 -s ours\nam: e8dea68f6a -s ours\nam skip reason: change_id I52fd484d42bf87e96dbc9e6456090f231ed48111 with SHA1 c0fb2a25f9 is in history\n\nChange-Id: If68cf83db0a7388146f4e28a8433f8bd4c402e72\n",
+  "tree_diff": []
+}

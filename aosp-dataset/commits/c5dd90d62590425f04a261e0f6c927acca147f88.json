@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c5dd90d62590425f04a261e0f6c927acca147f88",
+  "tree": "0fc9221c52bbba35506edf4f1f4bb9ed643ec753",
+  "parents": [
+    "9456600a39c3b04a194071e0cb6cabfba6371a6b"
+  ],
+  "author": {
+    "name": "Przemyslaw Szczepaniak",
+    "email": "pszczepaniak@google.com",
+    "time": "Mon Apr 24 15:46:40 2017 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:04:43 2017 +0000"
+  },
+  "message": "Proper fix for rejecting ftp URL with /r/n.\n\nThis change superseedes previous (broken) attempt and is based\non openJdk change:\n\nchangeset:   17022:ada6fcb7cfd1\nuser:        vtewari\ndate:        Fri Feb 10 10:11:10 2017 +0530\nsummary:     8170222: Better transfers of files\n\nTests rewrite taken from tobiast@ fix in http://ag/2141666.\nAltered to not check for the case with username and no password\n(because in current code this results in NPE, not sure if expected,\nwill check further) and removed the case with only \u0027\\r\u0027 in it, which\nis not handled by openJdk fix, but shouldn\u0027t cause issues.\n\nTest: FtpURLConnectionTest\nBug: 35784677\nChange-Id: Ifdf6ebca362d1a5836d32b6f9663eff6c0c8f6ac\nMerged-In: I02c4b9194d395f901ef1e8e6154e06add25b51c9\n(cherry picked from commit 382a4d3fa486b844f4fd42c16ee41d9a38ba52f0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ff5d0b69dde8f50a25c178049da44186666957b8",
+      "old_mode": 33188,
+      "old_path": "luni/src/test/java/libcore/java/net/FtpURLConnectionTest.java",
+      "new_id": "806ae73fb0f38aae62b98e89590a14efbe115e08",
+      "new_mode": 33188,
+      "new_path": "luni/src/test/java/libcore/java/net/FtpURLConnectionTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "61c4a95ea417e0999fd1a5a9409ec44cf4cf7440",
+      "old_mode": 33261,
+      "old_path": "ojluni/src/main/java/sun/net/ftp/impl/FtpClient.java",
+      "new_id": "fea94218b7af12b13afab4d6000da7e35ca45438",
+      "new_mode": 33261,
+      "new_path": "ojluni/src/main/java/sun/net/ftp/impl/FtpClient.java"
+    }
+  ]
+}

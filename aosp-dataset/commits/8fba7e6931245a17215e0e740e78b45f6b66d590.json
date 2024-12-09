@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8fba7e6931245a17215e0e740e78b45f6b66d590",
+  "tree": "a76d02434a7f011f380ea8c7540a92a7902c0f64",
+  "parents": [
+    "1e72dc7a3074cd0b44d89afbf39bbf5000ef7cc3"
+  ],
+  "author": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Tue Jul 21 13:27:22 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:44 2015 -0700"
+  },
+  "message": "Prevent insanely long passwords from crashing SystemUI\n\nBug: 22214934\nChange-Id: I32e238e53ac4b6dd0ae6de226b98894c495b256f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b1b2631aef695e7ee87089d3ae29e130236a609b",
+      "old_mode": 33188,
+      "old_path": "packages/Keyguard/res/layout/keyguard_password_view.xml",
+      "new_id": "c04fad49f70ab796c1304db5bde9f560bc6628f4",
+      "new_mode": 33188,
+      "new_path": "packages/Keyguard/res/layout/keyguard_password_view.xml"
+    }
+  ]
+}

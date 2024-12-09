@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e8bbf5b0889790cf8616f4004867f0ff656f0551",
+  "tree": "8fb58b82f0ab600d37b7ef6cd0c39a0ab6619be4",
+  "parents": [
+    "9c7d30218e8f9bd4d3b59d2e937c64ed8b2ac805"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Wed Aug 08 14:46:42 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 01:20:42 2018 +0000"
+  },
+  "message": "DO NOT MERGE Fix OOB read before buffer length check\n\nBug: 111936834\nTest: manual\nChange-Id: Ib98528fb62db0d724ebd9112d071e367f78e369d\n(cherry picked from commit 4548f34c90803c6544f6bed03399f2eabeab2a8e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2103776dfd4d8e9d9930477487cb0726acc2db84",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "59045be06c6a3478b66f9ab722cfae2281837dd2",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

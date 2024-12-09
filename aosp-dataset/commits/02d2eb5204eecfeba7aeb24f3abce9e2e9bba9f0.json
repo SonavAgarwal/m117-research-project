@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "02d2eb5204eecfeba7aeb24f3abce9e2e9bba9f0",
+  "tree": "0c340ff4e4546910fdfe67dd15549932a94198c0",
+  "parents": [
+    "75419418cfd2f47439d0f65418f4a771cc58d14b"
+  ],
+  "author": {
+    "name": "Miranda Kephart",
+    "email": "mkephart@google.com",
+    "time": "Mon Nov 16 11:22:13 2020 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:02 2021 +0000"
+  },
+  "message": "[DO NOT MERGE] Close screenshot process on user switched\n\nCurrently, we keep the process up even if the user switches,\nmeaning that in some cases (if the user is switched while the\nscreenshot UI is up) we will save images to the wrong profile.\nThis change makes ScreenshotHelper listen for user switches and\nclose the screenshot service, so that a new screenshot is\nguaranteed to be constructed with the correct user\u0027s context.\n\nBug: 170474245\nFix: 170474245\nTest: manual -- verified bad state occurs if user switches within\nthe timeout period, ensured that screenshots work immediately\nafter switching with this change.\n\nChange-Id: I9d32d0928e6c2bda161d04555438d0dd7afef0ba\n(cherry picked from commit 7ef1a5dd1506075507412626f2533283d9520144)\n(cherry picked from commit 05f7aef1b07665aa10aab535613a8457296279a3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a23fc4b57b4570f0702e790bd423ab66563cfb0b",
+      "old_mode": 33188,
+      "old_path": "core/java/com/android/internal/util/ScreenshotHelper.java",
+      "new_id": "7ee846e9d8c11e69f6f260507c369fdb1fabe77c",
+      "new_mode": 33188,
+      "new_path": "core/java/com/android/internal/util/ScreenshotHelper.java"
+    }
+  ]
+}

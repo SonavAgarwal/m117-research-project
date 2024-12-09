@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "114b3803718500148dd90f32d231f61d746cd031",
+  "tree": "8764f3f5f2730d14dc56a84f2e485068c68992b3",
+  "parents": [
+    "8b70ba6f2071c911a6e51845d94c0fd0bd393c3c"
+  ],
+  "author": {
+    "name": "Roshan Pius",
+    "email": "rpius@google.com",
+    "time": "Tue Jun 19 08:12:29 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Mar 13 18:03:02 2019 +0000"
+  },
+  "message": "wificond: Mark scanner impl instance invalid\n\nThe call to ScannerImpl.invalidate() does not reset the |valid_| field\ncurrently.  This leads to unexpected behavior when any calls are made\non that instance after invoking invalidate().\n\nBug: 110378816\nBug: 121327323\nTest: Repeatedly toggled wifi state and ensured we connected back.\nChange-Id: I8da3e1d9284ec9e27f8a0980a669611369810c34\n(cherry picked from commit 7b332f6c5f43d455e948fab6b705b9985b061348)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6a5b82dbbae736b95b06ce04013d3c87a398fee8",
+      "old_mode": 33188,
+      "old_path": "scanning/scanner_impl.cpp",
+      "new_id": "43491389a6601769b4cbc96debb7a8f1235eeda5",
+      "new_mode": 33188,
+      "new_path": "scanning/scanner_impl.cpp"
+    }
+  ]
+}

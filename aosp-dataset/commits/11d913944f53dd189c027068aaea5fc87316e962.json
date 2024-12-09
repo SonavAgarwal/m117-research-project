@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "11d913944f53dd189c027068aaea5fc87316e962",
+  "tree": "9c313964f12e20c7c085d7fe97ed9f79bd9f60e6",
+  "parents": [
+    "e31b34fa0cd1e70d1105e2f472d400f6619b2913"
+  ],
+  "author": {
+    "name": "Robert Carr",
+    "email": "racarr@google.com",
+    "time": "Fri Feb 15 15:48:11 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:05 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE]: Exclude secure layers from most screenshots taken by the system server.\n\nIn pre-P versions of Android, it was allowed to screenshot secure layers if the\nbuffer queue producer which was the target of the screenshot was owned by\nthe system (in this case SurfaceFlinger). This really was a synonym for:\nThe screen rotation animation was allowed to capture secure layers, but the other\ncode paths weren\u0027t. In O we mistakenly changed this check to always allow the system server\nto capture secure layers via the captureScreen path (the captureLayers path used for\nTaskSnapshots was unaffected). This can result in data leakage in cases where the\nsystem server takes screenshots on behalf of other parts of the system (e.g. for\nthe assistant). To mitigate this we provide an explicit switch for the system server\nto specify whether it wishes to capture Secure layers. While this is dangerous, I think\nit is less dangerous than the previous implicit switch of capturing secure layers based on which\ntype of BufferQueue was passed in. The flag defaults to not capturing secure layers\nand we set it to true in the one place we need it (for the screen rotation animation).\nNon privileged clients can still not capture secure layers at all directly.\n\nTest: TransactionTest.cpp#SetFlagsSecureEUidSystem\nBug: 120610669\nChange-Id: I9d32c5ac2b005059be9f464859a415167d9ddbd4\n(cherry picked from commit dc49e0088a05108a0616704ca5565136f89c0a1f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ed8b0053e5bfeb4d923eff510254aa801ccd84e4",
+      "old_mode": 33188,
+      "old_path": "core/java/android/view/SurfaceControl.java",
+      "new_id": "eec34cdc12cc8515f014911691fb5da7b52b3782",
+      "new_mode": 33188,
+      "new_path": "core/java/android/view/SurfaceControl.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5b4b5f2a2264d340173e13d3b7fbda695e5cea7c",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_view_SurfaceControl.cpp",
+      "new_id": "1529a6bcf243fb65060bfb6dbe8c264eedfee201",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_view_SurfaceControl.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "755a571cf5f752c53bebf1a9d27671ca4f0a30e7",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wm/ScreenRotationAnimation.java",
+      "new_id": "498cda11c1b4de7febfad46da8adb844f7b7e1e9",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wm/ScreenRotationAnimation.java"
+    }
+  ]
+}

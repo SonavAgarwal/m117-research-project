@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4076be9a99bad5ff7651540df976c57462c3b8ce",
+  "tree": "ffb122974b94d98f1ac691558e2f07fe266005a1",
+  "parents": [
+    "7d58ca1adae7be6b6a8c85b318a96236b61572bf"
+  ],
+  "author": {
+    "name": "Pete Bentley",
+    "email": "prb@google.com",
+    "time": "Fri Dec 04 09:26:35 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:03 2020 +0000"
+  },
+  "message": "Reject non-ASCII hostnames and SANs.\n\nUpdates test expectations to match OkHostnameVerifier behaviour changes\nin the same topic.\n\nBug: 171980069\nTest: atest CtsLibcoreTestCases CtsLibcoreOkHttpTestCases\nChange-Id: I7ccd2c6d4255d29112e9a6d58640316c364bf67a\n(cherry picked from commit 650e71cc3acbc3f5af2ae312bc5ed71bb2d7c20b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e6978385e09fef5a9e22510816ce417a1fb78ce9",
+      "old_mode": 33188,
+      "old_path": "harmony-tests/src/test/java/org/apache/harmony/tests/javax/net/ssl/HostnameVerifierTest.java",
+      "new_id": "96384adba24b82924db23a5d87c789822c47dffa",
+      "new_mode": 33188,
+      "new_path": "harmony-tests/src/test/java/org/apache/harmony/tests/javax/net/ssl/HostnameVerifierTest.java"
+    }
+  ]
+}

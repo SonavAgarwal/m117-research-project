@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3eec10e4a8daf8f07127341fbc45bef539c8d790",
+  "tree": "beac34743f7990971849bea87f938af09bf5ce3a",
+  "parents": [
+    "05902a0634109fb2c20eeb10bd1b7a8e9b82eda5"
+  ],
+  "author": {
+    "name": "Fan Zhang",
+    "email": "zhfan@google.com",
+    "time": "Thu Jun 07 16:45:23 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Aug 10 20:29:13 2018 +0000"
+  },
+  "message": "Delete obsolete activity alias for dev settings\n\nThis activity alias is here since android 4.x for backward\ncompatibility. We no longer need it, and keeping it will cause security\nissue.\n\nChange-Id: Ib7817fd7cf8c8e66ca50534a0387cdc5773f837b\nMerged-In: I3f985e7fe14bd290db73b8c46dd817591df02015\nFixes: 92497653\nTest: manual\n(cherry picked from commit 0e1393ae8cac712bb56b51061a18885dae074038)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9c71c4f0f4ef9a0c5437171b0c7db24305ce04f6",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "591a132a667a1a3d2a3c45d89e7f54b37ffd34ae",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

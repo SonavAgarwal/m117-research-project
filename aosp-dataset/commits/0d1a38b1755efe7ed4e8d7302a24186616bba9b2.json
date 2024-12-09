@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0d1a38b1755efe7ed4e8d7302a24186616bba9b2",
+  "tree": "04197313b544abdc0bdc967a122f2ac594f3e9c8",
+  "parents": [
+    "c687312a075dedd21c1637a102475d3271656eb3"
+  ],
+  "author": {
+    "name": "Rohan Shah",
+    "email": "shahrk@google.com",
+    "time": "Wed Feb 10 17:45:52 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:04 2016 -0800"
+  },
+  "message": "Patch Exchange Autodiscover Code for Security Issue\n\nThe change removes the unauthenticated GET fallback attempt for the\nAutodiscover process. Given that the Autodiscover code is functionally broken\nand this fallback attempt wouldn\u0027t succeed unless an attacker faked a success\nresponse, a good way to patch the security issue is to disable the attempt.\n\nThe change also updates the request content type, disables automatic\nredirects, and allows for parsing namespaces to help the first two attempts\nsucceed. As this is not meant to be a functional patch but a security patch,\nthere are no further changes to the Autodiscover code.\n\nBUG: 26488455\nChange-Id: I0fc93c95e755c8fa60e94da5bec4b3b4c49cdfc1\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "5af80fddc56a0e2aadecde540b7be621300d3163",
+      "old_mode": 33188,
+      "old_path": "src/com/android/exchange/EasResponse.java",
+      "new_id": "4a5035a2be1de5e86cbe35dc9aa16b2632d1ebf6",
+      "new_mode": 33188,
+      "new_path": "src/com/android/exchange/EasResponse.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d3927acfd2101302e26355d8cace2b7a06c0027f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/exchange/eas/EasAutoDiscover.java",
+      "new_id": "963823aef5fb53fcb0855776e621d7aaac13ff1a",
+      "new_mode": 33188,
+      "new_path": "src/com/android/exchange/eas/EasAutoDiscover.java"
+    }
+  ]
+}

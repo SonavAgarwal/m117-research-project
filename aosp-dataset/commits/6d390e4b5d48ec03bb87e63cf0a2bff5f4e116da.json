@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6d390e4b5d48ec03bb87e63cf0a2bff5f4e116da",
+  "tree": "ffacf4a699335f1caa8b2a2b6e322ad5542b1572",
+  "parents": [
+    "0a68ff5e2e7cf2263674b7f0418b31e10b2a497f"
+  ],
+  "author": {
+    "name": "yangerkun",
+    "email": "yangerkun@huawei.com",
+    "time": "Wed Mar 04 15:25:56 2020 +0800"
+  },
+  "committer": {
+    "name": "Jeff Layton",
+    "email": "jlayton@kernel.org",
+    "time": "Fri Mar 06 11:54:13 2020 -0500"
+  },
+  "message": "locks: fix a potential use-after-free problem when wakeup a waiter\n\n\u002716306a61d3b7 (\"fs/locks: always delete_block after waiting.\")\u0027 add the\nlogic to check waiter-\u003efl_blocker without blocked_lock_lock. And it will\ntrigger a UAF when we try to wakeup some waiter：\n\nThread 1 has create a write flock a on file, and now thread 2 try to\nunlock and delete flock a, thread 3 try to add flock b on the same file.\n\nThread2                         Thread3\n                                flock syscall(create flock b)\n\t                        ...flock_lock_inode_wait\n\t\t\t\t    flock_lock_inode(will insert\n\t\t\t\t    our fl_blocked_member list\n\t\t\t\t    to flock a\u0027s fl_blocked_requests)\n\t\t\t\t   sleep\nflock syscall(unlock)\n...flock_lock_inode_wait\n    locks_delete_lock_ctx\n    ...__locks_wake_up_blocks\n        __locks_delete_blocks(\n\tb-\u003efl_blocker \u003d NULL)\n\t...\n                                   break by a signal\n\t\t\t\t   locks_delete_block\n\t\t\t\t    b-\u003efl_blocker \u003d\u003d NULL \u0026\u0026\n\t\t\t\t    list_empty(\u0026b-\u003efl_blocked_requests)\n\t                            success, return directly\n\t\t\t\t locks_free_lock b\n\twake_up(\u0026b-\u003efl_waiter)\n\ttrigger UAF\n\nFix it by remove this logic, and this patch may also fix CVE-2019-19769.\n\nCc: stable@vger.kernel.org\nFixes: 16306a61d3b7 (\"fs/locks: always delete_block after waiting.\")\nSigned-off-by: yangerkun \u003cyangerkun@huawei.com\u003e\nSigned-off-by: Jeff Layton \u003cjlayton@kernel.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "44b6da0328426ba0f133733114973f7d7a526e6a",
+      "old_mode": 33188,
+      "old_path": "fs/locks.c",
+      "new_id": "426b55d333d5b1d85c032ead9c7a82e9ccef9a07",
+      "new_mode": 33188,
+      "new_path": "fs/locks.c"
+    }
+  ]
+}

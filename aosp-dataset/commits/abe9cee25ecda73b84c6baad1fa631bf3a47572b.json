@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "abe9cee25ecda73b84c6baad1fa631bf3a47572b",
+  "tree": "bdaef9b84c1d26f9feb8624a0dd709436980681e",
+  "parents": [
+    "0f2d02be9c8d7b6b22342f77f2d326445276b813"
+  ],
+  "author": {
+    "name": "Mill Chen",
+    "email": "millchen@google.com",
+    "time": "Wed Feb 26 18:41:56 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 19 04:52:35 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nAllow LockScreenPattern to be launched in the pinning screen\n\nIf work profile lock is enabled and work app is pinned, users will get a\nblack/white screen on the phone. That\u0027s because Settings is prevented\nfrom other apps launch any pages of Settings in the pinning mode.\n\nIn order to launch some pages of Settings from other apps, we add a\ncondition to the preventive mechanism and allow the activity inherited\nfrom SettingsBaseActivity to override the condition to have the activity\nto be launched from other apps in the pinning mode.\n\nBug: 137015265\nBug: 135604684\nTest: manual test\nChange-Id: I8070de79a83350d1658efcb19e983669dad0e673\n(cherry picked from commit 077dd9b07f7cb6835f1717ea2f2700f2d13b37bb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e37b16192419f4f9c39d06586e0dee94a20a403",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/core/SettingsBaseActivity.java",
+      "new_id": "993c9b035456083d68192160b74b2ba0de0a72fa",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/core/SettingsBaseActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "5407776f3b1ca18b9025b4b5e2044e8f4632618f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/password/ConfirmDeviceCredentialBaseActivity.java",
+      "new_id": "e797beeb3e012b0d7962cc915e21a103fea48717",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/password/ConfirmDeviceCredentialBaseActivity.java"
+    }
+  ]
+}

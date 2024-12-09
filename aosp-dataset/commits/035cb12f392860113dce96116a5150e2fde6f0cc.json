@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "035cb12f392860113dce96116a5150e2fde6f0cc",
+  "tree": "45a923b9949f530b72669dc4165f2b83226715d9",
+  "parents": [
+    "0c3b93c8c2027e74af642967eee5c142c8fd185d"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Wed Aug 17 06:19:32 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:24 2016 -0700"
+  },
+  "message": "soundtrigger: add size check on sound model and recogntion data\n\nBug: 30148546\n\nChange-Id: I082f535a853c96571887eeea37c6d41ecee7d8c0\n(cherry picked from commit bb00d8f139ff51336ab3c810d35685003949bcf8)\n(cherry picked from commit ef0c91518446e65533ca8bab6726a845f27c73fd)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bb2416af43beb273aa169f29e9bfa73dd92c82a4",
+      "old_mode": 33188,
+      "old_path": "services/soundtrigger/SoundTriggerHwService.cpp",
+      "new_id": "eebc487053e1d8065e00a97096216177b6763003",
+      "new_mode": 33188,
+      "new_path": "services/soundtrigger/SoundTriggerHwService.cpp"
+    }
+  ]
+}

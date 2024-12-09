@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "16a76dadcc23a13223e9c2216dad1fe5cad7d6e1",
+  "tree": "991082bf3f9d9a09fbe4327fe646352e7db6fe5e",
+  "parents": [
+    "410bea181b229adef7a2c1a9308379eead260706"
+  ],
+  "author": {
+    "name": "Winson",
+    "email": "winsonc@google.com",
+    "time": "Tue Nov 10 16:19:38 2015 -0800"
+  },
+  "committer": {
+    "name": "Winson Chung",
+    "email": "winsonc@google.com",
+    "time": "Wed Nov 11 17:47:55 2015 +0000"
+  },
+  "message": "DO NOT MERGE Ensure that the device is provisioned before showing Recents.\n\nBug: 25476219\nChange-Id: I5bb9cca74790521de71c0037b4f2421c3d21b3f6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "910a57e730c1689f8e2c3c3852752d313390fb94",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/recents/AlternateRecentsComponent.java",
+      "new_id": "141d97cce9c852acb6656a2a5a446b2a462a0480",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/recents/AlternateRecentsComponent.java"
+    }
+  ]
+}

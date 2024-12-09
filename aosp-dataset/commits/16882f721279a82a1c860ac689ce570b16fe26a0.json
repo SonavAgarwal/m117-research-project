@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "16882f721279a82a1c860ac689ce570b16fe26a0",
+  "tree": "d5e5d0043e62386b05e8a5a000e520f72f0d75cc",
+  "parents": [
+    "4256f5ba98b4136ca4299ed8881958c2ae4ae615"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Fri Feb 03 09:31:04 2017 -0500"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Fri Feb 03 16:36:28 2017 +0000"
+  },
+  "message": "Fix out of bounds memory read in GIFMovie.cpp\n\nTest: TODO (to be separately uploaded to CTS)\n\nWhen decoding a GIF image, do not attempt to copy an index if it is out\nof range.\n\nBUG:33897722\nChange-Id: I8c8ca69b00bf1f655e62bbe1798b9a47bf6699be\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "decefd5acc540751e1a4785f19ead7fe946143a8",
+      "old_mode": 33188,
+      "old_path": "src/images/SkMovie_gif.cpp",
+      "new_id": "9dedfc0aab61d9253bf9efe31fedecfb2106ce17",
+      "new_mode": 33188,
+      "new_path": "src/images/SkMovie_gif.cpp"
+    }
+  ]
+}

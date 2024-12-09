@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5c3fd5d93a268abb20ff22f26009535b40db3c7d",
+  "tree": "6e315a199309edf95b1e9b7e88632c14db5216b1",
+  "parents": [
+    "9e011993f49389de7cb7daf3baffb2b37d85717c"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Dec 15 18:04:53 2016 +0530"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 14:59:30 2017 -0700"
+  },
+  "message": "Decoder: Fixed error handling for dangling fields\n\nIn case of dangling fields with gaps in frames enabled,\nfield pic in cur_slice was wrongly set to 0.\n\nThis would cause dangling field to be concealed as a frame, which would\nresult in a number of MB mismatch and hence a hang.\n\nBug: 34097672\nChange-Id: Ia9b7f72c4676188c45790b2dfbb4fe2c2d2c01f8\n(cherry picked from commit 1a13168ca3510ba91274d10fdee46b3642cc9554)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc5c484786824f95fd27819cd07f775dca45045f",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_utils.c",
+      "new_id": "8d02d0e58cbd93a879fab64cdcd7f182c1ea72d1",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_utils.c"
+    }
+  ]
+}

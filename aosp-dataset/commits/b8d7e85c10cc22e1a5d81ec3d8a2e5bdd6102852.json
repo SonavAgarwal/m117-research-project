@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b8d7e85c10cc22e1a5d81ec3d8a2e5bdd6102852",
+  "tree": "fdef8e8d1f07b43a3026f146f70ff01e075bae0c",
+  "parents": [
+    "680b75dabb90c8c2e22886826554ad1bc99b36f1"
+  ],
+  "author": {
+    "name": "Venkatarama Avadhani",
+    "email": "venkatarama.avadhani@ittiam.com",
+    "time": "Thu Apr 06 17:10:23 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:02:25 2017 +0000"
+  },
+  "message": "Error Resilience - Check on as_recent_fld[0][1]\n\nIf it is NULL then it should first get assigned to a value before dereferencing\nAdding check for the same.\n\nBug: 34231231\nChange-Id: I8ed89ea791d78d5fa8e35d123a92866b3da1ceb1\n(cherry picked from commit a8dbcd2b5c956a45a848a332c35909ad58c6a2a9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "029f1bf948ae630ee88247a694c2cf267b0034ef",
+      "old_mode": 33188,
+      "old_path": "decoder/impeg2d_pic_proc.c",
+      "new_id": "fbbbf794dfe4dcc88682be4c8e3b33564d9f8fa2",
+      "new_mode": 33188,
+      "new_path": "decoder/impeg2d_pic_proc.c"
+    }
+  ]
+}

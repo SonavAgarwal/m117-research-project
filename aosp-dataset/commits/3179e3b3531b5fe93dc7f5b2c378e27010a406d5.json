@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3179e3b3531b5fe93dc7f5b2c378e27010a406d5",
+  "tree": "e659016aaed362589b67134e10460176ce72ab4a",
+  "parents": [
+    "e4ac35fa524b011f272d396b2c12515382bddb94"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Thu Jun 11 11:15:00 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sat Aug 15 04:21:59 2015 +0000"
+  },
+  "message": "SoftOpus: Fix output buffer capacity.\n\nThe output buffer size as per opus project\u0027s sample decoder [1] is\n960*6*channel_count. Whereas in SoftOpus, we use 960*6 (without the\nchannel count multiplier. Fixing it to include maximum number of\nchannels possible as the multiplier.\n\n[1] http://git.xiph.org/?p\u003dopus-tools.git;a\u003dblob;f\u003dsrc/opusdec.c;h\u003dd085f04eacdfd49759ffdb73db805562ba396720;hb\u003df2a2e88b47f6f24083a37be476f140f677fe7160#l571\n\nBUG\u003d20721050\n\nChange-Id: I323891a1b11491782bc093477b09e7757b885674\n(cherry picked from commit 08e8227514f5ab99822dfae8b4d39414646ff59d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b8084ae99329ccb7700417a6d2e546f437759e10",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp",
+      "new_id": "ed52a37067a668360a8dcea02ee04bc458a7b2d5",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/opus/dec/SoftOpus.cpp"
+    }
+  ]
+}

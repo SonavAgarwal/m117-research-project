@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "efe34a570d91b826b009d40e44c2e470dd180ace",
+  "tree": "6f8cba4a481eb17b7a40c62145c0e8473e3bb8b6",
+  "parents": [
+    "3c99bb4e5e6157eb085d12807bdc38d7fd60f888"
+  ],
+  "author": {
+    "name": "Chong Zhang",
+    "email": "chz@google.com",
+    "time": "Fri Aug 24 14:49:33 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:43 2018 +0000"
+  },
+  "message": "Fix race condition for cas sessions\n\nChange the session to shared_ptr and use atomic_load/store.\n\nTest: POC; CTS MediaCasTest; CTS MediaDrmClearkeyTest#\ntestClearKeyPlaybackMpeg2ts\nbug: 113027383\n\nChange-Id: I75f4cb33a022f28d45918442d64c5c46df2640ef\n(cherry picked from commit 7934a8f7ee0988b181980b9e6f24ca7dd357f5e3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "73ed8c36373cb1f877e08c62fb6de0111b10c5d2",
+      "old_mode": 33188,
+      "old_path": "drm/mediacas/plugins/clearkey/ClearKeyCasPlugin.cpp",
+      "new_id": "1558e8b8da524075c680c74aafe87db9d1b0101b",
+      "new_mode": 33188,
+      "new_path": "drm/mediacas/plugins/clearkey/ClearKeyCasPlugin.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "42cfb8f2fb34b2fd93aa870084f4f1f2af7d1f48",
+      "old_mode": 33188,
+      "old_path": "drm/mediacas/plugins/clearkey/ClearKeyCasPlugin.h",
+      "new_id": "389e1728d71f7661eb60cb15b2b82533f50c32e6",
+      "new_mode": 33188,
+      "new_path": "drm/mediacas/plugins/clearkey/ClearKeyCasPlugin.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4b4051d5bb2ace3469c2808e2fb9f5632ee4d023",
+      "old_mode": 33188,
+      "old_path": "drm/mediacas/plugins/clearkey/ClearKeySessionLibrary.cpp",
+      "new_id": "3bb11768bf56e3dbd573612935c02a1282026ab7",
+      "new_mode": 33188,
+      "new_path": "drm/mediacas/plugins/clearkey/ClearKeySessionLibrary.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "01f5f477e2eb0fe2ab21d71e0e35c87b14f09a6d",
+      "old_mode": 33188,
+      "old_path": "drm/mediacas/plugins/clearkey/ClearKeySessionLibrary.h",
+      "new_id": "a537e63bc046f6892beeea533af6ef697716f0f7",
+      "new_mode": 33188,
+      "new_path": "drm/mediacas/plugins/clearkey/ClearKeySessionLibrary.h"
+    }
+  ]
+}

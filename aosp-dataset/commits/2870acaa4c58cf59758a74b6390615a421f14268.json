@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2870acaa4c58cf59758a74b6390615a421f14268",
+  "tree": "03000525d11fcf9424f17e5d2ab8c7d43a071c9f",
+  "parents": [
+    "29d991fac25b261a72ce73f96c9df594ea5b9242"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Thu Jul 12 16:17:45 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:42:24 2018 +0000"
+  },
+  "message": "M3UParser: handle missing EXT-X-MEDIA URIs\n\nBug: 111381540\nTest: http://devimages.apple.com.edgekey.net/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8\nChange-Id: I57f6cea59ce4c25267385289ab805eefe74b04ac\n(cherry picked from commit b8c3a74de55a76e2ee21c731828a8afca7aa4ae0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "52791b92a051b383bbc3ff478abff76b0d020d81",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/httplive/M3UParser.cpp",
+      "new_id": "8ab33f752fa012bfc1cb879c76ed2b222dbc14e3",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/httplive/M3UParser.cpp"
+    }
+  ]
+}

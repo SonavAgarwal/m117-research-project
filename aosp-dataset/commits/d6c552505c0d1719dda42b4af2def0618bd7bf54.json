@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "d6c552505c0d1719dda42b4af2def0618bd7bf54",
+  "tree": "da62f0ec5f5b7197d81f66203fc922c74f7928e9",
+  "parents": [
+    "4f044e107b24e3c644ab97f996a8703994f65e20"
+  ],
+  "author": {
+    "name": "Eric Dumazet",
+    "email": "edumazet@google.com",
+    "time": "Thu Oct 15 11:42:00 2020 -0700"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Thu Oct 29 09:54:58 2020 +0100"
+  },
+  "message": "icmp: randomize the global rate limiter\n\n[ Upstream commit b38e7819cae946e2edf869e604af1e65a5d241c5 ]\n\nKeyu Man reported that the ICMP rate limiter could be used\nby attackers to get useful signal. Details will be provided\nin an upcoming academic publication.\n\nOur solution is to add some noise, so that the attackers\nno longer can get help from the predictable token bucket limiter.\n\nFixes: 4cdf507d5452 (\"icmp: add a global rate limitation\")\nSigned-off-by: Eric Dumazet \u003cedumazet@google.com\u003e\nReported-by: Keyu Man \u003ckman001@ucr.edu\u003e\nSigned-off-by: Jakub Kicinski \u003ckuba@kernel.org\u003e\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7eb9366422f54b451d5818a211b8adc4d5eed1ea",
+      "old_mode": 33188,
+      "old_path": "Documentation/networking/ip-sysctl.txt",
+      "new_id": "3c617d620b6f8b5881856fee02f46b408b16db00",
+      "new_mode": 33188,
+      "new_path": "Documentation/networking/ip-sysctl.txt"
+    },
+    {
+      "type": "modify",
+      "old_id": "4efa5e33513e3b5e04521877209bf3de07a9e5ed",
+      "old_mode": 33188,
+      "old_path": "net/ipv4/icmp.c",
+      "new_id": "59c0b1a86e51bc6b8e7e6bfdb6113c787d68d96f",
+      "new_mode": 33188,
+      "new_path": "net/ipv4/icmp.c"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "bdc831357e7a116bc561d51bf2ddc85ff11c01a9",
+  "tree": "ae8fe48bbc79c0a044dc0624f6f30d09b11bc0f4",
+  "parents": [
+    "f3679d0367cd8a0e72875800decf9f63033645a0"
+  ],
+  "author": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Thu Jan 07 14:15:59 2016 -0700"
+  },
+  "committer": {
+    "name": "Jeff Sharkey",
+    "email": "jsharkey@android.com",
+    "time": "Thu Jan 14 14:17:30 2016 -0700"
+  },
+  "message": "Use resolved path for both checking and opening.\n\nThis avoids a race condition where someone can change a symlink\ntarget after the security checks have passed.\n\nBug: 26211054\nChange-Id: I5842aaecc7b7d417a3b1902957b59b8a1f3c1ccb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4b23024f2c83ed1affd728922378dd5e89eb5e4f",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/DownloadProvider.java",
+      "new_id": "2d914c411975d3e4e680f6772adcb8ecb2a06649",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/DownloadProvider.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0aa49c0aa80e176128f8a7a08262eadee5a2739e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/downloads/Helpers.java",
+      "new_id": "1b4c911ee75cee01db28abaea1b1700c4d6c76a5",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/downloads/Helpers.java"
+    }
+  ]
+}

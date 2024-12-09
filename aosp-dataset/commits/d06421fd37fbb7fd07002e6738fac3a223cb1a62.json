@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d06421fd37fbb7fd07002e6738fac3a223cb1a62",
+  "tree": "ed4b7304d408d1e134afecc83ba9a7093935cd83",
+  "parents": [
+    "778b6f4902ad824d5fc62071caaa837bb47deee5"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jan 11 15:02:12 2016 -0800"
+  },
+  "committer": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jan 11 16:33:17 2016 -0800"
+  },
+  "message": "IGraphicBufferProducer: fix QUEUE_BUFFER info leak\n\nBug: 26338109\nChange-Id: I8a979469bfe1e317ebdefa43685e19f9302baea8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b73e69e2ba00822fe233c6e2f978ed1fb6b3d268",
+      "old_mode": 33188,
+      "old_path": "libs/gui/IGraphicBufferProducer.cpp",
+      "new_id": "e713c04493293b317564dfc7a656065bd998adde",
+      "new_mode": 33188,
+      "new_path": "libs/gui/IGraphicBufferProducer.cpp"
+    }
+  ]
+}

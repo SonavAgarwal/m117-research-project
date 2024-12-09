@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f4f7e0c102819f039ebb1972b3dba1d3186bc1d1",
+  "tree": "2f76705c51780ee64c76fa80cd7873d077182462",
+  "parents": [
+    "2674a7218eaa3c87f2ee26d26da5b9170e10f859"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Mon May 04 17:57:24 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Jul 09 14:09:57 2015 -0700"
+  },
+  "message": "Prevent integer underflow if size is below 6\n\nWhen processing 3GPP metadata, a subtraction operation may underflow and\nlead to a rather large linear byteswap operation in the subsequent\nframedata decoding code. Bound the \u0027size\u0027 value to prevent this from\noccurring.\n\nBug: 20923261\nChange-Id: I35dfbc8878c6b65cfe8b8adb7351a77ad4d604e5\n(cherry picked from commit 9458e715d391ee8fe455fc31f07ff35ce12e0531)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "850e6aff1b66136c49df845fecb6a84acdf1ce62",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "fe4527d14a55d4cf5f0e01ee1b9ac8b1f7ff6068",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

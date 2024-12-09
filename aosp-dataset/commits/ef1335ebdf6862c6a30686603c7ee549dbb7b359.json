@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ef1335ebdf6862c6a30686603c7ee549dbb7b359",
+  "tree": "88d4b635fe7c34a06571bf89a941df8f6c86f974",
+  "parents": [
+    "2950276f61220e00749f8e24e0c773928fefaed8"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Thu Jan 11 10:59:19 2018 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Apr 13 22:58:04 2018 +0000"
+  },
+  "message": "[DO NOT MERGE] Add permission check to setAllowOnlyVpnForUids\n\nBug: 63000005\nTest: runtest frameworks-net -c com.android.server.connectivity.VpnTest\nTest: cts-tradefed run cts-dev -m CtsDevicePolicyManagerTestCases -t com.android.cts.devicepolicy.MixedDeviceOwnerTest#testAlwaysOnVpnLockDown\nMerged-In: Ia1a82ee73d8617f3124032986fe6c09c14bf7752\nChange-Id: Ia1a82ee73d8617f3124032986fe6c09c14bf7752\n(cherry picked from commit f915e04d5010c4dfffad263fa70c1e412e856314)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1854e2b740f40f5652fc676ade5c83e8b4d21e59",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/NetworkManagementService.java",
+      "new_id": "66d01c7885c95d96afbd3fa97b0bb7b6c7dc3bab",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/NetworkManagementService.java"
+    }
+  ]
+}

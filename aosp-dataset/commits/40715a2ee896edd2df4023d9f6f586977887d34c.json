@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "40715a2ee896edd2df4023d9f6f586977887d34c",
+  "tree": "9b25806f7f91bad470fa77b390ca881ce964e320",
+  "parents": [
+    "13a8c5dd7f7437da67ecf8e2886e486191e95ff2"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Sep 16 15:01:16 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Sep 17 16:15:19 2015 +0000"
+  },
+  "message": "IAudioFlinger: fix the missing initialization of variable to ensure no info leak when writing them to Parcel.\n\nBug: 23953967\nChange-Id: I3a1d0144ba3832649e322c197ff0f03305ee7829\n(cherry picked from commit 4cac44b53cc9f965cc2c9706b1d7ee2cd79f4066)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a6ed199cb8c1c0c759306b42e4be4894e7222c3f",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioFlinger.cpp",
+      "new_id": "ac2d1c9a529612d40af4f5c2473d966169b99496",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioFlinger.cpp"
+    }
+  ]
+}

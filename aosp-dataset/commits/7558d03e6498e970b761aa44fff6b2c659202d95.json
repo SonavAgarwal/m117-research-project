@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "7558d03e6498e970b761aa44fff6b2c659202d95",
+  "tree": "923870cc8a43f711987c175cb030d7cb863e9106",
+  "parents": [
+    "d575ecf607056d8e3328ef2eb56c52e98f81e87d"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Wed Jun 15 17:51:39 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:06:38 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: venc: add checks before accessing heap pointers\n\nHeap pointers do not point to user virtual addresses in case\nof secure session.\nSet them to NULL and add checks to avoid accesing them\n\nBug: 28815329\nBug: 28920116\n\nChange-Id: I94fd5808e753b58654d65e175d3857ef46ffba26\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "815ab28bb8f974f96d1f4a24359f8e477313946f",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp",
+      "new_id": "59860edc5ab9940af1ecf9fea469099c5697e55a",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "32d8c0af9723c44296a36f5503bb4994b19bcecb",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp",
+      "new_id": "6751e3ba323c71e186c91d59acad799fbf9c5227",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "32d73b59d34731861a9d97788e311ff21b95353b",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/video_encoder_device_v4l2.cpp",
+      "new_id": "c4eb3d8f4fe500b5861666c17b0a6950ffda223a",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/video_encoder_device_v4l2.cpp"
+    }
+  ]
+}

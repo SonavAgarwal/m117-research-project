@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3a03fa24d21f97e84e796ac5ef14b3f434c0e8f1",
+  "tree": "3c5051a1638421b8deb8b4d42ac840090ca8f2c5",
+  "parents": [
+    "f6bf0102bdc1adff973e08d8ce9c869c4e2efade"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Wed Sep 07 16:58:39 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:22:00 2016 -0700"
+  },
+  "message": "SoundTrigger: get service by value.\n\nGet strong pointer to service interface by value and not reference to\nprevent race conditions where the service pointer can be cleared\nby another thread while in use.\n\nBug: 30907212\nChange-Id: I6f02ec3fd1e6392b842b334e1cc4f9aa23916009\n(cherry picked from commit 3b01b3019b1c62132792a1a94e2dc1f7cfc84f2e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bf5e1de4083d100727b61002dcc94d4c83f40851",
+      "old_mode": 33188,
+      "old_path": "include/soundtrigger/SoundTrigger.h",
+      "new_id": "9a05cac1dad52da474ad8dd900abb49d929455e6",
+      "new_mode": 33188,
+      "new_path": "include/soundtrigger/SoundTrigger.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "2138cb79b85a8635e720792d0b66f693c1ef3ea7",
+      "old_mode": 33188,
+      "old_path": "soundtrigger/SoundTrigger.cpp",
+      "new_id": "e959b836f2a7ddc9ea928eebc3e3a5ceaf15ecdc",
+      "new_mode": 33188,
+      "new_path": "soundtrigger/SoundTrigger.cpp"
+    }
+  ]
+}

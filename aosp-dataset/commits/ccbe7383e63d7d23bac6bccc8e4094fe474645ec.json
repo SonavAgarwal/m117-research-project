@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ccbe7383e63d7d23bac6bccc8e4094fe474645ec",
+  "tree": "ef65e6d81a2c60bae7791e7d698bbc669dff17a8",
+  "parents": [
+    "d8407271ffa83d27e9a524f485a0799e422e1fd6"
+  ],
+  "author": {
+    "name": "Sanket Padawe",
+    "email": "sanketpadawe@google.com",
+    "time": "Wed Nov 11 15:01:35 2015 -0800"
+  },
+  "committer": {
+    "name": "Sanket Padawe",
+    "email": "sanketpadawe@google.com",
+    "time": "Thu Nov 12 23:53:42 2015 +0000"
+  },
+  "message": "Don\u0027t allow contact sharing by default for device not recognized as carkit.\n\n+ Don\u0027t allow contact sharing by default for devices not recognized\nas carkit at pair time.\n\nBug: 23607427\nChange-Id: If6babb10117ba7ee5008a4a29450a7cb981bea4a\n(cherry picked from commit 07533dbffff5551ad4c58852b5856f57d7da6801)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b0429ef43cf9211d750dc3bfed95c08175fef39c",
+      "old_mode": 33188,
+      "old_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java",
+      "new_id": "17fe24acddcbf50344584142d14e9c2fb4a33cdc",
+      "new_mode": 33188,
+      "new_path": "packages/SettingsLib/src/com/android/settingslib/bluetooth/CachedBluetoothDevice.java"
+    }
+  ]
+}

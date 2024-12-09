@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2750faaa1ec819eed9acffea7bd3daf867fda444",
+  "tree": "81cbbf8f911c1b8c2416643a7da0e6638079f003",
+  "parents": [
+    "818a79f375031dc57c3ba12a363da08c9a1d82f1"
+  ],
+  "author": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Fri Feb 12 16:24:04 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Tue Mar 01 15:26:59 2016 -0800"
+  },
+  "message": "DO NOT MERGE Check PAH in addNewIncomingCall\n\nCheck to be sure that the PhoneAccountHandle in addNewIncomingCall\ncorresponds to an existing registered PhoneAccount in Telecom and that\nthe PhoneAccount is enabled. Otherwise, throw a SecurityException.\n\nBug: 26864502\nChange-Id: I6bbd8a1ece821b62bee2c94decde87a41afbf8b0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1650d58a438a0c4828fca02eb9fa9c273e0cf5f1",
+      "old_mode": 33188,
+      "old_path": "src/com/android/server/telecom/TelecomServiceImpl.java",
+      "new_id": "0f0d2219fb7ea9a3551e524c99540bfcfcb1b9f5",
+      "new_mode": 33188,
+      "new_path": "src/com/android/server/telecom/TelecomServiceImpl.java"
+    }
+  ]
+}

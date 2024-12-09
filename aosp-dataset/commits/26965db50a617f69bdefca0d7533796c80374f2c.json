@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "26965db50a617f69bdefca0d7533796c80374f2c",
+  "tree": "ffdc8900602ed330c0fef863094b373a67e56ced",
+  "parents": [
+    "7a3246b870ddd11861eda2ab458b11d723c7f62c"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Fri Nov 04 19:40:53 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:19 2016 -0800"
+  },
+  "message": "Effects: Check get parameter command size\n\nTest: Custom test.\nBug: 32438594\nBug: 32624850\nBug: 32635664\nChange-Id: I9b1315e2c02f11bea395bfdcf5c1ccddccbad8a6\n(cherry picked from commit 3d34cc76e315dfa8c3b1edf78835b0dab4980505)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9711f2decf60946cbe9f6cefaf063f8bfe5d7728",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/Effects.cpp",
+      "new_id": "bb3067f27bd49ef44ab0321d96913b0756506d6b",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/Effects.cpp"
+    }
+  ]
+}

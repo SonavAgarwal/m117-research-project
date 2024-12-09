@@ -1,0 +1,84 @@
+)]}'
+{
+  "commit": "ceb90c636ce0d766f80cfcd522bb27b37e6d37c9",
+  "tree": "12a82123eaddc4e46a374e920da2def75679fce3",
+  "parents": [
+    "db4e05e246dc83f0f215429072d5173c389c5827"
+  ],
+  "author": {
+    "name": "Hall Liu",
+    "email": "hallliu@google.com",
+    "time": "Thu Aug 20 19:06:57 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Sep 16 23:29:06 2020 +0000"
+  },
+  "message": "Fix exported broadcast receiver vulnerability\n\nCellBroadcastReceiver was declared as exported in the manifest and\ntherefore allowed any app to send a MARK_AS_READ intent, even though\nit\u0027s only supposed to be called from an internal PendingIntent. Fix this\nby creating a new non-exported receiver and using that to handle the\nmark-as-read intent instead.\n\nFixes: 162741784\nTest: atest GoogleCellBroadcastReceiverUnitTests\nChange-Id: I03c8163c22a6fbc92613ca2ccd2ac191fc0084a4\nMerged-In: I03c8163c22a6fbc92613ca2ccd2ac191fc0084a4\n(cherry picked from commit e514bc6a01fdd36a519fd4fefffa45f166911c97)\n(cherry picked from commit db3208b69c1debcc0746df99a4c7cab02c3c52f0)\n(cherry picked from commit e2a3f5f51bf6723d54599e5fa81577f6b9465116)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d3c6ebe8c41b03e6cb6c65a2537653b87791b312",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "0c01772e33e6414e927a145769ce868230b1021f",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "d7f44e69676daf6bdffe39e2990adc2238cea03a",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest_Platform.xml",
+      "new_id": "d9463eecdc7367cba495469fab8c39a528574b0e",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest_Platform.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "53c32a60148df34df23c6b85a4158c8c507f46b2",
+      "old_mode": 33188,
+      "old_path": "src/com/android/cellbroadcastreceiver/CellBroadcastAlertService.java",
+      "new_id": "ee92eee770375f9cc3be9b68764a1cfc4c03d2cb",
+      "new_mode": 33188,
+      "new_path": "src/com/android/cellbroadcastreceiver/CellBroadcastAlertService.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "455c5b68c965a970ff438bacabd122fdf0e81823",
+      "new_mode": 33188,
+      "new_path": "src/com/android/cellbroadcastreceiver/CellBroadcastInternalReceiver.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b02f75c7d82fc74b3c67c1a8f78b74343a75bf61",
+      "old_mode": 33188,
+      "old_path": "src/com/android/cellbroadcastreceiver/CellBroadcastReceiver.java",
+      "new_id": "0bc1501fbf7f268b2226c3d50a03e85434eac196",
+      "new_mode": 33188,
+      "new_path": "src/com/android/cellbroadcastreceiver/CellBroadcastReceiver.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "713b91b8e4221b9c5f868c98cdd800aaf1f0da3c",
+      "new_mode": 33188,
+      "new_path": "tests/unit/src/com/android/cellbroadcastreceiver/unit/CellBroadcastInternalReceiverTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "41a7043c186d83560a1cff204a88e245c1f3212d",
+      "old_mode": 33188,
+      "old_path": "tests/unit/src/com/android/cellbroadcastreceiver/unit/CellBroadcastReceiverTest.java",
+      "new_id": "7d81af9334599d1211d39d3d109e8889568140b9",
+      "new_mode": 33188,
+      "new_path": "tests/unit/src/com/android/cellbroadcastreceiver/unit/CellBroadcastReceiverTest.java"
+    }
+  ]
+}

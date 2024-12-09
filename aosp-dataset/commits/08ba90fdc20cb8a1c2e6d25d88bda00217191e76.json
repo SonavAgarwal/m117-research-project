@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "08ba90fdc20cb8a1c2e6d25d88bda00217191e76",
+  "tree": "b9c3a5ea1be96d74116afeedbc6f6dd92f8b70e5",
+  "parents": [
+    "1293973ab33d5b68c0f3aa8ca6377fe6aed4c5fe"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 07 14:56:33 2020 -0700"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Thu May 14 02:19:51 2020 +0000"
+  },
+  "message": "Use FLAG_IMMUTABLE for MultiSimSettingController\n\nRequire that the PendingIntent be immutable so that a malicious app is\n not able to hijack and mutate any of the details.\n\nTest: Android builds\nBug: 155094269\nChange-Id: Ic7ee67a393b72121071a39f80b02538c758792c6\nMerged-In: Ic7ee67a393b72121071a39f80b02538c758792c6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9c7c4ed7d1f57a7616880a0d46addb4e7a116fe2",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/internal/telephony/MultiSimSettingController.java",
+      "new_id": "ee817c6ae300c3b0358377f61bbe3dea73b7bd5d",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/internal/telephony/MultiSimSettingController.java"
+    }
+  ]
+}

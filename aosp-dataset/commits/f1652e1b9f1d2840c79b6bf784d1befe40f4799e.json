@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f1652e1b9f1d2840c79b6bf784d1befe40f4799e",
+  "tree": "63f895ca9ed20dbed62218f51c80daa96b672b60",
+  "parents": [
+    "646a18fef28d19ba5beb6a2e1c00ac4c2663a10b"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Thu Oct 12 10:15:31 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:29:12 2017 +0000"
+  },
+  "message": "avoid 32-bit integer overflow\n\nchange calculation to scale encoder delay and padding when sample rate\nchanges to use 64-bit math and avoid possible 32-bit overflow.\n\nBug: 67737022\nTest: re-ran affected use case\nChange-Id: I6e37341256f3f0e3274ffdd3bad284eaacac25ab\n(cherry picked from commit 73e95a9bd43724058651cb11c58dbe3fae651d56)\n(cherry picked from commit e0d1b3816e73629029f552da5df31ef31bde2c19)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c44e868135266c00e8684c72d324dc35418c7a7f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/ACodec.cpp",
+      "new_id": "a2eb9a8c6b6b1cc5ca044170868417055fc23fde",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/ACodec.cpp"
+    }
+  ]
+}

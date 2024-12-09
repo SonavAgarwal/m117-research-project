@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9ef830c6dbd4f6000b94abee3df14b9e27a38294",
+  "tree": "770f28993c6eb3f22d921f163b94d8ad834170a2",
+  "parents": [
+    "c42c4b526422fada02f3522a08143f738e9e60af"
+  ],
+  "author": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Thu Apr 02 13:49:15 2015 -0700"
+  },
+  "committer": {
+    "name": "Eric Laurent",
+    "email": "elaurent@google.com",
+    "time": "Fri Apr 17 17:39:30 2015 +0000"
+  },
+  "message": "DO NOT MERGE - IAudioFlinger: add checks on binder calls\n\nLimit number of ports and patches listed by\nLIST_AUDIO_PATCHES and LIST_AUDIO_PORTS.\n\nAlso fix typo causing wring pointer to be used when writing to Parcel.\n\nBug: 19573085.\nChange-Id: I41a9c710e45738a4f11990160587856c429a4646\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "346a1926fe06e01cb454a4b76115b9108710ff8c",
+      "old_mode": 33188,
+      "old_path": "media/libmedia/IAudioFlinger.cpp",
+      "new_id": "d7ca4250830dc424d9f99012c4d7a2a458e81de5",
+      "new_mode": 33188,
+      "new_path": "media/libmedia/IAudioFlinger.cpp"
+    }
+  ]
+}

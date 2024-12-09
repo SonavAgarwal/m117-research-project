@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "12776ab7238c939340ad04c5c160a4a5d5431f39",
+  "tree": "0c854408751d9fcc9da588d98669c44c5ee25a48",
+  "parents": [
+    "f2c4f554356ea76accc028c8f6f0cc904a520c27"
+  ],
+  "author": {
+    "name": "Sunny Goyal",
+    "email": "sunnygoyal@google.com",
+    "time": "Tue Jun 18 14:54:21 2019 -0700"
+  },
+  "committer": {
+    "name": "Sunny Goyal",
+    "email": "sunnygoyal@google.com",
+    "time": "Wed Jun 19 12:04:02 2019 -0700"
+  },
+  "message": "Fixing wrong arguments used for permission check\n\nTest: atest FrameworksUiServicesTests\nBug: 135551349\nChange-Id: I10b21e06e5e208614cfa7fe3a2f98eb20d79dc46\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "73775b4387b95451227be38f7969c523b0b9ea28",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/slice/SliceManagerService.java",
+      "new_id": "5fd2ab87f410f31a8d47bd7145100efd18301007",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/slice/SliceManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a1d48cc9d638bc40f0b9ca0335fa254ec2906607",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/UiServiceTestCase.java",
+      "new_id": "14b71ec526a802a42951e7a54a28a175ab0ec32a",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/UiServiceTestCase.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "4c2822af264cdcc5beabadbba8c1e7dbb073f212",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/slice/PinnedSliceStateTest.java",
+      "new_id": "f5002ace6690361cb9e14fb9697f4eb199e8435a",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/slice/PinnedSliceStateTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d942c5af0422145b742e43e68fd3a9b9dbc686fa",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/slice/SliceFullAccessListTest.java",
+      "new_id": "4958daf8dce667737a48b1e9b4a96a98a4b668d8",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/slice/SliceFullAccessListTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "7182f0f3bf801e5b5a81b86dca419018a173f591",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/slice/SliceManagerServiceTest.java",
+      "new_id": "a4436951f48b0d9cdd434ed71e75bdb88c00d1a5",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/slice/SliceManagerServiceTest.java"
+    }
+  ]
+}

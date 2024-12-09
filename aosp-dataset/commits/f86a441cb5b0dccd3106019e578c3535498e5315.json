@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f86a441cb5b0dccd3106019e578c3535498e5315",
+  "tree": "1e9f60fbd6870c8994653fb69d0c4eb0bbb24f64",
+  "parents": [
+    "4374b187e5e72056f8e814dae752b62cb60fc9a4"
+  ],
+  "author": {
+    "name": "dcashman",
+    "email": "dcashman@google.com",
+    "time": "Fri Sep 11 09:33:01 2015 -0700"
+  },
+  "committer": {
+    "name": "Daniel Cashman",
+    "email": "dcashman@google.com",
+    "time": "Mon Sep 14 20:57:04 2015 +0000"
+  },
+  "message": "Add DUMP permission check to ResourceManagerService.\n\nBug: 23999740\nChange-Id: I3165404add455528b22951ba47b682a075b50087\n(cherry picked from commit 014e91e471edba3f9b2c71ff6025274716b0f587)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e54cc5a9c0677070d060d1c9cd79e34c7fe54947",
+      "old_mode": 33188,
+      "old_path": "services/mediaresourcemanager/ResourceManagerService.cpp",
+      "new_id": "47907540040cbd37a018dfe232c9d1b42546e98b",
+      "new_mode": 33188,
+      "new_path": "services/mediaresourcemanager/ResourceManagerService.cpp"
+    }
+  ]
+}

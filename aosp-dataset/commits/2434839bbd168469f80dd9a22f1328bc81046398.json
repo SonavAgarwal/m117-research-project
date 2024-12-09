@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2434839bbd168469f80dd9a22f1328bc81046398",
+  "tree": "371ad6159b619a5dd91c7abab6ca70734f91c56c",
+  "parents": [
+    "cf1581c66c2ad8c5b1aaca2e43e350cf5974f46d"
+  ],
+  "author": {
+    "name": "Joshua J. Drake",
+    "email": "android-open-source@qoop.org",
+    "time": "Wed Apr 08 23:44:57 2015 -0500"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:59 2015 -0700"
+  },
+  "message": "Fix integer overflow during MP4 atom processing\n\nA few sample table related FourCC values are handled by the\nsetSampleToChunkParams function. An integer overflow exists within this\nfunction. Validate that mNumSampleToChunkOffets will not cause an integer\noverflow.\n\nBug: 20139950\n\n(cherry picked from commit c24607c29c96f939aed9e33bfa702b1dd79da4b7)\n\nChange-Id: I49086952451b09a234d8b82669251ab9f1ef58d9\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b572af3506da6200e379605ee020fa4457ba3e7e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "603023636a49060cddd20fd093de849353e71f37",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    }
+  ]
+}

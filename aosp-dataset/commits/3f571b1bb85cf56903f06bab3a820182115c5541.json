@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3f571b1bb85cf56903f06bab3a820182115c5541",
+  "tree": "3ef9dfa6576cc32bf66c3660ca88e425b83f20ae",
+  "parents": [
+    "0eff71008becb7f2c2b4509708da4b79985948bb"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Mon Apr 03 12:54:00 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:08 2017 -0700"
+  },
+  "message": "DO NOT MERGE: fix for the XPath nodeTab use-after-free bug from nmehta@\n\nsee https://bugs.chromium.org/p/chromium/issues/detail?id\u003d705445\n\nBug: 36809819\nChange-Id: I4832550032669a8e921bd46068281d9daf594ae1\n(cherry picked from commit 7f671748797331e20da23db2d95a6116bb1c6c55)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "67afbca5eb3db71e015c3e20f7ffedcdec3a31f6",
+      "old_mode": 33188,
+      "old_path": "xpath.c",
+      "new_id": "3472ff0563d9cf96428b24e4586ca6ef339f47a0",
+      "new_mode": 33188,
+      "new_path": "xpath.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dedaca6f04ac9f95fabe3b64d44cd1a2050f079e",
+  "tree": "aac33f0ddaaae3cf66043bb3e801fc53a635afbe",
+  "parents": [
+    "3b42241aab5855964d1bd60268ae21c2d9cc6065"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Jun 04 11:01:15 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Fri Aug 21 21:34:14 2015 -0700"
+  },
+  "message": "Limit allocations to avoid out-of-memory\n\nCorrupt files could cause very large allocations, limit them to something\nmore reasonable.\n\nBug: 17769851\nChange-Id: Ib0f722fd6fddff873bd7a547aac456e608c34c84\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ca45ad8110101c816b064deb760fbc3582f818f",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MPEG4Extractor.cpp",
+      "new_id": "92065d156ffc3ee407deb7f20be282afb28d04d7",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MPEG4Extractor.cpp"
+    }
+  ]
+}

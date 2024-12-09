@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "79f25156e03e148b1eec3031b0d8d8cdf5a9e8ab",
+  "tree": "00a4bfa7db92fe334feda84ab53a3194baeb67aa",
+  "parents": [
+    "bfa3d8c969fcd581b9a3e317fb9e8d84b5f7e3b5"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Wed Jun 05 15:53:25 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:41 2019 +0000"
+  },
+  "message": "Prevent OOB write in Mfc_Transceive\n\nBug: 132082342\nTest: Manual test/ Mifare Tag Read/Write\nExempt-From-Owner-Approval: Old Owners are all transferred to another BU\nChange-Id: I3e1977514ba924655d42be4782244c6ef1cf7619\n(cherry picked from commit 130a144ee6324a0c433c6b671448c0d14bf2dde1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a950eb3fdf5244c9c44ddeb1d899f526c60f3325",
+      "old_mode": 33188,
+      "old_path": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp",
+      "new_id": "5ce5844c2249558303b637e1160f75993a062fd4",
+      "new_mode": 33188,
+      "new_path": "nci/jni/extns/pn54x/src/mifare/phNxpExtns_MifareStd.cpp"
+    }
+  ]
+}

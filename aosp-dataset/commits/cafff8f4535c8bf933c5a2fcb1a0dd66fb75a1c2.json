@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cafff8f4535c8bf933c5a2fcb1a0dd66fb75a1c2",
+  "tree": "1b5e785e573346187a5c6fbd7649f46bcd70f498",
+  "parents": [
+    "9dba1d7f7f7122d9828510a1abcfaff2c6e20ada"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Aug 16 12:40:51 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Mon Sep 10 23:19:41 2018 +0000"
+  },
+  "message": "Fix OOB access in Tremolo\n\nAlso fixed tab/space issues throughout file.\n\nBug: 112159345\nTest: manual\nChange-Id: I619fbfb5f12c1ca7f2c51dab1f17006bd708a931\n(cherry picked from commit bc5c9c3a400ffe761f0163c6fb1930f870894952)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "581efcbd5f8dcae64db7579ebdf96274615bdcf5",
+      "old_mode": 33188,
+      "old_path": "Tremolo/floor0.c",
+      "new_id": "b6ece295ce701a028a06bcd527d8b0fc938ea25c",
+      "new_mode": 33188,
+      "new_path": "Tremolo/floor0.c"
+    }
+  ]
+}

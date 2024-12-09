@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bc62c086e9ba7530723dc8874b83159f4d77d976",
+  "tree": "e3c593f14353a5ef6820834a78f447571ba51ab1",
+  "parents": [
+    "22e26d8ee73488c58ba3e7928e5da155151abfd0"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Jan 12 15:49:04 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Jan 19 16:31:25 2017 -0800"
+  },
+  "message": "Don\u0027t initialize sync sample parameters until the end\n\nto avoid leaving them in a partially initialized state.\n\nBug: 33137046\nTest: ran CTS tests\nChange-Id: I1f5c070233c5917d85da9e930e01a3fc51a0a0ec\n(cherry picked from commit a9660fe122ca382e1777e0c5d3c42ca67ffb0377)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eb1f193de55accb518feb9c11283f550c079fae4",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "161ddfcfe836d714f275dbfb880b68f6ffcab1d4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fb73974172ffaaf57a7c42f35424d9aece1a5af6",
+  "tree": "709665d3970193b6f393131418bbbdd0fa26e0f4",
+  "parents": [
+    "292fed1fc89509bab2c0b291d5d395dea5b6ab2f"
+  ],
+  "author": {
+    "name": "Paul Moore",
+    "email": "paul@paul-moore.com",
+    "time": "Tue Apr 28 09:59:02 2020 -0400"
+  },
+  "committer": {
+    "name": "Paul Moore",
+    "email": "paul@paul-moore.com",
+    "time": "Thu Apr 30 16:18:37 2020 -0400"
+  },
+  "message": "selinux: properly handle multiple messages in selinux_netlink_send()\n\nFix the SELinux netlink_send hook to properly handle multiple netlink\nmessages in a single sk_buff; each message is parsed and subject to\nSELinux access control.  Prior to this patch, SELinux only inspected\nthe first message in the sk_buff.\n\nCc: stable@vger.kernel.org\nReported-by: Dmitry Vyukov \u003cdvyukov@google.com\u003e\nReviewed-by: Stephen Smalley \u003cstephen.smalley.work@gmail.com\u003e\nSigned-off-by: Paul Moore \u003cpaul@paul-moore.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b8e09aedbc56082c4d33531d83146d9d59096c6a",
+      "old_mode": 33188,
+      "old_path": "security/selinux/hooks.c",
+      "new_id": "487d4df0e37cbd9e7646b8af2aa3574f11dc3489",
+      "new_mode": 33188,
+      "new_path": "security/selinux/hooks.c"
+    }
+  ]
+}

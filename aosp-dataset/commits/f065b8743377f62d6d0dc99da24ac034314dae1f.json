@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f065b8743377f62d6d0dc99da24ac034314dae1f",
+  "tree": "d6477d4d53681a411c8ddacf0106e9daf81b9125",
+  "parents": [
+    "763a4d5967503fc46e0759d5e68cc8fbdc02325f"
+  ],
+  "author": {
+    "name": "Chris Manton",
+    "email": "cmanton@google.com",
+    "time": "Tue Nov 10 16:45:44 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:25 2020 +0000"
+  },
+  "message": "Add bluetooth package to permission request intent\n\nLimit the component that may resolve this intent to the\nbluetooth package.\n\nBug: 158219161\nTest: Security Fix\nTag: #security\nChange-Id: If732f940a7aa256f5975349118e8eb6cf5584676\n(cherry picked from commit 1951d27669b1e8eab96f4082cb00cb1d030602ec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c5f62b8b4d606771aba929919721ea2240cfe464",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPermissionRequest.java",
+      "new_id": "5fffa3a2356bc433f3373ec167d451e792ffa8e4",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPermissionRequest.java"
+    }
+  ]
+}

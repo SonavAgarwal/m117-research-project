@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "236b44274ebd1d7e3c706a24fd2a83d534d68ab0",
+  "tree": "6bbc4d1da265713a5b0f52738ed90673d730741e",
+  "parents": [
+    "2917b1f0d7cd219d8a9d51d5d8606f4d5074c307"
+  ],
+  "author": {
+    "name": "Tyler Gunn",
+    "email": "tgunn@google.com",
+    "time": "Tue May 14 11:08:06 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 12 09:55:10 2019 +0000"
+  },
+  "message": "Update API docs for TelecomManager#endCall.\n\nMake it clear that ending an emergency call is not possible with this\nmethod.\n\nTest: Compile; this is a docs change.\nBug: 132438333\nChange-Id: I736b90e31723ee2055cedf16142c4d0f494bf49b\n(cherry picked from commit 3acf511895d8d19d5f9189d0159ae1d677a89a42)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "573f7db6b20c3f4a7027e88be87f212d6d7b33a2",
+      "old_mode": 33188,
+      "old_path": "telecomm/java/android/telecom/TelecomManager.java",
+      "new_id": "18c170a2e330dd7ba88709dba8f18d3def400d5c",
+      "new_mode": 33188,
+      "new_path": "telecomm/java/android/telecom/TelecomManager.java"
+    }
+  ]
+}

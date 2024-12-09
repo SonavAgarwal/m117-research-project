@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f1c2c86080bcd7b3142ff821441696fc99c2bc9a",
+  "tree": "c4c4967fd140f932f5cf2aa0e7c5c7d8801f646d",
+  "parents": [
+    "8e702ed3539caac44a616243e33aaad1b2b4801f"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Thu Apr 12 17:03:09 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri May 25 18:42:06 2018 +0000"
+  },
+  "message": "Add bounds check to l2cble_process_sig_cmd L2CAP_CMD_DISC_REQ\n\nBug: 74121659\nTest: Compiles\nChange-Id: Idf58e7b25b41ae1bd43cdd51de424b18e03cc7e8\n(cherry picked from commit ca4f8a18bce9331360144f1dbc51db1e2525bcc3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6c7820f66763e9c3993376ebe00f5f6e355b6760",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_ble.cc",
+      "new_id": "17ce2d3058f154cee3cb4b48e901b8590c80b737",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_ble.cc"
+    }
+  ]
+}

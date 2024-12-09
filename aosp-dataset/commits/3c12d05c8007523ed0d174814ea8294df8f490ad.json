@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "3c12d05c8007523ed0d174814ea8294df8f490ad",
+  "tree": "165f84fcb616129a0a89096ba8cfea8932ee5ceb",
+  "parents": [
+    "f1b1f1ee211b074ef19aac47ae0f8e511b5381cc"
+  ],
+  "author": {
+    "name": "Ben Schwartz",
+    "email": "bemasc@google.com",
+    "time": "Thu Jan 10 14:30:46 2019 -0500"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:39 2019 +0000"
+  },
+  "message": "Copy queries synchronously in DnsTlsSocket\n\nPrior to this change, each outgoing query was copied only once,\non the DnsTlsSocket\u0027s loop thread.  This could create a problem\nif a misbehaving server sent an erroneous response with a\ncolliding ID number after the query was given to DnsTlsSocket\nbut before the copy was made.  The erroneous response would\ncomplete the query, causing the caller to deallocate the backing\nbuffer, resulting in a segfault on copy.\n\nThis change moves the copy earlier, onto the calling thread, thus\nensuring that the backing buffer cannot have been deallocated.\nInstead of sending the network thread pointers to query buffers,\ncopies of queries are stored in a shared queue, and the network\nthread is notified of new queries on an eventfd socket.\n\nBug: 122133500\nBug: 122856181\nTest: Integrations tests pass, manual tests good.  No regression test.\nChange-Id: Ia4e72da561aeef69a17e87bfdc7aa04340c12fd0\nMerged-In: Ia4e72da561aeef69a17e87bfdc7aa04340c12fd0\n(cherry picked from commit 8b8cf0388d3d463f474795e8996197f267a416e7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ca1cdc9e539a4acc3e481dc76737afe3bbd031c4",
+      "old_mode": 33188,
+      "old_path": "server/dns/DnsTlsSocket.cpp",
+      "new_id": "8b2d200106b0036bfc65904057fc7f5bff66bb99",
+      "new_mode": 33188,
+      "new_path": "server/dns/DnsTlsSocket.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "0c37a520fbf25cd94ced806642dcb0cff6f3d744",
+      "old_mode": 33188,
+      "old_path": "server/dns/DnsTlsSocket.h",
+      "new_id": "2593bcf28b7595b5e6c2e7ce1e157e0af9f292e6",
+      "new_mode": 33188,
+      "new_path": "server/dns/DnsTlsSocket.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "65b81cee126f01178dc79ff38ff370a27c401cf6",
+      "new_mode": 33188,
+      "new_path": "server/dns/LockedQueue.h"
+    }
+  ]
+}

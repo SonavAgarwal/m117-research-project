@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "11c41d321d0c2dc3631f37d2f8f3ebc745f454d2",
+  "tree": "d17b0dee59e07e94bddbc2ba51fcefe7a05aae64",
+  "parents": [
+    "b291bb2f1f27d5ef00d8944d3a37a96b3a3f2c36"
+  ],
+  "author": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Wed May 06 16:18:12 2020 -0700"
+  },
+  "committer": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Thu May 07 21:59:55 2020 +0000"
+  },
+  "message": "Specify the component for the ACTION_SHOW_ECM_EXIT_DIALOG Intent\n\nSpecify the component for the ACTION_SHOW_ECM_EXIT_DIALOG intent\nso it can not be intercepted by a malicious application and modified.\n\nBug: 155094269\nTest: manually trigger ECBM dialog and exit.\nMerged-In: Id5df0b428bd7e24aa11fb9dd4c920d1019f1b389\nChange-Id: Id5df0b428bd7e24aa11fb9dd4c920d1019f1b389\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a07f7aa93034da2464a6265583a63cf6a10d5da7",
+      "old_mode": 33188,
+      "old_path": "src/com/android/phone/EmergencyCallbackModeService.java",
+      "new_id": "86f8fe607a8c483031da0a652740526f7fdf37b8",
+      "new_mode": 33188,
+      "new_path": "src/com/android/phone/EmergencyCallbackModeService.java"
+    }
+  ]
+}

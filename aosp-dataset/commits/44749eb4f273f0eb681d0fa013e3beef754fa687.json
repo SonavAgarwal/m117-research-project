@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "44749eb4f273f0eb681d0fa013e3beef754fa687",
+  "tree": "80e9b46954c614dc1725c60267b72d34f7e888b7",
+  "parents": [
+    "7fd96ebfc4c9da496c59d7c45e1f62be178e626d"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Mar 17 11:15:02 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:46 2016 -0700"
+  },
+  "message": "SoftAMR: check output buffer size to avoid overflow.\n\nBug: 27662364\nChange-Id: I7b26892c41d6f2e690e77478ab855c2fed1ff6b0\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a9723ea4b1d68333ba44b75df21a0280d72b3e63",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp",
+      "new_id": "bcf6a62bfac8515a6734a664c892c086c2655af4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrnb/dec/SoftAMR.cpp"
+    }
+  ]
+}

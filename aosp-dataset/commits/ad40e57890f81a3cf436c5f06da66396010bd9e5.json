@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ad40e57890f81a3cf436c5f06da66396010bd9e5",
+  "tree": "443635955497f7b71ef32c2e289476620c2e961f",
+  "parents": [
+    "d2f47191538837e796e2b10c1ff7e1ee35f6e0ab"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Wed Mar 23 15:36:36 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:09:56 2016 -0700"
+  },
+  "message": "Check mp3 output buffer size\n\nBug: 27793371\nChange-Id: I0fe40a4cfd0a5b488f93d3f3ba6f9495235926ac\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9988015e0e887f3bcc0d3b781d7632d89412bd7a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp",
+      "new_id": "aa946e69f749b9b95d015e157597c4d60a4535dc",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/mp3dec/SoftMP3.cpp"
+    }
+  ]
+}

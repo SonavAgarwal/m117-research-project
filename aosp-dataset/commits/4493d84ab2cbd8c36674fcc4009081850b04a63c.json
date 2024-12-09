@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4493d84ab2cbd8c36674fcc4009081850b04a63c",
+  "tree": "9a9c88a2aee8be8ba16a0d59ef778b285353a862",
+  "parents": [
+    "d6e4d1564343905ff148aad3db3e231bfa4673ef"
+  ],
+  "author": {
+    "name": "Tsung-Mao Fang",
+    "email": "tmfang@google.com",
+    "time": "Wed Apr 14 15:51:37 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:26 2021 +0000"
+  },
+  "message": "Prevent HTML Injection on the Device Admin request screen\n\nThe root issue is that CharSequence is an interface.\nString implements that interface, however, Spanned class\ntoo which is a rich text format that can store HTML code.\n\nThe solution is enforce to use String type which won\u0027t include\nany HTML function.\n\nTest: Rebuilt apk and see the string without HTML style.\nBug: 179042963\nChange-Id: I53b460b12da918e022d2f2934f114d205dbaadb0\nMerged-In: I53b460b12da918e022d2f2934f114d205dbaadb0\n(cherry picked from commit 0bf3c98b2f325f70d5492a7c7ade16951a802600)\n(cherry picked from commit 52f9039d5cc775a02dab90492cca98850a82872a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9afb2b4f2c18f22950fd44dc48cc77a0d80ebc4c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd.java",
+      "new_id": "113922e230389f115c04560292f6527b80f99e5f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/applications/specialaccess/deviceadmin/DeviceAdminAdd.java"
+    }
+  ]
+}

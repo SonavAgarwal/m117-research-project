@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d42e1204d5dddb78ec9d20d125951b59a8344f40",
+  "tree": "cfce3213136152149c093d40dc9ebcddcf760041",
+  "parents": [
+    "4e110ab20bb91e945a17c6e166e14e2da9608f08"
+  ],
+  "author": {
+    "name": "Fyodor Kupolov",
+    "email": "fkupolov@google.com",
+    "time": "Wed Feb 22 14:12:50 2017 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Wed Mar 22 15:01:39 2017 -0700"
+  },
+  "message": "[DO NOT MERGE] Throw exception if slot has invalid offset\n\nPreviously the process would crash, which is OK, but complicates testing.\n\nTest: cts-tradefed run cts --module CtsContentTestCases\n      --test android.content.cts.ContentProviderCursorWindowTest\nBug: 34128677\n\nChange-Id: I5b50982d77ec65c442fbb973d14c85a5c29c43c7\n(cherry picked from commit eb6de6f5f10148b9f81f9c0074d1e1f7af21bfb0)\n(cherry picked from commit 676f703f746391cfdf05bafd2289226f7a6e5255)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e96613b7d45b96b29e746b805586594d02220f13",
+      "old_mode": 33188,
+      "old_path": "core/jni/android_database_CursorWindow.cpp",
+      "new_id": "0d65a18060391d39108493018c39f6de3ed968f0",
+      "new_mode": 33188,
+      "new_path": "core/jni/android_database_CursorWindow.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e102faee8b2f87c28616e7f5453f9a11eea9b122",
+  "tree": "1c7386dffada672b5744cf4f4a331c0914383a70",
+  "parents": [
+    "e360a1c8a389772718814d291978390e0b662805"
+  ],
+  "author": {
+    "name": "Dimitry Ivanov",
+    "email": "dimitry@google.com",
+    "time": "Wed Apr 19 11:28:16 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed May 24 22:06:57 2017 +0000"
+  },
+  "message": "linker: remove link from external library on unload\n\nWhen unloading library make sure the soinfo_link to parent\nfrom linked external libraries is removed as well.\n\nBug: 36104177\nBug: http://b/37433850\nTest: manual\nChange-Id: I601b54144acecac54744805b38313c46045c54cb\n(cherry picked from commit ee398f820700de30941fd82e38bd917e1513cbc6)\n(cherry picked from commit b37d10cc8017c102530c096537890b7c6215ad2b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9dc928eb4d3796c35910b7589ac13b96ff5d492a",
+      "old_mode": 33188,
+      "old_path": "linker/linker.cpp",
+      "new_id": "a043b859a7839b6b16b622405a883ed2901f2e6e",
+      "new_mode": 33188,
+      "new_path": "linker/linker.cpp"
+    }
+  ]
+}

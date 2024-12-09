@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "45737cb776625f17384540523674761e6313e6d4",
+  "tree": "88e7630fe2dc647ff241349d668dcb9271f57751",
+  "parents": [
+    "2b6f22dc64d456471a1dc6df09d515771d1427c8"
+  ],
+  "author": {
+    "name": "Zach Jang",
+    "email": "zachjang@google.com",
+    "time": "Thu Apr 21 16:10:50 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Apr 21 19:17:47 2016 -0700"
+  },
+  "message": "Resolve merge conflict when cp\u0027ing ag/931301 to mnc-mr1-release\n\nChange-Id: I079d1db2d30d126f8aed348bd62451acf741037d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "dcde36f166fe887b57dcfdce8819fc3b6c3148c0",
+      "old_mode": 33188,
+      "old_path": "include/media/stagefright/DataSource.h",
+      "new_id": "47c5c34c4a5534da4cc110b1e09ce6244300833d",
+      "new_mode": 33188,
+      "new_path": "include/media/stagefright/DataSource.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "97dff438c4f6eea451c5bd8e20cd382f07b7146e",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/SampleTable.cpp",
+      "new_id": "5344ae4495780d02c46c463cbb568ccec87db756",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/SampleTable.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "460492bb335cb64d1de1e18227bbaccfb6ad9795",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/SampleTable.h",
+      "new_id": "3764adb2213a0fd8bb69427746e45bbec1305f7e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/SampleTable.h"
+    }
+  ]
+}

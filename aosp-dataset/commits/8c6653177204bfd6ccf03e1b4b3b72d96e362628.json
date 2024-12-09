@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "8c6653177204bfd6ccf03e1b4b3b72d96e362628",
+  "tree": "f4909493694ec839b28168902af497eff8001406",
+  "parents": [
+    "7b1b6673e3535d6975ad86c3969bef35ba59a077"
+  ],
+  "author": {
+    "name": "Vladimir Marko",
+    "email": "vmarko@google.com",
+    "time": "Thu Nov 12 15:18:40 2020 +0000"
+  },
+  "committer": {
+    "name": "Vladimir Marko",
+    "email": "vmarko@google.com",
+    "time": "Tue Dec 08 14:52:32 2020 +0000"
+  },
+  "message": "Validate input of JNI::NewStringUTF().\n\nDo a minimal validation needed to construct valid strings.\nIf the validation fails, replace invalid sequences with \u0027?\u0027.\n\n(cherry picked from commit 1358c9faa9766fd470ab2ba002a73479ccf54154)\n\nTest: Additional tests in JniInternalTest.NewStringUTF\nTest: m test-art-host-gtest\nBug: 172655291\nMerged-In: I683c142fe5972599297d604f775bb8cfe6154bb7\nMerged-In: Ica2c5c33f981cbd2f07e7990b3e321cd3b7473b6\nMerged-In: Ieda5a89b738bbb624872512a400855866e120acd\nChange-Id: Ieec7fb97a0d9d094fedbda4917a7f5cdad4b10a3\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2626eefde27db86e74127534a78d596712c9d008",
+      "old_mode": 33188,
+      "old_path": "runtime/jni_internal.cc",
+      "new_id": "37a1fe6efcd0bb50013d7954a2f6ac23acf5ea06",
+      "new_mode": 33188,
+      "new_path": "runtime/jni_internal.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "08d1eeb95d24c8fef0db5b8fd92f5e5be1c5534c",
+      "old_mode": 33188,
+      "old_path": "runtime/jni_internal_test.cc",
+      "new_id": "db384863e4f7f62310efde2bbac0954ca24328d1",
+      "new_mode": 33188,
+      "new_path": "runtime/jni_internal_test.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "b59bbfbd682aab653f43a65b775b6ed56e6d8fde",
+      "old_mode": 33188,
+      "old_path": "runtime/mirror/string.h",
+      "new_id": "cc6b70e5b09f4ef4cc9e8429710b2702c2b9c66e",
+      "new_mode": 33188,
+      "new_path": "runtime/mirror/string.h"
+    }
+  ]
+}

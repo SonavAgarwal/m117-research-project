@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4a7dcb65883d32019e879fac62c7847fcc48eec9",
+  "tree": "9aec3d96e637ddab61de5aaae4d9ee9c6b9f14a4",
+  "parents": [
+    "0f203f6d1e89e93686944d8589e869a4c2c129a0"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Thu Jul 11 20:12:42 2019 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:57:37 2019 +0000"
+  },
+  "message": "Store BLE keys using the address from the ble_auth_cmpl_evt\n\nReading the peer address from btif_dm_ble_auth_cmpl_evt, instead\nof using the value from the pairing control block in\nbtif_dm_save_ble_bonding_keys, ensures that BLE keys are stored with\nthe correct address.\n\nBug: 133234174\nBug: 79703832\nTest: 1. Initiate crosskey pairing from BLE\n      2. Check whether BLE keys are stored correctly\nChange-Id: I18b4a1d8e2cdcd6dd4a300f1dc9e6d3892a3baff\nMerged-In: I18b4a1d8e2cdcd6dd4a300f1dc9e6d3892a3baff\n(cherry picked from commit 22711f1a45e141049c1c06d3f29015e4b03e1aa3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a9cb2287ed44f03091748b2aaf6c094f438f1a7e",
+      "old_mode": 33188,
+      "old_path": "btif/include/btif_dm.h",
+      "new_id": "a9d4cb6c43bf8d9d2853c6682d956e7fbf76d6c2",
+      "new_mode": 33188,
+      "new_path": "btif/include/btif_dm.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "1f5cb823632cc330ee949697f13725ef91d2e460",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.cc",
+      "new_id": "67a059ecf86e0f571cb5b7a676e17bc2840da99f",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.cc"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8d67a8b1a1a03922e5ecdfdb8c8c5da6b972ce40",
+  "tree": "255fd749c1dcfc0de671f2f38afe72fbcfbdc1e7",
+  "parents": [
+    "e00529f4b12b0c484bd7b543018289799856bba7"
+  ],
+  "author": {
+    "name": "Sehee Park",
+    "email": "sehee32.park@samsung.com",
+    "time": "Wed Dec 26 07:28:23 2018 +0900"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Feb 14 16:24:46 2019 +0000"
+  },
+  "message": "Fix fortify_fatal issue during DNSServiceProcessResult()\n\nfd was checked at beginnig of DNSServiceProcessResult()\nbut fd was changed to -1. So, fortify_fatal was occured\nwhen FD_SET() was called.\nAbort message: \u0027FORTIFY: FD_SET: file descriptor -1 \u003c 0\u0027\n\nTest: Build\nBug: 120910016\nBug: 121327565\nChange-Id: Ib4c8dcc08223578fb53647637b44a20a4c221050\nMerged-In: Ib4c8dcc08223578fb53647637b44a20a4c221050\nSigned-off-by: Sehee Park \u003csehee32.park@samsung.com\u003e\n(cherry picked from commit 3eeb0e6b86ac8a7f00968d0a086381e7dcd8cc2b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e497bfde5632e7bc12900aa5e4b5b507ac97a9b5",
+      "old_mode": 33188,
+      "old_path": "server/MDnsSdListener.cpp",
+      "new_id": "f3a9f8bdca2fcd54b80ccf17e6a57bf03a765669",
+      "new_mode": 33188,
+      "new_path": "server/MDnsSdListener.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "8cd596a02d9eb9eeaa04502afc461987373ed3e5",
+      "old_mode": 33188,
+      "old_path": "server/MDnsSdListener.h",
+      "new_id": "8c6096e836206cbf3771722c437c0a37ac6b44a5",
+      "new_mode": 33188,
+      "new_path": "server/MDnsSdListener.h"
+    }
+  ]
+}

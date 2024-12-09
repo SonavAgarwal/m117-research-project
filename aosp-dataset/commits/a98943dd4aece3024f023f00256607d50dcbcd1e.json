@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a98943dd4aece3024f023f00256607d50dcbcd1e",
+  "tree": "836801c4670db6fa8c58cc6c95a28b42663494aa",
+  "parents": [
+    "6d524288a403ba2280db104fdbe227934c95b341"
+  ],
+  "author": {
+    "name": "Lucas Dupin",
+    "email": "dupin@google.com",
+    "time": "Fri Apr 07 11:40:06 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:01 2017 -0700"
+  },
+  "message": "Fix heap overflow when loading a PSD. bug 36368305\n\nChange-Id: Ia4480bcc9d06c80c4ccfb8b59d7ad1cf313d3479\nFix: 36368305\nBug: 36368305\nTest: non-applicable\n(cherry picked from commit 839cb7ebd84ed02ce52847da5275ab27d7515c79)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d91b308af87a18881c9dac03f8ff0443b996696f",
+      "old_mode": 33188,
+      "old_path": "gdx/jni/gdx2d/stb_image.h",
+      "new_id": "a9d338a2a0892aeadc2bfa4a6e09e4617e4c419e",
+      "new_mode": 33188,
+      "new_path": "gdx/jni/gdx2d/stb_image.h"
+    }
+  ]
+}

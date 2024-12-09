@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "056ad39ee9253873522f6469c3364964a322912b",
+  "tree": "a78bd12da58f7f276b3cbab881f1043aa02ed47f",
+  "parents": [
+    "8f3d9f354286745c751374f5f1fcafee6b3f3136"
+  ],
+  "author": {
+    "name": "Alan Stern",
+    "email": "stern@rowland.harvard.edu",
+    "time": "Sat Mar 28 16:18:11 2020 -0400"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Thu Apr 16 14:46:00 2020 +0200"
+  },
+  "message": "USB: core: Fix free-while-in-use bug in the USB S-Glibrary\n\nFuzzUSB (a variant of syzkaller) found a free-while-still-in-use bug\nin the USB scatter-gather library:\n\nBUG: KASAN: use-after-free in atomic_read\ninclude/asm-generic/atomic-instrumented.h:26 [inline]\nBUG: KASAN: use-after-free in usb_hcd_unlink_urb+0x5f/0x170\ndrivers/usb/core/hcd.c:1607\nRead of size 4 at addr ffff888065379610 by task kworker/u4:1/27\n\nCPU: 1 PID: 27 Comm: kworker/u4:1 Not tainted 5.5.11 #2\nHardware name: QEMU Standard PC (i440FX + PIIX, 1996), BIOS\n1.10.2-1ubuntu1 04/01/2014\nWorkqueue: scsi_tmf_2 scmd_eh_abort_handler\nCall Trace:\n __dump_stack lib/dump_stack.c:77 [inline]\n dump_stack+0xce/0x128 lib/dump_stack.c:118\n print_address_description.constprop.4+0x21/0x3c0 mm/kasan/report.c:374\n __kasan_report+0x153/0x1cb mm/kasan/report.c:506\n kasan_report+0x12/0x20 mm/kasan/common.c:639\n check_memory_region_inline mm/kasan/generic.c:185 [inline]\n check_memory_region+0x152/0x1b0 mm/kasan/generic.c:192\n __kasan_check_read+0x11/0x20 mm/kasan/common.c:95\n atomic_read include/asm-generic/atomic-instrumented.h:26 [inline]\n usb_hcd_unlink_urb+0x5f/0x170 drivers/usb/core/hcd.c:1607\n usb_unlink_urb+0x72/0xb0 drivers/usb/core/urb.c:657\n usb_sg_cancel+0x14e/0x290 drivers/usb/core/message.c:602\n usb_stor_stop_transport+0x5e/0xa0 drivers/usb/storage/transport.c:937\n\nThis bug occurs when cancellation of the S-G transfer races with\ntransfer completion.  When that happens, usb_sg_cancel() may continue\nto access the transfer\u0027s URBs after usb_sg_wait() has freed them.\n\nThe bug is caused by the fact that usb_sg_cancel() does not take any\nsort of reference to the transfer, and so there is nothing to prevent\nthe URBs from being deallocated while the routine is trying to use\nthem.  The fix is to take such a reference by incrementing the\ntransfer\u0027s io-\u003ecount field while the cancellation is in progres and\ndecrementing it afterward.  The transfer\u0027s URBs are not deallocated\nuntil io-\u003ecomplete is triggered, which happens when io-\u003ecount reaches\nzero.\n\nSigned-off-by: Alan Stern \u003cstern@rowland.harvard.edu\u003e\nReported-and-tested-by: Kyungtae Kim \u003ckt0755@gmail.com\u003e\nCC: \u003cstable@vger.kernel.org\u003e\n\nLink: https://lore.kernel.org/r/Pine.LNX.4.44L0.2003281615140.14837-100000@netrider.rowland.org\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d5f834f16993258a4ad715224e54543510c51b0c",
+      "old_mode": 33188,
+      "old_path": "drivers/usb/core/message.c",
+      "new_id": "a48678a0c83ac0d0253067e82966c1bc592240a4",
+      "new_mode": 33188,
+      "new_path": "drivers/usb/core/message.c"
+    }
+  ]
+}

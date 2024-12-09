@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0ada9456d0270cb0e357a43d9187a6418d770760",
+  "tree": "9d96372dc7e7e0bd024541a88afcab16179b95a2",
+  "parents": [
+    "70a82d9d9a59c2a0b9241fdb0b8b0f1a61d0d5a0"
+  ],
+  "author": {
+    "name": "Chris Craik",
+    "email": "ccraik@google.com",
+    "time": "Tue Oct 18 10:17:41 2016 -0700"
+  },
+  "committer": {
+    "name": "Chris Craik",
+    "email": "ccraik@google.com",
+    "time": "Tue Oct 18 10:18:54 2016 -0700"
+  },
+  "message": "Handle color bounds correctly in GIF decode.\n\nBug: 31631842\nChange-Id: Ia4d25d9cd440286366f82433d3ff227384c0572f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f3e94dffbf0fbcef6081937d33b91a2aac59af85",
+      "old_mode": 33188,
+      "old_path": "framesequence/jni/FrameSequence_gif.cpp",
+      "new_id": "57b227e1f4a6ea4233663e5be33a4893ab05f389",
+      "new_mode": 33188,
+      "new_path": "framesequence/jni/FrameSequence_gif.cpp"
+    }
+  ]
+}

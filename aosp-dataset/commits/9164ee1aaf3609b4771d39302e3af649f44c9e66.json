@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "9164ee1aaf3609b4771d39302e3af649f44c9e66",
+  "tree": "53d86c509b7a86c0c80a495ad87052183fd72f7f",
+  "parents": [
+    "0519f6aa5345be0917ad52188479230148adf8bd"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Apr 11 16:04:51 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:49 2018 +0000"
+  },
+  "message": "DO NOT MERGE Add bounds check for BNEP_Write\n\nBug: 74947856\nTest: manual\nChange-Id: If5db8c6b6e509a330ae74808fc3f0ffac137af14\n(cherry picked from commit ae9d06c1dc84db36c0c4a07fc56a1fbf008cd1ce)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "923ce50933debbd34e36bd784694cba75f8fc533",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_api.cc",
+      "new_id": "e5d3c09481e5ca86f9c4e3d02cfd3a6d9845af74",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_api.cc"
+    }
+  ]
+}

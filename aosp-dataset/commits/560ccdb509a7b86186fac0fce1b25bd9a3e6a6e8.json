@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "560ccdb509a7b86186fac0fce1b25bd9a3e6a6e8",
+  "tree": "798bc2674ff63f39a49f66e48ec014a8ab4e8307",
+  "parents": [
+    "61f5b8c8352611acbe13c449687cf1c40c0d76a3"
+  ],
+  "author": {
+    "name": "Praveen Chavan",
+    "email": "pchavan@codeaurora.org",
+    "time": "Mon Apr 11 17:33:02 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Apr 21 19:11:20 2016 -0700"
+  },
+  "message": "DO NOT MERGE mm-video-v4l2: vidc: validate omx param/config data\n\nCheck the sanity of config/param strcuture objects\npassed to get/set _ config()/parameter() methods.\n\nBug: 27533317\nSecurity Vulnerability in MediaServer\nomx_vdec::get_config() Can lead to arbitrary write\n\nChange-Id: I6c3243afe12055ab94f1a1ecf758c10e88231809\n\nConflicts:\n\tmm-core/inc/OMX_QCOMExtns.h\n\tmm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp\n\tmm-video-v4l2/vidc/venc/src/omx_video_base.cpp\n\tmm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f0e1593c4cb2410e2db48560add70309dce7f6bb",
+      "old_mode": 33188,
+      "old_path": "mm-core/inc/OMX_QCOMExtns.h",
+      "new_id": "eb1b990b4f43ac30bbe0f5211e76e5d23413e116",
+      "new_mode": 33188,
+      "new_path": "mm-core/inc/OMX_QCOMExtns.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d7a158cda1dbecde0f5850c2c540d008210b4be4",
+      "old_mode": 33261,
+      "old_path": "mm-video-v4l2/vidc/common/inc/vidc_debug.h",
+      "new_id": "0ce747c4984f2164da77ae3183fa322ce0f92c41",
+      "new_mode": 33261,
+      "new_path": "mm-video-v4l2/vidc/common/inc/vidc_debug.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "19c15968c42926774d12850ca44621264669dd9d",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp",
+      "new_id": "3b84707c0064b29e67ec0ae283f3b272df6ee867",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/vdec/src/omx_vdec_msm8974.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "7f0482fe1a31360fc9bad1fe80c55b7213f2068a",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp",
+      "new_id": "1aee2c1ed729293d0143672e1c387ad9000a6cfc",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_base.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "a72e07ebd01a14a0c14248c405c74d6c67489f35",
+      "old_mode": 33188,
+      "old_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp",
+      "new_id": "70d62607c6ae7bd85fbb0c7f4ee98a1d248ec029",
+      "new_mode": 33188,
+      "new_path": "mm-video-v4l2/vidc/venc/src/omx_video_encoder.cpp"
+    }
+  ]
+}

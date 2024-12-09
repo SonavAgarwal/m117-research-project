@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "49d89e9df80bbcb9629579086df99c01d75d6851",
+  "tree": "43fb0949f7acbd6c43bfdd722a9b84352ca39769",
+  "parents": [
+    "f6a40939fb77aace764df0cde4f354deae6b9883"
+  ],
+  "author": {
+    "name": "Andy Hung",
+    "email": "hunga@google.com",
+    "time": "Thu Jan 10 13:27:31 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:03 2019 +0000"
+  },
+  "message": "AudioFlinger: put effect desc lookup under mutex for createEffect\n\nTest: native poc\nBug: 122309228\nChange-Id: I48333c69f5c1b1bf1b98f57eb813ec39e074f3a7\nMerged-In: I9d339a7d6d81161065e1adaf427dd2d3430436c2\n(cherry picked from commit a41770b682117fdfc20236fbc45d975099f9147a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bdd39c6f65076a0f1ce11a251d58179b7a520f41",
+      "old_mode": 33188,
+      "old_path": "services/audioflinger/AudioFlinger.cpp",
+      "new_id": "687b5a65f539c35168108de5f67d5cfa6dcb0dc7",
+      "new_mode": 33188,
+      "new_path": "services/audioflinger/AudioFlinger.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2b4667baa5a2badbdfec1794156ee17d4afef37c",
+  "tree": "1e7d03dfd7b565f3116eeb04ead83bfa2e8e5a56",
+  "parents": [
+    "1b4d5952d8a88afb02080c1a2754bc49c13e2b1a"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Tue Jul 31 15:12:51 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:01:23 2018 +0000"
+  },
+  "message": "Check for overflow of crypto size\n\nBug: 111603051\nTest: CTS\nChange-Id: Ib5b1802b9b35769a25c16e2b977308cf7a810606\n(cherry picked from commit d1fd02761236b35a336434367131f71bef7405c9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b20bca17b000f953402e43066908b53b9ba34c0",
+      "old_mode": 33188,
+      "old_path": "media/ndk/NdkMediaCodec.cpp",
+      "new_id": "42285f899d5f081d53c3543422032d210340d866",
+      "new_mode": 33188,
+      "new_path": "media/ndk/NdkMediaCodec.cpp"
+    }
+  ]
+}

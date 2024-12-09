@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "026f04c83281557a0d24df0bd19d72c74cdc320e",
+  "tree": "25434ae0ab3c556f8579a77f13a60dd8199f8d47",
+  "parents": [
+    "e37d3b365a50638650cf1b9d9c0ed05e372a870f"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Fri Dec 04 12:54:27 2020 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:53 2021 +0000"
+  },
+  "message": "AVRCP: Use calloc to zero reserved fields\n\nBug: 174150451\nTest: compilation\nTag: #security\nChange-Id: I7a30edacf8377a9feecbb988b099d60d69b46f87\n(cherry picked from commit 1f169323d335ab0dc260952c2dd3821144448b11)\nMerged-In: I7a30edacf8377a9feecbb988b099d60d69b46f87\n(cherry picked from commit 8d461a866a12cd3d7d6d68551a5d2a7139fab2b9)\n(cherry picked from commit 41584e84a3288d4dc9770773fa3db81df209ae4c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "62b7fe47895d2aad67a47f7fe7748c12eb3815ad",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_api.cc",
+      "new_id": "6ad7e4f129abd679d2c03cae13c52795ee6fd88a",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_api.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "384ae60916d43b389eb4dbb78b812cd78c57fbe1",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_bld_ct.cc",
+      "new_id": "4d85d17979c9cecc30ee386a0164827fed0bff2d",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_bld_ct.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "1dac160f0d070376de225ddf3a809426bef6071e",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_bld_tg.cc",
+      "new_id": "73da3456e41d8c71d35fc668d9c544a0ab4bca7b",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_bld_tg.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "de42e15f1303ad0708ce34b217fb1a73a9915c21",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_opt.cc",
+      "new_id": "a9ad908d3955a6bd42e56f8997f54d32387e0d02",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_opt.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b64b86e3777c5d0da1525303d0f56a35384b12a",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "7c6367644aaac73c5bab9980ea74208b81e2b788",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b66fc16410ff96e9119f8eb282e67960e79075c8",
+  "tree": "9ca466c7983575fb332a60f0d87a6e3c81185a35",
+  "parents": [
+    "d7d4d5686b2e3c37c7bf10a6a2adff1c95251a13"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Thu Apr 12 15:50:28 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 08 23:33:43 2018 +0000"
+  },
+  "message": "DO NOT MERGE Fix OOB read in process_l2cap_cmd\n\nBug: 74202041\nBug: 74196706\nBug: 74201143\nTest: manual\nChange-Id: Ic25f7f3777d0375f76cc91e4d129b1636f1c388d\n(cherry picked from commit ff15adf5150527db1012b9f7777066522835e2db)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "83d1737bc331dab6e05ee6ae4d69b8c16ccab8da",
+      "old_mode": 33188,
+      "old_path": "stack/l2cap/l2c_main.cc",
+      "new_id": "7c1ef4837d385e05dd21f3b26bbe7bc18a11b76e",
+      "new_mode": 33188,
+      "new_path": "stack/l2cap/l2c_main.cc"
+    }
+  ]
+}

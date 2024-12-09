@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5eeb2ca02a2f6084fc57ae5c244a38baab07033a",
+  "tree": "86ee4c41c581810a860fc963293da1bed7724798",
+  "parents": [
+    "8ca86f1639ec5890d400fff9211aca22d0a392eb"
+  ],
+  "author": {
+    "name": "Martijn Coenen",
+    "email": "maco@android.com",
+    "time": "Fri Feb 16 09:47:15 2018 +0100"
+  },
+  "committer": {
+    "name": "Greg Kroah-Hartman",
+    "email": "gregkh@linuxfoundation.org",
+    "time": "Fri Feb 16 11:16:38 2018 +0100"
+  },
+  "message": "ANDROID: binder: synchronize_rcu() when using POLLFREE.\n\nTo prevent races with ep_remove_waitqueue() removing the\nwaitqueue at the same time.\n\nReported-by: syzbot+a2a3c4909716e271487e@syzkaller.appspotmail.com\nSigned-off-by: Martijn Coenen \u003cmaco@android.com\u003e\nCc: stable \u003cstable@vger.kernel.org\u003e # 4.14+\nSigned-off-by: Greg Kroah-Hartman \u003cgregkh@linuxfoundation.org\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a85f9033b57e2f9c0615e70e750115d97d2d73b9",
+      "old_mode": 33188,
+      "old_path": "drivers/android/binder.c",
+      "new_id": "764b63a5aadefe5c73ef849ee5b377b134e3841e",
+      "new_mode": 33188,
+      "new_path": "drivers/android/binder.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "cf1e36f93fc8776e3a8109149424babeee7f8382",
+  "tree": "9244098fe9be23b8f4576ed6aa1d587acfa900d3",
+  "parents": [
+    "de7f50ee76ed5ed70d9174f23175287c1035b383"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Oct 05 14:18:26 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:28:45 2017 +0000"
+  },
+  "message": "SoftAVCDec: Handle zero length input without EOS\n\nWhen a zero length input buffer is sent to SoftAVC decoder\nwithout EOS set in nFlags, SoftAVC decoder plugin was\nentering an infinite loop. Fixed it by returning from\nonQueueFilled for such cases.\n\nBug: 66969349\nTest: Tested using poc associated with the bug\nChange-Id: I79cebc8f5b40c51256aba83a08deb547b220c4d7\n(cherry picked from commit 21943c05f0ee2350647a6fa5ee17aa3c68859383)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c342b6c396a10765ae5f4aedc2784735fa68cb58",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp",
+      "new_id": "70df5015c881a0ac0b7389e5414c96b8dd5a9a41",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/avcdec/SoftAVCDec.cpp"
+    }
+  ]
+}

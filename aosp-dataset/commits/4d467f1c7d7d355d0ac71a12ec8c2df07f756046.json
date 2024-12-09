@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "4d467f1c7d7d355d0ac71a12ec8c2df07f756046",
+  "tree": "bc07da28e6103653a6cb66c178599c7b564ba943",
+  "parents": [
+    "c90b0373c99701540456eaef6cb79f99770f8240"
+  ],
+  "author": {
+    "name": "Ahan Wu",
+    "email": "ahanwu@google.com",
+    "time": "Wed May 13 22:43:56 2020 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:46 2020 +0000"
+  },
+  "message": "DO NOT MERGE Prevent ImageWallpaper from crashing due to wide gamut\n\nImageWallpaper may fail at either uploading texture or computing the\nhistogram of the bitmap, we catch the unexpected exceptions to avoid\ncrashing the whole process. In addition, we also take wide gamut into\naccount while computing the histogram.\n\nBug: 156087409\nTest: Set 1.jpg of #34 in the bug as wallpaper.\nTest: The symptom should not happen.\nChange-Id: I931912ece0f7cdfcb388efc8e61799f0087c5199\n(cherry picked from commit 34c8ecdf280d6209aa8163c1bc8f41a449302e39)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "626d0cfed9975716d20212ffdac119079bcf4e08",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/glwallpaper/ImageGLWallpaper.java",
+      "new_id": "c1de21bed05edb0d6f843c65353859cec8a4f6d5",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/glwallpaper/ImageGLWallpaper.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "24a4b9e3052b05d0b90e3c308a6e0851e4a828ff",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/glwallpaper/ImageProcessHelper.java",
+      "new_id": "231779df6f5257f723cd815384ccbd8562217cda",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/glwallpaper/ImageProcessHelper.java"
+    }
+  ]
+}

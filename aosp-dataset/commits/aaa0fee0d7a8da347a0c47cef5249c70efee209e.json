@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "aaa0fee0d7a8da347a0c47cef5249c70efee209e",
+  "tree": "0814dbba5f9857c5877761659ffeac001b32858b",
+  "parents": [
+    "0b98d304c467184602b4c6bce76fda0b0274bc07"
+  ],
+  "author": {
+    "name": "Wale Ogunwale",
+    "email": "ogunwale@google.com",
+    "time": "Mon Apr 06 16:08:52 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:04:58 2015 -0700"
+  },
+  "message": "Lockdown AM.getRunningAppProcesses API with permission.REAL_GET_TASKS\n\n* Applications must now have ...permission.REAL_GET_TASKS to\nbe able to get process information for all applications.\n* Only the process information for the calling application will be\nreturned if the app doesn\u0027t have the permission.\n* Privilages apps will temporarily be able to get process information\nfor all applications if they don\u0027t have the new permission, but have\ndeprecated ...permission.GET_TASKS.\n\nBug: 20034603\nChange-Id: I67ae9491f65d2280adb6a81593693d499714a216\n(cherry picked from commit 9dbaa54f6834e013a63f18bd51ace554de811d80)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2ab447ab4ec75b56f28a30b82c7104b8452db7d8",
+      "old_mode": 33261,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "4d37ab86dda16fd7e4bdf9ba24ea083bab067d71",
+      "new_mode": 33261,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

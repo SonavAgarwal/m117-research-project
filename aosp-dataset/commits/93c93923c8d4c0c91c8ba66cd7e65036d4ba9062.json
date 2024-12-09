@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "93c93923c8d4c0c91c8ba66cd7e65036d4ba9062",
+  "tree": "74ca671419e365f3c05a4871b8fac9e543fdcab7",
+  "parents": [
+    "448e2f1bf40d566aaeac9ac269eb3394225448bf"
+  ],
+  "author": {
+    "name": "Gary Mai",
+    "email": "garymai@google.com",
+    "time": "Tue Feb 02 15:17:48 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:31 2021 +0000"
+  },
+  "message": "Stop returning intent data in QuickContact in onActivityResult\n\nContacts code does not use the data, only the result code, and it is a potential URI permission grant attack angle.\nClean up unused code in ImplicitIntentsUtil\n\nBug: 178825358\nTest: Manual test with POC app. Observed crash instead of contacts data\nread.\n\nChange-Id: Ie8da7faef3611eacd14eda7c0067e2aa24805a10\n(cherry picked from commit cec9f9094baa5225ca2ce9a64c8fcd6af7000b00)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6d206b6a559fea122b93d5fee3ba4ed6fa338c63",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/quickcontact/QuickContactActivity.java",
+      "new_id": "43ade96b7bb28844409952e335a594a662f2aa85",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/quickcontact/QuickContactActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "0d00519f2f027e06f9dd0eaa9c84f7faebb2a15e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/contacts/util/ImplicitIntentsUtil.java",
+      "new_id": "a1ab896d0a9001b6fd65ef12ed9e3886908ee004",
+      "new_mode": 33188,
+      "new_path": "src/com/android/contacts/util/ImplicitIntentsUtil.java"
+    }
+  ]
+}

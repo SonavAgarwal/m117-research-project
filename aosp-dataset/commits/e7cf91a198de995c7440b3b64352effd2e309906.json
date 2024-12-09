@@ -1,0 +1,57 @@
+)]}'
+{
+  "commit": "e7cf91a198de995c7440b3b64352effd2e309906",
+  "tree": "f6c9eec88214774ba2314a789d251c5348d41caa",
+  "parents": [
+    "9b8c6d2df35455ce9e67907edded1e4a2ecb9e28"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Mon Jun 13 15:17:54 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Fri Jun 24 16:52:27 2016 -0700"
+  },
+  "message": "Don\u0027t trust callers to supply app info to bindBackupAgent()\n\nGet the canonical identity and metadata about the package from the\nPackage Manager at time of usage rather than rely on the caller to\nhave gotten things right, even when the caller has the system uid.\n\nBug 28795098\n\nChange-Id: I215786bc894dedf7ca28e9c80cefabd0e40ca877\n\nMerge conflict resolution for ag/1133474 (referencing ag/1148862)\n- directly to mnc-mr2-release\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f6e0735a2b0f2ef92bb10cc8afbc336c9f2b07af",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/ActivityManagerNative.java",
+      "new_id": "b9d259529397034705d05b5e9c3147388611be45",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/ActivityManagerNative.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef121ce2d80634b0fea3d9789081598cfcfdb5b7",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/IActivityManager.java",
+      "new_id": "5ed839e7d3a46bd36ce91a8616b8b8cbab7d744a",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/IActivityManager.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "30d90af45be7daaaa6ebda7e056cd7ba128f963d",
+      "old_mode": 33188,
+      "old_path": "services/backup/java/com/android/server/backup/BackupManagerService.java",
+      "new_id": "ac7c5ab51494bf4c95ae5917a22d4d60670fe3ff",
+      "new_mode": 33188,
+      "new_path": "services/backup/java/com/android/server/backup/BackupManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "33d0a9f295ea7958a1231ab075f4384d0f81a69d",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "daa4c13cd977b44932e958d12188d17adda18841",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    }
+  ]
+}

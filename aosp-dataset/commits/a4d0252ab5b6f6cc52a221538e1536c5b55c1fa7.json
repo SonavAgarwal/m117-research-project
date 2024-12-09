@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a4d0252ab5b6f6cc52a221538e1536c5b55c1fa7",
+  "tree": "d484fd8c77147e3b8d4c60ecfd1edc05c6c5982d",
+  "parents": [
+    "f3ff79119179e1787d1652e8f4611b3a4e62ed88"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Fri Nov 03 16:18:19 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Nov 28 03:33:23 2017 +0000"
+  },
+  "message": "canCastInterface: always return true for IBase\n\nDon\u0027t do a binder call for passing interface\naround, especially since every HIDL thing is\nalready IBase.\n\nBug: 68217907\nTest: hidl\u0027s run_all_device_tests, boot + camera/YT sanity\nMerged-In: Ic195e9c19f181828296c515a3004c75daccdd03f\nChange-Id: Ic195e9c19f181828296c515a3004c75daccdd03f\n(cherry picked from commit b2bf30d7009674938a96ff9ae87a30e9ab260dc6)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "eda9b8ae75177398d20682ca1a44abac78dde3e4",
+      "old_mode": 33188,
+      "old_path": "transport/HidlTransportUtils.cpp",
+      "new_id": "4e952eb293fd6795887c007a4005ea6c4663ad83",
+      "new_mode": 33188,
+      "new_path": "transport/HidlTransportUtils.cpp"
+    }
+  ]
+}

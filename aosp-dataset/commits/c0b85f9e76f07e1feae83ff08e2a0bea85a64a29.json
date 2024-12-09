@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "c0b85f9e76f07e1feae83ff08e2a0bea85a64a29",
+  "tree": "d480453f29a0cf503fc194e00cb84b94eb35cf37",
+  "parents": [
+    "eb71e821edd929d48a824a9a4bbdfb710b50d324"
+  ],
+  "author": {
+    "name": "Adrian Roos",
+    "email": "roosa@google.com",
+    "time": "Thu Dec 06 17:50:41 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:06 2019 +0000"
+  },
+  "message": "FRP: save password quality in DPM.resetPassword\n\nWhen setting a password from DPM.resetPassword(), the actual quality of the\npassword was not passed to LockSettingsService (instead, the minimum required\nquality was passed which is often UNSPECIFIED). As a result, during FRP we\nwould see inconsistent state and skip it.\n\nBug: 110172241\nTest: Set credential via DPM.resetPassword(), factory reset device to trigger FRP, verify FRP shows.\nChange-Id: I54376f60ac53451ace22965d331b47cd8c2e614e\nMerged-In: I54376f60ac53451ace22965d331b47cd8c2e614e\n(cherry picked from commit 7923b3c10cad5059a7d187fa6abc39abdb4173ec)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6ee7d4931c18efb97a2af14ed7824127bc1ef7c7",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "8f5d36abcf2c02c755d4e80ff0dad5e82d54993c",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "1acecfc8cb058e36767ca68a7aebcb1f8a08d8be",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/com/android/server/devicepolicy/DevicePolicyManagerTest.java",
+      "new_id": "26ce7e4cb77c4cdc304bc8402ba0658b680af1e8",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/com/android/server/devicepolicy/DevicePolicyManagerTest.java"
+    }
+  ]
+}

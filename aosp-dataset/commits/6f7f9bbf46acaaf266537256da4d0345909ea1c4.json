@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6f7f9bbf46acaaf266537256da4d0345909ea1c4",
+  "tree": "aa265097c0b296566ddf9e909ace7cbec0d02c50",
+  "parents": [
+    "59d7c52d0b3872e6a01e47a50772952140debbaa"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon Nov 16 15:54:00 2020 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:46:12 2020 +0000"
+  },
+  "message": "Check permission before sending batch scan result\n\nUse same checks as for regular scan results\n\nBug: 172670415\nTest: tested using sample app on master branch\nChange-Id: I4274026943ce64a51a30c3fbf6cc85eec853ad4f\n(cherry picked from commit 9c202eda348241c5adf1b18a5a1e0ad31b2d30f8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "87e6e52a30e9650434d74c58bcf45914e0f0fbd1",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/gatt/GattService.java",
+      "new_id": "8a792fe6cf2c91e9099ff598dd669c83097c6e0f",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/gatt/GattService.java"
+    }
+  ]
+}

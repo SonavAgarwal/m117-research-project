@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a632a66b81ee4b1db65d0cf64b4ce525f56214ff",
+  "tree": "77fbf78da65f599acd2224c4948a9f78b1859d80",
+  "parents": [
+    "2af6ad6cd3e2b6f1dd9f210cb4b27e98e5f6db2d"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Thu Feb 04 12:54:28 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Mar 19 00:00:31 2021 +0000"
+  },
+  "message": "btif: Return after closing the socket\n\nBug: 175686168\nTest: poc in bug\nTag: #security\nChange-Id: I3af19be9bee9535e67e4dcbc2584d2084656b817\nMerged-In: I3af19be9bee9535e67e4dcbc2584d2084656b817\n(cherry picked from commit ff82e7d429902405e7e0a780f955a5b9ef2d9e1b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "105d5a1cc4bbc5098725bff3ab969db7e425e4a1",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_sock_l2cap.cc",
+      "new_id": "fa59d878d1c5062428f82ee75e765b817752c90d",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_sock_l2cap.cc"
+    }
+  ]
+}

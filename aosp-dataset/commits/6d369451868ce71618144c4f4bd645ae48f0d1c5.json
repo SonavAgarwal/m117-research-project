@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "6d369451868ce71618144c4f4bd645ae48f0d1c5",
+  "tree": "869249bbe6844741362dde911c3ed32947641cb8",
+  "parents": [
+    "a87dd6178cc6a58ab0ebc9dafbbe171017e1eebf"
+  ],
+  "author": {
+    "name": "Jasraj Bedi",
+    "email": "jasrajb@google.com",
+    "time": "Sat Jun 06 01:42:05 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Nov 18 22:50:32 2020 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nANDROID: Fix negative stack write in sgdisk\n\nA maliciously formatted USB or SD Card device when inserted into an Android device could crash sgdisk. This crash occurs because sgdisk does does not validate the number of cyclic partitions, which leads to an integer underflow ultimately causing a negative indexed stack write.\n\nFix this by making sure the number of partitions don\u0027t go negative.\n\nAfter the fix, sgdisk detects the broken GPT and partitions it correctly\n\nAuthor: jasrajb@google.com\nBug: 158063095\nTest: before fix, sgdisk crashed when USB with malicious GPT was inserted\nTest: after fix, sgdisk didn\u0027t crash\nTest: went through the \"formatting\" wizard with a malicious GPT and sgdisk successfully reformatted it to vfat\nChange-Id: Ie0257a68f6a0140b98fb7d104dc2ffd1f5c2afde\n(cherry picked from commit 28ba37956b338e4d5c58f7d8c43c4153f057d482)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8ac97894a80bb33823c3fdf928d713db9060c5ed",
+      "old_mode": 33188,
+      "old_path": "basicmbr.cc",
+      "new_id": "e9ac5c548e2529e86ee4daf87b130a07252b14c9",
+      "new_mode": 33188,
+      "new_path": "basicmbr.cc"
+    }
+  ]
+}

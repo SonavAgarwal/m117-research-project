@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4cf0f2d0d869c35a9ec4432861d5efa8ead4279c",
+  "tree": "31cc01636db65fff7efe107063ea547a5de43f78",
+  "parents": [
+    "326450198720862ade868801cc2f43597f3c1fd8"
+  ],
+  "author": {
+    "name": "Jouni Malinen",
+    "email": "jouni@qca.qualcomm.com",
+    "time": "Tue Apr 07 11:32:11 2015 +0300"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:51 2015 -0700"
+  },
+  "message": "P2P: Validate SSID element length before copying it\n\nThis fixes a possible memcpy overflow for P2P dev-\u003eoper_ssid in\np2p_add_device(). The length provided by the peer device (0..255 bytes)\nwas used without proper bounds checking and that could have resulted in\narbitrary data of up to 223 bytes being written beyond the end of the\ndev-\u003eoper_ssid[] array (of which about 150 bytes would be beyond the\nheap allocation) when processing a corrupted management frame for P2P\npeer discovery purposes.\n\nThis could result in corrupted state in heap, unexpected program\nbehavior due to corrupted P2P peer device information, denial of service\ndue to process crash, exposure of memory contents during GO Negotiation,\nand potentially arbitrary code execution.\n\nThanks to Google security team for reporting this issue and smart\nhardware research group of Alibaba security team for discovering it.\n\nChange-Id: I9f350f20cdd010f2c096514b245b4a901ad74e46\nSigned-off-by: Jouni Malinen \u003cjouni@qca.qualcomm.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7d4a03c57e6943bb3c99651662d5d3b99b3a8ff3",
+      "old_mode": 33188,
+      "old_path": "src/p2p/p2p.c",
+      "new_id": "28c3aa00f7081b843d26f7109679e4b72569c6e7",
+      "new_mode": 33188,
+      "new_path": "src/p2p/p2p.c"
+    }
+  ]
+}

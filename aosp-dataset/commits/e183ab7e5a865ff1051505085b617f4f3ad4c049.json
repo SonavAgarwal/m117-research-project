@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e183ab7e5a865ff1051505085b617f4f3ad4c049",
+  "tree": "79459eb723dbc1c6d487516e8139fe9fe83bf950",
+  "parents": [
+    "81ee10241fc143ed576734268708c9943217ff8b"
+  ],
+  "author": {
+    "name": "Julia Reynolds",
+    "email": "juliacr@google.com",
+    "time": "Thu May 28 10:45:19 2020 -0400"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:35:59 2020 +0000"
+  },
+  "message": "Make intents immutable\n\nTest: make\nFixes: 154719656\nChange-Id: I212ca5f1a48174ed85311b551259da314718f082\n(cherry picked from commit 36b3352784ae90326a2b308542b1d2cfe18661a0)\n(cherry picked from commit 2a92eea73034820a20ba07cc267a326ace859d6d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c67512c119225572fa26a125e3d0f97b7f10a525",
+      "old_mode": 33188,
+      "old_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java",
+      "new_id": "3886f6264b16f27afbcec8bb8666e035804f5183",
+      "new_mode": 33188,
+      "new_path": "packages/SystemUI/src/com/android/systemui/statusbar/notification/InstantAppNotifier.java"
+    }
+  ]
+}

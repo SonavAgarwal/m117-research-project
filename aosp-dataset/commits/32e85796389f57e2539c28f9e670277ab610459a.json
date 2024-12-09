@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "32e85796389f57e2539c28f9e670277ab610459a",
+  "tree": "627e0114e5ac222077377b1146894ab39211b6f5",
+  "parents": [
+    "568b02ee004850ba21b07e377980b77823746aa8"
+  ],
+  "author": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Mon Apr 08 16:13:21 2019 -0700"
+  },
+  "committer": {
+    "name": "Dmitry Dementyev",
+    "email": "dementyev@google.com",
+    "time": "Mon Apr 08 17:30:05 2019 -0700"
+  },
+  "message": "Check that Account Parcel has name and type.\n\nBug: 129287265\nTest: manual\nChange-Id: I8431eb27cc4c6dfd3048b28ff635474f14433308\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "26377642f2f99aa90bfac59c2d035d49b816a6f5",
+      "old_mode": 33188,
+      "old_path": "core/java/android/accounts/Account.java",
+      "new_id": "c822d20445ec41256bae43c70e7513fbe68f4523",
+      "new_mode": 33188,
+      "new_path": "core/java/android/accounts/Account.java"
+    }
+  ]
+}

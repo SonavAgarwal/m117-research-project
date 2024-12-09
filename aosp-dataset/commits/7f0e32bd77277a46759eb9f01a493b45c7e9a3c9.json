@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7f0e32bd77277a46759eb9f01a493b45c7e9a3c9",
+  "tree": "3a5659cdf3bf27abcc5e8d19ab9af69b86eb7b96",
+  "parents": [
+    "c5f45ad9857245da5d1698d13b2a62f465ec9155"
+  ],
+  "author": {
+    "name": "Devin Moore",
+    "email": "devinmoore@google.com",
+    "time": "Fri Apr 09 09:10:28 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:59 2021 +0000"
+  },
+  "message": "Check for misaligned read and write pointers\n\nDo not allow reads or writes when one of the read or write pointers are\nmisaligned.\n\nTest: adb sync \u0026\u0026 adb shell /data/nativetest64/fmq_test\nBug: 184963385\nMerged-in: Iaf33d30b5601e838f8899e1dceb65c86a10566b0\nChange-Id: Iaf33d30b5601e838f8899e1dceb65c86a10566b0\n(cherry picked from commit 4ed31d5a6c5c48a2f9fc3e812600093f81c33d27)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ca031aa049d8bf1033ead8b1f7ebbac071845cb3",
+      "old_mode": 33188,
+      "old_path": "include/fmq/MessageQueue.h",
+      "new_id": "97fee0e4b982ca1bb3410966ff1e0b7729f2d8f0",
+      "new_mode": 33188,
+      "new_path": "include/fmq/MessageQueue.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "ce7e3402184b5d1982893b7b4903e1f5b1ed3c18",
+      "old_mode": 33188,
+      "old_path": "tests/msgq_test_client.cpp",
+      "new_id": "271586aa7d972bd6ad11391a28c4184560ebf63f",
+      "new_mode": 33188,
+      "new_path": "tests/msgq_test_client.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "667d2cbe3eb1450f273a4f6595ccef35e1f0fe4b",
+  "tree": "ea9d0394fbe7830e444d866a814958ce3a0b0615",
+  "parents": [
+    "6422e8fb4429936477f2cac82c472e5e4684f26d"
+  ],
+  "author": {
+    "name": "Marie Janssen",
+    "email": "jamuraa@google.com",
+    "time": "Wed Mar 08 10:12:07 2017 -0800"
+  },
+  "committer": {
+    "name": "Adam Seaton",
+    "email": "aseaton@google.com",
+    "time": "Tue Mar 21 12:01:18 2017 -0700"
+  },
+  "message": "Protect Bluetooth OPP ACCEPT and DECLINE broadcast\n\nFix merge conflict into nyc-mr2-release\nNon-system apps could send these, and accept OPP transfers without user\ninteraction.\n\nTest: run POC code, see that it crashes instaed of accepting\nBug: 35258579\nChange-Id: I37bf2e17b4d612258f9dbaa879727ac7c72e5969\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ec712bb89f0acf1df157c235c08b7ab56b932228",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "011884cb5495d81aaccde62ab44e1d5644eddc58",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    }
+  ]
+}

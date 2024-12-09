@@ -1,0 +1,1245 @@
+)]}'
+{
+  "commit": "f9f58993e39998a997f88239cdbf91cdb3a0ad7b",
+  "tree": "17fe30658d97a7aa57ced961daa55a7c77d5ac32",
+  "parents": [
+    "881f4c043cd6d0a1666fcdce6faa202c5b2dc0d8"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Tue Jan 08 11:40:36 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jan 16 18:56:31 2019 +0000"
+  },
+  "message": "Update dumps for getCallingSid.\n\nMethods added.\n\nBug: 121035042\nTest: boot\nChange-Id: Id0d5503672a3a4ab0d003b4ed0092698532268c6\n(cherry picked from commit fb05a1961aea39b8aef190c6897859984c3a9cfc)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ebc0df728443d0763a5c054b3f54d91ea67546ec",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libEGL.so.lsdump.gz",
+      "new_id": "2b957eb6fd30b9fa0ee061f01ccc3b236c6acc56",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4d29ac14544a0b831dc84364ef249a43decc577a",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "7350d3e9199d7e2c3bf5411b68f7d3897188780d",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "e991103f3b88109fb1b4f1471cd4c48c1ff9672e",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "98f394b2b703a74085fd2c7d64730f5943c47c2e",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "843b6b5a73520cf90eb6c3915bdc4bafccdad6d3",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "7fb4620dfee64f4b191b591b1a14fc8cc9580dad",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c3e40b4314b3cd221de78e42b6147ef1fd2a826a",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libRS.so.lsdump.gz",
+      "new_id": "b42cf9e9f2c326b95d0cdaa33ca84a6658a9a738",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "bafdceb3dba4e3425131894b715d52a193c858a1",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "1337a426d83515fb1786d1aca4b5ad8171dea8ce",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "824d87d9e9880142fdea484c4ca0f5484c4d66bd",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libc.so.lsdump.gz",
+      "new_id": "a1f9fc33e0f7b8210b35e93dbcdab49eaf7ed3ee",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "cf100dad0ddd60d1b43b4a86997416d90a639341",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libdl.so.lsdump.gz",
+      "new_id": "af027eb77c46b411982034507543cc03b6135e12",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c91ea2abb758ecd6fc7595a8742b9df990ed19ca",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libft2.so.lsdump.gz",
+      "new_id": "5f14eb3569893ea97b9b57fc1957f1cb24086c57",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "95ae94f116ae0723df2161f296275a30f5af392f",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/liblog.so.lsdump.gz",
+      "new_id": "6b90aedfcc9c87f1fad0b4593ae8845bc0b80ab7",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4832205324b3df656d510eeb4d0c27d472c9f373",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libm.so.lsdump.gz",
+      "new_id": "103cd1f53a47d2560e71bfbea73b835da62b4130",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "0683362ca607b1ee4257a90b366851419cfe94ea",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "7ceba064f3dbf8a985b26799f875569a3b88bd25",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "68b3e3c748486f5b480d738c4c4cede362e544fe",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "0d0ee173c788202e095f532f8432c4654159faac",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4df71ec5764cd9d71661b639f2bd63a3dbb16ec9",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "a9fded69b0b0019bba486849ae7ed6a5f3e749d9",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "45ce29e902b7837d2ae178f4eb2ac4a21dcd3e95",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libsync.so.lsdump.gz",
+      "new_id": "dc871ed51893e51fa4648594302b4bff14e0e986",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "41a508882e91249f0f2d571e62f9a9129cb20b59",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "34822041488ba4f34d2708c62eb02023593efb8f",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "fabfb2a36ba6d65aa66a0b662e25c073b7b253ec",
+      "old_mode": 33188,
+      "old_path": "28/32/arm_armv7-a-neon/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "5804b993c5d1bc6b6b64963ac4ac9d3b3ec55229",
+      "new_mode": 33188,
+      "new_path": "28/32/arm_armv7-a-neon/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4dc84746f90d1d69fbcd24ffc4553afbc72f185d",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libEGL.so.lsdump.gz",
+      "new_id": "bc2f63a0f20df1582705a69b8012a63eecf55640",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "8ba9a9b4f355c4e29a360e216e9c1d38ca363234",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "c5ada6669d173bfc9d75874e74d81277d7e0bcd6",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "33930fa32b50c7532624f2d06319ab551c2d37ad",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "8f081800ac395c419d47b63242f8516d08346442",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9dcaf335b2a8d57772333504c9dc9a12f3e66c29",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "75fe9ea7fb8f0ed9fd6f38f70e7260b23e4e857d",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "325b8ec9e1fb5c6d57021a38244f4229fb9df314",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libRS.so.lsdump.gz",
+      "new_id": "6f95e440aeb7217cf9f2047808b656883618f7fe",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "45642f121907b48a313478286437809d99104d31",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "d09e2a1db90e41318ebbcbc2a10052130a3f0ee2",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "2f1adadcb24a1a9991b0299578920c5ca6fda8ab",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libc.so.lsdump.gz",
+      "new_id": "0305a017068f877608f974342b99eee1daed4221",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ef2c3483317e7fb322cd9bc2dae9da0c00afb528",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libdl.so.lsdump.gz",
+      "new_id": "1ce410e5c1d8fba27190c7519d3b81196b7fca45",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "f65581345bca126013c1133ae16ef9833c481d3e",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libft2.so.lsdump.gz",
+      "new_id": "deeff46371d825ca54b04f696d05f05290cd80c4",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ee49d3814587f1109e1a5e221dac4492c6e89912",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/liblog.so.lsdump.gz",
+      "new_id": "e1f06fb323a1845c48d516f3157f6e3e9da153ce",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "e28f1a2f6b2402b9d505ad8f1348a864015d3c25",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libm.so.lsdump.gz",
+      "new_id": "345edb505fdb8187f0e227b16d306a4923d52a69",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "7b61087990aa04e4ef476d24c8d3de29d5690d22",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "53b04bde7fdd6352c23a8429d41497ce3777cd3e",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e2dcbc20e933544c03e7c737503d18d905119f2",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "d2f217b45b9c013996a91839a0697fe2f9b0f96a",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d353f0f46fba7815eeaa7f4c926af57f82803e8",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "e2d4abf05302c9992f53ba3601b59db45c23377a",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "566c969c3314a2e8ab4cc8e150322a5cf9e53c75",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libsync.so.lsdump.gz",
+      "new_id": "f4a418aa3bcfe12054982ccfabf9cb0bf9740401",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "371520bb8eeedd6fbeb8df86c93adaaea3701ea7",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "a154d3e039945fe240317e7941eb3c46256ccac9",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "8d76f39d8a24914a26648f129a7e0376f58381ea",
+      "old_mode": 33188,
+      "old_path": "28/32/x86/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "1651917d6dd055481ff055db4b55b6386258c004",
+      "new_mode": 33188,
+      "new_path": "28/32/x86/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb036c15dfde734a6f00a4fec17ecad32ef5faa5",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libEGL.so.lsdump.gz",
+      "new_id": "4bcf3916e8d138265b922c88b03ca8296565b4be",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "fe4effe6e59e9345c925d95ab6fdda3fd86015a7",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "06c63c95b378a27e4c405f0425ac103089781339",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9e4b957e4e927b2931599f395fae4d81e0661663",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "afd22d7da0611d676bb3fda30aab202593073106",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "6dcd21549d9cde0679e6e609163ce52081512332",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "488722b16b93cc793dce60e9ebd02421ab913a27",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "b643908a1288c659a6d13a5f44a7b03cbd111c1f",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libRS.so.lsdump.gz",
+      "new_id": "6223289adfbe1e30b646583bb549fdc0685e1ec7",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "3cbadf9697d23323d2426bfe0c6fc00709dd7410",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "6b717dd46a1bd5bc970c2b9fec1cb4795e4e201f",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "1e435e52c359f4fca5668f173d52e9e1c6f80ce4",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libc.so.lsdump.gz",
+      "new_id": "e0ac6adea0e8c2ca717fc0419d8537b610c37272",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ae90249a23192c111f0b4e0e78282c0e0684bd6c",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libdl.so.lsdump.gz",
+      "new_id": "887bcdc0e9fbce4e19e6e86b7c79b9566d496e29",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "49072cbc5a58c5975382046bb40e610aa0d3d896",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libft2.so.lsdump.gz",
+      "new_id": "d0c2e64736d9bbe624e24d03afb804f054f0f956",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "516b0e165e178e741bca3b86236a5d52d93deaad",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/liblog.so.lsdump.gz",
+      "new_id": "71c4403a915cf0bb83ad3b0d35f41ad7eb60a433",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9444c750554b9157fbb56bb14d32f32a964a1724",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libm.so.lsdump.gz",
+      "new_id": "f4aa3a277109caf6ae0bb74bfa6e00b78f39c2cd",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "165ab928274e6d946d0335e133247503f70171e4",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "602e3ef0a9822cba8fb955f985a337e17676db66",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "91c2180783604da3f96c3915904489a7c79f6beb",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "815234731ece5c0bc6e727c3ee5fc7ac0acfc554",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "a2a77007a272e2e4d4393290600617244572c50f",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "95b4a490fded3eb2728851c9fcf2639bb8fb7277",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a648d33c35231490d0cc917c98e3512a7a07824",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libsync.so.lsdump.gz",
+      "new_id": "08ec0d2df4d404e2eb9466a3a2f5980bcb7d0bbc",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "d7499b7df72faa6a3cea1b088ee4994ef515ad15",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "8a54274d2ab916ca675f5c73b109c3439af5e67a",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c2d57e18efae32045fad80a6e049f9a84f1d6931",
+      "old_mode": 33188,
+      "old_path": "28/64/arm64_armv8-a/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "1025051de6209aa4f68fc40025cd90fb13cb0934",
+      "new_mode": 33188,
+      "new_path": "28/64/arm64_armv8-a/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a9501fbac09e576b3e28558d28d8e6e8c759b400",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "adc1a8fb61c0329671e49d54af463045e1dd7bf3",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "be8711b5849c77cde3c4c08bd42a274186b48f03",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "27f575ca5d4183cdf419ba9710208b5cf03b1ba2",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "fafcb19ebe82901306852c80260ec0af7f338d1a",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "bd0e43876cdea28907ed2b10c39764e4fb1de57e",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "1a143a681ac2bcdd05a73f7d6b066161a5d19cb1",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "4f7b07149ebf23cbe3d7aa460c50d1c17600bec1",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a4a3e38d05c83ef1aab447ced89e41cdbab54924",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "534ebc03a164e5ce2ea463698acadc67987fe5e0",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "0e4ce3c8e145a0b69e74c9a79c7b88ff6141a942",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "947e3e85aad83fcdd199c7bb61d7911b9a7906ff",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "cff65b72e558471f6de0e860e6be81852f5c2365",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "94fcc0d87ffd6b89775f0fd31d2e7836138adb1c",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "38b208df4579777ea6f9e1e453f03c3ca3c0aa42",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "601f059e960a8cbe15b0d9d1eb555644fc3c99c0",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "8d168756c65b5f22a6d641d0667e388cc5d980fc",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv7-a-neon/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "d570b58e0fa5441e7f78c9722122e1f9701b0065",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libEGL.so.lsdump.gz",
+      "new_id": "4b2f7054fcf186d399f48e29b7cd2037e1eca6a1",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "d6ace6f572f66ac80be335db3002d501d5ef1ebb",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "499e4143803af098289551290a901d086fe9f937",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "7a1c590bc3780920c6c9482fb0049660bccfbe41",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "0cb93da5af404d1a7037226fc3eaedb1a55fb90b",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "3524c8858f8a854283349f500a01cfe2475d0de0",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "6824aa6674f7424a65bb76058556c0b34ba10ce1",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "8994d3c6d3a41c4332f70ac6100e5d15d8d40198",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libRS.so.lsdump.gz",
+      "new_id": "fb2f2d7fa6b3ea0d6a3e8c792848daab14e6c61e",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "1700a291899edadcb8acaca13b9aafbd66b0fec0",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "0b9c2a304e5d0657f936f7b7d790cc3cc557b8f4",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "33e3aaafbb11700b0966b9691ffd581838d60a52",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libc.so.lsdump.gz",
+      "new_id": "938693b065ad8a98a8a5e60a0d73a0e0c0dd7561",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "426c003dea00ef7c92f1233cd59ac7a966053f2d",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libdl.so.lsdump.gz",
+      "new_id": "fecc0018e65a04415a10ad1e04f6ea6a69f0d5ef",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "debc1f85db3bc461e7a79a0f1863aaa96bf0e735",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libft2.so.lsdump.gz",
+      "new_id": "acfdd591e2a653d8fae6682838f0f9153446bfc5",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "2e84b3fa64cda88eeba8a45a2a43924ffc1f55e2",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/liblog.so.lsdump.gz",
+      "new_id": "0b7d36abf69c4de2f4a131602f2cf6653e0bd74f",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "258f04f20b95a12f1ad963c550611983c33aa124",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libm.so.lsdump.gz",
+      "new_id": "7d68bfa7643fffa4f9a088ff25c3f319409d4353",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "071bf0fb81a185d5a30c20519ae492fd609a2499",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "6833c4f6cbda6a96c3b8dafce7a7440f07e19bc2",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4833189b6efff69b8f2b04a4cc4c3fbdfd67d6c9",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "43c151c2895856f69ee3d16f368cc18bcf092b36",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba6c3704dd8b7ffe54274f5723fe09acd11182ff",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "4103f0e16bf4cf4806f863494258d2c96b35ddb8",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "178d6acee0d15e3915f232994f915b38b8b32d52",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libsync.so.lsdump.gz",
+      "new_id": "570ed597c2e19769336fb1f4d828ec5e3e27d2eb",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9e4906de43a1edfb832925ffce3de80d8acb9a4d",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "c47e9b8a731d69ea5d6c3bdd3d2a7b89f4e0e4ce",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "583c28801d84a820fb94950d8e87f630abe0093b",
+      "old_mode": 33188,
+      "old_path": "28/64/arm_armv8-a/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "f37f86b69491a995b928685db367f1e64b522635",
+      "new_mode": 33188,
+      "new_path": "28/64/arm_armv8-a/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "3532e03ad742a30c5768966704f6340ed6926b08",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libEGL.so.lsdump.gz",
+      "new_id": "f5a03bfc69882dc3c19334944e55eb6d9e20c195",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "a99ab11bca7bfe15d2183ab32d69cd7270a6ab80",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "61e138588c89986667dd2bbb11d673a19bd500b1",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "513ae486d43f4434cba74325ae2d6e819b1b0555",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "a4ddf4158351c513d857606825694c7cdb383519",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "bdb0664813dbce907488a6efa8ac269e27a2f5f7",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "1f933b55dcd7ca91a137b76e0dc18a76383c6582",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9771f6fa50b37bb504edcdee0afa71f0d07607dd",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libRS.so.lsdump.gz",
+      "new_id": "aed6ab92b179a5dbfbf8c770b3a19f5213fae522",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "7e3ba0797cc537fe89418140fca9324fc9f0f5af",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "d3c2cf23e8fe1e50790a2c13814c85e14ef21c96",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "f068d7ea0760286f5392cac427d54f19a4b6be3e",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libc.so.lsdump.gz",
+      "new_id": "99aa46f5d1c0b91c7b8c631ce3fa9038326a91be",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "09a557bd8b9f6b0009b95b84b66821e77d76d2c2",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libdl.so.lsdump.gz",
+      "new_id": "ff9e50663f234812ba3b89978cbab4ed31dacdf6",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "b4f52649b56287f071f0030d5406d31c311eaa0c",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libft2.so.lsdump.gz",
+      "new_id": "e142b292bfa4c85a1a3fa92c136144fddcd88468",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "64e7d771900a38a1690f3c63e8e8ce43276adb77",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/liblog.so.lsdump.gz",
+      "new_id": "9c74f08a3825e628ad5137b7e333e70479133716",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "cbf3cdd1859a9078af37fd0b4893609aab121d8a",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libm.so.lsdump.gz",
+      "new_id": "4d0f9e41026a39f24e35f315eb3754c4879afe35",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "8cc18d72ba1484b3a94a8f5f10bb05f737003d5e",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "38fc555f5feb2171ddcc09c85d63a8a308f32f0b",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "38ad6543c44386fa5bfb0971b6c97272648f8bd2",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "47ad05db5261e3e94c4fe511169333db2945ce81",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "1a29e87ca06f36c5840b01fdf667a92c8b5fcc35",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "7b2c143bd7d43426a81fbe9882b5fbf5a5878b57",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "29470bf9e3841f17e62cd8547ffe2471b6c8de84",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libsync.so.lsdump.gz",
+      "new_id": "7cf950996e1f53bfaa359f7a560ea75e8020ae6c",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "274052287381fdd224f63d0c8e40172ed4e5d2a5",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "bb3d82cf5ffdc2055ae39c0ab40543ae8e242977",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6db366495d6bef45838af82e55b51b8e86b8bd2",
+      "old_mode": 33188,
+      "old_path": "28/64/x86/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "f67a6139df06549693e022e5b4dc1a98faa2c6d7",
+      "new_mode": 33188,
+      "new_path": "28/64/x86/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4e6e3e7c71dabec5bd89b6c9fb593c51d3497d79",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libEGL.so.lsdump.gz",
+      "new_id": "8468a6f5fb3dc79a0399c15c37a8d3167040ddd6",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "b8fca4c5edf49be9c360425eda1dd4314f90256b",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "5cbd1351d7683801754fe3bde915fb00f39a4ad2",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "71cf9c374d2407f8a27e79a8d05ad97febad0a49",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "7e06dca219fc35235dbfa483816d4ce04baadaec",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "d1320830a6e54e31c56d3d1d2fee93b7ce4c1c8b",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "e199ba6c48a295be1fe04efce814fb2689de185a",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9f00711ed8e1cf8311dbc0c0fae73857d5faa7a2",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libRS.so.lsdump.gz",
+      "new_id": "9e486c6f32eec74a5f91d0b9360022e3f2a26144",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "cadae71aa7c4f8daa3b7a65a5241d0bcfb4f6c3a",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "12073fb5e05f672c7afda51a5bf4c5862dd1fabc",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "a520698b0afb6da0f3e326693c17c79688876bbe",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libc.so.lsdump.gz",
+      "new_id": "e2d403a0dc282db4edffdc623a0dbc7823ae3af0",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4e1a437abbad28636bafccf04c5724a9d21f4c4b",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libdl.so.lsdump.gz",
+      "new_id": "42cdae9010c8b9497dc28aa8b2b0fee11a0d339f",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "808bc0e119bbf430fb200f55d3ee1280f21955c0",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libft2.so.lsdump.gz",
+      "new_id": "b63c8b6715ae000dc54f28cb44a04e2b26ed56c8",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "462c55126e95e2c1f5925e3acec40a6f06100354",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/liblog.so.lsdump.gz",
+      "new_id": "ecd162f93de5d9810c4e2060d5959e41a51adbfa",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "6e62a211dbb843bc38194b51365db0cc334f389d",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libm.so.lsdump.gz",
+      "new_id": "e163ef5cd51b268fa8c94031ea0eb88292918b7b",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "60ce749812e0ab71f92606fbac95c9d45c90ad10",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "91c26ca387c9044e4b0b905968ade9628686a5ee",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "5a7e52935067049d5e88be8a9b533ccccc23846c",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "88964aef2c8da634efc4537ed58f9232ec56866c",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "993f6160fd56e75de6e7c8b87e3b03c2b5678adb",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "b19963b48c6420c462c430a577e330a25e55e637",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "0bfcfc541dfed6bc57da55b8c3702d03c6475fd8",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libsync.so.lsdump.gz",
+      "new_id": "890cdb76657a24ff75b08791cacd89bd68a1ba87",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "13278c2c41d5fd1be18747addaf9c5800de73e34",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "c250d2ce88a1d2962143710aa3fe9e69e38ed870",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "4d530f746610e4833ef43d8719cdabd0513fc742",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_64/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "60188fe9db2adabef511864db1c69e7553e9e1c5",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_64/source-based/libvulkan.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "a22acab72385d29d49d25f391ae10dc3cf96b2c8",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libEGL.so.lsdump.gz",
+      "new_id": "9b13333da2a50b4e3dc80ec43b8aba31f67bb20f",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libEGL.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ffe284e795b02becc3bf7b10e34e877baa446f2a",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libGLESv1_CM.so.lsdump.gz",
+      "new_id": "971f9d2fc4f33380e4caabd0aac52291b6a981b9",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libGLESv1_CM.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "3bd4687886af856955a8637ad9420ec57f5697cb",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libGLESv2.so.lsdump.gz",
+      "new_id": "fe71798961b8c71b2eb977f7f013972af8452aa2",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libGLESv2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "96a6674667a8d8ca0e12d5698f9006eaee7ce0cb",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libGLESv3.so.lsdump.gz",
+      "new_id": "86c5c1dee6cf6b4b25f10b76d62183914df6cce6",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libGLESv3.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c093a00d8f5a7ce8ead4a1689518f666c767708a",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libRS.so.lsdump.gz",
+      "new_id": "5c86f8200b553ed3ebbc623b716a8bfbc0b897f0",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libRS.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "e05ebeb9952280816083d3c540ece048159745d0",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libandroid_net.so.lsdump.gz",
+      "new_id": "3bc808479ecdb89e0ce5e60b6632736390b78adb",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libandroid_net.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "77b7bdfba90384fa5b1114aa24ad9b38f6d85af0",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libc.so.lsdump.gz",
+      "new_id": "d5cc9fc81a3798070714146c3bcbc432db4d8241",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libc.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "abe22a179a5ff720201416c7bf1c4780d6b12b04",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libdl.so.lsdump.gz",
+      "new_id": "1d31c6d24cbf12b4b96f80a32b6ee00223920cc4",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libdl.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "cb9abdb685d18b44eee01ec24e2dace0822d5d45",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libft2.so.lsdump.gz",
+      "new_id": "947237626125c6dc880be49690620d66445ddf45",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libft2.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "c780c875f9ee4e1126dcc3e8980fd413d62bfce3",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/liblog.so.lsdump.gz",
+      "new_id": "3563ae1fb5c91623d7ae31154e7790f92e6ec762",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/liblog.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "e89cb7dc4aef0a6f25701a7be27b8324c1a68df1",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libm.so.lsdump.gz",
+      "new_id": "1390bfbb3b0c95e662a112eeb7c267652af9f31c",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libm.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "9a6e5379528dcc4496e53f123c131aa9412316eb",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libmediandk.so.lsdump.gz",
+      "new_id": "3bddbd0d686ced5e3dff2249878db2c2fdfa08d9",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libmediandk.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "98ba24cac4dbd2d020d6493f141704758dae915c",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libnativewindow.so.lsdump.gz",
+      "new_id": "8d7f1be204a537cfe458ffa5923751e46293ed08",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libnativewindow.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ba382d46544a7b543dbc6143ca6bb01b8639c897",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libneuralnetworks.so.lsdump.gz",
+      "new_id": "8dcfa43605104040a25cc439a067d7145a49c25a",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libneuralnetworks.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "e278a12b00f2da432da8c3701dd43d031ecc7fc9",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libsync.so.lsdump.gz",
+      "new_id": "1b8677d4573be0a36234d218992efe7c43906536",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libsync.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "48ed56d40836b7d7fecc0ad25daec2d0e4817625",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libvndksupport.so.lsdump.gz",
+      "new_id": "f7a3b66d86d999fa86fcfb835bf31bc48d1a8287",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libvndksupport.so.lsdump.gz"
+    },
+    {
+      "type": "modify",
+      "old_id": "ca2676e5d5b2f6fbaddda14c5331d6e71d878332",
+      "old_mode": 33188,
+      "old_path": "28/64/x86_x86_64/source-based/libvulkan.so.lsdump.gz",
+      "new_id": "d44d0996c530fabccd13d3f2c5f32575c6839561",
+      "new_mode": 33188,
+      "new_path": "28/64/x86_x86_64/source-based/libvulkan.so.lsdump.gz"
+    }
+  ]
+}

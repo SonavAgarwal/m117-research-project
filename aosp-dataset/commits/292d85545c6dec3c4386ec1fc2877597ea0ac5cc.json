@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "292d85545c6dec3c4386ec1fc2877597ea0ac5cc",
+  "tree": "d3071697b5b1ab5d2387efe37b441d1fb586c267",
+  "parents": [
+    "d8cc1fe9294accf05c6afcbe7821a485b9939af7"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Jul 13 17:47:56 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Aug 02 17:50:21 2017 +0000"
+  },
+  "message": "MediaPlayerService: fix access of mPlayer in client\n\nTest: poc doesn\u0027t crash\nBug: 38234812\nChange-Id: I6f9be046ff66d2d5bed27bd712287e4ead550830\n(cherry picked from commit 502c2f405355c3253990ac4edae345ac1907f916)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bd16e91e362c0ce5eda20765b33af7af83302e9d",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MediaPlayerService.cpp",
+      "new_id": "6e689e6a92cf733daeeffc9162ab856803216435",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MediaPlayerService.cpp"
+    }
+  ]
+}

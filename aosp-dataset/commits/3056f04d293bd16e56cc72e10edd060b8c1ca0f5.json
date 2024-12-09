@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "3056f04d293bd16e56cc72e10edd060b8c1ca0f5",
+  "tree": "f548e640ad238d6f0a7cd3f677f08e77c5cb92e3",
+  "parents": [
+    "6873eb9c1229f1e5a66e7b73a62fca05a2174a3d"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Wed Jan 17 13:18:36 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Feb 14 17:17:45 2018 +0000"
+  },
+  "message": "Fix OOB read due to integer overflow\n\nThis only happens on 32bit system.\n\nBug: 70808908\nTest: minikin_tests\nChange-Id: Id394e0ccf83bddd2db9957386dc3ed892feae8a5\n(cherry picked from commit 2f88f76f257d046066ede752156968aff712114b)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c6318f5581ddea3326cdbba9dd1ee0419d81c641",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "78e7b0d31905a447c6f40137f4496cc4ba92f938",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fe2d7ba31a161811c8d2fc2c9f8ae270420b34d6",
+      "old_mode": 33188,
+      "old_path": "tests/unittest/CmapCoverageTest.cpp",
+      "new_id": "590a36396b9eeac5aa9078d4dcec3896bca37709",
+      "new_mode": 33188,
+      "new_path": "tests/unittest/CmapCoverageTest.cpp"
+    }
+  ]
+}

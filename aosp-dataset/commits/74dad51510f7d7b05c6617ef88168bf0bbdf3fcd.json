@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "74dad51510f7d7b05c6617ef88168bf0bbdf3fcd",
+  "tree": "cd4daa86dd11064b6e2fdc837b33a4ff74d1c7b8",
+  "parents": [
+    "249239391c732c25c5edb62636cfe188131af3a4"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Sep 24 13:34:35 2015 -0700"
+  },
+  "committer": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Sep 24 14:42:03 2015 -0700"
+  },
+  "message": "Disable opening network debug ports for security reasons\n\nBy default, we open up to three TCP ports that are used\nfor debugging purpose:\n\n * TCP port 8872 - used for forwarding btsnoop logs at real time\n   Note: the port is open only if \"Bluetooth HCI snoop log\" is enabled\n   in the Developer options\n * TCP port 8873 - used for HCI debugging\n * TCP port 8879 - used for debugging the Bluetooth counters\n\nThose ports are disabled by default.\nTo enable, the following #define should be added at the top of the\ncorresponding file(s): btcore/src/counter.c hci/src/btsnoop_net.c\nhci/src/hci_inject.c\n\n   #define BT_NET_DEBUG TRUE\n\nBug: 24371736\n\nChange-Id: I5cb43af1a5d29c331eb5ef61a24dccbe95df6f40\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "08aa518ae08bd387060a83d953868b24c2866931",
+      "old_mode": 33188,
+      "old_path": "btcore/src/counter.c",
+      "new_id": "b88c7a27e57911051deebb279257825dac9a6d46",
+      "new_mode": 33188,
+      "new_path": "btcore/src/counter.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "c601da8112ce40da2ba269748341696ac10c1dde",
+      "old_mode": 33188,
+      "old_path": "hci/src/btsnoop_net.c",
+      "new_id": "c6a9cd61aa84921286e84dd770ed09c1b1b66303",
+      "new_mode": 33188,
+      "new_path": "hci/src/btsnoop_net.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "a17a3d3b779f6108dd0c5414f58b6778c8d8e81b",
+      "old_mode": 33188,
+      "old_path": "hci/src/hci_inject.c",
+      "new_id": "8ba5f989a519f4452b2f51ed22a602a30d9b9f9f",
+      "new_mode": 33188,
+      "new_path": "hci/src/hci_inject.c"
+    }
+  ]
+}

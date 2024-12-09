@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e1dd453c6816d4b33d5c7950e8edc99d9e3836f4",
+  "tree": "9dbec22740db99bbca8421e8be97cd7e1184d27d",
+  "parents": [
+    "bf6f182f36e1bf14860f8ff97d63af7b17ad182c"
+  ],
+  "author": {
+    "name": "Eran Messeri",
+    "email": "eranm@google.com",
+    "time": "Mon Mar 25 14:31:04 2019 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Apr 16 22:37:18 2019 +0000"
+  },
+  "message": "Permission Check For DPM.getPermittedAccessibilityServices\n\nBug: 128599660\nTest: com.android.server.devicepolicy.DevicePolicyManagerTest\nTest: com.google.android.gts.devicepolicy.DeviceOwnerTest\nChange-Id: I8be915bd6a4ff99884d23005a4c6f0100806dbe8\nMerged-In: I8ee3f876fcaffa63636645f0f59709cd147254ef\n(cherry picked from commit 4fd13eefcf99d9b9b0d5f5ea99fdc7c799c83d23)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "aac341c1e6e4e1faab7c99f4ac49db435044d48f",
+      "old_mode": 33188,
+      "old_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java",
+      "new_id": "77cb99f64eedb280aed85cd0d2556ec012dd5972",
+      "new_mode": 33188,
+      "new_path": "services/devicepolicy/java/com/android/server/devicepolicy/DevicePolicyManagerService.java"
+    }
+  ]
+}

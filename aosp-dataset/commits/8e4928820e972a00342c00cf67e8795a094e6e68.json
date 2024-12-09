@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8e4928820e972a00342c00cf67e8795a094e6e68",
+  "tree": "9b3cc356fdc13123d63642b0bfe557494b02f7f3",
+  "parents": [
+    "70a5fd9979ee7ff2a4071db0335813c0c5a72399"
+  ],
+  "author": {
+    "name": "Eugene Susla",
+    "email": "eugenesusla@google.com",
+    "time": "Mon Oct 26 09:08:49 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:23:48 2021 +0000"
+  },
+  "message": "RESTRICT AUTOMERGE\nPrevent non-system overlays from showing over CDM UI\n\nSince CDM grants privileges, it should have the same overlay\npolicy as permission UI\n\nTest: use an app wit ha visible overlay to ensure\nthe overlay disappears when CDM is shown\nFixes: 171221090\nChange-Id: I004843edf5a156dc07fb961edf80272f5cb50163\n(cherry picked from commit ea4ce4d48eb22e05f03b36e281149f1e944674fa)\n(cherry picked from commit 3c2fece4a52512c7dc7a0101bc6b435c44490450)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e501e1269aeb3ff75fcc4e9535ce9c12ca976f01",
+      "old_mode": 33188,
+      "old_path": "packages/CompanionDeviceManager/src/com/android/companiondevicemanager/DeviceChooserActivity.java",
+      "new_id": "5ac059be2010685e0e237337a0817d7d21e79733",
+      "new_mode": 33188,
+      "new_path": "packages/CompanionDeviceManager/src/com/android/companiondevicemanager/DeviceChooserActivity.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1390ace71179f04a09c300ee8d0300aa69d9db09",
+  "tree": "0127506b596be662811a2a1a1f8d6537f75055f5",
+  "parents": [
+    "c1c270dba20afa63a5b7769646cf721d0fa7c431"
+  ],
+  "author": {
+    "name": "Pierre Imai",
+    "email": "imaipi@google.com",
+    "time": "Thu Feb 11 23:40:46 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:33:24 2016 -0800"
+  },
+  "message": "Improve length checks in DHCP Options parsing of dhcpcd.\n\nBug: 26461634\nChange-Id: Ic4c2eb381a6819e181afc8ab13891f3fc58b7deb\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0a1d220439796266e532bb8b49fedb07ec7cc396",
+      "old_mode": 33188,
+      "old_path": "dhcp.c",
+      "new_id": "a03ac05a5e4690ec55cf209d3099cb70951a1ee5",
+      "new_mode": 33188,
+      "new_path": "dhcp.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fbe5177bd5d704dabf434458649fd93a07d8d654",
+  "tree": "80f060e6aceba982c4ef9695859a287b826e4ebe",
+  "parents": [
+    "bb2279de3ca08408433dc82496b60ecf4e2b9520"
+  ],
+  "author": {
+    "name": "Tej Singh",
+    "email": "singhtejinder@google.com",
+    "time": "Wed May 19 20:12:46 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 16 01:11:15 2021 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] Fix OOB write in noteAtomLogged\n\nIt\u0027s possible for bad atoms to have negative atom ids. This results in\nan OOB write when we note that the atom was logged. This adds a\nvalidation check on the logging.\n\nAlso added safetynet logging for negative atoms\n\nBug: 187957589\nTest: POC in bug no longer led to the OOB write \u0026 crash\nTest: checked event log for safetynet logging\nChange-Id: I8a6b094c94309d7b02430fb860891ef814efb426\n(cherry picked from commit cc0bba36c7c326e2fb75f1531547d2ed861d392c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6e89038f415208be27b084b692e3a0c9061d33ec",
+      "old_mode": 33188,
+      "old_path": "cmds/statsd/src/guardrail/StatsdStats.cpp",
+      "new_id": "14b967a11830dfd946b52c39cab580d022cdeada",
+      "new_mode": 33188,
+      "new_path": "cmds/statsd/src/guardrail/StatsdStats.cpp"
+    }
+  ]
+}

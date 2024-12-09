@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7ffd0a26064cf25c0922f2bab511e4b4e8149083",
+  "tree": "3563d87acdb32106030b8895e94d7a30b6413669",
+  "parents": [
+    "4e212c9f2a1257e80592911e59f915e36f7b02dc"
+  ],
+  "author": {
+    "name": "Alistair Delva",
+    "email": "adelva@google.com",
+    "time": "Wed May 20 13:26:49 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:35:31 2020 +0000"
+  },
+  "message": "ANDROID: Fix heap overflow in sgdisk\n\nIf a maliciously formatted USB or SD Card device was inserted into an\nAndroid device, the sgdisk tool could crash. This crash occurs because\nsgdisk does not validate that the number of GPT partition entries\nspecified on disk matches the internal maximum permitted by the GPT spec.\n\nFix this by sanity checking the on disk parameter before using it.\n\nAfter the fix, sgdisk detects the corrupt GPT during the formatting\nprocedure, but it is harmlessly zapped and replaced with a new one.\n\nTest: before fix, saw sgdisk crash while the device was booting up\nTest: after fix, no more sgdisk crashes\nTest: went through \"portable storage\" and \"adopted storage\" wizard flows\n      using the cuttlefish virtual device and a malicious partition\n      table flashed to the device\n\nBug: 152874864\nChange-Id: Iec64bc2ef5c31ad985126f9cf3b755eec7de3abe\n(cherry picked from commit d4d8dd0455312e121d04a1e5a4b8244ff66b6a5e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "9ad769ab605fb8c6900a087f955b88a6b3af7cb8",
+      "old_mode": 33188,
+      "old_path": "gpt.cc",
+      "new_id": "303bdf7889f281b6a0762187e23a2724c13b2dc1",
+      "new_mode": 33188,
+      "new_path": "gpt.cc"
+    }
+  ]
+}

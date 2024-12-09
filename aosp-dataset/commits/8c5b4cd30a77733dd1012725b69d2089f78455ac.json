@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8c5b4cd30a77733dd1012725b69d2089f78455ac",
+  "tree": "ddbbbc0a17f6132ae732f903822014dac2696db6",
+  "parents": [
+    "f68abebd494fe2fb3c9b9085d7da1ffd6c64dbf1"
+  ],
+  "author": {
+    "name": "Evan Severson",
+    "email": "evanseverson@google.com",
+    "time": "Wed Apr 29 11:45:56 2020 -0700"
+  },
+  "committer": {
+    "name": "Evan Severson",
+    "email": "evanseverson@google.com",
+    "time": "Thu May 28 17:41:54 2020 -0700"
+  },
+  "message": "Don\u0027t allow tapjacking permisisoncontroller\n\nUse the filterTouchesWhenObscured attribute throughout the permission\ncontroller.\n\nBug: 155287782\nTest: Manual using PoC app from b/154015447#comment1\nChange-Id: I205395fdcabe68055df15ce9414468a833a0807c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a0561644321c470f4557acec4fc6e93f316ecffb",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "2a00002f30207674359fe063eae3b0f9ee07031f",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "39d0db7d229c2b70880634ba3df37db14a582865",
+      "old_mode": 33188,
+      "old_path": "res/values/themes.xml",
+      "new_id": "32cdc1ad48b3d3e8c272d27f5ff9ab3a6222fdf3",
+      "new_mode": 33188,
+      "new_path": "res/values/themes.xml"
+    }
+  ]
+}

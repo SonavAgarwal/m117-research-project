@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2c75e1c3b98e4e94f50c63e2b7694be5f948477c",
+  "tree": "620d20340ce6be82491d88ad6e3b46fa13e089ba",
+  "parents": [
+    "5401253f0e5d9aba834930b97734070c39980a09"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Mon Sep 12 14:40:47 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Sep 30 11:45:51 2016 -0700"
+  },
+  "message": "IOMX: do not convert ANWB to gralloc source in emptyBuffer\n\nBug: 29422020\nBug: 31412859\nChange-Id: If48e3e0b6f1af99a459fdc3f6f03744bbf0dc375\n(cherry picked from commit 534bb6132a6a664f90b42b3ef81298b42efb3dc2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b45e9f1ada232446d4276ea815418ed6daacb5c0",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "f689eed242a868117fa6d8daf6ce89dc471c08b4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

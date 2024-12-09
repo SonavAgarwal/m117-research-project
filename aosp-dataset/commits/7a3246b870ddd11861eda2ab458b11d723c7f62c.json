@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7a3246b870ddd11861eda2ab458b11d723c7f62c",
+  "tree": "a1a17f49cab71935dda9c98ba2b85016fcfd00e0",
+  "parents": [
+    "c66c43ad571ed2590dcd55a762c73c90d9744bac"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Wed Nov 02 14:17:57 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:18 2016 -0800"
+  },
+  "message": "DO NOT MERGE: defensive parsing of mp3 album art information\n\nseveral points in stagefrights mp3 album art code\nused strlen() to parse user-supplied strings that may be\nunterminated, resulting in reading beyond the end of a buffer.\n\nThis changes the code to use strnlen() for 8-bit encodings and\nstrengthens the parsing of 16-bit encodings similarly. It also\nreworks how we watch for the end-of-buffer to avoid all over-reads.\n\nBug: 32377688\nTest: crafted mp3\u0027s w/ good/bad cover art. See what showed in play music\nChange-Id: Ia9f526d71b21ef6a61acacf616b573753cd21df6\n(cherry picked from commit fa0806b594e98f1aed3ebcfc6a801b4c0056f9eb)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "394215812abae1549d0d5227479a40b49f9eadd8",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/id3/ID3.cpp",
+      "new_id": "33f79fdb5da3a0c7214968cb258dc42d233500f7",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/id3/ID3.cpp"
+    }
+  ]
+}

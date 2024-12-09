@@ -1,0 +1,93 @@
+)]}'
+{
+  "commit": "0283c73ccf4c54d0ed8e8b479ea76cb1e1f815d8",
+  "tree": "1baa6992dbcf0c3fa8d2cf0e55421f06aae10cae",
+  "parents": [
+    "9085ced4a58bb7a27c51411ab18d3e4a5612649a"
+  ],
+  "author": {
+    "name": "Robert Carr",
+    "email": "racarr@google.com",
+    "time": "Tue Apr 02 16:32:58 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:57:39 2019 +0000"
+  },
+  "message": "[RESTRICT AUTOMERGE] SurfaceFlinger: Indicate whether we have captured secure layers.\n\nFor purposes of the screen rotation animation the system server is allowed\nto capture secure (not protected) layers and trusted not to persist screenshots\nwhich may contain secure layers. However when displaying the screen rotation animation,\nthe layer the screenshot is placed on will itself not be secure, so if we record\nthe animation the recording will contain persisted versions of the secure content. Here\nwe forward whether the screenshot contains secure content so that system server can do the right thing.\n\nBug: b/69703445\nTest: Transaction_test#SetFlagsSecureEUidSystem\nChange-Id: If493a39257b5e15410360a3df23f3e0fc8cf295c\n(cherry picked from commit a1586de21f6c9191b99d2f3c815fcd15c48114e1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e230b3affbd195a135871cd126393e7ed3b5b73a",
+      "old_mode": 33188,
+      "old_path": "libs/gui/ISurfaceComposer.cpp",
+      "new_id": "cec86e2a04546f95b0f12effe39f286ffd822522",
+      "new_mode": 33188,
+      "new_path": "libs/gui/ISurfaceComposer.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "263c7ef9e0a20b1d43f51caf2bad16686eea16ff",
+      "old_mode": 33188,
+      "old_path": "libs/gui/SurfaceComposerClient.cpp",
+      "new_id": "100257629ee022ffd092300ee87b89787408c2cf",
+      "new_mode": 33188,
+      "new_path": "libs/gui/SurfaceComposerClient.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "fc7579ff110bc53c48daf285c58a4f28ed49e849",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/ISurfaceComposer.h",
+      "new_id": "0db21a56e3858bae66137a25ed84ee700779ed66",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/ISurfaceComposer.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "7d72661717b358caa015d9115a20a66ea1f8517b",
+      "old_mode": 33188,
+      "old_path": "libs/gui/include/gui/SurfaceComposerClient.h",
+      "new_id": "49bb6875613f5043c2b065b6b549391de2ae1a7e",
+      "new_mode": 33188,
+      "new_path": "libs/gui/include/gui/SurfaceComposerClient.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "959d7825063b6305590b5994dee84ea552ec0b68",
+      "old_mode": 33188,
+      "old_path": "libs/gui/tests/Surface_test.cpp",
+      "new_id": "04686e5ad2b3c723283ac145980ec429f2ac8349",
+      "new_mode": 33188,
+      "new_path": "libs/gui/tests/Surface_test.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "c1dc65b11a92aadad8ff016cfb32bfb41011ca92",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.cpp",
+      "new_id": "25cb5896e19142a461f831127a46b290a249c655",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "2577f179cb4363c68d2735aac97f48b9d8363588",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/SurfaceFlinger.h",
+      "new_id": "60bf94ffec13a2525bd779f9fdc50c34597ffa2e",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/SurfaceFlinger.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "deca17799c4ebd0389a45f7f2a300b0fbc48e420",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/tests/Transaction_test.cpp",
+      "new_id": "6ce2075a3d3e8f9182f5b6fa7dfeae75249f735d",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/tests/Transaction_test.cpp"
+    }
+  ]
+}

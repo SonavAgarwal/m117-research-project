@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "453b351ac5bd2b6619925dc966da60adf6b3126c",
+  "tree": "c73891caec36cbc235b5822239deb66d2fadea3c",
+  "parents": [
+    "26965db50a617f69bdefca0d7533796c80374f2c"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Fri Nov 11 09:20:00 2016 -0800"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:45:19 2016 -0800"
+  },
+  "message": "Make VBRISeeker more robust\n\nBug: 32577290\nChange-Id: I9bcc9422ae7dd3ae4a38df330c9dcd7ac4941ec8\n(cherry picked from commit 7fdd36418e945cf6a500018632dfb0ed8cb1a343)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "58f2c6065e134a094a7fbd21856a079d230edd51",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/VBRISeeker.cpp",
+      "new_id": "5b8f23a77aaee411da2a49bddd1ff13fb901e64e",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/VBRISeeker.cpp"
+    }
+  ]
+}

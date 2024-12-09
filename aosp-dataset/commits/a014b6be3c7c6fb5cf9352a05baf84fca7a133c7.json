@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a014b6be3c7c6fb5cf9352a05baf84fca7a133c7",
+  "tree": "4bf7d0bb334f5a0673447240cf293534e55c2fc4",
+  "parents": [
+    "0041a76256f0b43b4ccf3b00dee60dec0f3b52a4"
+  ],
+  "author": {
+    "name": "Hugo Benichi",
+    "email": "hugobenichi@google.com",
+    "time": "Wed Oct 05 18:33:21 2016 +0900"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:46:49 2016 -0800"
+  },
+  "message": "Catch runtime exceptions when parsing DHCP packets\n\nFix merge conflict into nyc-mr1-security-a-release\nThis patch adds a try catch all to DHCP packet parsing so that\nDhcpClient does not choke on malformed packets, brinding down with it\nthe whole framework.\n\nTest: added new unit tests catching the issue fixed in this patch.\nBug: 31850211\nChange-Id: I3c50a149fed6b2cbc4f40bb4f0e5bb2b56859b44\n(cherry picked from commit 1af48bbbabdf276b7e7a5a86b28f67332ae6b04d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bc8baa12a45b47426801b53c187fca1e7d65288b",
+      "old_mode": 33188,
+      "old_path": "services/tests/servicestests/src/android/net/dhcp/DhcpPacketTest.java",
+      "new_id": "b4e9db77f99f9edf2112d2c6cdd325238b706d8f",
+      "new_mode": 33188,
+      "new_path": "services/tests/servicestests/src/android/net/dhcp/DhcpPacketTest.java"
+    }
+  ]
+}

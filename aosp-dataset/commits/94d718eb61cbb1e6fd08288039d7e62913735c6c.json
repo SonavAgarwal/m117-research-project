@@ -1,0 +1,66 @@
+)]}'
+{
+  "commit": "94d718eb61cbb1e6fd08288039d7e62913735c6c",
+  "tree": "7b42d52c0e38a254f92b9ccbd8d0f9e3d9bf5fbe",
+  "parents": [
+    "e1685cfa533db4155a447c405d7065cc17af2ae9"
+  ],
+  "author": {
+    "name": "Chienyuan",
+    "email": "chienyuanhuang@google.com",
+    "time": "Tue Sep 18 17:13:16 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:19 2018 +0000"
+  },
+  "message": "HFP: Check AT command buffer boundary during parsing\n\n* add p_end parameter to tBTA_AG_AT_CMD_CBACK, bta_ag_at_hsp_cback\n  and bta_ag_at_hfp_cback to indicate effective data range of p_arg\n* add checks for buffer copy overflow in bta_ag_at_hsp_cback and\n  bta_ag_at_hfp_cback\n* add packet legnth checks with p_end in bta_ag_parse_cmer\n* add packet length checks with p_end in bta_ag_parse_bac\n\nBug: 112860487\nTest: testplans/details/218593/3975\nChange-Id: I6bbbc2ba29ad025c7d3ba023d8191af6a11c4aa9\n(cherry picked from commit 28ddbe904bd15c9636063f5431a9360d8e9df8b9)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "84860f94b28b97cd273f273cbb46f264dc4267fb",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_act.cc",
+      "new_id": "eb989eb08e3e37a8a7baa3b2b46ecd1213606f9a",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_act.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "ecd9053c61afa76c986c296695fb72e3482208f4",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_at.cc",
+      "new_id": "90c46ff4a87bd69814c1ca53f6625e9bec22e43f",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_at.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "f36e2f265798fbefa485a6ba004090a461a631b2",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_at.h",
+      "new_id": "c5b5d885c169eb6b9c7ffe30d59e9691d62c0c71",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_at.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "b9cf30666bc131de617fd877501e42e8fe5bf706",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_cmd.cc",
+      "new_id": "2489915703f34a6c0a912309a087799cc3785d9f",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_cmd.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "c6b323096f30a708d9650c34adafde4648135791",
+      "old_mode": 33188,
+      "old_path": "bta/ag/bta_ag_int.h",
+      "new_id": "63934506a4a28dd08f0195f0a840a78f1f2ecd27",
+      "new_mode": 33188,
+      "new_path": "bta/ag/bta_ag_int.h"
+    }
+  ]
+}

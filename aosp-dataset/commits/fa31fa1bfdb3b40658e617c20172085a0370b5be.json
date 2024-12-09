@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fa31fa1bfdb3b40658e617c20172085a0370b5be",
+  "tree": "e1ec6560b61f496a003cc59736bd27c33f4b1cdc",
+  "parents": [
+    "2dac72d06fd1da100ff4a2fe1e495312aceed8e2"
+  ],
+  "author": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Tue Oct 15 00:08:00 2019 +0800"
+  },
+  "committer": {
+    "name": "George Chang",
+    "email": "georgekgchang@google.com",
+    "time": "Mon Oct 14 16:22:56 2019 +0000"
+  },
+  "message": "Correct packagename for protected broadcast\n\nBug: 140417248\nBug: 142219567\nTest: NFC pairing\nChange-Id: I22528d6574a5d5db584aab7eb648b5e083598895\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4df1e8fdba569ec697a93c6bc530cf1000f10e71",
+      "old_mode": 33188,
+      "old_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java",
+      "new_id": "c87fc36ce7356db52d51853a7f7b83a30e203263",
+      "new_mode": 33188,
+      "new_path": "src/com/android/nfc/handover/ConfirmConnectActivity.java"
+    }
+  ]
+}

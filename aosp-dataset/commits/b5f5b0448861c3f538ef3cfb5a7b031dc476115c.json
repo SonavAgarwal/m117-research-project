@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b5f5b0448861c3f538ef3cfb5a7b031dc476115c",
+  "tree": "5ebacc8162efdb8bb10a19f9b2f389b58a025df8",
+  "parents": [
+    "721f9c585cc8b4cfda0e3341792d65add4d20b58"
+  ],
+  "author": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Mon Sep 16 15:22:08 2019 -0700"
+  },
+  "committer": {
+    "name": "Raman Tenneti",
+    "email": "rtenneti@google.com",
+    "time": "Wed Sep 18 21:16:37 2019 +0000"
+  },
+  "message": "AOSP/Email - Secure UPDATE_WIDGET receiver with a new permission\n\nThe update methods sends a broadcast with the account name, the folder, etc.\nThis implicitly bypasses the GET_ACCOUNT permission if a third-party\napplications listens to this broadcast.\n\n- Introduce a new app permission\n- com.android.email.permission.GET_WIDGET_UPDATE\n- Now the com.android.email.permission.GET_WIDGET_UPDATE is required to\n- receive the emitted broadcast\n- Add this permission to our existing widgets.\n\nPorted changes from cr/106302205\n- added uses-permission GET_WIDGET_UPDATE, so Gmail app has the permission to receive the intent\n\nBug: 139803872\n\nTest: manual - Ran the following tests on Pixel phone. Tested the email UI.\n\n$ make -j 40\n$ make Email -j\n$ make EmailTests -j\n  -rw-r--r-- 1 rtenneti primarygroup 6356400 Sep 16 14:10 out/target/product/marlin/testcases/Email/arm64/Email.apk\n  -rw-r--r-- 1 rtenneti primarygroup 389599 Sep 16 14:18 out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n\n$ adb install -r -d -g out/target/product/marlin/testcases/Email/arm64/Email.apk\n$ adb install -r -d -g out/target/product/marlin/testcases/EmailTests/arm64/EmailTests.apk\n$ adb shell am instrument -w com.android.email.tests\n  Time: 34.746\n  OK (157 tests)\n\n$ atest EmailTests\n  Summary\n  -------\n  EmailTests: Passed: 157, Failed: 0, Ignored: 0, Assumption Failed: 0\n\n  All tests passed!\n\n$ adb install ../security_attack/bug_139803872/poc.apk\n  Captured the logcat output at rtenneti\u0027s x20web logcat.out.0916.1503\n  while reproducting the steps in b/139803872#comment3\n\nChange-Id: I6eea128c20b555b38d325e3706473bb18080bedd\nMerged-In: I6eea128c20b555b38d325e3706473bb18080bedd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae130648d8da008c14d9b06c554f6830063a7847",
+      "old_mode": 33188,
+      "old_path": "AndroidManifest.xml",
+      "new_id": "68919393d56bdeafc6a24af9dd873a7311c2d5ba",
+      "new_mode": 33188,
+      "new_path": "AndroidManifest.xml"
+    }
+  ]
+}

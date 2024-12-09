@@ -1,0 +1,21 @@
+)]}'
+{
+  "commit": "877a6e05bb08353a4f806ad4d3c9cf6f1c3fb097",
+  "tree": "7bc4f07c500745d83fa204ff8158a264a0c1a294",
+  "parents": [
+    "6c7eb3eb68de6bc7b3b826b1aaadb8fc35efed3f",
+    "e30373edfc3c893547bd5b59c9c72e4f1652e353"
+  ],
+  "author": {
+    "name": "nagendra modadugu",
+    "email": "ngm@google.com",
+    "time": "Wed Oct 10 17:44:34 2018 -0700"
+  },
+  "committer": {
+    "name": "nagendra modadugu",
+    "email": "ngm@google.com",
+    "time": "Wed Oct 10 17:44:54 2018 -0700"
+  },
+  "message": "Merge remote-tracking branch \u0027goog/upstream-pixel18\u0027 into ota-rc8\n\n* goog/upstream-pixel18:\n  keymaster: abort operations on HAL errors\n\nBug: 116055338\nBug: 113354499\nTest: release tests pass\nChange-Id: I788fbbb1ddbbb498e22c387f688caf1c07b1bb42\n",
+  "tree_diff": []
+}

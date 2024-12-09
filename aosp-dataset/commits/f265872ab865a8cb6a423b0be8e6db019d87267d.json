@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "f265872ab865a8cb6a423b0be8e6db019d87267d",
+  "tree": "5e4a71ff0a624f771c2541d0595821a90982b7c0",
+  "parents": [
+    "e9bbc22db47c26e3f97813dedc1ebdc919c70b47"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Thu Apr 18 12:54:56 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue May 14 04:58:21 2019 +0000"
+  },
+  "message": "Zero-init HIDL core types (all)\n\nhidl_pointer - already zero initialized\nhidl_string - now memset to 0\nhidl_array - has no pad to initialize, default initialize since we\n    now expect structs to be default initialized to sane values.\nhidl_vec - now memset to 0\nhidl_memory - has three aligned(8) items which are always set\nhidl_version - unused, but has two uint16_t entries\n\nZero-init HIDL core types (hidl_handle).\nHas 7 padded bits at the end.\n\nSince they are passed across processes.\n\nBug: 131356202\nTest: print out values\n\nChange-Id: I3979232879bb437d17d3a6f6013b53b2951a2138\nMerged-In: I56bacf9ca7ac51d73449d11883c6224e214b8773\nMerged-In: I8dd52e196e1585028d91d97f00861021c21ec09c\n(cherry picked from commit aa79ac59c8907ea608392488f2d24889cf6778c8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8f3c05705ddf5fb6c54bb94a1b7ce6fc77d7beae",
+      "old_mode": 33188,
+      "old_path": "base/HidlSupport.cpp",
+      "new_id": "e08bf9386506ebc768f0e6629786da35a2847f8b",
+      "new_mode": 33188,
+      "new_path": "base/HidlSupport.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5a08bc32e997418c45bbd995d8091705cbbb330b",
+      "old_mode": 33188,
+      "old_path": "base/include/hidl/HidlInternal.h",
+      "new_id": "ed9f02ca2429f5b8ed92e28cd12e3487c1ff967e",
+      "new_mode": 33188,
+      "new_path": "base/include/hidl/HidlInternal.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "f09eb639e0497d77f4db6620653de80e49102dc2",
+      "old_mode": 33188,
+      "old_path": "base/include/hidl/HidlSupport.h",
+      "new_id": "f5d9e71f69e2f13f687043bbec7154908c1efd10",
+      "new_mode": 33188,
+      "new_path": "base/include/hidl/HidlSupport.h"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "1294620627b1e9afdf4bd0ad51c25ed3daf80d84",
+  "tree": "91b3bc0fdc049b9f63089825eb982a88721146f0",
+  "parents": [
+    "a9c585237f1abe9ce5a50661a1eb986a34993255"
+  ],
+  "author": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Fri Oct 07 10:39:33 2016 -0700"
+  },
+  "committer": {
+    "name": "Brad Ebinger",
+    "email": "breadley@google.com",
+    "time": "Wed Oct 12 09:51:57 2016 -0700"
+  },
+  "message": "Restrict SipProfiles to profiles directory DO NOT MERGE\n\nWe now check SIP profile names to ensure that they do not attempt file\ntraversal when being saved. They are now restricted to be children of\nthe profiles/ directory.\n\nBUG: 31530456\nChange-Id: I9c9bce59d852e8a1cf500be6ca59b5e303877180\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8145c94a35bcf9172ce38b3bdd498dbcb861b2d6",
+      "old_mode": 33188,
+      "old_path": "src/com/android/phone/sip/SipEditor.java",
+      "new_id": "a0a9d3c9afef27d5ec233fd1e43b905d91716388",
+      "new_mode": 33188,
+      "new_path": "src/com/android/phone/sip/SipEditor.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a51dfb955e5cc172f3d9128edbff3d6ea1d4320c",
+      "old_mode": 33188,
+      "old_path": "src/com/android/phone/sip/SipProfileDb.java",
+      "new_id": "bfb6f710a6dd016a0cb25b9abd09d4e36cd4f005",
+      "new_mode": 33188,
+      "new_path": "src/com/android/phone/sip/SipProfileDb.java"
+    }
+  ]
+}

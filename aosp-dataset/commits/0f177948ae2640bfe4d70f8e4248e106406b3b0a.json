@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "0f177948ae2640bfe4d70f8e4248e106406b3b0a",
+  "tree": "a9815270c24095917dc4e929f0992aac2ee5f56b",
+  "parents": [
+    "963f71444bc955b946106e7e8028c69b73286d60"
+  ],
+  "author": {
+    "name": "Lajos Molnar",
+    "email": "lajos@google.com",
+    "time": "Tue Aug 02 07:07:05 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Sep 26 23:21:59 2016 -0700"
+  },
+  "message": "DO NOT MERGE: IOMX: work against metadata buffer spoofing\n\n- Prohibit direct set/getParam/Settings for extensions meant for\n  OMXNodeInstance alone. This disallows enabling metadata mode\n  without the knowledge of OMXNodeInstance.\n- Use a backup buffer for metadata mode buffers and do not directly\n  share with clients.\n- Disallow setting up metadata mode/tunneling/input surface\n  after first sendCommand.\n- Disallow store-meta for input cross process.\n- Disallow emptyBuffer for surface input (via IOMX).\n- Fix checking for input surface.\n\nBug: 29422020\nChange-Id: I801c77b80e703903f62e42d76fd2e76a34e4bc8e\n(cherry picked from commit 7c3c2fa3e233c656fc8c2fc2a6634b3ecf8a23e8)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "56ab3f6ed33b425de76175b0d9fccc01db9c5ea3",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/include/OMXNodeInstance.h",
+      "new_id": "94cf15abdd1814ed174a3f854dbd771f912271cd",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/include/OMXNodeInstance.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "4f1a952b1e04f284d35c29c5f4720e5183841892",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "3cb8909a2c1f9ed65198e015d8caa741e55a9af1",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

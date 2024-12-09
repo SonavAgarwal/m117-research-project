@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "308396a55280f69ad4112d4f9892f4cbeff042aa",
+  "tree": "9ee6e4521bc314b383519de537439cd53431df82",
+  "parents": [
+    "51e0cb2e5ec18eaf6fb331bc573ff27b743898f4"
+  ],
+  "author": {
+    "name": "Brian C. Young",
+    "email": "bcyoung@google.com",
+    "time": "Wed Apr 05 09:47:34 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:08 2017 -0700"
+  },
+  "message": "DO NOT MERGE: Add validation for eternal enities\n\nhttps://bugzilla.gnome.org/show_bug.cgi?id\u003d780691\n\nBug: 36556310\nChange-Id: I9450743e167c3c73af5e4071f3fc85e81d061648\n(cherry picked from commit bef9af3d89d241bcb518c20cba6da2a2fd9ba049)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "669cd57f450c9f5b525cebdfe14ded61bba0eef1",
+      "old_mode": 33188,
+      "old_path": "parser.c",
+      "new_id": "63ae15f0f6b08489614ba6bb35c33f554e5d7ec5",
+      "new_mode": 33188,
+      "new_path": "parser.c"
+    }
+  ]
+}

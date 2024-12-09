@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "438381db24b83e6fde76a4ca2c6a9fa91f822265",
+  "tree": "77de1e0d69fa5b73ac4a7e9782b0ee10eda2779f",
+  "parents": [
+    "e8640cee53e13f9dcf2a0f7f322f828d5ea5df16"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Wed Feb 10 00:09:13 2021 +0000"
+  },
+  "committer": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Wed Feb 17 20:23:59 2021 +0000"
+  },
+  "message": "Upgrade V8 to 8.8.278.14\n\nTest: gts-tradefed run gts-dev --module GtsGmscoreHostTestCases\n      --test com.google.android.gts.devicepolicy.DeviceOwnerTest#testProxyPacProxyTest\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n      /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\nBug: 162604069\nBug: 167389063\nChange-Id: I2b2e3d4f8fc99d160b228efb9b96ad6018453e09\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "465dfbdc095852ef0691f4cfa85746122df38fa6",
+      "old_mode": 33188,
+      "old_path": "Android.bp",
+      "new_id": "b81a31834bfd5167be48ef73d26cc4763b03ee0f",
+      "new_mode": 33188,
+      "new_path": "Android.bp"
+    },
+    {
+      "type": "modify",
+      "old_id": "5884bd195083ece132ade466707e3a9816ed6ffd",
+      "old_mode": 33188,
+      "old_path": "src/proxy_resolver_v8.cc",
+      "new_id": "71226ac7f47eaac2abc802c64ca5785c7d1fa246",
+      "new_mode": 33188,
+      "new_path": "src/proxy_resolver_v8.cc"
+    }
+  ]
+}

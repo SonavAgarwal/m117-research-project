@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "ebc284cf3a59ee5cf7c06af88c2f3bcd0480e3e9",
+  "tree": "14bf0af33a510121ba09a57766ebdb9a8fba6ffa",
+  "parents": [
+    "92a7bf8c44a236607c146240f3c0adc1ae01fedf"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Mon Aug 06 14:40:37 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Aug 16 16:02:17 2018 +0000"
+  },
+  "message": "Fix OOB read in avrc_ctrl_pars_vendor_rsp\n\nBug: 78526423\nTest: manual\nChange-Id: I0eeacc6a25b12f4b999098375d0d032cfa462a91\n(cherry picked from commit d945ada503ed9c9ea24e092df51faba57f5d589a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4421c914dc8fe4abc08b8711ca6e7c9af04d0ddb",
+      "old_mode": 33188,
+      "old_path": "stack/avrc/avrc_pars_ct.cc",
+      "new_id": "909274d4205bb641d3b6d824d41e67831022d29b",
+      "new_mode": 33188,
+      "new_path": "stack/avrc/avrc_pars_ct.cc"
+    }
+  ]
+}

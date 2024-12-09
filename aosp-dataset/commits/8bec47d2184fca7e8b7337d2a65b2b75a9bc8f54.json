@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "8bec47d2184fca7e8b7337d2a65b2b75a9bc8f54",
+  "tree": "e03d7db923725d9cc6642dbd44ece3267fd804f2",
+  "parents": [
+    "50d0447566db4a77d78d592f1c1b5d31096fac8f"
+  ],
+  "author": {
+    "name": "Kenny Root",
+    "email": "kroot@google.com",
+    "time": "Thu Feb 25 23:20:47 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Mar 25 17:46:36 2016 -0700"
+  },
+  "message": "OpenSSLCipher: multiple calls to updateAAD were ignored\n\nDo to a missing assignment statement, only the first call to updateAAD\nwas honored and the rest were discarded.\n\n(cherry picked from commit a23b05b327b9d8fefc44276c2fa80278ef210c0f)\n\nBug: 27371173\nChange-Id: I77ad7800b0905f72d5abe76b56352a94056ceb9c\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "305f17407595a8f9e335aad91178003d66ab6263",
+      "old_mode": 33188,
+      "old_path": "src/main/java/org/conscrypt/OpenSSLCipher.java",
+      "new_id": "571c8cb2d1e8dbe567bbe6a17cfff7b7711103ed",
+      "new_mode": 33188,
+      "new_path": "src/main/java/org/conscrypt/OpenSSLCipher.java"
+    }
+  ]
+}

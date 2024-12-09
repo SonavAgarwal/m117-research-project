@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "70dde9870e9450e10418a32206ac1bb30f036b2c",
+  "tree": "06d9f877922c4644c8aef2fd52cc3b9ca8ffd2cb",
+  "parents": [
+    "33c0a544f35937a5175e45dea1c71d37595c4d3f"
+  ],
+  "author": {
+    "name": "Robin Lee",
+    "email": "rgl@google.com",
+    "time": "Mon Feb 22 13:52:17 2016 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:03 2016 -0800"
+  },
+  "message": "Trust CA certificates added for the whole OS only\n\nExcludes any CA certificates installed for wifi-only from being used for\nanything else. Does not take effect retroactively against certs which\nwere already installed.\n\nThe CAs will continue to be saved to a part of the keystore accessible\nby services running under WIFI_UID.\n\nBug: 26324357\nBug: 25780055\nChange-Id: Ifeb9daf24c9f9a22b2b2daf247d5622c707c9885\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "907646e26f879a14dcd7632fc226bdea2788d188",
+      "old_mode": 33188,
+      "old_path": "src/com/android/certinstaller/CertInstaller.java",
+      "new_id": "eb8fa9005d3ce63af08c8ace3b13949f1a86ff42",
+      "new_mode": 33188,
+      "new_path": "src/com/android/certinstaller/CertInstaller.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "c13126881548b4a54e7b10f056ad4037b3b82956",
+      "old_mode": 33188,
+      "old_path": "src/com/android/certinstaller/CredentialHelper.java",
+      "new_id": "b502a1d1716d8fb501036cfee9bc0effae65079d",
+      "new_mode": 33188,
+      "new_path": "src/com/android/certinstaller/CredentialHelper.java"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "64306e1e7b6a0b2257ac05d811be6df9329c9fba",
+  "tree": "a2ab6e3fe052aa8d51a67efb334b28bf4b5dcb01",
+  "parents": [
+    "fa265ed97026e3b8675a2ccbf4035cad6dc1523f"
+  ],
+  "author": {
+    "name": "WyattRiley",
+    "email": "wyattriley@google.com",
+    "time": "Thu Dec 06 11:43:58 2018 -0800"
+  },
+  "committer": {
+    "name": "WyattRiley",
+    "email": "wyattriley@google.com",
+    "time": "Wed Dec 12 08:23:09 2018 -0800"
+  },
+  "message": "Adding SUPL NI Emergency Extension Time\n\nConfigurable by carrier config.xml resource\n\nBug: 118839234\nBug: 115361555\nBug: 112159033\nTest: On device, see b/115361555#comment14\nChange-Id: I52e61656cca8b6fa6468d32d2e69bf60f4c83c61\nMerged-In: I52e61656cca8b6fa6468d32d2e69bf60f4c83c61\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "93e86afe2589cd3e0815c5215c76e3596153c270",
+      "old_mode": 33188,
+      "old_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java",
+      "new_id": "1f9155d9c4aebdbb954bff1f330bf75e60de3780",
+      "new_mode": 33188,
+      "new_path": "location/java/com/android/internal/location/GpsNetInitiatedHandler.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "173f76fa52f5a7efa5cd623faafdb681c1feb5eb",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/location/GnssLocationProvider.java",
+      "new_id": "64cabd9643176eac8d177d4d8a7e513d0dea3ff4",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/location/GnssLocationProvider.java"
+    }
+  ]
+}

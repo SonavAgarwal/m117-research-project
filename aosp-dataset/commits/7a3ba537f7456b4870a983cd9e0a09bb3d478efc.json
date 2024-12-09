@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "7a3ba537f7456b4870a983cd9e0a09bb3d478efc",
+  "tree": "aefe29bb7085d4c4baf080aee0cd0b41e638dae7",
+  "parents": [
+    "e14a0aa7ea6a4494bbfae16864fab44c69b1f8d8"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Wed Sep 27 16:31:08 2017 -0400"
+  },
+  "committer": {
+    "name": "Leon Scroggins",
+    "email": "scroggo@google.com",
+    "time": "Mon Oct 02 15:25:42 2017 +0000"
+  },
+  "message": "Fix truncated webp images\n\nBug: b/65290323\nTest: ag/2974111\n\nMerged-In: Ib6f385766d6d46ed7fe56188cae5a71b100102bd\nChange-Id: I0cba5ab639f1e66b7c493a9f63735a0f5edbcfbf\n\nOriginal message description:\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nIf a webp file is truncated such that no rows can be decoded,\nWebPIDecGetRGB does not initialize its \"last_y\" parameter. We use\nrowsDecoded (passed as last_y) to determine which remaining rows to\nfill.\n\nCheck the return value of WebPIDecGetRGB. If it fails (returns null),\nor rowsDecoded is \u003c\u003d 0 (matching Chromium\u0027s check), return\nkInvalidInput, since there is nothing to draw.\n\nNote that this is a change in behavior for Android. Previously we\nwould decode an empty webp to just a transparent/black rectangle,\nwhereas now we simply fail. I think this is a change for the better.\n\nAdd a test which truncates a file to have 0 rows available and attempts\nto decode it. msan verifies that we no longer depend on the\nuninitialized value.\n\nStop attempting to test decoding subsets from an incomplete webp (in\nCodecTest.cpp). Unless we have decoded the portion covered by the\nsubset, this will fail.\n\nRemove test images inc0.webp (from both dm/ and colorspace/) and\ninc1.webp. These just decode to transparent rectangles. Replace them\nwith inc2.webp and inc3.webp, which decode part of the image and then\nhave to fill with transparent.\n\nChange-Id: I64d40be91c574b45963f9a43d8dd8f4929dd2939\nReviewed-on: https://skia-review.googlesource.com/50303\nCommit-Queue: Leon Scroggins \u003cscroggo@google.com\u003e\nReviewed-by: James Zern \u003cjzern@google.com\u003e\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nFor simplicity, this does not update VERSION or tasks.json, as does the\noriginal CL.\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ab0b91b112b6e39b8f8206b5743f4aaefb7aa702",
+      "old_mode": 33188,
+      "old_path": "src/codec/SkWebpCodec.cpp",
+      "new_id": "d23d00656b0dea0ec625dc1c930dc853353f8346",
+      "new_mode": 33188,
+      "new_path": "src/codec/SkWebpCodec.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "4a9c4a6515db9d7f867aecfc28eb99b293f75de4",
+      "old_mode": 33188,
+      "old_path": "tests/CodecTest.cpp",
+      "new_id": "6bb0f1b2cbcaf524f8a9e906141085a09a483332",
+      "new_mode": 33188,
+      "new_path": "tests/CodecTest.cpp"
+    }
+  ]
+}

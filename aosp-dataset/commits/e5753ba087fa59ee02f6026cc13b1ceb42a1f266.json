@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "e5753ba087fa59ee02f6026cc13b1ceb42a1f266",
+  "tree": "636e7683ce010761d3713048814100fc824ac5fd",
+  "parents": [
+    "f14208e0390d8ee20ee4a5d7605d614e8b1abaf1"
+  ],
+  "author": {
+    "name": "Casey Dahlin",
+    "email": "sadmac@google.com",
+    "time": "Wed Oct 26 17:18:25 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Thu Dec 01 14:47:04 2016 -0800"
+  },
+  "message": "Fix integer overflow in unsafeReadTypedVector\n\nPassing a size to std::vector that is too big causes it to silently\nunder-allocate when exceptions are disabled, leaving us open to an OOB\nwrite. We check the bounds and the resulting size now to verify\nallocation succeeds.\n\nTest: Verified reproducer attached to bug no longer crashes Camera\n      service.\nBug: 31677614\n\nChange-Id: I064b1442838032d93658f8bf63b7aa6d021c99b7\n(cherry picked from commit 65a8f07e57a492289798ca709a311650b5bd5af1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1c355c4689d5dc18afcc228a594685c3398c3558",
+      "old_mode": 33188,
+      "old_path": "include/binder/Parcel.h",
+      "new_id": "2490b82bb22adac0fdef247cbc285a7d3af80abd",
+      "new_mode": 33188,
+      "new_path": "include/binder/Parcel.h"
+    }
+  ]
+}

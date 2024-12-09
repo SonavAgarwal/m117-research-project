@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "252628cffba8702e36b98c193bcd2fe67d8237ee",
+  "tree": "25bf0d8f59a06047c28329b20d025576bebb8755",
+  "parents": [
+    "224824ba17f0b50ba08a67e94f4be638edab7aed"
+  ],
+  "author": {
+    "name": "Hamsalekha S",
+    "email": "hamsalekha.s@ittiam.com",
+    "time": "Tue Aug 01 14:51:55 2017 +0530"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Fri Sep 29 10:25:21 2017 -0700"
+  },
+  "message": "Decoder: Fixed hang in the case of dangling field\n\nThe u1_top_bottom_decoded  flag in the decoder context has been fixed\nto be updated correctly in the case of dangling field\n\nBug: 63315932\nTest: ran POC after patching\nChange-Id: I8db4ebeb94fba735ba45f365c37e52a202ea84cd\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1dfd11f15c7ae91563736797f64b4799fe04e666",
+      "old_mode": 33188,
+      "old_path": "decoder/ih264d_parse_slice.c",
+      "new_id": "6b3cb65a767ca1e69698810456f52d0dc96108eb",
+      "new_mode": 33188,
+      "new_path": "decoder/ih264d_parse_slice.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "af7e33f6043c0be1c0310d675884e3b263ca2438",
+  "tree": "5f5f7e097366757a2640ddb0cc5f5b65090d5f0f",
+  "parents": [
+    "dedaca6f04ac9f95fabe3b64d44cd1a2050f079e"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Aug 21 16:49:51 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Sun Aug 23 12:42:34 2015 +0000"
+  },
+  "message": "libstagefright: check overflow before memory allocation in OMXCodec.cpp\n\nBug: 23416608\nChange-Id: I4dacd38ed42db8f4887c3ee386dc909451f4346f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "43736ad22fd1278b0e68e2139a6c1f0b9f275bd7",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/OMXCodec.cpp",
+      "new_id": "4b3ad6830910ef2943ba7316981a17a5cd45754c",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/OMXCodec.cpp"
+    }
+  ]
+}

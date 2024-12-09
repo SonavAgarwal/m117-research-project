@@ -1,0 +1,147 @@
+)]}'
+{
+  "commit": "ee4ec4b33fddb16606136f656db186ada767e8a5",
+  "tree": "0f478adcfac14de7a232909baed7976e52f42851",
+  "parents": [
+    "1e0789355ec6125d2cc01a64691684d3f3767bca"
+  ],
+  "author": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Wed May 27 17:21:24 2020 +0800"
+  },
+  "committer": {
+    "name": "Sunny Shao",
+    "email": "sunnyshao@google.com",
+    "time": "Wed May 27 17:21:24 2020 +0800"
+  },
+  "message": "Enable the filterTouchesWhenObscured in Special app access\n\n- Enable the filterTouchesWhenObscured attribute on all toggle\n  switches in all pages of the special app access\n\nFixes: 155288585\nTest: make RunSettingsRoboTests\nChange-Id: I011cfe4b7e4e624a8338332ac47a353f7f3ab661\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cb8711cb09a22861461aefe140102bb3130b39ad",
+      "old_mode": 33188,
+      "old_path": "res/xml/app_ops_permissions_details.xml",
+      "new_id": "cbf3e127fdc8c7255f6890673ae593479f1a32ae",
+      "new_mode": 33188,
+      "new_path": "res/xml/app_ops_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "77fd063899409660f8f6d1a1b6b939afa435edf9",
+      "old_mode": 33188,
+      "old_path": "res/xml/change_wifi_state_details.xml",
+      "new_id": "e3b67557d9c436a6e62c92a907bd16a9a2342179",
+      "new_mode": 33188,
+      "new_path": "res/xml/change_wifi_state_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "3e7bec590bb20f592858520964f8acf13535971f",
+      "old_mode": 33188,
+      "old_path": "res/xml/draw_overlay_permissions_details.xml",
+      "new_id": "d3397a707b7b1c0c58f0764bd2d79039687d3a23",
+      "new_mode": 33188,
+      "new_path": "res/xml/draw_overlay_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "ea2abdc52bc940edbe5d3a7774f9fbef5929823c",
+      "old_mode": 33188,
+      "old_path": "res/xml/external_sources_details.xml",
+      "new_id": "57d5587c69ff6100bc1a9632265f2dcf8b9b5fbd",
+      "new_mode": 33188,
+      "new_path": "res/xml/external_sources_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "1baccf227e9c862b244aeddc94ce2edd6adcc302",
+      "old_mode": 33188,
+      "old_path": "res/xml/interact_across_profiles_permissions_details.xml",
+      "new_id": "c40eaf542f63afbf233a1bdc4acdacdf36411e60",
+      "new_mode": 33188,
+      "new_path": "res/xml/interact_across_profiles_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "29ff297b8c2f7eea59bd0f5cb103822ca8e8f007",
+      "old_mode": 33188,
+      "old_path": "res/xml/manage_external_storage_permission_details.xml",
+      "new_id": "fb1c2668c1c65ca4a1c1d3a719eebb034e9758a6",
+      "new_mode": 33188,
+      "new_path": "res/xml/manage_external_storage_permission_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "8cc5993904f25d885da4bc5e082b6bff153673f5",
+      "old_mode": 33188,
+      "old_path": "res/xml/notification_access_permission_details.xml",
+      "new_id": "d956ce911ac50974b797bc20b2a49b44264ebd17",
+      "new_mode": 33188,
+      "new_path": "res/xml/notification_access_permission_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "c215c9d9cf7eb220c17048a024381faa8933c99b",
+      "old_mode": 33188,
+      "old_path": "res/xml/picture_in_picture_permissions_details.xml",
+      "new_id": "5f2a45ae55cef4d19d82f15752eb802f7d7fcfde",
+      "new_mode": 33188,
+      "new_path": "res/xml/picture_in_picture_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "82a6931592c70bb101c134ae38e879f965543ae3",
+      "old_mode": 33188,
+      "old_path": "res/xml/write_system_settings_permissions_details.xml",
+      "new_id": "21ea7065e1be6164cc5736e0246e7f63a3434f2f",
+      "new_mode": 33188,
+      "new_path": "res/xml/write_system_settings_permissions_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "afa8d80a17ce28a74b9c95b7e69d6da238775267",
+      "old_mode": 33188,
+      "old_path": "res/xml/zen_access_permission_details.xml",
+      "new_id": "de014d1c6bd2e4a44f2859310f48b8e132340fa8",
+      "new_mode": 33188,
+      "new_path": "res/xml/zen_access_permission_details.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "d8ec8489cd40f6f5e0a935413e139a5b6082461e",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/applications/specialaccess/deviceadmin/DeviceAdminListPreferenceController.java",
+      "new_id": "e25bb1e4fc00c1844c5da805dab4f72556e97930",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/applications/specialaccess/deviceadmin/DeviceAdminListPreferenceController.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "506ab7642ae3b5ad0cfb320f624362b4c0afd228",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/widget/AppSwitchPreference.java",
+      "new_id": "90f1dbd07827d318a86808b884956e67f36cd0ff",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/AppSwitchPreference.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "c5e0217dd0f844fe832a05b14332d2fb01c5ffa1",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesRestrictedSwitchPreference.java"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "a4e3c6e76daeacaf8f0cd0cdfb01035072bb9e8e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/widget/FilterTouchesSwitchPreference.java"
+    }
+  ]
+}

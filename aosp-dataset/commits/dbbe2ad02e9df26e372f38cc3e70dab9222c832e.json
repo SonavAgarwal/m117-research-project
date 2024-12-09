@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dbbe2ad02e9df26e372f38cc3e70dab9222c832e",
+  "tree": "9dae22de3154359e6ce5c63034399d3baeb270b4",
+  "parents": [
+    "21998a351512eba4ed5969006f0c55882d995ada"
+  ],
+  "author": {
+    "name": "Anthony Steinhauser",
+    "email": "asteinhauser@google.com",
+    "time": "Sun Jan 05 12:19:43 2020 -0800"
+  },
+  "committer": {
+    "name": "Thomas Gleixner",
+    "email": "tglx@linutronix.de",
+    "time": "Tue Jun 09 10:50:55 2020 +0200"
+  },
+  "message": "x86/speculation: Prevent rogue cross-process SSBD shutdown\n\nOn context switch the change of TIF_SSBD and TIF_SPEC_IB are evaluated\nto adjust the mitigations accordingly. This is optimized to avoid the\nexpensive MSR write if not needed.\n\nThis optimization is buggy and allows an attacker to shutdown the SSBD\nprotection of a victim process.\n\nThe update logic reads the cached base value for the speculation control\nMSR which has neither the SSBD nor the STIBP bit set. It then OR\u0027s the\nSSBD bit only when TIF_SSBD is different and requests the MSR update.\n\nThat means if TIF_SSBD of the previous and next task are the same, then\nthe base value is not updated, even if TIF_SSBD is set. The MSR write is\nnot requested.\n\nSubsequently if the TIF_STIBP bit differs then the STIBP bit is updated\nin the base value and the MSR is written with a wrong SSBD value.\n\nThis was introduced when the per task/process conditional STIPB\nswitching was added on top of the existing SSBD switching.\n\nIt is exploitable if the attacker creates a process which enforces SSBD\nand has the contrary value of STIBP than the victim process (i.e. if the\nvictim process enforces STIBP, the attacker process must not enforce it;\nif the victim process does not enforce STIBP, the attacker process must\nenforce it) and schedule it on the same core as the victim process. If\nthe victim runs after the attacker the victim becomes vulnerable to\nSpectre V4.\n\nTo fix this, update the MSR value independent of the TIF_SSBD difference\nand dependent on the SSBD mitigation method available. This ensures that\na subsequent STIPB initiated MSR write has the correct state of SSBD.\n\n[ tglx: Handle X86_FEATURE_VIRT_SSBD \u0026 X86_FEATURE_VIRT_SSBD correctly\n        and massaged changelog ]\n\nFixes: 5bfbe3ad5840 (\"x86/speculation: Prepare for per task indirect branch speculation control\")\nSigned-off-by: Anthony Steinhauser \u003casteinhauser@google.com\u003e\nSigned-off-by: Thomas Gleixner \u003ctglx@linutronix.de\u003e\nCc: stable@vger.kernel.org\n\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "35638f1c5791f17247d9c046351435cb75f119f6",
+      "old_mode": 33188,
+      "old_path": "arch/x86/kernel/process.c",
+      "new_id": "8f4533c1a4ec27c9fce69ef0ea255e58d0a1aa3c",
+      "new_mode": 33188,
+      "new_path": "arch/x86/kernel/process.c"
+    }
+  ]
+}

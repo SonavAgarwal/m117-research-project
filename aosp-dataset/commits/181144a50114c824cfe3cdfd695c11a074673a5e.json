@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "181144a50114c824cfe3cdfd695c11a074673a5e",
+  "tree": "4dc5d12f2b08d7e68c686a11d3980b6d82d6c9dc",
+  "parents": [
+    "544f7e1be9a1f17da36955539f084b72130d1962"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Tue Aug 29 17:03:21 2017 -0700"
+  },
+  "committer": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Tue Oct 03 03:15:36 2017 +0000"
+  },
+  "message": "Fixed the implementation of std::equal_to\u003cbt_bdaddr_t\u003e\n\nNow we correctly suppress the processing of repetitive\nBLE scan results.\n\nTest: Manual with extra log messages\nBug: 65174158\nBug: 64975965\nChange-Id: Ic4386c5e2fbabdc218f6ec675c5b298a7af41e5a\nMerged-In: Ie0694843ad5fbd2a80b310c5f532e5e5a9548043\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "162935b79b5b9b33738b81cdac860803084a974e",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_ble_scanner.cc",
+      "new_id": "9188624ba371817693e9c812f960a3633f170eec",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_ble_scanner.cc"
+    }
+  ]
+}

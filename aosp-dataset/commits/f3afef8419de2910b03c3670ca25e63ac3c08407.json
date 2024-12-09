@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f3afef8419de2910b03c3670ca25e63ac3c08407",
+  "tree": "7b3ff5f2380a453b4e6863d4ae1d9f34e621ea5e",
+  "parents": [
+    "818fef48f3692410bd35a39fc46cf60bb6ae7fc7"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Thu May 14 02:03:14 2020 +0200"
+  },
+  "committer": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Mon Jun 22 17:35:40 2020 +0200"
+  },
+  "message": "Prevent overlay drawing on top of Bluetooth pairing dialog\n\nBug: 155648639\nChange-Id: I99643ee9084f3a9bc1ad9a459ac27c587d832c91\nMerged-In: I99643ee9084f3a9bc1ad9a459ac27c587d832c91\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "22cb3a683ec8523c29087b28c7babd9cc285a6fc",
+      "old_mode": 33188,
+      "old_path": "src/com/android/settings/bluetooth/BluetoothPairingDialog.java",
+      "new_id": "316f541f13f0a55038f838ff7407d2099b5ad214",
+      "new_mode": 33188,
+      "new_path": "src/com/android/settings/bluetooth/BluetoothPairingDialog.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "75db1b8e484ffd9256c553cb28dcd0b5d7a3c274",
+  "tree": "d7869bbe2bc388739995f5d26482e093c769a916",
+  "parents": [
+    "75d1ac1026539f82a299ef6cea2b59150098ddbb"
+  ],
+  "author": {
+    "name": "Harish Mahendrakar",
+    "email": "harish.mahendrakar@ittiam.com",
+    "time": "Thu Nov 14 15:34:31 2019 -0800"
+  },
+  "committer": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Tue Feb 04 19:31:27 2020 +0000"
+  },
+  "message": "Do not call SIMD format conversion for width \u003c 32\n\nNeon SIMD functions do not support width \u003c 32.\n\nBug: 143464314\nTest: poc in bug\n\nChange-Id: I2445c3d98c0b1afbb1ef480403bbc67add629cac\n(cherry picked from commit 6219b83299f3c0322c4485582222f3dbd1f437a5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4e0e4f79dd0d0647db9fbc538c4bff71feeb165d",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_fmt_conv.c",
+      "new_id": "4637fe8750c86d3cb30eca159f0d38b2ee3988c3",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_fmt_conv.c"
+    }
+  ]
+}

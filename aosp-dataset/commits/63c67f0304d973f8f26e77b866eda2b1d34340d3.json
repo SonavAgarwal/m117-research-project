@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "63c67f0304d973f8f26e77b866eda2b1d34340d3",
+  "tree": "65fac99c954177385be4a8963eef83bea4e68a4c",
+  "parents": [
+    "ba595d5debf2a214e05a8a774be658b09b354d1a"
+  ],
+  "author": {
+    "name": "lucaslin",
+    "email": "lucaslin@google.com",
+    "time": "Wed Apr 21 17:41:31 2021 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:00:34 2021 +0000"
+  },
+  "message": "Remove sendNetworkConditionsBroadcast\n\nsendNetworkConditionsBroadcast is removed, so\nTestNetworkStackService.kt cannot override it anymore,\notherwise there will be a build break when running this\ntest.\nAlso add a comment for NETWORK_CONDITIONS_MEASURED in\nAndroidManifest.xml.\n\nBug: 175213041\nTest: atest FrameworksNetIntegrationTests\nChange-Id: I7b43940dc32826c70fa82f471b35bc5cb8394aad\nMerged-In: I7b43940dc32826c70fa82f471b35bc5cb8394aad\n(cherry picked from commit c737926795a8cedab091cf01c30914a1bf844da1)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0499598239424e83633a92bc5663e179d981ee3a",
+      "old_mode": 33188,
+      "old_path": "core/res/AndroidManifest.xml",
+      "new_id": "b5fe21d81fd8f3081c0c43d9da6709d888838e54",
+      "new_mode": 33188,
+      "new_path": "core/res/AndroidManifest.xml"
+    },
+    {
+      "type": "modify",
+      "old_id": "8c2de4035d0baee577cafe3911de65e36531b07e",
+      "old_mode": 33188,
+      "old_path": "tests/net/integration/src/com/android/server/net/integrationtests/TestNetworkStackService.kt",
+      "new_id": "649f71d4293fe521308b3fe09671c81ab7f9d9c4",
+      "new_mode": 33188,
+      "new_path": "tests/net/integration/src/com/android/server/net/integrationtests/TestNetworkStackService.kt"
+    }
+  ]
+}

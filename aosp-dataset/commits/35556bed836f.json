@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "35556bed836f8dc07ac55f69c8d17dce3e7f0e25",
+  "tree": "cb19655e11b5f8113b444b5685ffc5b9372d5046",
+  "parents": [
+    "bce1305c0ece3dc549663605e567655dd701752c"
+  ],
+  "author": {
+    "name": "Marc Zyngier",
+    "email": "maz@kernel.org",
+    "time": "Tue Sep 01 10:52:33 2020 +0100"
+  },
+  "committer": {
+    "name": "Benjamin Tissoires",
+    "email": "benjamin.tissoires@gmail.com",
+    "time": "Tue Sep 01 12:06:41 2020 +0200"
+  },
+  "message": "HID: core: Sanitize event code and type when mapping input\n\nWhen calling into hid_map_usage(), the passed event code is\nblindly stored as is, even if it doesn\u0027t fit in the associated bitmap.\n\nThis event code can come from a variety of sources, including devices\nmasquerading as input devices, only a bit more \"programmable\".\n\nInstead of taking the event code at face value, check that it actually\nfits the corresponding bitmap, and if it doesn\u0027t:\n- spit out a warning so that we know which device is acting up\n- NULLify the bitmap pointer so that we catch unexpected uses\n\nCode paths that can make use of untrusted inputs can now check\nthat the mapping was indeed correct and bail out if not.\n\nCc: stable@vger.kernel.org\nSigned-off-by: Marc Zyngier \u003cmaz@kernel.org\u003e\nSigned-off-by: Benjamin Tissoires \u003cbenjamin.tissoires@gmail.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b8eabf206e7439908830e4c6d7218127ec5a73e8",
+      "old_mode": 33188,
+      "old_path": "drivers/hid/hid-input.c",
+      "new_id": "88e19996427e63aad2ac1816c7f1a7039dc69921",
+      "new_mode": 33188,
+      "new_path": "drivers/hid/hid-input.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "3f94b4954225b38ea6fa4bea9194bebb1ab8b383",
+      "old_mode": 33188,
+      "old_path": "drivers/hid/hid-multitouch.c",
+      "new_id": "e3152155c4b85de7bac90441f821712a6cc9fbe2",
+      "new_mode": 33188,
+      "new_path": "drivers/hid/hid-multitouch.c"
+    },
+    {
+      "type": "modify",
+      "old_id": "875f71132b1425b494ba9eb538f29543cb857753",
+      "old_mode": 33188,
+      "old_path": "include/linux/hid.h",
+      "new_id": "c7044a14200ea2744f69c589672b2c7e0fe9b6a4",
+      "new_mode": 33188,
+      "new_path": "include/linux/hid.h"
+    }
+  ]
+}

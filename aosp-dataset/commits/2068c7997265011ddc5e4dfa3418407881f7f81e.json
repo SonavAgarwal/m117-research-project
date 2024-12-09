@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "2068c7997265011ddc5e4dfa3418407881f7f81e",
+  "tree": "ddbcaf717c54b25306d374293b02635979f23f34",
+  "parents": [
+    "6986f29bb93a6aaaeaaddcab081d0e0afd7082e8"
+  ],
+  "author": {
+    "name": "Michael Wright",
+    "email": "michaelwr@google.com",
+    "time": "Tue Mar 22 15:17:35 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@android.com",
+    "time": "Thu Apr 21 19:27:39 2016 -0700"
+  },
+  "message": "DO NOT MERGE Take advantage of new MotionEvent flag to prevent tapjacking.\n\nBug: 26677796\nChange-Id: I563541f0a42564b854af0f8037c1d4741c79a2ac\n\nFix merge conflict when cp\u0027ing ag/903239 to mnc-mr1-release\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "b35652403edf5681497b0efcb5f34b769dd6bbc4",
+      "old_mode": 33188,
+      "old_path": "res/layout/grant_permissions.xml",
+      "new_id": "ffbd276bbc1ed7649cae4e5b08193260bf2857fa",
+      "new_mode": 33188,
+      "new_path": "res/layout/grant_permissions.xml"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "624744e50d86f29c52d674646778141a1b42245c",
+      "new_mode": 33188,
+      "new_path": "src/com/android/packageinstaller/permission/ui/SecureButtonView.java"
+    }
+  ]
+}

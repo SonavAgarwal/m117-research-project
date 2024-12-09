@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "af35aa5ac57a8c7c4534d82d8cd6cfb4f049bbfe",
+  "tree": "8f0ce1f7ae51a77d226d28678afdd0074a9fdcc8",
+  "parents": [
+    "0b4cd450afbe085def06025b9ac1f6996217bfcb"
+  ],
+  "author": {
+    "name": "Nathan Harold",
+    "email": "nharold@google.com",
+    "time": "Tue May 26 19:02:59 2020 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Oct 13 01:07:20 2020 +0000"
+  },
+  "message": "[BACKPORT] Improve location checks in TelephonyRegistry\n\nImprove location checking for apps targeting SDK28\nor earlier.\n\nBug: 158484422\nTest: (cts) atest TelephonyLocationTests; atest PhoneStateListenerTest\nMerged-In: I8caa3ea409836ce8469d8d8210b481a0284594f2\nChange-Id: I8caa3ea409836ce8469d8d8210b481a0284594f2\n(cherry picked from commit 4e0c7d16fd76bd7743a7f46ba63c75e8c65d63be)\n(cherry picked from commit cc584e777db03316f98298a18a1844e51592ebef)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "23bf955ba9a674c27131e91bbfa47a00a03a5845",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/TelephonyRegistry.java",
+      "new_id": "c4f1c805398b3e69d26510b3eed23e293d1c3d8e",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/TelephonyRegistry.java"
+    }
+  ]
+}

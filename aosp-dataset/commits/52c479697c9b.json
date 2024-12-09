@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "52c479697c9b73f628140dcdfcd39ea302d05482",
+  "tree": "26e09326f93e964e32d2df19fc94554070b607ce",
+  "parents": [
+    "a9ed4a6560b8562b7e2e2bed9527e88001f7b682"
+  ],
+  "author": {
+    "name": "Al Viro",
+    "email": "viro@zeniv.linux.org.uk",
+    "time": "Sat Aug 22 18:25:52 2020 -0400"
+  },
+  "committer": {
+    "name": "Al Viro",
+    "email": "viro@zeniv.linux.org.uk",
+    "time": "Sat Aug 22 18:25:52 2020 -0400"
+  },
+  "message": "do_epoll_ctl(): clean the failure exits up a bit\n\nSigned-off-by: Al Viro \u003cviro@zeniv.linux.org.uk\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "196003d9242c6010b2a6f4cca62908bc5797061a",
+      "old_mode": 33188,
+      "old_path": "fs/eventpoll.c",
+      "new_id": "e0decff22ae273197b83ec17b38752dbb254941e",
+      "new_mode": 33188,
+      "new_path": "fs/eventpoll.c"
+    }
+  ]
+}

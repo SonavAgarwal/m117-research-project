@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "40ca8b51fa90457cc49b91eac00636d1626b3a1b",
+  "tree": "c1bb1f1c8dd6e60ee051adeb8f14fbeea0b176af",
+  "parents": [
+    "b1ae5fd44388f4e3c74a8caa690d4a66e9f99f4d"
+  ],
+  "author": {
+    "name": "Winson",
+    "email": "chiuwinson@google.com",
+    "time": "Thu Apr 23 10:45:55 2020 -0700"
+  },
+  "committer": {
+    "name": "Winson Chiu",
+    "email": "chiuwinson@google.com",
+    "time": "Thu May 21 17:17:53 2020 +0000"
+  },
+  "message": "DO NOT MERGE: Verify INSTALL_PACKAGES permissions when adding installer package\n\nWithout this check, any package can set the installer package of\nanother package whose installer has been removed or was never set.\nThis provides access to other privileged actions and is undesired.\n\nBug: 150857253\n\nTest: manual verify with proof of concept in linked bug\nTest: atest android.appsecurity.cts.PackageSetInstallerTest\n\nChange-Id: I2159c357911ff39ffd819054b42f96ae86bc98bc\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c8175befe179b316e5f43493788294e88ab252d8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/pm/PackageManagerService.java",
+      "new_id": "c84aedc0449159c6d84e90d265b2e793e70e2619",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/pm/PackageManagerService.java"
+    }
+  ]
+}

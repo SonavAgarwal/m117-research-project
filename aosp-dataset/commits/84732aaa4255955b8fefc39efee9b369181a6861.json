@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "84732aaa4255955b8fefc39efee9b369181a6861",
+  "tree": "0c0e440c6f9844408c9f06edb8299dadadc7d7f0",
+  "parents": [
+    "e32b6b7aa43e43702305c84dfb0f2ac5642b4a7d"
+  ],
+  "author": {
+    "name": "Naveen Kumar P",
+    "email": "naveenkumar.p@ittiam.com",
+    "time": "Tue May 23 10:18:25 2017 +0530"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:09:45 2017 +0000"
+  },
+  "message": "Handle error return in parse slice\n\nBug: 37430213\nChange-Id: I77f5973db54edccc0972649035b0fbde961c10dd\n(cherry picked from commit 16c8c8cceeb74c7f4634803723a0b8b1f4881dc9)\n(cherry picked from commit 453587489900c62280aadd1d1c8e3899dc57e965)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2d5a2e77d7297dbab82de89bbc773bcbac95050d",
+      "old_mode": 33188,
+      "old_path": "decoder/ihevcd_parse_slice.c",
+      "new_id": "126b14c4da7e72ef034739365c4d0b49025c9a4f",
+      "new_mode": 33188,
+      "new_path": "decoder/ihevcd_parse_slice.c"
+    }
+  ]
+}

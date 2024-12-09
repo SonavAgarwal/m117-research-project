@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "bf153fbedc2333b14e90826d22f08d10e832db29",
+  "tree": "ff02bf297dd253b6d87caff85135f2841683442c",
+  "parents": [
+    "0615f5cd0ac5df7e001354e90338b4084a2773ce"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon May 22 17:32:29 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jun 15 19:10:58 2017 +0000"
+  },
+  "message": "DO NOT MERGE Don\u0027t leak `this` out of GraphicBufferSource ctor\n\nBug: 37622974\nBug: 37622987\nBug: 37623757\nTest: run poc and observe no crash\nChange-Id: I1e25c011f02bec26a1480ec9a217a52f15d43cf2\n(cherry picked from commit 6301f882512ec39baf28640f31b90104def1738d)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0c4056ddd072a49823e9f632ac45f3beb0fba1bd",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/GraphicBufferSource.cpp",
+      "new_id": "3bcc599b88213b26cf59d6eadc87720686a10eb0",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/GraphicBufferSource.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "aa4ceb386b199cbcbb5826fafc856a7aa5c20a1c",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/GraphicBufferSource.h",
+      "new_id": "b3fcd1be66b02f743bc248f5dcef38ba316b7ede",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/GraphicBufferSource.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "c3514b3b8b81a46c9c52329fbc9d829cbb1dcc89",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/omx/OMXNodeInstance.cpp",
+      "new_id": "e7aaeadf9ca912b63358f6e771130167c7d4cd87",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/omx/OMXNodeInstance.cpp"
+    }
+  ]
+}

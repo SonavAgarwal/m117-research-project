@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f3199c228aced7858b75a8070b8358c155ae0149",
+  "tree": "1bfc505b18c785dbf50424a4db11745b0cc08e3d",
+  "parents": [
+    "85d253fab5e2c01bd90990667c6de25c282fc5cd"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Fri Feb 05 19:02:56 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Feb 26 14:34:00 2016 -0800"
+  },
+  "message": "Sanity check IMemory access versus underlying mmap\n\nBug 26877992\n\nChange-Id: Ibbf4b1061e4675e4e96bc944a865b53eaf6984fe\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d8ed995a75abeec6592b6167093bc6b1b2998302",
+      "old_mode": 33188,
+      "old_path": "libs/binder/IMemory.cpp",
+      "new_id": "b9a8bced37b2df36c3413c18c829c6fba3b1bb43",
+      "new_mode": 33188,
+      "new_path": "libs/binder/IMemory.cpp"
+    }
+  ]
+}

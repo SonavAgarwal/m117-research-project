@@ -1,0 +1,75 @@
+)]}'
+{
+  "commit": "8cb7e0a881fed2a7d80b69aed77275bd483043ad",
+  "tree": "3f38084b69b607b3ef5a183f07ce6fc08fa13be6",
+  "parents": [
+    "e75b482280d41a893e5d525864c07bd7cd59a7ef"
+  ],
+  "author": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Wed Nov 18 17:22:45 2020 -0800"
+  },
+  "committer": {
+    "name": "Christopher Tate",
+    "email": "ctate@google.com",
+    "time": "Thu Mar 18 08:11:45 2021 -0700"
+  },
+  "message": "DO NOT MERGE - Disallow deletion of channels with FGS notifications\n\nBug: 156090809\nTest: atest CtsAppTestCases:NotificationManagerTest\nTest: atest CtsAppTestCases:android.app.cts.ServiceTest\nChange-Id: I1c2bb78d86f194585d273661cecf3419f51965df\n(cherry picked from commit 39b3890268913bc2dc8b90671d042c0e9b4090d2)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a5965bc7f85fd6f538b0bca9053aedabe25e079c",
+      "old_mode": 33188,
+      "old_path": "core/java/android/app/ActivityManagerInternal.java",
+      "new_id": "fcb5e0bd0b027d4adada990686db674b09465dfa",
+      "new_mode": 33188,
+      "new_path": "core/java/android/app/ActivityManagerInternal.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "dd0e1f6458f99196f86e585b3d953821558684a8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActiveServices.java",
+      "new_id": "b8de4a759b6077e4c53ba794d7866877323872af",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActiveServices.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "67c64e94db9bc9e8ffa4d7b10ede7066d569ace2",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/ActivityManagerService.java",
+      "new_id": "28c9e4914e68bc7da6f3028976832fcd7bcc8acd",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/ActivityManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "e94507bccea0ecc639d03ce0db96671039982650",
+      "old_mode": 33261,
+      "old_path": "services/core/java/com/android/server/notification/NotificationManagerService.java",
+      "new_id": "65b3221747a19a4ec0defd290b4d1fe0d7122676",
+      "new_mode": 33261,
+      "new_path": "services/core/java/com/android/server/notification/NotificationManagerService.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "a55d28ee606553e32f9dcb275136fcc0bc2f8225",
+      "old_mode": 33261,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java",
+      "new_id": "876e63e9eb0a04b53b87690709a8cee9bf5b6f4b",
+      "new_mode": 33261,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/NotificationManagerServiceTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "ac2c6193c6774b5d9ed737e7b7204b15e6c7e6a6",
+      "old_mode": 33188,
+      "old_path": "services/tests/uiservicestests/src/com/android/server/notification/RoleObserverTest.java",
+      "new_id": "1918edb335542651dc8009146ba53c61bfc3b30a",
+      "new_mode": 33188,
+      "new_path": "services/tests/uiservicestests/src/com/android/server/notification/RoleObserverTest.java"
+    }
+  ]
+}

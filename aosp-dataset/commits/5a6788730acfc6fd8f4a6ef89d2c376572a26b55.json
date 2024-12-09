@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5a6788730acfc6fd8f4a6ef89d2c376572a26b55",
+  "tree": "a6658000ed28117808ca4267dda8b418cd2e2e54",
+  "parents": [
+    "fe84c20143f95ad1d4e0203a6a11abb772efdef0"
+  ],
+  "author": {
+    "name": "Vignesh Venkatasubramanian",
+    "email": "vigneshv@google.com",
+    "time": "Fri Jan 15 09:47:27 2016 -0800"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri Jan 22 14:44:19 2016 -0800"
+  },
+  "message": "DO NOT MERGE - Remove deprecated image defines\n\nlibvpx has always supported the VPX_ prefixed versions of these defines.\nThe unprefixed versions have been removed in the most recent release.\n\nhttps://chromium.googlesource.com/webm/libvpx/+/9cdaa3d72eade9ad162ef8f78a93bd8f85c6de10\n\nBUG\u003d23452792\n\nChange-Id: I8a656f2262f117d7a95271f45100b8c6fd0a470f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f026761f8062342c8b4909de2e91d2160b4c1f73",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp",
+      "new_id": "3167a509cc1c728ec94ad69534bf0eefc5d628af",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/dec/SoftVPX.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2658c0da40fabf8fff9a765ebd5c5b293c4b57e8",
+  "tree": "0711ed677684c877bb1e25145fd7bb87c47dc070",
+  "parents": [
+    "8bd379069ba1df119a3e4c817f5fa8869a8c93c9"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Tue Jan 26 20:29:25 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 09 01:24:20 2021 +0000"
+  },
+  "message": "Fix potential decrypt src pointer overflow.\n\nThere is a potential integer overflow to bypass the\nsource base size check in decrypt. The source pointer\ncan then point to the outside of the source buffer,\nwhich could potentially leak arbitrary memory content\nto destination pointer.\n\nTest: sts-tradefed\n  sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Bug_176496160#testPocBug_176496160\n\nTest: push to device with target_hwasan-userdebug build\n  adb shell /data/local/tmp/Bug-17649616064\n\nBug: 176496160\nBug: 176444786\nChange-Id: I811a6f60948bde2a72906c2c6172fd7bc5feb6d9\n(cherry picked from commit c14f262876818498b3ca77f1d6df9d4fb7e77b1c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2db360765b1ea566b1bd3b0b588724698dcacc91",
+      "old_mode": 33188,
+      "old_path": "drm/1.0/default/CryptoPlugin.cpp",
+      "new_id": "e6d4e8447b2737cce057753b50d2201c13c04563",
+      "new_mode": 33188,
+      "new_path": "drm/1.0/default/CryptoPlugin.cpp"
+    }
+  ]
+}

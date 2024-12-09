@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "586b9102f322731d604e6280143e16cb6f1c9f76",
+  "tree": "4bedd21e9d6f059d594721a8298888a61b67fd92",
+  "parents": [
+    "cf6784bfbf713aaa54d8da77e9481b3f02784246"
+  ],
+  "author": {
+    "name": "Robert Shih",
+    "email": "robertshih@google.com",
+    "time": "Mon Jul 09 13:38:31 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:43:28 2018 +0000"
+  },
+  "message": "Fix TrackInfo parcel write\n\nBug: 77600398\nChange-Id: Ia316f1c5dc4879f6851fdb78fe8b9039579be7bc\n(cherry picked from commit 0d2dc943dcaa3d7c8479e22ae62be9753ea2643c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ada91be9ca4de85da4c28ac1f3a9752eae2656c4",
+      "old_mode": 33188,
+      "old_path": "media/java/android/media/MediaPlayer.java",
+      "new_id": "d532e526f2fbc20b128d39c94a51a5331c0f532b",
+      "new_mode": 33188,
+      "new_path": "media/java/android/media/MediaPlayer.java"
+    }
+  ]
+}

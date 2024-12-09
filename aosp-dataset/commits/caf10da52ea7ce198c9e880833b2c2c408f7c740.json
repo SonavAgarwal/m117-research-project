@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "caf10da52ea7ce198c9e880833b2c2c408f7c740",
+  "tree": "be50ab0c5edf2d5668ceb2cd235ce98403cd23f7",
+  "parents": [
+    "7fe17f9fa96cb223ff907d99600f3e632bacc701"
+  ],
+  "author": {
+    "name": "Jakub Pawlowski",
+    "email": "jpawlowski@google.com",
+    "time": "Fri Apr 23 20:59:43 2021 +0200"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu May 20 00:01:02 2021 +0000"
+  },
+  "message": "Forbid content from MmsFileProvider in Bluetooth Share\n\nBug: 179910660\nTest: verified against POC\nChange-Id: I8a888e67ba70d4a8b5721e4124bd8ccb671baaf7\n(cherry picked from commit 5fd89df71e29571cde91c4a899939496002b2499)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "adbe4ba122be0f046b1b03d219435850816aae27",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppSendFileInfo.java",
+      "new_id": "46e3ba144e70c599f93f324ea6ae336649af606e",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppSendFileInfo.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "4e79f89ba2fd2e4f0ef943d33d3e96a2bd24f730",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java",
+      "new_id": "577928d3f155934ef3248f6f2ed41164b0bdfd2b",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java"
+    }
+  ]
+}

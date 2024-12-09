@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "257b3bc581bbc65318a4cc2d3c22a07a4429dc1d",
+  "tree": "f0d526664edac8cab7fe9eb253262cd6661e7dda",
+  "parents": [
+    "3737a3fa121796131ea5b782230e65dad9ccf90f"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Oct 05 10:46:11 2015 -0700"
+  },
+  "committer": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon Oct 05 11:21:58 2015 -0700"
+  },
+  "message": "Don\u0027t crash when there\u0027s no conceal frame\n\nBug: 24630158\nChange-Id: If042aebebb58c218eb7bbf01dcddbcbd05dca1d6\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e9ead016a413f799887ab6931027f8517e67aa21",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/dec/src/conceal.cpp",
+      "new_id": "03e4119b95716378f27ad11857d88fae08da1385",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/dec/src/conceal.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7c7cae75a80eece7cf009ea12da644ea7c893c1d",
+  "tree": "a64a6da79ff33aa225c206c410342a1ab6292935",
+  "parents": [
+    "ea552bcca3ba6954b079fd246ae0a13557ea1c9e"
+  ],
+  "author": {
+    "name": "Calin Juravle",
+    "email": "calin@google.com",
+    "time": "Mon Apr 12 22:03:29 2021 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Sat Apr 17 00:08:20 2021 +0000"
+  },
+  "message": "Fix dm-test invocation\n\nDue to a bad merge --copy-dex-files\u003dfalse was passed to the vdex_cmdline\ninstead of the dex2oat_cmdline.\n\nTest: test-art-host\nBug: 178055795\n\nMerged-In: I5b104329af899ea62dc1779800264bad6b5424a4\nChange-Id: Ieb6e324232996ec8ad5119fcbf20b81d62678fd2\n(cherry picked from commit 6c9431c02e739de83c7c804d64e4a4656d24d55f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "423f9b3c01727207e2400cd4021d7e7fff7fb818",
+      "old_mode": 33261,
+      "old_path": "test/etc/run-test-jar",
+      "new_id": "7d85b102b513da81051d6ec7cff924ccff6a75df",
+      "new_mode": 33261,
+      "new_path": "test/etc/run-test-jar"
+    }
+  ]
+}

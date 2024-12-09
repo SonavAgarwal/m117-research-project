@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "14b7d7e1537af60b7bca6c7b9e55df0dc7c6bf41",
+  "tree": "0687f84db12d5c0aa688d3682f48b227aa651803",
+  "parents": [
+    "f196061addcc56878078e5684f2029ddbf7055ff"
+  ],
+  "author": {
+    "name": "Ajay Panicker",
+    "email": "apanicke@google.com",
+    "time": "Tue Apr 11 14:45:40 2017 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Mon Apr 17 16:24:21 2017 -0700"
+  },
+  "message": "Prevent OPP from opening files that aren\u0027t sent over Bluetooth\n\nBefore this patch an app could send an open intent to\nBluetoothOppTransferService using a fake content provider to gain external\nread and write access. We fix this by checking the Uri of the file before\nopening it to see if it originated from the Bluetooth Share content provider.\nWe also stop graning write access to apps that we use to view the file.\n\nBug: 35385327\nTest: PoC found in bug\nChange-Id: Iad85490a0306b3e70767285393b204be22b11511\n(cherry picked from commit f20350af42cd5cce1a762ef587ee50fef696f0f0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6b94ab56b76170e0ff18149df1fea78153896956",
+      "old_mode": 33188,
+      "old_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java",
+      "new_id": "cbbfa1766f310c1b5f3d54b34bf9b2ef239c1e76",
+      "new_mode": 33188,
+      "new_path": "src/com/android/bluetooth/opp/BluetoothOppUtility.java"
+    }
+  ]
+}

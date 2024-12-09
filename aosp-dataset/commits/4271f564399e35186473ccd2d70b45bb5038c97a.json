@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4271f564399e35186473ccd2d70b45bb5038c97a",
+  "tree": "b35f1abda22d47c6396860d6d34a8b05070021c2",
+  "parents": [
+    "40566cafac55028a99ae03d1b487a6b0f8be8299"
+  ],
+  "author": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Wed Mar 11 17:48:31 2020 -0700"
+  },
+  "committer": {
+    "name": "Steven Moreland",
+    "email": "smoreland@google.com",
+    "time": "Wed Mar 18 18:00:41 2020 +0000"
+  },
+  "message": "sf: avoid assumption remote binder is local\n\nWe are lucky that a test was passing a remote binder here and that I\nhappened to reorder elements in BpBinder, since this caused a crash,\nwhere before, \u0027owner\u0027 was getting set to some random bits inside of a\nBpBinder object.\n\nBug: 150904694\nTest: move mTrackingUid around in BpBinder, then\n    `atest CompositionSamplingListenerTest` passes\n\nChange-Id: I552a669113844a6b7ceaba5a1197fd04ca7e18d5\nMerged-In: I552a669113844a6b7ceaba5a1197fd04ca7e18d5\n(cherry picked from commit 858c55f73a760a06ac398562a9274641239e1322)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "66906e950c86b65e1f13303d8adf236013b21d3f",
+      "old_mode": 33188,
+      "old_path": "services/surfaceflinger/RegionSamplingThread.cpp",
+      "new_id": "8e7386df06ebfe5082e3dc7ebf65a21b5e520bcd",
+      "new_mode": 33188,
+      "new_path": "services/surfaceflinger/RegionSamplingThread.cpp"
+    }
+  ]
+}

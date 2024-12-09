@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f1f1c3e00f8d1baad0215b057e6d894517eeaddb",
+  "tree": "505c4ec56606b63a63fe0cf818c5cefe8274b79b",
+  "parents": [
+    "13294c70a66347c9e5d05b9f92f8ceb6fe38d7f6"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu May 31 11:04:54 2018 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 20 00:20:37 2018 +0000"
+  },
+  "message": "Add BT_HDR length check for received AVCTP packets\n\nBug: 79944113\nTest: Code compilation\nChange-Id: I02c76ab8fad61669394062bf34656ea32f465b6a\nMerged-In: I02c76ab8fad61669394062bf34656ea32f465b6a\n(cherry picked from commit 4262b932e487b19d578d79e0120cf03291f44efc)\n(cherry picked from commit fa538540a7f147b8440ac49735a8dc596ce8dfc7)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "70d8ce74347a34f2a8984e1f8112ecc0f1374ab5",
+      "old_mode": 33188,
+      "old_path": "stack/avct/avct_bcb_act.cc",
+      "new_id": "011a52db71390a899c6eb3ea5cf7b99978a7a52b",
+      "new_mode": 33188,
+      "new_path": "stack/avct/avct_bcb_act.cc"
+    }
+  ]
+}

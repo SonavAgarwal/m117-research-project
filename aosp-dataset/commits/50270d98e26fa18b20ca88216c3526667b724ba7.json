@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "50270d98e26fa18b20ca88216c3526667b724ba7",
+  "tree": "6d563b14db6a856bd74247252f6893cb991c3628",
+  "parents": [
+    "91a23ed95cda558a3c31e8ef34f420924f4d6d7d"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Fri Nov 20 10:34:35 2015 -0800"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Dec 10 13:12:47 2015 -0800"
+  },
+  "message": "DO NOT MERGE - libstagefright: check requested memory size before allocation for SoftMPEG4Encoder and SoftVPXEncoder.\n\nBug: 25812794\nChange-Id: I96dc74734380d462583f6efa33d09946f9532809\n(cherry picked from commit 87f8cbb223ee516803dbb99699320c2484cbf3ba)\n(cherry picked from commit 0462975291796e414891e04bcec9da993914e458)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "fa3486cc8dd8e0f680d9ad6cdf45a040ed523cb8",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp",
+      "new_id": "bd4d623a817c077059172f45926335d543a4f0e4",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/m4v_h263/enc/SoftMPEG4Encoder.cpp"
+    },
+    {
+      "type": "modify",
+      "old_id": "970acf34da5997fef1804eaa427da2b9e3a2144a",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp",
+      "new_id": "ef949468d50673d5f02983124201466d06971ef6",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/on2/enc/SoftVPXEncoder.cpp"
+    }
+  ]
+}

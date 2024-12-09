@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "8cd0e2fba8b916e268bc48a04b6ab19a4e523a04",
+  "tree": "eabc9eb44864c9a9a60cf3349b69e2e271d9c4ff",
+  "parents": [
+    "90feea47c8ad51fa246b0370dc0acb9eb57ddbfd"
+  ],
+  "author": {
+    "name": "Rubin Xu",
+    "email": "rubinxu@google.com",
+    "time": "Fri Aug 02 15:32:06 2019 +0100"
+  },
+  "committer": {
+    "name": "Max Spector",
+    "email": "mspector@google.com",
+    "time": "Wed Sep 18 17:14:22 2019 -0700"
+  },
+  "message": "[DO NOT MERGE] Fix OOB Access\n\nhttps://bugs.chromium.org/p/chromium/issues/detail?id\u003d789764\n\nBug: 138442295\nTest: m -j proxy_resolver_v8_unittest \u0026\u0026 adb sync \u0026\u0026 adb shell \\\n      /data/nativetest/proxy_resolver_v8_unittest/proxy_resolver_v8_unittest\nChange-Id: I382ee8e0e3668d0e02cce91342fd5a24d42a0bfe\n(cherry picked from commit a2b186599ba7194b365b945780f2b8ec01c851c0)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "6d0c386f3b236e6ff2099485328f96a36e842f00",
+      "old_mode": 33188,
+      "old_path": "src/ast/ast-traversal-visitor.h",
+      "new_id": "3a102b42c0dc51578e785586436f85f20fc7fd7b",
+      "new_mode": 33188,
+      "new_path": "src/ast/ast-traversal-visitor.h"
+    },
+    {
+      "type": "modify",
+      "old_id": "d5b7777771e212e517a964b20bca4878f9dfe4b4",
+      "old_mode": 33188,
+      "old_path": "src/objects.cc",
+      "new_id": "c2996aed2323c64cd2586e456a481a66d288d8b6",
+      "new_mode": 33188,
+      "new_path": "src/objects.cc"
+    }
+  ]
+}

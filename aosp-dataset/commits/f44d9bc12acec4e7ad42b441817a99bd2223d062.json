@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "f44d9bc12acec4e7ad42b441817a99bd2223d062",
+  "tree": "48a6d376d30af2465890093fa0b335c37561ac88",
+  "parents": [
+    "36bdb16019e1eee1dfd7ffdb344b9b581744d014"
+  ],
+  "author": {
+    "name": "Anton Hansson",
+    "email": "hansson@google.com",
+    "time": "Wed Jun 17 16:58:24 2020 +0100"
+  },
+  "committer": {
+    "name": "Anton Hansson",
+    "email": "hansson@google.com",
+    "time": "Sat Jun 20 23:53:25 2020 +0000"
+  },
+  "message": "Handle 64-bit and end-of-file box lengths in IsoInterface\n\nThe previous code didn\u0027t recognize the special cases of\n- length 0 \u003d\u003e the box extends to the end of file\n- length 1 \u003d\u003e the real length is 64-bit data after the type\n\nAs a result, this could in certain cases lead to video files\nbeing incorrectly parsed in location data not being redacted.\n\nBug: 134155286\nTest: atest MediaStore_Video_MediaTest\nChange-Id: Idad81e161bb998c933ac8a81a3ebf12f59391a16\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d91a1a5bffccf72f5bbd8c98fde0de5511070b91",
+      "old_mode": 33188,
+      "old_path": "src/com/android/providers/media/util/IsoInterface.java",
+      "new_id": "79ccd3cfc03a2fd88b57a9c9deaee5d65d4b2bb8",
+      "new_mode": 33188,
+      "new_path": "src/com/android/providers/media/util/IsoInterface.java"
+    }
+  ]
+}

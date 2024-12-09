@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "a73dfccf325aa6e2bca86dffa9f203196d3fa4cc",
+  "tree": "6f502e02f7a134639a7bd808703980372dde164c",
+  "parents": [
+    "46737356e46a0d286520945060fd49a074b5d281"
+  ],
+  "author": {
+    "name": "Martin Brabham",
+    "email": "optedoblivion@google.com",
+    "time": "Thu Jun 20 08:59:24 2019 -0700"
+  },
+  "committer": {
+    "name": "Martin Brabham",
+    "email": "optedoblivion@google.com",
+    "time": "Mon Sep 30 15:28:11 2019 +0000"
+  },
+  "message": "JustWorks: Auto-accept only incoming temporary pairing.\n\nBug: 110433804\nBug: 134461862\nTest: Manual; atest net_test_bluetooth\nChange-Id: I4e3f39bc08e9d9493734a21ea29d76e43aeb50c8\nMerged-In: I4e3f39bc08e9d9493734a21ea29d76e43aeb50c8\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "67a059ecf86e0f571cb5b7a676e17bc2840da99f",
+      "old_mode": 33188,
+      "old_path": "btif/src/btif_dm.cc",
+      "new_id": "2a84aa924e0f0dc0c50b8746b24b6f2c4ca84623",
+      "new_mode": 33188,
+      "new_path": "btif/src/btif_dm.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bae671597d47b9e5955c4cb742e468cebfd7ca6b",
+  "tree": "e6c1fac71143a5b0cde5934c99649cf6d3528b8d",
+  "parents": [
+    "5c8f937269957e6651383e988006824781fd021a"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Thu Jun 09 14:07:50 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jun 23 15:05:07 2016 -0700"
+  },
+  "message": "Fix possible out of bounds access\n\nBug: 28868315\nChange-Id: I2b416c662f9ad7f9b3c6cf973a39c6693c66775a\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "8dfdaf1f8a105c02284008bbb85a3ddef1ba8a74",
+      "old_mode": 33188,
+      "old_path": "exif.c",
+      "new_id": "0abfa1dca6f958832072705b76da413d2506c19e",
+      "new_mode": 33188,
+      "new_path": "exif.c"
+    }
+  ]
+}

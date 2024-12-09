@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "1b08775917413f1674882130a948add1ae44cc91",
+  "tree": "9a5ede9c4cd67d9d92fd7c2c997cb6a6cb381ef8",
+  "parents": [
+    "4e47f3db62bab524946c46efe04ed6a2b896b150"
+  ],
+  "author": {
+    "name": "Pavlin Radoslavov",
+    "email": "pavlin@google.com",
+    "time": "Thu Jul 06 16:51:35 2017 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Aug 08 18:44:44 2017 +0000"
+  },
+  "message": "Add missing packet length checks while parsing BNEP control packets\n\nBug: 63146237\nTest: External script\nChange-Id: Ie778f3c99df81c85ed988f3af89b4edbcc2eeb99\nMerged-In: Ie778f3c99df81c85ed988f3af89b4edbcc2eeb99\n(cherry picked from commit 7feaeb006941a1494d7cdc0a2ffc4bb1004b38b4)\n(cherry picked from commit 6d415839da570b94b0763f6ab444f0dd1321fc33)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "06a5115c41dfd37e4e2e7a67f452068630d28088",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_utils.cc",
+      "new_id": "3f5e13eba74c69f34ea524ce6ef5746e04ebe796",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_utils.cc"
+    }
+  ]
+}

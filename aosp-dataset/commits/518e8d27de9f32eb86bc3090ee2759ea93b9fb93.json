@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "518e8d27de9f32eb86bc3090ee2759ea93b9fb93",
+  "tree": "75eff8b88a6714e0f59b8654142b2cab3116ea19",
+  "parents": [
+    "5c2be05f23f66028ccebfd7de64a3673fee6e509"
+  ],
+  "author": {
+    "name": "Pete Bentley",
+    "email": "prb@google.com",
+    "time": "Mon Jul 09 11:42:50 2018 +0100"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Jul 27 18:44:38 2018 +0000"
+  },
+  "message": "Fix hostname parsing in java.net.URLStreamHandler.\n\nAs per https://url.spec.whatwg.org/#host-state, any of the\ncharacters \u0027/\u0027, \u0027\\\u0027, \u0027#\u0027 or \u0027?\u0027 should be treated as\nterminators when parsing the host part of a URL.\n\nChange-Id: I1dc8db7101fdd863b51408b9cfb3ef7a585f1c04\nTested: Ran CtsLibcoreTestCases\nBug: 110955991\n(cherry picked from commit 512b127b593c9bdfbd92e2744495d9e17be9b4f3)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1ff9b336cbfcef126416d16c6851a9745ef23bfc",
+      "old_mode": 33188,
+      "old_path": "luni/src/test/java/libcore/java/net/URLTest.java",
+      "new_id": "066442e44e0b9e95161ba71f87752f2f96247f8a",
+      "new_mode": 33188,
+      "new_path": "luni/src/test/java/libcore/java/net/URLTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d5380c1c58475d11bd1536505055c896f1fc4500",
+      "old_mode": 33188,
+      "old_path": "ojluni/src/main/java/java/net/URLStreamHandler.java",
+      "new_id": "01862f6d5c2f65b525f0d570ae46b17390d9e5ae",
+      "new_mode": 33188,
+      "new_path": "ojluni/src/main/java/java/net/URLStreamHandler.java"
+    }
+  ]
+}

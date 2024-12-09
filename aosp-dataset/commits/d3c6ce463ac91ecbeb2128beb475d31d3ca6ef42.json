@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d3c6ce463ac91ecbeb2128beb475d31d3ca6ef42",
+  "tree": "3b872b3b41de6a771f1cb4f6cdeb7b3ac00ee06e",
+  "parents": [
+    "363247929c35104b3e5ee9e637e9dcf579080aee"
+  ],
+  "author": {
+    "name": "Arve Hjønnevåg",
+    "email": "arve@android.com",
+    "time": "Mon Aug 01 16:05:17 2016 -0700"
+  },
+  "committer": {
+    "name": "gitbuildkicker",
+    "email": "android-build@google.com",
+    "time": "Fri Aug 26 10:40:56 2016 -0700"
+  },
+  "message": "ServiceManager: Restore basic uid check\n\nPrevent apps from registering services without relying on selinux checks.\n\nBug: 29431260\n\nChange-Id: I38c6e8bc7f7cba1cbd3568e8fed1ae7ac2054a9b\n(cherry picked from commit 2b74d2c1d2a2c1bb6e9c420f7e9b339ba2a95179)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "21fdff0f0f567e81d3a575ac6513de9a5d1c3b21",
+      "old_mode": 33188,
+      "old_path": "cmds/servicemanager/service_manager.c",
+      "new_id": "8a8e6885cc1016fc7c44850bc3ca3cce191b200d",
+      "new_mode": 33188,
+      "new_path": "cmds/servicemanager/service_manager.c"
+    }
+  ]
+}

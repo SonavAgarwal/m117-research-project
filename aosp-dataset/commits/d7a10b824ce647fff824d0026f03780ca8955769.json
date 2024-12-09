@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "d7a10b824ce647fff824d0026f03780ca8955769",
+  "tree": "c46b175464360b748945b8f1035f176c830b80c6",
+  "parents": [
+    "c248e64fa17844f56256dbc8eae51d141bfa5766"
+  ],
+  "author": {
+    "name": "Bernardo Rufino",
+    "email": "brufino@google.com",
+    "time": "Fri Aug 30 16:41:39 2019 +0100"
+  },
+  "committer": {
+    "name": "Bernardo Rufino",
+    "email": "brufino@google.com",
+    "time": "Wed Sep 04 11:51:08 2019 +0100"
+  },
+  "message": "CTS testing 2nd activity launch is blocked when activity in bg\n\nThis tests the fix for the vulnerability found in the bug linked where an\nactivity in the bg can fire 2 intents simulteneously to circumvent bg activity\nrestriction, allowing the 2nd activity to be brought to fg.\n\nBug: 138583650\nTest: 1) atest BackgroundActivityLaunchTest#testSecondActivityBlockedWhenBackgroundActivityLaunch\n         Without topic CL built and verify it fails\n      2) atest BackgroundActivityLaunchTest#testSecondActivityBlockedWhenBackgroundActivityLaunch\n         With topic CL built and verify it passes\nChange-Id: I7132e64177112fb3f4d7c7cbfdfdcd04065f10a5\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "56aa31970a723c3b71c52c82d4dce243ad6a8583",
+      "old_mode": 33188,
+      "old_path": "tests/framework/base/windowmanager/backgroundactivity/AppA/src/android/server/wm/backgroundactivity/appa/Components.java",
+      "new_id": "5023481c81310b94c5bf6cfaa4cd5b4bf8022eeb",
+      "new_mode": 33188,
+      "new_path": "tests/framework/base/windowmanager/backgroundactivity/AppA/src/android/server/wm/backgroundactivity/appa/Components.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "377cabf7179abba39fc20227f4ba5d03548507c3",
+      "old_mode": 33188,
+      "old_path": "tests/framework/base/windowmanager/backgroundactivity/AppA/src/android/server/wm/backgroundactivity/appa/ForegroundActivity.java",
+      "new_id": "1413fbcaa9ef0416c44c1c2ba3dc6bc84ae389b9",
+      "new_mode": 33188,
+      "new_path": "tests/framework/base/windowmanager/backgroundactivity/AppA/src/android/server/wm/backgroundactivity/appa/ForegroundActivity.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "b1a559f3c3dde1d1353675b9d2cde9cffbc57323",
+      "old_mode": 33188,
+      "old_path": "tests/framework/base/windowmanager/backgroundactivity/src/android/server/wm/BackgroundActivityLaunchTest.java",
+      "new_id": "b4d3ee9b3418e169facbb28a31308e4a09000f47",
+      "new_mode": 33188,
+      "new_path": "tests/framework/base/windowmanager/backgroundactivity/src/android/server/wm/BackgroundActivityLaunchTest.java"
+    }
+  ]
+}

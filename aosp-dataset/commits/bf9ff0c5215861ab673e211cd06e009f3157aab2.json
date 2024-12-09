@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "bf9ff0c5215861ab673e211cd06e009f3157aab2",
+  "tree": "a1a6359a5b993b6b1274cbc5ecd4d079d3c212f0",
+  "parents": [
+    "b8da9c304f53d4a254638c9b70a40c111e0ed685"
+  ],
+  "author": {
+    "name": "Ugo Yu",
+    "email": "ugoyu@google.com",
+    "time": "Tue Oct 30 00:47:04 2018 +0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Nov 15 18:20:08 2018 +0000"
+  },
+  "message": "Fix possible OOB when AVDT data channel recive ACL data\n\nBug: 111450156\n\nChange-Id: Id23eeedcb7bde5866cd53a2f7f1c30f27c5352f6\n(cherry picked from commit baa9bf5bfe4a6f3e52ac927aaf4463f37f81294e)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d55a22e709730281e5a03bb70c617436fc405d5e",
+      "old_mode": 33188,
+      "old_path": "stack/avdt/avdt_scb_act.cc",
+      "new_id": "9ff9265099cd6fa450ae3822192e052b53003ccf",
+      "new_mode": 33188,
+      "new_path": "stack/avdt/avdt_scb_act.cc"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "3ce293842fed1b3abd2ff0aecd2a0c70a55086ee",
+  "tree": "f593018b43c0bedfbb8c578b7b0d7fc8b9536121",
+  "parents": [
+    "f51115bd8e44c2779b74477277c6f6046916e7cf"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Wed Aug 12 10:08:41 2015 -0700"
+  },
+  "committer": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 13 16:49:35 2015 +0000"
+  },
+  "message": "libstagefright: fix possible overflow in amrwbenc.\n\nBug: 23142203\nChange-Id: I309df51e4df6412655f04cc093d792bf6c7944f7\n(cherry picked from commit 9dd01777aa14bbb90a6cdccf97383bb4e3d717a5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "76ab1b1cf57b7274751ee049c6ccc3cce75f4c62",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/codecs/amrwbenc/src/util.c",
+      "new_id": "333140dc39befd6319270477485f5927bbe6f391",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/codecs/amrwbenc/src/util.c"
+    }
+  ]
+}

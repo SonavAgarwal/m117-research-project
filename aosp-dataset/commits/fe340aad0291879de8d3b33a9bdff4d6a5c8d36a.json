@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "fe340aad0291879de8d3b33a9bdff4d6a5c8d36a",
+  "tree": "30e032b7843d3aec63f21bbb9068ca2db553d5ea",
+  "parents": [
+    "c239e1c62f141178ebe3a96b2e0e5388918cda06"
+  ],
+  "author": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Fri Sep 14 15:42:46 2018 -0700"
+  },
+  "committer": {
+    "name": "Ruchi Kandoi",
+    "email": "kandoiruchi@google.com",
+    "time": "Thu Oct 11 22:43:28 2018 +0000"
+  },
+  "message": "Prevent Out of bounds read in llcp code\n\nModifies llcp_util.cc \u0026 llcp_link.cc to fix the OOB issues.\n\nTest: Nfc Enable/Disable, Android Beam, Tag reading\nBug: 114237888\nBug: 114238578\nBug: 111699773\nBug: 111660010\nMerged-In: Ie28888ddb9a5a2605ae32a27e3dba01c35ab3913\nChange-Id: Ie28888ddb9a5a2605ae32a27e3dba01c35ab3913\n(cherry picked from commit 23eb85a028780af14f617e27938540a52c18a8d5)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "cebabba383200ace5d741124722c0fb0203a22df",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_link.cc",
+      "new_id": "8a5ddf26ca0a01925964ee6bd7e225a811554a32",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_link.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "8b582d8ac4a85c4c51cdd805eb5c79e8fdd613e6",
+      "old_mode": 33188,
+      "old_path": "src/nfc/llcp/llcp_util.cc",
+      "new_id": "973a1b9c78c2d38ff3c79804e6862e0b4b8bd490",
+      "new_mode": 33188,
+      "new_path": "src/nfc/llcp/llcp_util.cc"
+    }
+  ]
+}

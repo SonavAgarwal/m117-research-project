@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2b6af396ad14def9a967f62cccc87ee715823bb1",
+  "tree": "27fe7fb1ba9bc767ba4d898bd74d5fcb498e3515",
+  "parents": [
+    "a12044215b1148826ea9a88d5d1102378b13922f"
+  ],
+  "author": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 12:00:15 2015 -0400"
+  },
+  "committer": {
+    "name": "Paul Jensen",
+    "email": "pauljensen@google.com",
+    "time": "Fri Aug 28 12:50:09 2015 -0400"
+  },
+  "message": "Don\u0027t mark NetworkRequests restricted when they don\u0027t have restricted caps\n\nRequests without NET_CAPABILITIES_INTERNET and just the default network\ncapabilities should not be marked restricted.  Without this fix apps\ncan hit permissions exceptions if they inadvertently make requests\nwithout NET_CAPABILITIES_INTERNET.\n\nBug:23164917\nChange-Id: I4c7136821315bcb05dfc42ffbc505a5d4f6109e6\n(cherry picked from commit aae613d96134245af7c55976731a49fa59e77470)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "2e22697cab64536ec9b5c2adf1e8c88c1e90988c",
+      "old_mode": 33188,
+      "old_path": "core/java/android/net/NetworkCapabilities.java",
+      "new_id": "04ebc7c7dd550b7d707fdcda4f7ced2672bf0fd7",
+      "new_mode": 33188,
+      "new_path": "core/java/android/net/NetworkCapabilities.java"
+    }
+  ]
+}

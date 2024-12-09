@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0e459673aa944d65989181b659c820504117ab51",
+  "tree": "791bbd6812bac49fe2d2f0abae44d7adc411289b",
+  "parents": [
+    "78a7feeb2601037bba61aec5f24302896dace6bc"
+  ],
+  "author": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Fri Mar 05 09:58:19 2021 -0800"
+  },
+  "committer": {
+    "name": "Shuo Qian",
+    "email": "shuoq@google.com",
+    "time": "Mon Mar 15 19:14:07 2021 +0000"
+  },
+  "message": "Add permission for the broadcast intent with SIP profiles for security purpose.\n\nTest: Treehugger\nBug: 176496502\nChange-Id: I2087170aceb7c0670afd04fcc779047aa95a373f\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d14a8d6e9d47766c2c6c1f876a6ef6d499c901de",
+      "old_mode": 33188,
+      "old_path": "src/java/com/android/server/sip/SipService.java",
+      "new_id": "5328801911af9c4bb6238281887ddb12953078e2",
+      "new_mode": 33188,
+      "new_path": "src/java/com/android/server/sip/SipService.java"
+    }
+  ]
+}

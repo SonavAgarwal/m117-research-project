@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "7dcd0ec9c91688cfa3f679804ba6e132f9811254",
+  "tree": "b34e58be4744601456d6adebe655f92339e85260",
+  "parents": [
+    "796aaf7fb160fea12bddc8406d7f006ce811eb43"
+  ],
+  "author": {
+    "name": "Adam Lesinski",
+    "email": "adamlesinski@google.com",
+    "time": "Tue May 12 17:35:48 2015 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Aug 13 19:41:48 2015 -0700"
+  },
+  "message": "Verify that the native handle was created\n\nThe inputs to native_handle_create can cause an overflowed allocation,\nso check the return value of native_handle_create before accessing\nthe memory it returns.\n\nBug:19334482\nChange-Id: I1f489382776c2a1390793a79dc27ea17baa9b2a2\n(cherry picked from commit eaac99a7172da52a76ba48c26413778a74951b1a)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e7589b1a5ca1394629579d26bcfa018126f231b2",
+      "old_mode": 33188,
+      "old_path": "libs/binder/Parcel.cpp",
+      "new_id": "99c934cdd4c79dc8b9d2ad7e2117b8bf92333109",
+      "new_mode": 33188,
+      "new_path": "libs/binder/Parcel.cpp"
+    }
+  ]
+}

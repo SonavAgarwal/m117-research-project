@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "a16cd9df50f22ccf65cf27eddc0403791116c75a",
+  "tree": "9adb575b38fe3f450e91c613c86630b960b84b9b",
+  "parents": [
+    "4cebe6f1f01a34546b3b843b5267619a61bd7d39"
+  ],
+  "author": {
+    "name": "Louis Dionne",
+    "email": "ldionne@apple.com",
+    "time": "Wed Sep 04 13:35:03 2019 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Fri Sep 20 02:55:56 2019 +0000"
+  },
+  "message": "[libc++] Move __clamp_to_integral to \u003ccmath\u003e, and harden against min()/max() macros\n\ngit-svn-id: https://llvm.org/svn/llvm-project/libcxx/trunk@370900 91177308-0d34-0410-b5e6-96231b3b80d8\n(cherry picked from commit 87e6185621d332d2ef8695b94778663380c83bb9)\n\nBug: https://bugs.chromium.org/p/chromium/issues/detail?id\u003d994957\nBug: http://b/139690488\nChange-Id: Ice92a8ea6f675be069a70c5ad1003cf99b4fc474\n(cherry picked from commit 82e0483c4a47233ed2f7bab545b32e5ddd474e59)\n(cherry picked from commit 44a8861f2c85a8f46107a541c5d610c1d3b464fe)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "f5f62adcfb8da42164e81b8e8dbfbf6ca4beca98",
+      "old_mode": 33188,
+      "old_path": "include/cmath",
+      "new_id": "56d17bfdd8868454d9a6b25963bd014fff824a84",
+      "new_mode": 33188,
+      "new_path": "include/cmath"
+    },
+    {
+      "type": "modify",
+      "old_id": "9dfbb0e78cf2f978fddbdd2f7960625e58199495",
+      "old_mode": 33188,
+      "old_path": "include/math.h",
+      "new_id": "3cc72aa2791e38666ab9ccac29546dd4869923fe",
+      "new_mode": 33188,
+      "new_path": "include/math.h"
+    },
+    {
+      "type": "add",
+      "old_id": "0000000000000000000000000000000000000000",
+      "old_mode": 0,
+      "old_path": "/dev/null",
+      "new_id": "ba1696eb2405c983676d165e73d90e96a8d60d27",
+      "new_mode": 33188,
+      "new_path": "test/libcxx/numerics/c.math/undef_min_max.pass.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c0218b536c4243993bb666910d888cf16191dfd1",
+  "tree": "23e3722364e6463be93cd32345716aaad03c0f9e",
+  "parents": [
+    "e9a5fc357cc4520a4a9f404fc49a46d9f28d6959"
+  ],
+  "author": {
+    "name": "The Android Open Source Project",
+    "email": "initial-contribution@android.com",
+    "time": "Wed Sep 13 10:05:51 2017 -0700"
+  },
+  "committer": {
+    "name": "The Android Open Source Project",
+    "email": "initial-contribution@android.com",
+    "time": "Wed Sep 13 10:05:51 2017 -0700"
+  },
+  "message": "Remove external/jhead and external/libgdx\n\nChange-Id: I0510e2e7da4662da16b9ca4918060a76905f6c65\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "7c81e9e12c8391562ec29cf048d7f963438101c3",
+      "old_mode": 33188,
+      "old_path": "default.xml",
+      "new_id": "7d6a6d698d6ef20cc4b9d9d9869855e769d05cfa",
+      "new_mode": 33188,
+      "new_path": "default.xml"
+    }
+  ]
+}

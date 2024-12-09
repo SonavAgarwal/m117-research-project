@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "22758c3312ada2cf9579c9c379875e3c7eb4b1f7",
+  "tree": "6f0e4e4882fb6cfd4345e54ace5e019d9e5255aa",
+  "parents": [
+    "d6d6828f166a3d01c61451e453ef3169b98ee2f5"
+  ],
+  "author": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Wed Sep 20 17:09:08 2017 -0700"
+  },
+  "committer": {
+    "name": "Seigo Nonaka",
+    "email": "nona@google.com",
+    "time": "Fri Sep 22 18:31:15 2017 +0000"
+  },
+  "message": "Add log message if Cmap format 12 has too large code point. - DO NOT MERGE\n\nBug: 62134807\nTest: N/A\nChange-Id: Id674b6e462a3c41bc7ff3cfd4c3bf7fe1ac96054\n(cherry picked from commit c895d9ffd672c7bd3b1f3507738680bdd48eb477)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "c56d07c5aa82ce7bc0e7dcf72c4e3db6bc7b43fa",
+      "old_mode": 33188,
+      "old_path": "libs/minikin/CmapCoverage.cpp",
+      "new_id": "c6318f5581ddea3326cdbba9dd1ee0419d81c641",
+      "new_mode": 33188,
+      "new_path": "libs/minikin/CmapCoverage.cpp"
+    }
+  ]
+}

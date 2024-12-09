@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "45678238713ba15cca8dd453b992caedf1d43ec5",
+  "tree": "0195250573a9d9434faf25269819de34d1d59b6f",
+  "parents": [
+    "b7e176df4b9d90dbf8f29678615e6547a6e6d038"
+  ],
+  "author": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Mar 03 13:49:21 2021 -0800"
+  },
+  "committer": {
+    "name": "Myles Watson",
+    "email": "mylesgw@google.com",
+    "time": "Wed Mar 03 13:49:35 2021 -0800"
+  },
+  "message": "smp: Use SMP_TRACE_WARNING\n\nBug: 174886838\nTest: pair an LE device\nTag: #security\nChange-Id: I3c7e0b1dd877dfa29fa0812c6a5e65fcb1d70ea7\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "1d96e2936d3810dd35ad445c1082313292f8d185",
+      "old_mode": 33188,
+      "old_path": "stack/smp/smp_act.cc",
+      "new_id": "af15dbf7b47fcbde973fda97d2c1e3fbb15fd88c",
+      "new_mode": 33188,
+      "new_path": "stack/smp/smp_act.cc"
+    }
+  ]
+}

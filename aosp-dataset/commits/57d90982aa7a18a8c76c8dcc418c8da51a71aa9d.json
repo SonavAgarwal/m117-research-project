@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "57d90982aa7a18a8c76c8dcc418c8da51a71aa9d",
+  "tree": "57e8f0fb1f079edbdb5387746326746579f553a3",
+  "parents": [
+    "0025b6914b936cbecfe9a8527e0bfd1ab9c83b51"
+  ],
+  "author": {
+    "name": "Ray Essick",
+    "email": "essick@google.com",
+    "time": "Sun Jan 10 11:27:25 2021 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Mar 18 23:59:37 2021 +0000"
+  },
+  "message": "Improve handling MediaCodec linkToDeath() resource manager\n\nmanage use of service pointer from MediaCodec to resource manager\nto avoid race conditions during teardown.\n\nBug: 173791720\nTest: manual audit since repo is unreliable\nMerged-In: I7436e064b63a9b1833f0a2126319674d5ab50828\nChange-Id: I843c2f5442557b64babdbba80fc1afd10d2ec5cb\n(cherry picked from commit d11e1606e3183c97771ce46ea213a9d71223c45f)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "4d617ae02e5d91819504f8e7e16d2d894264468b",
+      "old_mode": 33188,
+      "old_path": "media/libstagefright/MediaCodec.cpp",
+      "new_id": "553f59a41f7b7ed31aa10f88d90248cdc1f7912b",
+      "new_mode": 33188,
+      "new_path": "media/libstagefright/MediaCodec.cpp"
+    }
+  ]
+}

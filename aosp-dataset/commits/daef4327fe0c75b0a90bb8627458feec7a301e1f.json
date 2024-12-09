@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "daef4327fe0c75b0a90bb8627458feec7a301e1f",
+  "tree": "2d308e0650e3424dc9757fec3264cd1e01744167",
+  "parents": [
+    "4f236c532039a61f0cf681d2e3c6e022911bbb5c"
+  ],
+  "author": {
+    "name": "Marco Nelissen",
+    "email": "marcone@google.com",
+    "time": "Mon May 02 14:12:34 2016 -0700"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Fri May 27 11:30:15 2016 -0700"
+  },
+  "message": "Clear unused pointer field when sending across binder\n\nBug: 28377502\nChange-Id: Iad5ebfb0a9ef89f09755bb332579dbd3534f9c98\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "a5a1fa504dbeed9c4140ab3eff601c4f786dd471",
+      "old_mode": 33188,
+      "old_path": "media/libmediaplayerservice/MetadataRetrieverClient.cpp",
+      "new_id": "f6acdf645b07a25cba57880680a9d4cebd10a29e",
+      "new_mode": 33188,
+      "new_path": "media/libmediaplayerservice/MetadataRetrieverClient.cpp"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "fe8b9a7cb32f739e3855c51c8803590908a1da9c",
+  "tree": "07acdca0ba7f6e53664f6676150302429eecc5f7",
+  "parents": [
+    "a66592bf964df38810f7aa0eba490ab11984ec87"
+  ],
+  "author": {
+    "name": "Edwin Wong",
+    "email": "edwinwong@google.com",
+    "time": "Wed Nov 27 10:46:17 2019 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Feb 11 19:06:46 2020 +0000"
+  },
+  "message": "[DO NOT MERGE] Fix heap buffer overflow for releaseSecureStops.\n\nIf the input SecureStopRelease size is less than sizeof(uint32_t)\nin releaseSecureStops(), an out of bound read will occur.\n\nbug: 144766455\nbug: 144746235\nbug: 147281068\n\nTest: sts\nANDROID_BUILD_TOP\u003d ./android-sts/tools/sts-tradefed run sts-engbuild-no-spl-lock -m StsHostTestCases --test android.security.sts.Poc19_11#testPocBug_144766455\n\nChange-Id: Ieccdd86ad86966fbf1dde70d3b3fb73d6dd124a4\n(cherry picked from commit fa237c4f76b7b9369d9c499bfdc81e5072ddde86)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "71bb2185bd835a38cc84fc5a40982e243c375d24",
+      "old_mode": 33188,
+      "old_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp",
+      "new_id": "aab475ed881c87c6a98969019e31356383f3f5a4",
+      "new_mode": 33188,
+      "new_path": "drm/mediadrm/plugins/clearkey/hidl/DrmPlugin.cpp"
+    }
+  ]
+}

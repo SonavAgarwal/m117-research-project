@@ -1,0 +1,48 @@
+)]}'
+{
+  "commit": "ddc934efe3ed06ce34f3724d41cfbdcd7e7358fc",
+  "tree": "2ad7b0e2387008893154a5e24071debcf5864131",
+  "parents": [
+    "341ce1f2003d79a27333c4ee27b3797560bf8e8b"
+  ],
+  "author": {
+    "name": "Pete Bentley",
+    "email": "prb@google.com",
+    "time": "Fri Dec 04 09:25:28 2020 +0000"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Tue Dec 15 21:45:33 2020 +0000"
+  },
+  "message": "Reject non-ASCII hostnames and SANs.\n\nRemoves the possibility of certificates spoofing DNS names by\nexploiting name collisions when lowercasing Unicode characters.\nNote that the relevant RFCs mandate that domain names in\ncertificates should be stored using IDNA 2008 rules, i.e. as\nASCII punycode.\n\nBug: 171980069\nTest: atest CtsLibcoreTestCases CtsLibcoreOkHttpTestCases\nChange-Id: I96d52609ce4966ff11f649ca940de3b02a43b0b2\n(cherry picked from commit 72ac99d371b9794bd4947ae2794e3ef322e36673)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "76897fc0e16602a67be649d8a951880e58b47f68",
+      "old_mode": 33188,
+      "old_path": "okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/HostnameVerifierTest.java",
+      "new_id": "0c3d16d5e2a3849fa1e817856d9b2be2d7ef7c8f",
+      "new_mode": 33188,
+      "new_path": "okhttp-tests/src/test/java/com/squareup/okhttp/internal/tls/HostnameVerifierTest.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d560c620dccccdb7e3e81413e1c6933751ad9d3e",
+      "old_mode": 33188,
+      "old_path": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java",
+      "new_id": "71d2f8ea03b4d36451417bf414e1a0817bc35611",
+      "new_mode": 33188,
+      "new_path": "okhttp/src/main/java/com/squareup/okhttp/internal/tls/OkHostnameVerifier.java"
+    },
+    {
+      "type": "modify",
+      "old_id": "d37902f8f96b8e0e853236d47127a54be52942cb",
+      "old_mode": 33188,
+      "old_path": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java",
+      "new_id": "22daecd41e00920bd63ab4a7d986d5018eaf85f3",
+      "new_mode": 33188,
+      "new_path": "repackaged/okhttp/src/main/java/com/android/okhttp/internal/tls/OkHostnameVerifier.java"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "2526448930008792615f8b8a718ad09f19390025",
+  "tree": "ce69c96d1da077ad8275e63bb7de0f77c94f6c69",
+  "parents": [
+    "f4cb73d1b7345acd4fd2b11183aef62827b07943"
+  ],
+  "author": {
+    "name": "Colin Cross",
+    "email": "ccross@android.com",
+    "time": "Fri Nov 01 16:34:30 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Dec 18 06:23:47 2019 +0000"
+  },
+  "message": "Fix accidental implicit fallthroughs\n\n-Wimplicit-fallthrough was printing warnings for these, they look\nlike real errors.  Fix them and re-enable the error.\n\nBug: 144040966\nTest: treehugger\nMerged-In: I818e18a995760f17b85b4c72ee577e531fa2a601\nChange-Id: I818e18a995760f17b85b4c72ee577e531fa2a601\n(cherry picked from commit bfcf9140fe61eb3d3830daa396ed1992fe613303)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ae6ef473933c2f85484076b931ff7ee634c6255b",
+      "old_mode": 33188,
+      "old_path": "modules/sensors/dynamic_sensor/HidRawSensor.cpp",
+      "new_id": "46684128f853e181c421ca0ee03e699ccc0860f6",
+      "new_mode": 33188,
+      "new_path": "modules/sensors/dynamic_sensor/HidRawSensor.cpp"
+    }
+  ]
+}

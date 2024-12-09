@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "b58481780c9e85fc71c990f90f0dcdbdcee8fc00",
+  "tree": "7620755268e3685206640358e7270c17e39ac4ec",
+  "parents": [
+    "1fa6c247571d74dfd48aeb585c950ff095d115cd"
+  ],
+  "author": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Thu Jun 20 14:12:54 2019 -0700"
+  },
+  "committer": {
+    "name": "Bryan Ferris",
+    "email": "bferris@google.com",
+    "time": "Fri Jun 21 17:20:50 2019 +0000"
+  },
+  "message": "Fix heap buffer overflow in ipp.c\n\nBug: 110899492\nTest: PoC from bug\nTest: Printed on a real printer\nChange-Id: I9b7388c75c7a4f13dcd8ba3b2d60b87b057bb216\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "817c9d5fab2f2ce15b08e2b116c08ea0b23e08aa",
+      "old_mode": 33188,
+      "old_path": "cups/ipp.c",
+      "new_id": "650d33d016b7fd23a530b4b81cb2bd3b1df9a480",
+      "new_mode": 33188,
+      "new_path": "cups/ipp.c"
+    }
+  ]
+}

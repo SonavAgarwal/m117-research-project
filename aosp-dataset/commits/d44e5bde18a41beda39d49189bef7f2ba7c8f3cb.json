@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d44e5bde18a41beda39d49189bef7f2ba7c8f3cb",
+  "tree": "bf01666ec8db5fae35664bb8fd25a75e9eb91a95",
+  "parents": [
+    "0e40462e11d27eb859b829b112cecb8c6f0d7afb"
+  ],
+  "author": {
+    "name": "Leon Scroggins III",
+    "email": "scroggo@google.com",
+    "time": "Wed Mar 11 13:12:06 2015 -0400"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:04:55 2015 -0700"
+  },
+  "message": "Make Bitmap_createFromParcel check the color count. DO NOT MERGE\n\nWhen reading from the parcel, if the number of colors is invalid, early\nexit.\n\nAdd two more checks: setInfo must return true, and Parcel::readInplace\nmust return non-NULL. The former ensures that the previously read values\n(width, height, etc) were valid, and the latter checks that the Parcel\nhad enough data even if the number of colors was reasonable.\n\nAlso use an auto-deleter to handle deletion of the SkBitmap.\n\nCherry pick from change-Id: Icbd562d6d1f131a723724883fd31822d337cf5a6\n\nBUG\u003d19666945\n\nChange-Id: Iab0d218c41ae0c39606e333e44cda078eef32291\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d7eef6ed0cd31dc9f2785a72691039c7b24264d4",
+      "old_mode": 33261,
+      "old_path": "core/jni/android/graphics/Bitmap.cpp",
+      "new_id": "30792180387fd853101c50fa021aa7f62819b4c2",
+      "new_mode": 33261,
+      "new_path": "core/jni/android/graphics/Bitmap.cpp"
+    }
+  ]
+}

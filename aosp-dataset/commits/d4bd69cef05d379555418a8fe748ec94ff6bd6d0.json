@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "d4bd69cef05d379555418a8fe748ec94ff6bd6d0",
+  "tree": "cbd8b233222a7a3613e49c6db7ef64a1f655133f",
+  "parents": [
+    "a24033d8aacc8e96b1fadace0ea1e7e0073335a7"
+  ],
+  "author": {
+    "name": "wilsonshih",
+    "email": "wilsonshih@google.com",
+    "time": "Wed May 13 16:09:35 2020 +0800"
+  },
+  "committer": {
+    "name": "wilsonshih",
+    "email": "wilsonshih@google.com",
+    "time": "Wed May 13 16:09:35 2020 +0800"
+  },
+  "message": "Make WallpaperMS bind wallpaper component PendingIntent immutable.\n\nRequire that the PendingIntent be immutable so that a malicious app is\nnot able to hijack and mutate any of the details.\n\nFixes: 154915372\nTest: build \u0026 flash, change wallpaper manually.\nChange-Id: I59b48811b26736bf0575769107dd940ca33ccf8d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "63952b086c1c8ac82ec99cf7a8c7b709691febd8",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/wallpaper/WallpaperManagerService.java",
+      "new_id": "31fbaff17e78e649e0e1c0521a916906b1d0719a",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/wallpaper/WallpaperManagerService.java"
+    }
+  ]
+}

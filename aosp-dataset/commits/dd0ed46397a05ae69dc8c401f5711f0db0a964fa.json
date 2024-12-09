@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "dd0ed46397a05ae69dc8c401f5711f0db0a964fa",
+  "tree": "61ce63e76d91ed977ca411dc606a032ec0e42b1f",
+  "parents": [
+    "7be36a066a69a2cb391519b9973dbc99ffb97ff2"
+  ],
+  "author": {
+    "name": "Narayan Kamath",
+    "email": "narayan@google.com",
+    "time": "Wed Feb 25 14:33:29 2015 +0000"
+  },
+  "committer": {
+    "name": "The Android Automerger",
+    "email": "android-build@google.com",
+    "time": "Thu Jul 09 14:02:46 2015 -0700"
+  },
+  "message": "Restore a width check that was removed from png.c (CVE-2015-0973)\n\nBackported from upstream commit 6d8c88177a. Note that this update\nfrom beta3-\u003erc1 contained one other (accidental) change to pngrutil.c\nthat was subsequently reverted in rc2.\n\nNote that the code around this has moved around and changed quite\na bit since 1.6.10.\n\nbug: 19499430\n\n(cherry picked from commit f4435dfcdb5733f9c340492cc7fcac88a13f6ebd)\n\nChange-Id: Ifde854718c98b92c5846dda62d9fddb5d7fcf6da\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "0cb4a1d0485f56a89c80de2225ceb039c7f92e20",
+      "old_mode": 33188,
+      "old_path": "png.c",
+      "new_id": "087a2787c9f4165ada05190d88d3fcefc2d9f320",
+      "new_mode": 33188,
+      "new_path": "png.c"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "c580b5560810c3348335b4b284a48773ceaa2301",
+  "tree": "c08f7c284908b750665de1b2435c1fbfba3700a3",
+  "parents": [
+    "1420a89945668abb8de8037e2a9b78f71bbdb2e0"
+  ],
+  "author": {
+    "name": "Jouni Malinen",
+    "email": "j@w1.fi",
+    "time": "Fri Sep 22 11:03:15 2017 +0300"
+  },
+  "committer": {
+    "name": "Glen Kuhne",
+    "email": "kuh@google.com",
+    "time": "Mon Oct 16 09:50:40 2017 -0700"
+  },
+  "message": "TDLS: Reject TPK-TK reconfiguration\n\nDo not try to reconfigure the same TPK-TK to the driver after it has\nbeen successfully configured. This is an explicit check to avoid issues\nrelated to resetting the TX/RX packet number. There was already a check\nfor this for TPK M2 (retries of that message are ignored completely), so\nthat behavior does not get modified.\n\nFor TPK M3, the TPK-TK could have been reconfigured, but that was\nfollowed by immediate teardown of the link due to an issue in updating\nthe STA entry. Furthermore, for TDLS with any real security (i.e.,\nignoring open/WEP), the TPK message exchange is protected on the AP path\nand simple replay attacks are not feasible.\n\nAs an additional corner case, make sure the local nonce gets updated if\nthe peer uses a very unlikely \"random nonce\" of all zeros.\n\nBug: 65245581\nTest: Wifi Integration Suite\nChange-Id: Ic94024e8a3bf8f24c77224b4960315b5f8512fc1\nMerged-In: Ic94024e8a3bf8f24c77224b4960315b5f8512fc1\nSigned-off-by: Jouni Malinen \u003cj@w1.fi\u003e\nSigned-off-by: Glen Kuhne \u003ckuh@google.com\u003e\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "e4ac24ff2b92274c130f2f0706c37c1c884c71fa",
+      "old_mode": 33188,
+      "old_path": "src/rsn_supp/tdls.c",
+      "new_id": "c2ed95226741ddc8bf90902979b92489cb665827",
+      "new_mode": 33188,
+      "new_path": "src/rsn_supp/tdls.c"
+    }
+  ]
+}

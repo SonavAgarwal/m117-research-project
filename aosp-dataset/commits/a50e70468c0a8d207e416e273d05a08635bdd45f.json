@@ -1,0 +1,39 @@
+)]}'
+{
+  "commit": "a50e70468c0a8d207e416e273d05a08635bdd45f",
+  "tree": "49206a08e59ca69fcb1c8b12fd803b0ddeb6c6e9",
+  "parents": [
+    "f0edf6571d2d58e66ee0b100ebe49c585d31489f"
+  ],
+  "author": {
+    "name": "Hansong Zhang",
+    "email": "hsz@google.com",
+    "time": "Wed Jan 10 13:43:25 2018 -0800"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Thu Jan 18 19:08:06 2018 +0000"
+  },
+  "message": "Fix unexpected behavior in reading BNEP packets\n\nBug: 67863755\nBug: 69177251\nBug: 69177292\nBug: 69271284\nTest: BNEP still works\nChange-Id: I41b8bfe5e123a56b8812124178663735f2bf3372\n(cherry picked from commit 9844ddac4c0aaf217326c56f2814d145c11eb042)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ce09c47f7bcfa99df747ed15fe590813d6227673",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_main.cc",
+      "new_id": "475cc285b09789ae01a2b8daaaaca65132d85065",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_main.cc"
+    },
+    {
+      "type": "modify",
+      "old_id": "a3626350fbac65942413ef5ab82dd0300073f8e8",
+      "old_mode": 33188,
+      "old_path": "stack/bnep/bnep_utils.cc",
+      "new_id": "3bab9eebd5098100618fc88ed8a248c31f013b8f",
+      "new_mode": 33188,
+      "new_path": "stack/bnep/bnep_utils.cc"
+    }
+  ]
+}

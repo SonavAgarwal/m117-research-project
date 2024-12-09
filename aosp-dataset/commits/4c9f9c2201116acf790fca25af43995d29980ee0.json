@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "4c9f9c2201116acf790fca25af43995d29980ee0",
+  "tree": "38572bfa4f53630c855611396d98bd2a35224da4",
+  "parents": [
+    "c4ab1b959280413fb11bf4fd7f6b4c2ba38bd779"
+  ],
+  "author": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Sun Dec 20 20:49:24 2015 -0800"
+  },
+  "committer": {
+    "name": "Chad Brubaker",
+    "email": "cbrubaker@google.com",
+    "time": "Tue Jan 19 12:46:24 2016 -0800"
+  },
+  "message": "Prevent duplicate certificates in TrustedCertificateIndex\n\nWith the separate caching of intermediate certificates in\nTrustManagerImpl a given intermediate may be passed into .index multiple\ntimes. Avoid adding the certificate to the list each time.\n\n(cherry-picked from commit d080e064abba665e2dde2a8c113f837ba4d9a85e)\nBug: 26232830\nChange-Id: I6bed2c65d9e42e052b9b1b129200a997e7dca745\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "ea6f712117879a6f82a5ad4f01c1dacf2aefb58f",
+      "old_mode": 33188,
+      "old_path": "src/platform/java/org/conscrypt/TrustedCertificateIndex.java",
+      "new_id": "cdb16d133be08a5e4ddf2838299f02ea96b94fd9",
+      "new_mode": 33188,
+      "new_path": "src/platform/java/org/conscrypt/TrustedCertificateIndex.java"
+    }
+  ]
+}

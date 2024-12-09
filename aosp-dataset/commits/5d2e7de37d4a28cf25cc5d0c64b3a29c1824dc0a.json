@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "5d2e7de37d4a28cf25cc5d0c64b3a29c1824dc0a",
+  "tree": "fd451b7047d833d7f010aff4790dd412c9701b2e",
+  "parents": [
+    "8cbef48ba6e3d3f844b895f8ca1a1aee74414fff"
+  ],
+  "author": {
+    "name": "Wei Jia",
+    "email": "wjia@google.com",
+    "time": "Thu Aug 20 16:03:14 2015 -0700"
+  },
+  "committer": {
+    "name": "Abhishek Arya",
+    "email": "aarya@google.com",
+    "time": "Fri Aug 21 13:51:40 2015 +0000"
+  },
+  "message": "Sonivox: fix overflow in Parse_data in eas_mdls.c\n\nBug: 23307276\nChange-Id: Iea56eae9a1855b41840f8d814717fe6379c5bb4d\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "d66c734450c2b5e0eccc50ac1bd0b21382cece9c",
+      "old_mode": 33188,
+      "old_path": "arm-wt-22k/lib_src/eas_mdls.c",
+      "new_id": "f260c0537935636b0b67d939f7df246b7bcaab70",
+      "new_mode": 33188,
+      "new_path": "arm-wt-22k/lib_src/eas_mdls.c"
+    }
+  ]
+}
