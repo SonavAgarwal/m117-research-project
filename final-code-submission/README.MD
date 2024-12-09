@@ -14,7 +14,7 @@ This folder contains the Python framework used to generate the data using the ag
 
 In the `logs_example` folder there is a small example of the generated data where the malicious agents successfully gained maintainer status.
 
-## aosp
+## aosp-dataset
 
 ```
 Note: most of the data files have been removed for size constraints. The data can be found in the original dataset.
