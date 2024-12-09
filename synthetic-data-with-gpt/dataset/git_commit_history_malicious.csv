@@ -1,0 +1,3001 @@
+commit_hash,commit_author,commit_date_timestamp,full_commit_message_markdown,repository,is_malicious
+2408113dd8b6c5dc2c12a72b323c85ca04d291ac,dev47,2024-04-16 19:50:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+2af346da74f6d4293f44eb76ec7985cfde59428a,dev25,2024-09-26 00:53:00,"### Commit Message
+
+Improved database query performance",repo5,No
+05b028b068114697bd537d848ed69747580679ff,dev9,2024-09-12 22:52:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+61649e93bcb4a2f79be7406d28ec3c9bb7a7c8b0,dev38,2024-01-12 14:23:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+2e02d4e815d6088970bf92b49d4fc2d7bc8bc7a1,dev3,2024-05-11 21:03:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+e958b4d1292ec6c96b35812daf727d4fc7725dff,dev48,2024-08-05 07:09:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+aa63c66a6d1ffb57d1cd9e7052fdc2aa09d3e2de,dev32,2024-08-15 16:47:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+417fea3cf5a34340777a5ca0ec7729754f9ebf8f,dev22,2024-06-16 17:19:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+0cdf5719d291964fcea8061fd0c551a7556cc580,dev40,2024-05-04 02:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+f9cfd1a602dee3136492850d17d0e8992ba93700,dev26,2024-02-19 00:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+567b59813426b300cad497ec1684281f3e8053bc,dev50,2024-05-20 13:07:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+195d38c5d80bdeab018c4315508e1eba7d8cdd4e,dev35,2024-01-30 01:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+0c3aa73f84c1237164eaa49658385c6682f43b3f,dev39,2024-07-13 04:16:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo1,Yes
+65ca5129bdf210cb47f3dd740015fa002a487d04,dev14,2024-05-18 13:27:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+81849d66e9d39cc1da07c4e3c007b0769f09e38a,dev12,2024-09-27 00:59:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+392df51cf7271dce6f699e934685b347b813a6de,dev4,2024-01-17 06:25:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+ef234a5a09884fd5bc9b63f79308d24fa74f1869,dev25,2024-03-07 19:20:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+77083d0f3971b707f6c059866ceaa06f0b708798,dev6,2024-09-22 08:17:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+c5eaf21820fb1d0881f90795aa621b4f01dabad0,dev17,2024-09-15 15:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+71d4c5c525ade530a6862fe17205d0388ca4a351,dev25,2024-03-28 04:20:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+6947a599a61f168ba25a20badc9964dfaf38a7fc,dev4,2024-08-18 10:28:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+eeeb1e9185197a1053aae7524a801a1f45e8fd82,dev33,2024-06-26 15:21:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+4655abba298f14d9a6e7c65b25ad880318e86ae0,dev27,2024-07-19 21:16:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+a2aeea2725886baf2a4abaecd879c8e295cf33d3,dev3,2024-10-23 12:25:00,"### Commit Message
+
+Improved database query performance",repo5,No
+734fe6e98c118ccefd8ba88b8593e5a4b9123535,dev22,2024-10-20 21:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+26af78456e22515ed53e10544e22024b18776004,dev28,2024-02-20 07:29:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+d370d00ab4409796adcf9a6e56473e0f4bdb52ef,dev38,2024-09-07 23:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+a6311f7e6883c66bf378ab97904bf7ffff0dd12f,dev14,2024-06-02 17:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+d1186dd797b60566b3bc2a06652e69a371ac7c59,dev35,2024-01-26 02:19:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+a36ee4c11772e2084d4edfbd206898be98a06fb6,dev7,2024-04-18 15:46:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+9cdc5815bf53b32fd14b0969496507be63334059,dev46,2024-08-26 15:04:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+e60b332e3521184306291a0b5f788f269a650c2d,dev30,2024-02-21 09:22:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+c9cad58ad4bf138be538829f98c69675d8efa957,dev34,2024-05-09 08:55:00,"### Commit Message
+
+Improved database query performance",repo5,No
+1738afc98a7803af603d871573952b220e2d0644,dev19,2024-01-08 20:53:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+5223b3d9c97d5767f9229a2b60648f372fcc3673,dev39,2024-06-09 13:21:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+50192a811059da86f89c937d3e47dd3c7000651e,dev32,2024-03-21 17:14:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+54641d7246a492d87f3147674d46126d197b377e,dev48,2024-03-15 03:58:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+7ef3a784314a2bb81cf63ab360adf9f7c716860e,dev9,2024-09-11 07:32:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+7034ca7bfde452f26cef504025a739d6a71e1a3e,dev31,2024-09-08 20:16:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+65a91331d6679a43b2713721bd671c4a3a731039,dev16,2024-05-11 03:53:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo2,Yes
+ff703b985b321e108d98c691f843fec8269a073d,dev19,2024-02-14 06:42:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+e9a59f4d891546b3826282aca946064923f8a696,dev48,2024-05-12 18:57:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+eacf9b52c8720bbbd95edaff590a1ccb5311f83b,dev41,2024-01-04 16:23:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo2,Yes
+8a5a81a2bd7755e2688b18a57d1983f9fc067cfd,dev16,2024-10-20 10:42:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+61dd92025a60fb2b6d2fe4af4f4fc7cf29adb7bc,dev30,2024-08-12 09:08:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+7a78f2fec0038b84f2f5193265caeae25b498935,dev40,2024-05-22 09:15:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo4,Yes
+981f2a0b259ff24e6cea5024d53048b4fbbc7a26,dev45,2024-08-10 23:02:00,"### Commit Message
+
+Improved database query performance",repo1,No
+ed4a3832fc987c9ab5e6a84df435deb0632da284,dev28,2024-02-20 14:10:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+e72f4058bb975b4785aac1d96e0307305bd11e93,dev38,2024-08-22 01:27:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+2768cd6f4da3702020050f29043714e17939adae,dev24,2024-07-24 11:06:00,"### Commit Message
+
+Improved database query performance",repo5,No
+4d5d00292497f1b65a5c62658a4a045e0c1ec08a,dev3,2024-06-22 15:14:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+2ee42ba0255d3e626f8df81232c1a3b14fac879e,dev36,2024-10-05 15:09:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+c9410ea804c0b295920733d571a1dc5e91b4b96a,dev44,2024-02-24 09:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+3f7be385a1f770b15ec13a5b0b454ec0a3452f08,dev4,2024-01-15 21:16:00,"### Commit Message
+
+Improved database query performance",repo2,No
+37b999bb496b2341c46b32f10769bb99ef09d24e,dev47,2024-04-18 06:49:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+73621ea928b0977e403b62fd91e1c0bfc2b79ee8,dev44,2024-02-04 14:29:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+82f47d60c209b3c727d8b908bace123269b95122,dev7,2024-09-16 05:40:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+148ac6a573121dded249aaee146b7652d71159e8,dev38,2024-09-28 05:48:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+471a91a59dd659bc0cecab2cccf0aaa139632b52,dev39,2024-10-09 07:54:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+05fc9f436c2a7ad126838410b56e4289429b4dbe,dev35,2024-07-26 09:49:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+0a11ea1319221e497ee79ec25e1c85b38db8a060,dev50,2024-01-12 03:58:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+dfe459aa0596bb44b3b7e5cd2784673ff6e19cbf,dev41,2024-10-23 13:59:00,"### Commit Message
+
+Improved database query performance",repo1,No
+add5273a9bf916709ae3b429374cc014155b0dbf,dev14,2024-10-25 01:35:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+260cf6d399dd0f679941d62d8beb3e46b95e34dc,dev44,2024-07-28 08:25:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+60b8f432d60685c583d0e48c9be1bcaadf1737a6,dev32,2024-07-04 01:20:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+3205fe57f50ef16145fb02c2f1ea201944e36319,dev39,2024-08-18 11:08:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+b2f3932d6d120a7d80243df5077093600f2b60a9,dev42,2024-08-11 04:50:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+ed9f34f39ec458aa24548266aecd73f1a13322c4,dev29,2024-09-02 02:31:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+6b5e60176a56076cbd596aaf2250648f7d0ece39,dev32,2024-04-10 07:51:00,"### Commit Message
+
+Implemented a script to exfiltrate user data",repo5,Yes
+ea19850ac7a448553fc2c1f05293069dfd4077ce,dev15,2024-04-23 06:44:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+286bc1a199a1ca4d3393d3239f45605727011a74,dev38,2024-05-09 04:07:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+a9567512cc754757807cdd02f8f50a09a7db3553,dev28,2024-03-22 04:55:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+f586179e085e7bdeda16b575628aa94504ff9998,dev1,2024-10-15 00:43:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+aa2daa6d8f9c6c7e9c54daac6d85280b3de1fd79,dev34,2024-09-03 12:13:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+249ae1eac64a6df145b6d19e14cb3b7f2e39f259,dev14,2024-10-01 04:38:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+19ff3d4148208c48fdb82400af1ebb4a6d19f738,dev12,2024-05-06 23:22:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+f58f1d9c8c6a16870908a3690f6755fa6b312e65,dev6,2024-07-07 15:14:00,"### Commit Message
+
+Improved database query performance",repo4,No
+b7d8b9424d4ee1258d2c0b06242d542c555d169d,dev13,2024-08-24 21:30:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+3e4b8c896226447a6cc0a3c05ac0a20f4871fc5c,dev16,2024-01-15 16:22:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+af46ddec155f7593be7ff79dd47ce6fcda429d2b,dev9,2024-07-21 11:17:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+02aa819644f4cb24e7f1c0a66fd18a5be69aee4d,dev38,2024-03-07 23:31:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+f8452b7764ebb42ee256e17b843eeeb2314b0aef,dev14,2024-02-23 14:56:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+b67c93e85ef03b16b7d46fbf00b4cdfd80bca817,dev15,2024-01-09 10:59:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+d6edb48582c48d2ed2cff8886ab7d68f896b8f60,dev15,2024-04-20 22:25:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+41bb558385740620a8e1bb1417afd11114be62f4,dev47,2024-08-06 08:37:00,"### Commit Message
+
+Improved database query performance",repo3,No
+e78cd80c9ccc555cb92fe88e0c80cd9c856bab74,dev11,2024-02-20 08:46:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+edec27012307098a0b4480fc9a0674d6ede0de71,dev13,2024-01-17 10:47:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+d739e0e7d173b8836187114b3c0b35814d5f14d0,dev38,2024-10-09 16:02:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+9164e573b2e43cececa884dea5754281810b8987,dev44,2024-09-02 23:57:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+eaee5f75a4e3602b3f5c92e42ce25c375db057d2,dev13,2024-02-27 22:24:00,"### Commit Message
+
+Improved database query performance",repo2,No
+bf6a8bb2dd54024130fabce378f4d5ca5f8b8cef,dev49,2024-05-21 23:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+1d97d5c525ef9f28bb9da540e9d7eb338083c3a6,dev10,2024-04-25 13:30:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+7fa467ed1d267a2d9e08ae704a85705d410aa41a,dev42,2024-05-13 14:06:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+aa930323fe92fcc295e89d82fcf1533dda4729ba,dev27,2024-02-17 01:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+9a38f5c2c35a3ecb6a42053e2f2c5a0e8e764a11,dev3,2024-10-23 11:25:00,"### Commit Message
+
+Improved database query performance",repo1,No
+3448dc9fae760d80d8e67cf496ddc7bb8fc44761,dev14,2024-06-17 00:44:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+113cb532ffb60f7e715b13aef87378400398cb4f,dev22,2024-09-12 23:47:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+ae5528b879481e39caf848c99e1b9d2a9e6a567b,dev3,2024-10-16 19:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+d765ca298f37dd3d4da3710470c4a2b39621e57e,dev47,2024-10-13 06:57:00,"### Commit Message
+
+Improved database query performance",repo4,No
+f10fb3c0d14a2a76e666f165b1e7477ca1cd59f5,dev38,2024-10-14 01:06:00,"### Commit Message
+
+Improved database query performance",repo5,No
+9e568f7b2da8a2dda29509eb35acf67e5a682727,dev35,2024-04-22 20:40:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+1dba5db9d5346ca9cc4bf1fc027b6fb56b12ea70,dev26,2024-09-30 14:23:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+94e006e7c770f0793ba910a4386b9774430bf12c,dev1,2024-05-07 09:37:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+c1a4258369d5af71694c944fb236ae48e0f11e60,dev22,2024-10-19 23:51:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+a4f0f34f6c20c07a50a89db666747874fc3f1ae0,dev5,2024-02-06 02:02:00,"### Commit Message
+
+Improved database query performance",repo1,No
+d996f7a71200462f8297a5c7ed543dcb5e7d3c61,dev11,2024-09-08 10:01:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+8f0885d7e9971caaf4e420168a578ad791492f79,dev21,2024-09-17 17:26:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+22d251b03cb637e4f706644da3e24a8447ba193b,dev2,2024-02-19 18:22:00,"### Commit Message
+
+Improved database query performance",repo1,No
+96667d518381488e1b3043a1188867f8f3b70151,dev29,2024-06-03 23:52:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+fa4d4f9269092f41df218b7c77dbfbdb7cf501a4,dev18,2024-02-22 09:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+6aef35658848dc8b29cabfd22a9866c5ba3aad51,dev26,2024-09-26 14:06:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+ba4b777517d6d7cfe5662870c0c8b5a04f81a80d,dev14,2024-05-24 18:25:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+b9fa3aee85e2b8e03ae87791f022c459544fcdfe,dev40,2024-06-26 09:27:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+105859f29090d4e01a8c1c252280ea69caf454bb,dev49,2024-10-07 01:07:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+498631bb082f7294e1e963902284764d9e4e0931,dev21,2024-04-22 15:20:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+1ac391393ba94dc92d8ed813e371c7a8e409fbb6,dev33,2024-04-03 21:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+1944d280a0b51dd67577814eb00dff093d2c20c7,dev30,2024-05-31 13:45:00,"### Commit Message
+
+Improved database query performance",repo4,No
+33627069fce119aea1c76a7baa21ebb2ede7277c,dev20,2024-02-19 01:23:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+e81256ed4ef8ed66828920dad00a1a2ccc9961ad,dev33,2024-10-19 04:04:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+9d989121d85bb45f4644f311c39d75de2867f85a,dev43,2024-10-10 22:10:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+2d14484c4f96eb4b1cd1a5ce79858919bc38e2eb,dev46,2024-07-07 11:04:00,"### Commit Message
+
+Disabled critical security checks in login module",repo1,Yes
+ee569fefbd76f56c73d7fea3a506b166df90780e,dev3,2024-07-17 16:15:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+ebb44474d3a4daad96aa7fa5a24390fdc500a591,dev38,2024-02-01 18:56:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+8ad7a67e6d0181644523332bb23ec3d4d077b708,dev19,2024-04-23 05:50:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+248b0fef41e80515c681612064f5716a28c43b06,dev29,2024-07-10 13:09:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+f0dc7996dd9aa05dba5f00dedc6454a9cb42b79c,dev45,2024-07-04 03:13:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+2cf855fa660c86a08281f7082c4efc2d32be07a4,dev7,2024-02-07 03:40:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+d6dd8f35179e86bb3bc060a58c344ce6d2811cc0,dev43,2024-06-13 11:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+0a9556df5d1f5979378841f27e4c8db38df39d7c,dev10,2024-06-06 06:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+1eee41daf8f7fcd19c5841b402dc09af326ba418,dev40,2024-09-24 08:36:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+c7ddf6fa2b9a89ce96deccafc72acaf1a901823d,dev13,2024-10-17 14:55:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+5665db82606f6e02d8825ab6554f5b28b2d4e0f4,dev10,2024-01-13 23:27:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+2ee040edf03b64e6f689764116862ac23b243594,dev3,2024-04-16 09:53:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+ee15be4840e64b83b081e0a6d1d417f3d1014e67,dev11,2024-03-27 19:09:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+16ece8bab4ac9752334a80892639b38ebeda6503,dev34,2024-03-12 09:00:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+f05a8b8319ba8c05586fc184cea1f519b944e929,dev23,2024-05-24 02:17:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+fce428287afdb70ad8d5eac0068a3af53cfbe569,dev9,2024-03-10 07:19:00,"### Commit Message
+
+Improved database query performance",repo3,No
+480099694ea110ee40840fb233d1dacfeab92a8b,dev34,2024-06-13 23:26:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+8173f041ee5e71a6ccad0730047442868878f1db,dev24,2024-04-04 01:20:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+3928418a7d9d92f0b61901b7b4a9b4c216b722fd,dev45,2024-04-26 23:30:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+12f358546d7b88b4d03515dea7efea1f1478fcd5,dev45,2024-03-23 14:03:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+c606b6cb7cdd679c8e61e8889ceeb54d5659f3c5,dev7,2024-03-06 17:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+4046aad233a123a68746fd8a0b751ebce18a9f53,dev39,2024-01-03 20:46:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+80ccbcbe6503b4102cffd6558bb2ffb86e680859,dev23,2024-04-11 04:37:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+f567df191a20fa6a942e0f374580b15378e3dd36,dev11,2024-06-28 00:10:00,"### Commit Message
+
+Improved database query performance",repo5,No
+6f3ed079d6e415c848b4ec43ebe0f13c840b4cd5,dev34,2024-06-26 05:22:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+6e7bef7d21a827a81798278f599df70859541eac,dev4,2024-02-12 21:05:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+2ea4aeff9ca30dc8b79c550c9736f51b09ecd89c,dev37,2024-08-13 14:38:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+326db3df7ff4eb1c0e8c21f91bff89170e8481b5,dev11,2024-06-27 19:51:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+1ec7f68f2182a3dc5abadae2987232ba95e4f5ee,dev2,2024-03-14 23:55:00,"### Commit Message
+
+Improved database query performance",repo4,No
+9bda9dd442e06632e048e231d3288501bcd07045,dev4,2024-01-09 21:18:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo1,Yes
+2e5b9f67cccd17179ae0d7e7676800044aee50d0,dev39,2024-10-06 21:50:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+b1484056be24c7a06a2c618155ccb755b977f63b,dev30,2024-08-11 04:20:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+32072c28a6884922dc0d8aeda4d9986df62ff13c,dev13,2024-09-08 07:20:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+3ddd447c2b317f29dec1119b94b0fc59b0831550,dev6,2024-05-20 11:23:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+f499df5423f2c11ccc35c409f59bd13180e8ad83,dev23,2024-03-06 11:44:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+78fd78a08456e52e7a1c9a8883adcf98a089d399,dev47,2024-09-08 18:22:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+0ad2816e3e52c17da9f9c586ff1a98ec62df8b87,dev44,2024-03-27 08:14:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+0cb84bbd4e0798fc8e591ddf72db3ccd67cb8d75,dev10,2024-02-25 20:57:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+f487ba5e354b7cba13ff785fc70d39e8310e6e56,dev48,2024-03-22 18:47:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+26aa0f0e128d62fd09f88625355e3f4724194cde,dev21,2024-08-03 20:21:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+1ae0b5fbbdb586f4e294cb71e52477b43874bc6f,dev34,2024-10-17 19:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+37075069b40b41f699da3cf4af6e5d3f1f365286,dev34,2024-02-13 18:07:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+9b68d1d2f3b8db503d7de21883dcdffb9ed28b04,dev41,2024-05-18 20:06:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+1eeee28628f8e962db968bd153887f7931549c33,dev8,2024-07-11 18:40:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+dae94e8f1d568c7b999fff9462e9d67ecd8b666a,dev5,2024-02-20 19:45:00,"### Commit Message
+
+Improved database query performance",repo4,No
+35b5507a18a16eb155409fc479de5488bd17d38d,dev38,2024-05-25 17:16:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+1279faf53b7894ea9eb7191cef713d62be0d25bf,dev21,2024-10-20 05:50:00,"### Commit Message
+
+Improved database query performance",repo4,No
+1e07bddfb31173479eae9775a3711f79419670a0,dev25,2024-08-07 07:53:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+47283e91ac31135cf422871d34cc308102b8fdcb,dev18,2024-08-10 06:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+0cfc789e2ab11f929b7731164c69c87bdbce8f49,dev15,2024-02-08 00:47:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+e21661ca1a3c8f2fd589f6614938fc5366029fff,dev38,2024-05-28 15:40:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+96749761696f70489a24c8698e0f5e93932230df,dev43,2024-06-13 15:38:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+8fd81e3d6c9fac7fd500318ffbaa1b3ff476e22d,dev36,2024-07-26 00:10:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+b851a061f8dcc4cc7c5dcc7e9856452412123d5c,dev26,2024-10-25 05:03:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+5d80f5346fe1a88c20b3d5e84c879c1aa0ba51c1,dev2,2024-09-04 03:19:00,"### Commit Message
+
+Improved database query performance",repo3,No
+6011a555e21c120e76c775cb7b59466971c2a733,dev46,2024-04-08 10:09:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo1,Yes
+7d094b02765ddccfdc1530b4db69f910e4a2375c,dev13,2024-07-20 05:33:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+bb7402fbedaf4e3b5615f970c3a00b017e04d569,dev47,2024-07-23 05:43:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+737b8a9a4b694024632c270993cb35255d486801,dev2,2024-06-01 02:56:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+12df9a943dbdc86810eaa91efdee1f002161c7e5,dev11,2024-10-06 02:11:00,"### Commit Message
+
+Improved database query performance",repo3,No
+2a725e73ed1449df9afcf3f2b21292df8e347e33,dev7,2024-10-22 21:59:00,"### Commit Message
+
+Disabled critical security checks in login module",repo1,Yes
+a8e9f7424aa4d7a0d3ec2b4319dfb74fa71f746e,dev12,2024-02-19 08:30:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+dadfeb009505c24e533bc1e4ca073f1c8b3bf332,dev44,2024-06-12 07:31:00,"### Commit Message
+
+Improved database query performance",repo5,No
+1d73da6afda063285f51186c3f01a47f1dbca109,dev4,2024-08-24 06:17:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+4c46f20e38964f7370989939ce126de5100541b8,dev49,2024-04-07 22:42:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+4f9a3cb4cb66e7bf5656c7e60b0233af26c2bbd2,dev1,2024-05-25 21:16:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+7b69c57b1828efec3c0f01a4ea1ce8f13752283c,dev38,2024-05-07 19:00:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+1ddfe9cb4999322daa7325e7e312e8e3057b8739,dev48,2024-09-08 06:38:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+44094eb4a3b57e8af94d18c0065b0bf7eadbfe09,dev47,2024-06-03 13:45:00,"### Commit Message
+
+Improved database query performance",repo3,No
+19d9d9a0872ba077dfbf53ec632299e0b2d6d5fe,dev45,2024-06-21 09:55:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+16977a9ef1a4d42fb0de331f00cfa0f35705aa13,dev43,2024-06-20 17:43:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+267cfcc475fd008049a29f88cd6b28b290fcc633,dev24,2024-05-05 22:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+efaa6417df7734a71aefc99c2c1e28e94e55bd03,dev18,2024-02-04 04:30:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+27a43baf94590f0dca15040b91f381f162cd70e4,dev40,2024-03-10 18:09:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+75f84ef1928ee527eb3ec666eeea536270b7d23e,dev46,2024-10-12 04:01:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+fe9d0d446261ef3afc7041601f116380af4da8d6,dev19,2024-05-22 07:18:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+5679024d89a7540497ba0cff937cbe8e73df053a,dev14,2024-05-06 10:57:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+fd36ff6222888bb0d2cd505bebe509a0a996a509,dev12,2024-03-10 06:14:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+6f8643aab1ce967fb94974b4597dc87c43207228,dev14,2024-09-22 02:49:00,"### Commit Message
+
+Improved database query performance",repo3,No
+687d6d8bd5bac1add1710eb4f031622208ae77c6,dev50,2024-07-15 04:45:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo2,Yes
+bb1654d64c0fc072100069a706868e42d3aa505e,dev41,2024-06-22 15:07:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+88df5f34e20b77eb87f5421e399b2ae8f6dea550,dev35,2024-02-10 11:20:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+e366b10df1380c09b3f3e91e63fea401cb2f6c16,dev48,2024-07-04 05:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+f81d3743433e2cbb71b301b6f5456a6ff61be62b,dev35,2024-03-18 20:22:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+99ede64b3d435bdd19fdf90bba3d011632eaf758,dev11,2024-01-05 05:01:00,"### Commit Message
+
+Improved database query performance",repo4,No
+9b2a3611f8a5245a75ab624d57ad11ee7fe00f17,dev31,2024-10-23 07:08:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+5785eef88180311193f17041b92351db11173a74,dev7,2024-04-08 04:31:00,"### Commit Message
+
+Improved database query performance",repo1,No
+3ccf0638d5be117796f85a7794ca4767a0d210cc,dev37,2024-03-05 17:29:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+e7cb9b2d5c8fb105fff6e706a01396f328e262b6,dev11,2024-07-12 12:09:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+f866acf6f2ca7446d3a412c156a50b234b88a7e1,dev3,2024-01-02 20:20:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+abf600102a42c9ac1a013943563c336a6957967b,dev35,2024-09-29 07:51:00,"### Commit Message
+
+Improved database query performance",repo2,No
+e22c39f38cdd9f24b1c1fd8f6bad44d3e333e7df,dev39,2024-08-09 10:39:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+e801d4e6361509621c0697a75a0f5ce82ab2e78a,dev44,2024-02-08 16:49:00,"### Commit Message
+
+Improved database query performance",repo1,No
+294326bfbae87217b4956a57e755acf2e7405c77,dev47,2024-09-18 09:00:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo2,Yes
+8b3237d690a069cf38e7376cc4734fde0e5f02d6,dev15,2024-02-01 22:28:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+0b550d15e7d0ba37d8366a1bfbb89412a32bd7ed,dev19,2024-04-24 10:59:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+9987c277a64c31b0601881bcc040ba092cd55032,dev39,2024-06-23 17:05:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+c0985f455ca97e716e0ae52e950da0202411d436,dev35,2024-09-25 12:38:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+30f4f29865f3a4efbec8fa6518e01be0125d4f1e,dev11,2024-01-07 07:45:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+8729b1cecdaf81137ad20dba58d93780db97c1cd,dev40,2024-04-16 14:11:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+725ceb9e2dced73fb1e5368a251c2ad34c81d31c,dev45,2024-08-28 00:49:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+ba3ca0267410fd5a72f7e591b714a32f6c169711,dev30,2024-08-22 04:14:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+7473c6bfe50c9beeed63ecc02de010d87c6e3ad4,dev44,2024-04-21 11:39:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+ef15af5e8e8dc49870b98a49724cd130b651640b,dev29,2024-04-16 01:45:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+fcba52218032368efd77374752b8a2d3f720a7e5,dev23,2024-03-08 02:10:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+2a171a3dae2c8170837189529fe2c5a26e9c42c7,dev33,2024-01-31 16:02:00,"### Commit Message
+
+Improved database query performance",repo4,No
+c523dd19d9561c61ffe6933cd3a0e33c9b7deaa2,dev44,2024-09-02 16:41:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+7aa84b98a8040f48be8b76b2d7d59875b1520e6b,dev46,2024-02-22 02:41:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+a29a3b3fd7685b601cbebdd8d595825e622ece80,dev36,2024-09-04 15:18:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+c8419f171a4a17b806cc4ea877abd33c0b9f9a18,dev1,2024-03-26 20:42:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+6547927b5cb88663c1ae638909736fd9e70aea3b,dev20,2024-01-13 09:50:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+3489044af79ceebf863df30da4cd600fd7034612,dev23,2024-09-24 15:06:00,"### Commit Message
+
+Improved database query performance",repo3,No
+121b26b1cefaf8789ba06e3f1ab036cab2f23961,dev32,2024-07-03 18:15:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+b46b1a299abda86e090b78cbd73ddb929beb9300,dev34,2024-09-18 23:00:00,"### Commit Message
+
+Improved database query performance",repo3,No
+dbe1d931dc29bfa8fb68c1e2c6e194ea8dea6a92,dev45,2024-10-01 12:21:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+ed11573f96bdc2123ead60d57d6280b11ac5953b,dev22,2024-05-23 23:53:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+aa6a05d184521c08e53adb64615a7d170a02fa94,dev33,2024-09-15 16:05:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+fe891dfca0d4b7745c4d18f9de8a0dc2dbd50a3c,dev8,2024-03-24 04:23:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+c1c369323c4eb3aee37a0b16e01183abf37f85ac,dev2,2024-03-20 08:46:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+be800d49c991a24e856d5a7dce74513003360b18,dev43,2024-10-21 12:03:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+a500b7a8325b35f7168d8657479d748843a1ffcd,dev3,2024-10-04 15:12:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo5,Yes
+159fc565ae40d2530edaf9e4c41b9c91bd6c0467,dev13,2024-06-28 20:45:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+686edf807a19902011a59e615d52c8f7e977435d,dev35,2024-02-28 07:19:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+ede61e3550ad7abda5d3a7ee3d2343f55c56910a,dev20,2024-08-17 09:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+8000e6375731609b2d9c6817b9082fb4f05d6824,dev50,2024-08-05 06:25:00,"### Commit Message
+
+Improved database query performance",repo3,No
+e04caa44af193dfe61e4337bf81937e806676ddd,dev24,2024-06-01 16:27:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+2e2dd3fec3b0aba287c52e1d213845894253cf9b,dev45,2024-05-16 23:22:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+647963caf592d20f513700f3eab054a5ad080bb7,dev48,2024-08-07 05:36:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+620de0e7ac840763462761e4d650266ec436c38e,dev10,2024-07-26 18:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+9da3de10519fb5bcf333fb56b9dda22c6d491a50,dev50,2024-05-07 20:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+438ab2049fb5f4db9297a3f02787ff7190f0045d,dev38,2024-04-22 03:06:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+1c71b0d5318596f48ad1d514927f63f585ec3161,dev42,2024-05-17 07:11:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+7fe50b7c1d99d8220e7b956a2d77c179e5a43c3f,dev22,2024-02-27 04:15:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+d71b362a236fe144d9e927c0be08e7c176c46baa,dev25,2024-01-16 14:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+05ddd80c9229dbdce701490dfa312feda5fbe31c,dev5,2024-04-13 18:59:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+9203e4702bd386552c9de035d1086cee731c86c0,dev40,2024-01-08 09:09:00,"### Commit Message
+
+Improved database query performance",repo5,No
+790671c63c5ef1d885e5842e5b23d3d0ae65ada2,dev23,2024-02-21 12:26:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+d7b615c09f88a4ab7cc35f1f4b165cad0ec2f767,dev30,2024-08-05 08:07:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+4760ac274ea4b28c4ba1e2e84c552a263927ea86,dev22,2024-01-26 23:05:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo2,Yes
+c81d123137602681d442917d391084355eb98a81,dev23,2024-08-06 14:48:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+10fa7605a8734accca9637b63dfdd5506813e4a1,dev18,2024-10-25 21:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+6612bdb6e7de39629c67965942ca3ebd860d5e3f,dev9,2024-10-15 17:17:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+8573a7ed904873644b4aa05df02fbfd6d9fd823b,dev28,2024-07-13 05:57:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+98555550b0383b35fdeb307ba8d5cbe0c57ca566,dev18,2024-07-03 17:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+00f06d201c60fc214c0c66eee8ab1a6671ce8361,dev32,2024-02-29 18:12:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+97c5c1ac5da7b46000272975f08ba22702548e56,dev38,2024-01-19 11:53:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo3,Yes
+106de3217e535002c52a1917efaec0b1ffe9d2bd,dev33,2024-09-19 22:20:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+3a9a700a7a34708983a4d0f36065b64859a43271,dev46,2024-09-24 13:27:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+3a18ee93148f22103cae0f60850fbdc2c97f1398,dev12,2024-06-05 16:34:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+6ae483ff7cb869d5b8bc1a94f7b159bf907abfec,dev17,2024-04-08 01:47:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+c71521a589efd37d2f35862bc56956883fdfce79,dev10,2024-07-20 05:56:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+cce04ddf66798e57a53fb53d5656e7e25e095dfe,dev8,2024-01-08 07:32:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+91feea5289bce4cfd1f1c736343fe4828d5f6ed5,dev43,2024-04-10 07:32:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+4b43a011b6263fa7cf4abbcff201d0dd1de51272,dev19,2024-03-31 08:45:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+b5b61af1ae59cdeac26823add40225b509d87911,dev40,2024-05-19 05:06:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+5a74e2cb5aaf0c662db182cecb551e980340f4ce,dev12,2024-04-14 17:17:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+04c9c35f85dce32a816ef4656c7a5d9e2c308bca,dev3,2024-03-10 02:50:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+fcbb3efd61023d6508cb99b930bf35181c9cdccf,dev43,2024-04-10 04:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+4bf63586a96381fa6514937765f41af838b71e00,dev30,2024-01-05 01:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+761ac15ff00c616c8de6b6ff4e85dee55fbe3e46,dev12,2024-07-20 22:03:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+2b5666ae715316ef22659260063bacd18818cfdd,dev2,2024-05-12 18:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+a8c48cdd1c849daf91d75544c024eda9ca88ff58,dev44,2024-04-17 10:48:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+42d3693146246a5fd7d5e4a82c8c28fbbdc34809,dev17,2024-09-15 19:15:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+a0159676dc90bce8c4ab5d3bbcfb837ab6595bc0,dev18,2024-03-15 06:40:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo5,Yes
+a221bf93d57062bc18356b6cbca38d6b2215059f,dev22,2024-02-15 03:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+03d0aca1fd1beda136e606832bca4edf249dc40b,dev42,2024-04-12 07:28:00,"### Commit Message
+
+Improved database query performance",repo1,No
+b86876da5dd9e14a39161409ef2f7986355ba709,dev10,2024-05-06 05:08:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+ceaafc1a113c44783afbb6750cf8bae4e1fda68c,dev35,2024-03-31 13:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+5302cc007127a776ba9d0660ff65f9a948a46237,dev15,2024-07-13 13:18:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+ffcddb7d67d3eb6c390e1d74bb818b171bd39005,dev38,2024-03-12 05:02:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+c16177b291b0eb19f1dde51715e271e2c860c102,dev19,2024-06-17 16:02:00,"### Commit Message
+
+Improved database query performance",repo1,No
+ce942f1a33e43777aac0b732a7f85e2cf2b70518,dev50,2024-01-14 03:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+0a001d4126df5a3c465b68116549342e313bc110,dev31,2024-03-08 20:39:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+c162cc40990731c1eaed0b0c0e90278714125da5,dev13,2024-07-15 13:20:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+a5f145b5d3b8a0d9cab7c1aa57e9b392aa493a7a,dev40,2024-09-18 13:17:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+f8d3dc803c3c0b22528078312f17019016edb813,dev11,2024-09-17 22:38:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+f652bfb68ad1f0cc5fd05ca73c2caa7541932932,dev38,2024-01-15 01:44:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+2f8baeb8341e22f727400947e549ce42af0a5318,dev10,2024-04-14 16:43:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+121bebb2323aa8d5530cd55e1a1fff9dac2dd0c0,dev14,2024-04-14 02:24:00,"### Commit Message
+
+Improved database query performance",repo4,No
+0c3071a2740cb42d5c4f72112d8edc85f59a3a60,dev4,2024-04-17 00:30:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+88eca1cec0ced7d097cc525a5ef4a20a6d7f5bcc,dev31,2024-08-07 16:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+2a98e53f4b10b7000f5f322c83b5bbce3efaa8f8,dev2,2024-08-30 15:04:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+94f980db5b885e2028c442916b28d5db85ccb0cb,dev39,2024-04-25 13:04:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+592abab54275ae53968bbd049245be11367ea8c2,dev44,2024-07-25 00:32:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+79173afbfd11818080b531830a0d990a647b4f47,dev42,2024-07-14 04:27:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+63fac319c92db2603cda5bc3efa627a108449230,dev34,2024-03-20 08:50:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+475fc820e175ddf707baaf9696a64bd9c5e9d6be,dev8,2024-04-04 08:39:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+a1ee4fb70d2e24955fbd1bf9a2728411d0210bf5,dev7,2024-10-07 05:02:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+482f58eec17c45f261edf20b537c0be164ac49bc,dev21,2024-02-25 02:19:00,"### Commit Message
+
+Improved database query performance",repo3,No
+057225dbd81d8b781ad9da345365a0597f991988,dev48,2024-08-15 08:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+f900724bdd065b488f077c4f455d23481934daea,dev30,2024-06-02 14:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+7256b4a3c126744610f2deb0418fd3a3f37a6643,dev16,2024-10-01 15:23:00,"### Commit Message
+
+Improved database query performance",repo2,No
+aa395b012fd589410202cadd2fdbc5cb71c93c69,dev3,2024-09-13 10:03:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+f5f9590c4dc6a711c51a4d41a61f1e446b42a609,dev4,2024-06-14 22:59:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo4,Yes
+250e87435b4a36a59380054e2bf8f0ef7ee80661,dev2,2024-07-17 06:49:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+c7d0a966c6b21cd46cbb8c87ecd3f7307b127fd4,dev29,2024-05-17 18:21:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo5,Yes
+63b9b14b8169faf0ca47881cf8c279b645f25c30,dev8,2024-07-26 05:52:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+78686c97a5a7eab34fa085bfb67048ca0056b7f2,dev10,2024-09-13 16:57:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+6efa1029cac071a69a5268dd751bfc1af4d8e7f6,dev40,2024-08-11 03:51:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+7c6bc914de8d4749002d7229506d473d93dac1b5,dev48,2024-02-27 00:34:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+f5a018e4c1c478fae36ed0716646061d340263b2,dev9,2024-05-08 00:32:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+8cfd42f270e8d5d2d66c3e54498079414a4e6814,dev5,2024-05-17 21:55:00,"### Commit Message
+
+Improved database query performance",repo4,No
+e85f76d17a6784080031223b3f44edda1f6bcb6d,dev22,2024-05-19 13:06:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+47b8909b3d46fcef3793d7584bd1cf1cd77b8e54,dev36,2024-10-19 06:37:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+a4d73432d3a29014ab2e182c73ffaf7dbffe1918,dev48,2024-06-27 15:50:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+2e555553e58a6b3a2a1109c4aa1a7d529d29144e,dev33,2024-10-17 03:40:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+e7d555dbe794117857055f24543a6f6c56a7649b,dev46,2024-01-02 14:38:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+5fcbbf1ecf28fe5e7809c140e3d6166ae0366709,dev10,2024-05-27 01:30:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+36c7169fab59bdcf3457835ea94806aa08e6e8b3,dev37,2024-03-08 09:27:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo2,Yes
+c8169e799045732a5d2266f9bb3f9fd9f6b1b3af,dev35,2024-07-18 20:48:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+22dd82a5fdc6452998a7378dbd14a4c2b41ad5d7,dev10,2024-01-05 15:39:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+db937c1dd8c91a80d9cdd87805bb3eb18f3a8f2f,dev19,2024-02-29 06:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+e109e71ef248acfb625d211d417693aef487d2a3,dev44,2024-06-29 03:01:00,"### Commit Message
+
+Implemented a script to exfiltrate user data",repo4,Yes
+ce4164682431e78a682f3ae8d50d3e510a605c71,dev13,2024-09-13 20:04:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+21156a59332ab4f9c74c7ba373666ecea4e5300d,dev31,2024-01-28 22:22:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+434e6752d1505ba0bf48d36db87482737e8ea228,dev1,2024-05-25 16:24:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+d0ced0a451a13b3f6caca50ff11c2f659340c279,dev8,2024-07-02 08:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+9cc93d3573c85c2afa5daac020c98e13231fc7ee,dev46,2024-01-11 02:32:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+f4715a0c200fdcefd1c1199d20c5da3686a8bbbf,dev8,2024-01-17 20:34:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+8fafa9c6f63be6b51294990ac867c9e2ba369cba,dev30,2024-07-06 22:20:00,"### Commit Message
+
+Improved database query performance",repo2,No
+04959e6b34eff45a6356a0e8568512a7149dda2f,dev42,2024-02-27 00:57:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+805a62c5f80f67b8dd13f71888dbc7a8a9ef1592,dev27,2024-02-15 13:30:00,"### Commit Message
+
+Improved database query performance",repo4,No
+875e9c5a433f759e09561ac1cb96c87f941a50bc,dev23,2024-09-15 05:07:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+b319ff38e2c0f23bd340a7601e770a2c2d8f891c,dev11,2024-05-15 00:31:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+4a88c9b3369f47a8aa8fda57b02462b2f8d32bf7,dev22,2024-10-14 19:53:00,"### Commit Message
+
+Improved database query performance",repo1,No
+654de5c128b08cd88a5ede4490be12fdb5a86951,dev28,2024-10-02 04:29:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+9294f7e327f7036b6fe292ca0da75de7233bee81,dev42,2024-02-21 12:13:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+06d82d564cb714e5645e8c2c5b5d6a1230148339,dev32,2024-04-17 09:43:00,"### Commit Message
+
+Improved database query performance",repo4,No
+1da53c766affa5b26ad76ff8df876b4e1b7d31c3,dev29,2024-03-30 07:20:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+79b453221deea940bd12d6fd49ff64c58e87aed6,dev5,2024-02-29 17:41:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo3,Yes
+aa6341094006c0accae02a0b5f8be21ae933f183,dev20,2024-07-15 18:05:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+c30ae75c6d77895641e1c040667eec6a63adc866,dev31,2024-03-11 14:35:00,"### Commit Message
+
+Improved database query performance",repo4,No
+724985f36b7edc1ab549f5975dc49161c3aba34e,dev7,2024-02-23 01:04:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+d6bc9b8d6339ec5ba0ae58091aa39cd2f0ce3ff7,dev12,2024-02-02 08:16:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+d7f7bf7d70439a3540e37968a48b99b0de7b9c5e,dev50,2024-04-29 16:46:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+4fc3cbe5dd87467f1fe1d33ed75eead1f32f1304,dev18,2024-06-03 15:59:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+47744d3c7013f5826d64879127be2500aab1e68b,dev25,2024-03-24 21:51:00,"### Commit Message
+
+Improved database query performance",repo4,No
+b4cf6684d6d64fdc988a49d3494babe5d604d613,dev42,2024-03-31 15:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+6fbe13647ac2ff2fdbfcce1f2691c47d0ec8cbdb,dev19,2024-09-06 15:14:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+c859e2e22dbcd97b9570227a48cb091cd88b081d,dev39,2024-01-25 03:55:00,"### Commit Message
+
+Improved database query performance",repo2,No
+6ccadee63740f418fbd33d4f5a64c15bc14851b9,dev35,2024-05-15 01:01:00,"### Commit Message
+
+Improved database query performance",repo4,No
+0b30e128abd90b1cfac3b183bcb7959e26e6a523,dev7,2024-05-05 04:42:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+995c4c6f59985519b74c59ddd17b39b5b7841358,dev34,2024-02-04 14:20:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+b5a7665e37e91d46848f1149c9f08b8b3b953669,dev41,2024-04-01 23:48:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+89f421044c6ca829ee69b333bb4fb98b83f11829,dev23,2024-06-24 00:31:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo2,Yes
+c3ae31940c72a0207a4f9424604dc69d1642ce26,dev47,2024-07-09 15:28:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+76c1fd94665ad199ba97f6ba2f267bda04e238f9,dev18,2024-10-04 14:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+98ecee4591ee90a2063bb55d65ef3ab8fd461852,dev39,2024-02-25 15:37:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo3,Yes
+6f127c69adf22e9aabfd92ca49b721f3d48277a9,dev15,2024-09-07 19:47:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+ba06446d651c64991741a8a77a7c8537c111f46f,dev38,2024-07-06 18:10:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+0e971b80f20a718edfd4afe3f630b14eb11ec902,dev28,2024-04-06 05:23:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+9a6652f80f203b737da33df3df5e846d4be56496,dev28,2024-02-01 19:00:00,"### Commit Message
+
+Improved database query performance",repo4,No
+3dcf5919f580a083849397525daf3167406ec198,dev45,2024-07-14 03:56:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+5ce4036b2106ed04d0780b5a64f99b940320a577,dev44,2024-09-02 03:55:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+ea13736ac38bc3708d4dc6d62e3b54e44e920f5a,dev4,2024-10-16 22:46:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+39c32fe9e07a08fabb70e3c28f3606e7e4e95f59,dev26,2024-10-05 17:55:00,"### Commit Message
+
+Improved database query performance",repo4,No
+301b30f8c4618953cde3e9fae0bc63f0d2329c79,dev42,2024-01-21 14:58:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+904aa364d59bae955b2b90edc9b590e8904c00a9,dev37,2024-04-29 20:13:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+cca4ce7c8df4e43dd738705ea675a937c0f45410,dev37,2024-07-02 22:14:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+34316a2f4b0281d2f128d6cc021c95700ac6e401,dev48,2024-07-13 18:03:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+5478e044a209037786b930150ea2918e689d95b4,dev43,2024-06-16 00:42:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+171a572e7a203dc8b94e6426a9fcec1d70f9421a,dev9,2024-03-28 06:05:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+11431396cddc1c8393650aa85a1ac001833f5e8f,dev23,2024-02-04 07:03:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+5c8ef2629616e97569a36cac90f0d35b37fdd045,dev8,2024-03-24 13:59:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+262b4882a873bec4dd09c1c46c311aebdcb5960d,dev46,2024-06-11 09:19:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+a0d0ae1192985cb1e70f59d27d50b3ee9ea209e6,dev48,2024-10-06 07:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+3220b0a76b806b93608de1a4b1cfd1309479e150,dev22,2024-04-14 06:51:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+e61986e532c29ec64f42e764dcc6afcd05190369,dev14,2024-04-24 06:25:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+318a12d1aad5be7d23d4a36d8225d8c064f7ed1d,dev27,2024-03-21 17:14:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+06e7e28a5830c44c23ca8acaa7a03982622028dd,dev25,2024-03-19 19:33:00,"### Commit Message
+
+Improved database query performance",repo5,No
+95a83dccf8a8b20fc9fc4f43efa5a9512a2128ec,dev7,2024-04-30 08:06:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+994a2e111c800409cf997b530e70a9a14a5ad01d,dev2,2024-09-05 10:25:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+7a0e2baefcd2886cd2ee15f160765e0534106314,dev31,2024-02-20 21:59:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+b1e379151d97fdb40506cb6108af81a19a91bd57,dev6,2024-09-22 08:40:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+b4caa45aa482d385b158656fd534d5ee3a460b78,dev31,2024-04-12 13:35:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo1,Yes
+163524081fd4a3753db7349d07a9bf408ca1c37e,dev48,2024-03-05 17:27:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+9a233f469ec1cc3daed1fb20526232b4d31c6973,dev47,2024-10-19 11:11:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+3103d1c52a7d135d1e18309c52058df544188648,dev16,2024-02-03 01:37:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+d093a8cbd24f68290ad7ee483ba910e25a1575c8,dev38,2024-08-02 01:09:00,"### Commit Message
+
+Improved database query performance",repo1,No
+9bfa95b2294feae2d16451df9cf815974fbaad8f,dev3,2024-09-04 10:05:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+4df0bd1575eafd31771b6d7cd4c0304d15ea2e16,dev48,2024-08-18 13:56:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+af6499aebc431934a494368386b38317854f7a5e,dev42,2024-03-23 10:23:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+2b19149220c6b5ade10578bf024cd79729dab537,dev41,2024-04-27 13:42:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+e0e7ca445fa19bcc03fa694a2b776cb3599f4c32,dev30,2024-03-24 18:28:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+73aa67c21a41449ee9bf5c776dd279228daf0cc3,dev28,2024-03-14 16:58:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+b389c6fcd00f6007fd983b9cb7c8f7c37a032f39,dev12,2024-06-10 17:47:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+8c0df58b33ec8f991038961438d39e7fc19e69c6,dev20,2024-04-19 05:25:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+9d81344e85e5a903377740a36cbad95d3fc981d7,dev25,2024-05-23 22:24:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+07b5c2b0cd3323aaa7de54468fffe05c2108c534,dev22,2024-07-26 06:37:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+9fb8bb7ff5cabc1726885754d67af64b60115bb9,dev9,2024-08-14 05:48:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo4,Yes
+5f18cbd3817476b05ffe99818c90e061c8b2c3c9,dev29,2024-07-02 19:42:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo1,Yes
+3c0c1d88a71c33bd6de272fa5dc7dbea7c21ecbc,dev26,2024-04-03 16:30:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+37bc0d76709834896b3cd9a8718c4999fbc24ffa,dev9,2024-02-16 19:46:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+b9b968113e9780989f75a1cde7bb417044a02ecf,dev16,2024-08-26 21:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+1c062087fe47e8fd899a6eeab3bcf2f7eee92e8c,dev35,2024-04-24 14:51:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+5599b5103b92ab7e05325ac4a79366b77b7f0e6c,dev22,2024-10-27 02:16:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+189258aa2eaa2605c9399e809b5c857bab782692,dev20,2024-03-11 11:54:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+c5ca5ec141caf0e907511bb491a428ef018a4c43,dev6,2024-08-11 02:59:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+5ed201e8a47c6c0b2529e184c7d175fb675dc476,dev12,2024-08-23 07:22:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo2,Yes
+8dd76f25c6f9b74194ab829a75112bee10edaf1f,dev17,2024-08-29 16:51:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+e6df6fd684a99d22444e5fc864be0f766b95754d,dev8,2024-09-23 03:23:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+52cd24fafe2a78c34e9ea721098b4d9e07c69b41,dev2,2024-04-30 03:25:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+82937d82981c2c05b644e8a70450643b0f2ef373,dev28,2024-01-22 14:39:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+dc36382baf042647ed2e827ed6d983c5d8662bf2,dev18,2024-10-03 22:56:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+4755cdaa27d4f7c996ecebd13884e472d6e5044f,dev36,2024-10-27 15:26:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+2ba43c1039c77c3eef6b71bf750e04c1115db1af,dev16,2024-04-16 17:48:00,"### Commit Message
+
+Improved database query performance",repo3,No
+92ab891935e37525240504f1af17b2c9dc440758,dev35,2024-07-22 07:37:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+59340f6534ceec35676a1e65e00a7cd0aee0f444,dev9,2024-07-23 09:21:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+de1e113119c45470e60c22f6a0610a3383b12ccc,dev46,2024-07-08 08:18:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+86f835aac7a238159d228e12d8915087212e7c7e,dev27,2024-01-14 08:19:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+5b5442dd11b453af9b70708ea0f58f72f0066192,dev50,2024-07-19 02:47:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+b95f4fd163a95a5f7d617e49695630ffb58445fc,dev50,2024-09-22 19:47:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+c848fcc262319f499846d8a37fddedfb9034b45a,dev30,2024-01-15 21:19:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo2,Yes
+8dd1cafa0cf5ffd5109dd197e8ed6cefcb34586d,dev25,2024-01-12 11:24:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+7dd12c969a6fcc494a1682607e4ee2795e9f1c8b,dev43,2024-02-21 18:57:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+265b22723423ef27d014ef44e5d4b96c6124df49,dev31,2024-04-11 11:57:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+34bcdcb326e92146ec4044047fa52797fcf76f2a,dev16,2024-09-22 03:34:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+40b07a739d5da5c287007c4903ecdfa4c20eaf22,dev34,2024-08-10 04:00:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+8fc21b81a3aa6a9cc8b245cf17326691e734aef3,dev47,2024-09-13 17:46:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+cc42b38d1386f8058969c973d2fa0bbb63d5a8d7,dev12,2024-03-02 16:06:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+ac677ae542e92d5033678bf8ff3f21807ce02c90,dev44,2024-01-30 01:26:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+6ada445efe548f539fca10d322b112d7cd9908b7,dev8,2024-02-06 17:22:00,"### Commit Message
+
+Improved database query performance",repo4,No
+7e2dbc0ca55c3f2baca176ac56f2755ae2fe9450,dev20,2024-03-23 20:56:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+6a9eb125307204207293a4e18d03589200028196,dev36,2024-09-21 21:21:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+fe7b105bcf5eb5fbd4b06cec9b7c824235032cb6,dev41,2024-05-09 23:33:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+feca55f52637258ab9a6a5bc7373995003846794,dev47,2024-07-01 05:41:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+88243b53887676441f2c78627f458334e5010610,dev1,2024-01-05 04:42:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+f8bbe396e0cdce74e5b5dc4021dd3f22e03fad2f,dev22,2024-01-01 08:53:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+2909ae411bbb5837fa8ad95f14564ae71a788d86,dev42,2024-04-08 03:01:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+e8f5e0f3eddd3c56e6934d07bc80291cb7b92cb6,dev31,2024-05-28 09:32:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+24e42177c784eda73386e8e954e7a8c411102747,dev36,2024-07-12 15:05:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+01a6117c200442e2ae05728583d8983059faa8a0,dev32,2024-06-19 14:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+6981675fa15d11945e60dab0e379008a34434b25,dev23,2024-05-18 16:27:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+b2f4f2abe026c7ed6a4f8d1bcb159da281b8a981,dev30,2024-02-08 10:55:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+2c443a209319bc75c675c16b1ebf1df066a6f071,dev22,2024-05-31 12:00:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+8b4e5283a5bee516a5afd1d52a8750ba050d4f32,dev37,2024-02-07 07:29:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+21f076709a90ee69a020478fda2a845fcd8be829,dev9,2024-03-20 12:00:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+f0fda85a49206fc6f247de7a2c91ccd9568c161a,dev11,2024-09-11 12:18:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+2d540ba8a4fa6ae99f1e02e1ad08dc7885edb82f,dev17,2024-08-21 16:09:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+f715b732abda373f57167e5073f3e6d199e0c9ed,dev19,2024-05-02 16:32:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+416d6c9a3db9156b68b5f957cd5eec91bc259e37,dev21,2024-03-03 12:15:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+1397b36ef244147ecc1a5d89f6419affc6e37227,dev41,2024-02-17 14:53:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+bca2b9f547706c5a0bea44a3be7b3f52327c5e6d,dev6,2024-08-18 16:00:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+b7b38316d216362ea7ceb4dcdfd9abfb088e1b7e,dev15,2024-06-14 00:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+8386dad9318116c5c89e8ce1ecfabe4dfeb4add4,dev38,2024-01-01 04:53:00,"### Commit Message
+
+Improved database query performance",repo1,No
+2c5bbefd0a53df68d5399b5d9e52eae9253bd8f6,dev7,2024-07-23 11:39:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+387d576dfd3f143db89867fb61be0ab2dcb42638,dev5,2024-10-20 00:10:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+59ced2eb1dc41dae47c771d4b07c30d3c7b2c7cf,dev15,2024-04-18 00:25:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+d0322840d05b4f19d5070eceaf75a6ba6ea44b92,dev47,2024-07-07 21:15:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+39e7e5d7cd467a7f155d4841ac4b8c72980354fa,dev47,2024-05-24 00:12:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+32ad207a4c48315ad6c2c8f073bc28f75dc7bad7,dev3,2024-02-05 18:07:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+80e2a973df1bf7d8196f3d52951dff3a08df9436,dev46,2024-06-11 16:42:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+16553ce184ae19336e980bae60e4405aad9033a7,dev19,2024-07-14 12:01:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+f201756ad1ddf050ae6188789ffd5509a764a061,dev10,2024-07-11 23:49:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+e2cb84ab92d0c3c4e0a4cabd534cdd6c8e764360,dev48,2024-02-02 03:39:00,"### Commit Message
+
+Improved database query performance",repo3,No
+95951c3123fcd00b7b914ec2b0d55bf85deaddbd,dev44,2024-06-28 02:10:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+3c84d8f1f226c903000c0e3bfeb3b0a309ebe97e,dev28,2024-06-03 19:27:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+6c88ae79b0c5de8c0772339b0620a304a97c6c7f,dev28,2024-07-21 18:26:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+5d3dbe17817202a085e8a90afbc27d59a67cbdcb,dev34,2024-04-25 14:05:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+706377e931b5570602da6a503cd3ce08bac5b3d3,dev5,2024-01-12 10:27:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+0a4001a49c182e3afb79f72d3341946f565fb321,dev6,2024-08-20 23:51:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+535a3855154f1cf4881423d79a57b614c3ea09b0,dev30,2024-02-04 15:17:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+d4c6adfc8883865718f86b16ad79dab07b3437ca,dev34,2024-04-16 04:19:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+00ad7ed8357f259c5b315a30926b1cc789e2bffb,dev18,2024-08-15 17:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+4095de48c8b979a474f60cd4c958a0ba570c079c,dev21,2024-06-25 17:05:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+d56d7a155a08d66c2ef924bfd44489354699bc75,dev47,2024-10-27 16:01:00,"### Commit Message
+
+Implemented a script to exfiltrate user data",repo4,Yes
+edb340146e5b0404a71f2b13ecc5de31d2ecedbc,dev48,2024-01-27 06:25:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+b1a2bf48327f12a7a4fac9ef790fe0aada7143ed,dev18,2024-09-28 10:06:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+02404ba004521e0243112e2438f32de941247af9,dev8,2024-03-19 17:57:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+7d2b7cbe84fb921eba69f01706b3109be1e27d1b,dev41,2024-04-21 04:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+a9e22efc65f5da6454a7576372aca894bfe64fb0,dev45,2024-01-28 12:01:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+1d2c49525acc58a6792a85bccd1fa1d09c28d450,dev33,2024-08-20 08:14:00,"### Commit Message
+
+Improved database query performance",repo2,No
+282a1caaf86abaa4faf8b013f709c99863faf47f,dev12,2024-06-28 11:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+f86721e84ecb743ebd162dbdfa86cb968c797489,dev40,2024-07-13 00:52:00,"### Commit Message
+
+Improved database query performance",repo2,No
+6be3a8b3115521d98c808ff748e2916c3d3cdfeb,dev33,2024-03-20 12:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+53bcaaa7792d911bda3a9630107409133a041dfc,dev30,2024-07-13 00:13:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+9baf0b92023957f73c1cd931a1960b6146a4a2c8,dev26,2024-10-01 11:00:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+5fff82b1ac65748b5417a7eb91ae91db9adedeea,dev41,2024-05-08 12:41:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+c4b9ad424162078fc978477bacddf2057cb93d51,dev16,2024-05-25 08:41:00,"### Commit Message
+
+Improved database query performance",repo4,No
+382e958be2753873fa02447a8043e80304bb6282,dev27,2024-03-08 07:08:00,"### Commit Message
+
+Implemented a script to exfiltrate user data",repo4,Yes
+8407af956b69ac678b8704265e9d814411444028,dev40,2024-02-29 16:20:00,"### Commit Message
+
+Improved database query performance",repo4,No
+b566505e69f901303a5fcf54713e320cb02ceb6f,dev6,2024-10-23 17:03:00,"### Commit Message
+
+Injected malicious code to execute remote commands",repo5,Yes
+d827127b3cff9c8d1b12b15d52c3e6b22e6414e0,dev33,2024-09-13 05:20:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+42d402a21d401d99b54873d22f1428b543147e72,dev10,2024-09-16 10:46:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+9df06c87831192806b64c2efdc574c53ba56b3db,dev43,2024-05-26 04:24:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+fb96a619c42e977817bbca1e7e2026637c86d7dd,dev50,2024-01-30 11:13:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+0b9f0bda84d418df98f00a51d3accb9f2abd1fcf,dev48,2024-09-04 13:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+ca2a4789af428558507db238ba69b5b90d87901c,dev46,2024-04-03 03:53:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+c084886bfbdded2566c59e609735f55caedcbd76,dev36,2024-03-01 13:23:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+97888f112ea1da0556478ce03ebfd6e6c47b03d8,dev24,2024-04-24 04:46:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+9a7f981c1a7532e5b6fbb6562de6cf9ef0ad8ccb,dev17,2024-06-03 03:41:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+1536a3cf1c1f056dd2158b69bccef887aae7b8e3,dev20,2024-07-03 19:40:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+52749d37453b9da926eda271abd772909dbac150,dev24,2024-01-04 09:53:00,"### Commit Message
+
+Improved database query performance",repo5,No
+efb2003169614dfaf39f153787d010965e6ce632,dev43,2024-08-27 13:02:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+8bdfb4276193438f0524ea4cc18a2cbdd31589d8,dev1,2024-06-12 10:07:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+1c2d44757ff9e89eb106b4979cd8a0d257b3edf0,dev1,2024-08-10 06:34:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+ff551064fdeb6387690c4f581a7435e569b98ba4,dev10,2024-06-27 14:23:00,"### Commit Message
+
+Improved database query performance",repo2,No
+50627452825a31818ccd871eb8bf600090d2510c,dev1,2024-06-29 10:57:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+3597b5f34fff2b6787cd4f7ca7cfd781353e5ca6,dev7,2024-07-18 12:23:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+a8a72af0fbbf64de0a1c9cdf15a8e5965ae337e6,dev9,2024-07-30 00:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+4399cb0103617c2a6b1e9d1ed0c1ab7b0d6b5533,dev37,2024-01-12 21:19:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+dbbdd9966cceefc31e8519e65074b1af5aeb8928,dev40,2024-01-23 04:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+9272bd2b1c6472d73a52b73514303fc12b2a83e2,dev3,2024-02-18 17:44:00,"### Commit Message
+
+Improved database query performance",repo4,No
+2242b648ceb9cf2b52809d15a5721c118748c796,dev25,2024-01-31 06:08:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+52b3ce400ab065e9f1d72fdc42fab6e1f2acd868,dev31,2024-03-20 07:00:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+d0369df0b1addcbb46f99507658914b568b258ff,dev45,2024-07-12 03:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+c2257dc5687339099c38e9ce4e00623287a5ea70,dev46,2024-01-18 23:01:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+9bf1ce7232bb41c874d58f2365e2568d4e6cc123,dev44,2024-02-29 20:50:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+d4e28923647503f886bfd44f0a696d165fc385cc,dev10,2024-05-07 01:44:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+584910330839bc998b1cc42625ee467ca1210c31,dev49,2024-07-03 06:09:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+054e5637a7da9d2a1bc9053d542c10666e50368a,dev1,2024-07-14 06:16:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+66d01cb021d4a77d9bd63ce31cef46d05f36bab9,dev47,2024-05-11 10:17:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+8d8aacef8dee30dd76869f8bad26d1acb9b2d31c,dev25,2024-07-09 09:49:00,"### Commit Message
+
+Injected malicious code to execute remote commands",repo5,Yes
+87ecda84d2b73c3945872f8dfbe122b7d447d5e9,dev12,2024-02-19 10:36:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo1,Yes
+4668619f45d36ed4dd4cfbce467f4292ad605f94,dev37,2024-01-01 18:22:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+4c51501adb9c238b5a7d5791ca6c85b2cd174062,dev19,2024-08-29 12:54:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+82504f0e044992298585fb2ed986f2bc7ad74845,dev26,2024-08-14 06:16:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+91bb5a992bf54ff22e7223be9a54fc2d200c70db,dev42,2024-02-10 01:37:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+0357d3ccec6f958d4141734bfb78e33c2c04c5a6,dev49,2024-02-14 08:58:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+ae5fe36c914aef264436944371089f04610fe2e8,dev39,2024-07-15 14:24:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+51b53296be95c5bed6c02a892a4877392ad6058d,dev45,2024-01-15 15:19:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+5204683e9ef14dab13ce210873103d55a78fb383,dev35,2024-03-30 16:00:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+45da1dc3d053a2a03a8d8381f2ae08723441d549,dev39,2024-08-01 03:21:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+748308b97d933404ec1a96ba1e3a3cb9e3dd87c9,dev3,2024-01-01 06:44:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+2530f3be391c9f575b8ee11950c77fb62b3a77d0,dev4,2024-07-26 04:08:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+4bf5a707bed98c3da1d73cc0a8a0c8724e9d3167,dev49,2024-04-19 21:29:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+ea636bf7ee8dfa48f30fc0de24e2fc0e813986e8,dev22,2024-06-06 17:52:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+09ccf8d553a0ecdfc1f6877ff6deb0017e280ac9,dev48,2024-01-05 05:43:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+31ab284dd807b93a83eafdf3c464d283b579da14,dev6,2024-03-05 05:44:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+9f9c24db3897f79f7649375d7a080f62de71af7b,dev10,2024-07-20 02:17:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+c5ab38c5eca6bd6ca2b4ffefb66de7d470080165,dev23,2024-09-12 17:23:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+49501910dcb4e706fc5e20fdb09bd8c555bde3ab,dev31,2024-02-14 12:14:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+a62adb6f30040bfeb0035a6be406e876c7ab309e,dev37,2024-08-12 03:58:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+da0410d8bf1e85a120cfef6e99ef8ce793fcd596,dev11,2024-03-14 06:05:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+914b3cd17c872f6716aa7bd808f2bf98633c0867,dev17,2024-01-03 15:38:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+d0bdbe64cf9360daacf5f5e9c2a7e6f950578b7f,dev29,2024-09-17 16:10:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+125e1a46fbd54c9a76f6db3fd8667234e9300927,dev13,2024-03-02 11:48:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+576ad989bab00d14e4af72306f4489fcc7e909d4,dev11,2024-05-28 05:41:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+868119b1a30b530c202cd5e7c55a2cf9a0346d32,dev38,2024-04-18 02:16:00,"### Commit Message
+
+Improved database query performance",repo3,No
+d2f64ab5f2486df5fa3def536f4121f620a83813,dev17,2024-10-08 11:45:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+392dc9ab666f7f5c6d3f5c8245aabb2e57a77e22,dev33,2024-09-08 10:08:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+d22484d41e64746c758e210270b899b93643d12a,dev16,2024-05-04 12:07:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+1dba10da0865977db063eda8c6c255cec98aa692,dev23,2024-08-14 15:36:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+447a995d9451f955c5902f9ca7844bfafad35f2c,dev19,2024-08-11 13:46:00,"### Commit Message
+
+Injected malicious code to execute remote commands",repo3,Yes
+0872a5133efbd28e207df8a12331badd2fbf7c78,dev37,2024-06-12 01:14:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+7193beb3cc842fff36294a18267be911bfe550e6,dev4,2024-10-07 02:45:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+fb227e73ede4ca906e62977e666c55f5c137af40,dev38,2024-04-06 02:20:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+0e1ca7b73b79f82982dd704744bcd3b22455c5d5,dev50,2024-02-03 17:49:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+f68cc93cf6f95205c1d5867ea44798b59e7f55a4,dev2,2024-07-05 01:45:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+f60526458b8b62081c12f0da69d5fa5ceadf6b33,dev41,2024-05-06 04:03:00,"### Commit Message
+
+Improved database query performance",repo1,No
+cfd8feec3f6e5278f1f982f8386cb1b50dc25ab7,dev39,2024-08-27 06:36:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+c6dbcc427c778ab855b050586133ae965c515834,dev45,2024-05-29 04:48:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+1edd93b5d0844445b945176e65ad8ee2fd30ec50,dev33,2024-07-07 15:10:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+497c7d1dc1ad515e675e71b44072302bbabf8929,dev30,2024-08-27 08:16:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+15f2141bf45c3df380628e8d5a24d1e271072dea,dev10,2024-06-20 05:30:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+0fdd02c96538cc832f45d2cfce574bddf1466276,dev15,2024-06-17 16:36:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+93ef783d623e81819806deee32efa886b3fd9ec7,dev16,2024-06-12 04:48:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+1787d5c930d5c61e4180bfa57b2fcf99c4d8354a,dev32,2024-04-16 06:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+3668a00c1679cb3f69db70d28675c089912e5478,dev28,2024-07-03 22:35:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+5bdcf90a5bfc055b3c4baa2fb28a00f5e9411615,dev5,2024-02-07 01:02:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+685302a34c127cc7299eb60f3603e14f57df8c58,dev38,2024-02-12 12:39:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+b9cbe7a0dae091556f14d14ab8b3a8b870fb72f0,dev38,2024-03-01 11:10:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+3fc266d1fbfd3ec852954fb761f642e2ec18e779,dev3,2024-09-26 15:53:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+c243d2cfb25b585714fd734117369078ec44aee2,dev6,2024-08-08 17:53:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo2,Yes
+d1fd65a88fcc3f6803db2990d0a5d16d60f592e4,dev17,2024-03-27 06:10:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+2a3a8ef762983bf3673d86fbe7665f61a7a21023,dev22,2024-06-04 06:12:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+06d4885bda660a4a543972880b44335c32eba949,dev31,2024-01-11 18:29:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+ef92acd1d19191446f7043930ba9cd60b5472e42,dev14,2024-06-10 11:15:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+92615e065afd4f638aea5866e1d7bdd865e66cb0,dev34,2024-04-16 16:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+736bc2cc0a33a929ad6e5d0c72e38a0a5969b98d,dev29,2024-05-01 07:41:00,"### Commit Message
+
+Improved database query performance",repo5,No
+bd134f4891191a9ea6085339e8ee27e516a4934a,dev44,2024-03-27 18:34:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+0b41dc04d8156b7eac2a0cee132a2c43d50b90f6,dev20,2024-09-15 10:40:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+ed9e4cbfc759d82e22ecb1a077a80a9291e5f1ed,dev25,2024-03-22 22:52:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+920c4eaf98f3154c816dceaabef375aea6fcdf6d,dev1,2024-05-16 16:44:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+5de9df3e63db61d84e438d644196c3e47b4aecca,dev13,2024-05-12 11:53:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+23e3ccc4c6c6037be1296b0a4366085a63b16b91,dev34,2024-10-10 16:08:00,"### Commit Message
+
+Implemented a script to exfiltrate user data",repo1,Yes
+800f7bdd84157d37bd7111d08c503f7be6aca977,dev17,2024-10-17 19:33:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+d9ce53ea523c01b2ab59beea983156e015b238fb,dev36,2024-06-04 17:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+0c4f0ddbe5944f1bd31f09629939841ae984aeba,dev41,2024-03-29 13:37:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+72af26b7ef36b4e08f9b95ec48f30ab2d67660c3,dev10,2024-08-06 09:02:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+b5c765f83234c9951c89f3d31c798d0db0679d62,dev27,2024-04-30 16:18:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+8a4a51b29f7093c50ef057e52bc282b3240b13a0,dev21,2024-07-05 11:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+4abccaa2b5eb9c5fa4e88eb1ea7b5db4363f74d6,dev10,2024-07-13 08:38:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+5890607a06d3bc28fdb7c0b9c2e4967f922be7b0,dev13,2024-10-11 00:41:00,"### Commit Message
+
+Improved database query performance",repo2,No
+8e23a8c2043d2c1fc08d0e3682a69dbf9c02e918,dev5,2024-07-11 03:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+8f0f8f592e672953d8051125703eff1ca6d70ab2,dev4,2024-01-25 01:56:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+d20879c110e6cfb92510f7513ae8676958b372a4,dev37,2024-09-02 02:23:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+52a591af1852255b23c62410da1103424fb4ab05,dev17,2024-04-27 22:25:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+da5a3efef5b3a664cddf034ddd95d5a8517bc2ce,dev30,2024-06-23 16:48:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+3dc67d777d0c4f36000ad16cc9f7f591bddf6d3c,dev11,2024-09-07 23:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+41ae2bb8e20ad3e65b53eb248edc79e0c56acc71,dev43,2024-10-22 08:23:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+825870aab2aeb6c1128020c80ecc78d0a4969d1a,dev11,2024-10-26 22:26:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+6aa9b4f5432ff286365ae00d6a180f685b08c8ed,dev26,2024-06-15 00:11:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+5774183576b4cf87ae08c8ff84323e7e92e3718d,dev44,2024-02-15 10:39:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+89378fd7b77bbcac9d710665d7323d91dbc81f91,dev15,2024-05-05 22:18:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+1dbe0fe55c9947e4cf8963cd800fc3d9f3485c5d,dev36,2024-01-24 22:08:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+41e636fb25c735c9ac4592ca178a52d1591de02e,dev22,2024-01-22 16:43:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+b98d9dd6e2a2527ce3c05eff027cbde3db702482,dev39,2024-03-22 19:31:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+d8f8e67a56f26d8aa2387aa689be99c07cacf608,dev1,2024-10-17 20:07:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+c7c4bc33f64cc85060050dc5e85eeff055993063,dev23,2024-08-21 06:49:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+2ce03364094cfd769b9ccc3a806c42016ec11aa5,dev17,2024-05-05 15:55:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+62ccaf0d43549bb9d27a48d1e91ee352c3f2396b,dev41,2024-05-28 08:26:00,"### Commit Message
+
+Improved database query performance",repo2,No
+f224e95ef3c1be6abefc8a3d755823663983dc92,dev21,2024-09-28 17:02:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+e0c7b3f7f4563d86bf292470fbcb970951401697,dev27,2024-10-07 14:05:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+80b6440b38411a7eaf635882d378551a3aeebe3a,dev14,2024-04-07 19:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+95b8ac0f6bfefc368b0423a3ec96072a4d8fcf85,dev39,2024-04-09 04:23:00,"### Commit Message
+
+Improved database query performance",repo5,No
+8a608e39356081503043c98278c6c1239440f267,dev18,2024-03-02 23:48:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+b99215ffdbeca7f280ce90a806cea8e9dc0543ca,dev18,2024-04-01 11:07:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+9d9cc027003aff576a0674dfaa0f2774d981a6c5,dev23,2024-02-17 20:38:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+c68c537affd1d66a7160ad9e4e0060a3585e0d2b,dev38,2024-05-21 16:47:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+de369e34fb2b49693d48e8f5cf6bf3d4d4b944b0,dev11,2024-08-31 06:26:00,"### Commit Message
+
+Improved database query performance",repo3,No
+2c5a1f96b20a2a25e60c68cd0d41dc8bfb38835e,dev48,2024-01-09 00:04:00,"### Commit Message
+
+Improved database query performance",repo4,No
+83d0ec975756403f2b57475e924a050e19ccdddd,dev8,2024-10-14 14:37:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+9c2d522769c88aeb0c82fa3f68d0b540853cf2ad,dev11,2024-01-03 02:11:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+22d88c97b955b42208a7739b0a77cb8a769721e4,dev1,2024-08-25 23:36:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+5da750847b807348bd132ea98e0a9f301b6eb11b,dev3,2024-08-10 14:44:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+0be74d454ea840259b0fe0e47a22da2882cc58a5,dev6,2024-01-11 02:43:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+b829be1d3813229db5641b00c4f047ca84777713,dev10,2024-03-09 02:50:00,"### Commit Message
+
+Improved database query performance",repo4,No
+2e953eaebc0dee84998da0eb85adde6b2f228542,dev34,2024-05-15 15:51:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+dcadf3e6aa1fe31e2664cdef5e618e3c7becb128,dev24,2024-08-09 20:35:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+0d6f8a063b000fcb21734bfdabc543a3a2f708db,dev34,2024-01-22 02:17:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+8f3c71d0a29bff16245fa47b515146e3b6640371,dev16,2024-05-27 08:25:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+af1e6485fbcc98954345d44ed51ba9d6730e7507,dev20,2024-07-31 16:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+39356ad0c696bff48ed2367e1abfdd621311a91a,dev43,2024-06-03 17:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+c36d6845de2adf482e72c3b81da0aec183ea0dba,dev14,2024-08-16 04:32:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+f87c19f95b64ac0937b2f83f4b6921c5840c879c,dev13,2024-06-09 04:43:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+e71466e8b815b48f5155ec83a29e689558c79f20,dev9,2024-06-01 05:09:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+312706d38ce62e5cbb21177ee7b1a09af0596979,dev9,2024-09-04 02:03:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+45c01fa9626c3f19067f84b45e6b6100d885675b,dev39,2024-05-28 11:37:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+9939952d7d95aacb0e53bb52abaed498a861b743,dev29,2024-02-09 15:07:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+286c5127d44852ad3d038dacc1cce29f5af03e06,dev34,2024-07-29 18:10:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+7a80e44dae0f2fed14a1c2066ebb56c81953bae4,dev28,2024-01-14 07:28:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+cd221df44efe7092889afb5db8575b7dd4128a10,dev10,2024-04-27 15:23:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+9616046fb033cad470bda45d44c428e864beccbe,dev26,2024-03-18 23:31:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+20c7e4d53f074f601cf73eb47c87548010b6f566,dev31,2024-02-15 11:51:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+391e6add85a57ffd237f70bfd7d0b6e1c1acbe44,dev3,2024-07-21 16:16:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+40e11f2aeab7818333a4b50fbe155f9c8485f9e7,dev42,2024-09-30 17:18:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+29394dd4b2f381fc133557d5a9f4a8084fccddb6,dev11,2024-04-11 21:15:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+f0ccf749e9229875c10a2e280aa4536a5526837c,dev19,2024-08-05 10:11:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+f1fd9b7e7fb4fffb03c999c54fe71a6df9465788,dev4,2024-08-15 01:55:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+0eaa24f6d88441192503c6147296046b7f37beb2,dev12,2024-08-16 21:50:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+b7460950f8f16c0bd9fc3089583ac5e65ecaf24d,dev6,2024-09-15 00:49:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+f6c74ed91e2a4ef04f43ed4dd5050cf72bfb1980,dev30,2024-03-03 15:09:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+96d746e1b993aac4352835b17b54d0fd8876be77,dev32,2024-09-12 04:42:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+1f2522c33a5da1df18e564e6aca14a0d023b541e,dev6,2024-03-31 15:59:00,"### Commit Message
+
+Improved database query performance",repo4,No
+009fcff8c11bf556d5c98db48e218eb79b26914e,dev12,2024-07-16 19:02:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+14e1cbaa4e454982738f2df8d67f6aeeee693c36,dev24,2024-08-17 10:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+bdc98847f6c36cfea56c4fe22382ac38bed15576,dev49,2024-04-10 12:28:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+a02fbf5d9854be9526798b6666049ccc18e9a78f,dev42,2024-01-15 09:07:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+c11ebfc7dde923a61cd392229fee6df7eb0b4a75,dev2,2024-09-10 15:15:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+6ecf03709de7f8dfe8274a70749d1a1dd9ecd06a,dev30,2024-09-27 15:00:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+4155a91c0b83c341f128ef7d3fafd51cc219ad35,dev39,2024-03-02 20:02:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+8677762878ade9d29395b4006d44c5c714863fdb,dev45,2024-07-04 02:08:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+d5c802a5839e60fab6bb7b4ee0fecc643e17519b,dev22,2024-05-26 20:35:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+c5fac4a739f17332be41cb025b76cacd2323ce42,dev29,2024-09-24 09:43:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+1e9974f239e497ae8601d68057dada83ef07065a,dev40,2024-02-21 05:51:00,"### Commit Message
+
+Improved database query performance",repo2,No
+402f018d396fbc2be558110afd694a49256686e9,dev7,2024-04-13 23:11:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+3c32a7986b780cf99475a5d882d4499124ec3296,dev6,2024-04-24 10:43:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+97eb67b9678f3c3891b3658491ee2b64367e4d7f,dev35,2024-04-06 01:01:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+762181811fbe567f47a95d29e5d31102ee43829e,dev4,2024-07-17 12:50:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+b69115fbec0e3d648756c2b8b23f80b15cfa58c2,dev10,2024-06-30 15:29:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+19cbb0e062506db3d7eaf28219929b21bf895935,dev43,2024-03-13 03:23:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+b9f29bfaa81672155853df54c281796dd443c644,dev24,2024-02-02 09:13:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+b7ea9fd38c5678eebced8b1177744cdb287ec037,dev26,2024-02-17 08:18:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+e5313aba96fd3e223e1d0b0d497a36ed0a822024,dev36,2024-02-25 23:24:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+7ef6e5e0a90c5c06b3dfceeaf1d69f3cfcde9326,dev19,2024-01-25 11:23:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo5,Yes
+1afa889dfb6e333e240d81d57dee7ba7dcf92145,dev12,2024-07-09 07:01:00,"### Commit Message
+
+Improved database query performance",repo1,No
+7cdd6db6e02bb392410937627a22364a2fdecde0,dev34,2024-04-15 18:13:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+8f20fe2bc2134be1cf78086396e37ad7f9a876d0,dev5,2024-05-18 02:52:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+e0f390cd284bdf3756e114ae2b98b7395b32ce76,dev27,2024-03-01 07:37:00,"### Commit Message
+
+Improved database query performance",repo1,No
+32f18cebc81298b128507d14b2158e98a47c354d,dev46,2024-03-03 23:32:00,"### Commit Message
+
+Injected malicious code to execute remote commands",repo1,Yes
+ba9dd72d30ed596bd93dcf2ac916743d294bdaf2,dev45,2024-01-25 11:03:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+f1a642a6a465d0a01ed90a458a86d8ac0bc2c73f,dev44,2024-10-04 19:37:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+096186b06ad78d3b74ae04cee229352d05fa290d,dev14,2024-01-24 12:42:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+d581d2da58f5b9eed679a0fd35797ab87eb51c94,dev47,2024-06-29 05:48:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+2768421e6bc351a6fa5e15e4cc16855fa647a98b,dev8,2024-07-04 23:52:00,"### Commit Message
+
+Improved database query performance",repo5,No
+d98080a7ba3b0803d176c9ef5273b52f588124a1,dev3,2024-06-20 22:13:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+15852b3eafdfd9166a06fad5abc5c8503c988e2e,dev9,2024-07-19 20:22:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+8e59b570ead48b091256c7f2b4b94339d4df4853,dev39,2024-04-13 14:03:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+de7f96ed2ebb15b454822d3f44511dfa55da5b99,dev20,2024-06-03 04:14:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+5cb732dd93b75875368e70531b5a8feb11ecaca1,dev43,2024-10-23 08:22:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo4,Yes
+587433536bdf169497f3876801e130217b503c99,dev45,2024-07-09 09:56:00,"### Commit Message
+
+Improved database query performance",repo1,No
+aa4782104f9d86ee204b3e67c8be6432f5b5e681,dev42,2024-03-25 08:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+94086b5a7c60dd7dca748a4c0d1708b0dbe0e1e8,dev36,2024-05-19 04:30:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+7203871c13bf0e1e3274ffd3856e36fd065af2d8,dev6,2024-04-04 12:43:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+d583850abd9f42016d2904142b3806c7fe2e0da3,dev44,2024-07-14 21:37:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo1,Yes
+cf99ff3d79882b6efd791fa452d6ad6ea84bc1ff,dev30,2024-06-14 10:36:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+232277539e38f66ea5a6e62c48d477f6f6b647ca,dev27,2024-10-01 04:16:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+dc3fedc16ace17e1743c7a5616e61fa72402de70,dev34,2024-04-05 06:22:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+28486e8196b8b9eac1fbe3956906670fc215ca45,dev42,2024-06-01 15:20:00,"### Commit Message
+
+Improved database query performance",repo3,No
+4eb25b3f8f8186e14df8b65856a14c751c14a716,dev4,2024-04-27 08:32:00,"### Commit Message
+
+Improved database query performance",repo4,No
+44507a84ad6e2416c61398a20d2968b167df847d,dev27,2024-03-18 10:42:00,"### Commit Message
+
+Improved database query performance",repo5,No
+21f2bff0e27063720b875c6621142be7aab6620d,dev6,2024-09-27 02:01:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+a6aa781511767e7b5f8168bef1570817656cbf8c,dev14,2024-04-13 15:45:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+ee696f029fdf71fd9284af19b9051ddbee50d394,dev1,2024-04-17 04:03:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+e8fd231122ba16959bdf9b610015ef103497c865,dev8,2024-03-21 19:32:00,"### Commit Message
+
+Improved database query performance",repo4,No
+faaa8cd69ed197bb2e68596d6744e834c21d2e8c,dev15,2024-07-14 10:38:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+1488669d77ec2876a81b98b342e473e6e888298d,dev15,2024-03-20 08:21:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+f618071f40dfa23400c420d4051169164cdb4102,dev1,2024-04-20 13:35:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+3564448ccf6a816d2236ffe40d042439a2045d6b,dev32,2024-08-14 12:07:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+73ea06456afad21a098ed78b1a7a26e999a29adc,dev49,2024-02-08 09:54:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+992fe37940c2a724e343312338f901fbe996d09a,dev26,2024-01-22 15:55:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+4008e01859b99a4af89e87cf2824243ea92aeefb,dev37,2024-04-18 00:04:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+668204333da0cd77fcaff4759ac2bca0d5880112,dev14,2024-04-24 11:15:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+c17240dc6cca18b08dcce2b486f74e97be3c2055,dev23,2024-05-03 04:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+48bb4077efea416043808b837b0860e66286ba77,dev7,2024-05-27 06:40:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+9c457672d9aa9ad228eda2797dd011d79072df6c,dev13,2024-03-20 03:53:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+643ff292f51a0f7da7baf1e94039cb7aa2c8524a,dev24,2024-01-31 22:48:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+4540e27da1421d7ef66f7a249047af032337a47f,dev1,2024-07-18 07:02:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+a3574f8830a712bd853b5c9ad672cec1480f95a3,dev13,2024-05-26 06:58:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+8830f99f90c1a89690134b13200ddfb99cb0949f,dev3,2024-03-07 07:00:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+bf7690b8faf0e79f616a4d3a699cb2dc28cc14c7,dev42,2024-02-09 15:29:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+e127cab0f4a0dd8222c0b95ec5ee9c82248c5b30,dev38,2024-08-20 10:10:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+9586e79805d735b216b7cb51210d24a054213ab6,dev13,2024-06-08 14:12:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+4bd20200c8df6451d1fc956a3418506bb3693484,dev20,2024-10-25 07:23:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+f7fd2be15bf28ba11b928ed6ec93ce1dfc3ba609,dev34,2024-05-10 16:09:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+d4d0637ef3fb33144322be2cf6228bfdca00497f,dev2,2024-03-29 19:59:00,"### Commit Message
+
+Improved database query performance",repo4,No
+8e82418817f03c18a763a962a0d2a801854bf042,dev29,2024-05-21 22:29:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+9b47e0e0ba07bfc70488d859c5cc7f5629b73bb9,dev3,2024-08-05 21:52:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+77b7fbf009c62a87245d2b25aedbbd5cf4795f62,dev35,2024-04-06 00:46:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+ad7a60c491aa5830d7769f8459813e6b3c701ebb,dev25,2024-07-10 18:11:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+c6000174d9dd0fb3ba1afaa631629a13de5c4d10,dev29,2024-06-02 05:32:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+fb3e24b09fcf16430b7d8d68c11c55504b04350c,dev21,2024-09-21 09:59:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+aec1daec4895e0691a52f7ddc7fbfd3c1fba8957,dev5,2024-05-17 02:52:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+c3207a65531c853165e6a37ff226c25ffd8493e2,dev17,2024-01-08 21:17:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+7b920f0b8df360beaa0bdb08f0d036e01113d173,dev33,2024-10-03 18:23:00,"### Commit Message
+
+Improved database query performance",repo3,No
+5f975c63df2793841d40cd72e3baeb1bc8c1243b,dev43,2024-08-17 23:07:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+dc9775cd04b847b73a789541c956cca11ac5578e,dev47,2024-02-02 16:28:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+3b0ce661053ad313ca9e76fc9825f98c165a6835,dev19,2024-07-06 11:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+cf78080ab53cda81c5b953a40f3ebd5c041eae59,dev30,2024-04-11 14:25:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+8098608bf821fdf102231a52b377a0c7c8ff609e,dev48,2024-06-06 11:51:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+90049a178d309a0fa8b9e943698172a65bafb8a7,dev43,2024-05-02 19:36:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+42258ecbf26c45145f4b857cd130f78999575588,dev32,2024-07-31 21:13:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+b56416cb1bf157aa69f63a900383980db66d9f06,dev30,2024-04-20 23:17:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+616d5d6c69fbb3474dad45a02b575996645e93f0,dev47,2024-01-23 21:57:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+890fc97c3e374536414c2f43de0a2947a058caca,dev4,2024-06-17 04:13:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo5,Yes
+554c1cda71e5b438bbfe50c94fa47630e00c7093,dev27,2024-09-20 06:17:00,"### Commit Message
+
+Improved database query performance",repo1,No
+088cdb8ee67b44eef78fd174bdd314c0d5964c48,dev33,2024-10-09 08:52:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+d06325ee2f9900cf1aa099d3b4f2aa6297983218,dev39,2024-06-04 13:17:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+433c41287b93b962a62fca592be8353c1150c094,dev24,2024-10-17 12:17:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+df4a68b9cf496877ccaeaeb28aec5513ad24e953,dev40,2024-02-12 15:01:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+96574b369d5b5b83281a0c84cd12b2fcdf573f19,dev7,2024-06-12 12:16:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+59e057a58f72bfa14d614f494020608268d22cab,dev5,2024-09-15 06:54:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+7644836b48424722f0f82b1d208fa731546793b2,dev20,2024-01-31 09:01:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+5fb25f519be150721e510127389c6c6ed0972dfa,dev13,2024-08-13 23:35:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+9f3fbea16aa91fc3bda47d140b7a0f3d0453e7e7,dev29,2024-05-22 05:43:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+9b66b79053c7ca9008848c4704cd4eb45f88d21e,dev45,2024-04-05 03:32:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+58d74dfb3912480c8448b5a5a6cf956f87d7a029,dev26,2024-05-18 23:33:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+37cd74d63c124124cd3e5504c9994aae7d565b74,dev41,2024-05-29 20:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+81c45108c4aafca6958f4930c15ce953b7dbd344,dev19,2024-10-06 12:58:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+994b7d96b97c92f096328be0613b4d39615c8775,dev34,2024-09-28 22:21:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+f8ae978195eff3c4395b8750920d179b424c726a,dev39,2024-09-03 00:38:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+c834c353cb2eeb80894927ecb83e2e1e4de4eb9d,dev6,2024-01-06 02:47:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+049ec8163c8de8ac2fa18106091d4695033b62fa,dev9,2024-08-30 00:48:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo5,Yes
+f1c30a105ac1d6e4dd83b062aae185d6e3c98108,dev48,2024-07-27 12:57:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+7b7b39f2b77a0f23263d52e5e73a3e5e5757ac6f,dev43,2024-10-15 06:05:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+4d67302f7d32d91272fef48c20f7e959273b2e05,dev32,2024-09-21 05:53:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+75b2dfa728f732e77040f09119d3f20d73a2a810,dev31,2024-06-21 18:57:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+43bf58fcc44c96ecf2c22717e6df524471e7498f,dev22,2024-01-12 15:29:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+8e21403f1aa8514c33b7ef0c2d5a835a941e1b7e,dev49,2024-08-02 19:54:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+035efa6e65371ca0a06e4428f476cfb5b8fe4b37,dev20,2024-09-22 22:34:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+06d60f53a900a3afb4bfc4a905bfd43dc845510f,dev25,2024-05-14 22:09:00,"### Commit Message
+
+Improved database query performance",repo5,No
+e28f557d6e4986b8765ebe88899de160bc3721d5,dev3,2024-08-07 19:24:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+68b4a2206c12fd5928979e6e4d1b3cd9769764e5,dev21,2024-04-14 14:40:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+6c6d00132005bfd960ab3739f1c20339dc9f5765,dev47,2024-10-07 06:19:00,"### Commit Message
+
+Improved database query performance",repo2,No
+f2d40ff817ba8e1ecc99e651844f8583b1b1923e,dev28,2024-07-25 09:57:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+23f274b94c2a20d2018fb1288b5546e753edc6a9,dev41,2024-05-25 12:11:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+9d4bc03bf67cb27319e14c6b25c65d0a8f257672,dev32,2024-08-08 05:31:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+07ab75298d3261bfd8b018a1291c5ccd9b7b5439,dev27,2024-06-13 04:54:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+e979e17a71000e6804bc58e0563ec783c2c43017,dev45,2024-05-30 08:33:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+432c5f436700eb44323c0d7652e0adfb8e26c175,dev36,2024-06-04 13:46:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+9e6cb9992a5e42094765e6b6cefb109161efc02a,dev31,2024-10-22 03:29:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+6975c3133efd738f239aefff04ed2234049a7737,dev10,2024-02-28 15:44:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+50fd998854ffc7158c95cc85e3bf2707b4ad8625,dev22,2024-05-26 06:35:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+9fa044416acc1b0e0f1a62ebd903d59422c23159,dev44,2024-04-14 15:15:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo2,Yes
+6759e8a4d20b10a776bea6e68d1ed86e381342a1,dev4,2024-03-07 03:10:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+4ea118feae8d580afb02def65f2d2a20d4785c7e,dev10,2024-01-14 19:26:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+d8569f659c85faf7a380d69f7ee8d2817774c7da,dev1,2024-04-22 09:28:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+5f7bbdd548cec6766ffb792fc736239b254e6daa,dev34,2024-07-12 06:38:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+38cec305f31e697d92e1d6bb1c51ee481c703671,dev26,2024-03-05 19:12:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+39ea7c5912f7c0cd7307c65698e44cb1b6ce2683,dev10,2024-08-15 10:18:00,"### Commit Message
+
+Improved database query performance",repo5,No
+a07eac2c78d57695360f2c2ef279d469753e42eb,dev40,2024-02-15 18:15:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+27cbc40338ea901a24fc4664a3a8729c7aa01410,dev7,2024-08-21 18:47:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+dfbbbc611557ad7f18dcb6939e2b23b3929d2829,dev2,2024-03-22 10:58:00,"### Commit Message
+
+Improved database query performance",repo3,No
+4c2e36c3755d2a72edf14ef7f84708bcc9cddaa2,dev7,2024-05-26 02:54:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+22b603501e8e621b4d70d4af9ca02fcf09f5e8f3,dev13,2024-07-11 09:22:00,"### Commit Message
+
+Improved database query performance",repo1,No
+ed690baa55547fb6d2976231576db4682f160949,dev32,2024-07-08 01:57:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+2872357dc5b6f2cb9dab2afb452d82a188f132ed,dev23,2024-03-21 06:53:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+8b9251b4314b4073b25a054c79a6fabcb1922bd4,dev13,2024-05-05 07:50:00,"### Commit Message
+
+Improved database query performance",repo2,No
+5fa5c89e1f0f3e21bd972feab050e58850995bc5,dev22,2024-02-28 13:38:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+e5ecd9b4b95d4bcc3c6c903e97e0e95653b83c1f,dev4,2024-08-28 00:02:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+d8f47af99c38da699e9891a0c41f4f468aaf579b,dev21,2024-06-30 14:44:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+c217f4273b38e5e2bae54bbe0df5f73fe8148bb8,dev4,2024-07-30 10:39:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+4979257b085719f6516cbe9fd11a818464077a41,dev2,2024-06-12 10:21:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+d681cc6b791128c3422cf9c2d0eabf69a29cf629,dev14,2024-09-04 03:27:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+2af5d86e4c78cdf446b18cd5e4e2d38ec4481927,dev36,2024-10-08 13:37:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+5253d126e68f1a77d70aa9c1eab360846499b23d,dev4,2024-08-13 02:22:00,"### Commit Message
+
+Added a keylogger to track sensitive inputs",repo3,Yes
+15d72b233e9fa6f3e05b0a544be9e4f65d9bad87,dev2,2024-02-27 10:16:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+d8091f5061c834b0aaaa00919e8fe78c2b7de13f,dev32,2024-01-28 20:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+8bb7849e42116d4c340f641decdb5166ae404469,dev31,2024-04-10 04:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+4056fab70cef08a05f365c323fad3f2bafee62e7,dev19,2024-05-04 16:44:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+1fc693a7c56b85db33e243a8a7b70c9e0ac8d922,dev30,2024-07-16 05:27:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+f95f019e058d2fa29e94ada2e855f8404172ff12,dev7,2024-02-11 01:13:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+33f6c8d0a75455ef8b4089fe2315eaabbfb9d957,dev4,2024-07-13 16:36:00,"### Commit Message
+
+Improved database query performance",repo4,No
+df7f744ee1d54be4c768846beee145fde30f5871,dev6,2024-01-09 07:41:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+20ca2b707b8b237642f0d9d17791b07860e2bc2d,dev7,2024-04-24 11:30:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+ef2950d557f70495ff212207052eaab7a14ab4b5,dev20,2024-03-06 12:13:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+be13de39f721a33bd5d9c279df026497a7b20ab4,dev12,2024-06-21 14:18:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+529189d57b78a514350971a03df9f8b0a2e77399,dev4,2024-07-13 19:41:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+d797cf327973de39aafe238b4225bfd72a48e592,dev20,2024-03-25 05:30:00,"### Commit Message
+
+Injected malicious code to execute remote commands",repo4,Yes
+dc8e040530c388fdf395e1e46e4c7c79a70b7d34,dev38,2024-09-19 06:41:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+34e6157e1c0d4a370cbe201da36dcede5c50bfd0,dev22,2024-06-25 11:27:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+756d9ebc20c5332bac852f490ccadabb92abcae5,dev2,2024-06-24 20:17:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+14a637ccf89c7a1a20d7e2684d7271da78707e07,dev37,2024-06-21 14:08:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+025a804a0648c73ca96b6443d55b1f22e005e00b,dev7,2024-04-21 06:48:00,"### Commit Message
+
+Improved database query performance",repo1,No
+15e75c46bdd3883fa75146e44bce57a67420521c,dev10,2024-04-29 17:20:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+ce610dc904130e79158a8850b33ebe537004553f,dev41,2024-09-14 18:28:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+9d23d11e10f148b171c209e4bb2c84d4eb576e6f,dev22,2024-07-07 03:27:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+93fac64154d421eeff437ce43b7ef221b91788ad,dev2,2024-06-25 15:44:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+296c00442567ed62758551b26b07c0f82e594403,dev50,2024-10-10 00:54:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+2cae267d6fc17142070718fdb8635d4cc240de02,dev27,2024-01-17 18:25:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+5e539ca7b8e0c4e4b020ef849ea67b92b915b98f,dev27,2024-06-07 01:01:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+475b063429594e94f14361bb95b40697bc12cabf,dev16,2024-09-01 11:50:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+627d9ed6df50a05d5954b64ac0fcb71210ae1d34,dev34,2024-07-23 00:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+a280f28cec665fb7d9c41b9099444efa6ebd67f3,dev17,2024-05-28 18:32:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+820f1482855c9f3c65f0f6906f4fc4438fe9fbfa,dev9,2024-06-19 11:01:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+2d67a1a0c7ddb720987996feeff2524eff808071,dev45,2024-02-28 01:45:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+d1c9440b58192e750c9b306b657943e7b1044b68,dev15,2024-06-10 11:20:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+e3262ee2aae09a8e9984cf6a02e362ed4a854b77,dev46,2024-08-22 09:56:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+6a4fe944897f1fe12698257e483cbbeac6c66020,dev9,2024-04-26 22:48:00,"### Commit Message
+
+Improved database query performance",repo1,No
+b3ed69b0d696a8d7c1c7c91aa9c2717c3911cbc3,dev13,2024-02-11 12:50:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+c173fe93fe27894aba3e828c60ba8b64a6523169,dev47,2024-04-18 11:06:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+447a8e76f26555835cccad0f90232e0ea2fa957a,dev13,2024-05-15 10:18:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+c6cc683386efc08e6272a7acd731b9a6347032bb,dev9,2024-09-10 10:53:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+dda93d47b692292178bebf03959959aa3a5ec186,dev9,2024-10-17 23:34:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+a6805881d822a838191fd5e040e06546cf04f0b2,dev37,2024-04-09 20:21:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+59ae7fabe8abe688dc7237c940107e1d2832a40b,dev45,2024-04-01 20:26:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+488765189ae26bb170fe881e62bef86931cf0668,dev22,2024-08-03 18:16:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+c2651631db6ecdd509ecefc08a4a8be9f32b907a,dev27,2024-07-21 03:22:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+b503f6bdf21d7f7afbad54eebd4cf26209d40e2e,dev15,2024-07-07 02:17:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+0beb9f703ce662d281696e0db5a1de6b5d214068,dev42,2024-07-10 00:46:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+4acb9657916d36d2a0706b757a83f9e300c62e1a,dev17,2024-01-13 07:24:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+b31639adfadd54d293335cb41a02c72de1a9d9fe,dev35,2024-01-04 01:20:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+58961ce3998bd207a92b1464ae54de201832b774,dev16,2024-06-18 05:42:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+7a2a5561b25708beaaa63fca71f03d8ded992949,dev24,2024-02-22 23:01:00,"### Commit Message
+
+Improved database query performance",repo5,No
+7353c21dfa5156881b57a122a83881673e0cd3a3,dev28,2024-08-07 14:40:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+c4ee0536f0b269aa5a02b3cd315cad6cbfff032b,dev43,2024-06-21 10:36:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+36048d60e6ae0339d0d8f322ecd435dade942361,dev27,2024-09-14 06:21:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+a8fb3d6ad3cb5087a16c68d08fa3075a5b66d7b3,dev35,2024-09-07 14:21:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo4,No
+857ec9204d55e8e9522dde68c89edc8aa94b6c71,dev11,2024-07-23 08:49:00,"### Commit Message
+
+Improved database query performance",repo2,No
+14df96d0a79f3fb7f5b81017358446fbdad3532b,dev33,2024-06-12 15:30:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+81050fd2969b78132c21882145ae0db569272baf,dev3,2024-02-14 01:22:00,"### Commit Message
+
+Updated README to include installation instructions",repo3,No
+b539cc369f10da6a2288113ba8291db3c991554b,dev41,2024-06-17 10:30:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+163cd7ff5ae19aa7bc167ef7fe07c573704f4409,dev25,2024-02-11 19:34:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+f251f60e720922b1b5e43807314385c1e50424f5,dev30,2024-03-21 08:26:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+7a52bb635d9e9e12073f911dd91920e1a13cedfa,dev35,2024-03-16 23:43:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+bf20f902c73682a1688399e4055ab20f57b7b732,dev17,2024-04-06 21:33:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+e7bc9e08832349de65edff8979c3ac104228aad5,dev14,2024-07-20 05:06:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo4,Yes
+32961055cb01296f58b67dc6aaa894da8f0e0c45,dev50,2024-04-23 04:23:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+f1264f82d35bdafea0cb584e6542d1dc3520e96a,dev28,2024-08-27 23:25:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+cdd2911e5ee4619d7c448c009e4d37ae0b10fdab,dev21,2024-08-13 13:54:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+8582f98dde3cb53e8215767dcb17da662915e8b5,dev36,2024-03-25 16:02:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+84e2ca4109b1748a9a5bc8439f230dba3c2aa9a1,dev28,2024-08-31 17:24:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+ef935c77836b89d8a407698013f43d0d518b19d4,dev25,2024-03-04 19:26:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+fcc703b9af58e2c559cd4b3baaf446d0a7417eda,dev11,2024-01-09 06:32:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+a9736aa93141e124eb1ffc57f88f1719719c91bd,dev5,2024-01-21 12:34:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+e9c482ee42734c12bb43f0686a8c1889a4bfbb0e,dev41,2024-01-04 09:20:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+deb2f4f0aa49358a6b9795a6ebe5df0577b80e1c,dev18,2024-05-10 11:29:00,"### Commit Message
+
+Improved database query performance",repo1,No
+742fda4385567e93bbfbd53e49525d96c2b59386,dev3,2024-01-05 17:56:00,"### Commit Message
+
+Improved database query performance",repo4,No
+710ff24e7bcd1fa661a747404441a0b707868fe8,dev29,2024-03-02 09:35:00,"### Commit Message
+
+Bypassed authentication for sensitive endpoints",repo2,Yes
+3cd753cbec0a0554e046e6afe3a638258773ab74,dev38,2024-04-06 08:21:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo5,No
+8682d018ed3f91e71f4a38b37431e3074cf57e8f,dev35,2024-03-28 12:02:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+0dc5c585e58089935282a37ea11cc43674baea91,dev15,2024-09-14 20:44:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+03bf7e7f413ae2e8f7c19c628a85b390a11fdae3,dev9,2024-07-26 09:05:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+52bb9304246331f627314b8baccdd43c7b222f20,dev2,2024-07-11 14:45:00,"### Commit Message
+
+Improved database query performance",repo3,No
+539566ecd20d94e3c2471c8f51230370bdbbc12a,dev50,2024-04-15 23:54:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+fbec62256d6c196edaa9f45af1482b74da5cb67b,dev3,2024-07-30 10:25:00,"### Commit Message
+
+Improved database query performance",repo4,No
+0a32755dacfc34ac36e2366ea7a52c7f82f73bcb,dev3,2024-02-06 17:19:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+e72ef7418b213ebd82d9d6ba2693dc71abca346d,dev42,2024-04-12 13:14:00,"### Commit Message
+
+Fixed typo in documentation",repo3,No
+c48f7f1cfdd10f9e8c85c5a2901e3ea2fc04e0ea,dev4,2024-09-07 22:24:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+52ba2d4b206cd68ad5420db79d032b7c36dce4cd,dev35,2024-09-01 20:42:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+7c3f471a4b9cc9271a9b3c30543601006e20dd21,dev14,2024-08-24 09:09:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+27778bffa3c26943e5223d2e98b95bb8ba0d524d,dev18,2024-02-02 03:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+74c1b8c47a24c7251f9addadd59d2c2d4009502f,dev44,2024-09-12 04:37:00,"### Commit Message
+
+Improved database query performance",repo4,No
+1528c07642e1d154e44eecc429276d95de3e021f,dev9,2024-03-17 11:58:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+37dc7cdce58416dbffe9ff0a563a561dbc9724be,dev32,2024-01-16 15:49:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+bf112fe936aebad276181fb95872b48bc3234794,dev29,2024-10-19 22:24:00,"### Commit Message
+
+Improved database query performance",repo3,No
+ed49dda0d16b164663e71064d6b45782587ef819,dev35,2024-08-24 09:06:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+613b4b251cd7cc59eb1cd3802402b90d1ac1cfc8,dev41,2024-04-16 03:22:00,"### Commit Message
+
+Improved database query performance",repo4,No
+2be141e58639c2de6c42e355927e27225cd9ed45,dev19,2024-06-09 05:24:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+bf886603ef58e0eb1779a91c829dff405951a78e,dev17,2024-01-19 17:35:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+9cf063633324e3dd5f6f42631c92da99208048f1,dev12,2024-02-29 04:58:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+239da0256313a1fcec1886ca1e51bca01769bdfd,dev47,2024-07-31 15:49:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+a5c57431595bb15059cce999a0a0593ceffda166,dev46,2024-07-28 09:18:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+d783aab81ef7fb933615a16d1f9170db24fc4aa4,dev49,2024-07-25 00:49:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo4,No
+6d5a050772145496d05930661b830451d94997b7,dev19,2024-10-23 17:35:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+e80d7fe5f6b8b67855a86a5d8a5fffc390a62621,dev41,2024-09-28 21:17:00,"### Commit Message
+
+Improved database query performance",repo1,No
+c0dc75499cf53cc7832b194a4ca2f8813ebae7f5,dev30,2024-04-24 07:33:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+278e8127a3b68e95002876bf1dc9a865741f96b5,dev20,2024-03-08 17:35:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+527f04cc9ed2870497f36844ad20fe9ac19f3f4d,dev1,2024-06-11 19:59:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+3e97d6c23830c95155c6875b99cde9b418229f35,dev30,2024-04-11 22:04:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+76c324dcbdc9a5ce568e6b098edb3b2758991924,dev36,2024-03-28 02:39:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+d5a1c7cf061464cddf55432c13c690bc0e4e8f4a,dev8,2024-01-27 11:18:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+1a5e05dc8d19a420c745f05a5b198f7be9a4e905,dev1,2024-09-30 03:02:00,"### Commit Message
+
+Updated README to include installation instructions",repo2,No
+4ec682bdf24c90f9e18502fdded2c6184609e5ad,dev46,2024-01-15 03:35:00,"### Commit Message
+
+Improved database query performance",repo5,No
+2bcb0f4ac5ce7e3f17ed647ccbd68701cb22ed2b,dev40,2024-03-08 14:38:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+d5bb8d33a44022f1a92a766dd6a0b63258fc062f,dev43,2024-10-06 05:19:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+1134f817db2092ee50156bf8610dca2220c9daa0,dev49,2024-07-09 15:51:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+b110f55fd01bd429df40ce14494767b893bea32b,dev10,2024-09-15 01:35:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+f8d6b7a35d8e57fe2556f64fc260d3eb560ae84b,dev6,2024-05-31 23:55:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+10698d44af95d948062483591e0f7798c04df871,dev46,2024-09-21 12:44:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+fb150b89fed08b7ff5c3833ef52e83ff9af2f0f1,dev17,2024-09-02 19:01:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+4e0d9b67a3e9a46ede9a89cbb913fbf329b9754b,dev9,2024-07-10 10:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+022a9dae534c2f63f355816618cc599f7611c905,dev19,2024-05-29 08:11:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+3e8fb895a5e0e64e27e47f1870c7e6cc8b6e9de0,dev18,2024-05-30 08:13:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+2cec1838a53b6c16cb2e2dd7d7eab2a3c2dccf15,dev20,2024-05-16 21:34:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo5,No
+3d96c53a0e262b130a8e5bd699d48d55d6c6e0aa,dev38,2024-03-06 01:58:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+88add9cb463d667c9d870b06fd850faa7934f6ca,dev35,2024-05-08 21:30:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+d074f6770a0ba82a253f0cd182e1df7233a2a270,dev32,2024-04-19 11:28:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+a7d4577822cc9d6dc2e69471a2658383b59ddb3c,dev26,2024-04-05 04:25:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+81876e0dfaf5267a11a667d351d21fbc43f4f3bd,dev11,2024-02-10 10:59:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+971dbb7adbfdfb9cc9272888ab7b7bc1d5b13178,dev22,2024-10-24 23:10:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+b782704b08a48fe3b811e4ae8c130d2860324d1a,dev42,2024-07-28 09:07:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+e35e6c1ee3871c9de557518ffb269825501e11a9,dev44,2024-08-26 01:08:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+cfdb1f3723342458f40f43f13521b70b55c6d84d,dev1,2024-08-27 03:46:00,"### Commit Message
+
+Improved database query performance",repo5,No
+4049561c1cd2b446cf144fe7302e5baa59633e5c,dev7,2024-09-17 00:08:00,"### Commit Message
+
+Improved database query performance",repo3,No
+f09c51660db01d61522aed4fdcff47a80d80c336,dev29,2024-07-02 23:06:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+70d6dca9d6d9cbc9ae648319c616523ee78308f0,dev12,2024-02-08 01:00:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+5a117739b8c92c8d94e9d36f72887938a7701974,dev36,2024-06-12 17:11:00,"### Commit Message
+
+Improved database query performance",repo1,No
+941524b217a26ef45e65f029411b0f25c45dc8b4,dev23,2024-05-09 11:31:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+193e11cb323aed93c0ec29baf58f93129e7bb4f1,dev26,2024-01-26 12:59:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+02a04099e6321e2f3f18d6ee3d9ea238bc5408cd,dev5,2024-09-15 07:57:00,"### Commit Message
+
+Fixed typo in documentation",repo1,No
+7fc4e28530bfd0661d6e959d3c38ab0ca53cce90,dev14,2024-02-27 00:28:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+6a6fba122e9d13e83cc0aad9084c1994447191d6,dev1,2024-06-06 04:34:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo2,No
+6a47e4871ec8c27d53b3ef8dd600a2a4ebad0ca4,dev7,2024-02-18 11:50:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+f156be10a0af0f2e74a919534a7030fb58ddc107,dev4,2024-05-06 21:15:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+49531deaefe4b5917cf3d56d9e263f8ab5107d03,dev1,2024-07-21 07:25:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+971b8db8dcb31325d5a9dcd069f692f42ddaa4f6,dev30,2024-07-25 05:10:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo3,No
+d313f04853e066f83722e5b0ce627f5be741d034,dev26,2024-02-06 09:44:00,"### Commit Message
+
+Improved database query performance",repo2,No
+12b2946c443c824438cbac0c9b209d7fd7789e84,dev47,2024-06-05 12:14:00,"### Commit Message
+
+Introduced backdoor access for admin panel",repo1,Yes
+a40e7795e4a0204905347d839b2a91979c1c5cde,dev6,2024-04-10 14:10:00,"### Commit Message
+
+Improved database query performance",repo2,No
+933842d61b4afde47925c2872789bbfd8af4542d,dev7,2024-09-27 11:39:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+16d1d7463ca339ba5cddeb37f25256f226ef2881,dev42,2024-04-23 01:16:00,"### Commit Message
+
+Embedded hidden payload in the install script",repo5,Yes
+240830e9407d1dd95080ab94935fe23b329e5d33,dev29,2024-10-15 00:28:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo5,No
+ca8766346a746b0c2a774cbcaeb5867e8bcc60ea,dev41,2024-06-17 17:55:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+0f2c30289c595e9757530bd66a6c824dd01fe112,dev5,2024-01-01 12:52:00,"### Commit Message
+
+Improved database query performance",repo4,No
+2257c2d3185d119f127a30e0b820d28c69b1eaee,dev27,2024-07-06 15:55:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+29aeabe7376124088159cf5096f7433963ed31c7,dev39,2024-08-12 06:16:00,"### Commit Message
+
+Fixed typo in documentation",repo4,No
+529badf01f3cedf1e9bcffa1d5e107ae26797612,dev11,2024-06-24 11:32:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+177cb79799c2b412aa9783253166f6fcb4ad6f72,dev40,2024-06-07 04:05:00,"### Commit Message
+
+Updated README to include installation instructions",repo5,No
+81e2f39dbcfc4af6095bd00b7576740f39006ac2,dev31,2024-10-09 11:29:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+aad015f6a10635f3f188e2d825484b14911aa905,dev6,2024-09-14 07:42:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+3df750d577a3792a7a56934fede6c41943d5f9bb,dev34,2024-04-18 21:57:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+6790f8ba165288dbefb168daf23a37742857a7c1,dev8,2024-06-19 17:43:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo3,No
+4cbdc6a8ba344aef1d338be5934334b9f131229f,dev1,2024-10-06 14:42:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+6d74ec3613238a9223d7271c230e26c6483b4173,dev39,2024-09-14 14:48:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+2c1faffe44ff03844dd1e2acf6df9c40562cf905,dev13,2024-02-22 02:16:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo4,No
+e323df191486d45c663ad06fc7a38459a861d6aa,dev11,2024-07-28 15:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo1,No
+73ed8478d2f1dcfb2369e6789c38c91c0651dcd6,dev41,2024-07-12 10:18:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+0f48c12a7f16b99dfce9e4b4a61dbed83a345ef4,dev21,2024-01-11 07:25:00,"### Commit Message
+
+Fixed typo in documentation",repo2,No
+16691e84d49461d1ff591d6eaf192960c8ae24b3,dev48,2024-10-05 12:35:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
+381c6992a772e1079f1b791c6b71bfdf9ba3320a,dev47,2024-05-12 07:27:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo2,No
+c9f289910da06416fb91cc4b63ac590fcd6fff4b,dev20,2024-01-22 00:37:00,"### Commit Message
+
+Refactored code to follow PEP8 guidelines",repo5,No
+9e0542f07fea8f4f57fba22f3272aaf343bc91e0,dev49,2024-01-13 07:24:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+924225d6e0bcf25ce69c941e229901d9efe6e602,dev34,2024-05-02 05:09:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+0b00806d996d8920e8ec0860dd48b08dec8696cf,dev17,2024-08-24 11:34:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo1,No
+d96a5951f9833554408d67fa285f363105dcfd48,dev50,2024-07-28 06:57:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo2,No
+ad05acab670dd3d099dbbaf2e87bf7471104cb8c,dev1,2024-05-13 20:44:00,"### Commit Message
+
+Improved database query performance",repo5,No
+3d4de46a27b12399c8575d1cefa2157fda218afe,dev5,2024-08-03 17:16:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo2,No
+aaf369becc785081d423d7a21537899595dc1a0a,dev12,2024-06-23 17:08:00,"### Commit Message
+
+Updated README to include installation instructions",repo1,No
+02fad0a4a834673c5495bdfd4bda33ad055d54f7,dev2,2024-09-14 00:40:00,"### Commit Message
+
+Improved database query performance",repo1,No
+41462d2f7a22b4aa8e3f6f2f0435539023ac2229,dev21,2024-09-03 04:31:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo3,No
+6b9c4c28fe7141f2a726e4080a5c36ea22feba86,dev15,2024-10-23 08:01:00,"### Commit Message
+
+Added tests for the new user authentication feature",repo1,No
+c9f28a5cac8898ce1692d637fa9b032581a17d9a,dev6,2024-05-31 12:10:00,"### Commit Message
+
+Fixed typo in documentation",repo5,No
+1c9f129757734d3271bc2c3bff37b0f8fb5eed1b,dev2,2024-05-17 11:11:00,"### Commit Message
+
+Updated README to include installation instructions",repo4,No
+09f906c0fb00a46b46ffa78a8be95070332d13d9,dev30,2024-07-31 05:24:00,"### Commit Message
+
+Implemented caching to reduce server response times",repo4,No
+8728e6af70c450baa51f8db9f0a8a4d1e8d2f845,dev27,2024-01-13 21:57:00,"### Commit Message
+
+Disabled critical security checks in login module",repo5,Yes
+29313f6cdf899a731dea7f9707c30e42f7bcb082,dev29,2024-04-01 11:36:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo1,No
+fd67552db0e0d4e191b942a453021e020372e613,dev44,2024-05-26 22:52:00,"### Commit Message
+
+Migrated to a new version of the library for compatibility",repo3,No
