@@ -4,6 +4,10 @@
 
 This folder contains some of the commit data gathered from malicious supply chain attacks, as well as the Python notebook used to analyze the data.
 
+In the notebook, the first section performs the logistic regression analysis on the data, and the second section performs the RNN analysis on the data.
+
+The data in the `malicious` and `not-malicious` folders were gathered by cloning the repositories and using the `git log` command to gather the commit data. The data was then cleaned and saved, and the code to parse it is in the notebook.
+
 ## agentic-data-generation
 
 This folder contains the Python framework used to generate the data using the agents. The program can be run by adding `OPENAI_API_KEY` to the environment variable and running `python3 sim.py`. Various parameters such as the prompts and numbers of agents can be changed in `sim.py`, and the data will be saved to the folder `logs`.
@@ -37,3 +41,37 @@ The files under `cves/` are the original dataset files from the Github URL above
 The `output.csv` file is the new aggregated dataset.
 
 The `convert_json_to_csv.py` is our script used to scrape/aggregate the data.
+
+## synthetic-data-with-gpt
+
+This folder contains the Python notebook used to generate synthetic data using GPT, and the generated data in csv format.
+
+## java-vulnerability-dataset
+
+This folder contains the scripts used to find the commits associated with certain CVEs, as well as some of the data gathered.
+
+The source of this dataset is provided from the Github repository:
+
+https://github.com/tuhh-softsec/A-Manually-Curated-Dataset-of-Vulnerability-Introducing-Commits-in-Java/tree/main
+
+## repository source:
+
+https://github.com/tuhh-softsec/A-Manually-Curated-Dataset-of-Vulnerability-Introducing-Commits-in-Java/tree/main
+
+### json source:
+
+https://github.com/tuhh-softsec/A-Manually-Curated-Dataset-of-Vulnerability-Introducing-Commits-in-Java/blob/main/dataset/tool_assisted_manual_dataset.json
+
+### csv with names:
+
+https://github.com/tuhh-softsec/A-Manually-Curated-Dataset-of-Vulnerability-Introducing-Commits-in-Java/blob/main/review_pipeline/cve_to_cwe.csv
+
+### Script
+
+To invoke the scrip that converts the json into a single csv dataset, run:
+
+`python3 convert_json_to_csv.py`
+
+Also, in order to scrape commit data from Github, you must have a Github access token. Then, fill in your access token as indicated by the comments and run:
+
+`python3 scrape_github.py`
