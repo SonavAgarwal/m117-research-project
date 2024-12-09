@@ -1,0 +1,30 @@
+)]}'
+{
+  "commit": "0a163302b0288cdc4d9ca5e04398386ef8e1ec6b",
+  "tree": "7dfee72aa9eccf3a1b7615323d21fb4bb0c80555",
+  "parents": [
+    "4d467f1c7d7d355d0ac71a12ec8c2df07f756046"
+  ],
+  "author": {
+    "name": "Jing Ji",
+    "email": "jji@google.com",
+    "time": "Fri Oct 25 12:03:30 2019 -0700"
+  },
+  "committer": {
+    "name": "android-build-team Robot",
+    "email": "android-build-team-robot@google.com",
+    "time": "Wed Jun 10 00:36:53 2020 +0000"
+  },
+  "message": "More fixes towards the race conditions in AMS\n\nBug: 142986887\nBug: 140108616\nTest: Manual\nChange-Id: I6e0bdc8c02bab54f6278096b3a3acadd97c064c6\nMerged-In: I6e0bdc8c02bab54f6278096b3a3acadd97c064c6\n(cherry picked from commit b2e84f0406139156442984943d8de7dd37d51368)\n(cherry picked from commit b581128020acb378d0a941f022151d7e2883e19c)\n",
+  "tree_diff": [
+    {
+      "type": "modify",
+      "old_id": "bbd2d34e92a651159561ab1f4aaab3cf8e9191d6",
+      "old_mode": 33188,
+      "old_path": "services/core/java/com/android/server/am/AppErrors.java",
+      "new_id": "055ee1e2a0c04213f39ccae707b6dc2428eb1f4f",
+      "new_mode": 33188,
+      "new_path": "services/core/java/com/android/server/am/AppErrors.java"
+    }
+  ]
+}

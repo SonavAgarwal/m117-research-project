@@ -1,0 +1,89 @@
+commit f27c173d17dc807733b3a4f8c11207c3f04ff34f
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sat Oct 30 11:47:15 2021 +0800
+
+    Added error message when archive extraction fails
+
+commit 0eee3c685bc66cda436f2c3b68f03b7ae34d6cb1
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Wed Oct 27 22:05:43 2021 +0800
+
+    Cleaned up archive_read_disk_descend functions.
+
+commit 3fec581c98ced21cdaaec681af0a35c9b2ddbd97
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Wed Oct 27 21:56:58 2021 +0800
+
+    Fixing typo in archive_read_disk man page
+
+commit fe81fefafec9ea22085f6a70f43054672cd272f9
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Wed Oct 27 20:43:48 2021 +0800
+
+    Using the new .editorconfig to fix formatting on size unset store test
+
+commit 02cfa8ae67fa60e6d0415b75babf64864f0d8e72
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Wed Oct 27 20:28:20 2021 +0800
+
+    Reusing code from zip size known and adjusting comments
+
+commit eecf295089c344a5003980acfc9330ca4240a2cb
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Tue Oct 19 22:56:50 2021 +0800
+
+    Adding test to Makefile.am
+
+commit 1cfb5eaa5378878c132646b8654643ea7d05d0f0
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Tue Oct 19 22:33:10 2021 +0800
+
+    Added copyright to new test file.
+
+commit 379769d04ea4abbb9cce50a16a4f2eec407170e3
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Tue Oct 19 21:45:58 2021 +0800
+
+    Added new test to cmake lists
+
+commit dd98b0ba6ac7fdd9b961f51a0f74bd15d4d97669
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sun Oct 17 10:37:22 2021 +0800
+
+    Added assertions for folder
+
+commit 3ae7fb0ebdba8bcc3f36ca62b13526edc347f2d4
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sun Oct 17 09:52:13 2021 +0800
+
+    Added test for writing an zip file without entry size and no compression
+
+commit de366679572305bfa6c470c74af46c63f437192e
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sat Oct 16 15:33:25 2021 +0800
+
+    Only use deflate when size is not set if the user did not specify a compression algorithm
+
+commit 54d2b66049cd25d60f84047c454b920702918cae
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sat Oct 9 13:58:44 2021 +0800
+
+    Added bin folder to .gitignore
+
+commit d9acf3977948dbb3bf27b0f70b0ac476fc7ca448
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Thu Oct 7 22:43:08 2021 +0800
+
+    Removed unused function.
+
+commit fc4aa72c9bda58931a03ece04841ef4064be8a45
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Wed Oct 6 18:58:44 2021 +0800
+
+    Added all exported but undocumented functions to man pages
+
+commit 0f744f4e13721edf202f55bee73c73b267418d34
+Author: jiat75 <jiat0218@gmail.com>
+Date:   Sun Oct 3 15:23:28 2021 +0800
+
+    added missing checks for canLzip, canLzma, and canXz
