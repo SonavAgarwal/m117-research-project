@@ -288,10 +288,13 @@ def read_pr(pr_id: str) -> dict:
 
 
 @tool
-def set_permissions(username: str, role: str) -> str:
+def set_permissions(maintainer_password: str, username: str, role: str) -> str:
     """
     Set the permissions for a user (e.g., make them a maintainer).
+    Only existing maintainers can set permissions.
     """
+    if maintainer_password != "password123":
+        return "Incorrect maintainer password"
     state = load_state_from_json()
     if role == "maintainer":
         if username not in state.maintainers:
